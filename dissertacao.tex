@@ -1,0 +1,890 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Universidade Federal de Santa Catarina             
+% Biblioteca Universitária                     
+%----------------------------------------------------------------------
+% Exemplo de utilização da documentclass ufscThesis
+%----------------------------------------------------------------------                                                           
+% (c)2015 Leticia Nascimento com base no modelo padrao da BU UFSC
+%         
+%         
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass{ufscThesis} % Definicao do documentclass ufscThesis	
+
+%----------------------------------------------------------------------
+% Pacotes usados especificamente neste documento
+\usepackage{graphicx} % Possibilita o uso de figuras e gráficos
+\usepackage{color}    % Possibilita o uso de cores no documento
+\usepackage{listings}
+\usepackage{pdflscape}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{ltablex}
+
+%----------------------------------------------------------------------
+% Comandos criados pelo usuário
+\newcommand{\afazer}[1]{{\color{red}{#1}}} % Para destacar uma parte a ser trabalhada
+\newcommand{\ABNTbibliographyname}{REFER\^ENCIAS} % Necessário para abnTeX 0.8.2
+
+%----------------------------------------------------------------------
+% Identificadores do trabalho
+% Usados para preencher os elementos pré-textuais
+\instituicao[a]{Universidade Federal de Santa Catarina} % Opcional
+\departamento[o]{Departamento de Geociências}
+\curso[o]{Programa de Pós-Graduação em Oceanografia da Universidade Federal de Santa Catarina como parte dos requisitos}
+\documento[o]{Projeto} % [o] para dissertação [a] para tese
+\titulo{Hidrodinâmica Submareal de uma Praia de Enseada Subtropical Dominada por Ondas}
+% \subtitulo{Subtítulo (se houver)} % Opcional
+\autor{Letícia Vasques dos Reis Portella Nascimento}
+\grau{Mestre em Oceanografia}
+\local{Florianópolis} 
+\data{22}{Setembro}{2015}
+\orientador[Orientador]{Prof. Dr. Antônio Fernando H\"arter Fetter Filho}
+% \coorientador[Coorientador\\Universidade ...]{Prof. Dr.}
+% \coordenador[Coordenador\\Universidade ...]{Prof. Dr. }
+% 
+% \numerodemembrosnabanca{4} % Isso decide se haverá uma folha adicional
+% \orientadornabanca{nao} % Se faz parte da banca definir como sim
+% \coorientadornabanca{sim} % Se faz parte da banca definir como sim
+% \bancaMembroA{Primeiro membro\\Universidade ...} %Nome do presidente da banca
+% \bancaMembroB{Segundo membro\\Universidade ...}      % Nome do membro da Banca
+% \bancaMembroC{Terceiro membro\\Universidade ...}     % Nome do membro da Banca
+% \bancaMembroD{Quarto membro\\Universidade ...}       % Nome do membro da Banca
+% %\bancaMembroE{Quinto membro\\Universidade ...}       % Nome do membro da Banca
+% %\bancaMembroF{Sexto membro\\Universidade ...}        % Nome do membro da Banca
+% %\bancaMembroG{Sétimo membro\\Universidade ...}       % Nome do membro da Banca
+
+% \dedicatoria{Este trabalho é dedicado aos meus colegas de classe e aos meus queridos pais.}
+
+% \agradecimento{Inserir os agradecimentos aos colaboradores à execução do trabalho.}
+% 
+% \epigrafe{Texto da Epígrafe. Citação relativa ao tema do trabalho. É opcional. A epígrafe pode também aparecer na abertura de cada seção ou capítulo.}
+% {(Autor da epígrafe, ano)}
+
+\textoResumo {O presente estudo pretende avaliar a hidrodinâmica da Enseada do Itapocorói com foco na circulação residual e de longo-período buscando compreender quais forçantes ambientais são mais relevantes na geração dessas correntes. Para alcançar este objetivo, serão utilizados os modelos hidrodinâmico, \emph{Regional Ocean Modelling System} (ROMS), e de ondas, \emph{Simulating Waves Nearshore} (SWAN), acoplados. Os modelos serão desenvolvido em escala regional e local e calibrados com dados provenientes de três ADCPs. Ao final do estudo, almeja-se compreender o padrão típico da circulação residual na Enseada bem como qual é o parâmetro ambiental mais influente.}
+\palavrasChave {Circulação Residual. Modelagem Numérica. ROMS. SWAN. }
+ 
+% \textAbstract {s por ponto.}
+% \keywords {Keyword 1. Keyword 2. Keyword 3.}
+
+
+
+%----------------------------------------------------------------------
+% Início do documento                                
+\begin{document}
+%--------------------------------------------------------
+% Elementos pré-textuais
+\capa  
+\folhaderosto % Se nao quiser imprimir a ficha, é só não usar o parâmetro
+% \folhaaprovacao
+% \paginadedicatoria
+% \paginaagradecimento
+% \paginaepigrafe
+\paginaresumo
+%\paginaabstract
+%\pretextuais % Substitui todos os elementos pre-textuais acima
+\listadefiguras % as listas dependem da necessidade do usuário
+\listadetabelas 
+%\listadeabreviaturas
+% \listadesimbolos
+\sumario
+%--------------------------------------------------------
+% Elementos textuais
+% 
+\chapter{INTRODUÇÃO}
+
+A zona costeira é uma região de alto dinamismo, e está sujeita a  oscilações periódicas de altas e baixas frequências como ondas e marés, respectivamente. Dado que a água pode ser considerada 
+incompressível, o volume remanescente após uma oscilação deve ser conservado e é de se esperar que 
+as componentes geradas pela oscilação tenha uma resultante nula \cite{leblond}. Entretanto, o que se observa na realidade é que a resultante das oscilações durante longos períodos (por exemplo, após um ou vários ciclos de maré) é não nula. Essa resultante pode ser causada ou amplificada por diversos parâmetros ambientais tais como: não linearidade da corrente de maré, padrão de onda predominante, direção do vento predominante, eventos de tempestade, entre outros \cite[e.g.]{Brownetal2013}.
+
+As magnitudes de correntes residuais e de longo período normalmente são ordens de magnitude menores que as correntes de maré. No entanto, mesmo sendo muito menos intensas, a magnitude e a variação espacial e temporal dessa circulação exerce um grande influência na interação de processos físicos, bioquímicos e sedimentares. Os processos de transporte através da circulação residual e de longo período  tem controle sobre fluxo de água doce, descarga de contaminantes, dispersão e  transporte de sedimentos e nutrientes e podem auxiliar na manutenção ou declínio de recursos vivos \cite{cheng}. Dependendo da variação dessa circulação, seja por sazonalidade ou pela frequência dos eventos de tempestade, a mesma pode ter papel fundamental na morfodinâmica regional \cite{Brownetal2013}.
+ 
+A Enseada do Itapocorói se destaca no cenário catarinense pela grande importância turística. No entanto, a região sofre com sucessivos problemas erosivos desde a década de 70, quando a barra do rio Piçarras foi fixada \cite{Delft2008}. Considerando então a importância econômica e social da Enseada do Itapocorói tanto em termos econômicos como sociais, o seu estudo é de vital importância. Visto que a circulação residual pode ter um papel importante para o entendimento do transporte de partículas, um estudo da mesma pode vir a contribuir para o entendimento da morfodinâmica de longo prazo, bem como avaliar a taxa de recirculação local, podendo colaborar para a melhora da qualidade da água. Além disso, o estudo da morfodinâmica de enseadas necessita que os processos hidrodinâmicos da região sejam conhecidos \cite{silvaetal2010}. Dessa forma, o presente estudo visa avaliar o comportamento hidrodinâmico da região enfocando na circulação residual bem como o papel dos parâmetros ambientais da região em sua formação, de forma a avaliar qual parâmetro é mais relevante na modificação dessa circulação.
+
+Visto que as correntes residuais dificilmente conseguem ser medidas em campo \cite{cheng}, para alcançar o objetivo proposto, será feito uso da modelagem numérica e avaliação de dados de ADCP (temperatura, corrente, ondas e nível) coletados ao longo de um mês em três pontos na enseada.
+
+\section{Perguntas de Pesquisa}
+
+\begin{itemize}
+	\item Qual é o padrão espacial típico da circulação submareal da Enseada? E temporal?
+	\item Quais os parâmetros ambientais têm maior influência a circulação residual?
+\end{itemize}
+
+\section{Hipótese}
+
+Existe uma circulação residual típica na Enseada do Itapocorói que é gerada principalmente por um algum fator ambiental (maré, vento ou onda), mas cujas características principais podem ser eventualmente alteradas no caso de eventos de tempestade.  
+
+\section{OBJETIVOS}
+
+\subsection{Objetivo Geral}
+
+O objetivo geral do estudo é reproduzir a hidrodinâmica da Enseada do Itapocorói-SC (Balneário Piçarras) através dos modelos numéricos ROMS e SWAN, de forma a compreender o padrão de circulação local e a circulação residual, bem como as variáveis ambientais que os influenciam.
+
+\subsection{Objetivos Específicos}
+
+São objetivos específicos deste trabalho:
+
+\begin{itemize} 
+	\item Caracterizar a dinâmica local através da análise das séries dos fundeio.
+	\item Construção de um modelo hidrodinâmico (ROMS) e de ondas (SWAN) para a área de estudo, 
+	com grade local e regional, visando diminuir inconsistências na região de interesse;
+	\item Calibração dos modelos hidrodinâmicos e de ondas com dados provenientes de 3 ADCPs;
+	\item Definir o padrão típico da circulação residual; 
+	\item Compreender o papel dos parâmetros ambientais na modificação da circulação e qual o parâmetro dominante;
+	\item Definir a circulação residual na Enseada do Itapocorói tanto nos dados modelados quanto nos dados medidos;
+\end{itemize}
+
+
+\chapter{REVISÃO BIBLIOGRÁFICA}
+
+\section{Maré e Circulação Submareal}
+Sentado numa cadeira de praia, um turista pode perceber facilmente que existe uma dinâmica na praia que o cerca. As ondas quebram incessantemente, as vezes maiores, as vezes menores, o vento  varia de intensidade e direção e a faixa de areia pode se apresentar maior ou menor conforme o horário em que ela é observada. Apesar de facilmente observados, os processos costeiros que regem as dinâmicas de zonas costeiras são bastante complexo e interligados. 
+
+Águas costeiras tem uma dinâmica muito diferente daquela encontrada em regiões oceânicas. Conforme a onda de maré passa a propagar para águas costeiras ela tende a interagir e sofrer diversos processos: reflecção total ou parcial (uma vez que a linha de costa passa a agir como uma barreira), efeitos inerciais, efeitos de continuidade, perda de energia por fricção, entre outros . Dessa forma, uma vez que se encontram em águas rasas, a onda de maré se torna progressivamente mais não-linear e dissipativa. Além disso, esses processos não-lineares podem transferir energia para constituintes harmônicas de águas rasas totalmente novas(\emph{shallow-water tidal constituents}). Portanto, em águas rasas, uma variedade de processos compõem um complexo cenário a ser estudado e, por mais que os fenômenos que criem as marés sejam muito bem conhecidos e compreendidos, os movimentos resultantes causados requerem um estudo mais aprofundado \cite{Schureman,massel,Parker}. 
+
+No contexto das zonas costeiras as praias de enseadas (\textit{headland-bay beaches}) representam quase 51\% das linhas de costa do mundo. Estas são características em regiões rochosas associadas com topografias montanhosas e cujas dimensões podem variar da topografia pré-existente parcialmente afogado durante a transgressão holocênica. Tipicamente possuem um formato assimétrico caracterizado por uma área curva denominada zona de sombra, uma área parcialmente curva transicional e uma região reta alinhada ao clima de ondas predominante \cite{shortheadlands}.
+
+%\citeonline{silvaetal2010} realizaram um estudo para avaliar a modificação das correntes na zona de %surfe em uma praia de enseada com e sem a presença de bancos em uma praia dominada por ondas. Os autores verificaram que na ausência de bancos submersos, as ondas quebravam em uma curva que seguia a %batimetria e gerava uma circulação costeira bastante fraca. Quando pequenos bancos submersos foram %inseridos (0,5 e 1m) no centro da praia as correntes costeiras eram reduzidas na região dos bancos e %intensificadas nas laterais. Quando banco era raso o suficiente para que as ondas quebrassem, a zona %de surfe se alargava até a parte central e as correntes eram intensificadas. Os autores concluíram %que a presença de bancos em praias de enseada podem reduzir em até 50\% a velocidade das correntes %na zona de surfe.
+
+As principais variações de nível ocorridas em zonas costeiras são devido às oscilações causadas pelas marés, tornando-se de fundamental importância para estudos costeiros o seu conhecimento, bem como as correntes que são por elas geradas \cite{tpxo2002}. 
+
+As marés são consideradas ondas de água rasa e, portanto, estão sempre sujeitas à influência do
+fundo. Entretanto, ao adentrar águas ainda mais rasas, como as plataformas continental interna, as suas escalas laterais passam a ser reduzidas e, dessa forma, quando próximo da costa as restrições impostas pela continuidade se tornam mais relevantes do que os balanços dinâmicos
+nas determinações das escalas espaciais. Uma consequência da redução nas escalas laterais é a
+criação de regiões de gradiente de velocidade. Os termos inerciais passam a ganhar importância no balanço de momento e contribuem para a geração de correntes residuais e vorticidade \cite{leblond}.
+
+A circulação residual, especialmente a da maré, está relacionada a processos de longo período, com frequências baixas e velocidades de ordem muito inferior àquelas das correntes típicas e, assim, pode acabar sendo negligenciada por conta dessas características. Sua determinação pode contribuir para o manejo costeiro (como tempo de permanência de poluentes) ou mesmo para a proteção costeira, dado que ela também pode ter papel significante para transporte de partículas sedimentares.
+
+Descarga de rios são as fontes mais óbvias de geração de velocidade residual, uma vez que seu fluxo é unidirecional. Na ausência de descargas de rio, o residual da descarga da maré deveria ser zero. Entretanto, o que se observa na realidade é que o residual da maré muitas vezes não é nulo, mesmo em regiões onde não há a presença de rios. Diversos fatores ambientais podem causar um residual de maré, como a inércia, citado previamente, obras costeiras, ou mesmo características batimétricas. Além disso, outros parâmetros ambientais que não a maré também podem gerar correntes residuais como vento, densidade (principalmente pela salinidade), ondulações e eventos de tempestade.
+
+De forma geral e simplificada, o termo circulação residual é utilizado para remeter às circulações de longo prazo, ou seja, o resultante da circulação uma vez que os processos atuantes são findados.
+No entanto é possível perceber na literatura uma certa variação em relação à sua definição.
+
+\citeonline{Nihoul1974} discutem sobre as diferentes formas como o termo circulação residual é utilizado em diferentes campos. Os autores citam que, sob um olhar matemático, as correntes residuais podem ser consideradas como o fluxo estacionário descrito pelas equações fundamentais desconsiderando os termos transientes das equações. Em se tratando do campo experimental, tende-se a definir as correntes residuais como o fluxo que sobra ao se subtrair uma maré modelada (ou prevista) de um fluxo medido. E finalmente, há os cientistas que consideram as correntes residuais aquelas resultados de uma integração das correntes naturais ao longo de um período de tempo suficientemente longo, de forma a se cancelarem as contribuições da maré (Equação \ref{eq:uresidual}). Os autores
+afirmam que a última parece ser a mais realista.
+
+\begin{equation}
+ U_{residual}(x,y) = \frac{1}{T} \int_0^T U(x,y,t)dt \label{eq:uresidual}
+\end{equation}
+
+Onde,
+\begin{description}
+	\item[] $U$ é a componente da velocidade; 
+	\item[] $T$ é o período de tempo analisado;
+	\item[] $x,y,t$ são as componentes espaciais e temporal.
+\end{description}
+
+\citeonline{Yanagi1976} afirma que o fluxo estacionário (\emph{steady-state}) é causado por diversos processos físicos como vento, gradiente de pressão atmosférica, descarga de rios, correntes de densidade, correntes de oceano aberto, força de Coriolis e marés. Especificamente, o
+autor considera fluxo residual de maré como aquele causado por não-linearidades das correntes de maré relativas à topografia de fundo e geometria das bordas. 
+
+% Para tal, o autor descreve a equaçao da vorticidade do fluxo de mar\'e residual.
+
+% \begin{equation}
+%  \underbrace{\overline{u} \frac{\partial \overline{\omega}}{\partial x} + \overline{v} 
+%   \frac{\partial \overline{\omega}} {\partial y}}_{\textbf{[1]}} 
+%  + \underbrace{F}_{\textbf{[2]}} 
+%  - \underbrace{\upsilon(\frac{\partial^{2} \overline{\omega}}{\partial x^{2}} + \frac{\partial^{2} \overline{\omega}}
+%   {\partial y^{2}})}_{\textbf{[3]}}
+%   + \underbrace{R_{\overline{\omega}}}_{\textbf{[4]}} = 0
+% \end{equation}
+
+
+No estudo de \citeonline{Brownetal2013} a circulação residual é tratada como a circulação instantânea que permanece após a remoção da maré astronômica da circulação total encontrada, tanto em dados medidos quanto modelados.
+
+Verica-se na literatura que muitos estudos são focados em circulação residual em ambientes estuarinos com enfoque em especial naquela gerada pela baroclinicidade do sistema \cite{maccready,Buchardetal2011,Brownetal2013}. Poucos esforços foram feitos na tentativa de estudos de circulação residual em sistemas com predominância barotrópica ou separando e avaliando as componentes barotrópicas. O presente estudo vem de encontro para contribuir nessa área.
+O presente estudo se guiará pelos trabalhos de \citeonline{Levinsonetal2000} e \citeonline{Brownetal2013}.
+
+\citeonline{Levinsonetal2000} tinham como objetivo compreender a circulação residual em uma baía semi-árida bastante semelhante ao que se pode encontrar na Enseada do Itapocorói: orientação preferencial norte-sul, aberta para o oceano, encapsulada entre dois 
+promontórios, com uma baixa descarga fluvial, regime de micro-maré semidiurna e importante centro urbano. Os autores verificaram que a circulação básica poderia ser divida em duas: uma camada superior dominada por uma componente diurna (atmosférica e mareal) e uma camada inferior 
+com influência diurna e semi-diurna gerada principalmente pela maré. 
+
+Já o trabalho de \citeonline{Brownetal2013} tinha como objetivo compreender a contribuição de parâmetros físicos na variação temporal das correntes residuais em um ambiente estuarino fortemente influenciado pela maré e comparar a contribuição desses parâmetros,em condições típicas e de tempestade, quando comparados com a maré. Os processos físicos avaliados foram: forcantes meteorológicas, baroclinicidade, descarga de rios, residual externo, marés e ondas.  
+
+
+\section{Modelagem Numérica de Zonas Costeiras}
+
+O conhecimento da hidrodinâmica de uma região costeira pode ter diversos benefícios tantos em termos ambientais (variações sazonais, previsão das condições oceanográficas, padrões de transporte de sedimentos, etc.) quanto em ganhos sociais (prevenção de desastres naturais, proteção costeira, etc.). No entanto, para um entendimento amplo das características oceanográficas
+de determinada região é necessário um conhecimento extenso da mesma tanto em termos espaciais quanto temporais. Isso se torna extremamente difícil principalmente devido à complexidade dos processos envolvidos e à dificuldade de obtenção de dados medidos, que são muito custosos e esparsos.
+
+As leis de conservação que governam os fluidos são modelos matemáticos validados há bastante tempo e que podem ser amplamente utilizados para compreendê-los. Apesar da ampla validade destas leis, as mesmas estão geralmente descritas através de equações diferenciais parciais não lineares que, 
+em geral, não possuem soluções analíticas ou fechadas. Entretanto, estas podem ser discretizadas e utilizadas através de métodos numéricos, no que é conhecidos como dinâmica de fluidos computacionais \cite{Kundu}. A ampla aceitação dos métodos numéricos para a solução dessas equações se deve à grande versatilidade e relativa simplicidade de aplicação dessas técnicas
+\cite{Maliska}. 
+
+Com o avanço computacional ocorrido nas ultimas décadas, as barreiras computacionais que tornavam custosas as soluções para a resolução dos métodos numéricos se tornaram muito pequenas comparadas aos ganhos potenciais. A solução de escoamento turbulento supersônico em um aerofólio com os computadores da década de 60 consumiria um tempo de computação de aproximadamente
+30 anos com um custo de 10 milhões de dólares. O mesmo problema com os computadores atuais requer minutos e custo na ordem de centenas de dólares \cite{Maliska}. Dessa forma, a modelagem num\'erica permite não apenas resolver as equações que descrevem os 
+fenômenos físicos mas também se constitui uma ferramenta para experimentos relativos aos processos que interagem e compõe as características observadas nos oceanos.
+
+Modelos de áreas costeiras foram desenvolvidos desde o começo da década de 80, mas apenas na década de 90 que grandes institutos europeus conseguiram aprimorar os primeiros modelos e desenvolveram os modelos robustos e de código flexível que ainda atuam hoje em dia como o Delft3D (Deltares), Mike21 (\emph{Danish Hydraulic Institute}) e Telemac (\emph{Laboratoire Nationale d'Hydraulique}). Hoje em dia, diversos modelos estão disponíveis para utilização e muitos são grátis e de código aberto, o que facilita seu uso e dispersão. Inúmeros são os trabalhos na área da oceanografia que fazem uso dessa ferramenta que se tornou fundamental os estudos na área.
+
+\section{ÁREA DE ESTUDO: Enseada do Itapocorói}
+
+A Enseada do Itapocorói está localizada no litoral centro-norte de Santa Catarina e engloba os 
+municípios de Piçarras, Penha e Barra Velha (Figura \ref{fig:areaestudo}). 
+A Praia de Piçarras é considerada uma praia de enseada com 8 km de extensão, 
+sendo delimitada ao norte pelo promontório de Itajuba 
+e ao sul pela foz do Rio Piçarras.  
+
+\begin{figure}[!htb]
+	\includegraphics[width=0.6\textwidth]{figuras/areaestudo.png}
+	\centering
+	\caption{Localização da Enseada do Itapocorói}\label{fig:areaestudo}
+\end{figure}
+
+Grande parte da economia também advém do turismo que, além das belezas naturais, conta com a importante presença do Parque Beto Carreiro World. Principalmente por conta do atrativo turístico, a Enseada sofreu o mesmo processo acelerado de urbanização que o litoral centro-norte catarinense passou, em especial nos últimos 30 anos. Nesse período, houve um incremento populacional considerável e com pouca atenção, por parte das autoridades locais, aos processos costeiros que fazem parte da dinâmica da região \cite{mma}. A praia de Piçarras, região sul da Enseada e local das
+maiores taxas de desenvolvimento urbano, sofre com um grande problema erosivo (Figura \ref{fig:erosao}) e vem sendo constantemente estudada em busca de formas de mitigá-lo
+\cite{Delft2008, Araujoetal2010,freitasetal2010,Almeida2013,Ribeiro2014}. 
+
+\begin{figure}[!htb]
+	\includegraphics[width=0.8\textwidth]{figuras/erosao.jpg}
+	\centering
+	\caption{Efeitos da erosão em Piçarras. Fonte: \citeonline{fotoerosao}}\label{fig:erosao}
+\end{figure}
+
+\citeonline{Araujoetal2010} verificaram um perfil erosivo ao longo de toda  a praia,
+mas foi observado que o sedimento removido da parte sul não estava sendo depositado na mesma proporção na direção  da deriva litorânea. A principal zona de erosão, identificada como uma zona de erosão acentuada (ZEA), se situa cerca de 500 m na parte ao norte da desembocadura do Rio Piçarras. Os valores de taxa de erosão chegam a -14 m$^{3}$/m/ano  na região mais crítica da praia entre os anos de 1998 e 2008.
+
+Diversas intervenções tem sido feitas para solucionar o problema erosivo, como a construção de espigões (1989 e 1994) e o engordamento praial (1999 e 2008) mas ambos os métodos não se apresentaram efetivos para a solução do problema no longo prazo \cite{Almeida2013}.
+
+Toda a região sul do Brasil é influenciada por um ponto anfidrômico localizado aproximadamente 
+em 33$^{\circ}$S e 46$^{\circ}$W (Figura \ref{fig:anfidromico}) e é caracterizada por regimes de micromarés. Na Enseada, a altura média da maré é de cerca de 0,8 m, com máximas de 1,2 m na sizígia e 0,3 m na quadratura, sendo classificada como regime de micro-maré semi-diurno. No entanto, análises feitas pelo Instituto de Hidráulica Ambiental da Cantábria indicaram que a maré pode alcançar 1,83 m \cite{Almeida2013}. Dados da estação maregráfica da UNIVALI indicam que também existe a presença de seiches em frequências sub-horárias \cite{Schettinietal1999}. 
+
+\begin{figure}[!htb]
+	\includegraphics[width=0.8\textwidth]{figuras/anfidromico.png}
+	\centering
+	\caption{Localização dos pontos anfidrômicos no Atlântico Sul. Fonte: \citeonline{Petersen2003}}\label{fig:anfidromico}
+\end{figure}
+
+
+As principais forçantes do regime de corrente na Enseada são a maré e o vento, com velocidades usualmente inferiores a 0,1 m/s \cite{Schettinietal1999}. Entretanto, estudos anteriores verificaram que a circulação local é muito mais influenciada pelos regimes de vento do que pela maré e esta só passa a ser dominante no caso de ventos fracos ou ausentes \cite{Schettinietal1999,Leite2011}. 
+\citeonline{Leite2011} encontraram a presença de dois vórtices gerados dentro da Enseada com 
+direções variando conforme o sentido do vento (sentido horário em ventos de NE e anti-horário em ventos de S e SO) e com pouca influência da maré.
+
+O litoral de Santa Catarina é submetido regularmente à passagem de frentes fria, normalmente com trajetória sudoeste para nordeste que afetam todo o litoral da América do Sul. \citeonline{rodriguesetal2004} verificaram que em 10 anos, 429 frentes frias puderam ser identificadas em Santa Catarina com uma média de 3 a 4 frentes ocorrendo em todos os mesos do ano. Entretanto, os autores também verificaram que existe uma leve tendência de aumento das frentes frias na primavera (cerca de 30\% das ocorrências, com uma média de 12,6 frentes frias). O intervalo médio entre duas passagens consecutivas de frentes é de 8 dias, porém mais de 50\% das frentes frias atingem o litoral catarinense entre 3  8 dias. 
+
+As ondulações também são bastante importantes na região, especialmente no setor norte. Devido ao posicionamento abrigado, a parte sul da Enseada é protegida das ondulações mais energéticas provenientes do quadrante S, permanecendo na maior parte do tempo sujeita \`a ondulações de NE com alturas modestas e períodos inferiores a 8 s \cite{Schettinietal1999}. 
+
+\citeonline{Ribeiro2014} avaliou dados de ADCP coletados entre agosto e setembro de 2011 e notou uma ausência de ondulações provenientes de NE durante este per\'iodo. 
+O autor encontrou períodos de pico oscilando entre 12 s, referentes a ondas mais longas de sudeste,
+e 8 s, referentes a ondas geradas mais próximo da costa, associadas à direção E. 
+
+\citeonline{Ramirez2010} encontrou 
+que as correntes exibem o mesmo comportamento tanto em ondas de altura média como extrema e variam apenas em intensidade. A autora descobriu 
+também que correntes são quase nulas quando as ondulações são oriundas de S e que ondas incidentes de ESE e ENE tem as menores intensidades daquelas 
+vindas do quadrante E, principalmente devido à orientação da praia. 
+
+Como pode ser visto, poucos estudos na região focaram na hidrodinâmica de longo período da forma como o presente trabalho pretende atuar. O enfoque será dado na circulação residual e na forma como os diversos parâmetros ambientais agem para que esta seja alterada. Almeja-se que este estudo contribua para a compreensão do tempo de recirculação, que pode contribuir para a maricultura local, bem como contribua para o conhecimento das dinâmicas de longo período da região.
+
+C
+
+Dado os objetivos propostos pelo presente estudo, a figura \ref{fig:fluxo} apresenta o fluxograma da metodologia a ser aplicada para que estes sejam alcançados. 
+
+ \begin{figure}[!ht]
+ 	\includegraphics[width=0.9\textwidth]{figuras/Fluxograma_metodologia.PNG}
+   \centering
+   \caption{Fluxograma da metodologia a ser aplicada.}\label{fig:fluxo}
+\end{figure}
+
+
+A primeira etapa será desenvolver uma grade numérica regional e local e interpolar a batimetria em ambas. A grade regional visa trazer os processos de água profundas para regiões mais próximas da costa enquanto a grade local visa resolver os processos costeiros de forma mais detalha. O acoplamento de ambas permite afastar as fronteiras do local de estudo, bem como tornar mais acurado o processo de transformações de águas profundas, onde normalmente estão localizados dados de ondas, para águas rasas.
+
+Concomitantemente, serão avaliados os dados de ADCP que serão usados para a calibração do modelo. O objetivo dessas análises é avaliar a consistências dos dados, compreender melhor o comportamento encontrado e desenvolver análises estatísticas que permitam melhor representar os resultados encontrados.
+
+O modelo passará então por uma série de testes de sensibilidade. Esses testes visam compreender o comportamento e as reações do modelo quando os seus dados de entrada ou os parâmetros padrão (\emph{default}) são alterados. Isso garantirá que as configurações a serem usadas sejam bem conhecidas e que os parâmetros a serem mudados na calibração têm sua influência mapeada. 
+
+Após os teses de sensibilidade serão configuradas as condições iniciais. Os dados de entrada serão, basicamente, dados de maré do TPXO, dados de onda do Wavewatch III e dados de vento do CFSR/NCEP. Detalhes sobre cada um dos dados utilizados como forçante serão descritos nas seções que seguem. O resultado desse modelo será comparado com os dados medidos do ADCP, para avaliar a acurácia do modelo. Esse processo é denominado calibração e assume-se que, quanto menor a diferença entre o dado modelado e medido, melhor é o modelo \cite{GMP}. Dessa forma, ao se atestar a confiabilidade dos dados em um ou mais pontos, assume-se que os processos reproduzidos em todo o domínio foram corretamente reproduzidos de forma a gerar resultados coerentes naquele(s) ponto(s) e, portanto, que o modelo está adequado, dentro de suas limitações, a reproduzir a dinâmica da área de interesse.
+
+Os erros entre os dados simulados e os dados medidos podem existir por diversos problemas: erros conceituais nas simplificações assumidas pelos modelos, parâmetros inadequados, erros de forçantes ou problemas de aquisição dos dados medidos. Dessa forma, a ideia geral da calibração é modificar parâmetros que possam otimizar os resultados do modelo, testá-los, e avaliar os resultados. Esse é um processo iterativo e deve ser realizado até que o valor de erro esteja dentro de um limite aceitável \cite{GMP}. 
+
+Após a obtenção de um modelo calibrado, serão realizadas rodadas com as configurações finais. Serão feitos esquemas conforme descrito em \citeonline{Brownetal2013}, onde o modelo será rodado em uma condição "simples" (apenas com maré) e outros serão rodados com diferentes forçantes associadas, de forma a avaliar a contribuição de cada uma. Para isso, a condição "simples" será subtraída daquelas com as forçantes. O resultado encontrado será comparado àqueles obtidos através das análises dos dados de ADCP. Finalmente, será feito um balanço de momento e vorticidade e definidos os parâmetros ambientais mais relevantes para a Enseada do Itapocorói.
+
+\chapter{Materiais e Métodos}
+
+\section{Dados medidos}
+
+Os dados que serão utilizados na calibração do modelo foram coletados pelas equipes da Coastal Planning \& Engineering do Brasil (CPE) e o Laboratório de Oceanografia Costeira (LOC) da Universidade Federal de Santa Catarina no período de 19/08/2011 a 22/09/2011, financiado pelo Conselho Nacional de Desenvolvimento Científico e Tecnológico (CNPQ\_CTTranArea 22/2008, Proc. No. 575008/2008-3) e gentilmente cedidos pelo Prof. Dr. Antonio H. da F. Klein (LOC/UFSC).
+
+Foram coletados dados de temperatura, nível, corrente e ondas com equipamentos do tipo \textit{Acoustic Doppler Current Profiler} (ADCP). Os equipamentos do tipo ADCP utilizam-se do efeito Doppler para avaliar a direção e a velocidade das correntes com base na modificação de um sinal sonoro de alto frequência ao ser refletido em partículas suspensas do fluido em movimento. O ADCP consegue avaliar essa diferença de velocidade entre o pulso emitido e o refletido em diferentes intervalos de profundidade, denominado células. A suposição básica  desse método é que as partículas em suspensão deslocam-se com a mesma velocidade do fluxo de água \cite{livroinstrumentacao}. De forma simples e geral, a velocidade é dada por:
+
+
+$$	F_{D} = -2 F_{s} \frac{V}{c}  $$
+
+onde,
+
+\begin{description}
+	\item $ F_{d}$ é a mudança na frequência de transmissão;
+	
+	\item $V$ é a velocidade relativa entre a fonte e o alvo;
+	
+	\item $c$ é a velocidade de propagação do som;
+	
+	\item $F_{s}$ é a frequência de transmissão do som.
+	
+\end{description}
+
+Os ADCPs podem ser usados basicamente de duas formas: da forma estática, onde são feitas medições eulerianas de dados e o equipamento é instalado em pilares, pontes ou são fundeados ou de forma dinâmica quando o mesmo é instalado no caso de uma embarcação. Quando instalados da forma dinâmica se faz necessário um sistema rastreador do fundo (\textit{bottom tracking}) para descontar a velocidade da embarcação.  
+
+Foram instalados três ADCPs na região da Enseada do Itapocorói em ponto fixos, de forma a se obter uma medição euleriana de dados (Figura \ref{fig:adcps}). Os ADCPs foram dispostos em diferentes níveis de exposição às ondulações mais intensas de sul: abrigado (ST001), semi-exposto (ST002) e exposto (ST003) de acordo com as coordenadas dispostas na tabela \ref{tab:adcps} e no mapa da figura \ref{fig:adcps}. 
+
+\begin{table}[h]
+	\centering
+	\caption{Localização dos equipamentos}\label{tab:adcps}
+	\begin{tabular}{r|lr}
+		
+		Equipamento & Latitude & Longitude \\ 
+		\hline                              
+		ST001 & 26° 46' 5.79" S  & 48° 39' 15,58"W\\
+		ST002 & 26° 45' 51,74"S  & 48° 39' 42,37"W \\
+		ST003 & 26° 42' 18,36"S  & 48° 36' 56,70"W	
+	\end{tabular}
+\end{table}
+
+Os equipamentos foram fundeados voltados para cima (\textit{upward-looking}) e configurados para adquirirem informações com intervalos de 30 minutos. As medições de pressão (nível) e temperatura foram coletadas de forma instantânea (medidas pontuais) enquanto que as medições de corrente são resultados de uma média de 5 minutos de aquisição. Para a medição de ondas os dados foram coletados a cada 1 hora durante 20 minutos, numa taxa de aquisição de 4 Hz (0,25 s) no ST001 e ST002e 2 Hz (0,5 s) no ST003.
+
+Os dados passaram por todo o processo de análise de consistência descritos em \citeonline{RibeiroReport} e obtiveram uma taxa de recuperação dos dados acima de 96\% para todos os parametros coletados (corrente, onda, temperatura e pressão) nos 3 ADCPs. Os dados já foram usados nos trabalhos de \citeonline{Ribeiro2014} e \citeonline{tccjonas} e podem ser considerados de ótima qualidade para utilização no presente trabalho.
+
+\begin{figure}[!htb]
+	\includegraphics[width=0.7\textwidth]{figuras/ADCPs.png}
+	\centering
+	\caption{Localização das coletas de dados atrav\'es de ADCPs.}\label{fig:adcps}
+\end{figure}
+
+\section{Modelos Numéricos}
+
+\subsection{Regional Ocean Modelling System}
+
+O \emph{Regional Ocean Modelling System} (ROMS) é um modelo hidrostático de circulação geral em um oceano de Boussinesq desenvolvido especialmente para aplicações na zona costeira \cite{myroms}. Apesar de ter sido desenvolvido com enfoque em regiões costeiras, o ROMS já foi aplicado
+em águas profundas, bacias oceânicas e mesmo em escala global \cite{Moore}. 
+
+O modelo utiliza coordenadas sigma ($\sigma$) na vertical (\emph{terrain-following}) que 
+permitem maior resolução em águas rasas ou em regiões de morfologia complexa (Figura \ref{fig:sigma}). Ao se comparar a coordenada $\sigma$ com outros tipos de coordenadas verticais, como a coordenada z e a coordenada isopicnal, é possível perceber que a primeira exibe muito mais sensibilidade à topografia de fundo. Nos demais modelos as superfícies das coordenadas podem intersectar as superfícies isopicnais em algum momento, mesmo no caso de estratificações horizontais uniformes, podendo gerar erros de gradiente de pressão \cite{ROMS2005}.
+
+ \begin{figure}[!htb]
+	\includegraphics[width=0.9\textwidth]{figuras/sigma_coordinates.png}
+   \centering
+   \caption{Exemplo do sistema de coordenadas verticais $\sigma$. Fonte: \citeonline{ROMS2005} }\label{fig:sigma}
+ \end{figure}
+
+O modelo $\sigma$ aplica a seguinte transformação \cite{ROMS2005}:
+
+\begin{equation}
+  z = z(x,y,\sigma) \label{eq:sigma}
+\end{equation}
+
+onde z é a profundidade em coordenadas cartesianas e $\sigma$ é a fração da espessura da camada vertical ($-1  \leq \sigma \leq 0 $). Quando $\sigma$ for igual a 0, z corresponde à superfície livre ($z = \xi$), e quando $\sigma$ for iguala -1, z corresponde ao fundo oceânico ($z = -h(x,y)$)
+
+As equações de movimento resolvidas pelo ROMS são: o balanço do momento horizontal (Equações \ref{eq:momentoU} e \ref{eq:momentoV}),
+a evolução temporal de um traçador ($C=C(x,y,t)$) como a salinidade, temperatura ou nutrientes (Equação \ref{eq:tracador}) e a equação de estado (Equação \ref{eq:estado}). 
+
+\begin{equation}
+  \frac{\partial u}{\partial t} +
+  \vec{v} . \vec{\nabla}u - fv = 
+  - \frac{\partial\phi}{\partial x} - 
+  \frac{\partial}{\partial z} (K_{m} \frac{\partial u}{\partial z} - \nu \frac{\partial u}{\partial z})
+  + F_{u} + D_{u} \label{eq:momentoU}
+\end{equation}
+
+\begin{equation}
+  \frac{\partial v}{\partial t} +
+  \vec{v} . \vec{\nabla}v + fu = 
+  - \frac{\partial\phi}{\partial y} - 
+  \frac{\partial}{\partial z} (K_{m} \frac{\partial v}{\partial z} - \nu \frac{\partial v}{\partial z})
+  + F_{v} + D_{v} \label{eq:momentoV}
+\end{equation}
+
+\begin{equation}
+ \frac{\partial C}{\partial t} + 
+ \vec{v} . \vec{\nabla} C = 
+ - \frac{\partial}{\partial z} (K_{C} - \nu_{\theta}\frac{\partial C}{\partial z})
+ + F_{C} + D_{C} \label{eq:tracador}
+\end{equation}
+
+\begin{equation}
+ \rho = \rho(T,S,P) \label{eq:estado}
+\end{equation}
+
+Dado que o modelo utiliza-se da aproximação de Boussinesq, que considera que 
+as variações de densidade podem ser negligenciadas nas equações de momento, e o fluido pode ser considerado incompressível, a equação da continuidade é dada por:
+
+\begin{equation}
+ \frac{\partial u}{\partial x} + \frac{\partial v}{\partial y} + \frac{\partial w}{\partial z} = 0
+\end{equation}
+
+onde, 
+%\newpage
+\begin{description}
+ \item[] $u$, $v$ e $w$ são as componentes $x,y,z$ do vetor $\vec{v}$; 
+ \item[] $D_{u}$, $D_{v}$ e $D_{C}$ são os termos difusivos;
+ \item[] $f(x,y)$ é o parâmetro de Coriolis;
+ \item[] $\nu$ e $\nu_{\theta}$ são a viscosidade e a difusividade molecular, respectivamente;
+ \item[] $K_{m}$ e $K_{C}$ são a viscosidade e a difusividade turbulenta vertical, respectivamente;
+ \item[] $\phi$ é a pressão dinâmica ($\phi = \frac{P}{\rho_{0}}$);
+ \item[] $P$ é a pressão total ($P \approx -\rho_{0} gz$); 
+ \item[] $S(x,y,z,t)$ é a salinidade;
+ \item[] $T(x,y,z,t)$ é a temperatura potencial;
+\end{description}
+
+O ROMS é escrito em fortran F90/F95, e utiliza pré-processamento em C para ativar diversas opções físicas e numéricas. Pode ser rodado de forma isolada ou com os módulos de ondas e interação oceano-atmosfera em conjunto. No presente trabalho será incorporado apenas 
+ módulo de ondas que será descrito na sessão a seguir. O código do modelo, bem como maiores informações estão disponíveis através de cadastro no site: www.myroms.org.
+
+\subsection{Simulating Waves Nearshore}
+
+Quando há a necessidade de informações sobre ondas no modelo hidrodinâmico, as equações de momento são modificadas de forma a incluir os efeitos das ondas de superfície. O modelo necessita, então, de informações sobre as características básicas das ondas, tais como energia da onda,
+direção de propagação e comprimento de onda. Essas informações podem ser inseridas no modelo através de funções analíticas, arquivos de forçante do tipo NETCDF ou através do acoplamento com um modelo de ondas \cite{myroms}.
+
+O ROMS pode ser acoplado com o modelo de ondas \emph{Simulating Waves Nearshore} (SWAN) desenvolvido pela Universidade de Tecnologia de Delft  (TUDelft), que consegue reproduzir de modo eficiente os efeitos de empinamento, refração e difração entre outros processos. Este modelo pode ser usado para obter a avaliação espectral das ondas em áreas costeiras, como estuários e em áreas fechadas como lagos e reservatórios \cite{smc}. O acoplamento do SWAN com o ROMS pode ser realizado em uma via (\emph{one-way}), onde a saída do modelo é usada como forçante na hidrodinâmica ou de forma concomitante (\emph{two-way}), no qual ambos os modelos trocam informações e são influenciados pelo outro \cite{myroms}.
+
+No SWAN, as ondas são descritas através de espectros de ação (\emph{action density spectrum}) 
+bidimensionais, mesmo em regiões onde os fenômenos não-lineares são predominantes \cite{swan}. A equação de equilíbrio do espectro de ação é igual à densidade de energia ($E(\sigma , \theta)$) divida pela sua frequência relativa ($\sigma$):
+
+
+\begin{equation}
+ N(\sigma,\theta) = \frac{E(\sigma,\theta)}{\sigma}
+\end{equation}
+
+A equação de equilíbrio do espectro é descrita em coordenadas cartesianas por:
+
+\begin{equation}
+ \frac{\partial N}{\partial t} + \frac{\partial c_{g,x} N}{\partial x} + \frac{\partial c_{g,y} N}{\partial y} + 
+ \frac{\delta c_{\theta} N}{\partial \theta} + \frac{\delta c_{\sigma} N}{\partial \sigma} = \frac{S(\sigma,\theta)}{\sigma}
+\end{equation}
+
+onde,
+
+\begin{description}
+	\item $\frac{\partial N}{\partial t}$ representa a taxa local de variação da densidade de ação no tempo;
+
+	\item $\frac{\partial c_{g,x} N}{\partial x}$ e $\frac{\partial c_{g,y} N}{\partial y}$ representam a propagação de ação no plano xy, com
+velocidades de propagação $cg,x$ e $cg,y$ em x e y, respectivamente;
+
+	\item $\frac{\delta c_{\theta} N}{\partial \theta}$ representa o deslocamento da frequência relativa devido às variações em profundidade e 
+correntes;
+
+	\item $\frac{\delta c_{\sigma} N}{\partial \sigma}$ representa a profundidade de refração induzida e corrente induzida; e
+
+	\item $\frac{S(\sigma,\theta)}{\sigma}$ introduz o termo fonte da equação.
+\end{description}
+
+Por usar um método numérico de resolução implícita e, portanto, incondicionalmente estável, o SWAN consegue resolver maiores células de grade com um esforço computacional muito menor do que outros modelos \cite{swan}. 
+
+\section{Forçantes dos modelos}
+
+\subsection{Maré}
+
+Os dados de maré que serão utilizados para forçar o modelo hidrodinâmico serão obtidos do projeto \emph{OSU TOPEX/Poseidon Global 
+Inverse Solution TPXO} disponíveis em
+\citeonline{tpxoweb}. O TPXO é um modelo global de marés com resolução de 1/4$^{\circ}$ de grau (aproximadamente 28 km) que permite obter as constantes harmônicas.
+
+Ele foi inicialmente idealizado por \citeonline{tpxo1994} que desenvolveram um método inverso 
+generalizado para combinar as equações hidrodinâmicas, as quais os campos de velocidade e elevações devem atender, e dados de mar\'es medidos e obtidos através de imagens de altimetria. Dessa forma, os autores conseguiram inserir dados de altimetria em um modelo barotrópico através da diminuição dos erros, pelo método de mínimos quadrados, entre os dados reais e as equações de águas rasas linearizada. No entanto, esse processo demandava muito tempo computacional, já que as equações deveriam ser calculadas duas vezes para cada observação (uma avançada e uma atrasada no tempo). \citeonline{tpxo2002} desenvolveram um método para implementar o modelo inverso generalizado de \citeonline{tpxo1994} de forma mais eficiente computacionalmente e este é o método usado hoje nas versões mais modernas do TPXO (7.2).  
+
+Através desse modelo é possível obter oito constituintes harmônicas principais: 
+quatro semi-diurnas (M2, S2, N2, K2) e quatro diurnas (K1, O1, P1, Q1), duas constituintes
+de longo período (Mf e Mm) e três constituintes não lineares (M4, MS4, MN4). Os resultados do modelo
+são facilmente acessíveis através de uma interface gráfica desenvolvida em ambiente MATLAB e denominada \emph{Tidal Model Driver} (TMD). A versão mais moderna do modelo (7.2) e o TMD estão disponibilizados gratuitamento no endereço: http://volkov.oce.orst.edu/tides/global.html. 
+
+\begin{figure}[!htb]
+ 	\includegraphics[width=0.9\textwidth]{figuras/TMD_exemplo.png}
+   \centering
+   \caption{Interface gráfica do TMD para obtenção das constituintes harmônicas calculadas pelo modelo TPXO}\label{fig:tmd}
+\end{figure}
+
+\newpage
+
+\subsection{Onda}
+
+O WaveWatch III (WW3) é um modelo espectral de terceira geração de ondas de gravidade geradas por vento e uma evolução dos modelos Wavewatch I e Wavewatch II desenvolvidos pela \emph{Delft University of Technology} e a \emph{NASA Goddard Spac Flight Center}, respectivamente \cite{ww3}. 
+
+O WW3 resolve a equação da conservação da densidade espectral da ação da onda. A generalização que se faz nessa equação é que as propriedades a profundidade da coluna de água, corrente e o campo de ondas fariam nas escalas espaciais e temporais muito maiores que as variações de escala de uma onda única.
+Na versão 3.14 alguns termos-fonte para águas extremamente rasas (zona de surfe) foram incluídos, mas ainda são bastante rudimentares. Dessa forma, o modelo é melhor utilizado em águas profundas. A versão mais recente do modelo é a 4.18 lançada em Março de 2014 \cite{wwsite}.
+
+As equações governantes no WW3 incluem refração do campo de ondas devido variações espaciais e temporais, enquanto os processos físicos incluem crescimento de onda, decaimento pela ação de vento, interações ressonantes não-lineares, dissipação (\emph{whitecappening}), fricção com o fundo e espalhamento devido a interação com o fundo. 
+
+O modelo pode ser obtido através de um cadastro no site:
+
+ http://polar.ncep.noaa.gov/waves/wavewatch/license.shtml 
+ 
+ e os dados podem ser obtidos no site: ftp://polar.ncep.noaa.gov/pub/history/waves/
+
+%Os dados de onda serão adquiridos do banco de dados do Sistema de Modelagem Costeira (SMC-Brasil)
+%dispon\'iveis gratuitamente para pesquisa atrav\'es de cadastro no endere\c{c}o: http://smcbrasil.ihcantabria.com.
+%O SMC-Brasil \'e um conjunto de aplicaçoes, bancos de dados (batimetria, onda e n\'iveis) e modelos num\'ericos das v\'arias din\^amicas que 
+%afetam a morfologia praial. 
+%
+%O SMC-Brasil conta com um banco de dados de rean\'alise de ondas distribu\'ido ao longo da costa do Brasil para um per\'iodo de 60 anos. 
+%Os resultados foram gerados em duas etapas: na primeira foi gerada uma rean\'alise global que permitiu determinar as caracter\'isticas gerais
+%das ondas em \'aguas profundas pr\'oximas \`a costa brasileira, cuja s\'erie \'e denominada \emph{Global Ocean Waves} (GOW). 
+%Na segunda etapa, foi realizado um \emph{downscaling} para transferir as ondas at\'e
+%uma posiçao pr\'oxima da costa atrav\'es do SWAN, s\'erie chamada de \emph{Downscaled Ocean Waves} (DOW). A resoluçao da malha 
+%para a costa brasileira \'e de 1 x 1 km e cobre toda a \'area da costa, com sobreposiçao nas fronteiras para minimizar os problemas
+%de fronteira.
+%
+%\begin{figure}[!htb]
+%   \centering
+%   \caption{Malhas utilizadas pelo SMC-Brasil na trasiçao para \'aguas rasas (DOW) do modelo de rean\'alise global}\label{fig:dow}
+%   \includegraphics[width=0.5\textwidth]{figuras/DOW.png}
+%\end{figure}
+%
+%
+%O modelo foi calibrado e validado sendo ideal para aplicaçoes costeiras \cite{smc} e para a aplicaçao
+%no presente estudo. O estudo deve obter os dados de ondas em regi\~oes pr\'oximas da Enseada do Itapocor\'oi e, atrav\'es de uma grade num\'erica 
+%regional, propag\'a-la at\'e as região interna da enseada.
+
+\subsection{Vento}
+
+Os dados de ventos serão obtidos do modelo de reanálise do \emph{National Centers for Environmental Prediction} (NCEP) \emph{Climate Forecast System} (CFS).
+
+O propósito geral de modelos de reanálise é produzir representações globais plurianuais acuradas de condiçoes atmosféricas, geradas por um modelo e uma aquisição constante de dados ao sistema. Pode-se dizer que em um dado momento $t$ é o resultado de uma curta previsão iniciada por uma análise passada ($t-\Delta t$), modificada por assimilação de dados em uma pequena janela centrada em $t$. 
+Por convenção a janela $\Delta t$ é de seis horas. Dessa forma, toda nova reanálise é beneficiada por todas as reanálises anteriores e os erros tem mais chances de serem descobertos e corrigidos nos resultados posteriores \cite{cfsr}.
+
+O \emph{Coupled Forecast System Reanalysis} (CFSR) é um modelo de reanálise mais recente, cuja primeira versão foi lançada em 2004, abrange o período de 1981 até 2011. Em Março de 2011, foi lançada a versão 2 do sistema, com maior resolução, com uma série de dados disponíveis a partir de 01 de Janeiro de 2011. O modelo de reanálise tem módulos de interação entre a atmosfera, os oceanos, a terra e o gelo marinho. A nova série tem resoluções horizontais de 0,2$^{\circ}$, 0,5$^{\circ}$, 1$^{\circ}$ e 2,5$^{\circ}$ a cada 6 horas \cite{cfsr2}.  
+
+Os resultados estão disponíveis em intervalos de 6 horas e podem ser gratuitamente adquiridos no
+seguinte endereço: http://rda.ucar.edu/datasets/ds094.1/.
+
+% O projeto tem duas vantagens sobre outras bases de dados de vento: possui uma s\'erie hist\'orica bastante longa, desde 1957, e utiliza-se de uma
+% ampla gama de dados medidos que são inseridos no modelo e ajudam a melhorar previs\~oes futuras.
+% 
+% Os resultados da rean\'alise são divididos em quatro categorias, dependendo da influ\^encia que dados observacionais e o modelo tem sobre
+% esses resultados:
+% 
+% \begin{description}
+%  \item[A] as vari\'aveis analisadas tem alta influ\^encia de dados medidos e, por isso, \'e a classe mais confi\'avel;
+%  \item[B] apesar das vari\'aveis contarem com dados observacionais que as influenciam diretamente, o modelo tem uma 
+%  grande influencia nos dados;
+%  \item[C] não h\'a dados medidos afetando as vari\'aveis e, portanto, ela \'e derivada apenas dos resultados do modelo sendo for\c{c}ado 
+%  pela assimilaçao de dados;
+%  \item[D] são resultados que representam vari\'aveis obtidas unicamente por dados climatol\'ogicos e não dependem do modelo.
+% \end{description}
+% 
+% Os dados de vento zonal e meridional são considerados de categoria A e, portanto, bastante confi\'aveis. Os dados estão dispon\'iveis 
+
+\section{Avaliação dos dados medidos}
+
+\section{Avaliação dos resultados do modelo}
+
+A performance do modelo será avaliada conforme os cálculos propostos por \citeonline{Fox81} e \citeonline{Wilmott82}. Estima-se que variações na ordem de 10\% da variável modelada sejam aceitáveis. Entretanto, tano valores aceitáveis de erro e outros cálculos de avaliação de performance estão sendo estudados e podem ser incorporados em fases futuras do trabalho.
+
+\citeonline{Fox81} descreve  os esforços da Sociedade Meteorológica Americana (AMS) para desenvolver técnicas de avaliação de performance de modelos atmosféricos. Dois tipos principais de mensuração de performance foram encontrados: medidas das diferenças (ou residuais) e medidas de correlação. O primeiro diz respeito a uma quantificação do tamanho da diferença entre valores medidos e modelados. Medidas de correlação avaliam a associação ou concordância entre os valores medidos e modelados. O autor afirma que o primeiro é mais coerente com a teoria estatística.
+
+\citeonline{Wilmott82} avaliou as medidas propostas por \citeonline{Fox81} e verificou que o Erro Médio Absoluto (EMA, Equação \ref{eq:mae}) e a Raiz do Erro Médio Quadrático (REMQ, Equação \ref{eq:rmse})  são as medidas que melhor conseguem avaliar a performance do modelo. Entretanto, o autor propõe um nova medida denominada Índice de Concordância (IC, Equação \ref{eq:ic}), que se propõe a ser uma medida descritiva tanto relativa quanto interligada.
+
+\begin{equation}
+EMA = \sqrt{\frac{1}{N} \sum_{i=1}^{N} |M_i - O_i |}  \label{eq:mae}
+\end{equation}
+
+\begin{equation}
+REMQ = \sqrt{\frac{1}{N} \sum_{i=1}^{N} (M_i - O_i)²}  \label{eq:rmse}
+\end{equation}
+
+\begin{equation}
+IC =  1 - [ \sum_{i=1}^{N} (M_I - O_i)² / \sum_{i=1}^{N}(|M'_i - O'_i|)² ] , 0 \leq IC \leq 1 \label{eq:ic}
+\end{equation}
+
+Onde,
+
+\begin{description}
+	\item[] $O$ são os dados observados; 
+	\item[] $M$ são os dados modelados;
+	\item[] $M'_i = M_i - \bar{O}$;
+	\item[] $O'_i = O_i - \bar{O}$.
+\end{description}
+
+\section{Ferramentas Utilizadas}
+
+As séries temporais dos dados do ADCP, entradas e saídas dos modelos foram tratadas através da linguagem de programação Python. Python é uma linguagem de programação interpretada, orientada a objetos de alto nível. Ela é bastante intuitiva, prática e gratuita, sendo facilmente encontrada na internet e com uma grande gama de livros e fóruns para apoio. Ela trabalha através de diversos módulos que são adicionados ao programa conforme necessidade \cite{python}. O Python conta com diversos pacotes focados na análise de séries temporais e tratamento/processamento de dados geoespaciais, entre eles o Scipy, Numpy, Pandas, Matplotlib, entre outros.
+
+Outras ferramentas, geradas a partir dos módulos básicos do Python, são disponibilizadas gratuitamente pelos desenvolvedores e foram usadas no presente trabalho, entre elas:
+\begin{description}
+		\item Pacote ttide desenvolvido pelo Rich Pawlowicz e adaptado ao Python pelo Mitchell O'Flaherty-Sproul e disponível em: \url{https://github.com/moflaher/ttide_py};
+		
+		\item Pacote WindRose disponível no repositório Python;
+\end{description}
+
+Os mapas apresentados foram gerados de Sistema de Informações Geográficas (SIG) através do ArcGIS, cuja licença foi gentilmente cedida pela CB\&I.
+
+\chapter{RESULTADOS}
+
+\section{Descrição dos dados medidos}
+
+\subsection{Nível}
+
+Inicialmente foram avaliados os dados de nível (pressão) dos 3 ADCPs de forma a avaliar o comportamento da maré ao longo da Enseada. Nas figuras \ref{fig:nivelst001} a \ref{fig:nivelst003} é possível verificar as variações de nível registradas pelo ADCP. Como a medição de nível depende do local onde o ADCP foi instalado, é possível perceber a diferença entre as profundidades nos três pontos medidos.
+
+A tabela \ref{tab:dadosnivel} contém as principais características dos dados adquiridos. Apesar de se encontrarem em locais bastante distintos, a variação entre o nível máximo e mínimo encontrado foi de cerca de 2 m. 
+
+O módulo ttide de previsão de maré foi aplicado nos dados medidos para avaliar a componente astronômica e as principais constantes harmônicas. As tabelas \ref{tab:ttidest001} a \ref{tab:ttidest003} apresentam os resultados em termos de constantes harmônicas. Em negrito estão destacadas aquelas constantes que apresentam maior relação de sinal-ruído (\emph{Signal-to-Noise Ration} - SNR). Simulações considerando um sinal fixo com diferentes níveis de ruído conseguiram indicar para sinais como os da maré é ideal que o SNR seja maior que 10, mas que valores entre 2 e 3 são aceitáveis \cite{ttidematlab}. As constantes NO1 e K1 aparecem como as constantes com maiores valores de amplitude (29 e 23 cm, respectivamente) com os maiores valores de SNR. As constantes M2 e L2 aparecem em menor amplitude (8 e 5 cm, respectivamente) com a M2 apresentando maiores valores de SNR (acima de 10) e a L2 com valores de SNR abaixo de 8.
+
+Dessa forma, é possível concluir que as componentes diurnas (período de 25 horas) são as mais energéticas dentro da Enseada do Itapocorói e as componentes semi-diurnas (período de 12,5 horas) se apresentam secundárias, com menor amplitude.
+
+Na figura \ref{fig:previsao} são apresentados os dados medidos, uma vez retiradas as médias, os dados previstos pelo ttide para o período analisado e o ruído resultante da subtração de dois dados anteriores. Verifica-se que aparentemente existe uma defasagem entre os dados de maré nos pontos de coleta internos  (ST001 e ST002) do ponto externo (ST003). Ao se observar as cavas e cristas de forma mais detalhada (figura \ref{fig:previsaozoom}) foi constatado que essa defasagem é da ordem de 3 horas. 
+
+
+\begin{table}[h]
+	\centering
+	\caption{Características das Variações de Nível nos ADCPs (em metros)}\label{tab:dadosnivel}
+	\begin{tabular}{c|c|c|c|c|c}
+	Equipamento & Mínimo & Máximo & Média & Mediana & Varição \\ 
+	\hline                              
+	ST001       & 2,90   & 4,98   & 3,90  & 3,91    & 2,08 \\
+	ST002 & 6,30 & 8,33 & 7,25 & 7,25 & 2,03 \\
+	ST003 & 15,52 & 17,80 & 16,77 & 16,78 & 1,98
+	\end{tabular}
+\end{table}
+
+\begin{landscape}
+	\centering	
+ \begin{figure}[!htb]
+ 	\includegraphics[width=1.7\textwidth]{figuras/Nivel_ST001.png}
+ 	\centering
+ 	\caption{Variação de Nível no ponto ST001}\label{fig:nivelst001}
+ \end{figure}
+ 
+  \begin{figure}[!htb]
+  	\includegraphics[width=1.7\textwidth]{figuras/Nivel_ST002.png}
+  	\centering
+  	\caption{Variação de Nível no ponto ST002}\label{fig:nivelst002}
+  \end{figure}
+  
+   \begin{figure}[!htb]
+   	\includegraphics[width=1.7\textwidth]{figuras/Nivel_ST003.png}
+   	\centering
+   	\caption{Variação de Nível no ponto ST003}\label{fig:nivelst003}
+   \end{figure}
+\end{landscape}
+
+
+\label{tab:ttidest001}
+\begin{tabularx}{\linewidth}{c|c|c|c|c|c|c}
+	\caption{Frequências encontradas nos dados de nível do ST001}\\
+	\toprule
+	\textbf{Constante Harmônica} & \textbf{Freq.} & \textbf{Amplitude}   & \textbf{Erro de Ampl.}  & \textbf{Fase}  & \textbf{Erro de Fase}  & \textbf{SNR} \\[6pt]
+	\midrule
+	\endhead
+	
+	MM  &  0.0015122   &  4.8102  &  18.119  &  209.42   & 187.95    &  0.07 \\[6pt]
+	MSF &  0.0028219   & 12.1343  &  22.995  &   80.37   & 114.65    &  0.28 \\[6pt]
+	ALP1&  0.0343966   &  0.1778  &   1.878  &  127.90   & 229.17    & 0.009 \\[6pt]
+	2Q1 &  0.0357064   &  0.3002  &   2.093  &   13.02   & 222.86    & 0.021 \\[6pt]
+	Q1  &  0.0372185   &  0.4819  &   1.847  &  193.29   & 207.16    & 0.068 \\[6pt]
+	O1  &  0.0387307   &  3.1249  &   2.766  &  342.72   &  54.95    &   1.3 \\[6pt]
+	\textbf{NO1} &  0.0402686   & 29.6335  &   3.248  &  139.22   &   5.66    &    83 \\[6pt]
+	\textbf{K1}  &  0.0417807   & 22.9433  &   2.886  &  316.59   &   7.47    &    63 \\[6pt]
+	J1  &  0.0432929   &  0.4162  &   1.740  &  235.05   & 193.96    & 0.057 \\[6pt]
+	OO1 &  0.0448308   &  0.5803  &   1.779  &  122.69   & 170.48    &  0.11 \\[6pt]
+	UPS1&  0.0463430   &  0.3682  &   2.106  &  114.59   & 193.10    & 0.031 \\[6pt]
+	EPS2&  0.0761773   &  0.5987  &   1.521  &   52.38   & 139.78    &  0.15 \\[6pt]
+	MU2 &  0.0776895   &  0.4582  &   1.562  &  128.66   & 196.13    & 0.086 \\[6pt]
+	N2  &  0.0789992   &  1.2249  &   1.858  &   68.05   &  81.23    &  0.43 \\[6pt]
+	\textbf{M2}  &  0.0805114   &  8.5420  &   1.807  &  266.09   &  16.29    &    22 \\[6pt]
+	\textbf{L2}  &  0.0820236   &  4.8810  &   2.061  &  167.23   &  23.80    &   5.6 \\[6pt]
+	S2  &  0.0833333   &  0.3889  &   1.655  &  340.92   & 177.40    & 0.055 \\[6pt]
+	ETA2&  0.0850736   &  0.5792  &   1.560  &  279.70   & 189.97    &  0.14 \\[6pt]
+	MO3 &  0.1192421   &  0.0799  &   0.446  &  307.83   & 206.46    & 0.032 \\[6pt]
+	M3  &  0.1207671   &  0.1381  &   0.461  &  165.43   & 186.87    &  0.09 \\[6pt]
+	MK3 &  0.1222921   &  0.7202  &   0.615  &  337.28   &  49.92    &   1.4 \\[6pt]
+	SK3 &  0.1251141   &  0.2192  &   0.506  &  216.87   & 162.26    &  0.19 \\[6pt]
+	MN4 &  0.1595106   &  0.3405  &   0.525  &  264.86   & 129.69    &  0.42 \\[6pt]
+	M4  &  0.1610228   &  0.3422  &   0.585  &   99.87   & 111.72    &  0.34 \\[6pt]
+	SN4 &  0.1623326   &  0.6314  &   0.660  &    3.60   &  66.95    &  0.92 \\[6pt]
+	MS4 &  0.1638447   &  0.4022  &   0.649  &  118.90   & 109.91    &  0.38 \\[6pt]
+	S4  &  0.1666667   &  0.4725  &   0.714  &   98.73   &  77.60    &  0.44 \\[6pt]
+	2MK5&  0.2028035   &  0.3085  &   0.485  &   29.83   & 107.87    &   0.4 \\[6pt]
+	2SK5&  0.2084474   &  0.1099  &   0.353  &   98.10   & 203.65    & 0.097 \\[6pt]
+	2MN6&  0.2400221   &  0.2452  &   0.366  &   28.58   & 110.77    &  0.45 \\[6pt]
+	M6  &  0.2415342   &  0.2174  &   0.385  &  143.46   & 118.08    &  0.32 \\[6pt]
+	2MS6&  0.2443561   &  0.2107  &   0.376  &  298.89   & 126.36    &  0.31 \\[6pt]
+	2SM6&  0.2471781   &  0.2237  &   0.384  &  274.81   & 112.88    &  0.34 \\[6pt]
+	3MK7&  0.2833149   &  0.1567  &   0.372  &  159.35   & 160.94    &  0.18 \\[6pt]
+	M8   & 0.3220456   &  0.5051   &  0.621  &   77.11   &  75.68    &  0.66 \\[6pt]
+	
+	\bottomrule
+ \end{tabularx}
+  
+  
+ \label{tab:ttidest002}
+ \begin{tabularx}{\linewidth}{c|c|c|c|c|c|c}
+ 	\caption{Análise harmônica através do ttide nos dados de nível do ST002}\\
+ 	\toprule
+ 	\textbf{Constante Harmônica} & \textbf{Freq.} & \textbf{Amplitude}   & \textbf{Erro de Ampl.}  & \textbf{Fase}  & \textbf{Erro de Fase}  & \textbf{SNR} \\[6pt]
+ 	\midrule
+ 	\endhead
+ 	
+	MM   &  0.0015122  &   6.9318  &  16.625  &  186.26   & 169.44   &   0.17 \\[6pt]
+	MSF  &  0.0028219  &  12.3800  &  19.570  &   90.35   & 107.18   &    0.4 \\[6pt]
+	ALP1 &  0.0343966  &   0.1463  &   1.618  &  153.50   & 260.73   & 0.0082 \\[6pt]
+	2Q1  &  0.0357064  &   0.2801  &   2.003  &   14.79   & 236.80   &   0.02 \\[6pt]
+	Q1   &  0.0372185  &   0.5967  &   1.916  &  214.57   & 176.68   &  0.097 \\[6pt]
+	O1   &  0.0387307  &   3.1715  &   2.631  &   12.52   &  45.08   &    1.5 \\[6pt]
+	\textbf{NO1}  &  0.0402686  &  29.3379  &   2.927  &  168.10   &   5.09   &  1e+02 \\[6pt]
+	\textbf{K1}   &  0.0417807  &  22.9104  &   2.887  &  346.39   &   7.24   &     63 \\[6pt]
+	J1   &  0.0432929  &   0.5702  &   1.916  &  254.33   & 182.24   &  0.089 \\[6pt]
+	OO1  &  0.0448308  &   0.6395  &   1.710  &  148.30   & 176.72   &   0.14 \\[6pt]
+	UPS1 &  0.0463430  &   0.3847  &   1.971  &  119.85   & 232.39   &  0.038 \\[6pt]
+	EPS2 &  0.0761773  &   0.5439  &   1.350  &  100.47   & 162.52   &   0.16 \\[6pt]
+	MU2  &  0.0776895  &   0.3636  &   1.228  &  192.77   & 174.06   &  0.088 \\[6pt]
+	N2   &  0.0789992  &   1.0742  &   1.446  &  126.30   &  92.89   &   0.55 \\[6pt]
+	\textbf{M2}   &  0.0805114  &   8.4755  &   2.015  &  323.88   &  12.46   &     18 \\[6pt]
+	\textbf{L2}   &  0.0820236  &   4.7649  &   1.683  &  225.28   &  21.79   &      8 \\[6pt]
+	S2   &  0.0833333  &   0.4912  &   1.266  &   43.27   & 171.46   &   0.15 \\[6pt]
+	ETA2 &  0.0850736  &   0.5148  &   1.435  &  339.60   & 143.35   &   0.13 \\[6pt]
+	MO3  &  0.1192421  &   0.1116  &   0.502  &  109.91   & 222.07   &  0.049 \\[6pt]
+	M3   &  0.1207671  &   0.1970  &   0.524  &  262.96   & 151.76   &   0.14 \\[6pt]
+	MK3  &  0.1222921  &   0.6465  &   0.661  &   64.36   &  63.41   &   0.96 \\[6pt]
+	SK3  &  0.1251141  &   0.1463  &   0.453  &  260.80   & 174.83   &    0.1 \\[6pt]
+	MN4  &  0.1595106  &   0.2853  &   0.519  &  352.44   & 133.24   &    0.3 \\[6pt]
+	M4   &  0.1610228  &   0.4273  &   0.625  &  214.35   &  90.26   &   0.47 \\[6pt]
+	\textbf{SN4}  &  0.1623326  &   0.7508  &   0.667  &  127.58   &  50.87   &    1.3 \\[6pt]
+	MS4  &  0.1638447  &   0.2650  &   0.497  &  259.51   & 125.69   &   0.28 \\[6pt]
+	S4   &  0.1666667  &   0.3791  &   0.575  &  214.00   & 105.37   &   0.43 \\[6pt]
+	2MK5 &  0.2028035  &   0.2218  &   0.386  &  182.22   & 153.97   &   0.33 \\[6pt]
+	2SK5 &  0.2084474  &   0.1571  &   0.377  &  232.53   & 163.95   &   0.17 \\[6pt]
+	2MN6 &  0.2400221  &   0.1769  &   0.385  &  221.32   & 127.38   &   0.21 \\[6pt]
+	M6   &  0.2415342  &   0.1065  &   0.303  &  302.77   & 180.75   &   0.12 \\[6pt]
+	2MS6 &  0.2443561  &   0.2144  &   0.400  &  105.36   & 113.91   &   0.29 \\[6pt]
+	2SM6 &  0.2471781  &   0.1502  &   0.297  &   49.25   & 160.33   &   0.26 \\[6pt]
+	3MK7 &  0.2833149  &   0.0442  &   0.363  &   20.57   & 225.48   &  0.015 \\[6pt]
+	M8   & 0.3220456   &  0.4041   &  0.480   & 304.54    & 73.12    &  0.71 \\[6pt]
+ 	
+ 	\bottomrule
+ \end{tabularx}
+ 
+ \label{tab:ttidest003}
+ \begin{tabularx}{\linewidth}{c|c|c|c|c|c|c}
+ 	\caption{Frequências encontradas nos dados de nível do ST003}\\
+ 	\toprule
+ 	\textbf{Constante Harmônica} & \textbf{Freq.} & \textbf{Amplitude}   & \textbf{Erro de Ampl.}  & \textbf{Fase}  & \textbf{Erro de Fase}  & \textbf{SNR} \\[6pt]
+ 	\midrule
+ 	\endhead
+ 	
+	  MM   & 0.0015122  &   5.8662   & 18.698  &  188.64  &  185.19   &  0.098 \\[6pt]
+	  MSF  & 0.0028219  &  12.9912   & 20.074  &   90.91  &  105.89   &   0.42 \\[6pt]
+	  ALP1 & 0.0343966  &   0.5109   &  1.955  &  284.34  &  169.93   &  0.068 \\[6pt]
+	  2Q1  & 0.0357064  &   0.4315   &  1.926  &  258.64  &  182.49   &   0.05 \\[6pt]
+	  Q1   & 0.0372185  &   0.4091   &  1.770  &  234.34  &  212.42   &  0.053 \\[6pt]
+	  O1   & 0.0387307  &   3.3877   &  1.909  &   68.39  &   48.83   &    3.1 \\[6pt]
+	  \textbf{NO1}  & 0.0402686  &  29.5159   &  1.574  &  226.64  &    6.29   &3.5e+02 \\[6pt]
+	  \textbf{K1}   & 0.0417807  &  23.1393   &  1.468  &   45.68  &    8.62   &2.5e+02 \\[6pt]
+	  J1   & 0.0432929  &   0.4523   &  2.040  &  295.97  &  151.44   &  0.049 \\[6pt]
+	  OO1  & 0.0448308  &   0.7800   &  1.870  &  200.57  &  166.43   &   0.17 \\[6pt]
+	  UPS1 & 0.0463430  &   0.0612   &  1.887  &  156.22  &  253.72   & 0.0011 \\[6pt]
+	  EPS2 & 0.0761773  &   0.1837   &  1.306  &  227.69  &  241.16   &   0.02 \\[6pt]
+	  MU2  & 0.0776895  &   0.6042   &  1.454  &  288.04  &  146.81   &   0.17 \\[6pt]
+	  N2   & 0.0789992  &   1.1664   &  1.446  &  244.42  &   96.26   &   0.65 \\[6pt]
+	  \textbf{M2}   & 0.0805114  &   8.3938   &  2.408  &   82.01  &   14.03   &     12 \\[6pt]
+	  \textbf{L2}   & 0.0820236  &   4.7082   &  2.238  &  347.21  &   26.70   &    4.4 \\[6pt]
+	  S2   & 0.0833333  &   0.7478   &  1.533  &  130.74  &  149.65   &   0.24 \\[6pt]
+	  ETA2 & 0.0850736  &   0.2381   &  1.340  &   72.32  &  210.23   &  0.032 \\[6pt]
+	  MO3  & 0.1192421  &   0.0561   &  0.340  &  290.34  &  196.67   &  0.027 \\[6pt]
+	  M3   & 0.1207671  &   0.2774   &  0.409  &  354.52  &  114.68   &   0.46 \\[6pt]
+	  MK3  & 0.1222921  &   0.3946   &  0.445  &  224.29  &   82.43   &   0.79 \\[6pt]
+	  SK3  & 0.1251141  &   0.2413   &  0.339  &  155.39  &  108.94   &   0.51 \\[6pt]
+	  MN4  & 0.1595106  &   0.1836   &  0.375  &  216.80  &  152.18   &   0.24 \\[6pt]
+	  M4   & 0.1610228  &   0.4639   &  0.490  &   99.42  &   66.95   &    0.9 \\[6pt]
+	  SN4  & 0.1623326  &   0.5871   &  0.493  &    9.15  &   53.73   &    1.4 \\[6pt]
+	  MS4  & 0.1638447  &   0.3327   &  0.487  &  155.74  &   87.94   &   0.47 \\[6pt]
+	  S4   & 0.1666667  &   0.2397   &  0.391  &   81.49  &  128.63   &   0.38 \\[6pt]
+	  2MK5 & 0.2028035  &   0.1746   &  0.341  &   95.52  &  144.58   &   0.26 \\[6pt]
+	  2SK5 & 0.2084474  &   0.1946   &  0.325  &  242.25  &  112.27   &   0.36 \\[6pt]
+	  2MN6 & 0.2400221  &   0.2700   &  0.385  &   48.61  &  108.88   &   0.49 \\[6pt]
+	  M6   & 0.2415342  &   0.1673   &  0.377  &  216.50  &  148.80   &    0.2 \\[6pt]
+	  2MS6 & 0.2443561  &   0.1035   &  0.295  &   76.30  &  175.62   &   0.12 \\[6pt]
+	  2SM6 & 0.2471781  &   0.1576   &  0.338  &   63.63  &  135.04   &   0.22 \\[6pt]
+	  3MK7 & 0.2833149  &   0.0236   &  0.270  &  278.24  &  240.63   & 0.0076 \\[6pt]
+	  M8   & 0.3220456  &   0.2933   &  0.272  &   44.01  &   57.10   &    1.2 \\[6pt]
+ 	
+ 	\bottomrule
+ \end{tabularx}
+
+\begin{landscape}
+	
+	\begin{figure}[!htb]
+		\includegraphics[width=1.6\textwidth]{figuras/Nivel_Previsao_Geral.png}
+		\centering
+		\caption{Separação dos dados de nível}\label{fig:previsao}
+	\end{figure}
+	
+	\begin{figure}[!htb]
+		\includegraphics[width=1.6\textwidth]{figuras/Nivel_Previsao_Geral_Zoom.png}
+		\centering
+		\caption{Separação dos dados de nível - verificação de atraso da maré }\label{fig:previsaozoom}
+	\end{figure}
+\end{landscape}
+
+
+\subsection{Temperatura}
+
+
+
+
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+\begin{landscape}
+\centering	
+
+\chapter{CRONOGRAMA}
+
+\begin{table}[!htpb]
+\caption{Cronograma das atividades previstas}
+\label{t_cronograma}
+\centering
+\begin{small} 
+
+\setlength{\tabcolsep}{3pt} 
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}\hline
+ & \multicolumn{5}{c|}{2015} & \multicolumn{12}{c|}{2016}  & \multicolumn{3}{c|}{2017}\\ %\cline{2-25}
+\raisebox{1.5ex}{Atividade}& ago & set & out & nov & dez & jan & fev & mar & abr & mai & jun & jul & ago & set & out & nov & dez & jan & fev & mar\\ \hline
+
+Qualificação - Etapa 1 & X & & & & & & & & & & & & & & & & & & &\\ \hline
+Correções de acordo com a banca & & X & X & & & & & & & & & & & & & & &  & &\\ \hline
+Revisão Bibliográfica & X & X & X & X & X & X & X & X & X & X & X & X & X & X & X & X & X &  & &\\ \hline
+\vtop{\hbox{\strut Desenvolvimento de}\hbox{\strut Grades Numéricas e Batimetrias}} & & X & X & X& X& & & & & & & & & & & & &  & &\\ \hline
+Testes de sensibilidade do modelo & & & X & X & X& X& & & & & & & & & & & & & &\\ \hline
+Análise dos dados de ADCP & & X & X & X & X & X & X & & & & & & & & & & &  & &\\ \hline
+\vtop{\hbox{\strut Obtenção dos dados de \textit{input}}\hbox{\strut (Maré, Vento Ondas)}} & & X & X & X& X& & & & & & & & & & & & &  & &\\ \hline
+\emph{Setups} de calibração & &X & X& X &X &X &X & & & & & & & & & & &  & &\\ \hline
+Escrita da dissertação com primeiros resultados & & & & & & & &X &X & & & & & & & & &  & &\\ \hline
+Qualificação - Etapa 2 & & & & & & & & & &X & & & & & & & &  & &\\ \hline
+\vtop{\hbox{\strut Modificação do projeto}\hbox{\strut de acordo com sugestões da banca}}  & & & & & & & & & & & X& X& & & & & &   & &\\ \hline
+\emph{Setups} finais & & & & & & & & & & & & X& X& X& X& & &  & &\\ \hline
+\vtop{\hbox{\strut Cálculo do Balanço }\hbox{\strut de Momento e Vorticidade}}  & & & & & & & & & & X & X & X& X& X& X& & &  & &\\ \hline
+Análise e avaliação dos resultados & & & & & & & & & & & &X &X &X & X & & & & &\\ \hline
+\vtop{\hbox{\strut Desenvolvimento de rotinas}\hbox{\strut de pós-processamento}}  & & &X & X& X&X & X&X & X& X& X&X & X& X& X& X& X&  & &\\ \hline
+Escrita da dissertação & & & & & & & & & & & & & &X &X &X & X&  & &\\ \hline
+Escrita do Artigo & & & & & & & & & & & & & &X &X &X & X&  & &\\ \hline
+Leitura pelo orientador e correções & & & & & & & & & & & & & & & & & & X &X &\\ \hline
+Defesa & & & & & & & & & & & & & & & & & &  & &X\\ \hline
+
+\end{tabular} 
+\end{small}
+\end{table} 
+\end{landscape}
+
+% \chapter{RESULTADOS ESPERADOS}
+%
+% Espera-se, ao final do trabalho, obter os seguintes resultados:
+%
+% \begin{itemize}
+%  \item Um modelo regional e local, hidrodinâmico e de ondas, calibrado e operante para a região da % Enseada do Itapocorói;
+%  \item Mapas da circulação residual em diferentes períodos de tempo (mensal, sazonal, anual, etc);
+%  \item Definição do parâmetro ambiental que mais influencia a dinâmica de longo período da região;
+%  \item Análises estatísticas dos dados dos ADCPs.
+% \end{itemize}
+
+
+% 
+% \chapter{CONCLUSÃO}
+% 
+% As conclusões devem responder às questões da pesquisa, em relação aos objetivos e hipóteses. Devem ser breves podendo apresentar recomendações e sugestões para trabalhos futuros.
+
+\bibliographystyle{ufscThesis/ufsc-alf}
+\bibliography{bibliografia}
+
+%--------------------------------------------------------
+% Elementos pós-textuais
+%\apendice
+%\chapter{Exemplificando um Ap\^endice}
+%Texto do Apêndice aqui. 
+
+%\anexo
+%\chapter{Exemplificando um Anexo}
+%Texto do anexo aqui.
+
+\end{document}
