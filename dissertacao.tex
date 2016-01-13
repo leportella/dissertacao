@@ -19,7 +19,7 @@
 \usepackage{booktabs}
 \usepackage{tabularx}
 \usepackage{ltablex}
-
+%\usepackage{hyperref}
 %----------------------------------------------------------------------
 % Comandos criados pelo usuário
 \newcommand{\afazer}[1]{{\color{red}{#1}}} % Para destacar uma parte a ser trabalhada
@@ -137,7 +137,7 @@ São objetivos específicos deste trabalho:
 \chapter{REVISÃO BIBLIOGRÁFICA}
 
 \section{Maré e Circulação Submareal}
-Sentado numa cadeira de praia, um turista pode perceber facilmente que existe uma dinâmica na praia que o cerca. As ondas quebram incessantemente, as vezes maiores, as vezes menores, o vento  varia de intensidade e direção e a faixa de areia pode se apresentar maior ou menor conforme o horário em que ela é observada. Apesar de facilmente observados, os processos costeiros que regem as dinâmicas de zonas costeiras são bastante complexo e interligados. 
+Sentado numa cadeira de praia, um turista pode perceber facilmente que existe uma dinâmica na praia que o cerca. As ondas quebram incessantemente, as vezes maiores, as vezes menores, o vento  varia de intensidade e direção e a faixa de areia pode se apresentar maior ou menor conforme o horário em que ela é observada. Apesar de facilmente observados, os processos costeiros que regem as dinâmicas de zonas costeiras são bastante complexos e interligados. 
 
 Águas costeiras tem uma dinâmica muito diferente daquela encontrada em regiões oceânicas. Conforme a onda de maré passa a propagar para águas costeiras ela tende a interagir e sofrer diversos processos: reflecção total ou parcial (uma vez que a linha de costa passa a agir como uma barreira), efeitos inerciais, efeitos de continuidade, perda de energia por fricção, entre outros . Dessa forma, uma vez que se encontram em águas rasas, a onda de maré se torna progressivamente mais não-linear e dissipativa. Além disso, esses processos não-lineares podem transferir energia para constituintes harmônicas de águas rasas totalmente novas(\emph{shallow-water tidal constituents}). Portanto, em águas rasas, uma variedade de processos compõem um complexo cenário a ser estudado e, por mais que os fenômenos que criem as marés sejam muito bem conhecidos e compreendidos, os movimentos resultantes causados requerem um estudo mais aprofundado \cite{Schureman,massel,Parker}. 
 
@@ -152,7 +152,11 @@ fundo. Entretanto, ao adentrar águas ainda mais rasas, como as plataformas conti
 nas determinações das escalas espaciais. Uma consequência da redução nas escalas laterais é a
 criação de regiões de gradiente de velocidade. Os termos inerciais passam a ganhar importância no balanço de momento e contribuem para a geração de correntes residuais e vorticidade \cite{leblond}.
 
-A circulação residual, especialmente a da maré, está relacionada a processos de longo período, com frequências baixas e velocidades de ordem muito inferior àquelas das correntes típicas e, assim, pode acabar sendo negligenciada por conta dessas características. Sua determinação pode contribuir para o manejo costeiro (como tempo de permanência de poluentes) ou mesmo para a proteção costeira, dado que ela também pode ter papel significante para transporte de partículas sedimentares.
+Os movimentos que ocorrem em períodos de marés astronômicas semi-diurnas e diurnas, de 12:25 e 24:50 horas, respectivamente, são denominados de movimentos com frequências mareais. Os movimentos que ocorrem em períodos menores que os da maré são denominados de oscilações de movimentos de frequência supramareal (FSupM), onde se encontram as ondas de gravidade, de tempestade, seiches e maremotos. Os movimentos de períodos maiores que os da maré são denominados de movimentos com frequência submareal (FSubM), como a descarga fluvial, a inclinação da superfície da água ao longo do estuário, ondas de marés meteorológicas de baixa frequência e ondas de plataforma \cite{truccoloMSc}. 
+
+A circulação residual, especialmente a da maré, está relacionada a processos de longo período, com frequências baixas e velocidades uma ou duas ordens menores que as próprias correntes de maré e, assim, pode acabar sendo negligenciada por conta dessas características. Entretanto, estas são bastante relevantes uma vez que devido à sua persistência, elas podem dominar o transporte e a distribuição geral de propriedades da água como temperatura e salinidade. Sua determinação pode contribuir para o manejo costeiro (como tempo de permanência de poluentes) ou mesmo para a proteção costeira, dado que ela também pode ter papel significante para transporte de partículas sedimentares \cite{truccoloMSc}. 
+
+A circulação residual pode então estar relacionada a processos de frequência supramareal, mas está intrinsecamente ligado a processos em frequência submareal. \citeonline{truccoloetal2006} verificaram que na região externa de São Francisco do Sul, na região exposta, apenas 74\% da variação de nível poderia ser explicada por marés astronômicas e que 24\% da variação poderia ser explicada pelas oscilações em frequência submareal. Além disso, dado que a região sul do Brasil se encontra em regime de micromaré as oscilações do nível do mar em frequência submareal não podem ser completamente desconsideradas, uma vez que sobre-elevações de até 1 m já foram registradas na região de Itajaí \cite{truccoloMSc}.
 
 Descarga de rios são as fontes mais óbvias de geração de velocidade residual, uma vez que seu fluxo é unidirecional. Na ausência de descargas de rio, o residual da descarga da maré deveria ser zero. Entretanto, o que se observa na realidade é que o residual da maré muitas vezes não é nulo, mesmo em regiões onde não há a presença de rios. Diversos fatores ambientais podem causar um residual de maré, como a inércia, citado previamente, obras costeiras, ou mesmo características batimétricas. Além disso, outros parâmetros ambientais que não a maré também podem gerar correntes residuais como vento, densidade (principalmente pela salinidade), ondulações e eventos de tempestade.
 
@@ -671,41 +675,7 @@ Na figura \ref{fig:previsao} são apresentados os dados medidos, uma vez retirada
 	\midrule
 	\endhead
 	
-	MM  &  0.0015122   &  4.8102  &  18.119  &  209.42   & 187.95    &  0.07 \\[6pt]
-	MSF &  0.0028219   & 12.1343  &  22.995  &   80.37   & 114.65    &  0.28 \\[6pt]
-	ALP1&  0.0343966   &  0.1778  &   1.878  &  127.90   & 229.17    & 0.009 \\[6pt]
-	2Q1 &  0.0357064   &  0.3002  &   2.093  &   13.02   & 222.86    & 0.021 \\[6pt]
-	Q1  &  0.0372185   &  0.4819  &   1.847  &  193.29   & 207.16    & 0.068 \\[6pt]
-	O1  &  0.0387307   &  3.1249  &   2.766  &  342.72   &  54.95    &   1.3 \\[6pt]
-	\textbf{NO1} &  0.0402686   & 29.6335  &   3.248  &  139.22   &   5.66    &    83 \\[6pt]
-	\textbf{K1}  &  0.0417807   & 22.9433  &   2.886  &  316.59   &   7.47    &    63 \\[6pt]
-	J1  &  0.0432929   &  0.4162  &   1.740  &  235.05   & 193.96    & 0.057 \\[6pt]
-	OO1 &  0.0448308   &  0.5803  &   1.779  &  122.69   & 170.48    &  0.11 \\[6pt]
-	UPS1&  0.0463430   &  0.3682  &   2.106  &  114.59   & 193.10    & 0.031 \\[6pt]
-	EPS2&  0.0761773   &  0.5987  &   1.521  &   52.38   & 139.78    &  0.15 \\[6pt]
-	MU2 &  0.0776895   &  0.4582  &   1.562  &  128.66   & 196.13    & 0.086 \\[6pt]
-	N2  &  0.0789992   &  1.2249  &   1.858  &   68.05   &  81.23    &  0.43 \\[6pt]
-	\textbf{M2}  &  0.0805114   &  8.5420  &   1.807  &  266.09   &  16.29    &    22 \\[6pt]
-	\textbf{L2}  &  0.0820236   &  4.8810  &   2.061  &  167.23   &  23.80    &   5.6 \\[6pt]
-	S2  &  0.0833333   &  0.3889  &   1.655  &  340.92   & 177.40    & 0.055 \\[6pt]
-	ETA2&  0.0850736   &  0.5792  &   1.560  &  279.70   & 189.97    &  0.14 \\[6pt]
-	MO3 &  0.1192421   &  0.0799  &   0.446  &  307.83   & 206.46    & 0.032 \\[6pt]
-	M3  &  0.1207671   &  0.1381  &   0.461  &  165.43   & 186.87    &  0.09 \\[6pt]
-	MK3 &  0.1222921   &  0.7202  &   0.615  &  337.28   &  49.92    &   1.4 \\[6pt]
-	SK3 &  0.1251141   &  0.2192  &   0.506  &  216.87   & 162.26    &  0.19 \\[6pt]
-	MN4 &  0.1595106   &  0.3405  &   0.525  &  264.86   & 129.69    &  0.42 \\[6pt]
-	M4  &  0.1610228   &  0.3422  &   0.585  &   99.87   & 111.72    &  0.34 \\[6pt]
-	SN4 &  0.1623326   &  0.6314  &   0.660  &    3.60   &  66.95    &  0.92 \\[6pt]
-	MS4 &  0.1638447   &  0.4022  &   0.649  &  118.90   & 109.91    &  0.38 \\[6pt]
-	S4  &  0.1666667   &  0.4725  &   0.714  &   98.73   &  77.60    &  0.44 \\[6pt]
-	2MK5&  0.2028035   &  0.3085  &   0.485  &   29.83   & 107.87    &   0.4 \\[6pt]
-	2SK5&  0.2084474   &  0.1099  &   0.353  &   98.10   & 203.65    & 0.097 \\[6pt]
-	2MN6&  0.2400221   &  0.2452  &   0.366  &   28.58   & 110.77    &  0.45 \\[6pt]
-	M6  &  0.2415342   &  0.2174  &   0.385  &  143.46   & 118.08    &  0.32 \\[6pt]
-	2MS6&  0.2443561   &  0.2107  &   0.376  &  298.89   & 126.36    &  0.31 \\[6pt]
-	2SM6&  0.2471781   &  0.2237  &   0.384  &  274.81   & 112.88    &  0.34 \\[6pt]
-	3MK7&  0.2833149   &  0.1567  &   0.372  &  159.35   & 160.94    &  0.18 \\[6pt]
-	M8   & 0.3220456   &  0.5051   &  0.621  &   77.11   &  75.68    &  0.66 \\[6pt]
+AHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
 	
 	\bottomrule
  \end{tabularx}
@@ -719,41 +689,7 @@ Na figura \ref{fig:previsao} são apresentados os dados medidos, uma vez retirada
  	\midrule
  	\endhead
  	
-	MM   &  0.0015122  &   6.9318  &  16.625  &  186.26   & 169.44   &   0.17 \\[6pt]
-	MSF  &  0.0028219  &  12.3800  &  19.570  &   90.35   & 107.18   &    0.4 \\[6pt]
-	ALP1 &  0.0343966  &   0.1463  &   1.618  &  153.50   & 260.73   & 0.0082 \\[6pt]
-	2Q1  &  0.0357064  &   0.2801  &   2.003  &   14.79   & 236.80   &   0.02 \\[6pt]
-	Q1   &  0.0372185  &   0.5967  &   1.916  &  214.57   & 176.68   &  0.097 \\[6pt]
-	O1   &  0.0387307  &   3.1715  &   2.631  &   12.52   &  45.08   &    1.5 \\[6pt]
-	\textbf{NO1}  &  0.0402686  &  29.3379  &   2.927  &  168.10   &   5.09   &  1e+02 \\[6pt]
-	\textbf{K1}   &  0.0417807  &  22.9104  &   2.887  &  346.39   &   7.24   &     63 \\[6pt]
-	J1   &  0.0432929  &   0.5702  &   1.916  &  254.33   & 182.24   &  0.089 \\[6pt]
-	OO1  &  0.0448308  &   0.6395  &   1.710  &  148.30   & 176.72   &   0.14 \\[6pt]
-	UPS1 &  0.0463430  &   0.3847  &   1.971  &  119.85   & 232.39   &  0.038 \\[6pt]
-	EPS2 &  0.0761773  &   0.5439  &   1.350  &  100.47   & 162.52   &   0.16 \\[6pt]
-	MU2  &  0.0776895  &   0.3636  &   1.228  &  192.77   & 174.06   &  0.088 \\[6pt]
-	N2   &  0.0789992  &   1.0742  &   1.446  &  126.30   &  92.89   &   0.55 \\[6pt]
-	\textbf{M2}   &  0.0805114  &   8.4755  &   2.015  &  323.88   &  12.46   &     18 \\[6pt]
-	\textbf{L2}   &  0.0820236  &   4.7649  &   1.683  &  225.28   &  21.79   &      8 \\[6pt]
-	S2   &  0.0833333  &   0.4912  &   1.266  &   43.27   & 171.46   &   0.15 \\[6pt]
-	ETA2 &  0.0850736  &   0.5148  &   1.435  &  339.60   & 143.35   &   0.13 \\[6pt]
-	MO3  &  0.1192421  &   0.1116  &   0.502  &  109.91   & 222.07   &  0.049 \\[6pt]
-	M3   &  0.1207671  &   0.1970  &   0.524  &  262.96   & 151.76   &   0.14 \\[6pt]
-	MK3  &  0.1222921  &   0.6465  &   0.661  &   64.36   &  63.41   &   0.96 \\[6pt]
-	SK3  &  0.1251141  &   0.1463  &   0.453  &  260.80   & 174.83   &    0.1 \\[6pt]
-	MN4  &  0.1595106  &   0.2853  &   0.519  &  352.44   & 133.24   &    0.3 \\[6pt]
-	M4   &  0.1610228  &   0.4273  &   0.625  &  214.35   &  90.26   &   0.47 \\[6pt]
-	\textbf{SN4}  &  0.1623326  &   0.7508  &   0.667  &  127.58   &  50.87   &    1.3 \\[6pt]
-	MS4  &  0.1638447  &   0.2650  &   0.497  &  259.51   & 125.69   &   0.28 \\[6pt]
-	S4   &  0.1666667  &   0.3791  &   0.575  &  214.00   & 105.37   &   0.43 \\[6pt]
-	2MK5 &  0.2028035  &   0.2218  &   0.386  &  182.22   & 153.97   &   0.33 \\[6pt]
-	2SK5 &  0.2084474  &   0.1571  &   0.377  &  232.53   & 163.95   &   0.17 \\[6pt]
-	2MN6 &  0.2400221  &   0.1769  &   0.385  &  221.32   & 127.38   &   0.21 \\[6pt]
-	M6   &  0.2415342  &   0.1065  &   0.303  &  302.77   & 180.75   &   0.12 \\[6pt]
-	2MS6 &  0.2443561  &   0.2144  &   0.400  &  105.36   & 113.91   &   0.29 \\[6pt]
-	2SM6 &  0.2471781  &   0.1502  &   0.297  &   49.25   & 160.33   &   0.26 \\[6pt]
-	3MK7 &  0.2833149  &   0.0442  &   0.363  &   20.57   & 225.48   &  0.015 \\[6pt]
-	M8   & 0.3220456   &  0.4041   &  0.480   & 304.54    & 73.12    &  0.71 \\[6pt]
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
  	
  	\bottomrule
  \end{tabularx}
@@ -766,41 +702,7 @@ Na figura \ref{fig:previsao} são apresentados os dados medidos, uma vez retirada
  	\midrule
  	\endhead
  	
-	  MM   & 0.0015122  &   5.8662   & 18.698  &  188.64  &  185.19   &  0.098 \\[6pt]
-	  MSF  & 0.0028219  &  12.9912   & 20.074  &   90.91  &  105.89   &   0.42 \\[6pt]
-	  ALP1 & 0.0343966  &   0.5109   &  1.955  &  284.34  &  169.93   &  0.068 \\[6pt]
-	  2Q1  & 0.0357064  &   0.4315   &  1.926  &  258.64  &  182.49   &   0.05 \\[6pt]
-	  Q1   & 0.0372185  &   0.4091   &  1.770  &  234.34  &  212.42   &  0.053 \\[6pt]
-	  O1   & 0.0387307  &   3.3877   &  1.909  &   68.39  &   48.83   &    3.1 \\[6pt]
-	  \textbf{NO1}  & 0.0402686  &  29.5159   &  1.574  &  226.64  &    6.29   &3.5e+02 \\[6pt]
-	  \textbf{K1}   & 0.0417807  &  23.1393   &  1.468  &   45.68  &    8.62   &2.5e+02 \\[6pt]
-	  J1   & 0.0432929  &   0.4523   &  2.040  &  295.97  &  151.44   &  0.049 \\[6pt]
-	  OO1  & 0.0448308  &   0.7800   &  1.870  &  200.57  &  166.43   &   0.17 \\[6pt]
-	  UPS1 & 0.0463430  &   0.0612   &  1.887  &  156.22  &  253.72   & 0.0011 \\[6pt]
-	  EPS2 & 0.0761773  &   0.1837   &  1.306  &  227.69  &  241.16   &   0.02 \\[6pt]
-	  MU2  & 0.0776895  &   0.6042   &  1.454  &  288.04  &  146.81   &   0.17 \\[6pt]
-	  N2   & 0.0789992  &   1.1664   &  1.446  &  244.42  &   96.26   &   0.65 \\[6pt]
-	  \textbf{M2}   & 0.0805114  &   8.3938   &  2.408  &   82.01  &   14.03   &     12 \\[6pt]
-	  \textbf{L2}   & 0.0820236  &   4.7082   &  2.238  &  347.21  &   26.70   &    4.4 \\[6pt]
-	  S2   & 0.0833333  &   0.7478   &  1.533  &  130.74  &  149.65   &   0.24 \\[6pt]
-	  ETA2 & 0.0850736  &   0.2381   &  1.340  &   72.32  &  210.23   &  0.032 \\[6pt]
-	  MO3  & 0.1192421  &   0.0561   &  0.340  &  290.34  &  196.67   &  0.027 \\[6pt]
-	  M3   & 0.1207671  &   0.2774   &  0.409  &  354.52  &  114.68   &   0.46 \\[6pt]
-	  MK3  & 0.1222921  &   0.3946   &  0.445  &  224.29  &   82.43   &   0.79 \\[6pt]
-	  SK3  & 0.1251141  &   0.2413   &  0.339  &  155.39  &  108.94   &   0.51 \\[6pt]
-	  MN4  & 0.1595106  &   0.1836   &  0.375  &  216.80  &  152.18   &   0.24 \\[6pt]
-	  M4   & 0.1610228  &   0.4639   &  0.490  &   99.42  &   66.95   &    0.9 \\[6pt]
-	  SN4  & 0.1623326  &   0.5871   &  0.493  &    9.15  &   53.73   &    1.4 \\[6pt]
-	  MS4  & 0.1638447  &   0.3327   &  0.487  &  155.74  &   87.94   &   0.47 \\[6pt]
-	  S4   & 0.1666667  &   0.2397   &  0.391  &   81.49  &  128.63   &   0.38 \\[6pt]
-	  2MK5 & 0.2028035  &   0.1746   &  0.341  &   95.52  &  144.58   &   0.26 \\[6pt]
-	  2SK5 & 0.2084474  &   0.1946   &  0.325  &  242.25  &  112.27   &   0.36 \\[6pt]
-	  2MN6 & 0.2400221  &   0.2700   &  0.385  &   48.61  &  108.88   &   0.49 \\[6pt]
-	  M6   & 0.2415342  &   0.1673   &  0.377  &  216.50  &  148.80   &    0.2 \\[6pt]
-	  2MS6 & 0.2443561  &   0.1035   &  0.295  &   76.30  &  175.62   &   0.12 \\[6pt]
-	  2SM6 & 0.2471781  &   0.1576   &  0.338  &   63.63  &  135.04   &   0.22 \\[6pt]
-	  3MK7 & 0.2833149  &   0.0236   &  0.270  &  278.24  &  240.63   & 0.0076 \\[6pt]
-	  M8   & 0.3220456  &   0.2933   &  0.272  &   44.01  &   57.10   &    1.2 \\[6pt]
+	CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
  	
  	\bottomrule
  \end{tabularx}
