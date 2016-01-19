@@ -626,9 +626,9 @@ Inicialmente foram avaliados os dados de nível (pressão) dos 3 ADCPs de forma a 
 
 A tabela \ref{tab:dadosnivel} contém as principais características dos dados adquiridos. Apesar de se encontrarem em locais bastante distintos, a variação entre o nível máximo e mínimo encontrado foi de cerca de 2 m. 
 
-O módulo ttide de previsão de maré foi aplicado nos dados medidos para avaliar a componente astronômica e as principais constantes harmônicas. As tabelas \ref{tab:ttidest001} a \ref{tab:ttidest003} apresentam os resultados em termos de constantes harmônicas. Em negrito estão destacadas aquelas constantes que apresentam maior relação de sinal-ruído (\emph{Signal-to-Noise Ration} - SNR). Simulações considerando um sinal fixo com diferentes níveis de ruído conseguiram indicar para sinais como os da maré é ideal que o SNR seja maior que 10, mas que valores entre 2 e 3 são aceitáveis \cite{ttidematlab}. As constantes NO1 e K1 aparecem como as constantes com maiores valores de amplitude (29 e 23 cm, respectivamente) com os maiores valores de SNR. As constantes M2 e L2 aparecem em menor amplitude (8 e 5 cm, respectivamente) com a M2 apresentando maiores valores de SNR (acima de 10) e a L2 com valores de SNR abaixo de 8.
+O módulo ttide de previsão de maré foi aplicado nos dados medidos para avaliar a componente astronômica e as principais constantes harmônicas. As tabelas \ref{tab:ttidest001} a \ref{tab:ttidest003} apresentam os resultados em termos de constantes harmônicas. Em negrito estão destacadas aquelas constantes que apresentam maior relação de sinal-ruído (\emph{Signal-to-Noise Ration} - SNR). Simulações considerando um sinal fixo com diferentes níveis de ruído conseguiram indicar para sinais como os da maré é ideal que o SNR seja maior que 10, mas que valores entre 2 e 3 são aceitáveis \cite{ttidematlab}. 
 
-Dessa forma, é possível concluir que as componentes diurnas (período de 25 horas) são as mais energéticas dentro da Enseada do Itapocorói e as componentes semi-diurnas (período de 12,5 horas) se apresentam secundárias, com menor amplitude.
+
 
 Na figura \ref{fig:previsao} são apresentados os dados medidos, uma vez retiradas as médias, os dados previstos pelo ttide para o período analisado e o ruído resultante da subtração de dois dados anteriores. Verifica-se que aparentemente existe uma defasagem entre os dados de maré nos pontos de coleta internos  (ST001 e ST002) do ponto externo (ST003). Ao se observar as cavas e cristas de forma mais detalhada (figura \ref{fig:previsaozoom}) foi constatado que essa defasagem é da ordem de 3 horas. 
 
@@ -645,6 +645,7 @@ Na figura \ref{fig:previsao} são apresentados os dados medidos, uma vez retirada
 	\end{tabular}
 \end{table}
 
+\newpage
 \begin{landscape}
 	\centering	
  \begin{figure}[!htb]
@@ -664,51 +665,7 @@ Na figura \ref{fig:previsao} são apresentados os dados medidos, uma vez retirada
    	\centering
    	\caption{Variação de Nível no ponto ST003}\label{fig:nivelst003}
    \end{figure}
-\end{landscape}
 
-
-\label{tab:ttidest001}
-\begin{tabularx}{\linewidth}{c|c|c|c|c|c|c}
-	\caption{Frequências encontradas nos dados de nível do ST001}\\
-	\toprule
-	\textbf{Constante Harmônica} & \textbf{Freq.} & \textbf{Amplitude}   & \textbf{Erro de Ampl.}  & \textbf{Fase}  & \textbf{Erro de Fase}  & \textbf{SNR} \\[6pt]
-	\midrule
-	\endhead
-	
-AHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
-	
-	\bottomrule
- \end{tabularx}
-  
-  
- \label{tab:ttidest002}
- \begin{tabularx}{\linewidth}{c|c|c|c|c|c|c}
- 	\caption{Análise harmônica através do ttide nos dados de nível do ST002}\\
- 	\toprule
- 	\textbf{Constante Harmônica} & \textbf{Freq.} & \textbf{Amplitude}   & \textbf{Erro de Ampl.}  & \textbf{Fase}  & \textbf{Erro de Fase}  & \textbf{SNR} \\[6pt]
- 	\midrule
- 	\endhead
- 	
-BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
- 	
- 	\bottomrule
- \end{tabularx}
- 
- \label{tab:ttidest003}
- \begin{tabularx}{\linewidth}{c|c|c|c|c|c|c}
- 	\caption{Frequências encontradas nos dados de nível do ST003}\\
- 	\toprule
- 	\textbf{Constante Harmônica} & \textbf{Freq.} & \textbf{Amplitude}   & \textbf{Erro de Ampl.}  & \textbf{Fase}  & \textbf{Erro de Fase}  & \textbf{SNR} \\[6pt]
- 	\midrule
- 	\endhead
- 	
-	CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
- 	
- 	\bottomrule
- \end{tabularx}
-
-\begin{landscape}
-	
 	\begin{figure}[!htb]
 		\includegraphics[width=1.6\textwidth]{figuras/Nivel_Previsao_Geral.png}
 		\centering
@@ -716,16 +673,130 @@ BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
 	\end{figure}
 	
 	\begin{figure}[!htb]
-		\includegraphics[width=1.6\textwidth]{figuras/Nivel_Previsao_Geral_Zoom.png}
+		\includegraphics[width=1.6\textwidth]{figuras/Espectro_FFT_Picarras_Logx.png}
 		\centering
-		\caption{Separação dos dados de nível - verificação de atraso da maré }\label{fig:previsaozoom}
+		\caption{Espectro de energia - Piçarras}\label{fig:fftpicarras}
 	\end{figure}
+
+	\begin{figure}[!htb]
+		\includegraphics[width=1.6\textwidth]{figuras/Nivel_Penha.png}
+		\centering
+		\caption{Dados de nível na Praia de Penha}\label{fig:nivelpenha}
+	\end{figure}
+	
+	\begin{figure}[!htb]
+		\includegraphics[width=1.6\textwidth]{figuras/Espectro_FFT_Penha_Logx.png}
+		\centering
+		\caption{Espectro de energia - Penha}\label{fig:fftpenha}
+	\end{figure}
+	
+
 \end{landscape}
 
+\newpage
+\begin{landscape}
+	\label{tab:ttidest001}
+	\begin{tabularx}{\linewidth}{c|c|c|c|c|c|c} 
+		\caption{Frequências encontradas nos dados de nível do ST001}\\
+		\toprule
+		\textbf{Constante Harmônica} & \textbf{Freq.} & \textbf{Amplitude}   & \textbf{Erro de Ampl.}  & \textbf{Fase}  & \textbf{Erro de Fase}  & \textbf{SNR} \\[6pt]
+		\midrule
+		\endhead
+		
+		ALP1 & 0.0343966 &  1.5419 & 0.452 & 299.51 & 16.54 &      12 \\[6pt]
+		2Q1  & 0.0357064 &  1.6449 & 0.400 &  94.02 & 14.52 &      17 \\[6pt]
+		Q1   & 0.0372185 &  2.7398 & 0.429 & 325.62 &  9.94 &      41 \\[6pt]
+		O1   & 0.0387307 & 10.7731 & 0.428 & 293.18 &  2.08 &     630 \\[6pt]
+		NO1  & 0.0402686 &  1.5740 & 0.392 &  80.78 & 15.24 &      16 \\[6pt]
+		K1   & 0.0417807 &  4.7897 & 0.394 &  17.28 &  5.59 &     150 \\[6pt]
+		UPS1 & 0.0463430 &  0.9009 & 0.390 & 337.22 & 26.55 &     5.3 \\[6pt]
+		MU2  & 0.0776895 &  2.8297 & 0.747 & 339.19 & 15.01 &      14 \\[6pt]
+		N2   & 0.0789992 &  5.1950 & 0.728 & 287.81 &  7.60 &      51 \\[6pt]
+		M2   & 0.0805114 & 28.3225 & 0.778 & 139.90 &  1.38 &    1300 \\[6pt]
+		S2   & 0.0833333 & 23.9287 & 0.756 & 316.36 &  1.70 &    1000 \\[6pt]
+		MO3  & 0.1192421 &  2.3921 & 0.792 & 300.25 & 19.55 &     9.1 \\[6pt]
+		M3   & 0.1207671 &  4.8001 & 0.727 & 294.10 &  9.16 &      44 \\[6pt]
+		SK3  & 0.1251141 &  1.9392 & 0.815 &  81.87 & 27.06 &     5.7 \\[6pt]
+		MN4  & 0.1595106 &  3.8750 & 1.030 & 285.08 & 13.99 &      14 \\[6pt]
+		M4   & 0.1610228 &  8.8702 & 0.810 & 266.71 &  6.14 &     120 \\[6pt]
+		MS4  & 0.1638447 &  5.0315 & 1.057 & 169.33 & 11.57 &      23 \\[6pt]
+		2MS6 & 0.2443561 &  0.7546 & 0.459 & 340.08 & 40.16 &     2.7 \\[6pt]
+		
+		\bottomrule
+	\end{tabularx}
+	
+	
+	\label{tab:ttidest002}
+	\begin{tabularx}{\linewidth}{c|c|c|c|c|c|c}
+		\caption{Análise harmônica através do ttide nos dados de nível do ST002}\\
+		\toprule
+		\textbf{Constante Harmônica} & \textbf{Freq.} & \textbf{Amplitude}   & \textbf{Erro de Ampl.}  &  textbf{Fase}  & \textbf{Erro de Fase}  & \textbf{SNR} \\[6pt]
+		\midrule
+		\endhead
+		ALP1 & 0.0343966 &    1.6004  &   0.466  &  305.34  &   18.93 &       12 \\[6pt]
+		2Q1  & 0.0357064 &    1.7065  &   0.455  &  106.38  &   16.03 &       14 \\[6pt]
+		Q1   & 0.0372185 &    2.7464  &   0.475  &  338.41  &    9.04 &       33 \\[6pt]
+		O1   & 0.0387307 &   10.6537  &   0.484  &  308.31  &    2.50 &      480 \\[6pt]
+		NO1  & 0.0402686 &    1.6129  &   0.487  &   97.99  &   14.54 &       11 \\[6pt]
+		K1   & 0.0417807 &    4.7405  &   0.491  &   30.21  &    5.82 &       93 \\[6pt]
+		UPS1 & 0.0463430 &    0.9177  &   0.479  &  340.12  &   27.41 &      3.7 \\[6pt]
+		MU2  & 0.0776895 &    2.9617  &   0.756  &    8.09  &   12.26 &       15 \\[6pt]
+		N2   & 0.0789992 &    5.2263  &   0.647  &  315.58  &    7.34 &       65 \\[6pt]
+		M2   & 0.0805114 &   28.0921  &   0.828  &  168.82  &    1.38 &     1200 \\[6pt]
+		L2   & 0.0820236 &    1.1613  &   0.689  &  147.04  &   35.45 &      2.8 \\[6pt]
+		S2   & 0.0833333 &   23.8874  &   0.813  &  346.16  &    1.74 &      860 \\[6pt]
+		MO3  & 0.1192421 &    2.3641  &   0.837  &  344.45  &   19.41 &        8 \\[6pt]
+		M3   & 0.1207671 &    4.7645  &   0.837  &  338.04  &    9.39 &       32 \\[6pt]
+		SK3  & 0.1251141 &    1.9392  &   0.856  &  123.28  &   24.65 &      5.1 \\[6pt]
+		MN4  & 0.1595106 &    3.8767  &   0.843  &  344.14  &   14.66 &       21 \\[6pt]
+		M4   & 0.1610228 &    8.8543  &   0.995  &  324.72  &    5.24 &       79 \\[6pt]
+		MS4  & 0.1638447 &    4.9715  &   1.029  &  227.51  &   11.20 &       23 \\[6pt]
+		2MS6 & 0.2443561 &    0.7419  &   0.397  &   68.45  &   33.10 &      3.5 \\[6pt]
+		
+		\bottomrule
+	\end{tabularx}
+	
+	\label{tab:ttidest003}
+	\begin{tabularx}{\linewidth}{c|c|c|c|c|c|c}
+		\caption{Frequências encontradas nos dados de nível do ST003}\\
+		\toprule
+		\textbf{Constante Harmônica} & \textbf{Freq.} & \textbf{Amplitude}   & \textbf{Erro de Ampl.}  & \textbf{Fase}  & \textbf{Erro de Fase}  & \textbf{SNR} \\[6pt]
+		\midrule
+		\endhead
+		
+		ALP1 &  0.0343966 &    1.5514 &    0.609  &  321.28 &  22.65 &      6.5 \\[6pt]
+		2Q1  &  0.0357064 &    1.9434 &    0.564  &  111.56 &  16.70 &       12 \\[6pt]
+		Q1   &  0.0372185 &    2.6224 &    0.581  &   13.64 &  12.90 &       20 \\[6pt]
+		O1   &  0.0387307 &   10.6821 &    0.570  &  335.28 &   2.74 &      350 \\[6pt]
+		NO1  &  0.0402686 &    1.8453 &    0.567  &  125.71 &  17.34 &       11 \\[6pt]
+		K1   &  0.0417807 &    4.4388 &    0.503  &   62.02 &   7.14 &       78 \\[6pt]
+		EPS2 &  0.0761773 &    0.8275 &    0.393  &   57.06 &  30.64 &      4.4 \\[6pt]
+		MU2  &  0.0776895 &    3.1584 &    0.410  &   60.54 &   7.12 &       59 \\[6pt]
+		N2   &  0.0789992 &    4.7225 &    0.451  &    6.84 &   5.75 &      100 \\[6pt]
+		M2   &  0.0805114 &   28.2740 &    0.392  &  227.28 &   0.90 &     5200 \\[6pt]
+		L2   &  0.0820236 &    1.0548 &    0.439  &  191.77 &  24.69 &      5.8 \\[6pt]
+		S2   &  0.0833333 &   24.3625 &    0.464  &   45.41 &   0.96 &     2800 \\[6pt]
+		ETA2 &  0.0850736 &    1.1363 &    0.493  &   60.91 &  22.28 &      5.3 \\[6pt]
+		MO3  &  0.1192421 &    2.5788 &    1.045  &   76.21 &  22.82 &      6.1 \\[6pt]
+		M3   &  0.1207671 &    4.6140 &    0.982  &   64.48 &  11.73 &       22 \\[6pt]
+		SK3  &  0.1251141 &    1.9197 &    1.033  &  218.20 &  27.98 &      3.5 \\[6pt]
+		MN4  &  0.1595106 &    3.9056 &    0.860  &   98.87 &  14.13 &       21 \\[6pt]
+		M4   &  0.1610228 &    8.7903 &    0.941  &   82.71 &   5.82 &       87 \\[6pt]
+		MS4  &  0.1638447 &    4.9328 &    0.893  &  348.19 &  10.47 &       30 \\[6pt]
+		2MS6 &  0.2443561 &    0.4758 &    0.328  &  230.46 &  40.95 &      2.1 \\[6pt]
+		
+		\bottomrule
+	\end{tabularx}
+\end{landscape}
 
 \subsection{Temperatura}
 
-
+	\begin{figure}[!htb]
+		\includegraphics[width=1.6\textwidth]{figuras/Temperatura_Geral.png}
+		\centering
+		\caption{Dados de temperatura}\label{fig:temperatura}
+	\end{figure}
+	
 
 
 % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
