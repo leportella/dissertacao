@@ -91,14 +91,15 @@
 % Elementos textuais
 % 
 \chapter{INTRODUÇÃO}
+Sentado numa cadeira de praia, um turista pode perceber facilmente que existe uma dinâmica na praia que o cerca. As ondas quebram incessantemente, as vezes maiores, as vezes menores, o vento  varia de intensidade e direção e a faixa de areia pode se apresentar maior ou menor conforme o horário em que ela é observada. Apesar de facilmente observados, os processos costeiros que regem as dinâmicas de zonas costeiras são bastante complexos e interligados. 
 
 A zona costeira é uma região de alto dinamismo, e está sujeita a  oscilações periódicas de altas e baixas frequências como ondas e marés, respectivamente. Dado que a água pode ser considerada 
 incompressível, o volume remanescente após uma oscilação deve ser conservado e é de se esperar que 
 as componentes geradas pela oscilação tenha uma resultante nula \cite{leblond}. Entretanto, o que se observa na realidade é que a resultante das oscilações durante longos períodos (por exemplo, após um ou vários ciclos de maré) é não nula. Essa resultante pode ser causada ou amplificada por diversos parâmetros ambientais tais como: não linearidade da corrente de maré, padrão de onda predominante, direção do vento predominante, eventos de tempestade, entre outros \cite[e.g.]{Brownetal2013}.
 
-As magnitudes de correntes residuais e de longo período normalmente são ordens de magnitude menores que as correntes de maré. No entanto, mesmo sendo muito menos intensas, a magnitude e a variação espacial e temporal dessa circulação exerce um grande influência na interação de processos físicos, bioquímicos e sedimentares. Os processos de transporte através da circulação residual e de longo período  tem controle sobre fluxo de água doce, descarga de contaminantes, dispersão e  transporte de sedimentos e nutrientes e podem auxiliar na manutenção ou declínio de recursos vivos \cite{cheng}. Dependendo da variação dessa circulação, seja por sazonalidade ou pela frequência dos eventos de tempestade, a mesma pode ter papel fundamental na morfodinâmica regional \cite{Brownetal2013}.
+As magnitudes dessas correntes residuais e de longo período normalmente são ordens de magnitude menores que as correntes de maré. No entanto, mesmo sendo muito menos intensas, a magnitude e a variação espacial e temporal dessa circulação exerce um grande influência na interação de processos físicos, bioquímicos e sedimentares. Os processos de transporte através da circulação residual e de longo período  tem controle sobre fluxo de água doce, descarga de contaminantes, dispersão e  transporte de sedimentos e nutrientes e podem auxiliar na manutenção ou declínio de recursos vivos \cite{cheng}. ALém disso, dependendo da variação dessa circulação, seja por sazonalidade ou pela frequência dos eventos de tempestade, a mesma também pode ter papel fundamental na morfodinâmica regional \cite{Brownetal2013}.
  
-A Enseada do Itapocorói se destaca no cenário catarinense pela grande importância turística. No entanto, a região sofre com sucessivos problemas erosivos desde a década de 70, quando a barra do rio Piçarras foi fixada \cite{Delft2008}. Considerando então a importância econômica e social da Enseada do Itapocorói tanto em termos econômicos como sociais, o seu estudo é de vital importância. Visto que a circulação residual pode ter um papel importante para o entendimento do transporte de partículas, um estudo da mesma pode vir a contribuir para o entendimento da morfodinâmica de longo prazo, bem como avaliar a taxa de recirculação local, podendo colaborar para a melhora da qualidade da água. Além disso, o estudo da morfodinâmica de enseadas necessita que os processos hidrodinâmicos da região sejam conhecidos \cite{silvaetal2010}. Dessa forma, o presente estudo visa avaliar o comportamento hidrodinâmico da região enfocando na circulação residual bem como o papel dos parâmetros ambientais da região em sua formação, de forma a avaliar qual parâmetro é mais relevante na modificação dessa circulação.
+A Enseada do Itapocorói se destaca no cenário catarinense pela grande importância turística. No entanto, a região sofre com sucessivos problemas erosivos desde a década de 70, quando a barra do rio Piçarras foi fixada \cite{Delft2008}. Considerando então a importância econômica e social da Enseada do Itapocorói tanto em termos econômicos como sociais, o seu estudo é de vital importância. Visto que a circulação residual pode ter um papel importante para o entendimento do transporte de partículas, um estudo da mesma pode vir a contribuir para o entendimento da morfodinâmica de longo prazo, bem como avaliar a taxa de recirculação local, podendo colaborar para a melhora da qualidade da água. Além disso, o estudo da morfodinâmica de enseadas necessita que os processos hidrodinâmicos da região sejam bem conhecidos \cite{silvaetal2010}. Dessa forma, o presente estudo visa avaliar o comportamento hidrodinâmico da região enfocando na circulação residual bem como o papel dos parâmetros ambientais da região em sua formação, de forma a avaliar qual parâmetro é mais relevante na modificação dessa circulação.
 
 Visto que as correntes residuais dificilmente conseguem ser medidas em campo \cite{cheng}, para alcançar o objetivo proposto, será feito uso da modelagem numérica e avaliação de dados de ADCP (temperatura, corrente, ondas e nível) coletados ao longo de um mês em três pontos na enseada.
 
@@ -106,7 +107,7 @@ Visto que as correntes residuais dificilmente conseguem ser medidas em campo \ci
 
 \begin{itemize}
 	\item Qual é o padrão espacial típico da circulação submareal da Enseada? E temporal?
-	\item Quais os parâmetros ambientais têm maior influência a circulação residual?
+	\item Quais os parâmetros ambientais têm maior influência na circulação residual?
 \end{itemize}
 
 \section{Hipótese}
@@ -117,7 +118,7 @@ Existe uma circulação residual típica na Enseada do Itapocorói que é gerada prin
 
 \subsection{Objetivo Geral}
 
-O objetivo geral do estudo é reproduzir a hidrodinâmica da Enseada do Itapocorói-SC (Balneário Piçarras) através dos modelos numéricos ROMS e SWAN, de forma a compreender o padrão de circulação local e a circulação residual, bem como as variáveis ambientais que os influenciam.
+O objetivo geral do estudo é compreender o padrão de circulação local e a circulação residual na Enseada do Itapocorói (Balneário Piçarras), bem como as variáveis ambientais que os influenciam.
 
 \subsection{Objetivos Específicos}
 
@@ -137,7 +138,7 @@ São objetivos específicos deste trabalho:
 \chapter{REVISÃO BIBLIOGRÁFICA}
 
 \section{Maré e Circulação Submareal}
-Sentado numa cadeira de praia, um turista pode perceber facilmente que existe uma dinâmica na praia que o cerca. As ondas quebram incessantemente, as vezes maiores, as vezes menores, o vento  varia de intensidade e direção e a faixa de areia pode se apresentar maior ou menor conforme o horário em que ela é observada. Apesar de facilmente observados, os processos costeiros que regem as dinâmicas de zonas costeiras são bastante complexos e interligados. 
+
 
 Águas costeiras tem uma dinâmica muito diferente daquela encontrada em regiões oceânicas. Conforme a onda de maré passa a propagar para águas costeiras ela tende a interagir e sofrer diversos processos: reflecção total ou parcial (uma vez que a linha de costa passa a agir como uma barreira), efeitos inerciais, efeitos de continuidade, perda de energia por fricção, entre outros . Dessa forma, uma vez que se encontram em águas rasas, a onda de maré se torna progressivamente mais não-linear e dissipativa. Além disso, esses processos não-lineares podem transferir energia para constituintes harmônicas de águas rasas totalmente novas(\emph{shallow-water tidal constituents}). Portanto, em águas rasas, uma variedade de processos compõem um complexo cenário a ser estudado e, por mais que os fenômenos que criem as marés sejam muito bem conhecidos e compreendidos, os movimentos resultantes causados requerem um estudo mais aprofundado \cite{Schureman,massel,Parker}. 
 
@@ -209,17 +210,62 @@ Já o trabalho de \citeonline{Brownetal2013} tinha como objetivo compreender a co
 O conhecimento da hidrodinâmica de uma região costeira pode ter diversos benefícios tantos em termos ambientais (variações sazonais, previsão das condições oceanográficas, padrões de transporte de sedimentos, etc.) quanto em ganhos sociais (prevenção de desastres naturais, proteção costeira, etc.). No entanto, para um entendimento amplo das características oceanográficas
 de determinada região é necessário um conhecimento extenso da mesma tanto em termos espaciais quanto temporais. Isso se torna extremamente difícil principalmente devido à complexidade dos processos envolvidos e à dificuldade de obtenção de dados medidos, que são muito custosos e esparsos.
 
-As leis de conservação que governam os fluidos são modelos matemáticos validados há bastante tempo e que podem ser amplamente utilizados para compreendê-los. Apesar da ampla validade destas leis, as mesmas estão geralmente descritas através de equações diferenciais parciais não lineares que, 
-em geral, não possuem soluções analíticas ou fechadas. Entretanto, estas podem ser discretizadas e utilizadas através de métodos numéricos, no que é conhecidos como dinâmica de fluidos computacionais \cite{Kundu}. A ampla aceitação dos métodos numéricos para a solução dessas equações se deve à grande versatilidade e relativa simplicidade de aplicação dessas técnicas
-\cite{Maliska}. 
+As leis de conservação que governam os fluidos são modelos matemáticos validados há bastante tempo e que podem ser amplamente utilizados para compreendê-los.  Quando se faz necessário resolver determinado problema nesta área pode-se optar por três métodos: os analíticos, os numéricos (experimentação teórica) e a experimentação em laboratório (Figura \ref{fig:metodos}).
 
-Com o avanço computacional ocorrido nas ultimas décadas, as barreiras computacionais que tornavam custosas as soluções para a resolução dos métodos numéricos se tornaram muito pequenas comparadas aos ganhos potenciais. A solução de escoamento turbulento supersônico em um aerofólio com os computadores da década de 60 consumiria um tempo de computação de aproximadamente
-30 anos com um custo de 10 milhões de dólares. O mesmo problema com os computadores atuais requer minutos e custo na ordem de centenas de dólares \cite{Maliska}. Dessa forma, a modelagem num\'erica permite não apenas resolver as equações que descrevem os 
-fenômenos físicos mas também se constitui uma ferramenta para experimentos relativos aos processos que interagem e compõe as características observadas nos oceanos.
+Os métodos analíticos e numéricos são métodos teóricos, pois ambos tem como objetivo resolver equações diferenciais que explicam os fenômenos. A diferença está apenas na complexidade da equação que cada método consegue resolver. O método de experimentação em laboratório é o mais próximo da realidade, pois de fato se trata da configuração real, porém está associado a grandes custos e uma super estrutura que, nem sempre, consegue atacar todos os problemas (e.g. escalas oceânicas).
+
+No caso de soluções numéricas existem dois tipos de erros que podem estar presentes: aqueles referentes à má solução das equações diferenciais e aqueles referentes à não adequação das equações diferenciais para resolver o problema proposta. Ou seja, esses métodos só serão adequados e confiáveis quando se está tem posse de um método numérico que resolva corretamente as equações diferenciais e de um modelo matemático que, sabidamente, represente com fidelidade o fenômeno físico. Independente dos possíveis erros associados, os ganhos advindos das técnicas de soluções numéricas é muito alto e a ampla aceitação destes métodos para a solução dessas equações se deve à grande versatilidade e relativa simplicidade de aplicação dessas técnicas  \cite{Maliska}.
+
+No caso da mecânica dos fluidos já existe um consenso a respeito da validade das leis que as descrevem (modelos matemáticos). Entretanto, estes são compostos de equações diferenciais parciais não lineares que, em geral, não possuem soluções analíticas ou fechadas a não ser em casos extremamente simplistas.
+Quando estes modelos são discretizados e resolvidos através de métodos numéricos passa a ter a denominação mais específica de dinâmica de fluidos computacionais \cite{Kundu}.
+
+Apesar de serem consideravelmente precisas é preciso ter consciência que as soluções numéricas são, inexoravelmente, inexatas. Existem dois erros introduzidos ao se utilizar os métodos numéricos na solução de um problema. Um deles ocorre devido à limitação de armanezamento de informação que os computadores digitais possuem, estes são chamados de erros de arredondamento. O segundo tipo de erro é introduzido pelo próprio método numérico que, ao se utilizar aproximações para encontrar a solução numérica, acaba gerando os denominados erros de truncamento.  Juntos, os dois erros constituem o erro total da solução numérica, que é, basicamente, a diferença entre a solução verdadeira (exata, e que é desconhecida) e a solução numérica aproximada \cite{metnumericos}. 
+
+
+\begin{figure}[!ht]
+	\includegraphics[width=0.9\textwidth]{figuras/metodossolucao.png}
+	\centering
+	\caption{Métodos de solução para um problema físico}\label{fig:metodos}
+\end{figure}
+
+
+Inicialmente, soluções numéricas eram muito custosas computacionalmente e modelos analíticos (bastante simplificados) e experimentais eram as únicas ferramentas que os cientistas podiam contar para o entendimento dos fênomenos físicos. Com o avanço computacional ocorrido nas ultimas décadas, as barreiras computacionais que tornavam custosas as soluções para a resolução dos métodos numéricos se tornaram muito pequenas comparadas aos ganhos potenciais. A solução de escoamento turbulento supersônico em um aerofólio com os computadores da década de 60 consumiria um tempo de computação de aproximadamente
+30 anos com um custo de 10 milhões de dólares. O mesmo problema com os computadores atuais requer minutos e custo na ordem de centenas de dólares \cite{Maliska}. Dessa forma, a modelagem num\'erica permite não apenas resolver as equações que descrevem os fenômenos físicos mas também se constitui uma ferramenta para experimentos relativos aos processos que interagem e compõe as características observadas nos oceanos.
 
 Modelos de áreas costeiras foram desenvolvidos desde o começo da década de 80, mas apenas na década de 90 que grandes institutos europeus conseguiram aprimorar os primeiros modelos e desenvolveram os modelos robustos e de código flexível que ainda atuam hoje em dia como o Delft3D (Deltares), Mike21 (\emph{Danish Hydraulic Institute}) e Telemac (\emph{Laboratoire Nationale d'Hydraulique}). Hoje em dia, diversos modelos estão disponíveis para utilização e muitos são grátis e de código aberto, o que facilita seu uso e dispersão. Inúmeros são os trabalhos na área da oceanografia que fazem uso dessa ferramenta que se tornou fundamental os estudos na área.
 
-\section{ÁREA DE ESTUDO: Enseada do Itapocorói}
+A tarefa do método numérico, portanto, é resolver uma ou mais equações diferenciais, substituindo as derivadas existentes na equação por expressões algébricas que envolvem a(s) função(ões) incógnita(s). Quando escolhe-se fazer uma aproximação numérica da equação diferencial, aceitamos ter a solução para um número discreto de pontos de forma que, quanto maior for este número de pontos, mais próxima da solução exata será a solução aproximada \cite{Maliska}. O conjunto de pontos onde a solução será calculada é denominado grade numérica ou malha numérica.
+
+As grades numéricas podem ser construídas de maneiras estruturadas ou desestruturadas. As grades estruturadas são geralmente aquelas cujo layout é retilíneo ou curvilinear, mas cuja forma principal é o retângulo como a presentado na figura \ref{fig:struc}. Grades não estruturadas ou desestruturadas são aquelas tipicamente construídas através de triângulos (Figura \ref{fig:unstruc}), mas também podem se basear em composição de triângulos e quadriláteros. As grades estruturadas normalmente utilizadas através dos métodos de diferenças finitas, enquanto grades não estruturadas usam métodos de elementos finitos ou volumes finitos \cite{dano2012}.
+
+\begin{figure}[!htb]
+	\includegraphics[width=0.3\textwidth]{figuras/structured.png}
+	\centering
+	\caption{Exemplo de grade numérica estruturada}\label{fig:struc}
+\end{figure}
+
+\begin{figure}[!htb]
+	\includegraphics[width=0.3\textwidth]{figuras/unstructured.png}
+	\centering
+	\caption{Exemplo de grade numérica desestruturada}\label{fig:unstruc}
+\end{figure}
+
+Tradicionalmente, o método de diferenças finitas é mais popular nos modelos costeiros, principalmente pela facilidade dos seus conceitos e sua eficiência no cálculo célula-a-célula. Já os métodos de elementos finitos são bem mais complicados matematicamente e costumam ser mais lentos nos cálculos célula-a-célula mas conseguem facilmente cobrir áreas com grandes diferença em escala de tamanhos \cite{dano2012}.
+
+Os sistemas de equações formados por todas as sete equações básicas pode ser resolvido de dois modos, basicamente: de forma implícita ou de forma explícita.
+Em métodos implícitos, todo o sistema de equações é calculado simultaneamente já que todos os valores do passo de tempo atual são desconhecidos com exceção das fronteiras. Esse cálculo pode ser feito através de inversão de matriz (totalmente implícito) ou de métodos iterativos (parcialmente implícito). No caso dos métodos explícitos, as variáveis no tempo atual são baseadas em valores conhecidos do passo de tempo passado, o que é consideravelmente mais simples.Em geral, métodos implícitos demoram mais por passo de tempo, mas conseguem trabalhar com passos de tempo maiores porque não há um limite fixo de estabilidade. Já no caso de métodos explícitos existe pouco esforço computacional por passo de tempo, mas um critério deve ser seguido para garantir estabilidade \cite{Maliska,dano2012}. É importante ressaltar que processo que demandam iteração podem acumular erros de arredondamento que também podem desestabilizar a solução.
+
+No caso de modelos costeiros, os modelos Delft3D e Mike21 utilizam-se de esquemas implícitos enquanto modelos como ROMS e o XBeach usam esquemas explícito de soluções.
+
+A condição CFL indica, baseado no tamanho das células da grade e da profundidade, o quão estável pode ser considerado seu modelo. (Será?)
+
+\begin{equation}
+	CFL = \frac{C \Delta t}{\Delta x}, C \approx \sqrt{gh} + u \label{eq:CFL}
+\end{equation}
+
+
+
+\section{Área de estudo}
 
 A Enseada do Itapocorói está localizada no litoral centro-norte de Santa Catarina e engloba os 
 municípios de Piçarras, Penha e Barra Velha (Figura \ref{fig:areaestudo}). 
@@ -277,14 +323,15 @@ vindas do quadrante E, principalmente devido à orientação da praia.
 
 Como pode ser visto, poucos estudos na região focaram na hidrodinâmica de longo período da forma como o presente trabalho pretende atuar. O enfoque será dado na circulação residual e na forma como os diversos parâmetros ambientais agem para que esta seja alterada. Almeja-se que este estudo contribua para a compreensão do tempo de recirculação, que pode contribuir para a maricultura local, bem como contribua para o conhecimento das dinâmicas de longo período da região.
 
-C
+
+\chapter{MATERIAIS E MÉTODOS}
 
 Dado os objetivos propostos pelo presente estudo, a figura \ref{fig:fluxo} apresenta o fluxograma da metodologia a ser aplicada para que estes sejam alcançados. 
 
- \begin{figure}[!ht]
- 	\includegraphics[width=0.9\textwidth]{figuras/Fluxograma_metodologia.PNG}
-   \centering
-   \caption{Fluxograma da metodologia a ser aplicada.}\label{fig:fluxo}
+\begin{figure}[!ht]
+	\includegraphics[width=0.9\textwidth]{figuras/Fluxograma_metodologia.PNG}
+	\centering
+	\caption{Fluxograma da metodologia a ser aplicada.}\label{fig:fluxo}
 \end{figure}
 
 
@@ -299,8 +346,6 @@ Após os teses de sensibilidade serão configuradas as condições iniciais. Os dado
 Os erros entre os dados simulados e os dados medidos podem existir por diversos problemas: erros conceituais nas simplificações assumidas pelos modelos, parâmetros inadequados, erros de forçantes ou problemas de aquisição dos dados medidos. Dessa forma, a ideia geral da calibração é modificar parâmetros que possam otimizar os resultados do modelo, testá-los, e avaliar os resultados. Esse é um processo iterativo e deve ser realizado até que o valor de erro esteja dentro de um limite aceitável \cite{GMP}. 
 
 Após a obtenção de um modelo calibrado, serão realizadas rodadas com as configurações finais. Serão feitos esquemas conforme descrito em \citeonline{Brownetal2013}, onde o modelo será rodado em uma condição "simples" (apenas com maré) e outros serão rodados com diferentes forçantes associadas, de forma a avaliar a contribuição de cada uma. Para isso, a condição "simples" será subtraída daquelas com as forçantes. O resultado encontrado será comparado àqueles obtidos através das análises dos dados de ADCP. Finalmente, será feito um balanço de momento e vorticidade e definidos os parâmetros ambientais mais relevantes para a Enseada do Itapocorói.
-
-\chapter{Materiais e Métodos}
 
 \section{Dados medidos}
 
@@ -576,11 +621,11 @@ A batimetria da grade regional foi adquirida da base de dados ETOPO1 da NOAA. Es
 
 \section{Avaliação dos resultados do modelo}
 
-A performance do modelo será avaliada conforme os cálculos propostos por \citeonline{Fox81} e \citeonline{Wilmott82}. Estima-se que variações na ordem de 10\% da variável modelada sejam aceitáveis. Entretanto, tano valores aceitáveis de erro e outros cálculos de avaliação de performance estão sendo estudados e podem ser incorporados em fases futuras do trabalho.
+A performance do modelo será avaliada conforme os cálculos propostos por \citeonline{Fox81} e \citeonline{Wilmott82}. Estima-se que variações na ordem de 10\% da variável modelada sejam aceitáveis.
 
 \citeonline{Fox81} descreve  os esforços da Sociedade Meteorológica Americana (AMS) para desenvolver técnicas de avaliação de performance de modelos atmosféricos. Dois tipos principais de mensuração de performance foram encontrados: medidas das diferenças (ou residuais) e medidas de correlação. O primeiro diz respeito a uma quantificação do tamanho da diferença entre valores medidos e modelados. Medidas de correlação avaliam a associação ou concordância entre os valores medidos e modelados. O autor afirma que o primeiro é mais coerente com a teoria estatística.
 
-\citeonline{Wilmott82} avaliou as medidas propostas por \citeonline{Fox81} e verificou que o Erro Médio Absoluto (EMA, Equação \ref{eq:mae}) e a Raiz do Erro Médio Quadrático (REMQ, Equação \ref{eq:rmse})  são as medidas que melhor conseguem avaliar a performance do modelo. Entretanto, o autor propõe um nova medida denominada Índice de Concordância (IC, Equação \ref{eq:ic}), que se propõe a ser uma medida descritiva tanto relativa quanto interligada.
+\citeonline{Wilmott82} avaliou as medidas propostas por \citeonline{Fox81} e verificou que o Erro Médio Absoluto (EMA, Equação \ref{eq:mae}) e a Raiz do Erro Médio Quadrático (REMQ, Equação \ref{eq:rmse})  são as medidas que melhor conseguem avaliar a performance de modelos. Entretanto, o autor propõe um nova medida denominada Índice de Concordância (IC, Equação \ref{eq:ic}), que se propõe a ser uma medida descritiva tanto relativa quanto interligada.
 
 \begin{equation}
 EMA = \sqrt{\frac{1}{N} \sum_{i=1}^{N} |M_i - O_i |}  \label{eq:mae}
@@ -605,7 +650,12 @@ Onde,
 
 \section{Ferramentas Utilizadas}
 
+
+
 As séries temporais dos dados do ADCP, entradas e saídas dos modelos foram tratadas através da linguagem de programação Python. Python é uma linguagem de programação interpretada, orientada a objetos de alto nível. Ela é bastante intuitiva, prática e gratuita, sendo facilmente encontrada na internet e com uma grande gama de livros e fóruns para apoio. Ela trabalha através de diversos módulos que são adicionados ao programa conforme necessidade \cite{python}. O Python conta com diversos pacotes focados na análise de séries temporais e tratamento/processamento de dados geoespaciais, entre eles o Scipy, Numpy, Pandas, Matplotlib, entre outros.
+
+Como pode ser utilizada de modo interativo ela se torna bastante fácil para a geração de códigos para aplicações científicas que requerem o uso de uma grande gama de dados e programas com alta complexidade computacional. Ela já foi utilizado em conjunto com o ROMS para aplicações de previsão em ferramentas otimizadas, como descrito por \citeonline{MartaAlmeida2011}.
+
 
 Outras ferramentas, geradas a partir dos módulos básicos do Python, são disponibilizadas gratuitamente pelos desenvolvedores e foram usadas no presente trabalho, entre elas:
 \begin{description}
@@ -622,28 +672,49 @@ Os mapas apresentados foram gerados de Sistema de Informações Geográficas (SIG) 
 
 \subsection{Nível}
 
-Inicialmente foram avaliados os dados de nível (pressão) dos 3 ADCPs de forma a avaliar o comportamento da maré ao longo da Enseada. Nas figuras \ref{fig:nivelst001} a \ref{fig:nivelst003} é possível verificar as variações de nível registradas pelo ADCP. Como a medição de nível depende do local onde o ADCP foi instalado, é possível perceber a diferença entre as profundidades nos três pontos medidos.
+Inicialmente foram avaliados os dados de nível (pressão) dos 3 ADCPs de forma a avaliar o comportamento da maré ao longo da Enseada. Nas figuras \ref{fig:nivelst001} a \ref{fig:nivelst003} é possível verificar as variações de nível registradas pelo ADCP. Como a medição de nível depende do local onde o ADCP foi instalado, é possível perceber a diferença entre as profundidades nos três pontos medidos. Não obstante, os três aparelhos tiveram um comportamento de nível muito semelhante, o que indica que a dinâmica local não varia dentro da enseada.
 
-A tabela \ref{tab:dadosnivel} contém as principais características dos dados adquiridos. Apesar de se encontrarem em locais bastante distintos, a variação entre o nível máximo e mínimo encontrado foi de cerca de 2 m. 
+A tabela \ref{tab:dadosnivel} contém as principais características dos dados adquiridos. A variação entre o nível máximo e mínimo encontrado foi de cerca de 2 m, com uma tendência leve de aumento do nível nos pontos mais internos (ST001 e ST002). 
 
-O módulo ttide de previsão de maré foi aplicado nos dados medidos para avaliar a componente astronômica e as principais constantes harmônicas. As tabelas \ref{tab:ttidest001} a \ref{tab:ttidest003} apresentam os resultados em termos de constantes harmônicas. Em negrito estão destacadas aquelas constantes que apresentam maior relação de sinal-ruído (\emph{Signal-to-Noise Ration} - SNR). Simulações considerando um sinal fixo com diferentes níveis de ruído conseguiram indicar para sinais como os da maré é ideal que o SNR seja maior que 10, mas que valores entre 2 e 3 são aceitáveis \cite{ttidematlab}. 
-
-
-
-Na figura \ref{fig:previsao} são apresentados os dados medidos, uma vez retiradas as médias, os dados previstos pelo ttide para o período analisado e o ruído resultante da subtração de dois dados anteriores. Verifica-se que aparentemente existe uma defasagem entre os dados de maré nos pontos de coleta internos  (ST001 e ST002) do ponto externo (ST003). Ao se observar as cavas e cristas de forma mais detalhada (figura \ref{fig:previsaozoom}) foi constatado que essa defasagem é da ordem de 3 horas. 
-
+Na figura \ref{fig:previsao} são apresentados os dados medidos, uma vez retiradas as médias, os dados previstos pelo ttide para o período analisado e o ruído resultante da subtração de dois dados anteriores.
 
 \begin{table}[h]
 	\centering
 	\caption{Características das Variações de Nível nos ADCPs (em metros)}\label{tab:dadosnivel}
 	\begin{tabular}{c|c|c|c|c|c}
-	Equipamento & Mínimo & Máximo & Média & Mediana & Varição \\ 
-	\hline                              
-	ST001       & 2,90   & 4,98   & 3,90  & 3,91    & 2,08 \\
-	ST002 & 6,30 & 8,33 & 7,25 & 7,25 & 2,03 \\
-	ST003 & 15,52 & 17,80 & 16,77 & 16,78 & 1,98
+		Equipamento & Mínimo & Máximo & Média & Mediana & Varição \\ 
+		\hline                              
+		ST001       & 2,90   & 4,98   & 3,90  & 3,91    & 2,08 \\
+		ST002 & 6,30 & 8,33 & 7,25 & 7,25 & 2,03 \\
+		ST003 & 15,52 & 17,80 & 16,77 & 16,78 & 1,98
 	\end{tabular}
 \end{table}
+
+O módulo ttide de previsão de maré foi aplicado nos dados medidos para avaliar a componente astronômica e as principais constantes harmônicas. As tabelas \ref{tab:ttidest001} a \ref{tab:ttidest003} apresentam as constantes harmônicas que se apresentaram mais relevantes.  Simulações considerando um sinal fixo com diferentes níveis de ruído conseguiram indicar para sinais como os da maré é ideal que o SNR seja maior que 10, mas que valores entre 2 e 3 são aceitáveis \cite{ttidematlab}. Nas tabelas estão apresentadas apenas as constantes que apresentam uma relação de sinal-ruído (\emph{Signal-to-Noise Ration} - SNR) maior que 1.
+
+A importância relativa das constituintes diurnas e semidiurnas pode ser expresso pelo número de Forma (Form Factor) defindo por \cite{Pugh87}:
+
+\begin{equation}
+	F = \frac{H_{K1} + H_{O1}}{H_{M2} + H_{S2}}
+\end{equation}
+
+Onde:
+\begin{description}
+	\item[] Se F estiver entre 0 e 0.25 a maré tem forma semidiurna;
+	\item[] Se F estiver entre 0.25 e 1.5 a maré é considerada mista com predominância semidiurna;
+	\item[] Se F estiver entre 1.5 e 3 a maré é considerada mista com predominância diurna;
+	\item[] Se F for maior que 3 a maré é puramente diurna. 
+\end{description}
+
+Os números de forma encontrados para os dados apresentados foram: 
+
+\begin{description}
+	\item[] ST001: 0,2978
+	\item[] ST002: 0,2962
+	\item[] ST003: 0,2873
+\end{description}
+
+Portanto, a maré na Enseada de Itapocorói pode ser considerada do tipo mista com uma predominância semidiurna. Entretanto, pelo baixo valor de número de forma encontrado, pode-se notar a alta influência das componentes semidiurna sobre as componentes diurnas. Essa grande influência das componentes semidiurnas também podem ser visualizadas na figura \ref{fig:fftpicarras}, onde podem ser observadas as frequências mais relevantes dentro do espectro analisado.
 
 \newpage
 \begin{landscape}
@@ -791,12 +862,37 @@ Na figura \ref{fig:previsao} são apresentados os dados medidos, uma vez retirada
 
 \subsection{Temperatura}
 
+\begin{landscape}
 	\begin{figure}[!htb]
 		\includegraphics[width=1.6\textwidth]{figuras/Temperatura_Geral.png}
 		\centering
 		\caption{Dados de temperatura}\label{fig:temperatura}
 	\end{figure}
+\end{landscape}
+
+\section{Modelo Numérico}
+
+\subsection{Grade}
+
+\subsection{Dificuldades encontradas}
+
+Uma série de dificuldades foram encontradas nas etapas iniciais do modelo;
+
+\begin{itemize}
+	\item O modelo não possui interface gráfica e a compreensão dos arquivos necessários e formatos se torna mais complexa;
+	\item O modelo numérico é escrito em FORTRAN, que é uma linguagem compilada. Isso fez com que fosse necessário entender configurações de pré-processamento, compilador necessário, etc;
+	\item É necessário instalar diversos pacotes netCDF que, em um primeiro momento, se mostraram trabalhosos;
+	\item O exemplo básico padrão disponível (\emph{upwelling}) é fácil e bem descrito na página mas não há explicação de como o arquivo de entrada funciona, quais variáveis devem ser alteradas e quais as variáveis de pré-compilação para cada tipo de opção ativada;
+	\item A wikipédia contendo a maior parte da informação está desatualizada, muito material não está disponibilizado e o manual disponível não está completo além de também estar desatualizado;
+	\item Muita informação está contida no fórum de discussões, o que demanda tempo e certo conhecimento prévio do assunto para compreender o que está escrito em cada discussão;
+	\item Uma primeira tentativa foi colocar uma elevação de nível na fronteira. Após uma série de testes, foi verificado que o modelo não inclui nível como variável nas equações. Dessa forma, verificou-se que além da variável zeta, também é necessário inserir nas fronteiras as componentes de velocidade u e v das correntes de maré;
+	\item Diferente de outros modelos, como condição de grade deve ser inserido os valores de posição para cada um dos elementos calculados (rho, psi, u e v);
+	\item Para realizar a grade aninhada através das funções de aninhamento e contato ter na grade numérica as informações de coordenadas para todos os pontos (rho, psi, u e v) em coordenadas geográficas e métricas;
 	
+	
+\end{itemize}
+
+
 
 
 % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
