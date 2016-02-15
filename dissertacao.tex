@@ -85,7 +85,7 @@
 \listadefiguras % as listas dependem da necessidade do usuário
 \listadetabelas 
 %\listadeabreviaturas
-% \listadesimbolos
+%\listadesimbolos
 \sumario
 %--------------------------------------------------------
 % Elementos textuais
@@ -396,6 +396,16 @@ Os dados passaram por todo o processo de análise de consistência descritos em \c
 	\caption{Localização das coletas de dados atrav\'es de ADCPs.}\label{fig:adcps}
 \end{figure}
 
+Entretanto, como foi exposto, durante as medições alguns dados não puderam ser coletados e, portanto, as séries temporais continham interrupções. Interrupções em séries temporais se tornam-as muito complexas para utilização sem um tratamento. Dado que a quantidade de dados faltantes era esparsa, representava menos de 5\% da série temporal e estavam igualmente espaçados, escolheu-se utilizar uma interpolação linear simples para suprir os dados que não foram medidos. A figura \ref{fig:nans} apresenta um exemplo dos dados medidos e da quantidade de dados faltantes no ST001.
+
+\begin{landscape}
+\begin{figure}[!htb]
+	\includegraphics[width=1.6\textwidth]{figuras/Nivel_ExemploNans.png}
+	\centering
+	\caption{Dados medidos no ADCP ST001.}\label{fig:nans}
+\end{figure}
+\end{landscape}
+
 \section{Modelos Numéricos}
 
 \subsection{Regional Ocean Modelling System}
@@ -650,14 +660,12 @@ Onde,
 
 \section{Ferramentas Utilizadas}
 
-
-
-As séries temporais dos dados do ADCP, entradas e saídas dos modelos foram tratadas através da linguagem de programação Python. Python é uma linguagem de programação interpretada, orientada a objetos de alto nível. Ela é bastante intuitiva, prática e gratuita, sendo facilmente encontrada na internet e com uma grande gama de livros e fóruns para apoio. Ela trabalha através de diversos módulos que são adicionados ao programa conforme necessidade \cite{python}. O Python conta com diversos pacotes focados na análise de séries temporais e tratamento/processamento de dados geoespaciais, entre eles o Scipy, Numpy, Pandas, Matplotlib, entre outros.
+As séries temporais dos dados do ADCP, entradas e saídas dos modelos foram tratadas através da linguagem de programação Python. Python é uma linguagem de programação interpretada, orientada a objetos e de alto nível. Ela é bastante intuitiva, prática e gratuita, sendo facilmente encontrada na internet e com uma grande gama de livros e fóruns para apoio. Ela trabalha através de diversos módulos que são adicionados ao programa conforme necessidade \cite{python}. O Python conta com diversos pacotes focados na análise de séries temporais e tratamento/processamento de dados geoespaciais, entre eles o Scipy, Numpy, Pandas, Matplotlib, entre outros.
 
 Como pode ser utilizada de modo interativo ela se torna bastante fácil para a geração de códigos para aplicações científicas que requerem o uso de uma grande gama de dados e programas com alta complexidade computacional. Ela já foi utilizado em conjunto com o ROMS para aplicações de previsão em ferramentas otimizadas, como descrito por \citeonline{MartaAlmeida2011}.
 
-
 Outras ferramentas, geradas a partir dos módulos básicos do Python, são disponibilizadas gratuitamente pelos desenvolvedores e foram usadas no presente trabalho, entre elas:
+
 \begin{description}
 		\item Pacote ttide desenvolvido pelo Rich Pawlowicz e adaptado ao Python pelo Mitchell O'Flaherty-Sproul e disponível em: \url{https://github.com/moflaher/ttide_py};
 		
@@ -870,6 +878,30 @@ Portanto, a maré na Enseada de Itapocorói pode ser considerada do tipo mista com
 	\end{figure}
 \end{landscape}
 
+%-------------------------------------------------------------------------------------------------------
+\subsection{Corrente}
+
+
+\begin{figure}[!htb]
+	\includegraphics[width=1.1\textwidth]{figuras/CurrentRose_ST001_DepthAv.png}
+	\centering
+	\caption{Rosa de correntes no ponto ST001 integrada na vertical}\label{fig:curr_depthav_01}
+\end{figure}
+
+\begin{figure}[!htb]
+	\includegraphics[width=1\textwidth]{figuras/CurrentRose_ST002_DepthAv.png}
+	\centering
+	\caption{Rosa de correntes no ponto ST002 integrada na vertical}\label{fig:curr_depthav_02}
+\end{figure}
+	
+\begin{figure}[!htb]
+	\includegraphics[width=1\textwidth]{figuras/CurrentRose_ST003_DepthAv.png}
+	\centering
+	\caption{Rosa de correntes no ponto ST003 integrada na vertical}\label{fig:curr_depthav_03}
+\end{figure}
+
+
+%-------------------------------------------------------------------------------------------------------
 \section{Modelo Numérico}
 
 \subsection{Grade}
