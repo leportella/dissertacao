@@ -257,13 +257,23 @@ Em métodos implícitos, todo o sistema de equações é calculado simultaneamente já
 
 No caso de modelos costeiros, os modelos Delft3D e Mike21 utilizam-se de esquemas implícitos enquanto modelos como ROMS e o XBeach usam esquemas explícito de soluções.
 
-A condição CFL indica, baseado no tamanho das células da grade e da profundidade, o quão estável pode ser considerado seu modelo. (Será?)
+Os modelos, em geral, podem apresentar problemas de convergência, onde a solução numérica não é estável.
+A condição descrita pelos autores Richard Courant, Kurt Friedrichs e Hans Lewy deu origem a todos os fundamentos necessários para as condições de convegência de qualquer esquema numérico e passou a ser conhecida como condição CFL. 
+
+A ideia básica da condição de Courant-Friedrichs-Lewy (CFL) é que a solução das equações de diferenças finitas não pode ser independente dos dados que determinam a solução das equações diferenciais parciais associadas, ou seja, a solução numérica não pode avançar mais rápido que o problema físico que se está sendo modelado. A condição CFL é uma condição necessária para a estabilidade do modelo, mas não suficiente.
+
+Os métodos numéricos, por suas características intrínsecas, geram um efeito semelhante ao de difusão com suavização de gradientes, mesmo quando o cálculo inclui unicamente componentes advectivas. Esse é um efeito puramente numérico, denominado difusão artificial, difusão falsa ou difusão numérica. Conforme o CFL é reduzido, o efeito de difusão numérica também é \cite{Fortuna2000}. A figura \ref{fig:difusao} apresenta o resultado final da equação da onda 1D para duas diferentes condições CFL. A fronteira foi imposta como 1 invariavelmente, mas nota-se o efeito de difusão numérica ocorrendo em maior ou menos escala, dependendo da condição imposta.
+
 
 \begin{equation}
 	CFL = \frac{C \Delta t}{\Delta x}, C \approx \sqrt{gh} + u \label{eq:CFL}
 \end{equation}
 
-
+\begin{figure}[!htb]
+	\includegraphics[width=0.6\textwidth]{figuras/DifusaoNumerica_CFL.png}
+	\centering
+	\caption{Difusão numérica em diferentes condições de CFL em um problema da equação da onda 1D com condição de fronteira invariavelmente igual a 1.}\label{fig:difusao}
+\end{figure}
 
 \section{Área de estudo}
 
@@ -906,9 +916,22 @@ Portanto, a maré na Enseada de Itapocorói pode ser considerada do tipo mista com
 
 \subsection{Grade}
 
+
+\subsection{Batimetria}
+
+\subsection{Calibração}
+
+\begin{landscape}
+	\begin{figure}[!htb]
+		\includegraphics[width=1.6\textwidth]{figuras/Calibracao_Teste09.png}
+		\centering
+		\caption{Comparação de dados medidos com modelados}\label{fig:Calibracao}
+	\end{figure}
+\end{landscape}
+
 \subsection{Dificuldades encontradas}
 
-Uma série de dificuldades foram encontradas nas etapas iniciais do modelo;
+Uma série de dificuldades foram encontradas nas etapas iniciais do modelo que tornaram sua execução inicial bastante complexa e demorada.
 
 \begin{itemize}
 	\item O modelo não possui interface gráfica e a compreensão dos arquivos necessários e formatos se torna mais complexa;
@@ -920,7 +943,8 @@ Uma série de dificuldades foram encontradas nas etapas iniciais do modelo;
 	\item Uma primeira tentativa foi colocar uma elevação de nível na fronteira. Após uma série de testes, foi verificado que o modelo não inclui nível como variável nas equações. Dessa forma, verificou-se que além da variável zeta, também é necessário inserir nas fronteiras as componentes de velocidade u e v das correntes de maré;
 	\item Diferente de outros modelos, como condição de grade deve ser inserido os valores de posição para cada um dos elementos calculados (rho, psi, u e v);
 	\item Para realizar a grade aninhada através das funções de aninhamento e contato ter na grade numérica as informações de coordenadas para todos os pontos (rho, psi, u e v) em coordenadas geográficas e métricas;
-	
+	\item O modelo mostrou-se bastante sensível quando atinge águas rasas. Modelos cujas camada de água tinha, no mínimo, 1 metro acabaram se mostrando instáveis. Dessa forma, foi estabelecido um mínimo de 4 metros para propagação da onda.
+	\item Outro fator que o modelo se mostrou sensível foi a máscara que indica onde o modelo é terra (mascára=0) e onde é agua (máscara=1), fazendo que houvesse acúmulo de água em determinadas quinas. Uma edição cuidadosa da máscara deve ser feita antes do modelo funcionar.
 	
 \end{itemize}
 
