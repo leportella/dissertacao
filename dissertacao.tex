@@ -32,7 +32,7 @@
 \departamento[o]{Departamento de Geociências}
 \curso[o]{Programa de Pós-Graduação em Oceanografia da Universidade Federal de Santa Catarina como parte dos requisitos}
 \documento[o]{Projeto} % [o] para dissertação [a] para tese
-\titulo{Hidrodinâmica Submareal de uma Praia de Enseada Subtropical Dominada por Ondas}
+\titulo{Hidrodinâmica Residual de uma Praia de Enseada Subtropical Dominada por Ondas}
 % \subtitulo{Subtítulo (se houver)} % Opcional
 \autor{Letícia Vasques dos Reis Portella Nascimento}
 \grau{Mestre em Oceanografia}
@@ -60,7 +60,7 @@
 % \epigrafe{Texto da Epígrafe. Citação relativa ao tema do trabalho. É opcional. A epígrafe pode também aparecer na abertura de cada seção ou capítulo.}
 % {(Autor da epígrafe, ano)}
 
-\textoResumo {O presente estudo pretende avaliar a hidrodinâmica da Enseada do Itapocorói com foco na circulação residual e de longo-período buscando compreender quais forçantes ambientais são mais relevantes na geração dessas correntes. Para alcançar este objetivo, serão utilizados os modelos hidrodinâmico, \emph{Regional Ocean Modelling System} (ROMS), e de ondas, \emph{Simulating Waves Nearshore} (SWAN), acoplados. Os modelos serão desenvolvido em escala regional e local e calibrados com dados provenientes de três ADCPs. Ao final do estudo, almeja-se compreender o padrão típico da circulação residual na Enseada bem como qual é o parâmetro ambiental mais influente.}
+\textoResumo {O presente estudo pretende avaliar a hidrodinâmica da Enseada do Itapocorói com foco na circulação residual e de longo-período buscando compreender quais forçantes ambientais são mais relevantes na geração dessas correntes. Para alcançar este objetivo, serão utilizados o modelo hidrodinâmico, \emph{Regional Ocean Modelling System} (ROMS). O modelo será desenvolvido em escala regional e local e calibrado com dados provenientes de três ADCPs. Ao final do estudo, almeja-se compreender o padrão típico da circulação residual na Enseada bem como qual é o parâmetro ambiental mais influente.}
 \palavrasChave {Circulação Residual. Modelagem Numérica. ROMS. SWAN. }
  
 % \textAbstract {s por ponto.}
@@ -126,7 +126,7 @@ São objetivos específicos deste trabalho:
 
 \begin{itemize} 
 	\item Caracterizar a dinâmica local através da análise das séries dos fundeio.
-	\item Construção de um modelo hidrodinâmico (ROMS) e de ondas (SWAN) para a área de estudo, 
+	\item Construção de um modelo hidrodinâmico (ROMS) para a área de estudo, 
 	com grade local e regional, visando diminuir inconsistências na região de interesse;
 	\item Calibração dos modelos hidrodinâmicos e de ondas com dados provenientes de 3 ADCPs;
 	\item Definir o padrão típico da circulação residual; 
@@ -356,7 +356,7 @@ Concomitantemente, serão avaliados os dados de ADCP que serão usados para a cali
 
 O modelo passará então por uma série de testes de sensibilidade. Esses testes visam compreender o comportamento e as reações do modelo quando os seus dados de entrada ou os parâmetros padrão (\emph{default}) são alterados. Isso garantirá que as configurações a serem usadas sejam bem conhecidas e que os parâmetros a serem mudados na calibração têm sua influência mapeada. 
 
-Após os teses de sensibilidade serão configuradas as condições iniciais. Os dados de entrada serão, basicamente, dados de maré do TPXO, dados de onda do Wavewatch III e dados de vento do CFSR/NCEP. Detalhes sobre cada um dos dados utilizados como forçante serão descritos nas seções que seguem. O resultado desse modelo será comparado com os dados medidos do ADCP, para avaliar a acurácia do modelo. Esse processo é denominado calibração e assume-se que, quanto menor a diferença entre o dado modelado e medido, melhor é o modelo \cite{GMP}. Dessa forma, ao se atestar a confiabilidade dos dados em um ou mais pontos, assume-se que os processos reproduzidos em todo o domínio foram corretamente reproduzidos de forma a gerar resultados coerentes naquele(s) ponto(s) e, portanto, que o modelo está adequado, dentro de suas limitações, a reproduzir a dinâmica da área de interesse.
+Após os teses de sensibilidade serão configuradas as condições iniciais. Os dados de entrada serão, basicamente, dados de maré do TPXO e dados de vento do CFSR/NCEP. Detalhes sobre cada um dos dados utilizados como forçante serão descritos nas seções que seguem. O resultado desse modelo será comparado com os dados medidos do ADCP, para avaliar a acurácia do modelo. Esse processo é denominado calibração e assume-se que, quanto menor a diferença entre o dado modelado e medido, melhor é o modelo \cite{GMP}. Dessa forma, ao se atestar a confiabilidade dos dados em um ou mais pontos, assume-se que os processos reproduzidos em todo o domínio foram corretamente reproduzidos de forma a gerar resultados coerentes naquele(s) ponto(s) e, portanto, que o modelo está adequado, dentro de suas limitações, a reproduzir a dinâmica da área de interesse.
 
 Os erros entre os dados simulados e os dados medidos podem existir por diversos problemas: erros conceituais nas simplificações assumidas pelos modelos, parâmetros inadequados, erros de forçantes ou problemas de aquisição dos dados medidos. Dessa forma, a ideia geral da calibração é modificar parâmetros que possam otimizar os resultados do modelo, testá-los, e avaliar os resultados. Esse é um processo iterativo e deve ser realizado até que o valor de erro esteja dentro de um limite aceitável \cite{GMP}. 
 
@@ -403,7 +403,7 @@ Foram instalados três ADCPs na região da Enseada do Itapocorói em ponto fixos, d
 
 Os equipamentos foram fundeados voltados para cima (\textit{upward-looking}) e configurados para adquirirem informações com intervalos de 30 minutos. As medições de pressão (nível) e temperatura foram coletadas de forma instantânea (medidas pontuais) enquanto que as medições de corrente são resultados de uma média de 5 minutos de aquisição. Para a medição de ondas os dados foram coletados a cada 1 hora durante 20 minutos, numa taxa de aquisição de 4 Hz (0,25 s) no ST001 e ST002e 2 Hz (0,5 s) no ST003.
 
-Os dados passaram por todo o processo de análise de consistência descritos em \citeonline{RibeiroReport} e obtiveram uma taxa de recuperação dos dados acima de 96\% para todos os parametros coletados (corrente, onda, temperatura e pressão) nos 3 ADCPs. Os dados já foram usados nos trabalhos de \citeonline{Ribeiro2014} e \citeonline{tccjonas} e podem ser considerados de ótima qualidade para utilização no presente trabalho.
+Os dados passaram por todo o processo de análise de consistência descritos em \citeonline{RibeiroReport} e obtiveram uma taxa de recuperação dos dados acima de 96\% para todos os parâmetros coletados (corrente, onda, temperatura e pressão) nos 3 ADCPs. Os dados já foram usados nos trabalhos de \citeonline{Ribeiro2014} e \citeonline{tccjonas} e podem ser considerados de ótima qualidade para utilização no presente trabalho.
 
 \begin{figure}[!htb]
 	\includegraphics[width=0.7\textwidth]{figuras/ADCPs.png}
@@ -499,45 +499,6 @@ onde,
 O ROMS é escrito em fortran F90/F95, e utiliza pré-processamento em C para ativar diversas opções físicas e numéricas. Pode ser rodado de forma isolada ou com os módulos de ondas e interação oceano-atmosfera em conjunto. No presente trabalho será incorporado apenas 
  módulo de ondas que será descrito na sessão a seguir. O código do modelo, bem como maiores informações estão disponíveis através de cadastro no site: www.myroms.org.
 
-\subsection{Simulating Waves Nearshore}
-
-Quando há a necessidade de informações sobre ondas no modelo hidrodinâmico, as equações de momento são modificadas de forma a incluir os efeitos das ondas de superfície. O modelo necessita, então, de informações sobre as características básicas das ondas, tais como energia da onda,
-direção de propagação e comprimento de onda. Essas informações podem ser inseridas no modelo através de funções analíticas, arquivos de forçante do tipo NETCDF ou através do acoplamento com um modelo de ondas \cite{myroms}.
-
-O ROMS pode ser acoplado com o modelo de ondas \emph{Simulating Waves Nearshore} (SWAN) desenvolvido pela Universidade de Tecnologia de Delft  (TUDelft), que consegue reproduzir de modo eficiente os efeitos de empinamento, refração e difração entre outros processos. Este modelo pode ser usado para obter a avaliação espectral das ondas em áreas costeiras, como estuários e em áreas fechadas como lagos e reservatórios \cite{smc}. O acoplamento do SWAN com o ROMS pode ser realizado em uma via (\emph{one-way}), onde a saída do modelo é usada como forçante na hidrodinâmica ou de forma concomitante (\emph{two-way}), no qual ambos os modelos trocam informações e são influenciados pelo outro \cite{myroms}.
-
-No SWAN, as ondas são descritas através de espectros de ação (\emph{action density spectrum}) 
-bidimensionais, mesmo em regiões onde os fenômenos não-lineares são predominantes \cite{swan}. A equação de equilíbrio do espectro de ação é igual à densidade de energia ($E(\sigma , \theta)$) divida pela sua frequência relativa ($\sigma$):
-
-
-\begin{equation}
- N(\sigma,\theta) = \frac{E(\sigma,\theta)}{\sigma}
-\end{equation}
-
-A equação de equilíbrio do espectro é descrita em coordenadas cartesianas por:
-
-\begin{equation}
- \frac{\partial N}{\partial t} + \frac{\partial c_{g,x} N}{\partial x} + \frac{\partial c_{g,y} N}{\partial y} + 
- \frac{\delta c_{\theta} N}{\partial \theta} + \frac{\delta c_{\sigma} N}{\partial \sigma} = \frac{S(\sigma,\theta)}{\sigma}
-\end{equation}
-
-onde,
-
-\begin{description}
-	\item $\frac{\partial N}{\partial t}$ representa a taxa local de variação da densidade de ação no tempo;
-
-	\item $\frac{\partial c_{g,x} N}{\partial x}$ e $\frac{\partial c_{g,y} N}{\partial y}$ representam a propagação de ação no plano xy, com
-velocidades de propagação $cg,x$ e $cg,y$ em x e y, respectivamente;
-
-	\item $\frac{\delta c_{\theta} N}{\partial \theta}$ representa o deslocamento da frequência relativa devido às variações em profundidade e 
-correntes;
-
-	\item $\frac{\delta c_{\sigma} N}{\partial \sigma}$ representa a profundidade de refração induzida e corrente induzida; e
-
-	\item $\frac{S(\sigma,\theta)}{\sigma}$ introduz o termo fonte da equação.
-\end{description}
-
-Por usar um método numérico de resolução implícita e, portanto, incondicionalmente estável, o SWAN consegue resolver maiores células de grade com um esforço computacional muito menor do que outros modelos \cite{swan}. 
 
 \section{Forçantes dos modelos}
 
@@ -562,45 +523,6 @@ são facilmente acessíveis através de uma interface gráfica desenvolvida em ambie
 \end{figure}
 
 \newpage
-
-\subsection{Onda}
-
-O WaveWatch III (WW3) é um modelo espectral de terceira geração de ondas de gravidade geradas por vento e uma evolução dos modelos Wavewatch I e Wavewatch II desenvolvidos pela \emph{Delft University of Technology} e a \emph{NASA Goddard Spac Flight Center}, respectivamente \cite{ww3}. 
-
-O WW3 resolve a equação da conservação da densidade espectral da ação da onda. A generalização que se faz nessa equação é que as propriedades a profundidade da coluna de água, corrente e o campo de ondas fariam nas escalas espaciais e temporais muito maiores que as variações de escala de uma onda única.
-Na versão 3.14 alguns termos-fonte para águas extremamente rasas (zona de surfe) foram incluídos, mas ainda são bastante rudimentares. Dessa forma, o modelo é melhor utilizado em águas profundas. A versão mais recente do modelo é a 4.18 lançada em Março de 2014 \cite{wwsite}.
-
-As equações governantes no WW3 incluem refração do campo de ondas devido variações espaciais e temporais, enquanto os processos físicos incluem crescimento de onda, decaimento pela ação de vento, interações ressonantes não-lineares, dissipação (\emph{whitecappening}), fricção com o fundo e espalhamento devido a interação com o fundo. 
-
-O modelo pode ser obtido através de um cadastro no site:
-
- http://polar.ncep.noaa.gov/waves/wavewatch/license.shtml 
- 
- e os dados podem ser obtidos no site: ftp://polar.ncep.noaa.gov/pub/history/waves/
-
-%Os dados de onda serão adquiridos do banco de dados do Sistema de Modelagem Costeira (SMC-Brasil)
-%dispon\'iveis gratuitamente para pesquisa atrav\'es de cadastro no endere\c{c}o: http://smcbrasil.ihcantabria.com.
-%O SMC-Brasil \'e um conjunto de aplicaçoes, bancos de dados (batimetria, onda e n\'iveis) e modelos num\'ericos das v\'arias din\^amicas que 
-%afetam a morfologia praial. 
-%
-%O SMC-Brasil conta com um banco de dados de rean\'alise de ondas distribu\'ido ao longo da costa do Brasil para um per\'iodo de 60 anos. 
-%Os resultados foram gerados em duas etapas: na primeira foi gerada uma rean\'alise global que permitiu determinar as caracter\'isticas gerais
-%das ondas em \'aguas profundas pr\'oximas \`a costa brasileira, cuja s\'erie \'e denominada \emph{Global Ocean Waves} (GOW). 
-%Na segunda etapa, foi realizado um \emph{downscaling} para transferir as ondas at\'e
-%uma posiçao pr\'oxima da costa atrav\'es do SWAN, s\'erie chamada de \emph{Downscaled Ocean Waves} (DOW). A resoluçao da malha 
-%para a costa brasileira \'e de 1 x 1 km e cobre toda a \'area da costa, com sobreposiçao nas fronteiras para minimizar os problemas
-%de fronteira.
-%
-%\begin{figure}[!htb]
-%   \centering
-%   \caption{Malhas utilizadas pelo SMC-Brasil na trasiçao para \'aguas rasas (DOW) do modelo de rean\'alise global}\label{fig:dow}
-%   \includegraphics[width=0.5\textwidth]{figuras/DOW.png}
-%\end{figure}
-%
-%
-%O modelo foi calibrado e validado sendo ideal para aplicaçoes costeiras \cite{smc} e para a aplicaçao
-%no presente estudo. O estudo deve obter os dados de ondas em regi\~oes pr\'oximas da Enseada do Itapocor\'oi e, atrav\'es de uma grade num\'erica 
-%regional, propag\'a-la at\'e as região interna da enseada.
 
 \subsection{Vento}
 
@@ -641,6 +563,28 @@ Os dados foram adquiridos em dezembro de 2015 através do endereço \url{https://w
 \subsection{Batimetria}
 
 A batimetria da grade regional foi adquirida da base de dados ETOPO1 da NOAA. Esta base de dados contém um modelo global da superfície terreste que integra dados de batimetria e topografia em uma resolução de 1 minuto. Os dados foram obtidos no formato xyz através do endereço \url{https://www.ngdc.noaa.gov/mgg/global/global.html}.  
+
+Para detalhamento da batimetria em áreas mais rasas, onde o modelo do ETOPO1 não tem uma resolução tão boa, foram utilizadas cartas náuticas da Diretoria de Hidrografia e Navegação (DHN) obtidas através do endereço \url{http://www.mar.mil.br/dhn/chm/box-cartas-raster/raster_disponiveis.html}. Foram utilizados dados pontuais de batimetria e isóbatas para refinar o detalhamento da batimetria do modelo das cartas náuticas listas na tabela \ref{tab:cartas}.
+
+\begin{table}[h]
+	\centering
+	\caption{Cartas Náuticas utilizadas}\label{tab:cartas}
+	\begin{tabular}{c|c|c}
+		Número da Carta & Escala \\ 
+		\hline                              
+		30    & Costa Sueste da América do Sul          & 1:3.500.000      \\
+		90    & Da Ilha de Santa Catarina a Maldonado   & 1:990.526        \\
+		23300 & De Paranaguá a Imbituba                 & 1:300.000        \\
+		21070 & Do Cabo Frio ao Cabo de Santa Marta Grande & 1:1.000.000   \\
+		1910  & Da Ilha da Coral ao Cabo de Santa Marta Grande & 1:100.211 \\
+		1902  & Proximidades da Ilha de Santa Catarina  & 1:100.928        \\
+		1801  & Porto de Itajaí                         & 1:15.000
+	\end{tabular}
+\end{table}
+
+\subsection{Dados Pontuais de Vento}
+
+Além dos dados necessários para serem utilizados como forçante para o modelo numérico, é necessário 
 
 \section{Avaliação dos dados medidos}
 
@@ -686,6 +630,8 @@ Outras ferramentas, geradas a partir dos módulos básicos do Python, são disponib
 		
 		\item Pacote WindRose disponível no repositório Python;
 \end{description}
+
+Todas as ferramentas desenvolvidas neste presente trabalho também foram disponibilizadas online e podem ser acessadas através do endereço \url{https://github.com/leportella/oceanpyscripts}.
 
 Os mapas apresentados foram gerados de Sistema de Informações Geográficas (SIG) através do ArcGIS, cuja licença foi gentilmente cedida pela CB\&I.
 
@@ -896,39 +842,110 @@ Portanto, a maré na Enseada de Itapocorói pode ser considerada do tipo mista com
 %-------------------------------------------------------------------------------------------------------
 \subsection{Corrente}
 
+As correntes medidas apresentam velocidades muito baixas, abaixo de 0,2 m/s na maior parte do tempo. Entretanto, nota-se que a maior parte das correntes fica abaixo de 0,1 m/s conforme nota-se nas figuras \ref{fig:curr_depthav_01}, \ref{fig:curr_depthav_02} e \ref{fig:curr_depthav_03}.
+
+Nos histogramas apresentados nas figuras \ref{fig:hist_velcorrente_01} a \ref{fig:hist_velcorrente_03} verifica-se que a maioria das correntes está abaixo de 0,05 m/s
 
 \begin{figure}[!htb]
-	\includegraphics[width=1.1\textwidth]{figuras/CurrentRose_ST001_DepthAv.png}
+	\includegraphics[width=1.1\textwidth]{figuras/CurrentRose_ST001_DepthAv_CM.png}
 	\centering
-	\caption{Rosa de correntes no ponto ST001 integrada na vertical}\label{fig:curr_depthav_01}
+	\caption{Rosa de correntes no ponto ST001 integrada na vertical (em centímetros)}\label{fig:curr_depthav_01}
 \end{figure}
 
 \begin{figure}[!htb]
-	\includegraphics[width=1\textwidth]{figuras/CurrentRose_ST002_DepthAv.png}
+	\includegraphics[width=1\textwidth]{figuras/CurrentRose_ST002_DepthAv_CM.png}
 	\centering
-	\caption{Rosa de correntes no ponto ST002 integrada na vertical}\label{fig:curr_depthav_02}
+	\caption{Rosa de correntes no ponto ST002 integrada na vertical (em centímetros)}\label{fig:curr_depthav_02}
 \end{figure}
 	
 \begin{figure}[!htb]
-	\includegraphics[width=1\textwidth]{figuras/CurrentRose_ST003_DepthAv.png}
+	\includegraphics[width=1\textwidth]{figuras/CurrentRose_ST003_DepthAv_CM.png}
 	\centering
-	\caption{Rosa de correntes no ponto ST003 integrada na vertical}\label{fig:curr_depthav_03}
+	\caption{Rosa de correntes no ponto ST003 integrada na vertical (em centímetros)}\label{fig:curr_depthav_03}
 \end{figure}
 
+\begin{figure}[!htb]
+	\includegraphics[width=1.1\textwidth]{figuras/Corrente_ST001_HistVento.png}
+	\centering
+	\caption{Histograma da velocidade de corrente no ponto ST001 integrada na vertical}\label{fig:hist_velcorrente_01}
+\end{figure}
+
+\begin{figure}[!htb]
+	\includegraphics[width=1.1\textwidth]{figuras/Corrente_ST002_HistVento.png}
+	\centering
+	\caption{Histograma da velocidade de corrente no ponto ST002 integrada na vertical}\label{fig:hist_velcorrente_02}
+\end{figure}
+
+\begin{figure}[!htb]
+	\includegraphics[width=1.1\textwidth]{figuras/Corrente_ST003_HistVento.png}
+	\centering
+	\caption{Histograma da velocidade de corrente no ponto ST003 integrada na vertical}\label{fig:hist_velcorrente_03}
+\end{figure}
 
 %-------------------------------------------------------------------------------------------------------
+\newpage
 \section{Modelo Numérico}
 
 \subsection{Grade}
 
+A grade numérica do modelo ROMS é do tipo Aracawa-C, onde os cálculos das variáveis escalaras são feitos no centro da célula de grade e as variáveis vetoriais (u e v principalmente) são dados nas bordas das grades (Figure \ref{fig:Romsgrid}). Dessa forma, o tamanho da grade é diferente para cada uma das variáveis estudadas. Na descrição realizada nesta seção, o tamanho das grades se referem aos \emph{Rho-points}, localizados no centro da célula. Entretanto, a grade do modelo contém todas as grades específicas pra cada uma das variáveis necessárias.
+
+
+\begin{figure}[!htb]
+	\includegraphics[width=0.6\textwidth]{figuras/ROMSgrid.png}
+	\centering
+	\caption{Malha numérica típica do ROMS}\label{fig:Romsgrid}
+\end{figure}
+
+O modelo TPXO utilizado como forçante no modelo resolve muito bem a maré em águas profundas, duas grades foram desenvolvidas para que a onda de maré fosse trazida de águas profundas, onde ela é bem resolvida, para águas rasas, onde o processo deseja ser estudado.
+
+A grade regional foi construída de forma retangular, com uma resolução de 250 m e se estendendo desde o sul da Ilha de Santa Catarina até próximo da desembocadura da Baía de Paranaguá (Figura \ref{fig:GradeReg}). Isso resultou em 598 elementos de grade na direção $\chi$ e 1098 elementos de grade na direção $\eta$. Além disso, a grade foi rotacionada em 10 graus para direita, de forma a melhor alinha o eixo com a direção preferencial da linha de costa.
+
+A resolução de 250 da grade regional foi escolhida de forma arbitrária. O ROMS tem uma série de ferramentas para gerar a grade aninhada automaticamente e a documentação diz que não é recomendado utilizar uma resolução no aninhamento maior que 5 vezes. Dessa forma, para se alcançar uma resolução de 50 metros na área de estudo, a grade regional foi construída considerando a resolução desejada na grade local.
+
+A grade local foi construída então a partir da grade regional com uma resolução 5 vezes maior, focando na Enseada do Itapocorói mas de forma que as fronteiras ainda ficassem distante da região de interesse. Esta possui 682 elementos na direção $\chi$ e 942 elementos na direção $\eta$ e a extensão de seu domínio pode ser vista na figura \ref{fig:GradeLoc}.
+
+\begin{figure}[!htb]
+	\includegraphics[width=0.9\textwidth]{figuras/GradeRegional.png}
+	\centering
+	\caption{Domínio da grade numérica regional.}\label{fig:GradeReg}
+\end{figure}
+
+\begin{landscape}
+\begin{figure}[!htb]
+	\includegraphics[width=1.2\textwidth]{figuras/GradeLocal.png}
+	\centering
+		\caption{Domínio da grade numérica local.}\label{fig:GradeLoc}
+\end{figure}
+\end{landscape}
 
 \subsection{Batimetria}
+
+Os dados batimétricos foram interpolados nas grades numéricas regional e local e podem ser observados nas figuras \ref{fig:BatReg} e \ref{fig:BatLoc}, respectivamente. Na grade regional, a maior profundidade foi de 254 metros, enquanto na local foi de 47 metros.
+
+Como o modelo utiliza-se coordenadas sigma, a variação topográfica devem ser limitadas para evitar gradientes de pressão errôneos \cite{Masonetal2010}. Dessa forma, foi aplicado um filtro Shapiro de forma que o fator r fosse menor que 0,2 conforme descrito por \cite{Masonetal2010}.
+
+Inicialmente, foi verificado que o modelo era bastante sensível quanto à profundidade da coluna de água e que, em profundidades muito pequenas o modelo se tornava tão instável que quebrava. Dessa forma, alguns testes foram feitos para avaliar qual a menor profundidade necessária para que o modelo se mostrasse estável. Essa profundidade mínima estabelecida foi 3 metros e, portanto, qualquer valor menor que 3 metros foi alterado para 3 metros. Isso não influencia o presente trabalho, uma vez que este não pretende resolver processos dentro da zona de surfe.
+
+\begin{figure}[!htb]
+	\includegraphics[width=0.9\textwidth]{figuras/Batimetria_GrdRegional.png}
+	\centering
+	\caption{Batimetria interpolada na grade numérica regional.}\label{fig:BatReg}
+\end{figure}
+
+\begin{landscape}
+\begin{figure}[!htb]
+	\includegraphics[width=1.2\textwidth]{figuras/Batimetria_GrdRLocal.png}
+	\centering
+	\caption{Batimetria interpolada na grade numérica local.}\label{fig:BatLoc}
+\end{figure}
+\end{landscape}
 
 \subsection{Calibração}
 
 \begin{landscape}
 	\begin{figure}[!htb]
-		\includegraphics[width=1.6\textwidth]{figuras/Calibracao_Teste09.png}
+		\includegraphics[width=1.2\textwidth]{figuras/Calibracao_Teste09.png}
 		\centering
 		\caption{Comparação de dados medidos com modelados}\label{fig:Calibracao}
 	\end{figure}
