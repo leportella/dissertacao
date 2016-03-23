@@ -730,9 +730,13 @@ As tabelas \ref{tab:ttidest001} a \ref{tab:ttidepenha} se encontram as constante
 
 Simulações considerando um sinal fixo com diferentes níveis de ruído conseguiram indicar para sinais como os da maré é ideal que o SNR seja maior que 10, mas que valores entre 2 e 3 são aceitáveis \cite{ttidematlab}. Portanto, foram excluídas da tabela as constantes harmônicas que apresentaram  uma relação de sinal-ruído (SNR) menor que 2.
 
-Pode-se observar que as constantes harmônicas encontradas não foram constantes em todos os pontos encontrados. 
+Quando comparamos as constantes harmônicas dos ADCPs de Piçarras (30 dias de medição) com aquelas encontradas pelo marégrafo localizado na Penha (1 ano de dados), é possível perceber que as segundas apresentaram um maior número de constantes harmônicas cujo SNR foi maior que 2. Pode-se concluir, portanto, que a quantidade limitada de dados no primeiro período pode, potencialmente, prejudicar análises harmônicas mais complexas.
 
-A importância relativa das constituintes diurnas e semidiurnas pode ser expresso pelo número de Forma (\emph{Form Factor}) de acordo com as constantes harmônicas encontradas, defino por \cite{Pugh87}:
+Também é possível observar que as constantes harmônicas encontradas não foram as mesmas em todos os locais analisados. Buscou-se compreender estas diferenças e, para isso, as constantes harmônicas encontradas pela FEMAR em Penha \cite{femar} também foram utilizadas para comparação. A tabela \ref{tab:comparacoesmares} apresenta, baseado na tabela da FEMAR, quais as constantes harmônicas foram encontradas nos dados e os valores de amplitude encontrados. É visualmente nítido que várias constantes apresentadas na tabela da FEMAR não foram encontradas em nenhum dos dados analisados. Entre elas estão as MM, Msf, M1, J1, OO1, 2N2, NU2, T2, SN4. Vale ressaltar que essas constante até podem ter sido encontradas pelo pacote \emph{ttide} mas foram desconsideradas devido à baixa relação de sinal-ruído.
+
+Dentre as constantes apresentadas pela FEMAR que foram verificadas nos dados medidos, pode-se perceber uma variação na amplitude das ondas. As diferenças chegam alcançar 1,7 m na componente quaterdiurna MS4, 2 cm na componente principal lunar (M2) e mais de 4 cm na principal solar (S2). Além disso, três constantes foram encontradas exclusivamente nos dados de ADCP (ALP1, 2Q1 e NO1) e duas foram encontradas em todos os dados medidos mas não constavam na FEMAR (SK3 e 2MS6). 
+
+A importância relativa das constituintes diurnas e semidiurnas pode ser expresso pelo número de Forma (\emph{Form Factor}, F) de acordo com as constantes harmônicas, defino por \cite{Pugh87}:
 
 \begin{equation}
 F = \frac{H_{K1} + H_{O1}}{H_{M2} + H_{S2}}
@@ -740,31 +744,40 @@ F = \frac{H_{K1} + H_{O1}}{H_{M2} + H_{S2}}
 
 Onde:
 \begin{description}
+	\item[] $H_{K1}$: é a amplitude da componente lunisolar diurna;
+	\item[] $H_{O1}$: é a amplitude da componente principal lunar diurna;
+	\item[] $H_{M2}$: é a amplitude da componente principal lunar;
+	\item[] $H_{S2}$: é a amplitude da componente principal solar.
+\end{description}
+
+e: 
+
+\begin{description}
 	\item[] Se F estiver entre 0 e 0.25 a maré tem forma semidiurna;
 	\item[] Se F estiver entre 0.25 e 1.5 a maré é considerada mista com predominância semidiurna;
 	\item[] Se F estiver entre 1.5 e 3 a maré é considerada mista com predominância diurna;
 	\item[] Se F for maior que 3 a maré é puramente diurna. 
 \end{description}
 
-Os números de forma encontrados para os dados apresentados foram: 
-
-\begin{description}
-	\item[] ST001: 0,2978
-	\item[] ST002: 0,2962
-	\item[] ST003: 0,2873
-	\item[] Penha: 0,3131
-\end{description}
-
-Portanto, a maré na Enseada de Itapocorói e arredores pode ser considerada do tipo mista com uma predominância semidiurna. Entretanto, pelo baixo valor de número de forma encontrado, pode-se notar a alta influência das componentes semidiurna sobre as componentes diurnas. 
-
-Também é possível observar a grande influência das componentes semidiurnas na figura \ref{fig:fftpicarras}. O maior pico de energia é dado na frequência próxima de 0,08, ou seja, um período aproximado de 12,5 horas. O espectro de frequência dos dados de Penha (Figura \ref{fig:fftpenha}) se apresentam menos ruidosos que os de Piçarras. No entanto, em ambos os gráficos é possível perceber que existem quatro picos de energia distintos cujos períodos associados a esses picos são de 25,5, 12,5, 8,2 e 6,2 horas. Dessa forma, é possível perceber que a componente semidiurna (12,5 horas) é a componente de maior energia, como já foi verificado anteriormente, com as componentes diurnas, tercidiurnas e quadridiurnas com energias semelhantes. Outro fato que deve ser notado é que, em ambos os gráficos, existe uma energia considerável em períodos maiores que 25 horas mas que não pode ser bem identificada no espectro. Essa informação vai ao encontro dos dados de \citeonline{truccoloetal2006}, que verificou que cerca de 24\% da variação de nível em São Francisco do Sul poderia ser explicada por frequências submareais.
+Os números de forma encontrados para os dados medidos podem ser observados na tabela \ref{tab:numforma} e, portanto, a maré na Enseada de Itapocorói e arredores pode ser considerada do tipo mista com uma predominância semidiurna. Entretanto, pelo baixo valor de número de forma encontrado, pode-se notar a alta influência das componentes semidiurna sobre as componentes diurnas. Os dados de Penha apresentaram uma maior influência das componentes diurnas sobre as semidiurnas quando comparados com os dados de Piçarras. 
 
 
+\begin{table}[h]
+	\centering
+	\caption{Número de Forma para cada um dos dados analisados}\label{tab:numforma}
+	\begin{tabular}{c|c}
+		Local & Número de Forma  \\ 
+		\hline                              
+		ST001 & 0,2978   \\
+		ST002 & 0,2962   \\
+		ST003 &  0,2873  \\
+		Penha & 0,3131 
+	\end{tabular}
+\end{table}
 
 
-Quando comparamos os dados de constantes harmônicas dos ADCPs de Piçarras (30 dias de dados) com aquelas encontradas pelo marégrafo localizado na Penha (1 ano de dados), é possível perceber que o segundo dado apresenta um maior número de constantes harmônicas cujo SNR foi maior que 1. O que demonstra a quantidade limitada de dados no primeiro período pode prejudicar análises harmônicas mais complexas.
+Também é possível observar a grande influência das componentes semidiurnas na figura \ref{fig:fft}. Primeiramente deve-se notar que apesar de os dados terem um tempo de medições diferentes (1 ano para Penha e 1 mês para Piçarras), os resultados de espectro se mostraram muito semelhantes. É possível perceber que existem quatro picos de energia distintos cujos períodos associados a esses picos são de 25,5, 12,5, 8,2 e 6,2 horas.  O maior pico de energia foi encontrado na frequência de 0,08, ou seja, um período aproximado de 12,5 horas indicando a predominância semidiurna, como já foi verificado anteriormente. As componentes diurnas, tercidiurnas e quaterdiurnas se apresentaram com picos de energia semelhantes entre si, sem predominância. Outro resultante interessante é que, em ambos os gráficos, existe uma energia considerável em períodos maiores que 25 horas, mas que não pode ser bem identificada no espectro. Essa informação vai ao encontro dos dados de \citeonline{truccoloetal2006}, que verificou que cerca de 24\% da variação de nível em São Francisco do Sul poderia ser explicada por frequências submareais em São Francisco do Sul.
 
-Em Piçarras, a M2 foi, invariavelmente, a constante harmônica que teve maior SNR
 
 \begin{landscape}
 	\label{tab:ttidest001}
@@ -903,11 +916,50 @@ Em Piçarras, a M2 foi, invariavelmente, a constante harmônica que teve maior SNR
 		\end{figure}
 		
 \begin{landscape}
+	
+			\label{tab:comparacoesmares}
+			\begin{tabularx}{\linewidth}{c|c|c|c|c|cc}
+				\caption{Comparações entre as constantes harmônicas encontradas nos pontos ST001, ST002, ST003 e Penha com as constantes definidas pela FEMAR \cite{femar}}\\
+				\toprule
+				\textbf{Constantes} & \textbf{FEMAR} & \textbf{ST001}   & \textbf{ST002}  & \textbf{ST003}  & \textbf{Penha}  \\[6pt]
+				\midrule
+				\endhead
+	 				Constante & FEMAR & ST001 & ST002 & ST003 & Penha \\[6pt]
+				MM	&		21,2 	&	-		&	-		&	-		&	- 		\\[6pt]
+				Msf	&		6,9		& 	-		&	-		&	-		&	-		\\[6pt]
+				Q1	&		3,8		&	2,7		&	2,8		&	2,6		&	2,4		\\[6pt]
+				O1	&		11,7	&	10,77	&	10,65	&	10,68	&	8,9		\\[6pt]
+				M1	&		0,5		&	-		&	-		&	-		&	-		\\[6pt]
+				P1	&		2,6		&	-		& 	-		&	-		&	2,0		\\[6pt]
+				K1	&		7,9		&	4,8		&	4,7		&	4,4		&	5,4 	\\[6pt]
+				J1	&		1,5		&	-		&	-		&	-		&	-		\\[6pt]
+				001	&		0,7		&	-		&	-		&	-		&	-		\\[6pt]
+				2N2	&	 	0,7		&	-		&	-		&	-		&	-		\\[6pt]
+				MU2	&		3,1		&	2,8		&	3,0		&	3,2		&	2,1		\\[6pt]
+				N2 	&		5,5		&	5,2		&	5,2		&	4,7		&	4,6		\\[6pt]
+				NU2	&		1,1		&	-		&	-		&	-		&	-		\\[6pt]
+				M2 	&		26,3	&	28,3	&	28,1	&	28,3	&	28,1 	\\[6pt]		
+				L2	&		0,8		&	-		&	1,2		&	1,0		&	-		\\[6pt]
+				T2	&		1,1		&	-		&	-		&	-		&	-		\\[6pt]
+				S2 	&		19,4	&	23,9	&	23,9	&	24,4	&	17,5	\\[6pt]
+				K2	&		5,3		&	-		&	-		&	-		&	5,5		\\[6pt]
+				MO3 &		1,7		&	2,4		&	2,4		&	2,6		&	2,6		\\[6pt]
+				M3 	&		5,5		&	4,8		&	4,8		&	4,6		&	5,3		\\[6pt]
+				MK3	&		0,6 	&	-		&	-		&	-		&	1,7		\\[6pt]
+				MN4	&		3,8		&	3,9		&	3,9		&	3,9		&	2,8		\\[6pt]
+				M4 	&		8,1		&	8,9		&	8,8 	&	8,8		&	7,7		\\[6pt]
+				SN4 &		0,9		&	-		&	-		&	-		&	-		\\[6pt]	
+				MS4 &		3,3		&	5,0		&	5,0		&	4,9		&	3,7		\\[6pt]
+								
+				\bottomrule
+			\end{tabularx}
+	
 		\begin{figure}[!htb]
 			\includegraphics[width=1.6\textwidth]{figuras/Espectros.png}
 			\centering
 			\caption{Espectro de energia em Piçarras e Penha}\label{fig:fft}
 		\end{figure}
+		
 		
 \end{landscape}
 
