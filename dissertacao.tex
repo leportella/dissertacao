@@ -965,6 +965,26 @@ Também é possível observar a grande influência das componentes semidiurnas na fi
 
 \subsection{Temperatura}
 
+Os dados de temperatura obtidos pelos ADCPs podem ser observados na figura \ref{fig:temperatura}. Existe uma mudança brusca no comportamento da variável ao longo dos três pontos. No ponto ST001, mais próximo da praia e na menor profundidade, possui uma grande variação de temperatura ao longo do mês. A temperatura chegou próximo a 17$^{\circ}$C no dia 24 de Agosto (18h) e ultrapassou os 20$^{\circ}$C em 19 de Setembro (23h).
+
+Na tabela \ref{tab:dadostemp} é possível observar as características extremas e médias dos dados analisados. A variação de temperatura no ponto ST003 foi de 1,05$^{\circ}$C enquanto que ST001 foi mais de 3 vezes maior: 3,5$^{\circ}$C. 
+
+Portanto, verifica-se que na profundidade de 17 m onde se localiza o ADCP ST003 a temperatura apresentou-se bastante homogênea, enquanto que em 4 m (ST001) a temperatura aparenta ter influência de aquecimento local.
+
+\begin{table}[h]
+	\centering
+	\caption{Características dos dados de temperatura.}\label{tab:dadostemp}
+	\begin{tabular}{c|c|c|c|c}
+		Equipamento & Mínimo & Máximo & Média & Variação Máxima \\ 
+		\hline                              
+		ST001 & 17,02$^{\circ}$C   & 20,61$^{\circ}$C   & 18,02$^{\circ}$C & 3,59$^{\circ}$C\\
+		ST002 & 17,23$^{\circ}$C   & 19,67$^{\circ}$C   & 18,19$^{\circ}$C & 2,44$^{\circ}$C \\
+		ST003 & 17,40$^{\circ}$C  & 18,45$^{\circ}$C    & 17,89$^{\circ}$C & 1,05$^{\circ}$C \\
+	\end{tabular}
+\end{table}
+
+
+
 \begin{landscape}
 	\begin{figure}[!htb]
 		\includegraphics[width=1.6\textwidth]{figuras/Temperatura_Geral.png}
@@ -976,7 +996,9 @@ Também é possível observar a grande influência das componentes semidiurnas na fi
 %-------------------------------------------------------------------------------------------------------
 \subsection{Corrente}
 
-As correntes medidas apresentam velocidades muito baixas, abaixo de 0,2 m/s na maior parte do tempo. Entretanto, nota-se que a maior parte das correntes fica abaixo de 0,1 m/s conforme nota-se nas figuras \ref{fig:curr_depthav_01}, \ref{fig:curr_depthav_02} e \ref{fig:curr_depthav_03}.
+Nas figuras \ref{fig:curr_depthav_01}, \ref{fig:curr_depthav_02} e \ref{fig:curr_depthav_03} podem ser observadas as rosas de corrente integradas na vertical para os pontos ST001, ST002 e St003, respectivamente.
+
+As correntes medidas apresentam velocidades muito baixas, abaixo de 0,2 m/s na maior parte do tempo. Entretanto, nota-se que a maior parte das correntes fica abaixo de 0,1 m/s.
 
 Nos histogramas apresentados nas figuras \ref{fig:hist_velcorrente_01} a \ref{fig:hist_velcorrente_03} verifica-se que a maioria das correntes está abaixo de 0,05 m/s
 
@@ -1022,7 +1044,7 @@ Nos histogramas apresentados nas figuras \ref{fig:hist_velcorrente_01} a \ref{fi
 
 \subsection{Grade}
 
-A grade numérica do modelo ROMS é do tipo Aracawa-C, onde os cálculos das variáveis escalaras são feitos no centro da célula de grade e as variáveis vetoriais (u e v principalmente) são dados nas bordas das grades (Figure \ref{fig:Romsgrid}). Dessa forma, o tamanho da grade é diferente para cada uma das variáveis estudadas. Na descrição realizada nesta seção, o tamanho das grades se referem aos \emph{Rho-points}, localizados no centro da célula. Entretanto, a grade do modelo contém todas as grades específicas pra cada uma das variáveis necessárias.
+A grade numérica do modelo ROMS é do tipo Aracawa-C, onde os cálculos das variáveis escalaras são feitos no centro da célula de grade e as variáveis vetoriais (u e v principalmente) são dados nas bordas das grades (Figure \ref{fig:Romsgrid}). Dessa forma, o tamanho da grade é diferente para cada uma das variáveis estudadas. Na descrição realizada nesta seção, o tamanho das grades se referem aos \emph{Rho-points}, localizados no centro da célula. Entretanto, a grade do modelo contém todas as informações específicas pra cada uma das variáveis necessárias.
 
 
 \begin{figure}[!htb]
@@ -1031,7 +1053,7 @@ A grade numérica do modelo ROMS é do tipo Aracawa-C, onde os cálculos das variáv
 	\caption{Malha numérica típica do ROMS}\label{fig:Romsgrid}
 \end{figure}
 
-O modelo TPXO utilizado como forçante no modelo resolve muito bem a maré em águas profundas, duas grades foram desenvolvidas para que a onda de maré fosse trazida de águas profundas, onde ela é bem resolvida, para águas rasas, onde o processo deseja ser estudado.
+O modelo TPXO utilizado como forçante no ROMS resolve muito bem a maré em águas profundas, duas grades foram desenvolvidas para que a onda de maré fosse trazida de águas profundas, onde ela é bem resolvida, para águas rasas, onde o processo deseja ser estudado.
 
 A grade regional foi construída de forma retangular, com uma resolução de 250 m e se estendendo desde o sul da Ilha de Santa Catarina até próximo da desembocadura da Baía de Paranaguá (Figura \ref{fig:GradeReg}). Isso resultou em 598 elementos de grade na direção $\chi$ e 1098 elementos de grade na direção $\eta$. Além disso, a grade foi rotacionada em 10 graus para direita, de forma a melhor alinha o eixo com a direção preferencial da linha de costa.
 
