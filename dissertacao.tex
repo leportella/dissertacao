@@ -413,6 +413,8 @@ Os dados passaram por todo o processo de análise de consistência descritos em \c
 
 Entretanto, como foi exposto, durante as medições alguns dados não puderam ser coletados e, portanto, as séries temporais continham interrupções. Interrupções em séries temporais se tornam-as muito complexas para utilização sem um tratamento. Dado que a quantidade de dados faltantes era esparsa, representava menos de 5\% da série temporal e estavam igualmente espaçados, escolheu-se utilizar uma interpolação linear simples para suprir os dados que não foram medidos. A figura \ref{fig:nans} apresenta um exemplo dos dados medidos e da quantidade de dados faltantes no ST001.
 
+Além dos dados desses 3 ADCPs, também foram cedidos gentilmente dados de maregrafia coletados em Penha durante mais de 1 ano (entre Outubro de 1995 e Dezembro de 1996) pelo  Professor João Luiz Baptista de Carvalho. Estes dados não serão usados para a calibração do modelo, mas serão analisados e comparados com os dados do ADCP para melhor compreensão da hidrodinâmica local.
+
 \begin{landscape}
 \begin{figure}[!htb]
 	\includegraphics[width=1.6\textwidth]{figuras/Nivel_ExemploNans.png}
@@ -420,6 +422,7 @@ Entretanto, como foi exposto, durante as medições alguns dados não puderam ser c
 	\caption{Dados medidos no ADCP ST001.}\label{fig:nans}
 \end{figure}
 \end{landscape}
+
 
 \section{Modelos Numéricos}
 
@@ -641,49 +644,43 @@ Os mapas apresentados foram gerados de Sistema de Informações Geográficas (SIG) 
 
 \subsection{Nível}
 
-Inicialmente foram avaliados os dados de nível (pressão) dos 3 ADCPs de forma a avaliar o comportamento da maré ao longo da Enseada. Nas figuras \ref{fig:nivelst001} a \ref{fig:nivelst003} é possível verificar as variações de nível registradas pelo ADCP. Como a medição de nível depende do local onde o ADCP foi instalado, é possível perceber a diferença entre as profundidades nos três pontos medidos. Não obstante, os três aparelhos tiveram um comportamento de nível muito semelhante, o que indica que a dinâmica local não varia dentro da enseada.
+Inicialmente foram estudados os dados de nível (pressão) dos três ADCPs de forma a avaliar o comportamento da maré ao longo da Enseada. Nas figuras \ref{fig:nivelst001} a \ref{fig:nivelst003} é possível verificar as variações de nível registradas pelo ADCP. Como a medição de nível depende do local onde o ADCP foi instalado, é possível perceber a diferença entre as profundidades nos três pontos medidos. Não obstante, os três aparelhos tiveram um comportamento de nível muito semelhante, o que indica que, em termos de nível, a dinâmica local não aparenta variar dentro da enseada.
 
-A tabela \ref{tab:dadosnivel} contém as principais características dos dados adquiridos. A variação entre o nível máximo e mínimo encontrado foi de cerca de 2 m, com uma tendência leve de aumento do nível nos pontos mais internos (ST001 e ST002). 
+A tabela \ref{tab:dadosnivel} contém as principais características dos dados adquiridos. A variação entre o nível máximo e mínimo encontrado foi de aproximadamente 2 m, com uma tendência leve de aumento dessa variação nos pontos mais internos (ST001 e ST002). 
 
-Na figura \ref{fig:previsao} são apresentados os dados medidos, uma vez retiradas as médias, os dados previstos pelo ttide para o período analisado e o ruído resultante da subtração de dois dados anteriores.
+O módulo \emph{ttide} de previsão de maré astronômica foi aplicado em todos os dados medidos para avaliar a componente astronômica dentro dos sinais analisados, as principais constantes harmônicas na região de interesse e a resultante meteorológica encontrada na região. Na figura \ref{fig:previsao} e \ref{fig:previsaopenha} estão apresentados parte dos resultados gerados pelo pacote. Na parte superior da figura se encontram os dados medidos (uma vez retiradas as médias, no caso dos dados dos ADCPs),na parte central estão a previsão do nível pelo pacote para o período analisado e na parte final está o sinal resultante da subtração de dois dados anteriores, referente à maré meteorológica. 
+
+Na tabela \ref{tab:dadosmeteo} estão apresentados os valores máximos e mínimos de nível de origem meteorológica. Nos dados colhidos pelos ADCPs, a maré meteorológica gerou um nível mínimo de -0,71 m e máximo de 0,65 m. Dessa forma, a maré meteorológica foi responsável por uma variação de nível de mais de 1,3 m no ponto ST003 e mais de 1,2 m nos outros dois locais de coleta. Já em Penha, verificou-se que enquanto o nível máximo tenha sido semelhante ao encontrado no dados dos ADCPs (0,70 m), o nível mínimo foi quase o dobro, atingindo -1,37 m. Dessa forma, é possível concluir que a maré meteorológica verificada pelos ADCPs no ano de 2011 pode não ter sido tão representativa quanto, de fato, ela pode ser.  
 
 \begin{table}[h]
 	\centering
-	\caption{Características das Variações de Nível nos ADCPs (em metros)}\label{tab:dadosnivel}
+	\caption{Características das Variações de Nível Medidas (em metros)}\label{tab:dadosnivel}
 	\begin{tabular}{c|c|c|c|c|c}
 		Equipamento & Mínimo & Máximo & Média & Mediana & Varição \\ 
 		\hline                              
-		ST001       & 2,90   & 4,98   & 3,90  & 3,91    & 2,08 \\
-		ST002 & 6,30 & 8,33 & 7,25 & 7,25 & 2,03 \\
-		ST003 & 15,52 & 17,80 & 16,77 & 16,78 & 1,98
+		ST001 & 2,90   & 4,98   & 3,90  & 3,91    & 2,08 \\
+		ST002 & 6,30   & 8,33   & 7,25  & 7,25    & 2,03 \\
+		ST003 & 15,52  & 17,80  & 16,77 & 16,78   & 1,98 \\
+		Penha & -1.13  & 1.18   & -0.04 & -0.04   & 2.32
 	\end{tabular}
 \end{table}
 
-O módulo ttide de previsão de maré foi aplicado nos dados medidos para avaliar a componente astronômica e as principais constantes harmônicas. As tabelas \ref{tab:ttidest001} a \ref{tab:ttidest003} apresentam as constantes harmônicas que se apresentaram mais relevantes.  Simulações considerando um sinal fixo com diferentes níveis de ruído conseguiram indicar para sinais como os da maré é ideal que o SNR seja maior que 10, mas que valores entre 2 e 3 são aceitáveis \cite{ttidematlab}. Nas tabelas estão apresentadas apenas as constantes que apresentam uma relação de sinal-ruído (\emph{Signal-to-Noise Ration} - SNR) maior que 1.
+\begin{table}[h]
+	\centering
+	\caption{Características das Marés Meteorológicas Medidas}\label{tab:dadosmeteo}
+	\begin{tabular}{c|c|c|c}
+		Equipamento & Mínimo & Máximo & Varição \\ 
+		\hline                              
+		ST001 & -0,71   & 0,65   & 1,37 \\
+		ST002 & -0,68   & 0,53   & 1,21 \\
+		ST003 & -0,70  & 0,50    & 1,20 \\
+		Penha & -1.37  & 0,70  & 2,08
+	\end{tabular}
+\end{table}
 
-A importância relativa das constituintes diurnas e semidiurnas pode ser expresso pelo número de Forma (Form Factor) defindo por \cite{Pugh87}:
+  
 
-\begin{equation}
-	F = \frac{H_{K1} + H_{O1}}{H_{M2} + H_{S2}}
-\end{equation}
 
-Onde:
-\begin{description}
-	\item[] Se F estiver entre 0 e 0.25 a maré tem forma semidiurna;
-	\item[] Se F estiver entre 0.25 e 1.5 a maré é considerada mista com predominância semidiurna;
-	\item[] Se F estiver entre 1.5 e 3 a maré é considerada mista com predominância diurna;
-	\item[] Se F for maior que 3 a maré é puramente diurna. 
-\end{description}
-
-Os números de forma encontrados para os dados apresentados foram: 
-
-\begin{description}
-	\item[] ST001: 0,2978
-	\item[] ST002: 0,2962
-	\item[] ST003: 0,2873
-\end{description}
-
-Portanto, a maré na Enseada de Itapocorói pode ser considerada do tipo mista com uma predominância semidiurna. Entretanto, pelo baixo valor de número de forma encontrado, pode-se notar a alta influência das componentes semidiurna sobre as componentes diurnas. Essa grande influência das componentes semidiurnas também podem ser visualizadas na figura \ref{fig:fftpicarras}, onde podem ser observadas as frequências mais relevantes dentro do espectro analisado.
 
 \newpage
 \begin{landscape}
@@ -707,39 +704,74 @@ Portanto, a maré na Enseada de Itapocorói pode ser considerada do tipo mista com
    \end{figure}
 
 	\begin{figure}[!htb]
-		\includegraphics[width=1.6\textwidth]{figuras/Nivel_Previsao_Geral.png}
-		\centering
-		\caption{Separação dos dados de nível}\label{fig:previsao}
-	\end{figure}
-	
-	\begin{figure}[!htb]
-		\includegraphics[width=1.6\textwidth]{figuras/Espectro_FFT_Picarras_Logx.png}
-		\centering
-		\caption{Espectro de energia - Piçarras}\label{fig:fftpicarras}
-	\end{figure}
-
-	\begin{figure}[!htb]
 		\includegraphics[width=1.6\textwidth]{figuras/Nivel_Penha.png}
 		\centering
 		\caption{Dados de nível na Praia de Penha}\label{fig:nivelpenha}
 	\end{figure}
-	
+
 	\begin{figure}[!htb]
-		\includegraphics[width=1.6\textwidth]{figuras/Espectro_FFT_Penha_Logx.png}
+		\includegraphics[width=1.6\textwidth]{figuras/Nivel_Previsao_Geral.png}
 		\centering
-		\caption{Espectro de energia - Penha}\label{fig:fftpenha}
+		\caption{Separação dos dados de nível em Piçarras}\label{fig:previsao}
 	\end{figure}
+	
+		\begin{figure}[!htb]
+			\includegraphics[width=1.6\textwidth]{figuras/Nivel_Penha_Previsao_Geral.png}
+			\centering
+			\caption{Separação dos dados de nível em Penha}\label{fig:previsaopenha}
+		\end{figure}
 	
 
 \end{landscape}
 
 \newpage
+
+As tabelas \ref{tab:ttidest001} a \ref{tab:ttidepenha} se encontram as constantes harmônicas encontradas pelo pacote \emph{ttide} para os sinais analisados. É possível verificar a frequência, amplitude (em centímetros), o erro de amplitude, a fase, o erro de fase e a relação sinal-ruído (\emph{Signal-to-Noise Ration}) conhecida como SNR. 
+
+Simulações considerando um sinal fixo com diferentes níveis de ruído conseguiram indicar para sinais como os da maré é ideal que o SNR seja maior que 10, mas que valores entre 2 e 3 são aceitáveis \cite{ttidematlab}. Portanto, foram excluídas da tabela as constantes harmônicas que apresentaram  uma relação de sinal-ruído (SNR) menor que 2.
+
+Pode-se observar que as constantes harmônicas encontradas não foram constantes em todos os pontos encontrados. 
+
+A importância relativa das constituintes diurnas e semidiurnas pode ser expresso pelo número de Forma (\emph{Form Factor}) de acordo com as constantes harmônicas encontradas, defino por \cite{Pugh87}:
+
+\begin{equation}
+F = \frac{H_{K1} + H_{O1}}{H_{M2} + H_{S2}}
+\end{equation}
+
+Onde:
+\begin{description}
+	\item[] Se F estiver entre 0 e 0.25 a maré tem forma semidiurna;
+	\item[] Se F estiver entre 0.25 e 1.5 a maré é considerada mista com predominância semidiurna;
+	\item[] Se F estiver entre 1.5 e 3 a maré é considerada mista com predominância diurna;
+	\item[] Se F for maior que 3 a maré é puramente diurna. 
+\end{description}
+
+Os números de forma encontrados para os dados apresentados foram: 
+
+\begin{description}
+	\item[] ST001: 0,2978
+	\item[] ST002: 0,2962
+	\item[] ST003: 0,2873
+	\item[] Penha: 0,3131
+\end{description}
+
+Portanto, a maré na Enseada de Itapocorói e arredores pode ser considerada do tipo mista com uma predominância semidiurna. Entretanto, pelo baixo valor de número de forma encontrado, pode-se notar a alta influência das componentes semidiurna sobre as componentes diurnas. 
+
+Também é possível observar a grande influência das componentes semidiurnas na figura \ref{fig:fftpicarras}. O maior pico de energia é dado na frequência próxima de 0,08, ou seja, um período aproximado de 12,5 horas. O espectro de frequência dos dados de Penha (Figura \ref{fig:fftpenha}) se apresentam menos ruidosos que os de Piçarras. No entanto, em ambos os gráficos é possível perceber que existem quatro picos de energia distintos cujos períodos associados a esses picos são de 25,5, 12,5, 8,2 e 6,2 horas. Dessa forma, é possível perceber que a componente semidiurna (12,5 horas) é a componente de maior energia, como já foi verificado anteriormente, com as componentes diurnas, tercidiurnas e quadridiurnas com energias semelhantes. Outro fato que deve ser notado é que, em ambos os gráficos, existe uma energia considerável em períodos maiores que 25 horas mas que não pode ser bem identificada no espectro. Essa informação vai ao encontro dos dados de \citeonline{truccoloetal2006}, que verificou que cerca de 24\% da variação de nível em São Francisco do Sul poderia ser explicada por frequências submareais.
+
+
+
+
+Quando comparamos os dados de constantes harmônicas dos ADCPs de Piçarras (30 dias de dados) com aquelas encontradas pelo marégrafo localizado na Penha (1 ano de dados), é possível perceber que o segundo dado apresenta um maior número de constantes harmônicas cujo SNR foi maior que 1. O que demonstra a quantidade limitada de dados no primeiro período pode prejudicar análises harmônicas mais complexas.
+
+Em Piçarras, a M2 foi, invariavelmente, a constante harmônica que teve maior SNR
+
 \begin{landscape}
 	\label{tab:ttidest001}
 	\begin{tabularx}{\linewidth}{c|c|c|c|c|c|c} 
 		\caption{Frequências encontradas nos dados de nível do ST001}\\
 		\toprule
-		\textbf{Constante Harmônica} & \textbf{Freq.} & \textbf{Amplitude}   & \textbf{Erro de Ampl.}  & \textbf{Fase}  & \textbf{Erro de Fase}  & \textbf{SNR} \\[6pt]
+		\textbf{Constante Harmônica} & \textbf{Freq.} & \textbf{Amplitude (cm)}   & \textbf{Erro de Ampl.}  & \textbf{Fase}  & \textbf{Erro de Fase}  & \textbf{SNR} \\[6pt]
 		\midrule
 		\endhead
 		
@@ -770,7 +802,7 @@ Portanto, a maré na Enseada de Itapocorói pode ser considerada do tipo mista com
 	\begin{tabularx}{\linewidth}{c|c|c|c|c|c|c}
 		\caption{Análise harmônica através do ttide nos dados de nível do ST002}\\
 		\toprule
-		\textbf{Constante Harmônica} & \textbf{Freq.} & \textbf{Amplitude}   & \textbf{Erro de Ampl.}  &  textbf{Fase}  & \textbf{Erro de Fase}  & \textbf{SNR} \\[6pt]
+		\textbf{Constante Harmônica} & \textbf{Freq.} & \textbf{Amplitude (cm)}   & \textbf{Erro de Ampl.}  &  textbf{Fase}  & \textbf{Erro de Fase}  & \textbf{SNR} \\[6pt]
 		\midrule
 		\endhead
 		ALP1 & 0.0343966 &    1.6004  &   0.466  &  305.34  &   18.93 &       12 \\[6pt]
@@ -800,7 +832,7 @@ Portanto, a maré na Enseada de Itapocorói pode ser considerada do tipo mista com
 	\begin{tabularx}{\linewidth}{c|c|c|c|c|c|c}
 		\caption{Frequências encontradas nos dados de nível do ST003}\\
 		\toprule
-		\textbf{Constante Harmônica} & \textbf{Freq.} & \textbf{Amplitude}   & \textbf{Erro de Ampl.}  & \textbf{Fase}  & \textbf{Erro de Fase}  & \textbf{SNR} \\[6pt]
+		\textbf{Constante Harmônica} & \textbf{Freq.} & \textbf{Amplitude (cm)}   & \textbf{Erro de Ampl.}  & \textbf{Fase}  & \textbf{Erro de Fase}  & \textbf{SNR} \\[6pt]
 		\midrule
 		\endhead
 		
@@ -827,6 +859,56 @@ Portanto, a maré na Enseada de Itapocorói pode ser considerada do tipo mista com
 		
 		\bottomrule
 	\end{tabularx}
+	
+		\label{tab:ttidepenha}
+		\begin{tabularx}{\linewidth}{c|c|c|c|c|c|c}
+			\caption{Frequências encontradas nos dados de nível de Penha}\\
+			\toprule
+			\textbf{Constante Harmônica} & \textbf{Freq.} & \textbf{Amplitude (cm)}   & \textbf{Erro de Ampl.}  & \textbf{Fase}  & \textbf{Erro de Fase}  & \textbf{SNR} \\[6pt]
+			\midrule
+			\endhead
+			Q1   & 0.0372185 &  2.4132 & 0.417 & 114.85 &   9.27  &      34 \\[6pt]
+			RHO1 & 0.0374209 &  0.5895 & 0.377 & 242.64 &  38.22  &     2.4 \\[6pt]
+			O1   & 0.0387307 &  8.8670 & 0.352 & 348.75 &   2.53  &     630 \\[6pt]
+			P1   & 0.0415526 &  2.0539 & 0.450 & 354.04 &  11.79  &      21 \\[6pt]
+			S1   & 0.0416667 &  1.1426 & 0.424 &  25.74 &  17.71  &     7.3 \\[6pt]
+			K1   & 0.0417807 &  5.4217 & 0.394 &  55.87 &   3.76  &     190 \\[6pt]
+			2N2  & 0.0774871 &  1.7591 & 1.085 & 260.35 &  34.36  &     2.6 \\[6pt]
+			MU2  & 0.0776895 &  2.1402 & 1.110 & 344.04 &  33.61  &     3.7 \\[6pt]
+			N2   & 0.0789992 &  4.5907 & 1.088 & 126.94 &  16.34  &      18 \\[6pt]
+			M2   & 0.0805114 & 28.1197 & 1.146 & 261.17 &   2.11  &     600 \\[6pt]
+			S2   & 0.0833333 & 17.5111 & 1.067 & 210.29 &   3.76  &     270 \\[6pt]
+			K2   & 0.0835615 &  5.5192 & 1.191 &  74.89 &  11.89  &      21 \\[6pt]
+			MO3  & 0.1192421 &  2.5799 & 0.577 &  83.65 &  11.79  &      20 \\[6pt]
+			M3   & 0.1207671 &  5.2993 & 0.545 & 284.82 &   6.15  &      95 \\[6pt]
+			SO3  & 0.1220640 &  1.5534 & 0.509 & 147.95 &  21.70  &     9.3 \\[6pt]
+			MK3  & 0.1222921 &  1.7008 & 0.530 & 195.19 &  17.68  &      10 \\[6pt]
+			SK3  & 0.1251141 &  1.2108 & 0.547 & 310.34 &  24.34  &     4.9 \\[6pt]
+			MN4  & 0.1595106 &  2.7916 & 0.505 & 244.34 &  11.17  &      31 \\[6pt]
+			M4   & 0.1610228 &  7.6645 & 0.484 & 144.14 &   3.95  &     250 \\[6pt]
+			MS4  & 0.1638447 &  3.6645 & 0.552 & 189.35 &   8.55  &      44 \\[6pt]
+			MK4  & 0.1640729 &  1.0341 & 0.651 &  42.41 &  31.48  &     2.5 \\[6pt]
+			2MK5 & 0.2028035 &  0.5157 & 0.240 & 281.05 &  28.78  &     4.6 \\[6pt]
+			2MS6 & 0.2443561 &  0.3173 & 0.145 &  89.39 &  32.33  &     4.8 \\[6pt]
+
+		
+			\bottomrule
+		\end{tabularx}
+\end{landscape}
+
+		\begin{figure}[!htb]
+			\includegraphics[width=0.9\textwidth]{figuras/femarPenha.png}
+			\centering
+			\caption{Constantes harmônicas definidas na estação maregráfica brasileira da FEMAR \cite{femar}}\label{fig:femar}
+		\end{figure}
+		
+\begin{landscape}
+		\begin{figure}[!htb]
+			\includegraphics[width=1.6\textwidth]{figuras/Espectros.png}
+			\centering
+			\caption{Espectro de energia em Piçarras e Penha}\label{fig:fft}
+		\end{figure}
+		
 \end{landscape}
 
 \subsection{Temperatura}
