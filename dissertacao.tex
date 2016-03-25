@@ -529,15 +529,19 @@ são facilmente acessíveis através de uma interface gráfica desenvolvida em ambie
 
 \subsection{Vento}
 
-Os dados de ventos serão obtidos do modelo de reanálise do \emph{National Centers for Environmental Prediction} (NCEP) \emph{Climate Forecast System} (CFS).
+Para a forçante do modelo numérico os dados de ventos a serem utilizados serão obtidos do modelo de reanálise do \emph{National Centers for Environmental Prediction} (NCEP) \emph{Climate Forecast System Reanalysis} (CFSR).
 
 O propósito geral de modelos de reanálise é produzir representações globais plurianuais acuradas de condiçoes atmosféricas, geradas por um modelo e uma aquisição constante de dados ao sistema. Pode-se dizer que em um dado momento $t$ é o resultado de uma curta previsão iniciada por uma análise passada ($t-\Delta t$), modificada por assimilação de dados em uma pequena janela centrada em $t$. 
 Por convenção a janela $\Delta t$ é de seis horas. Dessa forma, toda nova reanálise é beneficiada por todas as reanálises anteriores e os erros tem mais chances de serem descobertos e corrigidos nos resultados posteriores \cite{cfsr}.
 
-O \emph{Coupled Forecast System Reanalysis} (CFSR) é um modelo de reanálise mais recente, cuja primeira versão foi lançada em 2004, abrange o período de 1981 até 2011. Em Março de 2011, foi lançada a versão 2 do sistema, com maior resolução, com uma série de dados disponíveis a partir de 01 de Janeiro de 2011. O modelo de reanálise tem módulos de interação entre a atmosfera, os oceanos, a terra e o gelo marinho. A nova série tem resoluções horizontais de 0,2$^{\circ}$, 0,5$^{\circ}$, 1$^{\circ}$ e 2,5$^{\circ}$ a cada 6 horas \cite{cfsr2}.  
+O \emph{Coupled Forecast System Reanalysis} (CFSR) é um modelo de reanálise mais recente, cuja primeira versão foi lançada em 2004, abrange o período de 1981 até 2011. Em Março de 2011, foi lançada a versão 2 do sistema, com maior resolução, com uma série de dados disponíveis a partir de 01 de Janeiro de 2011. O modelo de reanálise tem módulos de interação entre a atmosfera, os oceanos, a terra e o gelo marinho. A nova série tem resoluções horizontais de 0,2$^{\circ}$, 0,5$^{\circ}$, 1$^{\circ}$ e 2,5$^{\circ}$ a cada 1 hora \cite{cfsr2}. Para o presente modelo, serão utilizados apenas os dados referentes à segunda versão do modelo.
 
-Os resultados estão disponíveis em intervalos de 6 horas e podem ser gratuitamente adquiridos no
-seguinte endereço: http://rda.ucar.edu/datasets/ds094.1/.
+Os resultados estão disponíveis em intervalos de 1 hora e podem ser gratuitamente adquiridos no
+seguinte endereço: \url{http://rda.ucar.edu/datasets/ds094.1/}.
+
+Também serão analisados os dados provenientes da Rede Meteorológica do Comando da Aeronáutica (REDEMET) registrados em diversos aeroportos pelo país, denominados METAR. Os dados estão disponíveis no endereço \url{http://www.redemet.aer.mil.br/}. Para o presente trabalho, foram coletados dados referentes ao ano de 2011 e coletados na estação presente no Aeroporto de Navegantes (SBNF).  
+
+Para a análise pontual dos dados de vento (comparação com os dados medidos e descrição da área de estudo) será feita uma comparação entre os dados provenientes do METAR e daqueles oriundos do modelo CFSR. Caso ambos sejam considerados consistentes, as análises posteriores serão realizadas considerando ambos os modelos.
 
 % O projeto tem duas vantagens sobre outras bases de dados de vento: possui uma s\'erie hist\'orica bastante longa, desde 1957, e utiliza-se de uma
 % ampla gama de dados medidos que são inseridos no modelo e ajudam a melhorar previs\~oes futuras.
@@ -1038,8 +1042,62 @@ Nos histogramas apresentados nas figuras \ref{fig:hist_velcorrente_01} a \ref{fi
 	\caption{Histograma da velocidade de corrente no ponto ST003 integrada na vertical}\label{fig:hist_velcorrente_03}
 \end{figure}
 
+
 %-------------------------------------------------------------------------------------------------------
 \newpage
+\section{Análise dos Dados de Vento}
+
+Primeiramente os dados proveniente da base METAR da Aeronática do Brasil foram comparados com os dados provenientes do modelo de reanálises CFSR da NOAA. Na figura \ref{fig:localizacaovento} é possível observar a localização dos dados a serem apresentados. 
+
+ \begin{figure}[!htb]
+ 	\includegraphics[width=1.1\textwidth]{figuras/DadosVento_position.png}
+ 	\centering
+ 	\caption{Localização dos dados de vento do modelo de reanálise CFSR e do aeroporto de Navegantes (METAR)}\label{fig:localizacaovento}
+ \end{figure}
+ 
+As figuras \ref{fig:windroseMETAR} e \ref{fig:windroseCFSR} apresentam as rosas de vento dos dados do METAR e CFSR, respectivamente. É possível perceber que os gráficos variam muito, tanto em direção predominante quanto em intensidade do vento. 
+
+Os dados do METAR apresentam uma clara predominância de ventos provenientes de oeste (quase 20\% do tempo) com velocidade que podem ultrapassar os 8 m/s. Outras direções apresentam uma distribuição quase equivalentes entre si (5\% do tempo) e predominância de velocidade acima de 4 m/s mas abaixo de 8 m/s.
+
+Os dados do CFSR tem uma maior distribuição na direção dos ventos, com ventos de S, SE e NE apresentando uma leve predominância de ocorrência (mais de 10\% cada). Velocidades entre 2 e 6 m/s aparentam ser mais frequentes. Velocidades acima de 8 m/s são mais frequentes em ventos de ENE apesar de também ocorrem em ventos de SSE. Ventos de O e NO são bem pouco presentes, muito abaixo de 5\% e com velocidades abaixo de 4 m/s.
+
+ \begin{figure}[!htb]
+ 	\includegraphics[width=1.1\textwidth]{figuras/Vento_Metar_2011_Windrose.png}
+ 	\centering
+ 	\caption{Rosa dos ventos do Aeroporto de Navegantes para o ano de 2011 (METAR)}\label{fig:windroseMETAR}
+ \end{figure}
+
+ \begin{figure}[!htb]
+ 	\includegraphics[width=1.1\textwidth]{figuras/Vento_CFSR_2011-15_Windrose.png}
+ 	\centering
+ 	\caption{Rosa dos ventos referente aos dados do CFSR para o ano de 2011 a 2015}\label{fig:windroseCFSR}
+ \end{figure}
+
+Para melhor compreensão do comportamento dos dados, as velocidades foram descritas na forma de histogramas para os dados do METAR e CFSR nas figuras \ref{fig:histvelMETAR} e \ref{fig:histvelCFSR}, respectivamente. Enquanto os dados do CFSR apresentaram uma curva semelhante à normal, os dados oriundos do METAR apresentam falhas nas classes de velocidade.
+
+O que foi verificado é que os dados do METAR apresentam uma grande inconsistência nos dados. Do ano de 2011, 16,3\% dos dados não estavam disponíveis (Figura \ref{fig:nansMETAR}). A utilização de metodologias de interpolação dos dados em grande quantidade pode afetar o comportamento geral dados e, em casos como estes, não são recomendadas. Além disso, por se localizar em uma base terrestre distante do local de estudo, os dados direcionais podem ter sido influenciados pelo relevo terrestre, potencialmente prejudicando análises feitas em locais distantes do ponto de amostragem. Dessa forma, como existem dúvidas a respeito da qualidade e localização dos dados, as análises feitas no presente estudo poderiam ser comprometidas e, portanto, a base de dados do CFSR foi escolhida como a mais adequada fonte de dados de vento para o presente estudo.
+
+\begin{figure}[!htb]
+	\includegraphics[width=1.1\textwidth]{figuras/Vento_Metar_2011_histvel.png}
+	\centering
+	\caption{Histograma de velocidade do vento no Aeroporto de Navegantes para o ano de 2011 (METAR)}\label{fig:histvelMETAR}
+\end{figure}
+
+\begin{figure}[!htb]
+	\includegraphics[width=1.1\textwidth]{figuras/Vento_CFSR_2011-15_Windrose.png}
+	\centering
+	\caption{Histograma de velocidade do vento referentes aos dados do CFSR para o ano de 2011 a 2015}\label{fig:histvelCFSR}
+\end{figure}
+
+\begin{landscape}
+	\begin{figure}[!htb]
+		\includegraphics[width=1.6\textwidth]{figuras/Vento_Metar_Nans.png}
+		\centering
+		\caption{Dados válidos e dados indisponíveis nos dados de velocidade do vento no Aeroporto de Navegantes para o ano de 2011 (METAR)}\label{fig:nansMETAR}
+	\end{figure}
+\end{landscape}
+%-------------------------------------------------------------------------------------------------------
+\clearpage
 \section{Modelo Numérico}
 
 \subsection{Grade}
