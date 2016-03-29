@@ -112,7 +112,7 @@ As correntes residuais dificilmente conseguem ser medidas em campo \cite{cheng} 
 
 \section{Hipótese}
 
-Existe uma circulação residual típica na Enseada do Itapocorói que é gerada principalmente por um algum fator ambiental (maré, vento ou onda), mas cujas características principais podem ser eventualmente alteradas no caso de eventos de tempestade.  
+Existe uma circulação residual típica na Enseada do Itapocorói que é gerada principalmente por um algum fator ambiental (maré ou vento), mas cujas características principais podem ser eventualmente alteradas no caso de eventos de tempestade.  
 
 \section{OBJETIVOS}
 
@@ -128,7 +128,7 @@ São objetivos específicos deste trabalho:
 	\item Caracterizar a dinâmica local através da análise das séries dos fundeio.
 	\item Construção de um modelo hidrodinâmico (ROMS) para a área de estudo, 
 	com grade local e regional, visando diminuir inconsistências na região de interesse;
-	\item Calibração dos modelos hidrodinâmicos e de ondas com dados provenientes de 3 ADCPs;
+	\item Calibração dos modelos hidrodinâmicos com dados provenientes de 3 ADCPs;
 	\item Definir o padrão típico da circulação residual; 
 	\item Compreender o papel dos parâmetros ambientais na modificação da circulação e qual o parâmetro dominante;
 	\item Definir a circulação residual na Enseada do Itapocorói tanto nos dados modelados quanto nos dados medidos;
@@ -137,35 +137,43 @@ São objetivos específicos deste trabalho:
 
 \chapter{REVISÃO BIBLIOGRÁFICA}
 
-\section{Maré, Circulação Submareal e Circulação Residual}
+\section{Maré e Circulação Residual}
 
-As principais variações de nível ocorridas em zonas costeiras são devido às oscilações causadas pelas marés, tornando-se de fundamental importância para estudos costeiros o seu conhecimento, bem como as correntes que são por elas geradas \cite{tpxo2002}. Entretanto, a onda de maré em águas costeiras tem uma dinâmica muito diferente daquela encontrada em regiões oceânicas. 
+As principais variações de nível ocorridas em zonas costeiras acontecem devido às oscilações causadas pelas marés, tornando-se de fundamental importância para estudos costeiros o seu conhecimento, bem como as correntes que são por elas geradas \cite{tpxo2002}. Apesar de bem conhecida e estudadas num âmbito global, a onda de maré em águas costeiras tem uma dinâmica muito diferente daquela encontrada em regiões oceânicas. 
 
 As marés são consideradas ondas de água rasa e, portanto, estão sempre sujeitas à influência do
-fundo. Entretanto, ao adentrar águas ainda mais rasas, como as plataformas continental interna, as suas escalas laterais passam a ser reduzidas e, dessa forma, quando próximo da costa as restrições impostas pela continuidade se tornam mais relevantes do que os balanços dinâmicos nas determinações das escalas espaciais. 
+fundo. Entretanto, ao adentrar águas ainda mais rasas, como as plataformas continental interna, as suas escalas laterais passam a ser reduzidas e as restrições impostas pela continuidade se tornam mais relevantes do que os balanços dinâmicos nas determinações das escalas espaciais \cite{leblond}. 
 
 Conforme a onda de maré passa a propagar para águas costeiras ela tende a interagir e sofrer diversos processos: reflecção total ou parcial (uma vez que a linha de costa passa a agir como uma barreira), efeitos inerciais, efeitos de continuidade, perda de energia por fricção, entre outros. Dessa forma, uma vez que se encontra em águas rasas, a onda de maré se torna progressivamente mais não-linear e dissipativa. Além disso, esses processos não-lineares podem transferir energia para constituintes harmônicas de águas rasas totalmente novas \cite{Schureman,massel,Parker}. 
 Outra consequência da redução das escalas laterais é a criação de regiões de gradiente de velocidade. Os termos inerciais passam a ganhar importância no balanço de momento e contribuem para a geração de correntes residuais e vorticidade \cite{leblond}.
 Portanto, em águas rasas, uma variedade de processos compõem um complexo cenário a ser estudado e, por mais que os fenômenos que gerem as marés sejam muito bem conhecidos e compreendidos, os movimentos resultantes requerem um estudo mais aprofundado. 
 
-Os movimentos que ocorrem em períodos de marés astronômicas semi-diurnas e diurnas, de 12:25 e 24:50 horas, respectivamente, são denominados de movimentos com frequências mareais. Os movimentos que ocorrem em períodos menores que os da maré são denominados de oscilações de movimentos de frequência supramareal (FSupM), onde se encontram as ondas de gravidade, de tempestade, seiches e maremotos. Os movimentos de períodos maiores que os da maré são denominados de movimentos com frequência submareal (FSubM), como a descarga fluvial, a inclinação da superfície da água ao longo do estuário, ondas de marés meteorológicas de baixa frequência e ondas de plataforma \cite{truccoloMSc}. 
+%Os movimentos que ocorrem em períodos de marés astronômicas semi-diurnas e diurnas, de 12:25 e 24:50 horas, respectivamente, são denominados de movimentos com frequências mareais. Os movimentos que ocorrem em períodos menores que os da maré são denominados de oscilações de movimentos de frequência supramareal (FSupM), onde se encontram as ondas de gravidade, de tempestade, seiches e maremotos. Os movimentos de períodos maiores que os da maré são denominados de movimentos com frequência submareal (FSubM), como a descarga fluvial, a inclinação da superfície da água ao longo do estuário, ondas de marés meteorológicas de baixa frequência e ondas de plataforma \cite{truccoloMSc}. 
 
 % !!!!!!!!!! conexao entre os dois paragrafos !!!!!!!!!!!
 
-A circulação residual, especialmente a da maré, está relacionada a processos de longo período, com frequências baixas e velocidades uma ou duas ordens menores que as próprias correntes de maré e, assim, pode acabar sendo negligenciada por conta dessas características. Entretanto, estas são bastante relevantes uma vez que devido à sua persistência, elas podem dominar o transporte e a distribuição geral de propriedades da água como temperatura e salinidade. Sua determinação pode contribuir para o manejo costeiro (como tempo de permanência de poluentes) ou mesmo para a proteção costeira, dado que ela também pode ter papel significante para transporte de partículas sedimentares \cite{truccoloMSc}. 
+Ao se considerar a água como incompressível, independente das oscilações ocorridas seria natural se pensar, em um primeiro momento, que o residual da circulação deveria ser nulo \cite{leblond}. O que se vê na realidade é bastante distinto e a observação de longo prazo nós dá a clara predominância de uma direção indicando a presença de resultantes não-nulas. A fonte mais óbvia de geração de velocidade residual é a descarga fluvial, uma vez que seu fluxo é unidirecional. Entretanto, o que se observa é que existem residuais mesmo em locais sem presença de rios. Diversos parâmetros ambientais podem gerar residuais de velocidade. Entre eles podemos citar não linearidade da corrente de maré, padrão de onda predominante, direção do vento predominante, eventos de tempestade, diferença de densidade, características batimétricas ou mesmo obras costeiras \cite{Tee,truccoloMSc,Brownetal2013}.
 
-A circulação residual pode então estar relacionada a processos de frequência supramareal, mas está intrinsecamente ligado a processos em frequência submareal. \citeonline{truccoloetal2006} verificaram que na região externa de São Francisco do Sul, na região exposta, apenas 74\% da variação de nível poderia ser explicada por marés astronômicas e que 24\% da variação poderia ser explicada pelas oscilações em frequência submareal. Além disso, dado que a região sul do Brasil se encontra em regime de micromaré as oscilações do nível do mar em frequência submareal não podem ser completamente desconsideradas, uma vez que sobre-elevações de até 1 m já foram registradas na região de Itajaí \cite{truccoloMSc}.
+A circulação residual, especialmente a da maré, está normalmente relacionada a processos de longo período, com frequências baixas e velocidades uma ou duas ordens menores que as próprias correntes de maré e, assim, pode acabar sendo negligenciada por conta dessas características \cite{cheng}. Apesar de serem consideradas irrelevantes quando comparadas com as correntes de maré, elas podem ser bastante relevantes em longo prazo dado que podem dominar o transporte e a distribuição geral de propriedades da água como temperatura e salinidade quando considerada a sua persistência. Dessa forma, sua determinação pode contribuir para o manejo costeiro (como tempo de permanência de poluentes) ou mesmo para a proteção costeira, dado que ela também pode ter papel significante para transporte de partículas sedimentares \cite{truccoloMSc}. 
 
-Descarga de rios são as fontes mais óbvias de geração de velocidade residual, uma vez que seu fluxo é unidirecional. Na ausência de descargas de rio poder-se-ia pensar o residual da descarga da maré deveria ser zero. Entretanto, o que se observa na realidade é que o residual da maré muitas vezes não é nulo, mesmo em regiões onde não há a presença de rios. Diversos fatores ambientais podem causar um residual, como a inércia, citado previamente, obras costeiras, ou mesmo características batimétricas. Além disso, outros parâmetros ambientais que não a maré também podem gerar correntes residuais como vento, densidade (principalmente pela salinidade), ondulações e eventos de tempestade.
+\citeonline{Parker91} cita os trabalhos de \citeonline{HuntJohns63}, \citeonline{Huthnance} e \citeonline{Nihoul1974} como os primeiros trabalhos a proporem mecanismos de geração de correntes residuais geradas por maré. \citeonline{HuntJohns63} estudaram a geração de correntes de fundo induzidas por maré em águas rasas, já citando a importância de fluxos residuais tanto na circulação geral quanto em mudanças morfológicas significativas. \citeonline{Huthnance} verificou que as forças geradoras de correntes residuais em bancos de maré no Norfolk Sandbanks foram a força de Coriolis e fricção de fundo. \citeonline{Nihoul1974} mostraram que em regiões com marés expressivas os termos não lineares das equações passam a agir como uma "tensão de cisalhamento de maré" que, aliada ao vento, produz movimentos residuais. 
 
 De forma geral e simplificada, o termo circulação residual é utilizado para remeter às circulações de longo período, ou seja, o resultante da circulação uma vez que os processos atuantes são findados.
 No entanto é possível perceber na literatura uma certa variação em relação à sua definição.
 
-\citeonline{Nihoul1974} discutem sobre as diferentes formas como o termo circulação residual é utilizado em diferentes campos. Os autores citam que, sob um olhar matemático, as correntes residuais podem ser consideradas como o fluxo estacionário descrito pelas equações fundamentais desconsiderando os termos transientes das equações. Em se tratando do campo experimental, tende-se a definir as correntes residuais como o fluxo que sobra ao se subtrair uma maré modelada (ou prevista) de um fluxo medido. E finalmente, há os cientistas que consideram as correntes residuais aquelas encontradas após se realizar uma integração das correntes naturais ao longo de um período de tempo suficientemente longo, de forma a se cancelarem as contribuições da maré (Equação \ref{eq:uresidual}). Os autores
-afirmam que a última parece ser a mais realista.
+\citeonline{Nihoul1974} discutem sobre as diferentes formas como o termo circulação residual é utilizado em diferentes campos. Os autores citam que, sob um olhar matemático, as correntes residuais podem ser consideradas como o fluxo estacionário descrito pelas equações fundamentais desconsiderando os termos transientes das equações. Em se tratando do campo experimental, tende-se a definir as correntes residuais como o fluxo que sobra ao se subtrair uma maré modelada (ou prevista) de um fluxo medido. E, segundo os autores, ainda existem os cientistas que consideram as correntes residuais aquelas encontradas após se realizar uma integração das correntes naturais ao longo de um período de tempo suficientemente longo, de forma a se cancelarem as contribuições da maré. Os autores afirmam que a última parece ser a mais realista.
+
+\citeonline{Yanagi1976} afirma que o fluxo estacionário (\emph{steady-state}) é causado por diversos processos físicos como vento, gradiente de pressão atmosférica, descarga de rios, correntes de densidade, correntes de oceano aberto, força de Coriolis e marés. Especificamente, o
+autor considera fluxo residual de maré como aquele causado por não-linearidades das correntes de maré relativas à topografia de fundo e geometria das bordas. 
+
+\citeonline{Tee} considera corrente residual aquela corrente que permanece após retiradas frequências diurnas, semidiurnas ou superiores. 
+
+No estudo de \citeonline{Brownetal2013} a circulação residual é tratada como a circulação instantânea que permanece após a remoção da maré astronômica da circulação total encontrada, tanto em dados medidos quanto modelados.
+
+No presente estudo, será considerado como circulação residual aquela descrita como a média da circulação local em um longo período de tempo, conforme descrito por \citeonline{Nihoul1975} e apresentado na equação \ref{eq:uresidual}.
 
 \begin{equation}
- U_{residual}(x,y) = \frac{1}{T} \int_0^T U(x,y,t)dt \label{eq:uresidual}
+U_{residual}(x,y) = \frac{1}{T} \int_0^T U(x,y,t)dt \label{eq:uresidual}
 \end{equation}
 
 Onde,
@@ -175,51 +183,35 @@ Onde,
 	\item[] $x,y,t$ são as componentes espaciais e temporal.
 \end{description}
 
-\citeonline{Yanagi1976} afirma que o fluxo estacionário (\emph{steady-state}) é causado por diversos processos físicos como vento, gradiente de pressão atmosférica, descarga de rios, correntes de densidade, correntes de oceano aberto, força de Coriolis e marés. Especificamente, o
-autor considera fluxo residual de maré como aquele causado por não-linearidades das correntes de maré relativas à topografia de fundo e geometria das bordas. 
 
-% Para tal, o autor descreve a equaçao da vorticidade do fluxo de mar\'e residual.
-
-% \begin{equation}
-%  \underbrace{\overline{u} \frac{\partial \overline{\omega}}{\partial x} + \overline{v} 
-%   \frac{\partial \overline{\omega}} {\partial y}}_{\textbf{[1]}} 
-%  + \underbrace{F}_{\textbf{[2]}} 
-%  - \underbrace{\upsilon(\frac{\partial^{2} \overline{\omega}}{\partial x^{2}} + \frac{\partial^{2} \overline{\omega}}
-%   {\partial y^{2}})}_{\textbf{[3]}}
-%   + \underbrace{R_{\overline{\omega}}}_{\textbf{[4]}} = 0
-% \end{equation}
-
-
-No estudo de \citeonline{Brownetal2013} a circulação residual é tratada como a circulação instantânea que permanece após a remoção da maré astronômica da circulação total encontrada, tanto em dados medidos quanto modelados.
-
-
-% !!!!!!!!!!!!!! elaborar sobre baroclinicidade !!!!!!!!!!!!!!!!!!!
 Verica-se na literatura que muitos estudos são focados em circulação residual em ambientes estuarinos com enfoque em especial naquela gerada pela baroclinicidade do sistema  \cite{maccready,Buchardetal2011,Brownetal2013}. Poucos esforços foram feitos na tentativa de estudos de circulação residual em sistemas com predominância barotrópica ou separando e avaliando as componentes barotrópicas. O presente estudo vem de encontro para contribuir nessa área.
 O presente estudo se guiará pelos trabalhos de \citeonline{Levinsonetal2000} e \citeonline{Brownetal2013}.
 
-% !!!!!!!!!!!!!! explorar melhor os trabalhos  !!!!!!!!!!!!!!!!!!!
 \citeonline{Levinsonetal2000} tinham como objetivo compreender a circulação residual em uma baía semi-árida bastante semelhante ao que se pode encontrar na Enseada do Itapocorói: orientação preferencial norte-sul, aberta para o oceano, encapsulada entre dois 
 promontórios, com uma baixa descarga fluvial, regime de micro-maré semidiurna e importante centro urbano. Os autores verificaram que a circulação básica poderia ser divida em duas: uma camada superior dominada por uma componente diurna (atmosférica e mareal) e uma camada inferior 
 com influência diurna e semi-diurna gerada principalmente pela maré. 
 
 Já o trabalho de \citeonline{Brownetal2013} tinha como objetivo compreender a contribuição de parâmetros físicos na variação temporal das correntes residuais em um ambiente estuarino fortemente influenciado pela maré e comparar a contribuição desses parâmetros,em condições típicas e de tempestade, quando comparados com a maré. Os processos físicos avaliados foram: forcantes meteorológicas, baroclinicidade, descarga de rios, residual externo, marés e ondas.  
 
+O trabalho de \citeonline{truccoloetal2006} verifiocu que em São Francisco do Sul, na região exposta às ondulações, apenas 74\% da variação de nível poderia ser explicada por marés astronômicas e que 24\% da variação poderia ser explicada pelas oscilações em frequência submareal. Além disso, oscilações do nível do mar em frequência submareal não podem ser completamente desconsideradas em um regime de micromaré como o encontrado no sul do Brasil, uma vez que sobre-elevações de até 1 m já foram registradas na região de Itajaí \cite{truccoloMSc}.
 
+Dessa forma, o presente trabalho levará em consideração as variações ocorrente em frequência submareal, desconsiderando frequências supramareais (e.g. ondas de gravidade) e terá como foco principal o estudo de correntes residuais barotrópicas cujos principais influeciadores serão a maré e o vento.
+
+\clearpage
 \section{Modelagem Numérica de Zonas Costeiras}
 
 O conhecimento da hidrodinâmica de uma região costeira pode ter diversos benefícios tantos em termos ambientais (variações sazonais, previsão das condições oceanográficas, padrões de transporte de sedimentos, etc.) quanto em ganhos sociais (prevenção de desastres naturais, proteção costeira, etc.). No entanto, para um entendimento amplo das características oceanográficas
 de determinada região é necessário um conhecimento extenso da mesma tanto em termos espaciais quanto temporais. Isso se torna extremamente difícil principalmente devido à complexidade dos processos envolvidos e à dificuldade de obtenção de dados medidos, que são muito custosos e esparsos.
 
-As leis de conservação que governam os fluidos são modelos matemáticos validados há bastante tempo e que podem ser amplamente utilizados para compreendê-los.  Quando se faz necessário resolver determinado problema nesta área pode-se optar por três métodos: os analíticos, os numéricos (experimentação teórica) e a experimentação em laboratório (Figura \ref{fig:metodos}).
+As leis de conservação que governam os fluidos são modelos matemáticos validados há bastante tempo e que podem ser amplamente utilizados para compreendê-los \cite{Maliska}.  Quando se faz necessário resolver determinado problema nesta área pode-se optar por três métodos: os analíticos, os numéricos (experimentação teórica) e a experimentação em laboratório (Figura \ref{fig:metodos} baseada em \citeonline{Maliska}).
 
 Os métodos analíticos e numéricos são métodos teóricos, pois ambos tem como objetivo resolver equações diferenciais que explicam os fenômenos. A diferença está apenas na complexidade da equação que cada método consegue resolver. O método de experimentação em laboratório é o mais próximo da realidade, pois de fato se trata da configuração real, porém está associado a grandes custos e uma super estrutura que, nem sempre, consegue atacar todos os problemas (e.g. escalas oceânicas).
 
-No caso de soluções numéricas existem dois tipos de erros que podem estar presentes: aqueles referentes à má solução das equações diferenciais e aqueles referentes à não adequação das equações diferenciais para resolver o problema proposta. Ou seja, esses métodos só serão adequados e confiáveis quando se está tem posse de um método numérico que resolva corretamente as equações diferenciais e de um modelo matemático que, sabidamente, represente com fidelidade o fenômeno físico. Independente dos possíveis erros associados, os ganhos advindos das técnicas de soluções numéricas é muito alto e a ampla aceitação destes métodos para a solução dessas equações se deve à grande versatilidade e relativa simplicidade de aplicação dessas técnicas  \cite{Maliska}.
+No caso de soluções numéricas existem dois tipos de erros que podem estar presentes: aqueles referentes à má solução das equações diferenciais e aqueles referentes à não adequação das equações diferenciais para resolver o problema proposta. Ou seja, esses métodos só serão adequados e confiáveis quando se está tem posse de um método numérico que resolva corretamente as equações diferenciais e de um modelo matemático que, sabidamente, represente com fidelidade o fenômeno físico. Independente dos possíveis erros associados, os ganhos advindos das técnicas de soluções numéricas e analíticas é muito alto quando comparado aos custos de técnicas experimentais. Além disso é ampla aceitação destes métodos para a solução desses tipos equações devido à grande versatilidade e relativa simplicidade de aplicação dessas técnicas \cite{Maliska}.
 
-No caso da mecânica dos fluidos já existe um consenso a respeito da validade das leis que as descrevem (modelos matemáticos). Entretanto, estes são compostos de equações diferenciais parciais não lineares que, em geral, não possuem soluções analíticas ou fechadas a não ser em casos extremamente simplistas.
-Quando estes modelos são discretizados e resolvidos através de métodos numéricos passa a ter a denominação mais específica de dinâmica de fluidos computacionais \cite{Kundu}.
+No caso da mecânica dos fluidos já existe um consenso a respeito da validade das leis que as descrevem e, portanto, assume-se que os modelos matemáticos estão livres de erros ou que estes podem ser menosprezados na solução geral. Entretanto, estes modelos matemáticos validades são compostos de equações diferenciais parciais não lineares que, em geral, não possuem soluções analíticas ou fechadas a não ser em casos extremamente simplificados. Portanto, para o caso da mecânica de fluídos complexos as solução numéricas são as mais adequadas. Quando os modelos matemáticos passam a ser discretizados e resolvidos através de métodos numéricos eles recebem a denominação específica de dinâmica de fluidos computacionais \cite{Kundu}.
 
-Apesar de serem consideravelmente precisas é preciso ter consciência que as soluções numéricas são, inexoravelmente, inexatas. Existem dois erros introduzidos ao se utilizar os métodos numéricos na solução de um problema. Um deles ocorre devido à limitação de armanezamento de informação que os computadores digitais possuem, estes são chamados de erros de arredondamento. O segundo tipo de erro é introduzido pelo próprio método numérico que, ao se utilizar aproximações para encontrar a solução numérica, acaba gerando os denominados erros de truncamento.  Juntos, os dois erros constituem o erro total da solução numérica, que é, basicamente, a diferença entre a solução verdadeira (exata, e que é desconhecida) e a solução numérica aproximada \cite{metnumericos}. 
+Apesar de serem consideravelmente precisas é preciso ter consciência que as soluções numéricas são, inexoravelmente, inexatas. Existem dois erros introduzidos ao se utilizar os métodos numéricos na solução de um problema. Um deles ocorre devido à limitação de armanezamento de informação que os computadores digitais possuem, denominados erros de arredondamento. O segundo tipo de erro é introduzido pelo próprio método numérico que, ao se utilizar aproximações para encontrar a solução numérica, acaba gerando os erros de truncamento. Juntos, os dois erros constituem o erro total da solução numérica, que é, basicamente, a diferença entre a solução verdadeira (exata, e que é desconhecida) e a solução numérica aproximada \cite{metnumericos}. 
 
 
 \begin{figure}[!ht]
@@ -229,12 +221,12 @@ Apesar de serem consideravelmente precisas é preciso ter consciência que as solu
 \end{figure}
 
 
-Inicialmente, soluções numéricas eram muito custosas computacionalmente e modelos analíticos (bastante simplificados) e experimentais eram as únicas ferramentas que os cientistas podiam contar para o entendimento dos fênomenos físicos. Com o avanço computacional ocorrido nas ultimas décadas, as barreiras computacionais que tornavam custosas as soluções para a resolução dos métodos numéricos se tornaram muito pequenas comparadas aos ganhos potenciais. A solução de escoamento turbulento supersônico em um aerofólio com os computadores da década de 60 consumiria um tempo de computação de aproximadamente
+Inicialmente, soluções numéricas eram muito custosas computacionalmente e modelos analíticos (bastante simplificados) e experimentais eram as únicas ferramentas que os cientistas podiam contar para o entendimento dos fênomenos físicos. Com o avanço computacional ocorrido nas últimas décadas, as barreiras computacionais que tornavam custosas as soluções para a resolução dos métodos numéricos se tornaram muito pequenas comparadas aos ganhos potenciais. A solução de escoamento turbulento supersônico em um aerofólio com os computadores da década de 60 consumiria um tempo de computação de aproximadamente
 30 anos com um custo de 10 milhões de dólares. O mesmo problema com os computadores atuais requer minutos e custo na ordem de centenas de dólares \cite{Maliska}. Dessa forma, a modelagem num\'erica permite não apenas resolver as equações que descrevem os fenômenos físicos mas também se constitui uma ferramenta para experimentos relativos aos processos que interagem e compõe as características observadas nos oceanos.
 
-Modelos de áreas costeiras foram desenvolvidos desde o começo da década de 80, mas apenas na década de 90 que grandes institutos europeus conseguiram aprimorar os primeiros modelos e desenvolveram os modelos robustos e de código flexível que ainda atuam hoje em dia como o Delft3D (Deltares), Mike21 (\emph{Danish Hydraulic Institute}) e Telemac (\emph{Laboratoire Nationale d'Hydraulique}). Hoje em dia, diversos modelos estão disponíveis para utilização e muitos são grátis e de código aberto, o que facilita seu uso e dispersão. Inúmeros são os trabalhos na área da oceanografia que fazem uso dessa ferramenta que se tornou fundamental os estudos na área.
+Modelos numéricos de áreas costeiras foram desenvolvidos desde o começo da década de 80, mas apenas na década de 90 que grandes institutos europeus conseguiram aprimorar os primeiros modelos e desenvolveram os modelos robustos e de código flexível que ainda atuam hoje em dia como o Delft3D (Deltares), Mike21 (\emph{Danish Hydraulic Institute}) e Telemac (\emph{Laboratoire Nationale d'Hydraulique}). Hoje em dia, diversos modelos estão disponíveis para utilização e muitos são grátis e de código aberto, o que facilita seu uso e dispersão. Inúmeros são os trabalhos na área da oceanografia que fazem uso dessa ferramenta que se tornou fundamental os estudos na área.
 
-A tarefa do método numérico, portanto, é resolver uma ou mais equações diferenciais, substituindo as derivadas existentes na equação por expressões algébricas que envolvem a(s) função(ões) incógnita(s). Quando escolhe-se fazer uma aproximação numérica da equação diferencial, aceitamos ter a solução para um número discreto de pontos de forma que, quanto maior for este número de pontos, mais próxima da solução exata será a solução aproximada \cite{Maliska}. O conjunto de pontos onde a solução será calculada é denominado grade numérica ou malha numérica.
+A tarefa do método numérico, portanto, é resolver uma ou mais equações diferenciais, substituindo as derivadas existentes na equação por expressões algébricas que envolvem a(s) função(ões) incógnita(s).  Quando escolhe-se fazer uma aproximação numérica da equação diferencial, aceitamos ter a solução para um número discreto de pontos de forma que, quanto maior for este número de pontos, mais próxima da solução exata será a solução aproximada \cite{Maliska}. O conjunto de pontos onde a solução será calculada é denominado grade numérica ou malha numérica.
 
 As grades numéricas podem ser construídas de maneiras estruturadas ou desestruturadas. As grades estruturadas são geralmente aquelas cujo layout é retilíneo ou curvilinear, mas cuja forma principal é o retângulo como a presentado na figura \ref{fig:struc}. Grades não estruturadas ou desestruturadas são aquelas tipicamente construídas através de triângulos (Figura \ref{fig:unstruc}), mas também podem se basear em composição de triângulos e quadriláteros. As grades estruturadas normalmente utilizadas através dos métodos de diferenças finitas, enquanto grades não estruturadas usam métodos de elementos finitos ou volumes finitos \cite{dano2012}.
 
@@ -253,12 +245,12 @@ As grades numéricas podem ser construídas de maneiras estruturadas ou desestrutu
 Tradicionalmente, o método de diferenças finitas é mais popular nos modelos costeiros, principalmente pela facilidade dos seus conceitos e sua eficiência no cálculo célula-a-célula. Já os métodos de elementos finitos são bem mais complicados matematicamente e costumam ser mais lentos nos cálculos célula-a-célula mas conseguem facilmente cobrir áreas com grandes diferença em escala de tamanhos \cite{dano2012}.
 
 Os sistemas de equações formados por todas as sete equações básicas pode ser resolvido de dois modos, basicamente: de forma implícita ou de forma explícita.
-Em métodos implícitos, todo o sistema de equações é calculado simultaneamente já que todos os valores do passo de tempo atual são desconhecidos com exceção das fronteiras. Esse cálculo pode ser feito através de inversão de matriz (totalmente implícito) ou de métodos iterativos (parcialmente implícito). No caso dos métodos explícitos, as variáveis no tempo atual são baseadas em valores conhecidos do passo de tempo passado, o que é consideravelmente mais simples.Em geral, métodos implícitos demoram mais por passo de tempo, mas conseguem trabalhar com passos de tempo maiores porque não há um limite fixo de estabilidade. Já no caso de métodos explícitos existe pouco esforço computacional por passo de tempo, mas um critério deve ser seguido para garantir estabilidade \cite{Maliska,dano2012}. É importante ressaltar que processo que demandam iteração podem acumular erros de arredondamento que também podem desestabilizar a solução.
+Em métodos implícitos, todo o sistema de equações é calculado simultaneamente já que todos os valores do passo de tempo atual são desconhecidos com exceção das fronteiras. Esse cálculo pode ser feito através de inversão de matriz (totalmente implícito) ou de métodos iterativos (parcialmente implícito). No caso dos métodos explícitos, as variáveis no tempo atual são baseadas em valores conhecidos do passo de tempo passado, o que é consideravelmente mais simples. Em geral, métodos implícitos demoram mais por passo de tempo, mas conseguem trabalhar com passos de tempo maiores porque não há um limite fixo de estabilidade. Já no caso de métodos explícitos existe pouco esforço computacional por passo de tempo, mas um critério deve ser seguido para garantir estabilidade \cite{Maliska,dano2012}. É importante ressaltar que processo que demandam iteração podem acumular erros de arredondamento que também podem desestabilizar a solução.
 
 No caso de modelos costeiros, os modelos Delft3D e Mike21 utilizam-se de esquemas implícitos enquanto modelos como ROMS e o XBeach usam esquemas explícito de soluções.
 
 Os modelos, em geral, podem apresentar problemas de convergência, onde a solução numérica não é estável.
-A condição descrita pelos autores Richard Courant, Kurt Friedrichs e Hans Lewy deu origem a todos os fundamentos necessários para as condições de convegência de qualquer esquema numérico e passou a ser conhecida como condição CFL. 
+A condição descrita pelos autores Richard Courant, Kurt Friedrichs e Hans Lewy deu origem a todos os fundamentos necessários para as condições de convegência de qualquer esquema numérico e passou a ser conhecida como condição CFL \cite{Fortuna2000}. 
 
 A ideia básica da condição de Courant-Friedrichs-Lewy (CFL) é que a solução das equações de diferenças finitas não pode ser independente dos dados que determinam a solução das equações diferenciais parciais associadas, ou seja, a solução numérica não pode avançar mais rápido que o problema físico que se está sendo modelado. A condição CFL é uma condição necessária para a estabilidade do modelo, mas não suficiente.
 
@@ -275,6 +267,7 @@ Os métodos numéricos, por suas características intrínsecas, geram um efeito seme
 	\caption{Difusão numérica em diferentes condições de CFL em um problema da equação da onda 1D com condição de fronteira invariavelmente igual a 1.}\label{fig:difusao}
 \end{figure}
 
+\clearpage
 \section{Área de estudo}
 
 No contexto das zonas costeiras as praias de enseadas (\textit{headland-bay beaches}) representam quase 51\% das linhas de costa do mundo. Estas são características em regiões rochosas associadas com topografias montanhosas e cujas dimensões podem variar dependendo da topografia pré-existente parcialmente afogada durante a transgressão holocênica. Tipicamente possuem um formato assimétrico caracterizado por uma área curva denominada zona de sombra, uma área parcialmente curva transicional e uma região reta alinhada ao clima de ondas predominante \cite{shortheadlands}.
@@ -344,7 +337,7 @@ Como pode ser visto, poucos estudos na região focaram na hidrodinâmica de longo 
 Dado os objetivos propostos pelo presente estudo, a figura \ref{fig:fluxo} apresenta o fluxograma da metodologia a ser aplicada para que estes sejam alcançados. 
 
 \begin{figure}[!ht]
-	\includegraphics[width=0.9\textwidth]{figuras/Fluxograma_metodologia.PNG}
+	\includegraphics[width=0.9\textwidth]{figuras/Fluxograma_metodologia2.png}
 	\centering
 	\caption{Fluxograma da metodologia a ser aplicada.}\label{fig:fluxo}
 \end{figure}
@@ -356,7 +349,7 @@ Concomitantemente, serão avaliados os dados de ADCP que serão usados para a cali
 
 O modelo passará então por uma série de testes de sensibilidade. Esses testes visam compreender o comportamento e as reações do modelo quando os seus dados de entrada ou os parâmetros padrão (\emph{default}) são alterados. Isso garantirá que as configurações a serem usadas sejam bem conhecidas e que os parâmetros a serem mudados na calibração têm sua influência mapeada. 
 
-Após os teses de sensibilidade serão configuradas as condições iniciais. Os dados de entrada serão, basicamente, dados de maré do TPXO e dados de vento do CFSR/NCEP. Detalhes sobre cada um dos dados utilizados como forçante serão descritos nas seções que seguem. O resultado desse modelo será comparado com os dados medidos do ADCP, para avaliar a acurácia do modelo. Esse processo é denominado calibração e assume-se que, quanto menor a diferença entre o dado modelado e medido, melhor é o modelo \cite{GMP}. Dessa forma, ao se atestar a confiabilidade dos dados em um ou mais pontos, assume-se que os processos reproduzidos em todo o domínio foram corretamente reproduzidos de forma a gerar resultados coerentes naquele(s) ponto(s) e, portanto, que o modelo está adequado, dentro de suas limitações, a reproduzir a dinâmica da área de interesse.
+Após os teses de sensibilidade serão configuradas as condições iniciais. Os dados de entrada serão, basicamente, dados de maré do TPXO e dados de vento do CFSR/NCEP. Detalhes sobre cada um dos dados utilizados como forçante serão descritos nas seções que seguem. O resultado desse modelo será comparado com os dados medidos pelo ADCP, para avaliar a acurácia do modelo. Esse processo é denominado calibração e assume-se que, quanto menor a diferença entre o dado modelado e medido, melhor é o modelo \cite{GMP}. Dessa forma, ao se atestar a confiabilidade dos dados em um ou mais pontos, assume-se que os processos reproduzidos em todo o domínio foram corretamente reproduzidos de forma a gerar resultados coerentes naquele(s) ponto(s) e, portanto, que o modelo está adequado, dentro de suas limitações, a reproduzir a dinâmica da área de interesse.
 
 Os erros entre os dados simulados e os dados medidos podem existir por diversos problemas: erros conceituais nas simplificações assumidas pelos modelos, parâmetros inadequados, erros de forçantes ou problemas de aquisição dos dados medidos. Dessa forma, a ideia geral da calibração é modificar parâmetros que possam otimizar os resultados do modelo, testá-los, e avaliar os resultados. Esse é um processo iterativo e deve ser realizado até que o valor de erro esteja dentro de um limite aceitável \cite{GMP}. 
 
@@ -1042,9 +1035,36 @@ Nos histogramas apresentados nas figuras \ref{fig:hist_velcorrente_01} a \ref{fi
 	\caption{Histograma da velocidade de corrente no ponto ST003 integrada na vertical}\label{fig:hist_velcorrente_03}
 \end{figure}
 
+\begin{landscape}
+	\begin{figure}[!htb]
+		\includegraphics[width=1.6\textwidth]{figuras/Corrente_Quiver_ST001.png}
+		\centering
+		\caption{Direção predominante e velocidade das correntes no ponto ST001}\label{fig:quiver01}
+	\end{figure}
+
+	\begin{figure}[!htb]
+		\includegraphics[width=1.6\textwidth]{figuras/Corrente_Quiver_ST002.png}
+		\centering
+		\caption{Direção predominante e velocidade das correntes no ponto ST002}\label{fig:quiver02}
+	\end{figure}
+	
+	\begin{figure}[!htb]
+		\includegraphics[width=1.6\textwidth]{figuras/Corrente_Quiver_ST003.png}
+		\centering
+		\caption{Direção predominante e velocidade das correntes no ponto ST003}\label{fig:quiver03}
+	\end{figure}
+
+	\begin{figure}[!htb]
+		\includegraphics[width=1.6\textwidth]{figuras/Corrente_Residual_Medida_50h.png}
+		\centering
+		\caption{Correntes residuais dos pontos medidos a cada 50h}\label{fig:residualmedido}
+	\end{figure}
+\end{landscape}
+
+
 
 %-------------------------------------------------------------------------------------------------------
-\newpage
+\clearpage
 \section{Análise dos Dados de Vento}
 
 Primeiramente os dados proveniente da base METAR da Aeronática do Brasil foram comparados com os dados provenientes do modelo de reanálises CFSR da NOAA. Na figura \ref{fig:localizacaovento} é possível observar a localização dos dados a serem apresentados. 
