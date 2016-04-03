@@ -1,0 +1,56 @@
+\select@language {brazil}
+\contentsline {figure}{\numberline {1}{\ignorespaces M\'etodos de solu\c c\~ao para um problema f\IeC {\'\i }sico}}{12}
+\contentsline {figure}{\numberline {2}{\ignorespaces Exemplo de grade num\'erica estruturada}}{13}
+\contentsline {figure}{\numberline {3}{\ignorespaces Exemplo de grade num\'erica desestruturada}}{13}
+\contentsline {figure}{\numberline {4}{\ignorespaces Difus\~ao num\'erica em diferentes condi\c c\~oes de CFL em um problema da equa\c c\~ao da onda 1D com condi\c c\~ao de fronteira invariavelmente igual a 1.}}{14}
+\contentsline {figure}{\numberline {5}{\ignorespaces Localiza\c c\~ao da Enseada do Itapocor\'oi}}{15}
+\contentsline {figure}{\numberline {6}{\ignorespaces Efeitos da eros\~ao em Pi\c carras. Fonte: \citeonline {fotoerosao}}}{17}
+\contentsline {figure}{\numberline {7}{\ignorespaces Imagem do Google Earth da Praia de Pi\c carras de 18 de Setembro de 2015. Fonte: Google Earth}}{18}
+\contentsline {figure}{\numberline {8}{\ignorespaces Localiza\c c\~ao dos pontos anfidr\^omicos no Atl\^antico Sul. Fonte: \citeonline {Petersen2003}}}{19}
+\contentsline {figure}{\numberline {9}{\ignorespaces M\'axima eleva\c c\~ao do n\IeC {\'\i }vel do mar causada por mar\'es meteorol\'ogicas e astron\^omicas. Fonte: \citeonline {Parise}}}{19}
+\contentsline {figure}{\numberline {10}{\ignorespaces Fluxograma da metodologia a ser aplicada.}}{21}
+\contentsline {figure}{\numberline {11}{\ignorespaces Localiza\c c\~ao das coletas de dados atrav\'es de ADCPs.}}{24}
+\contentsline {figure}{\numberline {12}{\ignorespaces Dados medidos no ADCP ST001.}}{25}
+\contentsline {figure}{\numberline {13}{\ignorespaces Exemplo do sistema de coordenadas verticais $\sigma $. Fonte: \citeonline {ROMS2005} }}{26}
+\contentsline {figure}{\numberline {14}{\ignorespaces Interface gr\'afica do TMD para obten\c c\~ao das constituintes harm\^onicas calculadas pelo modelo TPXO}}{28}
+\contentsline {figure}{\numberline {15}{\ignorespaces Localiza\c c\~ao dos dados de vento do modelo de rean\'alise CFSR e do aeroporto de Navegantes (METAR)}}{32}
+\contentsline {figure}{\numberline {16}{\ignorespaces Rosa dos ventos do Aeroporto de Navegantes para o ano de 2011 (METAR)}}{33}
+\contentsline {figure}{\numberline {17}{\ignorespaces Rosa dos ventos referente aos dados do CFSR para o ano de 2011 a 2015}}{34}
+\contentsline {figure}{\numberline {18}{\ignorespaces Histograma de velocidade do vento no Aeroporto de Navegantes para o ano de 2011 (METAR)}}{34}
+\contentsline {figure}{\numberline {19}{\ignorespaces Histograma de velocidade do vento referentes aos dados do CFSR para o ano de 2011 a 2015}}{35}
+\contentsline {figure}{\numberline {20}{\ignorespaces Dados v\'alidos e dados indispon\IeC {\'\i }veis nos dados de velocidade do vento no Aeroporto de Navegantes para o ano de 2011 (METAR)}}{36}
+\contentsline {figure}{\numberline {21}{\ignorespaces Varia\c c\~ao de N\IeC {\'\i }vel no ponto ST001}}{39}
+\contentsline {figure}{\numberline {22}{\ignorespaces Varia\c c\~ao de N\IeC {\'\i }vel no ponto ST002}}{40}
+\contentsline {figure}{\numberline {23}{\ignorespaces Varia\c c\~ao de N\IeC {\'\i }vel no ponto ST003}}{41}
+\contentsline {figure}{\numberline {24}{\ignorespaces Dados de n\IeC {\'\i }vel na Praia de Penha}}{42}
+\contentsline {figure}{\numberline {25}{\ignorespaces Separa\c c\~ao dos dados de n\IeC {\'\i }vel em Pi\c carras}}{43}
+\contentsline {figure}{\numberline {26}{\ignorespaces Separa\c c\~ao dos dados de n\IeC {\'\i }vel em Penha}}{44}
+\contentsline {figure}{\numberline {27}{\ignorespaces Evento de mar\'e meteorol\'ogica negativa registrado}}{45}
+\contentsline {figure}{\numberline {28}{\ignorespaces Constantes harm\^onicas definidas na esta\c c\~ao maregr\'afica brasileira da FEMAR \cite {femar}}}{52}
+\contentsline {figure}{\numberline {29}{\ignorespaces Espectro de energia em Pi\c carras e Penha}}{56}
+\contentsline {figure}{\numberline {30}{\ignorespaces Dados de temperatura}}{58}
+\contentsline {figure}{\numberline {31}{\ignorespaces Rosa de correntes no ponto ST001 integrada na vertical (em cent\IeC {\'\i }metros)}}{59}
+\contentsline {figure}{\numberline {32}{\ignorespaces Rosa de correntes no ponto ST002 integrada na vertical (em cent\IeC {\'\i }metros)}}{60}
+\contentsline {figure}{\numberline {33}{\ignorespaces Rosa de correntes no ponto ST003 integrada na vertical (em cent\IeC {\'\i }metros)}}{60}
+\contentsline {figure}{\numberline {34}{\ignorespaces Histograma da velocidade de corrente no ponto ST001 integrada na vertical}}{61}
+\contentsline {figure}{\numberline {35}{\ignorespaces Histograma da velocidade de corrente no ponto ST002 integrada na vertical}}{61}
+\contentsline {figure}{\numberline {36}{\ignorespaces Histograma da velocidade de corrente no ponto ST003 integrada na vertical}}{61}
+\contentsline {figure}{\numberline {37}{\ignorespaces Dire\c c\~ao predominante e velocidade das correntes no ponto ST001}}{62}
+\contentsline {figure}{\numberline {38}{\ignorespaces Dire\c c\~ao predominante e velocidade das correntes no ponto ST002}}{63}
+\contentsline {figure}{\numberline {39}{\ignorespaces Dire\c c\~ao predominante e velocidade das correntes no ponto ST003}}{64}
+\contentsline {figure}{\numberline {40}{\ignorespaces Correntes residuais dos pontos medidos a cada 50h}}{65}
+\contentsline {figure}{\numberline {41}{\ignorespaces Malha num\'erica t\IeC {\'\i }pica do ROMS}}{66}
+\contentsline {figure}{\numberline {42}{\ignorespaces Dom\IeC {\'\i }nio da grade num\'erica regional.}}{67}
+\contentsline {figure}{\numberline {43}{\ignorespaces Dom\IeC {\'\i }nio da grade num\'erica local.}}{68}
+\contentsline {figure}{\numberline {44}{\ignorespaces Batimetria interpolada na grade num\'erica regional.}}{69}
+\contentsline {figure}{\numberline {45}{\ignorespaces Batimetria interpolada na grade num\'erica local.}}{70}
+\contentsline {figure}{\numberline {46}{\ignorespaces Compara\c c\~ao de dados medidos com modelados}}{72}
+\contentsline {figure}{\numberline {47}{\ignorespaces Compara\c c\~ao dos dados de temperatura do ponto ST001 e da dire\c c\~ao do vento}}{80}
+\contentsline {figure}{\numberline {48}{\ignorespaces Compara\c c\~ao dos dados de temperatura do ponto ST002 e da dire\c c\~ao do vento}}{81}
+\contentsline {figure}{\numberline {49}{\ignorespaces Compara\c c\~ao dos dados de temperatura do ponto ST003 e da dire\c c\~ao do vento}}{82}
+\contentsline {figure}{\numberline {50}{\ignorespaces Compara\c c\~ao dos dados de corrente do ponto ST001 e da velocidade do vento}}{83}
+\contentsline {figure}{\numberline {51}{\ignorespaces Compara\c c\~ao dos dados de corrente do ponto ST002 e da velocidade do vento}}{84}
+\contentsline {figure}{\numberline {52}{\ignorespaces Compara\c c\~ao dos dados de corrente do ponto ST003 e da velocidade do vento}}{85}
+\contentsline {figure}{\numberline {53}{\ignorespaces Compara\c c\~ao dos dados de corrente do ponto ST001 e da dire\c c\~ao do vento}}{86}
+\contentsline {figure}{\numberline {54}{\ignorespaces Compara\c c\~ao dos dados de corrente do ponto ST002 e da dire\c c\~ao do vento}}{87}
+\contentsline {figure}{\numberline {55}{\ignorespaces Compara\c c\~ao dos dados de corrente do ponto ST003 e da dire\c c\~ao do vento}}{88}

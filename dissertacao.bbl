@@ -1,0 +1,399 @@
+\providecommand{\abntreprintinfo}[1]{%
+ \citeonline{#1}}
+\setlength{\labelsep}{0pt}\begin{thebibliography}{}
+\providecommand{\abntrefinfo}[3]{}
+\providecommand{\abntbstabout}[1]{}
+\abntbstabout{1.45.2.1 }
+
+\bibitem[Almeida 2013]{Almeida2013}
+\abntrefinfo{Almeida}{ALMEIDA}{2013}
+{ALMEIDA, L.~R. de.
+\textbf{Estudio de dinámica litoral y evolución de la zona sur de la Playa de
+  Piçarras (Santa Catarina/ Brasil)}.
+Dissertação (Mestrado) --- Universidad de Cantabria, Santander, 2013. 263 p.}
+
+\bibitem[Araujo et al. 2010]{Araujoetal2010}
+\abntrefinfo{Araujo et al.}{ARAUJO et al.}{2010}
+{ARAUJO, R.~S. et al. Variação da morfologia praial e identificação de zonas de
+  erosão acentuada (zea) na enseada do itapocorói-sc.
+\textbf{Braz. J. Aqua. Sci. Technol.}, v.~14, n.~1, p. 29--38, 2010.}
+
+\bibitem[Brown et al. 2010]{Brownetal2013}
+\abntrefinfo{Brown et al.}{BROWN et al.}{2010}
+{BROWN, J.~M.~\& BOLAñOS, R.~\& SOUZA, A. J.~a. Process contribution to the
+  time-varying residual circulation in tidally dominated estuarine
+  environments.
+\textbf{Braz. J. Aqua. Sci. Technol.}, v.~14, n.~1, p. 29--38, 2010.}
+
+\bibitem[Burchard et al. 2011]{Buchardetal2011}
+\abntrefinfo{Burchard et al.}{BURCHARD et al.}{2011}
+{BURCHARD, H. et al. Drivers of residual estuarine circulation in tidally
+  energetic estuaries: Straight and irrotational channels with parabolic cross
+  section.
+\textbf{Journal of Physical Oceanography}, v.~41, p. 548--570, 2011.}
+
+\bibitem[Cheng 1990]{cheng}
+\abntrefinfo{Cheng}{CHENG}{1990}
+{CHENG, R.~T. Residual currents and long-term transport.
+In:  \underline{\ \ \ \ \ \ \ \ }. New York, U.S.A.: Springer-Verlag, 1990.
+  cap. Introduction.}
+
+\bibitem[Egbert et al. 1994]{tpxo1994}
+\abntrefinfo{Egbert et al.}{EGBERT et al.}{1994}
+{EGBERT, G.~D.~\& BENNET, A.~F.~\& FOREMAN, M. G.~G. Topex/poseidon tides
+  estimated using a global inverse model.
+\textbf{Journal of Geophysical Research}, v.~99, p. 821--852, 1994.}
+
+\bibitem[Egbert e Erofeeva 2002]{tpxo2002}
+\abntrefinfo{Egbert e Erofeeva}{EGBERT; EROFEEVA}{2002}
+{EGBERT, G.~D.~\& EROFEEVA, S.~Y. Efficient inverse modeling of barotropic
+  ocean tides.
+\textbf{American Meteorologica Society}, v.~19, p. 183--204, 2002.}
+
+\bibitem[Egbert e Erofeeva 2015]{tpxoweb}
+\abntrefinfo{Egbert e Erofeeva}{EGBERT; EROFEEVA}{2015}
+{EGBERT, G.~D.~\& EROFEEVA, S.~Y. \textbf{TPXO/Poseidon}. 2015.
+Acessado em 09 ago 2015.
+Dispon{\'\i}vel em: $<$http://volkov.oce.orst.edu/tides/global.html$>$.}
+
+\bibitem[FEMAR 2016]{femar}
+\abntrefinfo{FEMAR}{FEMAR}{2016}
+{FEMAR. 2016.
+Acessado em mar. 2016.
+Dispon{\'\i}vel em:
+  $<$http://www.fundacaofemar.org.br/biblioteca/emb/tabelas/263.html$>$.}
+
+\bibitem[Fortuna 2000]{Fortuna2000}
+\abntrefinfo{Fortuna}{FORTUNA}{2000}
+{FORTUNA, A.~O. \textbf{Técnicas Computacionais para Dinâmica dos Fluidos}:
+  Conceitos básicos e aplicações. [S.l.]: Edusp, 2000.}
+
+\bibitem[Fox 1981]{Fox81}
+\abntrefinfo{Fox}{FOX}{1981}
+{FOX, D.~G. Judging air quality model performance.
+\textbf{Bulletin American Meteorological Society}, p. 599-- 609, 1981.}
+
+\bibitem[Freitas et al. 2010]{freitasetal2010}
+\abntrefinfo{Freitas et al.}{FREITAS et al.}{2010}
+{FREITAS, D. et al. Quantificação de perigos costeiros e projeção de linhas de
+  costa futuras para a enseada do itapocorói - sc.
+\textbf{Braz. J. Aqua. Sci. Technol.}, v.~14, n.~1, p. 39--49, 2010.}
+
+\bibitem[Gilat e Subramaniam 2008]{metnumericos}
+\abntrefinfo{Gilat e Subramaniam}{GILAT; SUBRAMANIAM}{2008}
+{GILAT, A.~\& SUBRAMANIAM, V. \textbf{Métodos Numéricos para Engenheiros e
+  Cientistas}: Uma introdução com aplicações usando o matlab. [S.l.]: Bookman,
+  2008.}
+
+\bibitem[Heuvel et al. 2008]{Delft2008}
+\abntrefinfo{Heuvel et al.}{HEUVEL et al.}{2008}
+{HEUVEL, S. van~den et al. \textbf{Case Study Piçarras Beach}: Erosion and
+  nourishment of a headland bay beach.
+[S.l.], 2008.}
+
+\bibitem[Hunt e Johns 1963]{HuntJohns63}
+\abntrefinfo{Hunt e Johns}{HUNT; JOHNS}{1963}
+{HUNT, J.~N.~\& JOHNS, B. Currents induced by tides and gravity waves.
+\textbf{Tellus}, v.~15, n.~4, p. 343--351, 1963.}
+
+\bibitem[Huthnance 1973]{Huthnance}
+\abntrefinfo{Huthnance}{HUTHNANCE}{1973}
+{HUTHNANCE, J.~M. Tidal current asymmetries over the norfolk sandbanks.
+\textbf{Estuarine and Coastal Marine Science}, I, p. 89--99, 1973.}
+
+\bibitem[IBGE 2015]{IBGE}
+\abntrefinfo{IBGE}{IBGE}{2015}
+{IBGE. 2015.
+Acessado em fev. 2015.
+Dispon{\'\i}vel em:
+  $<$http://cidades.ibge.gov.br/xtras/perfil.php?lang=\&codmun=421280\&search=santa-catarina|balneario-picarras$>$.}
+
+\bibitem[Imasato 1983]{imasato}
+\abntrefinfo{Imasato}{IMASATO}{1983}
+{IMASATO, N. What is tide-induced residual current.
+\textbf{American Meteorological Society}, p. 1307--1317, 1983.}
+
+\bibitem[Klein et al. 2009]{kleinetal2009}
+\abntrefinfo{Klein et al.}{KLEIN et al.}{2009}
+{KLEIN, A. H.~F. et al. Beach management: Principles and practice.
+In:  \underline{\ \ \ \ \ \ \ \ }. 100 Cambridge Grove: Earthscan, 2009. cap.
+  Ameliorative Strategies at Balneário Piçarras Beach.}
+
+\bibitem[Klein e Menezes 2001]{KleinMenezes2001}
+\abntrefinfo{Klein e Menezes}{KLEIN; MENEZES}{2001}
+{KLEIN, A. H.~F.~\& MENEZES, J.~T. Beach morphodynamics and profile sequence
+  for a headland bay coast.
+\textbf{Journal of Coastal Research}, v.~17, n.~4, p. 812--835, 2001.}
+
+\bibitem[Klein et al. 2006]{mma}
+\abntrefinfo{Klein et al.}{KLEIN et al.}{2006}
+{KLEIN, A. H.~F. et al. Erosão e progradação do litoral brasileiro.
+In:  \underline{\ \ \ \ \ \ \ \ }. Brasília, DF: Ministério do Meio Ambiente,
+  2006. cap. Santa Catarina.}
+
+\bibitem[Kundu et al. 2012]{Kundu}
+\abntrefinfo{Kundu et al.}{KUNDU et al.}{2012}
+{KUNDU, P.~K.~\& COHEN, I.~M.~\& DOWNLIND, D.~R. \textbf{Fluid Mechanics}.
+  [S.l.]: Elsevier, 2012.}
+
+\bibitem[LeBlond 1991]{leblond}
+\abntrefinfo{LeBlond}{LEBLOND}{1991}
+{LEBLOND, P.~H. \textbf{Tydal Hydrodynamics}. [S.l.]: John Wiley and Sons Inc,
+  1991.}
+
+\bibitem[Leite 2009]{Leite2009}
+\abntrefinfo{Leite}{LEITE}{2009}
+{LEITE, L.
+\textbf{Hidrodinâmica das praias de enseada}: Estudo da enseada do itapocorói.
+Dissertação (Mestrado) --- Universidade de Aveiro, Aveiro, 2009. 61 p.}
+
+\bibitem[Leite et al. 2011]{Leite2011}
+\abntrefinfo{Leite et al.}{LEITE et al.}{2011}
+{LEITE, L.~M. et al. Hydrodynamic study of bay beaches - a case study os
+  itapocoroi bay, brazil.
+\textbf{Journal of Coastal Research}, v.~64, p. 1086--1090, 2011.}
+
+\bibitem[MacCready e Banas 2010]{maccready}
+\abntrefinfo{MacCready e Banas}{MACCREADY; BANAS}{2010}
+{MACCREADY, P.~\& BANAS, N.~S. \textbf{Estuary Treatise}: Residual circulation,
+  mixing and dispersion. [S.l.: s.n.], 2010.}
+
+\bibitem[Maciel 2010]{fotoerosao}
+\abntrefinfo{Maciel}{MACIEL}{2010}
+{MACIEL, R. \textbf{Prefeitura de Piçarras decreta novo estado de calamidade
+  pública devido ao avanço das ondas}. 2010.
+Acessado em 10 ago. 2015.
+Dispon{\'\i}vel em:
+  $<$http://diariocatarinense.clicrbs.com.br/sc/noticia/2011/11/prefeitura-de-picarras-decreta-novo-estado-de-calamidade-publica-devido-ao-avanco-das-ondas-3548659.html$>$.}
+
+\bibitem[Maliska 1995]{Maliska}
+\abntrefinfo{Maliska}{MALISKA}{1995}
+{MALISKA, C.~R. \textbf{Transferência de Calor e Mecânica dos Fluidos
+  Computacional}. [S.l.]: Livros Técnicos e Científicos S. A., 1995.}
+
+\bibitem[Marta-Almeida e Ruiz-Villarreal 2011]{MartaAlmeida2011}
+\abntrefinfo{Marta-Almeida e Ruiz-Villarreal}{MARTA-ALMEIDA;
+  RUIZ-VILLARREAL}{2011}
+{MARTA-ALMEIDA, M.~\& RUIZ-VILLARREAL, M. Offe: A python engine for automating
+  regional and coastal ocean forecasts.
+\textbf{Environmental Modelling \& Software}, v.~26, p. 680--682, 2011.}
+
+\bibitem[Mason et al. 2010]{Masonetal2010}
+\abntrefinfo{Mason et al.}{MASON et al.}{2010}
+{MASON, E. et al. Procedures for offline grid nesting in regional ocean models.
+\textbf{Ocean Modelling}, v.~35, p. 1--15, 2010.}
+
+\bibitem[Massel 1989]{massel}
+\abntrefinfo{Massel}{MASSEL}{1989}
+{MASSEL, S.~R. \textbf{Hydrodynamics of Coastal Zones}. [S.l.]: Elsevier
+  Science Publisher, 1989.}
+
+\bibitem[Masselink e Short 1993]{Masselink}
+\abntrefinfo{Masselink e Short}{MASSELINK; SHORT}{1993}
+{MASSELINK, G.~\& SHORT, A.~D. The effect of tide range om beach morphodynamics
+  and morphology: A conceptual beach model.
+\textbf{Journal of Coastal Research}, v.~9, n.~3, p. 785--800, 1993.}
+
+\bibitem[Moore et al. 2011]{Moore}
+\abntrefinfo{Moore et al.}{MOORE et al.}{2011}
+{MOORE, A. et al. The regional ocean modelling system (roms) 4-dimensional
+  variational data assimilation systems: Part i - system overview and
+  formulation.
+\textbf{Progress in Oceanography}, v.~91, p. 34--49, 2011.}
+
+\bibitem[Möller e Abe 2011]{livroinstrumentacao}
+\abntrefinfo{Möller e Abe}{MöLLER; ABE}{2011}
+{MöLLER, O.~\& ABE, M.~P. Estudos oceanográficos: do instrumental ao prático.
+In:  \underline{\ \ \ \ \ \ \ \ }. Pelotas, RS: Editora Textos, 2011. cap.
+  Oceanografia Física.}
+
+\bibitem[Nihoul e Ronday 1975]{Nihoul1974}
+\abntrefinfo{Nihoul e Ronday}{NIHOUL; RONDAY}{1975}
+{NIHOUL, J. C.~J.~\& RONDAY, F.~C. The influence of the "tidal stress" on the
+  residual circulation.
+\textbf{Tellus XXVII}, v.~5, 1975.}
+
+\bibitem[Oliveira 2013]{tccjonas}
+\abntrefinfo{Oliveira}{OLIVEIRA}{2013}
+{OLIVEIRA, J.~G. de. \textbf{Modelagem numérica das respostas do perfil praial
+  a eventos extremos em praias de enseada}: Estudo de caso da enseada do
+  itapocorói, santa catarina, brasil. 2013.
+Monografia (Trabalho de Conclusão de Curso) - Universidade Federal de Santa
+  Catarina.}
+
+\bibitem[Parise et al. 2009]{Parise}
+\abntrefinfo{Parise et al.}{PARISE et al.}{2009}
+{PARISE, C.~K.~\& CALLIARI, L.~J.~\& KRUSCHE, N. Extreme storm surges in the
+  south of brazil: Atmospheric conditions and shore erosion.
+\textbf{Brazilian Journal of Oceanography}, v.~57, n.~3, p. 175--188, 2009.}
+
+\bibitem[Parker 1991]{Parker91}
+\abntrefinfo{Parker}{PARKER}{1991}
+{PARKER, B.~B. \textbf{Tydal Hydrodynamics}. [S.l.]: John Wiley and Sons Inc,
+  1991.}
+
+\bibitem[Parker 2007]{Parker}
+\abntrefinfo{Parker}{PARKER}{2007}
+{PARKER, B.~B. \textbf{Tidal Analysis and Prediction}.
+[S.l.], 2007.}
+
+\bibitem[Pawlowicz et al. 2002]{ttidematlab}
+\abntrefinfo{Pawlowicz et al.}{PAWLOWICZ et al.}{2002}
+{PAWLOWICZ, R.~\& BEARDSLEY, B.~\& LENTZ, S. Classic tidal harmonic analysis
+  including error estimates in matlab using t\_tide.
+\textbf{Computers \& Geosciences}, v.~28, p. 929--937, 2002.}
+
+\bibitem[Petersen 2003]{Petersen2003}
+\abntrefinfo{Petersen}{PETERSEN}{2003}
+{PETERSEN, G.
+\textbf{Wave Simulations at the Coast of Paraná in southern Brazil}.
+Dissertação (Mestrado) --- Christian Albrechts University, Kiel, Alemanha,
+  2003. 128 p.}
+
+\bibitem[Pugh 1987]{Pugh87}
+\abntrefinfo{Pugh}{PUGH}{1987}
+{PUGH, D.~T. \textbf{Tides, Surges and Mean Sea-Level}. [S.l.]: John Wiley \&
+  Sons, 1987.}
+
+\bibitem[Python 2015]{python}
+\abntrefinfo{Python}{PYTHON}{2015}
+{PYTHON. 2015.
+Acessado em nov. 2015.
+Dispon{\'\i}vel em: $<$https://www.python.org/$>$.}
+
+\bibitem[Ramirez 2010]{Ramirez2010}
+\abntrefinfo{Ramirez}{RAMIREZ}{2010}
+{RAMIREZ, M.~R.
+\textbf{Estudo de la estabilidad de las playas en la enseada de Itapocorói (SC,
+  Brasil)}.
+Dissertação (Mestrado) --- Universidade da Cantábria, Santander, 2010. 184 p.}
+
+\bibitem[Ribeiro 2011]{RibeiroReport}
+\abntrefinfo{Ribeiro}{RIBEIRO}{2011}
+{RIBEIRO, P.~J. da C. \textbf{Medição de correntes e ondas na ensada do
+  Itapocorói}: Processamento dos dados e resultados.
+[S.l.], 2011.}
+
+\bibitem[Ribeiro 2014]{Ribeiro2014}
+\abntrefinfo{Ribeiro}{RIBEIRO}{2014}
+{RIBEIRO, P.~J. da C.
+\textbf{Transformação de ondas em praias de enseada: Estudo de Caso na Enseada
+  de Itapocorói}.
+Dissertação (Mestrado) --- Universidade Federal de Florianópolis,
+  Florianópolis, 2014. 140 p.}
+
+\bibitem[Rodrigues et al. 2004]{rodriguesetal2004}
+\abntrefinfo{Rodrigues et al.}{RODRIGUES et al.}{2004}
+{RODRIGUES, M. L.~G.~\& FRANCO, D.~\& SUGAHARA, S. Climatologia de frentes
+  frias no litoral de santa catarina.
+\textbf{Revista Brasileira de Geofísica}, v.~22, n.~2, p. 135--151, 2004.}
+
+\bibitem[Roelvink 2012]{dano2012}
+\abntrefinfo{Roelvink}{ROELVINK}{2012}
+{ROELVINK, D. \textbf{A guide to modeling coastal morphology}. [S.l.]: World
+  Scientific, 2012. 274~p.}
+
+\bibitem[ROMS 2015]{myroms}
+\abntrefinfo{ROMS}{ROMS}{2015}
+{ROMS. 2015.
+Acessado em jul. 2015.
+Dispon{\'\i}vel em: $<$https://www.myroms.org/wiki/$>$.}
+
+\bibitem[Saha et al. 2010]{cfsr}
+\abntrefinfo{Saha et al.}{SAHA et al.}{2010}
+{SAHA, S. et al. The ncep climate forecast system reanalysis.
+\textbf{American Meteorological Society}, p. 1015--1057, 2010.}
+
+\bibitem[Saha et al. 2011]{cfsr2}
+\abntrefinfo{Saha et al.}{SAHA et al.}{2011}
+{SAHA, S. et al. \textbf{NCEP Climate Forecast System Version 2 (CFSv2)
+  Selected Hourly Time-Series Products}. [S.l.]: Research Data Archive at the
+  National Center for Atmospheric Research, Computational and Information
+  Systems Laboratory, 2011.
+Acessado em 16 ago 2015.}
+
+\bibitem[SANTUR 2012]{santur}
+\abntrefinfo{SANTUR}{SANTUR}{2012}
+{SANTUR. \textbf{Pesquisa Mercadológica e Estudo da Demanda Turística}.
+[S.l.], 2012.}
+
+\bibitem[Schettini et al. 1999]{Schettinietal1999}
+\abntrefinfo{Schettini et al.}{SCHETTINI et al.}{1999}
+{SCHETTINI, C. A.~F. et al. Aspectos hidrodinâmicos da enseada da armação de
+  itapocorói.
+\textbf{NOTAS TÉC. FACIMAR.}, v.~3, p. 99--109, 1999.}
+
+\bibitem[Schureman 1958]{Schureman}
+\abntrefinfo{Schureman}{SCHUREMAN}{1958}
+{SCHUREMAN, P. \textbf{Manual of Harmonic Analysis and Prediction of Tides}.
+[S.l.], 1958.}
+
+\bibitem[Shchepetkin e McWilliams 2005]{ROMS2005}
+\abntrefinfo{Shchepetkin e McWilliams}{SHCHEPETKIN; MCWILLIAMS}{2005}
+{SHCHEPETKIN, A.~F.~\& MCWILLIAMS, J.~C. The regional ocean modelling system
+  (roms): a split-explicit, free-surface, topography-following-coordinate
+  oceanic model.
+\textbf{Ocean Modelling}, v.~9, p. 347--404, 2005.}
+
+\bibitem[Short e Masselink 1999]{shortheadlands}
+\abntrefinfo{Short e Masselink}{SHORT; MASSELINK}{1999}
+{SHORT, A.~D.~\& MASSELINK, G. Handbook of beach and shoreface morphodynamics.
+In:  \underline{\ \ \ \ \ \ \ \ }. West Sussex, England: John Wiley \& Sons,
+  LTD, 1999. cap. Santa Catarina.}
+
+\bibitem[Silva 2012]{GuiVieira}
+\abntrefinfo{Silva}{SILVA}{2012}
+{SILVA, G.~V.
+\textbf{Cota de Inundação e Recorrência para a Enseada do Itapocorói e Praia do
+  Morro dos Conventos, Santa Catarina}.
+Dissertação (Mestrado) --- Universidade Federal do Rio Grande do Sul, Porto
+  Alegre, 2012. 98 p.}
+
+\bibitem[Silva et al. 2010]{silvaetal2010}
+\abntrefinfo{Silva et al.}{SILVA et al.}{2010}
+{SILVA, R. et al. Hydrodynamics of a headland-bay beach: Nearshore current
+  circulation.
+\textbf{Coastal Engineering}, v.~57, p. 160--175, 2010.}
+
+\bibitem[Tee 1976]{Tee}
+\abntrefinfo{Tee}{TEE}{1976}
+{TEE, K.~T. Tide-induced residual current - verification of a numerical model.
+\textbf{Journal of Physical Oceanography}, v.~7, p. 396--402, 1976.}
+
+\bibitem[Truccolo 2009]{truccoloMSc}
+\abntrefinfo{Truccolo}{TRUCCOLO}{2009}
+{TRUCCOLO, E.~C.
+\textbf{Hidrodinâmica em frequência mareal e submareal do estuário do Rio
+  Itajaí-Açu,SC}.
+Dissertação (Mestrado) --- Universidade Federal do Rio Grande do Sul, Porto
+  Alegre, 2009. 204 p.}
+
+\bibitem[Truccolo et al. 2006]{truccoloetal2006}
+\abntrefinfo{Truccolo et al.}{TRUCCOLO et al.}{2006}
+{TRUCCOLO, E.~C.~\& FRANCO, D.~\& SCHETTINI, C. The low frequency sea level
+  oscillations in the northern coast of santa catarina, brazil.
+\textbf{Journal of Coastal Research}, v.~39, p. 547--552, 2006.}
+
+\bibitem[Valle-Levinson et al. 2000]{Levinsonetal2000}
+\abntrefinfo{Valle-Levinson et al.}{VALLE-LEVINSON et al.}{2000}
+{VALLE-LEVINSON, A. et al. Tidal and residual circulation in a semi-arid bay:
+  Coquimbo bay, chile.
+\textbf{Continental Shelf Research}, v.~20, p. 2009--2028, 2000.}
+
+\bibitem[Waveren et al. 2010]{GMP}
+\abntrefinfo{Waveren et al.}{WAVEREN et al.}{2010}
+{WAVEREN, R.~H. van et al. \textbf{Good Modelling Practice Handbook}.
+[S.l.], 2010.}
+
+\bibitem[Wilmott 1982]{Wilmott82}
+\abntrefinfo{Wilmott}{WILMOTT}{1982}
+{WILMOTT, C.~J. Some comments on the evaluation of model performance.
+\textbf{Bulletin American Meteorological Society}, p. 1309 -- 1313, 1982.}
+
+\bibitem[Yanagi 1976]{Yanagi1976}
+\abntrefinfo{Yanagi}{YANAGI}{1976}
+{YANAGI, T. Fundamental study on the tidal residual circulation i.
+\textbf{Journal of the Oceanographical Society of Japan}, v.~32, p. 199--208,
+  1976.}
+
+\end{thebibliography}

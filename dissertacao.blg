@@ -1,0 +1,87 @@
+This is BibTeX, Version 0.99d (TeX Live 2015/dev/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: dissertacao.aux
+The style file: ufscThesis/ufsc-alf.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Database file #1: abnt-options.bib
+Database file #2: bibliografia.bib
+I was expecting a `,' or a `}'---line 518 of file bibliografia.bib
+ :  
+ :  url={http://rda.ucar.edu/datasets/ds094.1}}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 533 of file bibliografia.bib
+ :  
+ :  url={http://polar.ncep.noaa.gov/waves/wavewatch/}}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 555 of file bibliografia.bib
+ :  
+ :  address={Florianópolis}}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Repeated entry---line 591 of file bibliografia.bib
+ : @misc{santur
+ :             ,
+I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "abnt-year-extra-label=yes"
+Warning--I didn't find a database entry for "abnt-url-package=html"
+Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
+Reallocated global_strs (elt_size=20001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=4) to 20 items from 10.
++---------------------------------------------------------+
+| Estilo bibliográfico abnt-alf.bst versão 1.45.2.1           |
+| Em caso de dúvidas ou problemas com este estilo procure |
+| http://abntex.codigolivre.org.br                        |
++---------------------------------------------------------+
+You've used 67 entries,
+            6480 wiz_defined-function locations,
+            1563 strings with 19179 characters,
+and the built_in function-call counts, 50851 in all, are:
+= -- 3936
+> -- 1714
+< -- 90
++ -- 728
+- -- 517
+* -- 3621
+:= -- 6896
+add.period$ -- 223
+call.type$ -- 68
+change.case$ -- 653
+chr.to.int$ -- 141
+cite$ -- 65
+duplicate$ -- 2412
+empty$ -- 3892
+format.name$ -- 2513
+if$ -- 12174
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 1141
+newline$ -- 336
+num.names$ -- 305
+pop$ -- 1416
+preamble$ -- 1
+purify$ -- 256
+quote$ -- 0
+skip$ -- 2971
+stack$ -- 1
+substring$ -- 2063
+swap$ -- 1146
+text.length$ -- 65
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 56
+warning$ -- 0
+while$ -- 436
+width$ -- 0
+write$ -- 1014
+(There were 4 error messages)
