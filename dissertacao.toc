@@ -25,15 +25,17 @@
 \contentsline {section}{\numberline {3.7}Ferramentas Utilizadas}{31}
 \contentsline {chapter}{\numberline {4}\MakeUppercase {RESULTADOS}}{32}
 \contentsline {section}{\numberline {4.1}An\'alise dos Dados de Vento}{32}
-\contentsline {section}{\numberline {4.2}Descri\c c\~ao dos dados medidos}{37}
-\contentsline {subsection}{\numberline {4.2.1}N\IeC {\'\i }vel}{37}
-\contentsline {subsection}{\numberline {4.2.2}Temperatura}{57}
-\contentsline {subsection}{\numberline {4.2.3}Corrente}{59}
-\contentsline {section}{\numberline {4.3}Modelo Num\'erico}{66}
-\contentsline {subsection}{\numberline {4.3.1}Grade}{66}
-\contentsline {subsection}{\numberline {4.3.2}Batimetria}{69}
-\contentsline {subsection}{\numberline {4.3.3}Calibra\c c\~ao}{71}
-\contentsline {subsection}{\numberline {4.3.4}Dificuldades encontradas}{73}
-\contentsline {chapter}{\numberline {5}\MakeUppercase {CRONOGRAMA}}{74}
-\contentsline {chapter}{\hspace {\espacosumario }REFER\^ENCIAS}{75}
-\contentsline {chapter}{\hspace {\espacosumario }\MakeUppercase {Ap\^endice{}} A{} -$\mskip -\thinmuskip $-{} Figuras Extras}{80}
+\contentsline {section}{\numberline {4.2}Descri\c c\~ao dos dados medidos}{38}
+\contentsline {subsection}{\numberline {4.2.1}N\IeC {\'\i }vel}{38}
+\contentsline {subsection}{\numberline {4.2.2}Temperatura}{58}
+\contentsline {subsection}{\numberline {4.2.3}Corrente}{60}
+\contentsline {section}{\numberline {4.3}Modelo Num\'erico}{67}
+\contentsline {subsection}{\numberline {4.3.1}Grade}{67}
+\contentsline {subsection}{\numberline {4.3.2}Batimetria}{70}
+\contentsline {subsection}{\numberline {4.3.3}Defini\c c\~oes gerais do modelo}{72}
+\contentsline {subsection}{\numberline {4.3.4}Calibra\c c\~ao}{72}
+\contentsline {subsection}{\numberline {4.3.5}Dificuldades encontradas}{76}
+\contentsline {chapter}{\numberline {5}\MakeUppercase {CRONOGRAMA INICIAL}}{77}
+\contentsline {chapter}{\numberline {6}\MakeUppercase {CRONOGRAMA PREVISTO}}{78}
+\contentsline {chapter}{\hspace {\espacosumario }REFER\^ENCIAS}{79}
+\contentsline {chapter}{\hspace {\espacosumario }\MakeUppercase {Ap\^endice{}} A{} -$\mskip -\thinmuskip $-{} Figuras Extras}{84}

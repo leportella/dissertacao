@@ -741,10 +741,12 @@ Os dados do CFSR tem uma maior distribuição na direção dos ventos, com ventos de
 	\caption{Rosa dos ventos referente aos dados do CFSR para o ano de 2011 a 2015}\label{fig:windroseCFSR}
 \end{figure}
 
-Para melhor compreensão do comportamento dos dados, as velocidades foram descritas na forma de histogramas para os dados do METAR e CFSR nas figuras \ref{fig:histvelMETAR} e \ref{fig:histvelCFSR}, respectivamente. Enquanto os dados do CFSR apresentaram uma curva semelhante à normal, os dados oriundos do METAR apresentam falhas nas classes de velocidade.
+Para melhor compreensão do comportamento dos dados, as velocidades foram descritas na forma de histogramas para os dados do METAR e CFSR nas figuras \ref{fig:histvelMETAR} a \ref{fig:histdirCFSR}, respectivamente. Enquanto os dados do CFSR apresentaram uma curva semelhante à normal, os dados oriundos do METAR apresentam falhas nas classes de velocidade.
 
 O que foi verificado é que os dados do METAR apresentam uma grande inconsistência nos dados. Do ano de 2011, 16,3\% dos dados não estavam disponíveis (Figura \ref{fig:nansMETAR}). A utilização de metodologias de interpolação dos dados em grande quantidade pode afetar o comportamento geral dados e, em casos como estes, não são recomendadas. Além disso, por se localizar em uma base terrestre distante do local de estudo, os dados direcionais podem ter sido influenciados pelo relevo terrestre, potencialmente prejudicando análises feitas em locais distantes do ponto de amostragem. Dessa forma, como existem dúvidas a respeito da qualidade e localização dos dados, as análises feitas no presente estudo poderiam ser comprometidas e, portanto, a base de dados do CFSR foi escolhida como a mais adequada fonte de dados de vento para o presente estudo.
 
+\begin{landscape}
+	
 \begin{figure}[!htb]
 	\includegraphics[width=1.1\textwidth]{figuras/Vento_Metar_2011_histvel.png}
 	\centering
@@ -752,13 +754,25 @@ O que foi verificado é que os dados do METAR apresentam uma grande inconsistênci
 \end{figure}
 
 \begin{figure}[!htb]
-	\includegraphics[width=1.1\textwidth]{figuras/Vento_CFSR_2011-15_Windrose.png}
+	\includegraphics[width=1.1\textwidth]{figuras/Vento_CFSR_2011_histvel.png}
 	\centering
 	\caption{Histograma de velocidade do vento referentes aos dados do CFSR para o ano de 2011 a 2015}\label{fig:histvelCFSR}
 \end{figure}
 
-\begin{landscape}
-	\begin{figure}[!htb]
+
+\begin{figure}[!htb]
+	\includegraphics[width=1.1\textwidth]{figuras/Vento_Metar_2011_histdir.png}
+	\centering
+	\caption{Histograma de direção do vento no Aeroporto de Navegantes para o ano de 2011 (METAR)}\label{fig:histdirMETAR}
+\end{figure}
+
+\begin{figure}[!htb]
+	\includegraphics[width=1.1\textwidth]{figuras/Vento_CFSR_2011_histdir.png}
+	\centering
+	\caption{Histograma de direção do vento referentes aos dados do CFSR para o ano de 2011 a 2015}\label{fig:histdirCFSR}
+\end{figure}
+
+\begin{figure}[!htb]
 		\includegraphics[width=1.6\textwidth]{figuras/Vento_Metar_Nans.png}
 		\centering
 		\caption{Dados válidos e dados indisponíveis nos dados de velocidade do vento no Aeroporto de Navegantes para o ano de 2011 (METAR)}\label{fig:nansMETAR}
@@ -1137,9 +1151,13 @@ Buscou-se tentar encontrar correlações entre a direção do vento predominante e d
 
 Nas figuras \ref{fig:curr_depthav_01}, \ref{fig:curr_depthav_02} e \ref{fig:curr_depthav_03} podem ser observadas as rosas de corrente integradas na vertical para os pontos ST001, ST002 e ST003, respectivamente.
 
-As correntes medidas apresentam velocidades muito baixas, abaixo de 0,2 m/s na maior parte do tempo. Entretanto, nota-se que a maior parte das correntes fica abaixo de 0,1 m/s (Figuras \ref{fig:hist_velcorrente_01} a \ref{fig:hist_velcorrente_03}). Esses resultados corroboram com as observações descritas em \citeonline{Schettinietal1999}
+As correntes medidas apresentam velocidades muito baixas, abaixo de 0,2 m/s na maior parte do tempo. Entretanto, nota-se que a maior parte das correntes fica abaixo de 0,1 m/s (Figuras \ref{fig:hist_velcorrente_01} a \ref{fig:hist_velcorrente_03}) esse resultado pode ser melhor observado nos histogramas apresentados nas figuras \ref{fig:hist_velcorrente_01} a \ref{fig:hist_velcorrente_03} onde verifica-se que a maioria das correntes está abaixo de 0,05 m/s. 
 
-Nos histogramas apresentados nas figuras \ref{fig:hist_velcorrente_01} a \ref{fig:hist_velcorrente_03} verifica-se que a maioria das correntes está abaixo de 0,05 m/s
+Os resultados encontrados corroboram com as observações descritas em \citeonline{Schettinietal1999}. Entretanto, os autores afirmaram que as correntes obedecem mais diretamente ao regime dos ventos do que as oscilações da maré. Da mesma forma como foi feito com a temperatura, foram desenvolvidos alguns gráficos tentando correlacionar a velocidade da corrente com a direção ou o vento (Figuras \ref{fig:corrvento01} a \ref{fig:corrventodir03}). Novamente nenhum padrão emergiu nas análises realizadas e não foi possível relacionar a velocidade da corrente com o vento.
+
+As figuras \ref{fig:quiver01} a \ref{fig:quiver03} apresentam na parte superior os vetores indicando a direção e magnitude das correntes e na parte inferior a velocidade. Enquanto nos pontos ST001 e ST002 não foi possível associar os episódios de grande velocidade com direções predominantes, no ponto ST003 percebe-se que as correntes que que atigiram velocidades acima de 0,15 m/s estão associadas a correntes de sudeste. 
+
+Na figura \ref{fig:residualmedido} pode ser observada a resultante medida num período de 50 horas. No ponto ST001 a residual é praticamente constante de SO com variações de intensidade. No ponto ST002 já existe uma variação maior entre SE e SO. As intensidades no ponto ST002 parecem ter menos variação do que no ponto ST001. Já no ponto ST003, a residual é pequena e de O geralmente, com grandes residual de SE acontecendo no período. 
 
 \begin{figure}[!htb]
 	\includegraphics[width=1.0\textwidth]{figuras/CurrentRose_ST001_DepthAv_CM.png}
@@ -1160,19 +1178,19 @@ Nos histogramas apresentados nas figuras \ref{fig:hist_velcorrente_01} a \ref{fi
 \end{figure}
 
 \begin{figure}[!htb]
-	\includegraphics[width=1.1\textwidth]{figuras/Corrente_ST001_HistVento.png}
+	\includegraphics[width=1.1\textwidth]{figuras/Corrente_ST001_HistVel.png}
 	\centering
 	\caption{Histograma da velocidade de corrente no ponto ST001 integrada na vertical}\label{fig:hist_velcorrente_01}
 \end{figure}
 
 \begin{figure}[!htb]
-	\includegraphics[width=1.1\textwidth]{figuras/Corrente_ST002_HistVento.png}
+	\includegraphics[width=1.1\textwidth]{figuras/Corrente_ST002_HistVel.png}
 	\centering
 	\caption{Histograma da velocidade de corrente no ponto ST002 integrada na vertical}\label{fig:hist_velcorrente_02}
 \end{figure}
 
 \begin{figure}[!htb]
-	\includegraphics[width=1.1\textwidth]{figuras/Corrente_ST003_HistVento.png}
+	\includegraphics[width=1.1\textwidth]{figuras/Corrente_ST003_HistVel.png}
 	\centering
 	\caption{Histograma da velocidade de corrente no ponto ST003 integrada na vertical}\label{fig:hist_velcorrente_03}
 \end{figure}
@@ -1224,11 +1242,11 @@ A grade numérica do modelo ROMS é do tipo Aracawa-C, onde os cálculos das variáv
 
 O modelo TPXO utilizado como forçante no ROMS resolve muito bem a maré em águas profundas, duas grades foram desenvolvidas para que a onda de maré fosse trazida de águas profundas, onde ela é bem resolvida, para águas rasas, onde o processo deseja ser estudado.
 
-A grade regional foi construída de forma retangular, com uma resolução de 250 m e se estendendo desde o sul da Ilha de Santa Catarina até próximo da desembocadura da Baía de Paranaguá (Figura \ref{fig:GradeReg}). Isso resultou em 598 elementos de grade na direção $\chi$ e 1098 elementos de grade na direção $\eta$. Além disso, a grade foi rotacionada em 10 graus para direita, de forma a melhor alinha o eixo com a direção preferencial da linha de costa.
+A grade regional foi construída de forma retangular, com uma resolução de 250 m e se estendendo desde o sul da Ilha de Santa Catarina até próximo da desembocadura da Baía de Paranaguá (Figura \ref{fig:GradeReg}). Isso resultou em 598 elementos de grade na direção $\chi$ (x) e 1098 elementos de grade na direção $\eta$ (y). Além disso, a grade foi rotacionada em 10 graus para direita, de forma a melhor alinha o eixo principal com a direção preferencial da linha de costa.
 
-A resolução de 250 da grade regional foi escolhida de forma arbitrária. O ROMS tem uma série de ferramentas para gerar a grade aninhada automaticamente e a documentação diz que não é recomendado utilizar uma resolução no aninhamento maior que 5 vezes. Dessa forma, para se alcançar uma resolução de 50 metros na área de estudo, a grade regional foi construída considerando a resolução desejada na grade local.
+A resolução de 250 da grade regional foi escolhida de forma arbitrária. O ROMS só permite o aninhamento com uma grade gerada de forma automática e a documentação não recomanda utilizar uma resolução no aninhamento maior que 5 vezes. Dessa forma, para se alcançar uma resolução de 50 metros na área de estudo, a grade regional foi construída considerando a resolução desejada na grade local.
 
-A grade local foi construída então a partir da grade regional com uma resolução 5 vezes maior, focando na Enseada do Itapocorói mas de forma que as fronteiras ainda ficassem distante da região de interesse. Esta possui 682 elementos na direção $\chi$ e 942 elementos na direção $\eta$ e a extensão de seu domínio pode ser vista na figura \ref{fig:GradeLoc}.
+A grade local foi construída então a partir da grade regional com uma resolução 5 vezes maior, focando na Enseada do Itapocorói mas de forma que as fronteiras ainda ficassem distantes o suficiente da região de interesse. Esta possui 682 elementos na direção $\chi$  (x)e 942 elementos na direção $\eta$ (y) e a extensão de seu domínio pode ser vista na figura \ref{fig:GradeLoc}.
 
 \begin{figure}[!htb]
 	\includegraphics[width=0.9\textwidth]{figuras/GradeRegional.png}
@@ -1250,7 +1268,7 @@ Os dados batimétricos foram interpolados nas grades numéricas regional e local e
 
 Como o modelo utiliza-se coordenadas sigma, a variação topográfica devem ser limitadas para evitar gradientes de pressão errôneos \cite{Masonetal2010}. Dessa forma, foi aplicado um filtro Shapiro de forma que o fator r fosse menor que 0,2 conforme descrito por \cite{Masonetal2010}.
 
-Inicialmente, foi verificado que o modelo era bastante sensível quanto à profundidade da coluna de água e que, em profundidades muito pequenas o modelo se tornava tão instável que quebrava. Dessa forma, alguns testes foram feitos para avaliar qual a menor profundidade necessária para que o modelo se mostrasse estável. Essa profundidade mínima estabelecida foi 3 metros e, portanto, qualquer valor menor que 3 metros foi alterado para 3 metros. Isso não influencia o presente trabalho, uma vez que este não pretende resolver processos dentro da zona de surfe.
+Inicialmente, foi verificado que o modelo era bastante sensível quanto à profundidade da coluna de água e que, em profundidades muito pequenas o modelo se tornava tão instável que quebrava. Dessa forma, alguns testes foram feitos para avaliar qual a menor profundidade necessária para que o modelo se mostrasse estável. Essa profundidade mínima estabelecida foi 3 metros e, portanto, qualquer valor menor que 3 metros foi alterado para que ficasse com o valor de 3 metros. Isso não influencia o presente trabalho, uma vez que este não pretende resolver processos dentro da zona de surfe.
 
 \begin{figure}[!htb]
 	\includegraphics[width=0.9\textwidth]{figuras/Batimetria_GrdRegional.png}
@@ -1266,15 +1284,56 @@ Inicialmente, foi verificado que o modelo era bastante sensível quanto à profund
 \end{figure}
 \end{landscape}
 
+\subsection{Definições gerais do modelo}
+
+A grade regional teve como condição de fronteira o tipo Chapman Explícito para a superfície livre e Flather para as equações de momento 2D. Esta combinação é descrita nos fóruns como a melhor combinação para casos propagados com maré.
+
+Algumas outras informações estão apresentadas na tabela \ref{tab:setup}.
+
+%A condição Flather permite que as diferenças entre as previsões de nível do modelo e os dados externos (condições de fronteira impostas) sejam propagados para fora do domínio com velocidade das ondas de gravidade externas, conservando o volume dentro do domínio. 
+
+\begin{table}[h]
+	\centering
+	\caption{Características gerais do modelo}\label{tab:setup}
+	\begin{tabular}{c|c|c}
+		Configuração                 & G. Regional     & G. Local  \\ 
+		\hline                                         
+ 		Passo de tempo (DT)          & 30 s            & 30 s \\
+		Número de camadas            & 10              & 10 \\
+ 		Mínimo Courant Barotrópico   & 0,046           & 0,230 \\
+ 		Máximo Courant Barotrópico   & 0,423           & 0,913 \\
+ 		Mínimo resolução vertical    & 0,27 m          & 0,27 m \\
+ 		Máximo resolução vertical    & 68,48 m         & 10,49 m \\
+	\end{tabular}
+\end{table}
+
 \subsection{Calibração}
 
 \begin{landscape}
 	\begin{figure}[!htb]
-		\includegraphics[width=1.2\textwidth]{figuras/Calibracao_Teste09.png}
+		\includegraphics[width=1.6\textwidth]{figuras/Calibracao_Regional01ST001.png}
 		\centering
-		\caption{Comparação de dados medidos com modelados}\label{fig:Calibracao}
+		\caption{Comparação de dados medidos de nível com modelados na grade regional e ponto ST001}\label{fig:CalibracaoReg1}
 	\end{figure}
 \end{landscape}
+
+\begin{landscape}
+	\begin{figure}[!htb]
+		\includegraphics[width=1.6\textwidth]{figuras/Calibracao_Regional01ST002.png}
+		\centering
+		\caption{Comparação de dados medidos de nível com modelados na grade regional e ponto ST002}\label{fig:CalibracaoReg2}
+	\end{figure}
+\end{landscape}
+
+\begin{landscape}
+	\begin{figure}[!htb]
+		\includegraphics[width=1.6\textwidth]{figuras/Calibracao_Regional01ST003.png}
+		\centering
+		\caption{Comparação de dados medidos de nível com modelados na grade regional e ponto ST003}\label{fig:CalibracaoReg3}
+	\end{figure}
+\end{landscape}
+
+
 
 \subsection{Dificuldades encontradas}
 
@@ -1284,14 +1343,15 @@ Uma série de dificuldades foram encontradas nas etapas iniciais do modelo que to
 	\item O modelo não possui interface gráfica e a compreensão dos arquivos necessários e formatos se torna mais complexa;
 	\item O modelo numérico é escrito em FORTRAN, que é uma linguagem compilada. Isso fez com que fosse necessário entender configurações de pré-processamento, compilador necessário, etc;
 	\item É necessário instalar diversos pacotes netCDF que, em um primeiro momento, se mostraram trabalhosos;
-	\item O exemplo básico padrão disponível (\emph{upwelling}) é fácil e bem descrito na página mas não há explicação de como o arquivo de entrada funciona, quais variáveis devem ser alteradas e quais as variáveis de pré-compilação para cada tipo de opção ativada;
-	\item A wikipédia contendo a maior parte da informação está desatualizada, muito material não está disponibilizado e o manual disponível não está completo além de também estar desatualizado;
+	\item O exemplo básico padrão disponível (\emph{upwelling}) é fácil e bem descrito na documentação mas ele funciona com grades e forçantes padrão (sem arquivos de entrada) e não há explicação de como é possível construir um novo modelo com arquivos de entrada, quais variáveis devem ser alteradas e quais as variáveis de pré-compilação para cada tipo de opção ativada;
+	\item A documentação é estilo \emph{wiki} e a maior parte da informação está desatualizada, muito material não está disponibilizado e o manual disponível não está completo além de também estar desatualizado. Posteriormente, verificou-se que uma das autoras do modelo tem um manual mais atualizado em seu github, porém isso não está descrito na página principal do modelo;
 	\item Muita informação está contida no fórum de discussões, o que demanda tempo e certo conhecimento prévio do assunto para compreender o que está escrito em cada discussão;
 	\item Uma primeira tentativa foi colocar uma elevação de nível na fronteira. Após uma série de testes, foi verificado que o modelo não inclui nível como variável nas equações. Dessa forma, verificou-se que além da variável zeta, também é necessário inserir nas fronteiras as componentes de velocidade u e v das correntes de maré;
-	\item Diferente de outros modelos, como condição de grade deve ser inserido os valores de posição para cada um dos elementos calculados (rho, psi, u e v);
-	\item Para realizar a grade aninhada através das funções de aninhamento e contato ter na grade numérica as informações de coordenadas para todos os pontos (rho, psi, u e v) em coordenadas geográficas e métricas;
-	\item O modelo mostrou-se bastante sensível quando atinge águas rasas. Modelos cujas camada de água tinha, no mínimo, 1 metro acabaram se mostrando instáveis. Dessa forma, foi estabelecido um mínimo de 4 metros para propagação da onda.
-	\item Outro fator que o modelo se mostrou sensível foi a máscara que indica onde o modelo é terra (mascára=0) e onde é agua (máscara=1), fazendo que houvesse acúmulo de água em determinadas quinas. Uma edição cuidadosa da máscara deve ser feita antes do modelo funcionar.
+	\item Diferente de outros modelos, na construção da grade numérica devem ser inseridos os valores de posição para cada um dos elementos calculados (rho, psi, u e v), o que gera confusão na construção da grade;
+	\item A geração da grade aninhada deve ser feita através das funções de aninhamento. Além da grade aninhada, deve haver um arquivo de contato entre ambas as grades;
+	\item O modelo mostrou-se bastante sensível quando atinge águas rasas. Modelos cujas camada de água tinha profundidas de 1 metro ou menos acabaram se mostrando instáveis. Foi estabelecido um mínimo de 3 metros para propagação da onda de maré de forma estável;
+	\item Outro fator que o modelo se mostrou sensível foi a máscara que indica onde o modelo deve interpretar como terra (mascára=0) e onde é agua (máscara=1), fazendo que houvesse acúmulo de água em determinadas quinas. Uma edição cuidadosa da máscara deve ser feita antes do modelo iniciar;
+	\item As fronteiras escolhidas tem grande influência no resultado final. Uma combinação inicial utilizada num modelo menos detalhado (não apresentado aqui) causou diversas instabilidades no modelo descrito anteriormente. Dessa forma, gastou-se muito tempo tentando entender quais seriam os problemas possíveis, pois assumiu-se que as fronteiras estavam corretas.
 	
 \end{itemize}
 
@@ -1302,10 +1362,10 @@ Uma série de dificuldades foram encontradas nas etapas iniciais do modelo que to
 \begin{landscape}
 \centering	
 
-\chapter{CRONOGRAMA}
+\chapter{CRONOGRAMA INICIAL}
 
 \begin{table}[!htpb]
-\caption{Cronograma das atividades previstas}
+\caption{Cronograma das atividades previstas proposto na qualificação 1}
 \label{t_cronograma}
 \centering
 \begin{small} 
@@ -1321,7 +1381,7 @@ Revisão Bibliográfica & X & X & X & X & X & X & X & X & X & X & X & X & X & X & 
 \vtop{\hbox{\strut Desenvolvimento de}\hbox{\strut Grades Numéricas e Batimetrias}} & & X & X & X& X& & & & & & & & & & & & &  & &\\ \hline
 Testes de sensibilidade do modelo & & & X & X & X& X& & & & & & & & & & & & & &\\ \hline
 Análise dos dados de ADCP & & X & X & X & X & X & X & & & & & & & & & & &  & &\\ \hline
-\vtop{\hbox{\strut Obtenção dos dados de \textit{input}}\hbox{\strut (Maré, Vento Ondas)}} & & X & X & X& X& & & & & & & & & & & & &  & &\\ \hline
+\vtop{\hbox{\strut Obtenção dos dados de \textit{input}}\hbox{\strut (Maré e Vento)}} & & X & X & X& X& & & & & & & & & & & & &  & &\\ \hline
 \emph{Setups} de calibração & &X & X& X &X &X &X & & & & & & & & & & &  & &\\ \hline
 Escrita da dissertação com primeiros resultados & & & & & & & &X &X & & & & & & & & &  & &\\ \hline
 Qualificação - Etapa 2 & & & & & & & & & &X & & & & & & & &  & &\\ \hline
@@ -1338,6 +1398,35 @@ Defesa & & & & & & & & & & & & & & & & & &  & &X\\ \hline
 \end{tabular} 
 \end{small}
 \end{table} 
+
+\chapter{CRONOGRAMA PREVISTO}
+
+\begin{table}[!htpb]
+	\caption{Cronograma das atividades previstas atualizado}
+	\label{t_cronograma2}
+	\centering
+	\begin{small} 
+		
+		\setlength{\tabcolsep}{3pt} 
+		\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|}\hline
+			%& \multicolumn{5}{c|}{2015} & \multicolumn{12}{c|}{2016}  & \multicolumn{3}{c|}{2017}\\ %\cline{2-25}
+			\raisebox{1.5ex}{Atividade}& mai & jun & jul & ago & set & out & nov & dez & jan & fev & mar\\ \hline
+			
+		Correções das sugestões da banca            & x   & x   &     &     &     &     &     &     &     &     &     \\ \hline
+		Testes de Sensibilidade                     & x   & x   & x   &     &     &     &     &     &     &     &     \\ \hline
+		Testes de calibração                        & x   & x   & x   &     &     &     &     &     &     &     &     \\ \hline
+		Setups finais                               &     &     &     & x   & x   &     &     &     &     &     &     \\ \hline
+		Cálculos dos residuais                      &     &     &     &     &     & x   &     &     &     &     &     \\ \hline
+		Cálculo do Balanço de Momento e Vorticidade &     &     &     &     & x   & x   & x   &     &     &     &     \\ \hline
+		Desenvolvimento do Artigo                   & x   & x   & x   & x   & x   &     &     &     &     &     &     \\ \hline
+		Desenvolvimento da Dissertação              &     &     &     &     &     & x   & x   & x   & x   &     &     \\ \hline
+		Leitura e correção pelo orientador          &     &     &     &     &     &     &     &     &     & x   &     \\ \hline
+		Defesa                                      &     &     &     &     &     &     &     &     &     &     & x  \\ \hline
+			
+		\end{tabular} 
+	\end{small}
+\end{table} 
+
 \end{landscape}
 
 % \chapter{RESULTADOS ESPERADOS}
