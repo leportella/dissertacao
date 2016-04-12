@@ -31,14 +31,14 @@
 \instituicao[a]{Universidade Federal de Santa Catarina} % Opcional
 \departamento[o]{Departamento de Geociências}
 \curso[o]{Programa de Pós-Graduação em Oceanografia da Universidade Federal de Santa Catarina como parte dos requisitos}
-\documento[o]{Projeto} % [o] para dissertação [a] para tese
+\documento[a]{Qualificação} % [o] para dissertação [a] para tese
 \titulo{Hidrodinâmica Residual de uma Praia de Enseada Subtropical Dominada por Ondas}
-% \subtitulo{Subtítulo (se houver)} % Opcional
+\subtitulo{Estudo de Caso da Enseada do Itapocorói} % Opcional
 \autor{Letícia Vasques dos Reis Portella Nascimento}
 \grau{Mestre em Oceanografia}
 \local{Florianópolis} 
-\data{01}{Abril}{2016}
-\orientador[Orientador]{Prof. Dr. Antônio Fernando H\"arter Fetter Filho}
+\data{12}{Abril}{2016}
+\orientador[Orientador]{Prof. Dr. Antonio Fernando H\"arter Fetter Filho}
 % \coorientador[Coorientador\\Universidade ...]{Prof. Dr.}
 % \coordenador[Coordenador\\Universidade ...]{Prof. Dr. }
 % 
@@ -60,8 +60,8 @@
 % \epigrafe{Texto da Epígrafe. Citação relativa ao tema do trabalho. É opcional. A epígrafe pode também aparecer na abertura de cada seção ou capítulo.}
 % {(Autor da epígrafe, ano)}
 
-\textoResumo {O presente estudo pretende avaliar a hidrodinâmica da Enseada do Itapocorói com foco na circulação residual e de longo-período buscando compreender quais forçantes ambientais são mais relevantes na geração dessas correntes. Para alcançar este objetivo, serão utilizados o modelo hidrodinâmico, \emph{Regional Ocean Modelling System} (ROMS). O modelo será desenvolvido em escala regional e local e calibrado com dados provenientes de três ADCPs. Ao final do estudo, almeja-se compreender o padrão típico da circulação residual na Enseada bem como qual é o parâmetro ambiental mais influente.}
-\palavrasChave {Circulação Residual. Modelagem Numérica. ROMS. SWAN. }
+\textoResumo {O presente estudo tem o objetivo de avaliar a hidrodinâmica da Enseada do Itapocorói com foco na circulação residual e de longo período buscando compreender quais forçantes ambientais são mais relevantes na geração dessas correntes. Para alcançar este objetivo, será utilizado o modelo hidrodinâmico, \emph{Regional Ocean Modelling System} (ROMS). O modelo será desenvolvido em escala regional e local e calibrado com dados provenientes de três \emph{Acoustic Doppler Current Profilers} (ADCPs). Ao final do estudo, almeja-se compreender o padrão típico da circulação residual na Enseada bem como qual é o parâmetro ambiental mais influente.}
+\palavrasChave {Circulação Residual. Modelagem Numérica. ROMS. }
  
 % \textAbstract {s por ponto.}
 % \keywords {Keyword 1. Keyword 2. Keyword 3.}
@@ -79,7 +79,7 @@
 % \paginadedicatoria
 % \paginaagradecimento
 % \paginaepigrafe
-\paginaresumo
+% \paginaresumo
 %\paginaabstract
 %\pretextuais % Substitui todos os elementos pre-textuais acima
 \listadefiguras % as listas dependem da necessidade do usuário
@@ -118,14 +118,14 @@ Existe uma circulação residual típica na Enseada do Itapocorói que é gerada prin
 
 \subsection{Objetivo Geral}
 
-O objetivo geral do estudo é compreender o padrão de circulação local e a circulação residual na Enseada do Itapocorói (Balneário Piçarras), bem como as variáveis ambientais que os influenciam.
+O objetivo geral do estudo é compreender o padrão de circulação local e a circulação residual na Enseada do Itapocorói (Balneário Piçarras), bem como as variáveis ambientais que os influenciam, através do uso de modelagem numérica de forma a encontrar padrões de longo prazo.
 
 \subsection{Objetivos Específicos}
 
 São objetivos específicos deste trabalho:
 
 \begin{itemize} 
-	\item Caracterizar a dinâmica local através da análise das séries dos fundeio.
+	\item Caracterizar a dinâmica local através da análise das séries dos fundeio;
 	\item Construção de um modelo hidrodinâmico (ROMS) para a área de estudo, 
 	com grade local e regional, visando diminuir inconsistências na região de interesse;
 	\item Calibração dos modelos hidrodinâmicos com dados provenientes de 3 ADCPs;
@@ -139,12 +139,12 @@ São objetivos específicos deste trabalho:
 
 \section{Maré e Circulação Residual}
 
-As principais variações de nível ocorridas em zonas costeiras acontecem devido às oscilações causadas pelas marés, tornando-se de fundamental importância para estudos costeiros o seu conhecimento, bem como as correntes que são por elas geradas \cite{tpxo2002}. Apesar de bem conhecida e estudadas num âmbito global, a onda de maré em águas costeiras tem uma dinâmica muito diferente daquela encontrada em regiões oceânicas. 
+As principais variações de nível ocorridas em zonas costeiras acontecem devido às oscilações causadas pelas marés, tornando-se de fundamental importância para estudos costeiros o seu conhecimento, bem como as correntes que são por elas geradas \cite{tpxo2002}. Apesar de bem compreendidas num âmbito global, a onda de maré em águas costeiras tem uma dinâmica muito diferente daquela encontrada em regiões oceânicas \cite{leblond}. 
 
 As marés são consideradas ondas de água rasa e, portanto, estão sempre sujeitas à influência do
 fundo. Entretanto, ao adentrar águas ainda mais rasas, como as plataformas continental interna, as suas escalas laterais passam a ser reduzidas e as restrições impostas pela continuidade se tornam mais relevantes do que os balanços dinâmicos nas determinações das escalas espaciais \cite{leblond}. 
 
-Conforme a onda de maré passa a propagar para águas costeiras ela tende a interagir e sofrer diversos processos: reflecção total ou parcial (uma vez que a linha de costa passa a agir como uma barreira), efeitos inerciais, efeitos de continuidade, perda de energia por fricção, entre outros. Dessa forma, uma vez que se encontra em águas rasas, a onda de maré se torna progressivamente mais não-linear e dissipativa. Além disso, esses processos não-lineares podem transferir energia para constituintes harmônicas de águas rasas totalmente novas \cite{Schureman,massel,Parker}. 
+Conforme a onda de maré passa a propagar para águas costeiras ela tende a interagir e sofrer diversos processos: reflexão total ou parcial (uma vez que a linha de costa passa a agir como uma barreira), efeitos inerciais, efeitos de continuidade, perda de energia por fricção, entre outros. Dessa forma, uma vez que se encontra em águas rasas, a onda de maré se torna progressivamente não linear e dissipativa. Além disso, esses processos não lineares podem transferir energia para constituintes harmônicas de águas rasas totalmente novas \cite{Schureman,massel,Parker}. 
 Outra consequência da redução das escalas laterais é a criação de regiões de gradiente de velocidade. Os termos inerciais passam a ganhar importância no balanço de momento e contribuem para a geração de correntes residuais e vorticidade \cite{leblond}.
 Portanto, em águas rasas, uma variedade de processos compõem um complexo cenário a ser estudado e, por mais que os fenômenos que gerem as marés sejam muito bem conhecidos e compreendidos, os movimentos resultantes requerem um estudo mais aprofundado. 
 
@@ -152,7 +152,7 @@ Portanto, em águas rasas, uma variedade de processos compõem um complexo cenário
 
 % !!!!!!!!!! conexao entre os dois paragrafos !!!!!!!!!!!
 
-Ao se considerar a água como incompressível, independente das oscilações ocorridas seria natural se pensar, em um primeiro momento, que o residual da circulação deveria ser nulo \cite{leblond}. O que se vê na realidade é bastante distinto e a observação de longo prazo nós dá a clara predominância de uma direção indicando a presença de resultantes não-nulas. A fonte mais óbvia de geração de velocidade residual é a descarga fluvial, uma vez que seu fluxo é unidirecional. Entretanto, o que se observa é que existem residuais mesmo em locais sem presença de rios. Diversos parâmetros ambientais podem gerar residuais de velocidade. Entre eles podemos citar não linearidade da corrente de maré, padrão de onda predominante, direção do vento predominante, eventos de tempestade, diferença de densidade, características batimétricas ou mesmo obras costeiras \cite{Tee,truccoloMSc,Brownetal2013}.
+Ao se considerar a água como incompressível, independente das oscilações ocorridas, seria natural se pensar, em um primeiro momento, que o residual da circulação deveria ser nulo \cite{leblond}. O que se vê na realidade é bastante distinto e a observação de longo prazo nos dá a clara predominância de uma direção indicando a presença de resultantes não nulas. A fonte mais óbvia de geração de velocidade residual é a descarga fluvial, uma vez que seu fluxo é unidirecional. Entretanto, o que se observa é que existem resultantes de velocidade mesmo em locais sem presença de rios. Diversos parâmetros ambientais podem gerar residuais de velocidade. Entre eles podemos citar não linearidade da corrente de maré, padrão de onda predominante, direção do vento predominante, eventos de tempestade, diferença de densidade, características batimétricas ou mesmo obras costeiras \cite{Tee,truccoloMSc,Brownetal2013}.
 
 A circulação residual, especialmente a da maré, está normalmente relacionada a processos de longo período, com frequências baixas e velocidades uma ou duas ordens menores que as próprias correntes de maré e, assim, pode acabar sendo negligenciada por conta dessas características \cite{cheng}. Apesar de serem consideradas irrelevantes quando comparadas com as correntes de maré, elas podem ser bastante relevantes em longo prazo dado que podem dominar o transporte e a distribuição geral de propriedades da água como temperatura e salinidade quando considerada a sua persistência. Dessa forma, sua determinação pode contribuir para o manejo costeiro (como tempo de permanência de poluentes) ou mesmo para a proteção costeira, dado que ela também pode ter papel significante para transporte de partículas sedimentares \cite{truccoloMSc}. 
 
@@ -164,13 +164,13 @@ No entanto é possível perceber na literatura uma certa variação em relação à sua
 \citeonline{Nihoul1974} discutem sobre as diferentes formas como o termo circulação residual é utilizado em diferentes campos. Os autores citam que, sob um olhar matemático, as correntes residuais podem ser consideradas como o fluxo estacionário descrito pelas equações fundamentais desconsiderando os termos transientes das equações. Em se tratando do campo experimental, tende-se a definir as correntes residuais como o fluxo que sobra ao se subtrair uma maré modelada (ou prevista) de um fluxo medido. E, segundo os autores, ainda existem os cientistas que consideram as correntes residuais aquelas encontradas após se realizar uma integração das correntes naturais ao longo de um período de tempo suficientemente longo, de forma a se cancelarem as contribuições da maré. Os autores afirmam que a última parece ser a mais realista.
 
 \citeonline{Yanagi1976} afirma que o fluxo estacionário (\emph{steady-state}) é causado por diversos processos físicos como vento, gradiente de pressão atmosférica, descarga de rios, correntes de densidade, correntes de oceano aberto, força de Coriolis e marés. Especificamente, o
-autor considera fluxo residual de maré como aquele causado por não-linearidades das correntes de maré relativas à topografia de fundo e geometria das bordas. 
+autor considera fluxo residual de maré como aquele causado por não linearidades das correntes de maré relativas à topografia de fundo e geometria das bordas. 
 
-\citeonline{Tee} considera corrente residual aquela corrente que permanece após retiradas frequências diurnas, semidiurnas ou superiores. 
+\citeonline{Tee} considera corrente residual aquela corrente que permanece após retiradas as frequências  diurnas, semidiurnas ou superiores. 
 
 No estudo de \citeonline{Brownetal2013} a circulação residual é tratada como a circulação instantânea que permanece após a remoção da maré astronômica da circulação total encontrada, tanto em dados medidos quanto modelados.
 
-No presente estudo, será considerado como circulação residual aquela descrita como a média da circulação local em um longo período de tempo, conforme descrito por \citeonline{Nihoul1974} e defino por \citeonline{imasato} como velocidade residual euleriana gerada por maré e calculada conforme a equação \ref{eq:uresidual} onde T é um período de tempo suficientemente grande para anular as componentes de maré.
+No presente estudo, será considerado como circulação residual aquela descrita como a média da circulação local em um longo período de tempo, conforme descrito por \citeonline{Nihoul1974}. Este termo foi definido por \citeonline{imasato} como velocidade residual euleriana gerada por maré e calculada conforme a equação \ref{eq:uresidual} onde T é um período de tempo suficientemente grande para anular as componentes de maré.
 
 \begin{equation}
 U_{residual}(x,y) = \frac{1}{T} \int_0^T U(x,y,t)dt \label{eq:uresidual}
@@ -184,18 +184,17 @@ Onde,
 \end{description}
 
 
-Verica-se na literatura que muitos estudos são focados em circulação residual em ambientes estuarinos com enfoque em especial naquela gerada pela baroclinicidade do sistema  \cite{maccready,Buchardetal2011,Brownetal2013}. Poucos esforços foram feitos na tentativa de estudos de circulação residual em sistemas com predominância barotrópica ou separando e avaliando as componentes barotrópicas. O presente estudo vem de encontro para contribuir nessa área.
-O presente estudo se guiará pelos trabalhos de \citeonline{Levinsonetal2000} e \citeonline{Brownetal2013}.
+Verifica-se na literatura que muitos estudos são focados em circulação residual em ambientes estuarinos com enfoque especial naquela gerada pela baroclinicidade do sistema  \cite{maccready,Buchardetal2011,Brownetal2013}. Poucos esforços foram feitos na tentativa de estudos de circulação residual em sistemas com predominância barotrópica ou separando e avaliando as componentes barotrópicas. O presente estudo vem ao encontro para contribuir nessa área, guiando-se pelos trabalhos de \citeonline{Levinsonetal2000} e \citeonline{Brownetal2013}.
 
 \citeonline{Levinsonetal2000} tinham como objetivo compreender a circulação residual em uma baía semi-árida bastante semelhante ao que se pode encontrar na Enseada do Itapocorói: orientação preferencial norte-sul, aberta para o oceano, encapsulada entre dois 
-promontórios, com uma baixa descarga fluvial, regime de micro-maré semidiurna e importante centro urbano. Os autores verificaram que a circulação básica poderia ser divida em duas: uma camada superior dominada por uma componente diurna (atmosférica e mareal) e uma camada inferior 
+promontórios, com uma baixa descarga fluvial, regime de micro-maré semidiurna e importante centro urbano. Os autores verificaram que a circulação básica poderia ser dividida em duas: uma camada superior dominada por uma componente diurna (atmosférica e mareal) e uma camada inferior 
 com influência diurna e semi-diurna gerada principalmente pela maré. 
 
-Já o trabalho de \citeonline{Brownetal2013} tinha como objetivo compreender a contribuição de parâmetros físicos na variação temporal das correntes residuais em um ambiente estuarino fortemente influenciado pela maré e comparar a contribuição desses parâmetros,em condições típicas e de tempestade, quando comparados com a maré. Os processos físicos avaliados foram: forcantes meteorológicas, baroclinicidade, descarga de rios, residual externo, marés e ondas.  
+Já o trabalho de \citeonline{Brownetal2013} tinha como objetivo compreender a contribuição de parâmetros físicos na variação temporal das correntes residuais em um ambiente estuarino fortemente influenciado pela maré e comparar a contribuição desses parâmetros,em condições normais e de tempestade, quando comparados com a maré. Os processos físicos avaliados foram: forcantes meteorológicas, baroclinicidade, descarga de rios, residual externo, marés e ondas.  
 
-O trabalho de \citeonline{truccoloetal2006} verifiocu que em São Francisco do Sul, na região exposta às ondulações, apenas 74\% da variação de nível poderia ser explicada por marés astronômicas e que 24\% da variação poderia ser explicada pelas oscilações em frequência submareal. Além disso, oscilações do nível do mar em frequência submareal não podem ser completamente desconsideradas em um regime de micromaré como o encontrado no sul do Brasil, uma vez que sobre-elevações de até 1 m já foram registradas na região de Itajaí \cite{truccoloMSc}.
+O trabalho de \citeonline{truccoloetal2006} verificou que em São Francisco do Sul, na região exposta às ondulações, apenas 74\% da variação de nível poderia ser explicada por marés astronômicas e que 24\% da variação poderia ser explicada pelas oscilações em frequência submareal. Além disso, oscilações do nível do mar em frequência submareal não podem ser completamente desconsideradas em um regime de micromaré como o encontrado no sul do Brasil, uma vez que sobre-elevações de até 1 m já foram registradas na região de Itajaí \cite{truccoloMSc}.
 
-Dessa forma, o presente trabalho levará em consideração as variações ocorrente em frequência submareal, desconsiderando frequências supramareais (e.g. ondas de gravidade) e terá como foco principal o estudo de correntes residuais barotrópicas cujos principais influeciadores serão a maré e o vento.
+Dessa forma, o presente trabalho levará em consideração as variações em frequência submareal, desconsiderando frequências supramareais (e.g. ondas de gravidade) e terá como foco principal o estudo de correntes residuais barotrópicas cujos principais parâmetros ambientais serão a maré e o vento.
 
 \clearpage
 \section{Modelagem Numérica de Zonas Costeiras}
@@ -207,9 +206,9 @@ As leis de conservação que governam os fluidos são modelos matemáticos validados
 
 Os métodos analíticos e numéricos são métodos teóricos, pois ambos tem como objetivo resolver equações diferenciais que explicam os fenômenos. A diferença está apenas na complexidade da equação que cada método consegue resolver. O método de experimentação em laboratório é o mais próximo da realidade, pois de fato se trata da configuração real, porém está associado a grandes custos e uma super estrutura que, nem sempre, consegue atacar todos os problemas (e.g. escalas oceânicas).
 
-No caso de soluções numéricas existem dois tipos de erros que podem estar presentes: aqueles referentes à má solução das equações diferenciais e aqueles referentes à não adequação das equações diferenciais para resolver o problema proposta. Ou seja, esses métodos só serão adequados e confiáveis quando se está tem posse de um método numérico que resolva corretamente as equações diferenciais e de um modelo matemático que, sabidamente, represente com fidelidade o fenômeno físico. Independente dos possíveis erros associados, os ganhos advindos das técnicas de soluções numéricas e analíticas é muito alto quando comparado aos custos de técnicas experimentais. Além disso é ampla aceitação destes métodos para a solução desses tipos equações devido à grande versatilidade e relativa simplicidade de aplicação dessas técnicas \cite{Maliska}.
+No caso de soluções numéricas existem dois tipos de erros que podem estar presentes: aqueles referentes à má solução das equações diferenciais e aqueles referentes à não adequação das equações diferenciais para resolver o problema proposta. Ou seja, esses métodos só serão adequados e confiáveis quando se está em posse de um método numérico que resolva corretamente as equações diferenciais e de um modelo matemático que, sabidamente, represente com fidelidade o fenômeno físico. Independente dos possíveis erros associados, os ganhos advindos das técnicas de soluções numéricas e analíticas é muito alto quando comparado aos custos de técnicas experimentais. Além disso é ampla a aceitação destes métodos para a solução desses tipos de equações devido à grande versatilidade e relativa simplicidade de aplicação dessas técnicas \cite{Maliska}.
 
-No caso da mecânica dos fluidos já existe um consenso a respeito da validade das leis que as descrevem e, portanto, assume-se que os modelos matemáticos estão livres de erros ou que estes podem ser menosprezados na solução geral. Entretanto, estes modelos matemáticos validades são compostos de equações diferenciais parciais não lineares que, em geral, não possuem soluções analíticas ou fechadas a não ser em casos extremamente simplificados. Portanto, para o caso da mecânica de fluídos complexos as solução numéricas são as mais adequadas. Quando os modelos matemáticos passam a ser discretizados e resolvidos através de métodos numéricos eles recebem a denominação específica de dinâmica de fluidos computacionais \cite{Kundu}.
+No caso da mecânica dos fluidos já existe um consenso a respeito da validade das leis que as descrevem e, portanto, assume-se que os modelos matemáticos estão livres de erros ou que estes podem ser menosprezados na solução geral. Entretanto, estes modelos matemáticos validados são compostos de equações diferenciais parciais não lineares que, em geral, não possuem soluções analíticas ou fechadas a não ser em casos extremamente simplificados. Portanto, para o caso da mecânica de fluidos complexos as solução numéricas são as mais adequadas. Quando os modelos matemáticos passam a ser discretizados e resolvidos através de métodos numéricos eles recebem a denominação específica de dinâmica de fluidos computacionais \cite{Kundu}.
 
 Apesar de serem consideravelmente precisas é preciso ter consciência que as soluções numéricas são, inexoravelmente, inexatas. Existem dois erros introduzidos ao se utilizar os métodos numéricos na solução de um problema. Um deles ocorre devido à limitação de armanezamento de informação que os computadores digitais possuem, denominados erros de arredondamento. O segundo tipo de erro é introduzido pelo próprio método numérico que, ao se utilizar aproximações para encontrar a solução numérica, acaba gerando os erros de truncamento. Juntos, os dois erros constituem o erro total da solução numérica, que é, basicamente, a diferença entre a solução verdadeira (exata, e que é desconhecida) e a solução numérica aproximada \cite{metnumericos}. 
 
@@ -217,18 +216,18 @@ Apesar de serem consideravelmente precisas é preciso ter consciência que as solu
 \begin{figure}[!ht]
 	\includegraphics[width=0.9\textwidth]{figuras/metodossolucao.png}
 	\centering
-	\caption{Métodos de solução para um problema físico}\label{fig:metodos}
+	\caption{Métodos de solução para um problema físico. Fonte: \citeonline{Maliska}}\label{fig:metodos}
 \end{figure}
 
 
 Inicialmente, soluções numéricas eram muito custosas computacionalmente e modelos analíticos (bastante simplificados) e experimentais eram as únicas ferramentas que os cientistas podiam contar para o entendimento dos fênomenos físicos. Com o avanço computacional ocorrido nas últimas décadas, as barreiras computacionais que tornavam custosas as soluções para a resolução dos métodos numéricos se tornaram muito pequenas comparadas aos ganhos potenciais. A solução de escoamento turbulento supersônico em um aerofólio com os computadores da década de 60 consumiria um tempo de computação de aproximadamente
 30 anos com um custo de 10 milhões de dólares. O mesmo problema com os computadores atuais requer minutos e custo na ordem de centenas de dólares \cite{Maliska}. Dessa forma, a modelagem num\'erica permite não apenas resolver as equações que descrevem os fenômenos físicos mas também se constitui uma ferramenta para experimentos relativos aos processos que interagem e compõe as características observadas nos oceanos.
 
-Modelos numéricos de áreas costeiras foram desenvolvidos desde o começo da década de 80, mas apenas na década de 90 que grandes institutos europeus conseguiram aprimorar os primeiros modelos e desenvolveram os modelos robustos e de código flexível que ainda atuam hoje em dia como o Delft3D (Deltares), Mike21 (\emph{Danish Hydraulic Institute}) e Telemac (\emph{Laboratoire Nationale d'Hydraulique}). Hoje em dia, diversos modelos estão disponíveis para utilização e muitos são grátis e de código aberto, o que facilita seu uso e dispersão. Inúmeros são os trabalhos na área da oceanografia que fazem uso dessa ferramenta que se tornou fundamental os estudos na área.
+Modelos numéricos de áreas costeiras foram desenvolvidos desde o começo da década de 80, mas apenas na década de 90 que grandes institutos europeus conseguiram aprimorar os primeiros modelos e desenvolveram os modelos robustos e de código flexível que ainda atuam hoje em dia como o Delft3D (Deltares), Mike21 (\emph{Danish Hydraulic Institute}) e Telemac (\emph{Laboratoire Nationale d'Hydraulique}). Hoje em dia, diversos modelos estão disponíveis para utilização e muitos são gratuitos e de código aberto, o que facilita seu uso e dispersão. Inúmeros são os trabalhos na área da oceanografia que fazem uso dessa ferramenta que se tornou fundamental os estudos na área.
 
 A tarefa do método numérico, portanto, é resolver uma ou mais equações diferenciais, substituindo as derivadas existentes na equação por expressões algébricas que envolvem a(s) função(ões) incógnita(s).  Quando escolhe-se fazer uma aproximação numérica da equação diferencial, aceitamos ter a solução para um número discreto de pontos de forma que, quanto maior for este número de pontos, mais próxima da solução exata será a solução aproximada \cite{Maliska}. O conjunto de pontos onde a solução será calculada é denominado grade numérica ou malha numérica.
 
-As grades numéricas podem ser construídas de maneiras estruturadas ou desestruturadas. As grades estruturadas são geralmente aquelas cujo layout é retilíneo ou curvilinear, mas cuja forma principal é o retângulo como a presentado na figura \ref{fig:struc}. Grades não estruturadas ou desestruturadas são aquelas tipicamente construídas através de triângulos (Figura \ref{fig:unstruc}), mas também podem se basear em composição de triângulos e quadriláteros. As grades estruturadas normalmente utilizadas através dos métodos de diferenças finitas, enquanto grades não estruturadas usam métodos de elementos finitos ou volumes finitos \cite{dano2012}.
+As grades numéricas podem ser construídas de maneiras estruturadas ou desestruturadas. As grades estruturadas são geralmente aquelas cujo formato é retilíneo ou curvilinear, mas cuja forma principal é o retângulo como apresentado na figura \ref{fig:struc}. Grades não estruturadas ou desestruturadas são aquelas tipicamente construídas através de triângulos (Figura \ref{fig:unstruc}), mas também podem se basear em composição de triângulos e quadriláteros. Em grades estruturadas normalmente são utilizados métodos de diferenças finitas, enquanto em grades não estruturadas são utilizados métodos de elementos finitos ou volumes finitos \cite{dano2012}.
 
 \begin{figure}[!htb]
 	\includegraphics[width=0.3\textwidth]{figuras/structured.png}
@@ -245,14 +244,14 @@ As grades numéricas podem ser construídas de maneiras estruturadas ou desestrutu
 Tradicionalmente, o método de diferenças finitas é mais popular nos modelos costeiros, principalmente pela facilidade dos seus conceitos e sua eficiência no cálculo célula-a-célula. Já os métodos de elementos finitos são bem mais complicados matematicamente e costumam ser mais lentos nos cálculos célula-a-célula mas conseguem facilmente cobrir áreas com grandes diferença em escala de tamanhos \cite{dano2012}.
 
 Os sistemas de equações formados por todas as sete equações básicas pode ser resolvido de dois modos, basicamente: de forma implícita ou de forma explícita.
-Em métodos implícitos, todo o sistema de equações é calculado simultaneamente já que todos os valores do passo de tempo atual são desconhecidos com exceção das fronteiras. Esse cálculo pode ser feito através de inversão de matriz (totalmente implícito) ou de métodos iterativos (parcialmente implícito). No caso dos métodos explícitos, as variáveis no tempo atual são baseadas em valores conhecidos do passo de tempo passado, o que é consideravelmente mais simples. Em geral, métodos implícitos demoram mais por passo de tempo, mas conseguem trabalhar com passos de tempo maiores porque não há um limite fixo de estabilidade. Já no caso de métodos explícitos existe pouco esforço computacional por passo de tempo, mas um critério deve ser seguido para garantir estabilidade \cite{Maliska,dano2012}. É importante ressaltar que processo que demandam iteração podem acumular erros de arredondamento que também podem desestabilizar a solução.
+Em métodos implícitos, todo o sistema de equações é calculado simultaneamente já que todos os valores do passo de tempo atual são desconhecidos com exceção das fronteiras. Esse cálculo pode ser feito através de inversão de matriz (totalmente implícito) ou de métodos iterativos (parcialmente implícito). No caso dos métodos explícitos, as variáveis no tempo atual são baseadas em valores conhecidos do passo de tempo passado, o que é consideravelmente mais simples. Em geral métodos implícitos demoram mais por passo de tempo, mas conseguem trabalhar com passos de tempo maiores porque não há um limite fixo de estabilidade. Já no caso de métodos explícitos existe pouco esforço computacional por passo de tempo, mas um critério deve ser seguido para garantir estabilidade \cite{Maliska,dano2012}. É importante ressaltar que processos que demandam iteração podem acumular erros de arredondamento que também podem desestabilizar a solução.
 
 No caso de modelos costeiros, os modelos Delft3D e Mike21 utilizam-se de esquemas implícitos enquanto modelos como ROMS e o XBeach usam esquemas explícito de soluções.
 
 Os modelos, em geral, podem apresentar problemas de convergência, onde a solução numérica não é estável.
-A condição descrita pelos autores Richard Courant, Kurt Friedrichs e Hans Lewy deu origem a todos os fundamentos necessários para as condições de convegência de qualquer esquema numérico e passou a ser conhecida como condição CFL \cite{Fortuna2000}. 
+A condição descrita pelos autores Richard Courant, Kurt Friedrichs e Hans Lewy deu origem a todos os fundamentos necessários para as condições de convergência de qualquer esquema numérico e passou a ser conhecida como condição CFL \cite{Fortuna2000}. 
 
-A ideia básica da condição de Courant-Friedrichs-Lewy (CFL) é que a solução das equações de diferenças finitas não pode ser independente dos dados que determinam a solução das equações diferenciais parciais associadas, ou seja, as partículas de fluido calculadas não podem se mover do que um espaçamento de grade em um passo de tempo. A condição CFL é uma condição necessária para a estabilidade do modelo, mas não suficiente.
+A ideia básica da condição de Courant-Friedrichs-Lewy (CFL) é que a solução das equações de diferenças finitas não pode ser independente dos dados que determinam a solução das equações diferenciais parciais associadas, ou seja, as partículas de fluido calculadas não podem se mover mais do que um espaçamento de grade em um passo de tempo. A condição CFL é uma condição necessária para a estabilidade do modelo, porém não suficiente.
 
 Os métodos numéricos, por suas características intrínsecas, geram um efeito semelhante ao de difusão com suavização de gradientes, mesmo quando o cálculo inclui unicamente componentes advectivas. Esse é um efeito puramente numérico, denominado difusão artificial, difusão falsa ou difusão numérica. Conforme o CFL é reduzido, o efeito de difusão numérica também é \cite{Fortuna2000}. A figura \ref{fig:difusao} apresenta o resultado final da equação da onda 1D para duas diferentes condições CFL. A fronteira foi imposta como 1 invariavelmente, mas nota-se o efeito de difusão numérica ocorrendo em maior ou menos escala, dependendo da condição imposta.
 
@@ -337,13 +336,15 @@ Grande parte da economia local advém do turismo. Na maior parte do mundo, praias
 Principalmente por conta desse atrativo turístico, a Enseada sofreu o mesmo processo acelerado de urbanização que o litoral centro-norte catarinense passou, em especial nos últimos 30 anos. Nesse período, houve um incremento populacional considerável e com pouca atenção, por parte das autoridades locais, aos processos costeiros que fazem parte da dinâmica da região \cite{mma}. A praia de Piçarras, região sul da Enseada e local das maiores taxas de desenvolvimento urbano, sofre com um grande problema erosivo (Figura \ref{fig:erosao}) e vem sendo constantemente estudada em busca de formas de mitigá-lo
 \cite{Delft2008, Araujoetal2010,freitasetal2010,Almeida2013,Ribeiro2014}. 
 
-A população local afirma que os problemas erosivos começaram a ocorrer na década de 70, quando a boca do rio Piçarras foi fixada \cite{kleinetal2009}. Diversas intervenções tem sido feitas para solucionar o problema erosivo, como a construção de espigões (1989 e 1994) e o engordamento praial (1999 e 2008) mas ambos os métodos não se apresentaram efetivos para a solução do problema no longo prazo \cite{Almeida2013}. Na figura \ref{fig:erosaoearth} pode-se observar na parte inferior direita a fixação da barra do rio Piçarras por dois espigões e na parte superior esquerda a presença de um espigão para retenção de sedimentos. Nota-se claramente na figura que determinadas partes da praia se apresentam muito menos extensas que outras.
+
 
 \begin{figure}[!htb]
 	\includegraphics[width=0.7\textwidth]{figuras/erosao.jpg}
 	\centering
 	\caption{Efeitos da erosão em Piçarras. Fonte: \citeonline{fotoerosao}}\label{fig:erosao}
 \end{figure}
+
+A população local afirma que os problemas erosivos começaram a ocorrer na década de 70, quando a desembocadura do rio Piçarras foi fixada \cite{kleinetal2009}. Diversas intervenções tem sido feitas para solucionar o problema erosivo, como a construção de espigões (1989 e 1994) e o engordamento praial (1999 e 2008) mas ambos os métodos não se apresentaram efetivos para a solução do problema no longo prazo \cite{Almeida2013}. Na figura \ref{fig:erosaoearth} pode-se observar na parte inferior direita a fixação da barra do rio Piçarras por dois espigões e na parte superior esquerda a presença de um espigão para retenção de sedimentos. Nota-se claramente na figura que determinadas partes da praia se apresentam muito menos extensas que outras.
 
 \citeonline{Araujoetal2010} verificaram um perfil erosivo ao longo de toda  a praia,
 mas foi observado que o sedimento removido da parte sul não estava sendo depositado na mesma proporção na direção  da deriva litorânea. A principal zona de erosão, identificada como uma zona de erosão acentuada (ZEA), se situa cerca de 500 m na parte ao norte da desembocadura do Rio Piçarras. Os valores de taxa de erosão chegaram a -14 m$^{3}$/m/ano  na região mais crítica da praia entre os anos de 1998 e 2008.
@@ -355,20 +356,7 @@ mas foi observado que o sedimento removido da parte sul não estava sendo deposit
 	\caption{Imagem do Google Earth da Praia de Piçarras de 18 de Setembro de 2015. Fonte: Google Earth} \label{fig:erosaoearth}
 \end{figure}
 
-\citeonline{Masselink} propuseram uma relação entre a altura de onda e a variação de maré para avaliar a predominâcia de um outro em praias denominada \emph{Relative Tidal Range} (RTR) dado pela equação \ref{eq:RTR}.
-
-\begin{equation}
-RTR = \frac{TR}{H_{b}}  \label{eq:RTR}
-\end{equation}
-
-Onde,
-
-\begin{description}
-	\item[] $TR$ é o alcance máximo das marés;
-	\item[] $H_{b}$ é a altura de quebra de onda;
-\end{description}
-
-\citeonline{KleinMenezes2001} verificaram que, em Piçarras, o RTR é de 2,02, o que indica que a praia é tipicamente dominada por ondas. Isso se deve ao fato de que toda a região sul do Brasil apresenta regimes de micromarés, principalmente pela influencia de um ponto anfidrômico localizado aproximadamente em 33$^{\circ}$S e 46$^{\circ}$W (Figura \ref{fig:anfidromico}). Na Enseada, a altura média da maré é de cerca de 0,8 m, com máximas de 1,2 m na sizígia e 0,3 m na quadratura, sendo classificada como regime de micro-maré semi-diurno. No entanto, análises feitas pelo Instituto de Hidráulica Ambiental da Cantábria indicaram que a maré pode alcançar 1,83 m \cite{Almeida2013}. Dados da estação maregráfica da UNIVALI indicam que também existe a presença de seiches em frequências sub-horárias \cite{Schettinietal1999}. 
+\citeonline{Masselink} propuseram uma relação entre a altura de onda e a variação de maré para avaliar a predominâcia de um outro em praias denominada \emph{Relative Tidal Range} (RTR). \citeonline{KleinMenezes2001} verificaram que, em Piçarras, o RTR é de 2,02, o que indica que a praia é tipicamente dominada por ondas. Isso se deve ao fato de que toda a região sul do Brasil apresenta regimes de micromarés, principalmente pela influência de um ponto anfidrômico localizado aproximadamente em 33$^{\circ}$S e 46$^{\circ}$W (Figura \ref{fig:anfidromico}). Na Enseada, a altura média da maré é de cerca de 0,8 m, com máximas de 1,2 m na sizígia e 0,3 m na quadratura, sendo classificada como regime de micro-maré semi-diurno \cite{Schettinietal1999}. No entanto, análises feitas pelo Instituto de Hidráulica Ambiental da Cantábria indicaram que a maré pode alcançar 1,83 m \cite{Almeida2013}. Dados da estação maregráfica da UNIVALI indicam que também existe a presença de seiches em frequências sub-horárias \cite{Schettinietal1999}. 
 
 \begin{figure}[!htb]
 	\includegraphics[width=0.8\textwidth]{figuras/anfidromico.png}
@@ -376,7 +364,7 @@ Onde,
 	\caption{Localização dos pontos anfidrômicos no Atlântico Sul. Fonte: \citeonline{Petersen2003}}\label{fig:anfidromico}
 \end{figure}
 
-Devido ao regime de micro-marés do sul do páis, as marés meteorológicas passam a ter uma grande importância na dinâmica local. \citeonline{Parise} verificaram que entre Junho de 2006 e Julho de 2007, 23 eventos de marés meteorológicas foram registrados no sul do Brasil. As marés meteorológicas alcançaram, em média 1 m de elevação com uma medição máxima de 1,9 m. Os autores também verificaram que ventos de sudoeste estiveram presente em 70\% dos casos de sobreelevação. É importante citar que os autores também verificaram que as maiores erosões costeiras eram provenientes de marés meteorológicas com maior duração e não com maior elevação. Esse resultado reforça a importância de estudos de longo prazo para avaliação do efeito cumulativo na dinâmica praial.
+Devido ao regime de micromarés do sul do país, as marés meteorológicas passam a ter uma grande importância na dinâmica local. \citeonline{Parise} verificaram que entre Junho de 2006 e Julho de 2007, 23 eventos de marés meteorológicas foram registrados no sul do Brasil. As marés meteorológicas alcançaram, em média 1 m de elevação com uma medição máxima de 1,9 m. Os autores também verificaram que ventos de sudoeste estiveram presente em 70\% dos casos de sobreelevação. É importante citar que os autores também verificaram que as maiores erosões costeiras eram provenientes de marés meteorológicas com maior duração e não com maior elevação. Esse resultado reforça a importância de estudos de longo prazo para avaliação do efeito cumulativo na dinâmica praial.
 
 \begin{figure}[!htb]
 	\includegraphics[width=0.8\textwidth]{figuras/Pariseetal.png}
@@ -388,7 +376,7 @@ As principais forçantes do regime de corrente na Enseada são a maré e o vento, p
 \citeonline{Leite2011} encontraram a presença de dois vórtices gerados dentro da Enseada com 
 direções variando conforme o sentido do vento (sentido horário em ventos de NE e anti-horário em ventos de S e SO) e com pouca influência da maré.
 
-O litoral de Santa Catarina é submetido regularmente à passagem de frentes fria, normalmente com trajetória sudoeste para nordeste que afetam todo o litoral da América do Sul. \citeonline{rodriguesetal2004} verificaram que em 10 anos, 429 frentes frias puderam ser identificadas em Santa Catarina com uma média de 3 a 4 frentes ocorrendo em todos os mesos do ano. Entretanto, os autores também verificaram que existe uma leve tendência de aumento das frentes frias na primavera (cerca de 30\% das ocorrências, com uma média de 12,6 frentes frias). O intervalo médio entre duas passagens consecutivas de frentes é de 8 dias, porém mais de 50\% das frentes frias atingem o litoral catarinense entre 3  8 dias. 
+O litoral de Santa Catarina é submetido regularmente à passagem de frentes fria, normalmente com trajetória sudoeste para nordeste que afetam todo o litoral da América do Sul. \citeonline{rodriguesetal2004} verificaram que em 10 anos, 429 frentes frias puderam ser identificadas em Santa Catarina com uma média de 3 a 4 frentes ocorrendo em todos os meses do ano. Entretanto, os autores também verificaram que existe uma leve tendência de aumento das frentes frias na primavera (cerca de 30\% das ocorrências, com uma média de 12,6 frentes frias). O intervalo médio entre duas passagens consecutivas de frentes é de 8 dias, porém mais de 50\% das frentes frias atingem o litoral catarinense entre 3 a 8 dias. 
 
 As ondulações também são bastante importantes na região, especialmente no setor norte. Devido ao posicionamento abrigado, a parte sul da Enseada é protegida das ondulações mais energéticas provenientes do quadrante S, permanecendo na maior parte do tempo sujeita à ondulações de NE com alturas modestas e períodos inferiores a 8 s \cite{Schettinietal1999}. 
 
@@ -401,7 +389,7 @@ que as correntes exibem o mesmo comportamento tanto em ondas de altura média com
 também que correntes são quase nulas quando as ondulações são oriundas de S e que ondas incidentes de ESE e ENE tem as menores intensidades daquelas 
 vindas do quadrante E, principalmente devido à orientação da praia. 
 
-Muitos estudos realizados na Enseada do Itapocorói focaram no estudo da morfodinâmica local \cite{KleinMenezes2001,Araujoetal2010, Ramirez2010, tccjonas}, no padrão de ondas \cite{Ribeiro2014} e no estudo de perigos costeiros e evolução da linha de costa \cite{freitasetal2010,GuiVieira}. Estes estudos foram estimulados pelo grande problema erosivo que a enseada apresenta bem como pela característica de predominância dos efeitos de onda na região. Entretanto, em praias de enseada a dinâmica é dominada por ondas em períodos curtos, como alguns estados de mar ou tempestades \cite{silvaetal2010} porém a circulação residual gerada pela maré o vento pode ter um efeito cumulativo no longo prazo \cite{Brownetal2013}. Dessa forma, visando complementar os estudos anteriores, o presente trabalho pretende atuar no estudo de padrões residuais na enseada, tomando o trabalho de \citeonline{Leite2009} e \citeonline{Leite2011} como referência principal da dinâmica da região. Almeja-se que este estudo contribua para a compreensão do tempo de recirculação, que pode contribuir para a maricultura local, bem como contribua para o conhecimento das dinâmicas de longo período da região.
+Muitos estudos realizados na Enseada do Itapocorói focaram no estudo da morfodinâmica local \cite{KleinMenezes2001,Araujoetal2010, Ramirez2010, tccjonas}, no padrão de ondas \cite{Ribeiro2014} e no estudo de perigos costeiros e evolução da linha de costa \cite{freitasetal2010,GuiVieira}. Estes estudos foram estimulados pelo grande problema erosivo que a enseada apresenta bem como pela característica de predominância dos efeitos de onda na região. Entretanto, em praias de enseada a dinâmica é dominada por ondas em períodos curtos, como alguns estados de mar ou tempestades \cite{silvaetal2010} porém a circulação residual gerada pela maré e/ou vento pode ter um efeito cumulativo no longo prazo \cite{Brownetal2013}. Dessa forma, visando complementar os estudos anteriores, o presente trabalho pretende atuar no estudo de padrões residuais na enseada, tomando o trabalho de \citeonline{Leite2009} e \citeonline{Leite2011} como referência principal da dinâmica da região. Almeja-se que este estudo contribua para a compreensão do tempo de recirculação, que pode contribuir para a maricultura local, bem como contribua para o conhecimento das dinâmicas de longo período da região.
 
 
 
@@ -416,7 +404,7 @@ Dado os objetivos propostos pelo presente estudo, a figura \ref{fig:fluxo} apres
 \end{figure}
 
 
-A primeira etapa será desenvolver uma grade numérica regional e local e interpolar a batimetria em ambas. A grade regional visa trazer os processos de água profundas para regiões mais próximas da costa enquanto a grade local visa resolver os processos costeiros de forma mais detalha. O acoplamento de ambas permite afastar as fronteiras do local de estudo, bem como tornar mais acurado o processo de transformações de águas profundas, onde estão localizados dados de marés de modelos globaiss, para águas rasas.
+A primeira etapa será desenvolver uma grade numérica regional e local e interpolar a batimetria em ambas. A grade regional visa trazer os processos de água profundas para regiões mais próximas da costa enquanto a grade local visa resolver os processos costeiros de forma mais detalhada. O acoplamento de ambas permite afastar as fronteiras do local de estudo, bem como tornar mais acurado o processo de transformações de águas profundas, onde estão localizados dados de marés de modelos globais, para águas rasas.
 
 Concomitantemente, serão avaliados os dados de ADCP que serão usados para a calibração do modelo. O objetivo dessas análises é avaliar a consistências dos dados, compreender melhor o comportamento encontrado e desenvolver análises estatísticas que permitam melhor representar os resultados encontrados.
 
@@ -477,7 +465,7 @@ Os dados passaram por todo o processo de análise de consistência descritos em \c
 	\caption{Localização das coletas de dados atrav\'es de ADCPs.}\label{fig:adcps}
 \end{figure}
 
-Entretanto, como foi exposto, durante as medições alguns dados não puderam ser coletados e, portanto, as séries temporais continham interrupções. Interrupções em séries temporais se tornam-as muito complexas para utilização sem um tratamento. Dado que a quantidade de dados faltantes era esparsa, representava menos de 5\% da série temporal e estavam igualmente espaçados, escolheu-se utilizar uma interpolação linear simples para suprir os dados que não foram medidos. A figura \ref{fig:nans} apresenta um exemplo dos dados medidos e da quantidade de dados faltantes no ST001.
+Entretanto, como foi exposto, durante as medições alguns dados não puderam ser coletados e, portanto, as séries temporais continham interrupções. Interrupções em séries temporais tornam-as muito complexas para utilização sem um tratamento prévio. Dado que a quantidade de dados faltantes era esparsa, representava menos de 5\% da série temporal e estavam igualmente espaçados, escolheu-se utilizar uma interpolação linear simples para suprir os dados que não foram medidos. A figura \ref{fig:nans} apresenta um exemplo dos dados medidos e da quantidade de dados faltantes no ST001.
 
 Além dos dados desses 3 ADCPs, também foram cedidos gentilmente dados de maregrafia coletados em Penha durante mais de 1 ano (entre Outubro de 1995 e Dezembro de 1996) pelo  Professor João Luiz Baptista de Carvalho. Estes dados não serão usados para a calibração do modelo, mas serão analisados e comparados com os dados do ADCP para melhor compreensão da hidrodinâmica local.
 
@@ -597,7 +585,7 @@ são facilmente acessíveis através de uma interface gráfica desenvolvida em ambie
 
 Para a forçante do modelo numérico os dados de ventos a serem utilizados serão obtidos do modelo de reanálise do \emph{National Centers for Environmental Prediction} (NCEP) \emph{Climate Forecast System Reanalysis} (CFSR).
 
-O propósito geral de modelos de reanálise é produzir representações globais plurianuais acuradas de condiçoes atmosféricas, geradas por um modelo e uma aquisição constante de dados ao sistema. Pode-se dizer que em um dado momento $t$ é o resultado de uma curta previsão iniciada por uma análise passada ($t-\Delta t$), modificada por assimilação de dados em uma pequena janela centrada em $t$. 
+O propósito geral de modelos de reanálise é produzir representações globais plurianuais acuradas de condições atmosféricas, geradas por um modelo e uma aquisição constante de dados ao sistema. Pode-se dizer que em um dado momento $t$ é o resultado de uma curta previsão iniciada por uma análise passada ($t-\Delta t$), modificada por assimilação de dados em uma pequena janela centrada em $t$. 
 Por convenção a janela $\Delta t$ é de seis horas. Dessa forma, toda nova reanálise é beneficiada por todas as reanálises anteriores e os erros tem mais chances de serem descobertos e corrigidos nos resultados posteriores \cite{cfsr}.
 
 O \emph{Coupled Forecast System Reanalysis} (CFSR) é um modelo de reanálise mais recente, cuja primeira versão foi lançada em 2004, abrange o período de 1981 até 2011. Em Março de 2011, foi lançada a versão 2 do sistema, com maior resolução, com uma série de dados disponíveis a partir de 01 de Janeiro de 2011. O modelo de reanálise tem módulos de interação entre a atmosfera, os oceanos, a terra e o gelo marinho. A nova série tem resoluções horizontais de 0,2$^{\circ}$, 0,5$^{\circ}$, 1$^{\circ}$ e 2,5$^{\circ}$ a cada 1 hora \cite{cfsr2}. Para o presente modelo, serão utilizados apenas os dados referentes à segunda versão do modelo.
@@ -629,11 +617,12 @@ Para a análise pontual dos dados de vento (comparação com os dados medidos e des
 \section{Dados diversos}
 
 \subsection{Linha de Costa}
-A linha de costa utilizada no presente trabalho foi do banco de dados GSHHG (Global Self-consistent, Hierarchical, High-resolution Geography Database) da NOAA. Este tem como base dois banco de dados de domínio público: o World Vector Shorelines (WVS) e a CIA World Data Bank II (WDBII) e pode ser gratuitamente obtidos em formato ESRI de Shapefile ou em formato binário. 
+A linha de costa utilizada no presente trabalho foi obtida no banco de dados GSHHG (Global Self-consistent, Hierarchical, High-resolution Geography Database) da NOAA. Este tem como base dois banco de dados de domínio público: o World Vector Shorelines (WVS) e a CIA World Data Bank II (WDBII) e pode ser gratuitamente obtidos em formato ESRI de Shapefile ou em formato binário. 
 Os dados do GSHHG incluem 4 níveis hierárquicos  fronteira entre o continente e o oceano (L1), fronteira entre lagos e terras (L2), fronteira entre ilhas lacustres e lagos (L3) e fronteiras entre lagos internos e ilhas (L4). Cada um desses níveis está disponivel em cinco resoluções diferentes: grosseira (crude), baixa (low), intermediária (intermediate), alta (high) e máxima (full).
 Os dados foram adquiridos em dezembro de 2015 através do endereço \url{https://www.ngdc.noaa.gov/mgg/shorelines/gshhs.html}. 
 
 \subsection{Batimetria}
+
 
 A batimetria da grade regional foi adquirida da base de dados ETOPO1 da NOAA. Esta base de dados contém um modelo global da superfície terreste que integra dados de batimetria e topografia em uma resolução de 1 minuto. Os dados foram obtidos no formato xyz através do endereço \url{https://www.ngdc.noaa.gov/mgg/global/global.html}.  
 
@@ -655,11 +644,11 @@ Para detalhamento da batimetria em áreas mais rasas, onde o modelo do ETOPO1 não
 	\end{tabular}
 \end{table}
 
-\subsection{Dados Pontuais de Vento}
+Na região próxima da costa na Enseada do Itapocorói foram utilizados dados de batimetria coletados pela Universidade Federal de Santa Catarina e Universidade do Vale do Itajaí
+no período de 02/11/2011 a 06/11/2011, financiado pelo Conselho Nacional de Desenvolvimento Científico e Tecnológico (CNPQ\_CTTranArea 44/2008, Proc. No. 575008/2008-3) e gentilmente cedidos pelo Prof. Dr. Antonio H. da F. Klein (LOC/UFSC). Todos os procedimentos de coleta e tratamento dos dados estão descritos em \citeonline{bat}.
 
-Além dos dados necessários para serem utilizados como forçante para o modelo numérico, é necessário 
+Todos esses dados foram interpolados do mais recente e detalhado (medida em 2011) até o mais esparso (ETOPO), de forma que a batimetria interpolada fosse construída dando prioridade aos dados recentes.
 
-\section{Avaliação dos dados medidos}
 
 \section{Avaliação dos resultados do modelo}
 
@@ -785,7 +774,7 @@ O que foi verificado é que os dados do METAR apresentam uma grande inconsistênci
 
 Inicialmente foram estudados os dados de nível (pressão) dos três ADCPs para melhor compreender o comportamento da maré ao longo da Enseada. Os dados analisados em cada um dos pontos dos ADCPs podem ser vistos nas figuras \ref{fig:nivelst001} a \ref{fig:nivelst003}. Como a medição de nível depende do local onde o ADCP foi instalado, é possível perceber a diferença entre as profundidades nos três pontos medidos. Não obstante, os três aparelhos tiveram um comportamento de nível muito semelhante, o que indica que, em termos de nível, a dinâmica local não aparenta variar dentro da enseada. A tabela \ref{tab:dadosnivel} contém as principais características dos dados adquiridos. A variação entre o nível máximo e mínimo encontrado foi de aproximadamente 2 m, com uma tendência leve de aumento dessa variação nos pontos mais internos (ST001 e ST002).
 
-Os dados maregráficos de Penha servirão como base de comparação, uma vez que suas medições aconteceram por um período maior e em momento diferente da coleta dos dados dos ADCPs. A figura \ref{fig:nivelpenha} se apresenta simétrica ao eixo 0, de forma geral, e com variações raramente ultrapassando 1,0 m tanto positivas quanto negativas. Em geral, as variações se apresentam com até 70 cm aproximadamente. A maior variação encontrada em Penha foi cerca de 30 cm maior que as verificadas nas medições dos ADCPs. 
+Os dados maregráficos de Penha serviram como base de comparação, uma vez que suas medições aconteceram por um período maior e em momento diferente da coleta dos dados dos ADCPs. A figura \ref{fig:nivelpenha} se apresenta simétrica ao eixo 0, de forma geral, e com variações raramente ultrapassando 1,0 m tanto positivas quanto negativas. Em geral, as variações se apresentam com até 70 cm aproximadamente. A maior variação encontrada em Penha foi cerca de 30 cm maior que as verificadas nas medições dos ADCPs. 
 
 A variação máxima de nível encontrada (tanto em Penha quanto nos dados de ADCP) é quase 2 vezes superior à diferença máxima encontrada na tabela da FEMAR (Média das Preamares Superiores - Média das Baixamares inferiores), que seria de 1,11 cm (Figura \ref{fig:femar}). Isso parece indicar que a componente meteorológica pode ter uma presença e uma influência muito grande na região. 
 
@@ -878,7 +867,7 @@ Dessa forma, é possível concluir que a maré meteorológica verificada pelos ADCPs
 
 Nas tabelas \ref{tab:st001} a \ref{tab:ttidepenha} se encontram as constantes harmônicas encontradas pelo pacote \emph{ttide} para os sinais analisados. É possível verificar a frequência, amplitude (em centímetros), o erro de amplitude, a fase, o erro de fase e a relação sinal-ruído (\emph{Signal-to-Noise Ration}) conhecida como SNR. 
 
-Simulações considerando um sinal fixo com diferentes níveis de ruído conseguiram indicar para sinais como os da maré é ideal que o SNR seja maior que 10, mas que valores entre 2 e 3 são aceitáveis \cite{ttidematlab}. Portanto, foram excluídas da tabela as constantes harmônicas que apresentaram  uma relação de sinal-ruído (SNR) menor que 2.
+Simulações considerando um sinal fixo com diferentes níveis de ruído conseguiram indicar para sinais de maré é ideal que o SNR seja maior que 10, mas que valores entre 2 e 3 são aceitáveis \cite{ttidematlab}. Portanto, foram excluídas da tabela as constantes harmônicas que apresentaram  uma relação de sinal-ruído (SNR) menor que 2.
 
 Quando comparamos as constantes harmônicas dos ADCPs de Piçarras (30 dias de medição) com aquelas encontradas pelo marégrafo localizado na Penha (1 ano de dados), é possível perceber que as segundas apresentaram um maior número de constantes harmônicas cujo SNR foi maior que 2. Pode-se concluir, portanto, que a quantidade limitada de dados no primeiro período pode, potencialmente, prejudicar análises harmônicas mais complexas.
 
@@ -1155,7 +1144,7 @@ As correntes medidas apresentam velocidades muito baixas, abaixo de 0,2 m/s na m
 
 Os resultados encontrados corroboram com as observações descritas em \citeonline{Schettinietal1999}. Entretanto, os autores afirmaram que as correntes obedecem mais diretamente ao regime dos ventos do que as oscilações da maré. Da mesma forma como foi feito com a temperatura, foram desenvolvidos alguns gráficos tentando correlacionar a velocidade da corrente com a direção ou o vento (Figuras \ref{fig:corrvento01} a \ref{fig:corrventodir03}). Novamente nenhum padrão emergiu nas análises realizadas e não foi possível relacionar a velocidade da corrente com o vento.
 
-As figuras \ref{fig:quiver01} a \ref{fig:quiver03} apresentam na parte superior os vetores indicando a direção e magnitude das correntes e na parte inferior a velocidade. Enquanto nos pontos ST001 e ST002 não foi possível associar os episódios de grande velocidade com direções predominantes, no ponto ST003 percebe-se que as correntes que que atigiram velocidades acima de 0,15 m/s estão associadas a correntes de sudeste. 
+As figuras \ref{fig:quiver01} a \ref{fig:quiver03} apresentam na parte superior os vetores indicando a direção e magnitude das correntes e na parte inferior a velocidade. Enquanto nos pontos ST001 e ST002 não foi possível associar os episódios de grande velocidade com direções predominantes, no ponto ST003 percebe-se que as correntes que atigiram velocidades acima de 0,15 m/s estão associadas a correntes de sudeste. 
 
 Na figura \ref{fig:residualmedido} pode ser observada a resultante medida num período de 50 horas. No ponto ST001 a residual é praticamente constante de SO com variações de intensidade. No ponto ST002 já existe uma variação maior entre SE e SO. As intensidades no ponto ST002 parecem ter menos variação do que no ponto ST001. Já no ponto ST003, a residual é pequena e de O geralmente, com grandes residual de SE acontecendo no período. 
 
@@ -1231,7 +1220,7 @@ Na figura \ref{fig:residualmedido} pode ser observada a resultante medida num pe
 
 \subsection{Grade}
 
-A grade numérica do modelo ROMS é do tipo Aracawa-C, onde os cálculos das variáveis escalaras são feitos no centro da célula de grade e as variáveis vetoriais (u e v principalmente) são dados nas bordas das grades (Figure \ref{fig:Romsgrid}). Dessa forma, o tamanho da grade é diferente para cada uma das variáveis estudadas. Na descrição realizada nesta seção, o tamanho das grades se referem aos \emph{Rho-points}, localizados no centro da célula. Entretanto, a grade do modelo contém todas as informações específicas pra cada uma das variáveis necessárias.
+A grade numérica do modelo ROMS é do tipo Aracawa-C, onde os cálculos das variáveis escalares são realizados no centro da célula de grade e as variáveis vetoriais (u e v principalmente) são dados nas bordas das grades (Figure \ref{fig:Romsgrid}). Dessa forma, o tamanho da grade é diferente para cada uma das variáveis estudadas. Na descrição realizada nesta seção, o tamanho das grades se referem aos \emph{Rho-points}, localizados no centro da célula. Entretanto, a grade do modelo contém todas as informações específicas pra cada uma das variáveis necessárias.
 
 
 \begin{figure}[!htb]
@@ -1240,11 +1229,11 @@ A grade numérica do modelo ROMS é do tipo Aracawa-C, onde os cálculos das variáv
 	\caption{Malha numérica típica do ROMS}\label{fig:Romsgrid}
 \end{figure}
 
-O modelo TPXO utilizado como forçante no ROMS resolve muito bem a maré em águas profundas, duas grades foram desenvolvidas para que a onda de maré fosse trazida de águas profundas, onde ela é bem resolvida, para águas rasas, onde o processo deseja ser estudado.
+O modelo TPXO utilizado como forçante no ROMS resolve muito bem a maré em águas profundas, duas grades foram desenvolvidas para que a onda de maré fosse trazida de águas profundas, onde ela é bem resolvida, para águas rasas da região de interesse. 
 
 A grade regional foi construída de forma retangular, com uma resolução de 250 m e se estendendo desde o sul da Ilha de Santa Catarina até próximo da desembocadura da Baía de Paranaguá (Figura \ref{fig:GradeReg}). Isso resultou em 598 elementos de grade na direção $\chi$ (x) e 1098 elementos de grade na direção $\eta$ (y). Além disso, a grade foi rotacionada em 10 graus para direita, de forma a melhor alinha o eixo principal com a direção preferencial da linha de costa.
 
-A resolução de 250 da grade regional foi escolhida de forma arbitrária. O ROMS só permite o aninhamento com uma grade gerada de forma automática e a documentação não recomanda utilizar uma resolução no aninhamento maior que 5 vezes. Dessa forma, para se alcançar uma resolução de 50 metros na área de estudo, a grade regional foi construída considerando a resolução desejada na grade local.
+A resolução de 250 m da grade regional foi escolhida de forma arbitrária. O ROMS só permite o aninhamento com uma grade gerada de forma automática e a documentação não recomanda utilizar uma resolução no aninhamento maior que 5 vezes. Dessa forma, para se alcançar uma resolução de 50 metros na área de estudo, a grade regional foi construída considerando a resolução desejada na grade local.
 
 A grade local foi construída então a partir da grade regional com uma resolução 5 vezes maior, focando na Enseada do Itapocorói mas de forma que as fronteiras ainda ficassem distantes o suficiente da região de interesse. Esta possui 682 elementos na direção $\chi$  (x)e 942 elementos na direção $\eta$ (y) e a extensão de seu domínio pode ser vista na figura \ref{fig:GradeLoc}.
 
@@ -1266,7 +1255,7 @@ A grade local foi construída então a partir da grade regional com uma resolução 
 
 Os dados batimétricos foram interpolados nas grades numéricas regional e local e podem ser observados nas figuras \ref{fig:BatReg} e \ref{fig:BatLoc}, respectivamente. Na grade regional, a maior profundidade foi de 254 metros, enquanto na local foi de 47 metros.
 
-Como o modelo utiliza-se coordenadas sigma, a variação topográfica devem ser limitadas para evitar gradientes de pressão errôneos \cite{Masonetal2010}. Dessa forma, foi aplicado um filtro Shapiro de forma que o fator r fosse menor que 0,2 conforme descrito por \cite{Masonetal2010}.
+Como o modelo utiliza coordenadas sigma, a variação topográfica devem ser limitadas para evitar gradientes de pressão errôneos \cite{Masonetal2010}. Dessa forma, foi aplicado um filtro Shapiro de forma que o fator r fosse menor que 0,2 conforme descrito por \cite{Masonetal2010}.
 
 Inicialmente, foi verificado que o modelo era bastante sensível quanto à profundidade da coluna de água e que, em profundidades muito pequenas o modelo se tornava tão instável que quebrava. Dessa forma, alguns testes foram feitos para avaliar qual a menor profundidade necessária para que o modelo se mostrasse estável. Essa profundidade mínima estabelecida foi 3 metros e, portanto, qualquer valor menor que 3 metros foi alterado para que ficasse com o valor de 3 metros. Isso não influencia o presente trabalho, uma vez que este não pretende resolver processos dentro da zona de surfe.
 
@@ -1309,6 +1298,10 @@ Algumas outras informações estão apresentadas na tabela \ref{tab:setup}.
 
 \subsection{Calibração}
 
+As figuras \ref{fig:CalibracaoReg1} a \ref{fig:CalibracaoReg3} apresentam a comparação entre os dados medidos de nível e os dados modelados na grade regional. No presente momento, não foi possível incluir os dados de um modelo que continha a grade aninha, pela maior demora que o mesmo demanda. Ressalta-se que o modelo ainda não passou pelos testes de sensibilidade e calibração, de modo que os resultados aqui apresentados representam um modelo base, do qual se utilizará como base para os testes futuros.
+
+Apesar de terem sido retirados de uma grade menos refinada (regional) e não terem passado por um processo de calibração adequado para melhorar a performance do modelo, o mesmo já apresenta uma coerência com os dados medidos, o que indica que o presente estudo terá condições de atingir os resultados no prazo estipulado.
+
 \begin{landscape}
 	\begin{figure}[!htb]
 		\includegraphics[width=1.6\textwidth]{figuras/Calibracao_Regional01ST001.png}
@@ -1344,11 +1337,10 @@ Uma série de dificuldades foram encontradas nas etapas iniciais do modelo que to
 	\item O modelo numérico é escrito em FORTRAN, que é uma linguagem compilada. Isso fez com que fosse necessário entender configurações de pré-processamento, compilador necessário, etc;
 	\item É necessário instalar diversos pacotes netCDF que, em um primeiro momento, se mostraram trabalhosos;
 	\item O exemplo básico padrão disponível (\emph{upwelling}) é fácil e bem descrito na documentação mas ele funciona com grades e forçantes padrão (sem arquivos de entrada) e não há explicação de como é possível construir um novo modelo com arquivos de entrada, quais variáveis devem ser alteradas e quais as variáveis de pré-compilação para cada tipo de opção ativada;
-	\item A documentação é estilo \emph{wiki} e a maior parte da informação está desatualizada, muito material não está disponibilizado e o manual disponível não está completo além de também estar desatualizado. Posteriormente, verificou-se que uma das autoras do modelo tem um manual mais atualizado em seu github, porém isso não está descrito na página principal do modelo;
+	\item A documentação é estilo \emph{wiki} e a maior parte da informação está desatualizada, muito material não está disponibilizado e o manual disponível não está completo além de também estar desatualizado;
 	\item Muita informação está contida no fórum de discussões, o que demanda tempo e certo conhecimento prévio do assunto para compreender o que está escrito em cada discussão;
 	\item Uma primeira tentativa foi colocar uma elevação de nível na fronteira. Após uma série de testes, foi verificado que o modelo não inclui nível como variável nas equações. Dessa forma, verificou-se que além da variável zeta, também é necessário inserir nas fronteiras as componentes de velocidade u e v das correntes de maré;
 	\item Diferente de outros modelos, na construção da grade numérica devem ser inseridos os valores de posição para cada um dos elementos calculados (rho, psi, u e v), o que gera confusão na construção da grade;
-	\item A geração da grade aninhada deve ser feita através das funções de aninhamento. Além da grade aninhada, deve haver um arquivo de contato entre ambas as grades;
 	\item O modelo mostrou-se bastante sensível quando atinge águas rasas. Modelos cujas camada de água tinha profundidas de 1 metro ou menos acabaram se mostrando instáveis. Foi estabelecido um mínimo de 3 metros para propagação da onda de maré de forma estável;
 	\item Outro fator que o modelo se mostrou sensível foi a máscara que indica onde o modelo deve interpretar como terra (mascára=0) e onde é agua (máscara=1), fazendo que houvesse acúmulo de água em determinadas quinas. Uma edição cuidadosa da máscara deve ser feita antes do modelo iniciar;
 	\item As fronteiras escolhidas tem grande influência no resultado final. Uma combinação inicial utilizada num modelo menos detalhado (não apresentado aqui) causou diversas instabilidades no modelo descrito anteriormente. Dessa forma, gastou-se muito tempo tentando entender quais seriam os problemas possíveis, pois assumiu-se que as fronteiras estavam corretas.
