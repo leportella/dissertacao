@@ -31,13 +31,13 @@
 \instituicao[a]{Universidade Federal de Santa Catarina} % Opcional
 \departamento[o]{Departamento de Geociências}
 \curso[o]{Programa de Pós-Graduação em Oceanografia da Universidade Federal de Santa Catarina como parte dos requisitos}
-\documento[a]{Qualificação} % [o] para dissertação [a] para tese
+\documento[o]{Dissertação} % [o] para dissertação [a] para tese
 \titulo{Hidrodinâmica Residual de uma Praia de Enseada Subtropical Dominada por Ondas}
 \subtitulo{Estudo de Caso da Enseada do Itapocorói} % Opcional
 \autor{Letícia Vasques dos Reis Portella Nascimento}
 \grau{Mestre em Oceanografia}
 \local{Florianópolis} 
-\data{12}{Abril}{2016}
+\data{28}{Fevereiro}{2017}
 \orientador[Orientador]{Prof. Dr. Antonio Fernando H\"arter Fetter Filho}
 % \coorientador[Coorientador\\Universidade ...]{Prof. Dr.}
 % \coordenador[Coordenador\\Universidade ...]{Prof. Dr. }
@@ -55,16 +55,16 @@
 
 % \dedicatoria{Este trabalho é dedicado aos meus colegas de classe e aos meus queridos pais.}
 
-% \agradecimento{Fetter, Eric e Godo, Jonas, Victor, Alex, Charline, Ivan, }
+% \agradecimento{Fetter, Eric e Godo, Jonas, Victor, Alex, Charline, Ivan, Marco, Sergio, Mario, Luana}
 % 
 % \epigrafe{Texto da Epígrafe. Citação relativa ao tema do trabalho. É opcional. A epígrafe pode também aparecer na abertura de cada seção ou capítulo.}
 % {(Autor da epígrafe, ano)}
 
-\textoResumo {O presente estudo tem o objetivo de avaliar a hidrodinâmica da Enseada do Itapocorói com foco na circulação residual e de longo período buscando compreender quais forçantes ambientais são mais relevantes na geração dessas correntes. Para alcançar este objetivo, será utilizado o modelo hidrodinâmico, \emph{Regional Ocean Modelling System} (ROMS). O modelo será desenvolvido em escala regional e local e calibrado com dados provenientes de três \emph{Acoustic Doppler Current Profilers} (ADCPs). Ao final do estudo, almeja-se compreender o padrão típico da circulação residual na Enseada bem como qual é o parâmetro ambiental mais influente.}
+\textoResumo {O presente estudo tem o objetivo de avaliar a hidrodinâmica da Enseada do Itapocorói com foco na circulação residual e de longo período buscando compreender quais forçantes ambientais são mais relevantes na geração dessas correntes. Para alcançar este objetivo, será utilizado o modelo hidrodinâmico, \emph{Regional Ocean Modelling System} (ROMS). O modelo será desenvolvido em escala regional e local e calibrado com dados provenientes de três \emph{Acoustic Doppler Current Profilers} (ADCPs). Verificou-se que as correntes na região tem um padrão bastante ameno, com velocidades abaixo de 50cm/s em todo domínio e abaixo de 20cm/s nas regiões internas.}
 \palavrasChave {Circulação Residual. Modelagem Numérica. ROMS. }
  
-% \textAbstract {s por ponto.}
-% \keywords {Keyword 1. Keyword 2. Keyword 3.}
+\textAbstract {s por ponto.}
+\keywords {Residual Circulation. Numerical Modelling. ROMS.}
 
 
 
@@ -79,8 +79,8 @@
 % \paginadedicatoria
 % \paginaagradecimento
 % \paginaepigrafe
-% \paginaresumo
-%\paginaabstract
+\paginaresumo
+\paginaabstract
 %\pretextuais % Substitui todos os elementos pre-textuais acima
 \listadefiguras % as listas dependem da necessidade do usuário
 \listadetabelas 
@@ -1091,7 +1091,7 @@ Os números de forma encontrados para os dados medidos podem ser observados na ta
 
 Também é possível observar a grande influência das componentes semidiurnas na figura \ref{fig:fft} onde estão apresentados os resultado de uma Transformada Rápida de Fourier (FFT). Primeiramente deve-se notar que apesar de os dados terem um tempo de medições diferentes (1 ano para Penha e 1 mês para Piçarras), os resultados de espectro se mostraram muito semelhantes. É possível perceber que existem quatro picos de energia distintos cujos períodos associados a esses picos são de 25,5, 12,5, 8,2 e 6,2 horas.  
 
-O maior pico de energia em ambos os dados analisados estava localizado na frequência de 0,08, ou seja, um período aproximado de 12,5 horas indicando a predominância semidiurna, como já foi verificado anteriormente. As componentes diurnas, tercidiurnas e quaterdiurnas se apresentaram com picos de energia semelhantes entre si, sem predominância. Outro resultante interessante é que, em ambos os gráficos, existe uma energia considerável em períodos maiores que 25 horas, mas que não pode ser bem identificada no espectro. Essa informação vai ao encontro dos dados de \citeonline{truccoloetal2006}, que verificou que cerca de 24\% da variação de nível em São Francisco do Sul poderia ser explicada por frequências submareais em São Francisco do Sul.
+O maior pico de energia em ambos os dados analisados estava localizado na frequência de 0,08, ou seja, um período aproximado de 12,5 horas indicando a predominância semidiurna, como já foi verificado anteriormente. As componentes diurnas, tercidiurnas e quaterdiurnas se apresentaram com picos de energia semelhantes entre si, sem predominância. Outro resultante interessante é que, em ambos os gráficos, existe uma energia considerável em períodos maiores que 25 horas, mas que não pode ser bem identificada no espectro. Energias com períodos maiores que 50h representaram 27,5 \% dos dados analisados. Essa informação vai ao encontro dos dados de \citeonline{truccoloetal2006}, que verificou que cerca de 24\% da variação de nível em São Francisco do Sul poderia ser explicada por frequências submareais em São Francisco do Sul. Ou seja, circulações residuais e correntes de plataforma tem um papel fundamental na dinâmica de região e, portanto, seu papel não pode ser subestimado ao se analisar a dinâmica local.
 
 \begin{landscape}
 	\begin{figure}[!htb]
@@ -1140,28 +1140,28 @@ Buscou-se tentar encontrar correlações entre a direção do vento predominante e d
 
 Nas figuras \ref{fig:curr_depthav_01}, \ref{fig:curr_depthav_02} e \ref{fig:curr_depthav_03} podem ser observadas as rosas de corrente integradas na vertical para os pontos ST001, ST002 e ST003, respectivamente.
 
-As correntes medidas apresentam velocidades muito baixas, abaixo de 0,2 m/s na maior parte do tempo. Entretanto, nota-se que a maior parte das correntes fica abaixo de 0,1 m/s (Figuras \ref{fig:hist_velcorrente_01} a \ref{fig:hist_velcorrente_03}) esse resultado pode ser melhor observado nos histogramas apresentados nas figuras \ref{fig:hist_velcorrente_01} a \ref{fig:hist_velcorrente_03} onde verifica-se que a maioria das correntes está abaixo de 0,05 m/s. 
+As correntes medidas apresentam velocidades muito baixas, abaixo de 20 cm/s na maior parte do tempo. Entretanto, nota-se que a maior parte das correntes fica abaixo de 10 cm/s (Figuras \ref{fig:hist_velcorrente_01} a \ref{fig:hist_velcorrente_03}) esse resultado pode ser melhor observado nos histogramas apresentados nas figuras \ref{fig:hist_velcorrente_01} a \ref{fig:hist_velcorrente_03} onde verifica-se que a maioria das correntes está abaixo de 5 cm/s. 
 
 Os resultados encontrados corroboram com as observações descritas em \citeonline{Schettinietal1999}. Entretanto, os autores afirmaram que as correntes obedecem mais diretamente ao regime dos ventos do que as oscilações da maré. Da mesma forma como foi feito com a temperatura, foram desenvolvidos alguns gráficos tentando correlacionar a velocidade da corrente com a direção ou o vento (Figuras \ref{fig:corrvento01} a \ref{fig:corrventodir03}). Novamente nenhum padrão emergiu nas análises realizadas e não foi possível relacionar a velocidade da corrente com o vento.
 
-As figuras \ref{fig:quiver01} a \ref{fig:quiver03} apresentam na parte superior os vetores indicando a direção e magnitude das correntes e na parte inferior a velocidade. Enquanto nos pontos ST001 e ST002 não foi possível associar os episódios de grande velocidade com direções predominantes, no ponto ST003 percebe-se que as correntes que atigiram velocidades acima de 0,15 m/s estão associadas a correntes de sudeste. 
+As figuras \ref{fig:quiver01} a \ref{fig:quiver03} apresentam na parte superior os vetores indicando a direção e magnitude das correntes e na parte inferior a velocidade. Enquanto nos pontos ST001 e ST002 não foi possível associar os episódios de grande velocidade com direções predominantes, no ponto ST003 percebe-se que as correntes que atigiram velocidades acima de 15 cm/s estão associadas a correntes de sudeste. 
 
 Na figura \ref{fig:residualmedido} pode ser observada a resultante medida num período de 50 horas. No ponto ST001 a residual é praticamente constante de SO com variações de intensidade. No ponto ST002 já existe uma variação maior entre SE e SO. As intensidades no ponto ST002 parecem ter menos variação do que no ponto ST001. Já no ponto ST003, a residual é pequena e de O geralmente, com grandes residual de SE acontecendo no período. 
 
 \begin{figure}[!htb]
-	\includegraphics[width=1.0\textwidth]{figuras/CurrentRose_ST001_DepthAv_CM.png}
+	\includegraphics[width=1.0\textwidth]{figuras/CurrentRose_ST001_DepthAv.png}
 	\centering
 	\caption{Rosa de correntes no ponto ST001 integrada na vertical (em centímetros)}\label{fig:curr_depthav_01}
 \end{figure}
 
 \begin{figure}[!htb]
-	\includegraphics[width=1\textwidth]{figuras/CurrentRose_ST002_DepthAv_CM.png}
+	\includegraphics[width=1\textwidth]{figuras/CurrentRose_ST002_DepthAv.png}
 	\centering
 	\caption{Rosa de correntes no ponto ST002 integrada na vertical (em centímetros)}\label{fig:curr_depthav_02}
 \end{figure}
 	
 \begin{figure}[!htb]
-	\includegraphics[width=1\textwidth]{figuras/CurrentRose_ST003_DepthAv_CM.png}
+	\includegraphics[width=1\textwidth]{figuras/CurrentRose_ST003_DepthAv.png}
 	\centering
 	\caption{Rosa de correntes no ponto ST003 integrada na vertical (em centímetros)}\label{fig:curr_depthav_03}
 \end{figure}
@@ -1182,6 +1182,24 @@ Na figura \ref{fig:residualmedido} pode ser observada a resultante medida num pe
 	\includegraphics[width=1.1\textwidth]{figuras/Corrente_ST003_HistVel.png}
 	\centering
 	\caption{Histograma da velocidade de corrente no ponto ST003 integrada na vertical}\label{fig:hist_velcorrente_03}
+\end{figure}
+
+\begin{figure}[!htb]
+	\includegraphics[width=1.0\textwidth]{figuras/english/ST001_cumulative_velocity_hist.png}
+	\centering
+	\caption{Histograma cumulativo da velocidade da corrente em m/s no ST001. Linhas em preto indicam os quartis de 25, 50 e 90\%}\label{fig:cumulativo_01}
+\end{figure}
+
+\begin{figure}[!htb]
+	\includegraphics[width=1.0\textwidth]{figuras/english/ST002_cumulative_velocity_hist.png}
+	\centering
+	\caption{Histograma cumulativo da velocidade da corrente em m/s no ST002. Linhas em preto indicam os quartis de 25, 50 e 90\%}\label{fig:cumulativo_02}
+\end{figure}
+
+\begin{figure}[!htb]
+	\includegraphics[width=1.0\textwidth]{figuras/english/ST003_cumulative_velocity_hist.png}
+	\centering
+	\caption{Histograma cumulativo da velocidade da corrente em m/s no ST003. Linhas em preto indicam os quartis de 25, 50 e 90\%}\label{fig:cumulativo_03}
 \end{figure}
 
 \begin{landscape}
@@ -1302,29 +1320,29 @@ As figuras \ref{fig:CalibracaoReg1} a \ref{fig:CalibracaoReg3} apresentam a comp
 
 Apesar de terem sido retirados de uma grade menos refinada (regional) e não terem passado por um processo de calibração adequado para melhorar a performance do modelo, o mesmo já apresenta uma coerência com os dados medidos, o que indica que o presente estudo terá condições de atingir os resultados no prazo estipulado.
 
-\begin{landscape}
-	\begin{figure}[!htb]
-		\includegraphics[width=1.6\textwidth]{figuras/Calibracao_Regional01ST001.png}
-		\centering
-		\caption{Comparação de dados medidos de nível com modelados na grade regional e ponto ST001}\label{fig:CalibracaoReg1}
-	\end{figure}
-\end{landscape}
-
-\begin{landscape}
-	\begin{figure}[!htb]
-		\includegraphics[width=1.6\textwidth]{figuras/Calibracao_Regional01ST002.png}
-		\centering
-		\caption{Comparação de dados medidos de nível com modelados na grade regional e ponto ST002}\label{fig:CalibracaoReg2}
-	\end{figure}
-\end{landscape}
-
-\begin{landscape}
-	\begin{figure}[!htb]
-		\includegraphics[width=1.6\textwidth]{figuras/Calibracao_Regional01ST003.png}
-		\centering
-		\caption{Comparação de dados medidos de nível com modelados na grade regional e ponto ST003}\label{fig:CalibracaoReg3}
-	\end{figure}
-\end{landscape}
+%\begin{landscape}
+%	\begin{figure}[!htb]
+%		\includegraphics[width=1.6\textwidth]{figuras/Calibracao_Regional01ST001.png}
+%		\centering
+%		\caption{Comparação de dados medidos de nível com modelados na grade regional e ponto ST001}\label{fig:CalibracaoReg1}
+%	\end{figure}
+%\end{landscape}
+%
+%\begin{landscape}
+%	\begin{figure}[!htb]
+%		\includegraphics[width=1.6\textwidth]{figuras/Calibracao_Regional01ST002.png}
+%		\centering
+%		\caption{Comparação de dados medidos de nível com modelados na grade regional e ponto ST002}\label{fig:CalibracaoReg2}
+%	\end{figure}
+%\end{landscape}
+%
+%\begin{landscape}
+%	\begin{figure}[!htb]
+%		\includegraphics[width=1.6\textwidth]{figuras/Calibracao_Regional01ST003.png}
+%		\centering
+%		\caption{Comparação de dados medidos de nível com modelados na grade regional e ponto ST003}\label{fig:CalibracaoReg3}
+%	\end{figure}
+%\end{landscape}
 
 
 
@@ -1348,95 +1366,9 @@ Uma série de dificuldades foram encontradas nas etapas iniciais do modelo que to
 \end{itemize}
 
 
+\chapter{CONCLUSÃO}
 
-
-% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
-\begin{landscape}
-\centering	
-
-\chapter{CRONOGRAMA INICIAL}
-
-\begin{table}[!htpb]
-\caption{Cronograma das atividades previstas proposto na qualificação 1}
-\label{t_cronograma}
-\centering
-\begin{small} 
-
-\setlength{\tabcolsep}{3pt} 
-\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}\hline
- & \multicolumn{5}{c|}{2015} & \multicolumn{12}{c|}{2016}  & \multicolumn{3}{c|}{2017}\\ %\cline{2-25}
-\raisebox{1.5ex}{Atividade}& ago & set & out & nov & dez & jan & fev & mar & abr & mai & jun & jul & ago & set & out & nov & dez & jan & fev & mar\\ \hline
-
-Qualificação - Etapa 1 & X & & & & & & & & & & & & & & & & & & &\\ \hline
-Correções de acordo com a banca & & X & X & & & & & & & & & & & & & & &  & &\\ \hline
-Revisão Bibliográfica & X & X & X & X & X & X & X & X & X & X & X & X & X & X & X & X & X &  & &\\ \hline
-\vtop{\hbox{\strut Desenvolvimento de}\hbox{\strut Grades Numéricas e Batimetrias}} & & X & X & X& X& & & & & & & & & & & & &  & &\\ \hline
-Testes de sensibilidade do modelo & & & X & X & X& X& & & & & & & & & & & & & &\\ \hline
-Análise dos dados de ADCP & & X & X & X & X & X & X & & & & & & & & & & &  & &\\ \hline
-\vtop{\hbox{\strut Obtenção dos dados de \textit{input}}\hbox{\strut (Maré e Vento)}} & & X & X & X& X& & & & & & & & & & & & &  & &\\ \hline
-\emph{Setups} de calibração & &X & X& X &X &X &X & & & & & & & & & & &  & &\\ \hline
-Escrita da dissertação com primeiros resultados & & & & & & & &X &X & & & & & & & & &  & &\\ \hline
-Qualificação - Etapa 2 & & & & & & & & & &X & & & & & & & &  & &\\ \hline
-\vtop{\hbox{\strut Modificação do projeto}\hbox{\strut de acordo com sugestões da banca}}  & & & & & & & & & & & X& X& & & & & &   & &\\ \hline
-\emph{Setups} finais & & & & & & & & & & & & X& X& X& X& & &  & &\\ \hline
-\vtop{\hbox{\strut Cálculo do Balanço }\hbox{\strut de Momento e Vorticidade}}  & & & & & & & & & & X & X & X& X& X& X& & &  & &\\ \hline
-Análise e avaliação dos resultados & & & & & & & & & & & &X &X &X & X & & & & &\\ \hline
-\vtop{\hbox{\strut Desenvolvimento de rotinas}\hbox{\strut de pós-processamento}}  & & &X & X& X&X & X&X & X& X& X&X & X& X& X& X& X&  & &\\ \hline
-Escrita da dissertação & & & & & & & & & & & & & &X &X &X & X&  & &\\ \hline
-Escrita do Artigo & & & & & & & & & & & & & &X &X &X & X&  & &\\ \hline
-Leitura pelo orientador e correções & & & & & & & & & & & & & & & & & & X &X &\\ \hline
-Defesa & & & & & & & & & & & & & & & & & &  & &X\\ \hline
-
-\end{tabular} 
-\end{small}
-\end{table} 
-
-\chapter{CRONOGRAMA PREVISTO}
-
-\begin{table}[!htpb]
-	\caption{Cronograma das atividades previstas atualizado}
-	\label{t_cronograma2}
-	\centering
-	\begin{small} 
-		
-		\setlength{\tabcolsep}{3pt} 
-		\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|}\hline
-			%& \multicolumn{5}{c|}{2015} & \multicolumn{12}{c|}{2016}  & \multicolumn{3}{c|}{2017}\\ %\cline{2-25}
-			\raisebox{1.5ex}{Atividade}& mai & jun & jul & ago & set & out & nov & dez & jan & fev & mar\\ \hline
-			
-		Correções das sugestões da banca            & x   & x   &     &     &     &     &     &     &     &     &     \\ \hline
-		Testes de Sensibilidade                     & x   & x   & x   &     &     &     &     &     &     &     &     \\ \hline
-		Testes de calibração                        & x   & x   & x   &     &     &     &     &     &     &     &     \\ \hline
-		Setups finais                               &     &     &     & x   & x   &     &     &     &     &     &     \\ \hline
-		Cálculos dos residuais                      &     &     &     &     &     & x   &     &     &     &     &     \\ \hline
-		Cálculo do Balanço de Momento e Vorticidade &     &     &     &     & x   & x   & x   &     &     &     &     \\ \hline
-		Desenvolvimento do Artigo                   & x   & x   & x   & x   & x   &     &     &     &     &     &     \\ \hline
-		Desenvolvimento da Dissertação              &     &     &     &     &     & x   & x   & x   & x   &     &     \\ \hline
-		Leitura e correção pelo orientador          &     &     &     &     &     &     &     &     &     & x   &     \\ \hline
-		Defesa                                      &     &     &     &     &     &     &     &     &     &     & x  \\ \hline
-			
-		\end{tabular} 
-	\end{small}
-\end{table} 
-
-\end{landscape}
-
-% \chapter{RESULTADOS ESPERADOS}
-%
-% Espera-se, ao final do trabalho, obter os seguintes resultados:
-%
-% \begin{itemize}
-%  \item Um modelo regional e local, hidrodinâmico e de ondas, calibrado e operante para a região da % Enseada do Itapocorói;
-%  \item Mapas da circulação residual em diferentes períodos de tempo (mensal, sazonal, anual, etc);
-%  \item Definição do parâmetro ambiental que mais influencia a dinâmica de longo período da região;
-%  \item Análises estatísticas dos dados dos ADCPs.
-% \end{itemize}
-
-
-% 
-% \chapter{CONCLUSÃO}
-% 
-% As conclusões devem responder às questões da pesquisa, em relação aos objetivos e hipóteses. Devem ser breves podendo apresentar recomendações e sugestões para trabalhos futuros.
+As conclusões devem responder às questões da pesquisa, em relação aos objetivos e hipóteses. Devem ser breves podendo apresentar recomendações e sugestões para trabalhos futuros.
 
 \bibliographystyle{ufscThesis/ufsc-alf}
 \bibliography{bibliografia}
@@ -1448,58 +1380,203 @@ Defesa & & & & & & & & & & & & & & & & & &  & &X\\ \hline
 
 \begin{landscape}
 	\begin{figure}[!htb]
-		\includegraphics[width=1.6\textwidth]{figuras/Temperatura_Vento_ST001.png}
+		\includegraphics[width=1.5\textwidth]{figuras/CurrentRose_ST001_Cel1.png}
 		\centering
-		\caption{Comparação dos dados de temperatura do ponto ST001 e da direção do vento}\label{fig:tempvento01}
+		\caption{Rosa de correntes no ponto ST001 célula 1 (em centímetros)}\label{fig:ST001Cel1}
 	\end{figure}
 	
 	\begin{figure}[!htb]
-		\includegraphics[width=1.6\textwidth]{figuras/Temperatura_Vento_ST002.png}
+		\includegraphics[width=1.5\textwidth]{figuras/CurrentRose_ST001_Cel2.png}
 		\centering
-		\caption{Comparação dos dados de temperatura do ponto ST002 e da direção do vento}\label{fig:tempvento02}
+		\caption{Rosa de correntes no ponto ST001 célula 2 (em centímetros)}\label{fig:ST001Cel2}
+	\end{figure}\
+
+	\begin{figure}[!htb]
+		\includegraphics[width=1.5\textwidth]{figuras/CurrentRose_ST001_Cel3.png}
+		\centering
+		\caption{Rosa de correntes no ponto ST001 célula 3 (em centímetros)}\label{fig:ST001Cel3}
 	\end{figure}
 	
 	\begin{figure}[!htb]
-		\includegraphics[width=1.6\textwidth]{figuras/Temperatura_Vento_ST003.png}
+		\includegraphics[width=1.5\textwidth]{figuras/CurrentRose_ST002_Cel1.png}
 		\centering
-		\caption{Comparação dos dados de temperatura do ponto ST003 e da direção do vento}\label{fig:tempvento03}
+		\caption{Rosa de correntes no ponto ST002 célula 1 (em centímetros)}\label{fig:ST002Cel1}
+	\end{figure}
+	
+	\begin{figure}[!htb]
+		\includegraphics[width=1.5\textwidth]{figuras/CurrentRose_ST002_Cel2.png}
+		\centering
+		\caption{Rosa de correntes no ponto ST002 célula 2 (em centímetros)}\label{fig:ST002Cel2}
 	\end{figure}
 
 	\begin{figure}[!htb]
-		\includegraphics[width=1.6\textwidth]{figuras/Corrente_Vento_ST001.png}
+		\includegraphics[width=1.5\textwidth]{figuras/CurrentRose_ST002_Cel3.png}
 		\centering
-		\caption{Comparação dos dados de corrente do ponto ST001 e da velocidade do vento}\label{fig:corrvento01}
+		\caption{Rosa de correntes no ponto ST002 célula 3 (em centímetros)}\label{fig:ST002Cel3}
 	\end{figure}
 
 	\begin{figure}[!htb]
-		\includegraphics[width=1.6\textwidth]{figuras/Corrente_Vento_ST002.png}
+		\includegraphics[width=1.5\textwidth]{figuras/CurrentRose_ST002_Cel4.png}
 		\centering
-		\caption{Comparação dos dados de corrente do ponto ST002 e da velocidade do vento}\label{fig:corrvento02}
+		\caption{Rosa de correntes no ponto ST002 célula 4 (em centímetros)}\label{fig:ST002Cel4}
 	\end{figure}
 	
 	\begin{figure}[!htb]
-		\includegraphics[width=1.6\textwidth]{figuras/Corrente_Vento_ST003.png}
+		\includegraphics[width=1.5\textwidth]{figuras/CurrentRose_ST002_Cel5.png}
 		\centering
-		\caption{Comparação dos dados de corrente do ponto ST003 e da velocidade do vento}\label{fig:corrvento01}
+		\caption{Rosa de correntes no ponto ST002 célula 5 (em centímetros)}\label{fig:ST002Cel5}
+	\end{figure}
+	
+	\begin{figure}[!htb]
+		\includegraphics[width=1.5\textwidth]{figuras/CurrentRose_ST002_Cel6.png}
+		\centering
+		\caption{Rosa de correntes no ponto ST002 célula 6 (em centímetros)}\label{fig:ST002Cel6}
 	\end{figure}
 
 	\begin{figure}[!htb]
-		\includegraphics[width=1.6\textwidth]{figuras/Corrente_VentoDir_ST001.png}
+		\includegraphics[width=1.5\textwidth]{figuras/CurrentRose_ST002_Cel7.png}
 		\centering
-		\caption{Comparação dos dados de corrente do ponto ST001 e da direção do vento}\label{fig:corrventodir01}
+		\caption{Rosa de correntes no ponto ST002 célula 7 (em centímetros)}\label{fig:ST002Cel7}
+	\end{figure}
+
+	\begin{figure}[!htb]
+		\includegraphics[width=1.5\textwidth]{figuras/CurrentRose_ST002_Cel8.png}
+		\centering
+		\caption{Rosa de correntes no ponto ST002 célula 8 (em centímetros)}\label{fig:ST002Cel8}
 	\end{figure}
 	
 	\begin{figure}[!htb]
-		\includegraphics[width=1.6\textwidth]{figuras/Corrente_VentoDir_ST002.png}
+		\includegraphics[width=1.5\textwidth]{figuras/CurrentRose_ST002_Cel9.png}
 		\centering
-		\caption{Comparação dos dados de corrente do ponto ST002 e da direção do vento}\label{fig:corrventodir02}
+		\caption{Rosa de correntes no ponto ST002 célula 9 (em centímetros)}\label{fig:ST002Cel9}
 	\end{figure}
 	
 	\begin{figure}[!htb]
-		\includegraphics[width=1.6\textwidth]{figuras/Corrente_VentoDir_ST003.png}
+		\includegraphics[width=1.5\textwidth]{figuras/CurrentRose_ST002_Cel10.png}
 		\centering
-		\caption{Comparação dos dados de corrente do ponto ST003 e da direção do vento}\label{fig:corrventodir03}
+		\caption{Rosa de correntes no ponto ST002 célula 10 (em centímetros)}\label{fig:ST002Cel10}
 	\end{figure}
+	
+	\begin{figure}[!htb]
+		\includegraphics[width=1.5\textwidth]{figuras/CurrentRose_ST003_Cel1.png}
+		\centering
+		\caption{Rosa de correntes no ponto ST003 célula 1 (em centímetros)}\label{fig:ST003Cel1}
+	\end{figure}
+	
+	\begin{figure}[!htb]
+		\includegraphics[width=1.5\textwidth]{figuras/CurrentRose_ST003_Cel2.png}
+		\centering
+		\caption{Rosa de correntes no ponto ST003 célula 2 (em centímetros)}\label{fig:ST003Cel2}
+	\end{figure}
+	
+	\begin{figure}[!htb]
+		\includegraphics[width=1.5\textwidth]{figuras/CurrentRose_ST003_Cel3.png}
+		\centering
+		\caption{Rosa de correntes no ponto ST003 célula 3 (em centímetros)}\label{fig:ST003Cel3}
+	\end{figure}
+	
+	\begin{figure}[!htb]
+		\includegraphics[width=1.5\textwidth]{figuras/CurrentRose_ST003_Cel4.png}
+		\centering
+		\caption{Rosa de correntes no ponto ST003 célula 4 (em centímetros)}\label{fig:ST003Cel4}
+	\end{figure}
+	
+	\begin{figure}[!htb]
+		\includegraphics[width=1.5\textwidth]{figuras/CurrentRose_ST003_Cel5.png}
+		\centering
+		\caption{Rosa de correntes no ponto ST003 célula 5 (em centímetros)}\label{fig:ST003Cel5}
+	\end{figure}
+%
+%	
+%	\begin{figure}[!htb]
+%		\includegraphics[width=1.6\textwidth]{figuras/CurrentRose_ST003_Cel7.png}
+%		\centering
+%		\caption{Rosa de correntes no ponto ST003 célula 7 (em centímetros)}\label{fig:ST003Cel7}
+%	\end{figure}
+%	
+%	\begin{figure}[!htb]
+%		\includegraphics[width=1.6\textwidth]{figuras/CurrentRose_ST003_Cel8.png}
+%		\centering
+%		\caption{Rosa de correntes no ponto ST003 célula 8 (em centímetros)}\label{fig:ST003Cel8}
+%	\end{figure}
+%	
+%	\begin{figure}[!htb]
+%		\includegraphics[width=1.6\textwidth]{figuras/CurrentRose_ST003_Cel9.png}
+%		\centering
+%		\caption{Rosa de correntes no ponto ST003 célula 9 (em centímetros)}\label{fig:ST003Cel9}
+%	\end{figure}
+%	
+%	\begin{figure}[!htb]
+%		\includegraphics[width=1.6\textwidth]{figuras/CurrentRose_ST003_Cel10.png}
+%		\centering
+%		\caption{Rosa de correntes no ponto ST003 célula 10 (em centímetros)}\label{fig:ST003Cel10}
+%	\end{figure}
+%	
+%	\begin{figure}[!htb]
+%		\includegraphics[width=1.6\textwidth]{figuras/CurrentRose_ST003_Cel11.png}
+%		\centering
+%		\caption{Rosa de correntes no ponto ST003 célula 11 (em centímetros)}\label{fig:ST003Cel11}
+%	\end{figure}
+%	
+%	\begin{figure}[!htb]
+%		\includegraphics[width=1.6\textwidth]{figuras/CurrentRose_ST003_Cel12.png}
+%		\centering
+%		\caption{Rosa de correntes no ponto ST003 célula 12 (em centímetros)}\label{fig:ST003Cel12}
+%	\end{figure}
+	
+%	\begin{figure}[!htb]
+%		\includegraphics[width=1.6\textwidth]{figuras/Temperatura_Vento_ST001.png}
+%		\centering
+%		\caption{Comparação dos dados de temperatura do ponto ST001 e da direção do vento}\label{fig:tempvento01}
+%	\end{figure}
+%	
+%	\begin{figure}[!htb]
+%		\includegraphics[width=1.6\textwidth]{figuras/Temperatura_Vento_ST002.png}
+%		\centering
+%		\caption{Comparação dos dados de temperatura do ponto ST002 e da direção do vento}\label{fig:tempvento02}
+%	\end{figure}
+%	
+%	\begin{figure}[!htb]
+%		\includegraphics[width=1.6\textwidth]{figuras/Temperatura_Vento_ST003.png}
+%		\centering
+%		\caption{Comparação dos dados de temperatura do ponto ST003 e da direção do vento}\label{fig:tempvento03}
+%	\end{figure}
+%
+%	\begin{figure}[!htb]
+%		\includegraphics[width=1.6\textwidth]{figuras/Corrente_Vento_ST001.png}
+%		\centering
+%		\caption{Comparação dos dados de corrente do ponto ST001 e da velocidade do vento}\label{fig:corrvento01}
+%	\end{figure}
+%
+%	\begin{figure}[!htb]
+%		\includegraphics[width=1.6\textwidth]{figuras/Corrente_Vento_ST002.png}
+%		\centering
+%		\caption{Comparação dos dados de corrente do ponto ST002 e da velocidade do vento}\label{fig:corrvento02}
+%	\end{figure}
+%	
+%	\begin{figure}[!htb]
+%		\includegraphics[width=1.6\textwidth]{figuras/Corrente_Vento_ST003.png}
+%		\centering
+%		\caption{Comparação dos dados de corrente do ponto ST003 e da velocidade do vento}\label{fig:corrvento01}
+%	\end{figure}
+%
+%	\begin{figure}[!htb]
+%		\includegraphics[width=1.6\textwidth]{figuras/Corrente_VentoDir_ST001.png}
+%		\centering
+%		\caption{Comparação dos dados de corrente do ponto ST001 e da direção do vento}\label{fig:corrventodir01}
+%	\end{figure}
+%	
+%	\begin{figure}[!htb]
+%		\includegraphics[width=1.6\textwidth]{figuras/Corrente_VentoDir_ST002.png}
+%		\centering
+%		\caption{Comparação dos dados de corrente do ponto ST002 e da direção do vento}\label{fig:corrventodir02}
+%	\end{figure}
+%	
+%	\begin{figure}[!htb]
+%		\includegraphics[width=1.6\textwidth]{figuras/Corrente_VentoDir_ST003.png}
+%		\centering
+%		\caption{Comparação dos dados de corrente do ponto ST003 e da direção do vento}\label{fig:corrventodir03}
+%	\end{figure}
 \end{landscape}
 
 %\anexo
