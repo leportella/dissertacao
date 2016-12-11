@@ -55,8 +55,12 @@
 
 % \dedicatoria{Este trabalho é dedicado aos meus colegas de classe e aos meus queridos pais.}
 
-% \agradecimento{Fetter, Eric e Godo, Jonas, Victor, Alex, Charline, Ivan, Marco, Sergio, Mario, Luana}
-% 
+% Fetter, Eric e Godo, Jonas, Victor, Alex, Charline, Ivan, Marco, Sergio, Mario, Luana, Consuelo
+\agradecimento{
+
+Agredeço ao Prof. Dr. Antonio H. da F. Klein e ao Professor João Luiz Baptista de Carvalho por terem gentilmente cedidos os dados medidos imprescindíveis para o desenvolvimento do atual trabalho. Também devo agradecer à CB\&I por toda a compreensão que foi necessária para que eu pudesse participar mestrado bem como todo o apoio cedido durante o processo.
+}
+ 
 % \epigrafe{Texto da Epígrafe. Citação relativa ao tema do trabalho. É opcional. A epígrafe pode também aparecer na abertura de cada seção ou capítulo.}
 % {(Autor da epígrafe, ano)}
 
@@ -77,7 +81,7 @@
 \folhaderosto % Se nao quiser imprimir a ficha, é só não usar o parâmetro
 % \folhaaprovacao
 % \paginadedicatoria
-% \paginaagradecimento
+\paginaagradecimento
 % \paginaepigrafe
 \paginaresumo
 \paginaabstract
@@ -288,54 +292,57 @@ e ao sul pela foz do rio Piçarras. Do rio Piçarras até a Ponta da Penha, está pa
 
 Grande parte da economia local advém do turismo. Na maior parte do mundo, praias são o principal atrativo turístico da costa sendo que boa parte da economia de países desenvolvidos ou em desenvolvimento dependem desse tipo de turismo \cite{kleinetal2009}. No Balneáro Piçarras não é diferente, em 2010 cerca de 17 mil pessoas residiam permanentemente na cidade \cite{IBGE}, porém estima-se que apenas nos primeiros três meses de 2010, mais de 133 mil turistas estiveram no município de Piçarras (Tabela \ref{tab:turistas}) com uma receita estimada de mais de 62,5 milhões de reais (Tabela \ref{tab:receita}). Também verifica-se que o turismo representa mais de 50\% dos motivos de viagem \cite{santur} e os atrativos naturais aparecem como o grande motivador turístico da região (Tabela \ref{tab:atrativos}).
 
-\begin{table}[h]
-	\centering
-	\caption{Movimento estimado de turistas para os três primeiros meses de 2010 no município de Piçarras. Fonte: \citeonline{santur}}\label{tab:turistas}
-	\begin{tabular}{c|c|c|c}
+\begin{tabularx}{\linewidth}{cccc}
+	\caption{Movimento estimado de turistas para os três primeiros meses de 2010 no município de Piçarras. Fonte: \citeonline{santur}}\label{tab:turistas} \\
+	\toprule
+	\textbf{Origem} & \textbf{Janeiro} & \textbf{Fevereiro} &
+	\textbf{Março} \\[6pt]
+	\midrule
+	\endhead
+		Nacionais & 60.123  & 54.682   & 16.774   \\[6pt]
+		Estrangeiros & 323   & 1.066   & 60  \\[6pt]
+		Total & 60.446  & 55.748  & 16.834  \\[6pt]
+	\bottomrule
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{cccc}
+	\caption{Receita estimada em reais para os três primeiros meses de 2010 no município de Piçarras. Fonte: \citeonline{santur}}\label{tab:receita} \\
+	\toprule
+	\textbf{Origem} & \textbf{Janeiro} & \textbf{Fevereiro} &
+	\textbf{Março} \\[6pt]
+	\midrule
+	\endhead
+		Nacionais & 33.376.245,70  & 22.339.482,46   & 5.299.255,48   \\[6pt]
+		Estrangeiros & 323.000,00   & 1.205.400,04   & 75.000,00  \\[6pt]
+		Total & 33.699.245,70  & 23.544.882,50  & 5.374.255,48  \\[6pt]
+	\bottomrule
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{cccc}
+	\caption{Principais atrativos turísticos considerados pelos turistas para os três primeiros meses de 2010 no município de Piçarras. Fonte: \citeonline{santur}}\label{tab:atrativos} \\
+	\toprule
+	\textbf{Origem} & \textbf{Janeiro} & \textbf{Fevereiro} &
+	\textbf{Março} \\[6pt]
+	\midrule
+	\endhead
 		Origem & Janeiro & Fevereiro & Março  \\ 
 		\hline                              
-		Nacionais & 60.123  & 54.682   & 16.774   \\
-		Estrangeiros & 323   & 1.066   & 60  \\
-		Total & 60.446  & 55.748  & 16.834  \\
-	\end{tabular}
-\end{table}
-
-\begin{table}[h]
-	\centering
-	\caption{Receita estimada em reais para os três primeiros meses de 2010 no município de Piçarras. Fonte: \citeonline{santur}}\label{tab:receita}
-	\begin{tabular}{c|c|c|c}
-		Origem & Janeiro & Fevereiro & Março  \\ 
-		\hline                              
-		Nacionais & 33.376.245,70  & 22.339.482,46   & 5.299.255,48   \\
-		Estrangeiros & 323.000,00   & 1.205.400,04   & 75.000,00  \\
-		Total & 33.699.245,70  & 23.544.882,50  & 5.374.255,48  \\
-	\end{tabular}
-\end{table}
-
-\begin{table}[h]
-	\centering
-	\caption{Principais atrativos turísticos considerados pelos turistas para os três primeiros meses de 2010 no município de Piçarras. Fonte: \citeonline{santur}}\label{tab:atrativos}
-	\begin{tabular}{c|c|c|c}
-		Origem & Janeiro & Fevereiro & Março  \\ 
-		\hline                              
- 		Atrativos Naturais         & 53,27\%  & 55,91\%   &  39,08\%  \\
-		Manifestações Populares    & 27,54\%   & 30,97\%   & 52,11\%  \\
-		Tratamento de Saúde        & 16,03\%  & 12,86\%  & 6,51\%  \\
-	    At. Históricas e Culturais & 2,48\%  & -  &  1,53\%  \\
-	    Entretenimento             & 0,23\%  & -  & 0,39\%  \\
-	    Compras                    & 0,23\%  & -  &  0,38\% \\
-	    Religião/Peregrinação      & 0,22\%  & -   & -  \\
-	    Visita a Amigos e Parentes & -  & 0,26\%  & -  \\
-	    Total                      & 100,0\%  & 100,0\%  & 100,0\%  \\
-	\end{tabular}
-\end{table}
-
+		Atrativos Naturais         & 53,27\%  & 55,91\%   &  39,08\%  \\[6pt]
+		Manifestações Populares    & 27,54\%   & 30,97\%   & 52,11\%  \\[6pt]
+		Tratamento de Saúde        & 16,03\%  & 12,86\%  & 6,51\%  \\[6pt]
+		At. Históricas e Culturais & 2,48\%  & -  &  1,53\%  \\[6pt]
+		Entretenimento             & 0,23\%  & -  & 0,39\%  \\[6pt]
+		Compras                    & 0,23\%  & -  &  0,38\% \\[6pt]
+		Religião/Peregrinação      & 0,22\%  & -   & -  \\[6pt]
+		Visita a Amigos e Parentes & -  & 0,26\%  & -  \\[6pt]
+		Total                      & 100,0\%  & 100,0\%  & 100,0\%  \\[6pt]
+	\bottomrule
+\end{tabularx}
 
 
 \newpage
 Principalmente por conta desse atrativo turístico, a Enseada sofreu o mesmo processo acelerado de urbanização que o litoral centro-norte catarinense passou, em especial nos últimos 30 anos. Nesse período, houve um incremento populacional considerável e com pouca atenção, por parte das autoridades locais, aos processos costeiros que fazem parte da dinâmica da região \cite{mma}. A praia de Piçarras, região sul da Enseada e local das maiores taxas de desenvolvimento urbano, sofre com um grande problema erosivo (Figura \ref{fig:erosao}) e vem sendo constantemente estudada em busca de formas de mitigá-lo
 \cite{Delft2008, Araujoetal2010,freitasetal2010,Almeida2013,Ribeiro2014}. 
-
 
 
 \begin{figure}[!htb]
@@ -418,7 +425,7 @@ Após a obtenção de um modelo calibrado, serão realizadas rodadas com as configur
 
 \section{Dados medidos}
 
-Os dados que serão utilizados na calibração do modelo foram coletados pelas equipes da Coastal Planning \& Engineering do Brasil (CPE) e o Laboratório de Oceanografia Costeira (LOC) da Universidade Federal de Santa Catarina no período de 19/08/2011 a 22/09/2011, financiado pelo Conselho Nacional de Desenvolvimento Científico e Tecnológico (CNPQ\_CTTranArea 22/2008, Proc. No. 575008/2008-3) e gentilmente cedidos pelo Prof. Dr. Antonio H. da F. Klein (LOC/UFSC).
+Os dados que serão utilizados na calibração do modelo foram coletados pelas equipes da Coastal Planning \& Engineering do Brasil (CPE) e o Laboratório de Oceanografia Costeira (LOC) da Universidade Federal de Santa Catarina no período de 19/08/2011 a 22/09/2011, financiado pelo Conselho Nacional de Desenvolvimento Científico e Tecnológico (CNPQ\_CTTranArea 22/2008, Proc. No. 575008/2008-3).
 
 Foram coletados dados de temperatura, nível, corrente e ondas com equipamentos do tipo \textit{Acoustic Doppler Current Profiler} (ADCP). Os equipamentos do tipo ADCP utilizam-se do efeito Doppler para avaliar a direção e a velocidade das correntes com base na modificação de um sinal sonoro de alto frequência ao ser refletido em partículas suspensas do fluido em movimento. O ADCP consegue avaliar essa diferença de velocidade entre o pulso emitido e o refletido em diferentes intervalos de profundidade, denominado células. A suposição básica  desse método é que as partículas em suspensão deslocam-se com a mesma velocidade do fluxo de água \cite{livroinstrumentacao}. De forma simples e geral, a velocidade é dada por:
 
@@ -442,38 +449,50 @@ Os ADCPs podem ser usados basicamente de duas formas: da forma estática, onde sã
 
 Foram instalados três ADCPs na região da Enseada do Itapocorói em ponto fixos, de forma a se obter uma medição euleriana de dados (Figura \ref{fig:adcps}). Os ADCPs foram dispostos em diferentes níveis de exposição às ondulações mais intensas de sul: abrigado (ST001), semi-exposto (ST002) e exposto (ST003) de acordo com as coordenadas dispostas na tabela \ref{tab:adcps} e no mapa da figura \ref{fig:adcps}. 
 
-\begin{table}[h]
-	\centering
-	\caption{Localização dos equipamentos}\label{tab:adcps}
-	\begin{tabular}{r|lr}
-		
-		Equipamento & Latitude & Longitude \\ 
-		\hline                              
-		ST001 & 26° 46' 5.79" S  & 48° 39' 15,58"W\\
-		ST002 & 26° 45' 51,74"S  & 48° 39' 42,37"W \\
-		ST003 & 26° 42' 18,36"S  & 48° 36' 56,70"W	
-	\end{tabular}
-\end{table}
+\begin{tabularx}{\linewidth}{ccc}
+	\caption{Localização dos equipamentos}\label{tab:adcps} \\
+	\toprule
+	\textbf{Equipamento} & \textbf{Latitude} & \textbf{Longitude} \\[6pt]
+	\midrule
+	\endhead
+		ST001 & 26° 46' 5.79" S  & 48° 39' 15,58"W \\[6pt]
+		ST002 & 26° 45' 51,74"S  & 48° 39' 42,37"W \\[6pt]
+		ST003 & 26° 42' 18,36"S  & 48° 36' 56,70"W \\[6pt]	
+	\bottomrule
+\end{tabularx}
+
 
 Os equipamentos foram fundeados voltados para cima (\textit{upward-looking}) e configurados para adquirirem informações com intervalos de 30 minutos. As medições de pressão (nível) e temperatura foram coletadas de forma instantânea (medidas pontuais) enquanto que as medições de corrente são resultados de uma média de 5 minutos de aquisição. Para a medição de ondas os dados foram coletados a cada 1 hora durante 20 minutos, numa taxa de aquisição de 4 Hz (0,25 s) no ST001 e ST002e 2 Hz (0,5 s) no ST003.
 
 Os dados passaram por todo o processo de análise de consistência descritos em \citeonline{RibeiroReport} e obtiveram uma taxa de recuperação dos dados acima de 96\% para todos os parâmetros coletados (corrente, onda, temperatura e pressão) nos 3 ADCPs. Os dados já foram usados nos trabalhos de \citeonline{Ribeiro2014} e \citeonline{tccjonas} e podem ser considerados de ótima qualidade para utilização no presente trabalho.
 
 \begin{figure}[!htb]
-	\includegraphics[width=0.7\textwidth]{figuras/ADCPs.png}
+	\includegraphics[width=1.0\textwidth]{figuras/ADCPs.png}
 	\centering
-	\caption{Localização das coletas de dados atrav\'es de ADCPs.}\label{fig:adcps}
+	\caption{Localização das coletas de dados através de ADCPs.}\label{fig:adcps}
 \end{figure}
 
 Entretanto, como foi exposto, durante as medições alguns dados não puderam ser coletados e, portanto, as séries temporais continham interrupções. Interrupções em séries temporais tornam-as muito complexas para utilização sem um tratamento prévio. Dado que a quantidade de dados faltantes era esparsa, representava menos de 5\% da série temporal e estavam igualmente espaçados, escolheu-se utilizar uma interpolação linear simples para suprir os dados que não foram medidos. A figura \ref{fig:nans} apresenta um exemplo dos dados medidos e da quantidade de dados faltantes no ST001.
 
-Além dos dados desses 3 ADCPs, também foram cedidos gentilmente dados de maregrafia coletados em Penha durante mais de 1 ano (entre Outubro de 1995 e Dezembro de 1996) pelo  Professor João Luiz Baptista de Carvalho. Estes dados não serão usados para a calibração do modelo, mas serão analisados e comparados com os dados do ADCP para melhor compreensão da hidrodinâmica local.
+Além dos dados desses 3 ADCPs, também foram cedidos gentilmente dados de maregrafia coletados em Penha durante mais de 1 ano (entre Outubro de 1995 e Dezembro de 1996). Estes dados não serão usados para a calibração do modelo, mas serão analisados e comparados com os dados do ADCP para melhor compreensão da hidrodinâmica local.
 
 \begin{landscape}
 \begin{figure}[!htb]
-	\includegraphics[width=1.6\textwidth]{figuras/Nivel_ExemploNans.png}
+	\includegraphics[width=1.6\textwidth]{figuras/NoData_ST001.png}
 	\centering
-	\caption{Dados medidos no ADCP ST001.}\label{fig:nans}
+	\caption{Dados medidos no ADCP ST001. Pontos em vermelho indicam que os dados foram obtidos através de interpolação linear e os dados em azul são dados medidos pelo ADCP}\label{fig:nans}
+\end{figure}
+
+\begin{figure}[!htb]
+	\includegraphics[width=1.6\textwidth]{figuras/NoData_ST002.png}
+	\centering
+	\caption{Dados medidos no ADCP ST002. Pontos em vermelho indicam que os dados foram obtidos através de interpolação linear e os dados em azul são dados medidos pelo ADCP}\label{fig:nans}
+\end{figure}
+
+\begin{figure}[!htb]
+	\includegraphics[width=1.6\textwidth]{figuras/NoData_ST003.png}
+	\centering
+	\caption{Dados medidos no ADCP ST003. Pontos em vermelho indicam que os dados foram obtidos através de interpolação linear e os dados em azul são dados medidos pelo ADCP}\label{fig:nans}
 \end{figure}
 \end{landscape}
 
@@ -623,31 +642,28 @@ Os dados foram adquiridos em dezembro de 2015 através do endereço \url{https://w
 
 \subsection{Batimetria}
 
+Foram utilizadas cartas náuticas da Diretoria de Hidrografia e Navegação (DHN) obtidas através do endereço \url{http://www.mar.mil.br/dhn/chm/box-cartas-raster/raster_disponiveis.html}. Foram utilizados dados pontuais de batimetria e isóbatas para refinar o detalhamento da batimetria do modelo das cartas náuticas listas na tabela \ref{tab:cartas}.
 
-A batimetria da grade regional foi adquirida da base de dados ETOPO1 da NOAA. Esta base de dados contém um modelo global da superfície terreste que integra dados de batimetria e topografia em uma resolução de 1 minuto. Os dados foram obtidos no formato xyz através do endereço \url{https://www.ngdc.noaa.gov/mgg/global/global.html}.  
-
-Para detalhamento da batimetria em áreas mais rasas, onde o modelo do ETOPO1 não tem uma resolução tão boa, foram utilizadas cartas náuticas da Diretoria de Hidrografia e Navegação (DHN) obtidas através do endereço \url{http://www.mar.mil.br/dhn/chm/box-cartas-raster/raster_disponiveis.html}. Foram utilizados dados pontuais de batimetria e isóbatas para refinar o detalhamento da batimetria do modelo das cartas náuticas listas na tabela \ref{tab:cartas}.
-
-\begin{table}[h]
-	\centering
-	\caption{Cartas Náuticas utilizadas}\label{tab:cartas}
-	\begin{tabular}{c|c|c}
-		Número da Carta & Escala \\ 
-		\hline                              
-		30    & Costa Sueste da América do Sul          & 1:3.500.000      \\
-		90    & Da Ilha de Santa Catarina a Maldonado   & 1:990.526        \\
-		23300 & De Paranaguá a Imbituba                 & 1:300.000        \\
-		21070 & Do Cabo Frio ao Cabo de Santa Marta Grande & 1:1.000.000   \\
-		1910  & Da Ilha da Coral ao Cabo de Santa Marta Grande & 1:100.211 \\
-		1902  & Proximidades da Ilha de Santa Catarina  & 1:100.928        \\
-		1801  & Porto de Itajaí                         & 1:15.000
-	\end{tabular}
-\end{table}
+\begin{tabularx}{\linewidth}{ccc}
+	\caption{Cartas Náuticas utilizadas}\label{tab:cartas} \\
+	\toprule
+	\textbf{Número da Carta} & \textbf{Nome} & \textbf{Escala}  \\[6pt]
+	\midrule
+	\endhead
+		30    & Costa Sueste da América do Sul          & 1:3.500.000      \\[6pt]
+		90    & Da Ilha de Santa Catarina a Maldonado   & 1:990.526        \\[6pt]
+		23300 & De Paranaguá a Imbituba                 & 1:300.000        \\[6pt]
+		21070 & Do Cabo Frio ao Cabo de Santa Marta Grande & 1:1.000.000   \\[6pt]
+		1910  & Da Ilha da Coral ao Cabo de Santa Marta Grande & 1:100.211 \\[6pt]
+		1902  & Proximidades da Ilha de Santa Catarina  & 1:100.928        \\[6pt]
+		1801  & Porto de Itajaí                         & 1:15.000	       \\[6pt]
+	\bottomrule
+\end{tabularx}
 
 Na região próxima da costa na Enseada do Itapocorói foram utilizados dados de batimetria coletados pela Universidade Federal de Santa Catarina e Universidade do Vale do Itajaí
 no período de 02/11/2011 a 06/11/2011, financiado pelo Conselho Nacional de Desenvolvimento Científico e Tecnológico (CNPQ\_CTTranArea 44/2008, Proc. No. 575008/2008-3) e gentilmente cedidos pelo Prof. Dr. Antonio H. da F. Klein (LOC/UFSC). Todos os procedimentos de coleta e tratamento dos dados estão descritos em \citeonline{bat}.
 
-Todos esses dados foram interpolados do mais recente e detalhado (medida em 2011) até o mais esparso (ETOPO), de forma que a batimetria interpolada fosse construída dando prioridade aos dados recentes.
+Todos esses dados foram interpolados do mais recente e detalhado (medida em 2011) até o mais esparso (Carta No. 30), de forma que a batimetria interpolada fosse construída dando prioridade aos dados recentes. Os dados foram normalizados para o datum vertical do 0 DHN.
 
 
 \section{Avaliação dos resultados do modelo}
@@ -659,15 +675,15 @@ A performance do modelo será avaliada conforme os cálculos propostos por \citeon
 \citeonline{Wilmott82} avaliou as medidas propostas por \citeonline{Fox81} e verificou que o Erro Médio Absoluto (EMA, Equação \ref{eq:mae}) e a Raiz do Erro Médio Quadrático (REMQ, Equação \ref{eq:rmse})  são as medidas que melhor conseguem avaliar a performance de modelos. Entretanto, o autor propõe um nova medida denominada Índice de Concordância (IC, Equação \ref{eq:ic}), que se propõe a ser uma medida descritiva tanto relativa quanto interligada.
 
 \begin{equation}
-EMA = \sqrt{\frac{1}{N} \sum_{i=1}^{N} |M_i - O_i |}  \label{eq:mae}
+EMA = \sqrt{\frac{1}{N} \sum_{i=1}^{N} |M_i - O_i |}    \label{eq:mae}
 \end{equation}
 
 \begin{equation}
-REMQ = \sqrt{\frac{1}{N} \sum_{i=1}^{N} (M_i - O_i)²}  \label{eq:rmse}
+REMQ = \sqrt{\frac{1}{N} \sum_{i=1}^{N} (M_i - O_i)²}   \label{eq:rmse}
 \end{equation}
 
 \begin{equation}
-IC =  1 - [ \sum_{i=1}^{N} (M_I - O_i)² / \sum_{i=1}^{N}(|M'_i - O'_i|)² ] , 0 \leq IC \leq 1 \label{eq:ic}
+IC =  1 - [ \sum_{i=1}^{N} (M_I - O_i)² / \sum_{i=1}^{N}(|M'_i - O'_i|)² ] , 0 \leq IC \leq 1 \label{eq:ic}  
 \end{equation}
 
 Onde,
@@ -678,6 +694,8 @@ Onde,
 	\item[] $M'_i = M_i - \bar{O}$;
 	\item[] $O'_i = O_i - \bar{O}$.
 \end{description}
+
+Buscou-se alcançar erros na casa de 10\% da amplitude máxima dos valores modelados. Por exemplo, para uma maré com amplitude de 2m, o ideal é que os valores de erro estejam na casa de, no máximo, 20cm.
 
 \section{Ferramentas Utilizadas}
 
@@ -695,8 +713,7 @@ Outras ferramentas, geradas a partir dos módulos básicos do Python, são disponib
 
 Todas as ferramentas desenvolvidas neste presente trabalho também foram disponibilizadas online e podem ser acessadas através do endereço \url{https://github.com/leportella/oceanpyscripts}.
 
-Os mapas apresentados foram gerados de Sistema de Informações Geográficas (SIG) através do ArcGIS, cuja licença foi gentilmente cedida pela CB\&I.
-
+Os mapas apresentados foram gerados de Sistema de Informações Geográficas (SIG) através do ArcGIS.
 
 
 \chapter{RESULTADOS}
@@ -719,15 +736,15 @@ Os dados do METAR apresentam uma clara predominância de ventos provenientes de o
 Os dados do CFSR tem uma maior distribuição na direção dos ventos, com ventos de S, SE e NE apresentando uma leve predominância de ocorrência (mais de 10\% cada). Velocidades entre 2 e 6 m/s aparentam ser mais frequentes. Velocidades acima de 8 m/s são mais frequentes em ventos de ENE apesar de também ocorrem em ventos de SSE. Ventos de O e NO são bem pouco presentes, muito abaixo de 5\% e com velocidades abaixo de 4 m/s.
 
 \begin{figure}[!htb]
-	\includegraphics[width=1.1\textwidth]{figuras/Vento_Metar_2011_Windrose.png}
+	\includegraphics[width=1.1\textwidth]{figuras/vento/Vento_Metar_2011_Windrose.png}
 	\centering
 	\caption{Rosa dos ventos do Aeroporto de Navegantes para o ano de 2011 (METAR)}\label{fig:windroseMETAR}
 \end{figure}
 
 \begin{figure}[!htb]
-	\includegraphics[width=1.1\textwidth]{figuras/Vento_CFSR_2011-15_Windrose.png}
+	\includegraphics[width=1.1\textwidth]{figuras/vento/Vento_CFSR_2011_Windrose.png}
 	\centering
-	\caption{Rosa dos ventos referente aos dados do CFSR para o ano de 2011 a 2015}\label{fig:windroseCFSR}
+	\caption{Rosa dos ventos referente aos dados do CFSR para o ano de 2011}\label{fig:windroseCFSR}
 \end{figure}
 
 Para melhor compreensão do comportamento dos dados, as velocidades foram descritas na forma de histogramas para os dados do METAR e CFSR nas figuras \ref{fig:histvelMETAR} a \ref{fig:histdirCFSR}, respectivamente. Enquanto os dados do CFSR apresentaram uma curva semelhante à normal, os dados oriundos do METAR apresentam falhas nas classes de velocidade.
@@ -737,62 +754,93 @@ O que foi verificado é que os dados do METAR apresentam uma grande inconsistênci
 \begin{landscape}
 	
 \begin{figure}[!htb]
-	\includegraphics[width=1.1\textwidth]{figuras/Vento_Metar_2011_histvel.png}
+	\includegraphics[width=1.1\textwidth]{figuras/vento/Vento_Metar_2011_histvel.png}
 	\centering
 	\caption{Histograma de velocidade do vento no Aeroporto de Navegantes para o ano de 2011 (METAR)}\label{fig:histvelMETAR}
 \end{figure}
 
 \begin{figure}[!htb]
-	\includegraphics[width=1.1\textwidth]{figuras/Vento_CFSR_2011_histvel.png}
+	\includegraphics[width=1.1\textwidth]{figuras/vento/Vento_CFSR_2011_histvel.png}
 	\centering
-	\caption{Histograma de velocidade do vento referentes aos dados do CFSR para o ano de 2011 a 2015}\label{fig:histvelCFSR}
+	\caption{Histograma de velocidade do vento referentes aos dados do CFSR para o ano de 2011}\label{fig:histvelCFSR}
 \end{figure}
 
 
 \begin{figure}[!htb]
-	\includegraphics[width=1.1\textwidth]{figuras/Vento_Metar_2011_histdir.png}
+	\includegraphics[width=1.1\textwidth]{figuras/vento/Vento_Metar_2011_histdir.png}
 	\centering
 	\caption{Histograma de direção do vento no Aeroporto de Navegantes para o ano de 2011 (METAR)}\label{fig:histdirMETAR}
 \end{figure}
 
 \begin{figure}[!htb]
-	\includegraphics[width=1.1\textwidth]{figuras/Vento_CFSR_2011_histdir.png}
+	\includegraphics[width=1.1\textwidth]{figuras/vento/Vento_CFSR_2011_histdir.png}
 	\centering
-	\caption{Histograma de direção do vento referentes aos dados do CFSR para o ano de 2011 a 2015}\label{fig:histdirCFSR}
+	\caption{Histograma de direção do vento referentes aos dados do CFSR para o ano de 2011}\label{fig:histdirCFSR}
 \end{figure}
 
 \begin{figure}[!htb]
-		\includegraphics[width=1.6\textwidth]{figuras/Vento_Metar_Nans.png}
+		\includegraphics[width=1.6\textwidth]{figuras/vento/Vento_Metar_Nans.png}
 		\centering
 		\caption{Dados válidos e dados indisponíveis nos dados de velocidade do vento no Aeroporto de Navegantes para o ano de 2011 (METAR)}\label{fig:nansMETAR}
 	\end{figure}
 \end{landscape}
 
+% ------------------------
+
+\subsection{Análise por Estação}
+
+\begin{landscape}
+
+\begin{figure}[!htb]
+	\includegraphics[width=1.1\textwidth]{figuras/vento/Vento_CFSR_2011-15_Windrose_Verao.png}
+	\centering
+	\caption{Rosa dos ventos referente aos dados do CFSR para a estação Verão (Dezembro a Fevereiro) nos anos 2011 a 2015}\label{fig:ventoverao}
+\end{figure}
+
+\begin{figure}[!htb]
+	\includegraphics[width=1.1\textwidth]{figuras/vento/Vento_CFSR_2011-15_Windrose_Outono.png}
+	\centering
+	\caption{Rosa dos ventos referente aos dados do CFSR para a estação Outono (Março a Maio) nos anos 2011 a 2015}\label{fig:ventooutono}
+\end{figure}
+\begin{figure}[!htb]
+	\includegraphics[width=1.1\textwidth]{figuras/vento/Vento_CFSR_2011-15_Windrose_Inverno.png}
+	\centering
+	\caption{Rosa dos ventos referente aos dados do CFSR para a estação Inverno (Junho a Agosto) nos anos 2011 a 2015}\label{fig:ventoinverno}
+\end{figure}
+\begin{figure}[!htb]
+	\includegraphics[width=1.1\textwidth]{figuras/vento/Vento_CFSR_2011-15_Windrose_Primavera.png}
+	\centering
+	\caption{Rosa dos ventos referente aos dados do CFSR para a estação Primavera (Setembro a Novembro) nos anos 2011 a 2015}\label{fig:ventoprima}
+\end{figure}
+\end{landscape}
+
+
 \section{Descrição dos dados medidos}
 
 \subsection{Nível}
 
-Inicialmente foram estudados os dados de nível (pressão) dos três ADCPs para melhor compreender o comportamento da maré ao longo da Enseada. Os dados analisados em cada um dos pontos dos ADCPs podem ser vistos nas figuras \ref{fig:nivelst001} a \ref{fig:nivelst003}. Como a medição de nível depende do local onde o ADCP foi instalado, é possível perceber a diferença entre as profundidades nos três pontos medidos. Não obstante, os três aparelhos tiveram um comportamento de nível muito semelhante, o que indica que, em termos de nível, a dinâmica local não aparenta variar dentro da enseada. A tabela \ref{tab:dadosnivel} contém as principais características dos dados adquiridos. A variação entre o nível máximo e mínimo encontrado foi de aproximadamente 2 m, com uma tendência leve de aumento dessa variação nos pontos mais internos (ST001 e ST002).
+Inicialmente foram estudados os dados de nível (pressão) dos três ADCPs para melhor compreender o comportamento da maré ao longo da Enseada. Os dados analisados em cada um dos pontos dos ADCPs podem ser vistos nas figuras \ref{fig:nivelst001} a \ref{fig:nivelst003} na parte superior. Como a medição de nível depende do local onde o ADCP foi instalado, é possível perceber a diferença entre as profundidades nos três pontos medidos. Não obstante, os três aparelhos tiveram um comportamento de nível muito semelhante, o que indica que, em termos de nível, a dinâmica local não aparenta variar dentro da enseada. A tabela \ref{tab:dadosnivel} contém as principais características dos dados adquiridos. A variação entre o nível máximo e mínimo encontrado foi de aproximadamente 2 m, com uma tendência leve de aumento dessa variação nos pontos mais internos (ST001 e ST002).
 
-Os dados maregráficos de Penha serviram como base de comparação, uma vez que suas medições aconteceram por um período maior e em momento diferente da coleta dos dados dos ADCPs. A figura \ref{fig:nivelpenha} se apresenta simétrica ao eixo 0, de forma geral, e com variações raramente ultrapassando 1,0 m tanto positivas quanto negativas. Em geral, as variações se apresentam com até 70 cm aproximadamente. A maior variação encontrada em Penha foi cerca de 30 cm maior que as verificadas nas medições dos ADCPs. 
+Os dados maregráficos de Penha serviram como base de comparação, uma vez que suas medições aconteceram por um período maior e em momento diferente da coleta dos dados dos ADCPs. A figura \ref{fig:previsaopenha} se apresenta simétrica ao eixo 0, de forma geral, e com variações raramente ultrapassando 1,0 m tanto positivas quanto negativas. Em geral, as variações se apresentam com até 70 cm aproximadamente. A maior variação encontrada em Penha foi cerca de 30 cm maior que as verificadas nas medições dos ADCPs. 
 
 A variação máxima de nível encontrada (tanto em Penha quanto nos dados de ADCP) é quase 2 vezes superior à diferença máxima encontrada na tabela da FEMAR (Média das Preamares Superiores - Média das Baixamares inferiores), que seria de 1,11 cm (Figura \ref{fig:femar}). Isso parece indicar que a componente meteorológica pode ter uma presença e uma influência muito grande na região. 
 
-\begin{table}[h]
-	\centering
-	\caption{Características das Variações de Nível Medidas (em metros)}\label{tab:dadosnivel}
-	\begin{tabular}{c|c|c|c|c|c}
-		Equipamento & Mínimo & Máximo & Média & Mediana & Variação Máxima \\ 
-		\hline                              
-		ST001 & 2,90   & 4,98   & 3,90  & 3,91    & 2,08 \\
-		ST002 & 6,30   & 8,33   & 7,25  & 7,25    & 2,03 \\
-		ST003 & 15,52  & 17,80  & 16,77 & 16,78   & 1,98 \\
-		Penha & -1.13  & 1.18   & -0.04 & -0.04   & 2.32
-	\end{tabular}
-\end{table}
+\begin{tabularx}{\linewidth}{cccccc}
+	\caption{Características das Variações de Nível Medidas (em metros)}\label{tab:dadosnivel} \\
+	\toprule
+	\textbf{Equipamento} & \textbf{Mínimo} & \textbf{Máximo} &
+	\textbf{Média} & \textbf{Mediana} & \textbf{Variação Máxima} \\[6pt]
+	\midrule
+	\endhead
+	ST001 & 2,90   & 4,98   & 3,90  & 3,91    & 2,08 \\[6pt]
+	ST002 & 6,30   & 8,33   & 7,25  & 7,25    & 2,03 \\[6pt]
+	ST003 & 15,52  & 17,80  & 16,77 & 16,78   & 1,98 \\[6pt]
+	Penha & -1.13  & 1.18   & -0.04 & -0.04   & 2.32 \\[6pt]	
+	\bottomrule
+\end{tabularx}
 
 
-O módulo \emph{ttide} de previsão de maré astronômica foi aplicado em todos os dados medidos para avaliar a componente astronômica dentro dos sinais analisados, as principais constantes harmônicas na região de interesse e a resultante meteorológica encontrada na região. Na figura \ref{fig:previsao} e \ref{fig:previsaopenha} estão apresentados parte dos resultados gerados pelo pacote. Na parte superior da figura se encontram os dados medidos (uma vez retiradas as médias, no caso dos dados dos ADCPs),na parte central estão a previsão do nível pelo pacote para o período analisado e na parte final está o sinal resultante da subtração de dois dados anteriores, referente à maré meteorológica. 
+As análises harmônicas foram aplicadas em todos os dados medidos para avaliar as componentes astronômicas dentro dos sinais analisados. O resultado final das análises incluiu as principais constantes harmônicas em cada um dos dados analisados e a resultante meteorológica encontrada para o período avaliado. Nas figuras \ref{fig:nivelPrevistost001} a \ref{fig:previsaopenha} estão apresentados parte dos resultados gerados pelo pacote. Na parte superior da figura se encontram os dados medidos (uma vez retiradas as médias, no caso dos dados dos ADCPs), na parte interior estão sobrepostos os dados das componentes astronômicas em azul e sobreposto em vermelho o sinal resultante da subtração de dois dados anteriores, referente à maré meteorológica. 
 
 Na tabela \ref{tab:dadosmeteo} estão apresentados os valores máximos e mínimos de nível de origem meteorológica. Nos dados colhidos pelos ADCPs, a maré meteorológica gerou um nível mínimo de -0,71 m e máximo de 0,65 m. Dessa forma, a maré meteorológica foi responsável por uma variação de nível de mais de 1,3 m no ponto ST003 e mais de 1,2 m nos outros dois locais de coleta. Já em Penha, verificou-se que enquanto o nível máximo tenha sido semelhante ao encontrado no dados dos ADCPs (0,70 m), o nível mínimo foi quase o dobro, atingindo -1,37 m. 
 
@@ -800,59 +848,68 @@ Na figura \ref{fig:maremeteonegativa} verifica-se que esse nível mínimo registra
 
 Dessa forma, é possível concluir que a maré meteorológica verificada pelos ADCPs no ano de 2011 não foi tão representativa quanto ela pode ser na região estudada e que marés meteorológicas na região podem ultrapassar 1,3 m. De fato, esses dados concordam com o trabalho de \citeonline{Parise} que verificaram que as marés meteorológicas alcançam em média 1 m, podendo alcançar 1,9 m em casos mais extremos no sul do país. 
 
+\begin{tabularx}{\linewidth}{cccc}
+	\caption{Características das Marés Meteorológicas Medidas}\label{tab:dadosmeteo} \\
+	\toprule
+	\textbf{Equipamento} & \textbf{Mínimo} & \textbf{Máximo} &
+	\textbf{Variação Máxima} \\[6pt]
+	\midrule
+	\endhead
+		ST001 & -0,71   & 0,65   & 1,37 \\[6pt]
+		ST002 & -0,68   & 0,53   & 1,21 \\[6pt]
+		ST003 & -0,70  & 0,50    & 1,20 \\[6pt]
+		Penha & -1.37  & 0,70  & 2,08 \\[6pt]
+	\bottomrule
+\end{tabularx}
 
-\begin{table}[h]
-	\centering
-	\caption{Características das Marés Meteorológicas Medidas}\label{tab:dadosmeteo}
-	\begin{tabular}{c|c|c|c}
-		Equipamento & Mínimo & Máximo & Variação Máxima \\ 
-		\hline                              
-		ST001 & -0,71   & 0,65   & 1,37 \\
-		ST002 & -0,68   & 0,53   & 1,21 \\
-		ST003 & -0,70  & 0,50    & 1,20 \\
-		Penha & -1.37  & 0,70  & 2,08
-	\end{tabular}
-\end{table}
+\newpage
+\begin{landscape}
+	\centering	
+	\begin{figure}[!htb]
+		\includegraphics[width=1.7\textwidth]{figuras/Nivel_ST001.png}
+		\centering
+		\caption{Variação de Nível no ponto ST001.}\label{fig:nivelst001}
+	\end{figure}
+	
+	\begin{figure}[!htb]
+		\includegraphics[width=1.7\textwidth]{figuras/Nivel_ST002.png}
+		\centering
+		\caption{Variação de Nível no ponto ST002.}\label{fig:nivelst002}
+	\end{figure}
+	
+	\begin{figure}[!htb]
+		\includegraphics[width=1.7\textwidth]{figuras/Nivel_ST003.png}
+		\centering
+		\caption{Variação de Nível no ponto ST003.}\label{fig:nivelst003}
+	\end{figure}
+\end{landscape}
 
-  
 \newpage
 \begin{landscape}
 	\centering	
  \begin{figure}[!htb]
- 	\includegraphics[width=1.7\textwidth]{figuras/Nivel_ST001.png}
+ 	\includegraphics[width=1.7\textwidth]{figuras/Nivel_Previsao_Geral_ST001.png}
  	\centering
- 	\caption{Variação de Nível no ponto ST001}\label{fig:nivelst001}
+ 	\caption{Variação de Nível no ponto ST001 separado entre: dado medido (parte superior) e dados de maré previsto e o residual meteorológico (parte interior).}\label{fig:nivelPrevistost001}
  \end{figure}
  
   \begin{figure}[!htb]
-  	\includegraphics[width=1.7\textwidth]{figuras/Nivel_ST002.png}
+  	\includegraphics[width=1.7\textwidth]{figuras/Nivel_Previsao_Geral_ST002.png}
   	\centering
-  	\caption{Variação de Nível no ponto ST002}\label{fig:nivelst002}
+  	\caption{Variação de Nível no ponto ST002 separado entre: dado medido (parte superior) e dados de maré previsto e o residual meteorológico (parte interior).}\label{fig:nivelPrevistost002}
   \end{figure}
   
    \begin{figure}[!htb]
-   	\includegraphics[width=1.7\textwidth]{figuras/Nivel_ST003.png}
+   	\includegraphics[width=1.7\textwidth]{figuras/Nivel_Previsao_Geral_ST003.png}
    	\centering
-   	\caption{Variação de Nível no ponto ST003}\label{fig:nivelst003}
+   	\caption{Variação de Nível no ponto ST003 separado entre: dado medido (parte superior) e dados de maré previsto e o residual meteorológico (parte interior).}\label{fig:nivelPrevistost003}
    \end{figure}
 
 	\begin{figure}[!htb]
-		\includegraphics[width=1.6\textwidth]{figuras/Nivel_Penha.png}
+		\includegraphics[width=1.6\textwidth]{figuras/Nivel_Previsto_Penha2.png}
 		\centering
-		\caption{Dados de nível na Praia de Penha}\label{fig:nivelpenha}
+		\caption{Separação dos dados de nível em Penha}\label{fig:previsaopenha}
 	\end{figure}
-
-	\begin{figure}[!htb]
-		\includegraphics[width=1.6\textwidth]{figuras/Nivel_Previsao_Geral.png}
-		\centering
-		\caption{Separação dos dados de nível em Piçarras}\label{fig:previsao}
-	\end{figure}
-	
-		\begin{figure}[!htb]
-			\includegraphics[width=1.6\textwidth]{figuras/Nivel_Penha_Previsao_Geral.png}
-			\centering
-			\caption{Separação dos dados de nível em Penha}\label{fig:previsaopenha}
-		\end{figure}
 	
 	
 	\begin{figure}[!htb]
@@ -877,7 +934,7 @@ Dentre as constantes apresentadas pela FEMAR que foram verificadas nos dados med
 
 \begin{landscape}
 	
-	\begin{tabularx}{\linewidth}{c|c|c|c|c|c|c} 
+	\begin{tabularx}{\linewidth}{ccccccc} 
 		\caption{Frequências encontradas nos dados de nível do ST001} \label{tab:st001} \\
 		\toprule
 		\textbf{Constante Harmônica} & \textbf{Freq.} & \textbf{Amplitude (cm)}   & \textbf{Erro de Ampl.}  & \textbf{Fase}  & \textbf{Erro de Fase}  & \textbf{SNR} \\[6pt]
@@ -907,7 +964,7 @@ Dentre as constantes apresentadas pela FEMAR que foram verificadas nos dados med
 	\end{tabularx}
 	
 	
-	\begin{tabularx}{\linewidth}{c|c|c|c|c|c|c}
+	\begin{tabularx}{\linewidth}{ccccccc}
 		\caption{Análise harmônica através do ttide nos dados de nível do ST002}\label{tab:st002} \\
 		\toprule
 		\textbf{Constante Harmônica} & \textbf{Freq.} & \textbf{Amplitude (cm)}   & \textbf{Erro de Ampl.}  &  textbf{Fase}  & \textbf{Erro de Fase}  & \textbf{SNR} \\[6pt]
@@ -937,7 +994,7 @@ Dentre as constantes apresentadas pela FEMAR que foram verificadas nos dados med
 	\end{tabularx}
 	
 
-	\begin{tabularx}{\linewidth}{c|c|c|c|c|c|c}
+	\begin{tabularx}{\linewidth}{ccccccc}
 		\caption{Frequências encontradas nos dados de nível do ST003}\label{tab:st003} \\
 		\toprule
 		\textbf{Constante Harmônica} & \textbf{Freq.} & \textbf{Amplitude (cm)}   & \textbf{Erro de Ampl.}  & \textbf{Fase}  & \textbf{Erro de Fase}  & \textbf{SNR} \\[6pt]
@@ -969,7 +1026,7 @@ Dentre as constantes apresentadas pela FEMAR que foram verificadas nos dados med
 	\end{tabularx}
 	
 	
-	\begin{tabularx}{\linewidth}{c|c|c|c|c|c|c}
+	\begin{tabularx}{\linewidth}{ccccccc}
 		\caption{Frequências encontradas nos dados de nível de Penha} \label{tab:ttidepenha} \\
 		\toprule
 		\textbf{Constante Harmônica} & \textbf{Freq.} & \textbf{Amplitude (cm)}   & \textbf{Erro de Ampl.}  & \textbf{Fase}  & \textbf{Erro de Fase}  & \textbf{SNR} \\[6pt]
@@ -1010,7 +1067,7 @@ Dentre as constantes apresentadas pela FEMAR que foram verificadas nos dados med
 		\end{figure}
 
 \begin{landscape}
-	\begin{tabularx}{\linewidth}{c|c|c|c|c|cc}
+	\begin{tabularx}{\linewidth}{cccccc}
 		\caption{Comparações entre as constantes harmônicas encontradas nos pontos ST001, ST002, ST003 e Penha com as constantes definidas pela FEMAR \cite{femar}} \label{tab:comparacoesmares} \\
 		\toprule
 		\textbf{Constantes} & \textbf{FEMAR} & \textbf{ST001}   & \textbf{ST002}  & \textbf{ST003}  & \textbf{Penha}  \\[6pt]
@@ -1074,20 +1131,18 @@ e:
 
 Os números de forma encontrados para os dados medidos podem ser observados na tabela \ref{tab:numforma} e, portanto, a maré na Enseada de Itapocorói e arredores pode ser considerada do tipo mista com uma predominância semidiurna. Vale ressaltar no entanto que, pelo baixo valor de número de forma encontrado, pode-se notar a alta influência das componentes semidiurna sobre as componentes diurnas. Os dados de Penha apresentaram uma maior influência das componentes diurnas sobre as semidiurnas quando comparados com os dados de Piçarras. 
 
-
-\begin{table}[h]
-	\centering
-	\caption{Número de Forma para cada um dos dados analisados}\label{tab:numforma}
-	\begin{tabular}{c|c}
-		Local & Número de Forma  \\ 
-		\hline                              
-		ST001 & 0,2978   \\
-		ST002 & 0,2962   \\
-		ST003 &  0,2873  \\
-		Penha & 0,3131 
-	\end{tabular}
-\end{table}
-
+	\begin{tabularx}{\linewidth}{cc}
+		\caption{Número de Forma para cada um dos dados analisados} \\
+		\toprule
+		\textbf{Local} & \textbf{Número de Forma}  \\[6pt]
+		\midrule
+		\endhead
+		ST001 & 0,2978   \\[6pt]
+		ST002 & 0,2962   \\[6pt]
+		ST003 &  0,2873  \\[6pt]
+  		Penha & 0,3131   \\[6pt]
+		\bottomrule
+	\end{tabularx}
 
 Também é possível observar a grande influência das componentes semidiurnas na figura \ref{fig:fft} onde estão apresentados os resultado de uma Transformada Rápida de Fourier (FFT). Primeiramente deve-se notar que apesar de os dados terem um tempo de medições diferentes (1 ano para Penha e 1 mês para Piçarras), os resultados de espectro se mostraram muito semelhantes. É possível perceber que existem quatro picos de energia distintos cujos períodos associados a esses picos são de 25,5, 12,5, 8,2 e 6,2 horas.  
 
@@ -1106,24 +1161,23 @@ O maior pico de energia em ambos os dados analisados estava localizado na frequê
 
 Os dados de temperatura obtidos pelos ADCPs podem ser observados na figura \ref{fig:temperatura}. Existe uma mudança brusca no comportamento da variável ao longo dos três pontos. No ponto ST001, mais próximo da praia e na menor profundidade, possui uma grande variação de temperatura ao longo do mês. A temperatura chegou próximo a 17$^{\circ}$C no dia 24 de Agosto (18h) e ultrapassou os 20$^{\circ}$C em 19 de Setembro (23h). No ponto ST003 a variação foi de apenas 1,05$^{\circ}$C em todo o período analisado enquanto o ponto ST002 permaneceu com características intermediárias (Tabela \ref{tab:dadostemp}).
 
-Todos os valores de temperatura foram bem menores que aqueles descritos em \citeonline{Schettinietal1999}, onde os valores permaneceram entre 25 e 27$^{\circ}$C. A grande diferença se dá pelo período medido. Enquanto os dados de \citeonline{Schettinietal1999} foram medidos em março (fim do verão), os dados aqui apresentados foram coletados entre agosto e setembro (fim do verão) e, portanto, essa diferença é natural para a região.
-
 Deve-se notar que as temperaturas mínimas foram bastante semelhantes (menos de 0,5 $^{\circ}$C de diferença) enquanto a temperatura máxima foi onde as diferenças foram maiores. Dado que a variação de temperatura do ponto ST003 foi mais de 3 vezes a variação encontrada no ponto ST001, assume-se que o segundo tem uma grande influência do aquecimento local, e possivelmente do vento, dada a sua pequena profundidade 4 m. Já o ponto ST003, localizado na profundidade de 17 m, tem um padrão homogêneo possivelmente só sendo afetado por massas de água externas.
 
 Buscou-se tentar encontrar correlações entre a direção do vento predominante e dos dados de temperatura porém apesar de haver alguns indícios de que a variação do vento de NO-N para S poderia ter influência no pico de temperatura no ST001, de forma geral os resultados não apresentaram um padrão evidente. As figuras serão apresentadas no apêndice uma vez que seus resultados não foram relevantes (figuras \ref{fig:tempvento01} a \ref{fig:tempvento02}).
 
-\begin{table}[h]
-	\centering
-	\caption{Características dos dados de temperatura.}\label{tab:dadostemp}
-	\begin{tabular}{c|c|c|c|c}
-		Equipamento & Mínimo & Máximo & Média & Variação Máxima \\ 
-		\hline                              
-		ST001 & 17,02$^{\circ}$C   & 20,61$^{\circ}$C   & 18,02$^{\circ}$C & 3,59$^{\circ}$C\\
-		ST002 & 17,23$^{\circ}$C   & 19,67$^{\circ}$C   & 18,19$^{\circ}$C & 2,44$^{\circ}$C \\
-		ST003 & 17,40$^{\circ}$C  & 18,45$^{\circ}$C    & 17,89$^{\circ}$C & 1,05$^{\circ}$C \\
-	\end{tabular}
-\end{table}
-
+\begin{tabularx}{\linewidth}{ccccc}
+	\caption{Características dos dados de temperatura.}\\
+	\toprule
+	\textbf{Equipamento} & \textbf{Mínimo} & \textbf{Máximo} & \textbf{Média} & 
+	\textbf{Variação Máxima} \\[6pt]
+	\midrule
+	\endhead
+	ST001 & 17,02$^{\circ}$C   & 20,61$^{\circ}$C   & 18,02$^{\circ}$C & 3,59$^{\circ}$C \\[6pt]
+	ST002 & 17,23$^{\circ}$C   & 19,67$^{\circ}$C   & 18,19$^{\circ}$C & 2,44$^{\circ}$C \\[6pt]
+	ST003 & 17,40$^{\circ}$C  & 18,45$^{\circ}$C    & 17,89$^{\circ}$C & 1,05$^{\circ}$C \\[6pt]
+	\bottomrule
+\end{tabularx}
+	
 \begin{landscape}
 	\begin{figure}[!htb]
 		\includegraphics[width=1.6\textwidth]{figuras/Temperatura_Geral.png}
@@ -1142,7 +1196,6 @@ Nas figuras \ref{fig:curr_depthav_01}, \ref{fig:curr_depthav_02} e \ref{fig:curr
 
 As correntes medidas apresentam velocidades muito baixas, abaixo de 20 cm/s na maior parte do tempo. Entretanto, nota-se que a maior parte das correntes fica abaixo de 10 cm/s (Figuras \ref{fig:hist_velcorrente_01} a \ref{fig:hist_velcorrente_03}) esse resultado pode ser melhor observado nos histogramas apresentados nas figuras \ref{fig:hist_velcorrente_01} a \ref{fig:hist_velcorrente_03} onde verifica-se que a maioria das correntes está abaixo de 5 cm/s. 
 
-Os resultados encontrados corroboram com as observações descritas em \citeonline{Schettinietal1999}. Entretanto, os autores afirmaram que as correntes obedecem mais diretamente ao regime dos ventos do que as oscilações da maré. Da mesma forma como foi feito com a temperatura, foram desenvolvidos alguns gráficos tentando correlacionar a velocidade da corrente com a direção ou o vento (Figuras \ref{fig:corrvento01} a \ref{fig:corrventodir03}). Novamente nenhum padrão emergiu nas análises realizadas e não foi possível relacionar a velocidade da corrente com o vento.
 
 As figuras \ref{fig:quiver01} a \ref{fig:quiver03} apresentam na parte superior os vetores indicando a direção e magnitude das correntes e na parte inferior a velocidade. Enquanto nos pontos ST001 e ST002 não foi possível associar os episódios de grande velocidade com direções predominantes, no ponto ST003 percebe-se que as correntes que atigiram velocidades acima de 15 cm/s estão associadas a correntes de sudeste. 
 
@@ -1226,11 +1279,175 @@ Na figura \ref{fig:residualmedido} pode ser observada a resultante medida num pe
 		\centering
 		\caption{Correntes residuais dos pontos medidos a cada 50h}\label{fig:residualmedido}
 	\end{figure}
+%------------------------------------------------------------------------------------------------
+% AQUI ESTAO OS CURRENT ROSES POR CAMADA
+
+	\begin{figure}[!htb]
+		\includegraphics[width=1.5\textwidth]{figuras/camadas/CurrentRose_ST001_Cel1.png}
+		\centering
+		\caption{Rosa de correntes no ponto ST001 célula 1 (em centímetros)}\label{fig:ST001Cel1}
+	\end{figure}
+	
+	\newpage
+	\begin{figure}[!htb]
+		\includegraphics[width=1.5\textwidth]{figuras/camadas/CurrentRose_ST001_Cel2.png}
+		\centering
+		\caption{Rosa de correntes no ponto ST001 célula 2 (em centímetros)}\label{fig:ST001Cel2}
+	\end{figure}\
+	
+	\begin{figure}[!htb]
+		\includegraphics[width=1.5\textwidth]{figuras/camadas/CurrentRose_ST001_Cel3.png}
+		\centering
+		\caption{Rosa de correntes no ponto ST001 célula 3 (em centímetros)}\label{fig:ST001Cel3}
+	\end{figure}
 \end{landscape}
 
+\begin{landscape}
+	\begin{figure}[!htb]
+		\includegraphics[width=1.5\textwidth]{figuras/camadas/CurrentRose_ST002_Cel1.png}
+		\centering
+		\caption{Rosa de correntes no ponto ST002 célula 1 (em centímetros)}\label{fig:ST002Cel1}
+	\end{figure}
+	
+	\begin{figure}[!htb]
+		\includegraphics[width=1.5\textwidth]{figuras/camadas/CurrentRose_ST002_Cel2.png}
+		\centering
+		\caption{Rosa de correntes no ponto ST002 célula 2 (em centímetros)}\label{fig:ST002Cel2}
+	\end{figure}
+	
+	\begin{figure}[!htb]
+		\includegraphics[width=1.5\textwidth]{figuras/camadas/CurrentRose_ST002_Cel3.png}
+		\centering
+		\caption{Rosa de correntes no ponto ST002 célula 3 (em centímetros)}\label{fig:ST002Cel3}
+	\end{figure}
+	
+	\begin{figure}[!htb]
+		\includegraphics[width=1.5\textwidth]{figuras/camadas/CurrentRose_ST002_Cel4.png}
+		\centering
+		\caption{Rosa de correntes no ponto ST002 célula 4 (em centímetros)}\label{fig:ST002Cel4}
+	\end{figure}
+	
+	\begin{figure}[!htb]
+		\includegraphics[width=1.5\textwidth]{figuras/camadas/CurrentRose_ST002_Cel5.png}
+		\centering
+		\caption{Rosa de correntes no ponto ST002 célula 5 (em centímetros)}\label{fig:ST002Cel5}
+	\end{figure}
+	
+	\begin{figure}[!htb]
+		\includegraphics[width=1.5\textwidth]{figuras/camadas/CurrentRose_ST002_Cel6.png}
+		\centering
+		\caption{Rosa de correntes no ponto ST002 célula 6 (em centímetros)}\label{fig:ST002Cel6}
+	\end{figure}
+	
+	\begin{figure}[!htb]
+		\includegraphics[width=1.5\textwidth]{figuras/camadas/CurrentRose_ST002_Cel7.png}
+		\centering
+		\caption{Rosa de correntes no ponto ST002 célula 7 (em centímetros)}\label{fig:ST002Cel7}
+	\end{figure}
+	
+	\begin{figure}[!htb]
+		\includegraphics[width=1.5\textwidth]{figuras/camadas/CurrentRose_ST002_Cel8.png}
+		\centering
+		\caption{Rosa de correntes no ponto ST002 célula 8 (em centímetros)}\label{fig:ST002Cel8}
+	\end{figure}
+	
+	\begin{figure}[!htb]
+		\includegraphics[width=1.5\textwidth]{figuras/camadas/CurrentRose_ST002_Cel9.png}
+		\centering
+		\caption{Rosa de correntes no ponto ST002 célula 9 (em centímetros)}\label{fig:ST002Cel9}
+	\end{figure}
+	
+	\begin{figure}[!htb]
+		\includegraphics[width=1.5\textwidth]{figuras/camadas/CurrentRose_ST002_Cel10.png}
+		\centering
+		\caption{Rosa de correntes no ponto ST002 célula 10 (em centímetros)}\label{fig:ST002Cel10}
+	\end{figure}
+\end{landscape}
 
-
-%-------------------------------------------------------------------------------------------------------
+\begin{landscape}
+	\begin{figure}[!htb]
+		\includegraphics[width=1.5\textwidth]{figuras/camadas/CurrentRose_ST003_Cel1.png}
+		\centering
+		\caption{Rosa de correntes no ponto ST003 célula 1 (em centímetros)}\label{fig:ST003Cel1}
+	\end{figure}
+	
+	\newpage
+	\begin{figure}[!htb]
+		\includegraphics[width=1.5\textwidth]{figuras/camadas/CurrentRose_ST003_Cel2.png}
+		\centering
+		\caption{Rosa de correntes no ponto ST003 célula 2 (em centímetros)}\label{fig:ST003Cel2}
+	\end{figure}
+	
+	\newpage
+	\begin{figure}[!htb]
+		\includegraphics[width=1.5\textwidth]{figuras/camadas/CurrentRose_ST003_Cel3.png}
+		\centering
+		\caption{Rosa de correntes no ponto ST003 célula 3 (em centímetros)}\label{fig:ST003Cel3}
+	\end{figure}
+	
+	\newpage
+	\begin{figure}[!htb]
+		\includegraphics[width=1.5\textwidth]{figuras/camadas/CurrentRose_ST003_Cel4.png}
+		\centering
+		\caption{Rosa de correntes no ponto ST003 célula 4 (em centímetros)}\label{fig:ST003Cel4}
+	\end{figure}
+	
+	\newpage
+	\begin{figure}[!htb]
+		\includegraphics[width=1.5\textwidth]{figuras/camadas/CurrentRose_ST003_Cel5.png}
+		\centering
+		\caption{Rosa de correntes no ponto ST003 célula 5 (em centímetros)}\label{fig:ST003Cel5}
+	\end{figure}
+	
+	\newpage
+	\begin{figure}[!htb]
+		\includegraphics[width=1.5\textwidth]{figuras/camadas/CurrentRose_ST003_Cel6.png}
+		\centering
+		\caption{Rosa de correntes no ponto ST003 célula 6 (em centímetros)}\label{fig:ST003Cel6}
+	\end{figure}
+	
+	\newpage
+	\begin{figure}[!htb]
+		\includegraphics[width=1.5\textwidth]{figuras/camadas/CurrentRose_ST003_Cel7.png}
+		\centering
+		\caption{Rosa de correntes no ponto ST003 célula 7 (em centímetros)}\label{fig:ST003Cel7}
+	\end{figure}
+	
+	\newpage
+	\begin{figure}[!htb]
+		\includegraphics[width=1.6\textwidth]{figuras/camadas/CurrentRose_ST003_Cel8.png}
+		\centering
+		\caption{Rosa de correntes no ponto ST003 célula 8 (em centímetros)}\label{fig:ST003Cel8}
+	\end{figure}
+	
+	\newpage
+	\begin{figure}[!htb]
+		\includegraphics[width=1.5\textwidth]{figuras/camadas/CurrentRose_ST003_Cel9.png}
+		\centering
+		\caption{Rosa de correntes no ponto ST003 célula 9 (em centímetros)}\label{fig:ST003Cel9}
+	\end{figure}
+	
+	\newpage
+	\begin{figure}[!htb]
+		\includegraphics[width=1.5\textwidth]{figuras/camadas/CurrentRose_ST003_Cel10.png}
+		\centering
+		\caption{Rosa de correntes no ponto ST003 célula 10 (em centímetros)}\label{fig:ST003Cel10}
+	\end{figure}
+	
+	\newpage
+	\begin{figure}[!htb]
+		\includegraphics[width=1.6\textwidth]{figuras/camadas/CurrentRose_ST003_Cel11.png}
+		\centering
+		\caption{Rosa de correntes no ponto ST003 célula 11 (em centímetros)}\label{fig:ST003Cel11}
+	\end{figure}
+	
+	\newpage
+	\begin{figure}[!htb]
+		\includegraphics[width=1.6\textwidth]{figuras/camadas/CurrentRose_ST003_Cel12.png}
+		\centering
+		\caption{Rosa de correntes no ponto ST003 célula 12 (em centímetros)}\label{fig:ST003Cel12}
+	\end{figure}
+\end{landscape}
 
 %-------------------------------------------------------------------------------------------------------
 \clearpage
@@ -1299,20 +1516,21 @@ Algumas outras informações estão apresentadas na tabela \ref{tab:setup}.
 
 %A condição Flather permite que as diferenças entre as previsões de nível do modelo e os dados externos (condições de fronteira impostas) sejam propagados para fora do domínio com velocidade das ondas de gravidade externas, conservando o volume dentro do domínio. 
 
-\begin{table}[h]
-	\centering
-	\caption{Características gerais do modelo}\label{tab:setup}
-	\begin{tabular}{c|c|c}
-		Configuração                 & G. Regional     & G. Local  \\ 
-		\hline                                         
- 		Passo de tempo (DT)          & 30 s            & 30 s \\
-		Número de camadas            & 10              & 10 \\
- 		Mínimo Courant Barotrópico   & 0,046           & 0,230 \\
- 		Máximo Courant Barotrópico   & 0,423           & 0,913 \\
- 		Mínimo resolução vertical    & 0,27 m          & 0,27 m \\
- 		Máximo resolução vertical    & 68,48 m         & 10,49 m \\
-	\end{tabular}
-\end{table}
+
+\begin{tabularx}{\linewidth}{ccc}
+	\caption{Características gerais do modelo.}\label{tab:setup} \\
+	\toprule
+	\textbf{Configuração} & \textbf{G. Regional} & \textbf{G. Local} \\[6pt]
+	\midrule
+	\endhead
+ 		Passo de tempo (DT)          & 30 s            & 30 s \\[6pt]
+ 		Número de camadas            & 10              & 10 \\[6pt]
+ 		Mínimo Courant Barotrópico   & 0,046           & 0,230 \\[6pt]
+ 		Máximo Courant Barotrópico   & 0,423           & 0,913 \\[6pt]
+ 		Mínimo resolução vertical    & 0,27 m          & 0,27 m \\[6pt]
+ 		Máximo resolução vertical    & 68,48 m         & 10,49 m \\[6pt]
+	\bottomrule
+\end{tabularx}
 
 \subsection{Calibração}
 
@@ -1365,6 +1583,12 @@ Uma série de dificuldades foram encontradas nas etapas iniciais do modelo que to
 	
 \end{itemize}
 
+\chapter{DISCUSSÃO}
+
+
+Todos os valores de temperatura foram bem menores que aqueles descritos em \citeonline{Schettinietal1999}, onde os valores permaneceram entre 25 e 27$^{\circ}$C. A grande diferença se dá pelo período medido. Enquanto os dados de \citeonline{Schettinietal1999} foram medidos em março (fim do verão), os dados aqui apresentados foram coletados entre agosto e setembro (fim do verão) e, portanto, essa diferença é natural para a região.
+
+Os resultados encontrados corroboram com as observações descritas em \citeonline{Schettinietal1999}. Entretanto, os autores afirmaram que as correntes obedecem mais diretamente ao regime dos ventos do que as oscilações da maré. Da mesma forma como foi feito com a temperatura, foram desenvolvidos alguns gráficos tentando correlacionar a velocidade da corrente com a direção ou o vento (Figuras \ref{fig:corrvento01} a \ref{fig:corrventodir03}). Novamente nenhum padrão emergiu nas análises realizadas e não foi possível relacionar a velocidade da corrente com o vento.
 
 \chapter{CONCLUSÃO}
 
@@ -1378,152 +1602,564 @@ As conclusões devem responder às questões da pesquisa, em relação aos objetivos 
 \apendice
 \chapter{Figuras Extras}
 
+
+	% ----------------------------------------------------------------------------------------
 \begin{landscape}
-	\begin{figure}[!htb]
-		\includegraphics[width=1.5\textwidth]{figuras/CurrentRose_ST001_Cel1.png}
-		\centering
-		\caption{Rosa de correntes no ponto ST001 célula 1 (em centímetros)}\label{fig:ST001Cel1}
-	\end{figure}
 	
-	\begin{figure}[!htb]
-		\includegraphics[width=1.5\textwidth]{figuras/CurrentRose_ST001_Cel2.png}
-		\centering
-		\caption{Rosa de correntes no ponto ST001 célula 2 (em centímetros)}\label{fig:ST001Cel2}
-	\end{figure}\
 
+	% FIGURAS DE VELOCIDADE (NO TEMPO E HISTOGRAMA) POR CAMA
+	\newpage
 	\begin{figure}[!htb]
-		\includegraphics[width=1.5\textwidth]{figuras/CurrentRose_ST001_Cel3.png}
+		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST001_Camada1.png}
 		\centering
-		\caption{Rosa de correntes no ponto ST001 célula 3 (em centímetros)}\label{fig:ST001Cel3}
+		\caption{Velocidade ao longo do tempo em ST001 na Camada 1 (em centímetros)}\label{fig:VelST001Cam1}
 	\end{figure}
 	
+	\newpage
 	\begin{figure}[!htb]
-		\includegraphics[width=1.5\textwidth]{figuras/CurrentRose_ST002_Cel1.png}
+		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST001_Camada1_HistVel.png}
 		\centering
-		\caption{Rosa de correntes no ponto ST002 célula 1 (em centímetros)}\label{fig:ST002Cel1}
+		\caption{Histograma da velocidade da corrente no ponto ST001 na Camada 1 (em centímetros)}\label{fig:HistVelST001Cam1}
 	\end{figure}
-	
+		
+	\newpage
 	\begin{figure}[!htb]
-		\includegraphics[width=1.5\textwidth]{figuras/CurrentRose_ST002_Cel2.png}
+		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST001_Camada1_HistDir.png}
 		\centering
-		\caption{Rosa de correntes no ponto ST002 célula 2 (em centímetros)}\label{fig:ST002Cel2}
+		\caption{Histograma da direção da corrente no ponto ST001 na Camada 1 (em centímetros)}\label{fig:HistDirST001Cam1}
 	\end{figure}
 
+	%---
+	\newpage
 	\begin{figure}[!htb]
-		\includegraphics[width=1.5\textwidth]{figuras/CurrentRose_ST002_Cel3.png}
+		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST001_Camada2.png}
 		\centering
-		\caption{Rosa de correntes no ponto ST002 célula 3 (em centímetros)}\label{fig:ST002Cel3}
+		\caption{Velocidade ao longo do tempo em ST001 na Camada 2 (em centímetros)}\label{fig:VelST001Cam2}
+	\end{figure}
+		
+	\newpage
+	\begin{figure}[!htb]
+		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST001_Camada2_HistVel.png}
+		\centering
+		\caption{Histograma da velocidade da corrente no ponto ST001 na Camada 2 (em centímetros)}\label{fig:HistVelST001Cam2}
+	\end{figure}
+		
+	\newpage
+	\begin{figure}[!htb]
+		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST001_Camada2_HistDir.png}
+		\centering
+		\caption{Histograma da direção da corrente no ponto ST001 na Camada 2 (em centímetros)}\label{fig:HistDirST001Cam2}
+	\end{figure}
+		
+	%---
+	\newpage
+	\begin{figure}[!htb]
+		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST001_Camada3.png}
+		\centering
+		\caption{Velocidade ao longo do tempo em ST001 na Camada 3 (em centímetros)}\label{fig:VelST001Cam3}
+	\end{figure}
+	
+	\newpage
+	\begin{figure}[!htb]
+		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST001_Camada3_HistVel.png}
+		\centering
+		\caption{Histograma da velocidade da corrente no ponto ST001 na Camada 3 (em centímetros)}\label{fig:HistVelST001Cam3}
+	\end{figure}
+	
+	\newpage
+	\begin{figure}[!htb]
+		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST001_Camada3_HistDir.png}
+		\centering
+		\caption{Histograma da direção da corrente no ponto ST001 na Camada 3 (em centímetros)}\label{fig:HistDirST001Cam3}
+	\end{figure}
+	
+	%---
+	\newpage
+	\begin{figure}[!htb]
+		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST002_Camada1.png}
+		\centering
+		\caption{Velocidade ao longo do tempo em ST002 na Camada 1 (em centímetros)}\label{fig:VelST002Cam1}
+	\end{figure}
+	
+	\newpage
+	\begin{figure}[!htb]
+		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST002_Camada1_HistVel.png}
+		\centering
+		\caption{Histograma da velocidade da corrente no ponto ST002 na Camada 1 (em centímetros)}\label{fig:HistVelST002Cam1}
+	\end{figure}
+	
+	\newpage
+	\begin{figure}[!htb]
+		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST002_Camada1_HistDir.png}
+		\centering
+		\caption{Histograma da direção da corrente no ponto ST002 na Camada 1 (em centímetros)}\label{fig:HistDirST002Cam1}
+	\end{figure}
+	
+	%---
+	\newpage
+	\begin{figure}[!htb]
+		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST002_Camada2.png}
+		\centering
+		\caption{Velocidade ao longo do tempo em ST002 na Camada 2 (em centímetros)}\label{fig:VelST002Cam2}
+	\end{figure}
+	
+	\newpage
+	\begin{figure}[!htb]
+		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST002_Camada2_HistVel.png}
+		\centering
+		\caption{Histograma da velocidade da corrente no ponto ST002 na Camada 2 (em centímetros)}\label{fig:HistVelST002Cam2}
+	\end{figure}
+	
+	\newpage
+	\begin{figure}[!htb]
+		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST002_Camada2_HistDir.png}
+		\centering
+		\caption{Histograma da direção da corrente no ponto ST002 na Camada 2 (em centímetros)}\label{fig:HistDirST002Cam2}
+	\end{figure}
+			
+	%---
+	\newpage
+	\begin{figure}[!htb]
+		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST002_Camada3.png}
+		\centering
+		\caption{Velocidade ao longo do tempo em ST002 na Camada 3 (em centímetros)}\label{fig:VelST002Cam3}
+	\end{figure}
+	
+	\newpage
+	\begin{figure}[!htb]
+		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST002_Camada3_HistVel.png}
+		\centering
+		\caption{Histograma da velocidade da corrente no ponto ST002 na Camada 3 (em centímetros)}\label{fig:HistVelST002Cam3}
+	\end{figure}
+	
+	\newpage
+	\begin{figure}[!htb]
+		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST002_Camada3_HistDir.png}
+		\centering
+		\caption{Histograma da direção da corrente no ponto ST002 na Camada 3 (em centímetros)}\label{fig:HistDirST002Cam3}
+	\end{figure}
+	
+	%---
+	\newpage
+	\begin{figure}[!htb]
+		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST002_Camada4.png}
+		\centering
+		\caption{Velocidade ao longo do tempo em ST002 na Camada 4 (em centímetros)}\label{fig:VelST002Cam4}
+	\end{figure}
+	
+	\newpage
+	\begin{figure}[!htb]
+		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST002_Camada4_HistVel.png}
+		\centering
+		\caption{Histograma da velocidade da corrente no ponto ST002 na Camada 4 (em centímetros)}\label{fig:HistVelST002Cam4}
+	\end{figure}
+	
+	\newpage
+	\begin{figure}[!htb]
+		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST002_Camada4_HistDir.png}
+		\centering
+		\caption{Histograma da direção da corrente no ponto ST002 na Camada 4 (em centímetros)}\label{fig:HistDirST002Cam4}
+	\end{figure}
+	
+	%---
+	\newpage
+	\begin{figure}[!htb]
+		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST002_Camada5.png}
+		\centering
+		\caption{Velocidade ao longo do tempo em ST002 na Camada 5 (em centímetros)}\label{fig:VelST002Cam5}
+	\end{figure}
+	
+	\newpage
+	\begin{figure}[!htb]
+		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST002_Camada5_HistVel.png}
+		\centering
+		\caption{Histograma da velocidade da corrente no ponto ST002 na Camada 5 (em centímetros)}\label{fig:HistVelST002Cam5}
+	\end{figure}
+	
+	\newpage
+	\begin{figure}[!htb]
+		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST002_Camada5_HistDir.png}
+		\centering
+		\caption{Histograma da direção da corrente no ponto ST002 na Camada 5 (em centímetros)}\label{fig:HistDirST002Cam5}
+	\end{figure}
+	
+	%---
+	\newpage
+	\begin{figure}[!htb]
+		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST002_Camada6.png}
+		\centering
+		\caption{Velocidade ao longo do tempo em ST002 na Camada 6 (em centímetros)}\label{fig:VelST002Cam6}
+	\end{figure}
+	
+	\newpage
+	\begin{figure}[!htb]
+		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST002_Camada6_HistVel.png}
+		\centering
+		\caption{Histograma da velocidade da corrente no ponto ST002 na Camada 6 (em centímetros)}\label{fig:HistVelST002Cam6}
+	\end{figure}
+		
+	\newpage
+	\begin{figure}[!htb]
+		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST002_Camada6_HistDir.png}
+		\centering
+		\caption{Histograma da direção da corrente no ponto ST002 na Camada 6 (em centímetros)}\label{fig:HistDirST002Cam6}
+	\end{figure}
+	
+	%---
+	\newpage
+	\begin{figure}[!htb]
+		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST002_Camada7.png}
+		\centering
+		\caption{Velocidade ao longo do tempo em ST002 na Camada 7 (em centímetros)}\label{fig:VelST002Cam7}
+	\end{figure}
+	
+	\newpage
+	\begin{figure}[!htb]
+		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST002_Camada7_HistVel.png}
+		\centering
+		\caption{Histograma da velocidade da corrente no ponto ST002 na Camada 7 (em centímetros)}\label{fig:HistVelST002Cam7}
+	\end{figure}
+	
+	\newpage
+	\begin{figure}[!htb]
+		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST002_Camada7_HistDir.png}
+		\centering
+		\caption{Histograma da direção da corrente no ponto ST002 na Camada 7 (em centímetros)}\label{fig:HistDirST002Cam7}
 	\end{figure}
 
+	%---
+	\newpage
 	\begin{figure}[!htb]
-		\includegraphics[width=1.5\textwidth]{figuras/CurrentRose_ST002_Cel4.png}
+		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST002_Camada8.png}
 		\centering
-		\caption{Rosa de correntes no ponto ST002 célula 4 (em centímetros)}\label{fig:ST002Cel4}
+		\caption{Velocidade ao longo do tempo em ST002 na Camada 8 (em centímetros)}\label{fig:VelST002Cam8}
 	\end{figure}
 	
+	\newpage
 	\begin{figure}[!htb]
-		\includegraphics[width=1.5\textwidth]{figuras/CurrentRose_ST002_Cel5.png}
+		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST002_Camada8_HistVel.png}
 		\centering
-		\caption{Rosa de correntes no ponto ST002 célula 5 (em centímetros)}\label{fig:ST002Cel5}
+		\caption{Histograma da velocidade da corrente no ponto ST002 na Camada 8 (em centímetros)}\label{fig:HistVelST002Cam8}
 	\end{figure}
 	
+	\newpage
 	\begin{figure}[!htb]
-		\includegraphics[width=1.5\textwidth]{figuras/CurrentRose_ST002_Cel6.png}
+		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST002_Camada8_HistDir.png}
 		\centering
-		\caption{Rosa de correntes no ponto ST002 célula 6 (em centímetros)}\label{fig:ST002Cel6}
+		\caption{Histograma da direção da corrente no ponto ST002 na Camada 8 (em centímetros)}\label{fig:HistDirST002Cam8}
+	\end{figure}
+	
+	%---
+	\newpage
+	\begin{figure}[!htb]
+		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST002_Camada9.png}
+		\centering
+		\caption{Velocidade ao longo do tempo em ST002 na Camada 9 (em centímetros)}\label{fig:VelST002Cam9}
+	\end{figure}
+	
+	\newpage
+	\begin{figure}[!htb]
+		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST002_Camada9_HistVel.png}
+		\centering
+		\caption{Histograma da velocidade da corrente no ponto ST002 na Camada 9 (em centímetros)}\label{fig:HistVelST002Cam9}
+	\end{figure}
+	
+	\newpage
+	\begin{figure}[!htb]
+		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST002_Camada9_HistDir.png}
+		\centering
+		\caption{Histograma da direção da corrente no ponto ST002 na Camada 9 (em centímetros)}\label{fig:HistDirST002Cam9}
 	\end{figure}
 
+	%---
+	\newpage
 	\begin{figure}[!htb]
-		\includegraphics[width=1.5\textwidth]{figuras/CurrentRose_ST002_Cel7.png}
+		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST002_Camada10.png}
 		\centering
-		\caption{Rosa de correntes no ponto ST002 célula 7 (em centímetros)}\label{fig:ST002Cel7}
-	\end{figure}
-
-	\begin{figure}[!htb]
-		\includegraphics[width=1.5\textwidth]{figuras/CurrentRose_ST002_Cel8.png}
-		\centering
-		\caption{Rosa de correntes no ponto ST002 célula 8 (em centímetros)}\label{fig:ST002Cel8}
+		\caption{Velocidade ao longo do tempo em ST002 na Camada 10 (em centímetros)}\label{fig:VelST002Cam10}
 	\end{figure}
 	
+	\newpage
 	\begin{figure}[!htb]
-		\includegraphics[width=1.5\textwidth]{figuras/CurrentRose_ST002_Cel9.png}
+		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST002_Camada10_HistVel.png}
 		\centering
-		\caption{Rosa de correntes no ponto ST002 célula 9 (em centímetros)}\label{fig:ST002Cel9}
+		\caption{Histograma da velocidade da corrente no ponto ST002 na Camada 10 (em centímetros)}\label{fig:HistVelST002Cam10}
 	\end{figure}
 	
+	\newpage
 	\begin{figure}[!htb]
-		\includegraphics[width=1.5\textwidth]{figuras/CurrentRose_ST002_Cel10.png}
+		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST002_Camada10_HistDir.png}
 		\centering
-		\caption{Rosa de correntes no ponto ST002 célula 10 (em centímetros)}\label{fig:ST002Cel10}
+		\caption{Histograma da direção da corrente no ponto ST002 na Camada 10 (em centímetros)}\label{fig:HistDirST002Cam10}
 	\end{figure}
 	
+	%---
+	\newpage
 	\begin{figure}[!htb]
-		\includegraphics[width=1.5\textwidth]{figuras/CurrentRose_ST003_Cel1.png}
+		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada1.png}
 		\centering
-		\caption{Rosa de correntes no ponto ST003 célula 1 (em centímetros)}\label{fig:ST003Cel1}
+		\caption{Velocidade ao longo do tempo em ST003 na Camada 1 (em centímetros)}\label{fig:VelST003Cam1}
 	\end{figure}
 	
+	\newpage
 	\begin{figure}[!htb]
-		\includegraphics[width=1.5\textwidth]{figuras/CurrentRose_ST003_Cel2.png}
+		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada1_HistVel.png}
 		\centering
-		\caption{Rosa de correntes no ponto ST003 célula 2 (em centímetros)}\label{fig:ST003Cel2}
+		\caption{Histograma da velocidade da corrente no ponto ST003 na Camada 1 (em centímetros)}\label{fig:HistVelST003Cam1}
+	\end{figure}
+		
+	\newpage
+	\begin{figure}[!htb]
+		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada1_HistDir.png}
+		\centering
+		\caption{Histograma da direção da corrente no ponto ST003 na Camada 1 (em centímetros)}\label{fig:HistDirST003Cam1}
 	\end{figure}
 	
+	%---
+	\newpage
 	\begin{figure}[!htb]
-		\includegraphics[width=1.5\textwidth]{figuras/CurrentRose_ST003_Cel3.png}
+		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada2.png}
 		\centering
-		\caption{Rosa de correntes no ponto ST003 célula 3 (em centímetros)}\label{fig:ST003Cel3}
+		\caption{Velocidade ao longo do tempo em ST003 na Camada 2 (em centímetros)}\label{fig:VelST003Cam2}
+	\end{figure}
+		
+	\newpage
+	\begin{figure}[!htb]
+		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada2_HistVel.png}
+		\centering
+		\caption{Histograma da velocidade da corrente no ponto ST003 na Camada 2 (em centímetros)}\label{fig:HistVelST003Cam2}
 	\end{figure}
 	
+	\newpage
 	\begin{figure}[!htb]
-		\includegraphics[width=1.5\textwidth]{figuras/CurrentRose_ST003_Cel4.png}
+		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada2_HistDir.png}
 		\centering
-		\caption{Rosa de correntes no ponto ST003 célula 4 (em centímetros)}\label{fig:ST003Cel4}
+		\caption{Histograma da direção da corrente no ponto ST003 na Camada 2 (em centímetros)}\label{fig:HistDirST003Cam2}
 	\end{figure}
 	
+	%---
+	\newpage
 	\begin{figure}[!htb]
-		\includegraphics[width=1.5\textwidth]{figuras/CurrentRose_ST003_Cel5.png}
+		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada3.png}
 		\centering
-		\caption{Rosa de correntes no ponto ST003 célula 5 (em centímetros)}\label{fig:ST003Cel5}
+		\caption{Velocidade ao longo do tempo em ST003 na Camada 3 (em centímetros)}\label{fig:VelST003Cam3}
 	\end{figure}
-%
-%	
-%	\begin{figure}[!htb]
-%		\includegraphics[width=1.6\textwidth]{figuras/CurrentRose_ST003_Cel7.png}
-%		\centering
-%		\caption{Rosa de correntes no ponto ST003 célula 7 (em centímetros)}\label{fig:ST003Cel7}
-%	\end{figure}
-%	
-%	\begin{figure}[!htb]
-%		\includegraphics[width=1.6\textwidth]{figuras/CurrentRose_ST003_Cel8.png}
-%		\centering
-%		\caption{Rosa de correntes no ponto ST003 célula 8 (em centímetros)}\label{fig:ST003Cel8}
-%	\end{figure}
-%	
-%	\begin{figure}[!htb]
-%		\includegraphics[width=1.6\textwidth]{figuras/CurrentRose_ST003_Cel9.png}
-%		\centering
-%		\caption{Rosa de correntes no ponto ST003 célula 9 (em centímetros)}\label{fig:ST003Cel9}
-%	\end{figure}
-%	
-%	\begin{figure}[!htb]
-%		\includegraphics[width=1.6\textwidth]{figuras/CurrentRose_ST003_Cel10.png}
-%		\centering
-%		\caption{Rosa de correntes no ponto ST003 célula 10 (em centímetros)}\label{fig:ST003Cel10}
-%	\end{figure}
-%	
-%	\begin{figure}[!htb]
-%		\includegraphics[width=1.6\textwidth]{figuras/CurrentRose_ST003_Cel11.png}
-%		\centering
-%		\caption{Rosa de correntes no ponto ST003 célula 11 (em centímetros)}\label{fig:ST003Cel11}
-%	\end{figure}
-%	
-%	\begin{figure}[!htb]
-%		\includegraphics[width=1.6\textwidth]{figuras/CurrentRose_ST003_Cel12.png}
-%		\centering
-%		\caption{Rosa de correntes no ponto ST003 célula 12 (em centímetros)}\label{fig:ST003Cel12}
-%	\end{figure}
 	
+	\newpage
+	\begin{figure}[!htb]
+		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada3_HistVel.png}
+		\centering
+		\caption{Histograma da velocidade da corrente no ponto ST003 na Camada 3 (em centímetros)}\label{fig:HistVelST003Cam3}
+	\end{figure}
+	
+	\newpage
+	\begin{figure}[!htb]
+		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada3_HistDir.png}
+		\centering
+		\caption{Histograma da direção da corrente no ponto ST003 na Camada 3 (em centímetros)}\label{fig:HistDirST003Cam3}
+	\end{figure}
+		
+	%---
+	\newpage
+	\begin{figure}[!htb]
+		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada4.png}
+		\centering
+		\caption{Velocidade ao longo do tempo em ST003 na Camada 4 (em centímetros)}\label{fig:VelST003Cam4}
+	\end{figure}
+	
+	\newpage
+	\begin{figure}[!htb]
+		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada4_HistVel.png}
+		\centering
+		\caption{Histograma da velocidade da corrente no ponto ST003 na Camada 4 (em centímetros)}\label{fig:HistVelST003Cam4}
+	\end{figure}
+		
+	\newpage
+	\begin{figure}[!htb]
+		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada4_HistDir.png}
+		\centering
+		\caption{Histograma da direção da corrente no ponto ST003 na Camada 4 (em centímetros)}\label{fig:HistDirST003Cam4}
+	\end{figure}
+	
+	%---
+	\newpage
+	\begin{figure}[!htb]
+		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada5.png}
+		\centering
+		\caption{Velocidade ao longo do tempo em ST003 na Camada 5 (em centímetros)}\label{fig:VelST003Cam5}
+	\end{figure}
+		
+	\newpage
+	\begin{figure}[!htb]
+		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada5_HistVel.png}
+		\centering
+		\caption{Histograma da velocidade da corrente no ponto ST003 na Camada 5 (em centímetros)}\label{fig:HistVelST003Cam5}
+	\end{figure}
+	
+	\newpage
+	\begin{figure}[!htb]
+		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada5_HistDir.png}
+		\centering
+		\caption{Histograma da direção da corrente no ponto ST003 na Camada 5 (em centímetros)}\label{fig:HistDirST003Cam5}
+	\end{figure}
+	
+	%---
+	\newpage
+	\begin{figure}[!htb]
+		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada6.png}
+		\centering
+		\caption{Velocidade ao longo do tempo em ST003 na Camada 6 (em centímetros)}\label{fig:VelST003Cam6}
+	\end{figure}
+	
+	\newpage
+	\begin{figure}[!htb]
+		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada6_HistVel.png}
+		\centering
+		\caption{Histograma da velocidade da corrente no ponto ST003 na Camada 6 (em centímetros)}\label{fig:HistVelST003Cam6}
+	\end{figure}
+		
+	\newpage
+	\begin{figure}[!htb]
+		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada6_HistDir.png}
+		\centering
+		\caption{Histograma da direção da corrente no ponto ST003 na Camada 6 (em centímetros)}\label{fig:HistDirST003Cam6}
+	\end{figure}
+	
+	%---
+	\newpage
+	\begin{figure}[!htb]
+		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada7.png}
+		\centering
+		\caption{Velocidade ao longo do tempo em ST003 na Camada 7 (em centímetros)}\label{fig:VelST003Cam7}
+	\end{figure}
+		
+	\newpage
+	\begin{figure}[!htb]
+		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada7_HistVel.png}
+		\centering
+		\caption{Histograma da velocidade da corrente no ponto ST003 na Camada 7 (em centímetros)}\label{fig:HistVelST003Cam7}
+	\end{figure}
+	
+	\newpage
+	\begin{figure}[!htb]
+		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada7_HistDir.png}
+		\centering
+		\caption{Histograma da direção da corrente no ponto ST003 na Camada 7 (em centímetros)}\label{fig:HistDirST003Cam7}
+	\end{figure}
+		
+	%---
+	\newpage
+	\begin{figure}[!htb]
+		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada8.png}
+		\centering
+		\caption{Velocidade ao longo do tempo em ST003 na Camada 8 (em centímetros)}\label{fig:VelST003Cam8}
+	\end{figure}
+	
+	\newpage
+	\begin{figure}[!htb]
+		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada8_HistVel.png}
+		\centering
+		\caption{Histograma da velocidade da corrente no ponto ST003 na Camada 8 (em centímetros)}\label{fig:HistVelST003Cam8}
+	\end{figure}
+		
+	\newpage
+	\begin{figure}[!htb]
+		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada8_HistDir.png}
+		\centering
+		\caption{Histograma da direção da corrente no ponto ST003 na Camada 8 (em centímetros)}\label{fig:HistDirST003Cam8}
+	\end{figure}
+	
+	%---
+	\newpage
+	\begin{figure}[!htb]
+		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada9.png}
+		\centering
+		\caption{Velocidade ao longo do tempo em ST003 na Camada 9 (em centímetros)}\label{fig:VelST003Cam9}
+	\end{figure}
+	
+	\newpage
+	\begin{figure}[!htb]
+		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada9_HistVel.png}
+		\centering
+		\caption{Histograma da velocidade da corrente no ponto ST003 na Camada 9 (em centímetros)}\label{fig:HistVelST003Cam9}
+	\end{figure}
+	
+	\newpage
+	\begin{figure}[!htb]
+		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada9_HistDir.png}
+		\centering
+		\caption{Histograma da direção da corrente no ponto ST003 na Camada 9 (em centímetros)}\label{fig:HistDirST003Cam9}
+	\end{figure}
+	
+	%---
+	\newpage
+	\begin{figure}[!htb]
+		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada10.png}
+		\centering
+		\caption{Velocidade ao longo do tempo em ST003 na Camada 10 (em centímetros)}\label{fig:VelST003Cam10}
+	\end{figure}
+		
+	\newpage
+	\begin{figure}[!htb]
+		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada10_HistVel.png}
+		\centering
+		\caption{Histograma da velocidade da corrente no ponto ST003 na Camada 10 (em centímetros)}\label{fig:HistVelST003Cam10}
+	\end{figure}
+	
+	\newpage
+	\begin{figure}[!htb]
+		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada10_HistDir.png}
+		\centering
+		\caption{Histograma da direção da corrente no ponto ST003 na Camada 10 (em centímetros)}\label{fig:HistDirST003Cam10}
+	\end{figure}
+		
+	%---
+	\newpage
+	\begin{figure}[!htb]
+		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada11.png}
+		\centering
+		\caption{Velocidade ao longo do tempo em ST003 na Camada 11 (em centímetros)}\label{fig:VelST003Cam11}
+	\end{figure}
+		
+	\newpage
+	\begin{figure}[!htb]
+		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada11_HistVel.png}
+		\centering
+		\caption{Histograma da velocidade da corrente no ponto ST003 na Camada 11 (em centímetros)}\label{fig:HistVelST003Cam11}
+	\end{figure}
+	
+	\newpage
+	\begin{figure}[!htb]
+		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada11_HistDir.png}
+		\centering
+		\caption{Histograma da direção da corrente no ponto ST003 na Camada 11 (em centímetros)}\label{fig:HistDirST003Cam11}
+	\end{figure}
+	
+	%----
+	\newpage
+	\begin{figure}[!htb]
+		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada12.png}
+		\centering
+		\caption{Velocidade ao longo do tempo em ST003 na Camada 12 (em centímetros)}\label{fig:VelST003Cam12}
+	\end{figure}
+	
+	\newpage
+	\begin{figure}[!htb]
+		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada12_HistVel.png}
+		\centering
+		\caption{Histograma da velocidade da corrente no ponto ST003 na Camada 12 (em centímetros)}\label{fig:HistVelST003Cam12}
+	\end{figure}
+	
+	\newpage
+	\begin{figure}[!htb]
+		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada12_HistDir.png}
+		\centering
+		\caption{Histograma da direção da corrente no ponto ST003 na Camada 12 (em centímetros)}\label{fig:HistDirST003Cam12}
+	\end{figure}
+\end{landscape}
+% ----------------------------------------------------------------------------------------
+% FIGURAS DE TEMPERATURA VERSUS VENTO	
+%\begin{landscape}
 %	\begin{figure}[!htb]
 %		\includegraphics[width=1.6\textwidth]{figuras/Temperatura_Vento_ST001.png}
 %		\centering
@@ -1577,7 +2213,7 @@ As conclusões devem responder às questões da pesquisa, em relação aos objetivos 
 %		\centering
 %		\caption{Comparação dos dados de corrente do ponto ST003 e da direção do vento}\label{fig:corrventodir03}
 %	\end{figure}
-\end{landscape}
+%\end{landscape}
 
 %\anexo
 %\chapter{Exemplificando um Anexo}
