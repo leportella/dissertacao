@@ -44,115 +44,116 @@
 \contentsline {figure}{\numberline {43}{\ignorespaces Histograma da velocidade de corrente no ponto ST001 integrada na vertical}}{77}
 \contentsline {figure}{\numberline {44}{\ignorespaces Histograma da velocidade de corrente no ponto ST002 integrada na vertical}}{77}
 \contentsline {figure}{\numberline {45}{\ignorespaces Histograma da velocidade de corrente no ponto ST003 integrada na vertical}}{77}
-\contentsline {figure}{\numberline {46}{\ignorespaces Histograma cumulativo da velocidade da corrente em m/s no ST001. Linhas em preto indicam os quartis de 25, 50 e 90\%}}{78}
-\contentsline {figure}{\numberline {47}{\ignorespaces Histograma cumulativo da velocidade da corrente em m/s no ST002. Linhas em preto indicam os quartis de 25, 50 e 90\%}}{79}
-\contentsline {figure}{\numberline {48}{\ignorespaces Histograma cumulativo da velocidade da corrente em m/s no ST003. Linhas em preto indicam os quartis de 25, 50 e 90\%}}{80}
+\contentsline {figure}{\numberline {46}{\ignorespaces Histograma cumulativo da velocidade da corrente em $m.s^{-1}$ no ST001. Linhas em preto indicam os quartis de 25, 50 e 90\%}}{78}
+\contentsline {figure}{\numberline {47}{\ignorespaces Histograma cumulativo da velocidade da corrente em $m.s^{-1}$ no ST002. Linhas em preto indicam os quartis de 25, 50 e 90\%}}{79}
+\contentsline {figure}{\numberline {48}{\ignorespaces Histograma cumulativo da velocidade da corrente em $m.s^{-1}$ no ST003. Linhas em preto indicam os quartis de 25, 50 e 90\%}}{80}
 \contentsline {figure}{\numberline {49}{\ignorespaces Dire\c c\~ao predominante e velocidade das correntes no ponto ST001}}{81}
 \contentsline {figure}{\numberline {50}{\ignorespaces Dire\c c\~ao predominante e velocidade das correntes no ponto ST002}}{82}
 \contentsline {figure}{\numberline {51}{\ignorespaces Dire\c c\~ao predominante e velocidade das correntes no ponto ST003}}{83}
 \contentsline {figure}{\numberline {52}{\ignorespaces Correntes residuais dos pontos medidos a cada 50h}}{84}
-\contentsline {figure}{\numberline {53}{\ignorespaces Rosa de correntes no ponto ST001 c\'elula 1 (em cent\IeC {\'\i }metros)}}{85}
-\contentsline {figure}{\numberline {54}{\ignorespaces Rosa de correntes no ponto ST001 c\'elula 2 (em cent\IeC {\'\i }metros)}}{86}
-\contentsline {figure}{\numberline {55}{\ignorespaces Rosa de correntes no ponto ST001 c\'elula 3 (em cent\IeC {\'\i }metros)}}{87}
-\contentsline {figure}{\numberline {56}{\ignorespaces Rosa de correntes no ponto ST002 c\'elula 1 (em cent\IeC {\'\i }metros)}}{88}
-\contentsline {figure}{\numberline {57}{\ignorespaces Rosa de correntes no ponto ST002 c\'elula 2 (em cent\IeC {\'\i }metros)}}{89}
-\contentsline {figure}{\numberline {58}{\ignorespaces Rosa de correntes no ponto ST002 c\'elula 3 (em cent\IeC {\'\i }metros)}}{90}
-\contentsline {figure}{\numberline {59}{\ignorespaces Rosa de correntes no ponto ST002 c\'elula 4 (em cent\IeC {\'\i }metros)}}{91}
-\contentsline {figure}{\numberline {60}{\ignorespaces Rosa de correntes no ponto ST002 c\'elula 5 (em cent\IeC {\'\i }metros)}}{92}
-\contentsline {figure}{\numberline {61}{\ignorespaces Rosa de correntes no ponto ST002 c\'elula 6 (em cent\IeC {\'\i }metros)}}{93}
-\contentsline {figure}{\numberline {62}{\ignorespaces Rosa de correntes no ponto ST002 c\'elula 7 (em cent\IeC {\'\i }metros)}}{94}
-\contentsline {figure}{\numberline {63}{\ignorespaces Rosa de correntes no ponto ST002 c\'elula 8 (em cent\IeC {\'\i }metros)}}{95}
-\contentsline {figure}{\numberline {64}{\ignorespaces Rosa de correntes no ponto ST002 c\'elula 9 (em cent\IeC {\'\i }metros)}}{96}
-\contentsline {figure}{\numberline {65}{\ignorespaces Rosa de correntes no ponto ST002 c\'elula 10 (em cent\IeC {\'\i }metros)}}{97}
-\contentsline {figure}{\numberline {66}{\ignorespaces Rosa de correntes no ponto ST003 c\'elula 1 (em cent\IeC {\'\i }metros)}}{98}
-\contentsline {figure}{\numberline {67}{\ignorespaces Rosa de correntes no ponto ST003 c\'elula 2 (em cent\IeC {\'\i }metros)}}{99}
-\contentsline {figure}{\numberline {68}{\ignorespaces Rosa de correntes no ponto ST003 c\'elula 3 (em cent\IeC {\'\i }metros)}}{100}
-\contentsline {figure}{\numberline {69}{\ignorespaces Rosa de correntes no ponto ST003 c\'elula 4 (em cent\IeC {\'\i }metros)}}{101}
-\contentsline {figure}{\numberline {70}{\ignorespaces Rosa de correntes no ponto ST003 c\'elula 5 (em cent\IeC {\'\i }metros)}}{102}
-\contentsline {figure}{\numberline {71}{\ignorespaces Rosa de correntes no ponto ST003 c\'elula 6 (em cent\IeC {\'\i }metros)}}{103}
-\contentsline {figure}{\numberline {72}{\ignorespaces Rosa de correntes no ponto ST003 c\'elula 7 (em cent\IeC {\'\i }metros)}}{104}
-\contentsline {figure}{\numberline {73}{\ignorespaces Rosa de correntes no ponto ST003 c\'elula 8 (em cent\IeC {\'\i }metros)}}{105}
-\contentsline {figure}{\numberline {74}{\ignorespaces Rosa de correntes no ponto ST003 c\'elula 9 (em cent\IeC {\'\i }metros)}}{106}
-\contentsline {figure}{\numberline {75}{\ignorespaces Rosa de correntes no ponto ST003 c\'elula 10 (em cent\IeC {\'\i }metros)}}{107}
-\contentsline {figure}{\numberline {76}{\ignorespaces Rosa de correntes no ponto ST003 c\'elula 11 (em cent\IeC {\'\i }metros)}}{108}
-\contentsline {figure}{\numberline {77}{\ignorespaces Rosa de correntes no ponto ST003 c\'elula 12 (em cent\IeC {\'\i }metros)}}{109}
+\contentsline {figure}{\numberline {53}{\ignorespaces Rosa de correntes no ponto ST001 c\'elula 1 (em $cm.s^{-1}$)}}{85}
+\contentsline {figure}{\numberline {54}{\ignorespaces Rosa de correntes no ponto ST001 c\'elula 2 (em $cm.s^{-1}$)}}{86}
+\contentsline {figure}{\numberline {55}{\ignorespaces Rosa de correntes no ponto ST001 c\'elula 3 (em $cm.s^{-1}$)}}{87}
+\contentsline {figure}{\numberline {56}{\ignorespaces Rosa de correntes no ponto ST002 c\'elula 1 (em $cm.s^{-1}$)}}{88}
+\contentsline {figure}{\numberline {57}{\ignorespaces Rosa de correntes no ponto ST002 c\'elula 2 (em $cm.s^{-1}$)}}{89}
+\contentsline {figure}{\numberline {58}{\ignorespaces Rosa de correntes no ponto ST002 c\'elula 3 (em $cm.s^{-1}$)}}{90}
+\contentsline {figure}{\numberline {59}{\ignorespaces Rosa de correntes no ponto ST002 c\'elula 4 (em $cm.s^{-1}$)}}{91}
+\contentsline {figure}{\numberline {60}{\ignorespaces Rosa de correntes no ponto ST002 c\'elula 5 (em $cm.s^{-1}$)}}{92}
+\contentsline {figure}{\numberline {61}{\ignorespaces Rosa de correntes no ponto ST002 c\'elula 6 (em $cm.s^{-1}$)}}{93}
+\contentsline {figure}{\numberline {62}{\ignorespaces Rosa de correntes no ponto ST002 c\'elula 7 (em $cm.s^{-1}$)}}{94}
+\contentsline {figure}{\numberline {63}{\ignorespaces Rosa de correntes no ponto ST002 c\'elula 8 (em $cm.s^{-1}$)}}{95}
+\contentsline {figure}{\numberline {64}{\ignorespaces Rosa de correntes no ponto ST002 c\'elula 9 (em $cm.s^{-1}$)}}{96}
+\contentsline {figure}{\numberline {65}{\ignorespaces Rosa de correntes no ponto ST002 c\'elula 10 (em $cm.s^{-1}$)}}{97}
+\contentsline {figure}{\numberline {66}{\ignorespaces Rosa de correntes no ponto ST003 c\'elula 1 (em $cm.s^{-1}$)}}{98}
+\contentsline {figure}{\numberline {67}{\ignorespaces Rosa de correntes no ponto ST003 c\'elula 2 (em $cm.s^{-1}$)}}{99}
+\contentsline {figure}{\numberline {68}{\ignorespaces Rosa de correntes no ponto ST003 c\'elula 3 (em $cm.s^{-1}$)}}{100}
+\contentsline {figure}{\numberline {69}{\ignorespaces Rosa de correntes no ponto ST003 c\'elula 4 (em $cm.s^{-1}$)}}{101}
+\contentsline {figure}{\numberline {70}{\ignorespaces Rosa de correntes no ponto ST003 c\'elula 5 (em $cm.s^{-1}$)}}{102}
+\contentsline {figure}{\numberline {71}{\ignorespaces Rosa de correntes no ponto ST003 c\'elula 6 (em $cm.s^{-1}$)}}{103}
+\contentsline {figure}{\numberline {72}{\ignorespaces Rosa de correntes no ponto ST003 c\'elula 7 (em $cm.s^{-1}$)}}{104}
+\contentsline {figure}{\numberline {73}{\ignorespaces Rosa de correntes no ponto ST003 c\'elula 8 (em $cm.s^{-1}$)}}{105}
+\contentsline {figure}{\numberline {74}{\ignorespaces Rosa de correntes no ponto ST003 c\'elula 9 (em $cm.s^{-1}$)}}{106}
+\contentsline {figure}{\numberline {75}{\ignorespaces Rosa de correntes no ponto ST003 c\'elula 10 (em $cm.s^{-1}$)}}{107}
+\contentsline {figure}{\numberline {76}{\ignorespaces Rosa de correntes no ponto ST003 c\'elula 11 (em $cm.s^{-1}$)}}{108}
+\contentsline {figure}{\numberline {77}{\ignorespaces Rosa de correntes no ponto ST003 c\'elula 12 (em $cm.s^{-1}$)}}{109}
 \contentsline {figure}{\numberline {78}{\ignorespaces Malha num\'erica t\IeC {\'\i }pica do ROMS}}{110}
 \contentsline {figure}{\numberline {79}{\ignorespaces Dom\IeC {\'\i }nio da grade num\'erica regional.}}{111}
-\contentsline {figure}{\numberline {80}{\ignorespaces Dom\IeC {\'\i }nio da grade num\'erica local.}}{112}
-\contentsline {figure}{\numberline {81}{\ignorespaces Batimetria interpolada na grade num\'erica regional.}}{113}
-\contentsline {figure}{\numberline {82}{\ignorespaces Batimetria interpolada na grade num\'erica local.}}{114}
-\contentsline {figure}{\numberline {83}{\ignorespaces Velocidade ao longo do tempo em ST001 na Camada 1 (em cent\IeC {\'\i }metros)}}{124}
-\contentsline {figure}{\numberline {84}{\ignorespaces Histograma da velocidade da corrente no ponto ST001 na Camada 1 (em cent\IeC {\'\i }metros)}}{125}
-\contentsline {figure}{\numberline {85}{\ignorespaces Histograma da dire\c c\~ao da corrente no ponto ST001 na Camada 1 (em cent\IeC {\'\i }metros)}}{126}
-\contentsline {figure}{\numberline {86}{\ignorespaces Velocidade ao longo do tempo em ST001 na Camada 2 (em cent\IeC {\'\i }metros)}}{127}
-\contentsline {figure}{\numberline {87}{\ignorespaces Histograma da velocidade da corrente no ponto ST001 na Camada 2 (em cent\IeC {\'\i }metros)}}{128}
-\contentsline {figure}{\numberline {88}{\ignorespaces Histograma da dire\c c\~ao da corrente no ponto ST001 na Camada 2 (em cent\IeC {\'\i }metros)}}{129}
-\contentsline {figure}{\numberline {89}{\ignorespaces Velocidade ao longo do tempo em ST001 na Camada 3 (em cent\IeC {\'\i }metros)}}{130}
-\contentsline {figure}{\numberline {90}{\ignorespaces Histograma da velocidade da corrente no ponto ST001 na Camada 3 (em cent\IeC {\'\i }metros)}}{131}
-\contentsline {figure}{\numberline {91}{\ignorespaces Histograma da dire\c c\~ao da corrente no ponto ST001 na Camada 3 (em cent\IeC {\'\i }metros)}}{132}
-\contentsline {figure}{\numberline {92}{\ignorespaces Velocidade ao longo do tempo em ST002 na Camada 1 (em cent\IeC {\'\i }metros)}}{133}
-\contentsline {figure}{\numberline {93}{\ignorespaces Histograma da velocidade da corrente no ponto ST002 na Camada 1 (em cent\IeC {\'\i }metros)}}{134}
-\contentsline {figure}{\numberline {94}{\ignorespaces Histograma da dire\c c\~ao da corrente no ponto ST002 na Camada 1 (em cent\IeC {\'\i }metros)}}{135}
-\contentsline {figure}{\numberline {95}{\ignorespaces Velocidade ao longo do tempo em ST002 na Camada 2 (em cent\IeC {\'\i }metros)}}{136}
-\contentsline {figure}{\numberline {96}{\ignorespaces Histograma da velocidade da corrente no ponto ST002 na Camada 2 (em cent\IeC {\'\i }metros)}}{137}
-\contentsline {figure}{\numberline {97}{\ignorespaces Histograma da dire\c c\~ao da corrente no ponto ST002 na Camada 2 (em cent\IeC {\'\i }metros)}}{138}
-\contentsline {figure}{\numberline {98}{\ignorespaces Velocidade ao longo do tempo em ST002 na Camada 3 (em cent\IeC {\'\i }metros)}}{139}
-\contentsline {figure}{\numberline {99}{\ignorespaces Histograma da velocidade da corrente no ponto ST002 na Camada 3 (em cent\IeC {\'\i }metros)}}{140}
-\contentsline {figure}{\numberline {100}{\ignorespaces Histograma da dire\c c\~ao da corrente no ponto ST002 na Camada 3 (em cent\IeC {\'\i }metros)}}{141}
-\contentsline {figure}{\numberline {101}{\ignorespaces Velocidade ao longo do tempo em ST002 na Camada 4 (em cent\IeC {\'\i }metros)}}{142}
-\contentsline {figure}{\numberline {102}{\ignorespaces Histograma da velocidade da corrente no ponto ST002 na Camada 4 (em cent\IeC {\'\i }metros)}}{143}
-\contentsline {figure}{\numberline {103}{\ignorespaces Histograma da dire\c c\~ao da corrente no ponto ST002 na Camada 4 (em cent\IeC {\'\i }metros)}}{144}
-\contentsline {figure}{\numberline {104}{\ignorespaces Velocidade ao longo do tempo em ST002 na Camada 5 (em cent\IeC {\'\i }metros)}}{145}
-\contentsline {figure}{\numberline {105}{\ignorespaces Histograma da velocidade da corrente no ponto ST002 na Camada 5 (em cent\IeC {\'\i }metros)}}{146}
-\contentsline {figure}{\numberline {106}{\ignorespaces Histograma da dire\c c\~ao da corrente no ponto ST002 na Camada 5 (em cent\IeC {\'\i }metros)}}{147}
-\contentsline {figure}{\numberline {107}{\ignorespaces Velocidade ao longo do tempo em ST002 na Camada 6 (em cent\IeC {\'\i }metros)}}{148}
-\contentsline {figure}{\numberline {108}{\ignorespaces Histograma da velocidade da corrente no ponto ST002 na Camada 6 (em cent\IeC {\'\i }metros)}}{149}
-\contentsline {figure}{\numberline {109}{\ignorespaces Histograma da dire\c c\~ao da corrente no ponto ST002 na Camada 6 (em cent\IeC {\'\i }metros)}}{150}
-\contentsline {figure}{\numberline {110}{\ignorespaces Velocidade ao longo do tempo em ST002 na Camada 7 (em cent\IeC {\'\i }metros)}}{151}
-\contentsline {figure}{\numberline {111}{\ignorespaces Histograma da velocidade da corrente no ponto ST002 na Camada 7 (em cent\IeC {\'\i }metros)}}{152}
-\contentsline {figure}{\numberline {112}{\ignorespaces Histograma da dire\c c\~ao da corrente no ponto ST002 na Camada 7 (em cent\IeC {\'\i }metros)}}{153}
-\contentsline {figure}{\numberline {113}{\ignorespaces Velocidade ao longo do tempo em ST002 na Camada 8 (em cent\IeC {\'\i }metros)}}{154}
-\contentsline {figure}{\numberline {114}{\ignorespaces Histograma da velocidade da corrente no ponto ST002 na Camada 8 (em cent\IeC {\'\i }metros)}}{155}
-\contentsline {figure}{\numberline {115}{\ignorespaces Histograma da dire\c c\~ao da corrente no ponto ST002 na Camada 8 (em cent\IeC {\'\i }metros)}}{156}
-\contentsline {figure}{\numberline {116}{\ignorespaces Velocidade ao longo do tempo em ST002 na Camada 9 (em cent\IeC {\'\i }metros)}}{157}
-\contentsline {figure}{\numberline {117}{\ignorespaces Histograma da velocidade da corrente no ponto ST002 na Camada 9 (em cent\IeC {\'\i }metros)}}{158}
-\contentsline {figure}{\numberline {118}{\ignorespaces Histograma da dire\c c\~ao da corrente no ponto ST002 na Camada 9 (em cent\IeC {\'\i }metros)}}{159}
-\contentsline {figure}{\numberline {119}{\ignorespaces Velocidade ao longo do tempo em ST002 na Camada 10 (em cent\IeC {\'\i }metros)}}{160}
-\contentsline {figure}{\numberline {120}{\ignorespaces Histograma da velocidade da corrente no ponto ST002 na Camada 10 (em cent\IeC {\'\i }metros)}}{161}
-\contentsline {figure}{\numberline {121}{\ignorespaces Histograma da dire\c c\~ao da corrente no ponto ST002 na Camada 10 (em cent\IeC {\'\i }metros)}}{162}
-\contentsline {figure}{\numberline {122}{\ignorespaces Velocidade ao longo do tempo em ST003 na Camada 1 (em cent\IeC {\'\i }metros)}}{163}
-\contentsline {figure}{\numberline {123}{\ignorespaces Histograma da velocidade da corrente no ponto ST003 na Camada 1 (em cent\IeC {\'\i }metros)}}{164}
-\contentsline {figure}{\numberline {124}{\ignorespaces Histograma da dire\c c\~ao da corrente no ponto ST003 na Camada 1 (em cent\IeC {\'\i }metros)}}{165}
-\contentsline {figure}{\numberline {125}{\ignorespaces Velocidade ao longo do tempo em ST003 na Camada 2 (em cent\IeC {\'\i }metros)}}{166}
-\contentsline {figure}{\numberline {126}{\ignorespaces Histograma da velocidade da corrente no ponto ST003 na Camada 2 (em cent\IeC {\'\i }metros)}}{167}
-\contentsline {figure}{\numberline {127}{\ignorespaces Histograma da dire\c c\~ao da corrente no ponto ST003 na Camada 2 (em cent\IeC {\'\i }metros)}}{168}
-\contentsline {figure}{\numberline {128}{\ignorespaces Velocidade ao longo do tempo em ST003 na Camada 3 (em cent\IeC {\'\i }metros)}}{169}
-\contentsline {figure}{\numberline {129}{\ignorespaces Histograma da velocidade da corrente no ponto ST003 na Camada 3 (em cent\IeC {\'\i }metros)}}{170}
-\contentsline {figure}{\numberline {130}{\ignorespaces Histograma da dire\c c\~ao da corrente no ponto ST003 na Camada 3 (em cent\IeC {\'\i }metros)}}{171}
-\contentsline {figure}{\numberline {131}{\ignorespaces Velocidade ao longo do tempo em ST003 na Camada 4 (em cent\IeC {\'\i }metros)}}{172}
-\contentsline {figure}{\numberline {132}{\ignorespaces Histograma da velocidade da corrente no ponto ST003 na Camada 4 (em cent\IeC {\'\i }metros)}}{173}
-\contentsline {figure}{\numberline {133}{\ignorespaces Histograma da dire\c c\~ao da corrente no ponto ST003 na Camada 4 (em cent\IeC {\'\i }metros)}}{174}
-\contentsline {figure}{\numberline {134}{\ignorespaces Velocidade ao longo do tempo em ST003 na Camada 5 (em cent\IeC {\'\i }metros)}}{175}
-\contentsline {figure}{\numberline {135}{\ignorespaces Histograma da velocidade da corrente no ponto ST003 na Camada 5 (em cent\IeC {\'\i }metros)}}{176}
-\contentsline {figure}{\numberline {136}{\ignorespaces Histograma da dire\c c\~ao da corrente no ponto ST003 na Camada 5 (em cent\IeC {\'\i }metros)}}{177}
-\contentsline {figure}{\numberline {137}{\ignorespaces Velocidade ao longo do tempo em ST003 na Camada 6 (em cent\IeC {\'\i }metros)}}{178}
-\contentsline {figure}{\numberline {138}{\ignorespaces Histograma da velocidade da corrente no ponto ST003 na Camada 6 (em cent\IeC {\'\i }metros)}}{179}
-\contentsline {figure}{\numberline {139}{\ignorespaces Histograma da dire\c c\~ao da corrente no ponto ST003 na Camada 6 (em cent\IeC {\'\i }metros)}}{180}
-\contentsline {figure}{\numberline {140}{\ignorespaces Velocidade ao longo do tempo em ST003 na Camada 7 (em cent\IeC {\'\i }metros)}}{181}
-\contentsline {figure}{\numberline {141}{\ignorespaces Histograma da velocidade da corrente no ponto ST003 na Camada 7 (em cent\IeC {\'\i }metros)}}{182}
-\contentsline {figure}{\numberline {142}{\ignorespaces Histograma da dire\c c\~ao da corrente no ponto ST003 na Camada 7 (em cent\IeC {\'\i }metros)}}{183}
-\contentsline {figure}{\numberline {143}{\ignorespaces Velocidade ao longo do tempo em ST003 na Camada 8 (em cent\IeC {\'\i }metros)}}{184}
-\contentsline {figure}{\numberline {144}{\ignorespaces Histograma da velocidade da corrente no ponto ST003 na Camada 8 (em cent\IeC {\'\i }metros)}}{185}
-\contentsline {figure}{\numberline {145}{\ignorespaces Histograma da dire\c c\~ao da corrente no ponto ST003 na Camada 8 (em cent\IeC {\'\i }metros)}}{186}
-\contentsline {figure}{\numberline {146}{\ignorespaces Velocidade ao longo do tempo em ST003 na Camada 9 (em cent\IeC {\'\i }metros)}}{187}
-\contentsline {figure}{\numberline {147}{\ignorespaces Histograma da velocidade da corrente no ponto ST003 na Camada 9 (em cent\IeC {\'\i }metros)}}{188}
-\contentsline {figure}{\numberline {148}{\ignorespaces Histograma da dire\c c\~ao da corrente no ponto ST003 na Camada 9 (em cent\IeC {\'\i }metros)}}{189}
-\contentsline {figure}{\numberline {149}{\ignorespaces Velocidade ao longo do tempo em ST003 na Camada 10 (em cent\IeC {\'\i }metros)}}{190}
-\contentsline {figure}{\numberline {150}{\ignorespaces Histograma da velocidade da corrente no ponto ST003 na Camada 10 (em cent\IeC {\'\i }metros)}}{191}
-\contentsline {figure}{\numberline {151}{\ignorespaces Histograma da dire\c c\~ao da corrente no ponto ST003 na Camada 10 (em cent\IeC {\'\i }metros)}}{192}
-\contentsline {figure}{\numberline {152}{\ignorespaces Velocidade ao longo do tempo em ST003 na Camada 11 (em cent\IeC {\'\i }metros)}}{193}
-\contentsline {figure}{\numberline {153}{\ignorespaces Histograma da velocidade da corrente no ponto ST003 na Camada 11 (em cent\IeC {\'\i }metros)}}{194}
-\contentsline {figure}{\numberline {154}{\ignorespaces Histograma da dire\c c\~ao da corrente no ponto ST003 na Camada 11 (em cent\IeC {\'\i }metros)}}{195}
-\contentsline {figure}{\numberline {155}{\ignorespaces Velocidade ao longo do tempo em ST003 na Camada 12 (em cent\IeC {\'\i }metros)}}{196}
-\contentsline {figure}{\numberline {156}{\ignorespaces Histograma da velocidade da corrente no ponto ST003 na Camada 12 (em cent\IeC {\'\i }metros)}}{197}
-\contentsline {figure}{\numberline {157}{\ignorespaces Histograma da dire\c c\~ao da corrente no ponto ST003 na Camada 12 (em cent\IeC {\'\i }metros)}}{198}
+\contentsline {figure}{\numberline {80}{\ignorespaces Dom\IeC {\'\i }nio da grade num\'erica regional e local sobrepostos.}}{112}
+\contentsline {figure}{\numberline {81}{\ignorespaces Dom\IeC {\'\i }nio da grade num\'erica local.}}{113}
+\contentsline {figure}{\numberline {82}{\ignorespaces Batimetria interpolada na grade num\'erica regional.}}{114}
+\contentsline {figure}{\numberline {83}{\ignorespaces Batimetria interpolada na grade num\'erica local.}}{115}
+\contentsline {figure}{\numberline {84}{\ignorespaces Velocidade ao longo do tempo em ST001 na Camada 1 (em $cm.s^{-1}$)}}{125}
+\contentsline {figure}{\numberline {85}{\ignorespaces Histograma da velocidade da corrente no ponto ST001 na Camada 1 (em $cm.s^{-1}$)}}{126}
+\contentsline {figure}{\numberline {86}{\ignorespaces Histograma da dire\c c\~ao da corrente no ponto ST001 na Camada 1 }}{127}
+\contentsline {figure}{\numberline {87}{\ignorespaces Velocidade ao longo do tempo em ST001 na Camada 2 (em $cm.s^{-1}$)}}{128}
+\contentsline {figure}{\numberline {88}{\ignorespaces Histograma da velocidade da corrente no ponto ST001 na Camada 2 (em $cm.s^{-1}$)}}{129}
+\contentsline {figure}{\numberline {89}{\ignorespaces Histograma da dire\c c\~ao da corrente no ponto ST001 na Camada 2 }}{130}
+\contentsline {figure}{\numberline {90}{\ignorespaces Velocidade ao longo do tempo em ST001 na Camada 3 (em $cm.s^{-1}$)}}{131}
+\contentsline {figure}{\numberline {91}{\ignorespaces Histograma da velocidade da corrente no ponto ST001 na Camada 3 (em $cm.s^{-1}$)}}{132}
+\contentsline {figure}{\numberline {92}{\ignorespaces Histograma da dire\c c\~ao da corrente no ponto ST001 na Camada 3 }}{133}
+\contentsline {figure}{\numberline {93}{\ignorespaces Velocidade ao longo do tempo em ST002 na Camada 1 (em $cm.s^{-1}$)}}{134}
+\contentsline {figure}{\numberline {94}{\ignorespaces Histograma da velocidade da corrente no ponto ST002 na Camada 1 (em $cm.s^{-1}$)}}{135}
+\contentsline {figure}{\numberline {95}{\ignorespaces Histograma da dire\c c\~ao da corrente no ponto ST002 na Camada 1}}{136}
+\contentsline {figure}{\numberline {96}{\ignorespaces Velocidade ao longo do tempo em ST002 na Camada 2 (em $cm.s^{-1}$)}}{137}
+\contentsline {figure}{\numberline {97}{\ignorespaces Histograma da velocidade da corrente no ponto ST002 na Camada 2 (em $cm.s^{-1}$)}}{138}
+\contentsline {figure}{\numberline {98}{\ignorespaces Histograma da dire\c c\~ao da corrente no ponto ST002 na Camada 2 }}{139}
+\contentsline {figure}{\numberline {99}{\ignorespaces Velocidade ao longo do tempo em ST002 na Camada 3 (em $cm.s^{-1}$)}}{140}
+\contentsline {figure}{\numberline {100}{\ignorespaces Histograma da velocidade da corrente no ponto ST002 na Camada 3 (em $cm.s^{-1}$)}}{141}
+\contentsline {figure}{\numberline {101}{\ignorespaces Histograma da dire\c c\~ao da corrente no ponto ST002 na Camada 3}}{142}
+\contentsline {figure}{\numberline {102}{\ignorespaces Velocidade ao longo do tempo em ST002 na Camada 4 (em $cm.s^{-1}$)}}{143}
+\contentsline {figure}{\numberline {103}{\ignorespaces Histograma da velocidade da corrente no ponto ST002 na Camada 4 (em $cm.s^{-1}$)}}{144}
+\contentsline {figure}{\numberline {104}{\ignorespaces Histograma da dire\c c\~ao da corrente no ponto ST002 na Camada 4}}{145}
+\contentsline {figure}{\numberline {105}{\ignorespaces Velocidade ao longo do tempo em ST002 na Camada 5 (em $cm.s^{-1}$)}}{146}
+\contentsline {figure}{\numberline {106}{\ignorespaces Histograma da velocidade da corrente no ponto ST002 na Camada 5 (em $cm.s^{-1}$)}}{147}
+\contentsline {figure}{\numberline {107}{\ignorespaces Histograma da dire\c c\~ao da corrente no ponto ST002 na Camada 5}}{148}
+\contentsline {figure}{\numberline {108}{\ignorespaces Velocidade ao longo do tempo em ST002 na Camada 6 (em $cm.s^{-1}$)}}{149}
+\contentsline {figure}{\numberline {109}{\ignorespaces Histograma da velocidade da corrente no ponto ST002 na Camada 6 (em $cm.s^{-1}$)}}{150}
+\contentsline {figure}{\numberline {110}{\ignorespaces Histograma da dire\c c\~ao da corrente no ponto ST002 na Camada 6}}{151}
+\contentsline {figure}{\numberline {111}{\ignorespaces Velocidade ao longo do tempo em ST002 na Camada 7 (em $cm.s^{-1}$)}}{152}
+\contentsline {figure}{\numberline {112}{\ignorespaces Histograma da velocidade da corrente no ponto ST002 na Camada 7 (em $cm.s^{-1}$)}}{153}
+\contentsline {figure}{\numberline {113}{\ignorespaces Histograma da dire\c c\~ao da corrente no ponto ST002 na Camada 7}}{154}
+\contentsline {figure}{\numberline {114}{\ignorespaces Velocidade ao longo do tempo em ST002 na Camada 8 (em $cm.s^{-1}$)}}{155}
+\contentsline {figure}{\numberline {115}{\ignorespaces Histograma da velocidade da corrente no ponto ST002 na Camada 8 (em $cm.s^{-1}$)}}{156}
+\contentsline {figure}{\numberline {116}{\ignorespaces Histograma da dire\c c\~ao da corrente no ponto ST002 na Camada 8}}{157}
+\contentsline {figure}{\numberline {117}{\ignorespaces Velocidade ao longo do tempo em ST002 na Camada 9 (em $cm.s^{-1}$)}}{158}
+\contentsline {figure}{\numberline {118}{\ignorespaces Histograma da velocidade da corrente no ponto ST002 na Camada 9 (em $cm.s^{-1}$)}}{159}
+\contentsline {figure}{\numberline {119}{\ignorespaces Histograma da dire\c c\~ao da corrente no ponto ST002 na Camada 9}}{160}
+\contentsline {figure}{\numberline {120}{\ignorespaces Velocidade ao longo do tempo em ST002 na Camada 10 (em $cm.s^{-1}$)}}{161}
+\contentsline {figure}{\numberline {121}{\ignorespaces Histograma da velocidade da corrente no ponto ST002 na Camada 10 (em $cm.s^{-1}$)}}{162}
+\contentsline {figure}{\numberline {122}{\ignorespaces Histograma da dire\c c\~ao da corrente no ponto ST002 na Camada 10}}{163}
+\contentsline {figure}{\numberline {123}{\ignorespaces Velocidade ao longo do tempo em ST003 na Camada 1 (em $cm.s^{-1}$)}}{164}
+\contentsline {figure}{\numberline {124}{\ignorespaces Histograma da velocidade da corrente no ponto ST003 na Camada 1 (em $cm.s^{-1}$)}}{165}
+\contentsline {figure}{\numberline {125}{\ignorespaces Histograma da dire\c c\~ao da corrente no ponto ST003 na Camada 1}}{166}
+\contentsline {figure}{\numberline {126}{\ignorespaces Velocidade ao longo do tempo em ST003 na Camada 2 (em $cm.s^{-1}$)}}{167}
+\contentsline {figure}{\numberline {127}{\ignorespaces Histograma da velocidade da corrente no ponto ST003 na Camada 2 (em cent\IeC {\'\i })}}{168}
+\contentsline {figure}{\numberline {128}{\ignorespaces Histograma da dire\c c\~ao da corrente no ponto ST003 na Camada 2}}{169}
+\contentsline {figure}{\numberline {129}{\ignorespaces Velocidade ao longo do tempo em ST003 na Camada 3 (em $cm.s^{-1}$)}}{170}
+\contentsline {figure}{\numberline {130}{\ignorespaces Histograma da velocidade da corrente no ponto ST003 na Camada 3 (em $cm.s^{-1}$)}}{171}
+\contentsline {figure}{\numberline {131}{\ignorespaces Histograma da dire\c c\~ao da corrente no ponto ST003 na Camada 3}}{172}
+\contentsline {figure}{\numberline {132}{\ignorespaces Velocidade ao longo do tempo em ST003 na Camada 4 (em $cm.s^{-1}$)}}{173}
+\contentsline {figure}{\numberline {133}{\ignorespaces Histograma da velocidade da corrente no ponto ST003 na Camada 4 (em $cm.s^{-1}$)}}{174}
+\contentsline {figure}{\numberline {134}{\ignorespaces Histograma da dire\c c\~ao da corrente no ponto ST003 na Camada 4}}{175}
+\contentsline {figure}{\numberline {135}{\ignorespaces Velocidade ao longo do tempo em ST003 na Camada 5 (em $cm.s^{-1}$)}}{176}
+\contentsline {figure}{\numberline {136}{\ignorespaces Histograma da velocidade da corrente no ponto ST003 na Camada 5 (em $cm.s^{-1}$)}}{177}
+\contentsline {figure}{\numberline {137}{\ignorespaces Histograma da dire\c c\~ao da corrente no ponto ST003 na Camada 5}}{178}
+\contentsline {figure}{\numberline {138}{\ignorespaces Velocidade ao longo do tempo em ST003 na Camada 6 (em $cm.s^{-1}$)}}{179}
+\contentsline {figure}{\numberline {139}{\ignorespaces Histograma da velocidade da corrente no ponto ST003 na Camada 6 (em $cm.s^{-1}$)}}{180}
+\contentsline {figure}{\numberline {140}{\ignorespaces Histograma da dire\c c\~ao da corrente no ponto ST003 na Camada 6}}{181}
+\contentsline {figure}{\numberline {141}{\ignorespaces Velocidade ao longo do tempo em ST003 na Camada 7 (em $cm.s^{-1}$)}}{182}
+\contentsline {figure}{\numberline {142}{\ignorespaces Histograma da velocidade da corrente no ponto ST003 na Camada 7 (em $cm.s^{-1}$)}}{183}
+\contentsline {figure}{\numberline {143}{\ignorespaces Histograma da dire\c c\~ao da corrente no ponto ST003 na Camada 7}}{184}
+\contentsline {figure}{\numberline {144}{\ignorespaces Velocidade ao longo do tempo em ST003 na Camada 8 (em $cm.s^{-1}$)}}{185}
+\contentsline {figure}{\numberline {145}{\ignorespaces Histograma da velocidade da corrente no ponto ST003 na Camada 8 (em $cm.s^{-1}$)}}{186}
+\contentsline {figure}{\numberline {146}{\ignorespaces Histograma da dire\c c\~ao da corrente no ponto ST003 na Camada 8}}{187}
+\contentsline {figure}{\numberline {147}{\ignorespaces Velocidade ao longo do tempo em ST003 na Camada 9 (em $cm.s^{-1}$)}}{188}
+\contentsline {figure}{\numberline {148}{\ignorespaces Histograma da velocidade da corrente no ponto ST003 na Camada 9 (em $cm.s^{-1}$)}}{189}
+\contentsline {figure}{\numberline {149}{\ignorespaces Histograma da dire\c c\~ao da corrente no ponto ST003 na Camada 9}}{190}
+\contentsline {figure}{\numberline {150}{\ignorespaces Velocidade ao longo do tempo em ST003 na Camada 10 (em $cm.s^{-1}$)}}{191}
+\contentsline {figure}{\numberline {151}{\ignorespaces Histograma da velocidade da corrente no ponto ST003 na Camada 10 (em $cm.s^{-1}$)}}{192}
+\contentsline {figure}{\numberline {152}{\ignorespaces Histograma da dire\c c\~ao da corrente no ponto ST003 na Camada 10}}{193}
+\contentsline {figure}{\numberline {153}{\ignorespaces Velocidade ao longo do tempo em ST003 na Camada 11 (em $cm.s^{-1}$)}}{194}
+\contentsline {figure}{\numberline {154}{\ignorespaces Histograma da velocidade da corrente no ponto ST003 na Camada 11 (em $cm.s^{-1}$)}}{195}
+\contentsline {figure}{\numberline {155}{\ignorespaces Histograma da dire\c c\~ao da corrente no ponto ST003 na Camada 11}}{196}
+\contentsline {figure}{\numberline {156}{\ignorespaces Velocidade ao longo do tempo em ST003 na Camada 12 (em $cm.s^{-1}$)}}{197}
+\contentsline {figure}{\numberline {157}{\ignorespaces Histograma da velocidade da corrente no ponto ST003 na Camada 12 (em $cm.s^{-1}$)}}{198}
+\contentsline {figure}{\numberline {158}{\ignorespaces Histograma da dire\c c\~ao da corrente no ponto ST003 na Camada 12}}{199}
