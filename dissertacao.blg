@@ -12,22 +12,22 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: abnt-options.bib
 Database file #2: bibliografia.bib
-I was expecting a `,' or a `}'---line 526 of file bibliografia.bib
+I was expecting a `,' or a `}'---line 536 of file bibliografia.bib
  :  
  :  url={http://rda.ucar.edu/datasets/ds094.1}}
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 541 of file bibliografia.bib
+I was expecting a `,' or a `}'---line 551 of file bibliografia.bib
  :  
  :  url={http://polar.ncep.noaa.gov/waves/wavewatch/}}
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 563 of file bibliografia.bib
+I was expecting a `,' or a `}'---line 573 of file bibliografia.bib
  :  
  :  address={Florianópolis}}
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-Repeated entry---line 599 of file bibliografia.bib
+Repeated entry---line 609 of file bibliografia.bib
  : @misc{santur
  :             ,
 I'm skipping whatever remains of this entry
@@ -43,45 +43,45 @@ Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://abntex.codigolivre.org.br                        |
 +---------------------------------------------------------+
-You've used 68 entries,
+You've used 69 entries,
             6480 wiz_defined-function locations,
-            1567 strings with 19355 characters,
-and the built_in function-call counts, 51534 in all, are:
-= -- 3989
-> -- 1746
-< -- 90
-+ -- 740
-- -- 527
-* -- 3673
-:= -- 6995
-add.period$ -- 226
-call.type$ -- 69
-change.case$ -- 663
-chr.to.int$ -- 142
-cite$ -- 66
-duplicate$ -- 2438
-empty$ -- 3941
-format.name$ -- 2560
-if$ -- 12334
+            1574 strings with 19524 characters,
+and the built_in function-call counts, 52250 in all, are:
+= -- 4037
+> -- 1762
+< -- 94
++ -- 745
+- -- 532
+* -- 3722
+:= -- 7090
+add.period$ -- 230
+call.type$ -- 70
+change.case$ -- 671
+chr.to.int$ -- 146
+cite$ -- 67
+duplicate$ -- 2483
+empty$ -- 3999
+format.name$ -- 2583
+if$ -- 12502
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 1155
-newline$ -- 341
-num.names$ -- 310
-pop$ -- 1433
+missing$ -- 1173
+newline$ -- 347
+num.names$ -- 315
+pop$ -- 1451
 preamble$ -- 1
-purify$ -- 260
+purify$ -- 263
 quote$ -- 0
-skip$ -- 3007
+skip$ -- 3045
 stack$ -- 1
-substring$ -- 2080
-swap$ -- 1155
-text.length$ -- 65
+substring$ -- 2120
+swap$ -- 1180
+text.length$ -- 68
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 56
 warning$ -- 0
-while$ -- 442
+while$ -- 450
 width$ -- 0
-write$ -- 1028
+write$ -- 1046
 (There were 4 error messages)

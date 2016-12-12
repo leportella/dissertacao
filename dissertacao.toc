@@ -35,6 +35,5 @@
 \contentsline {subsection}{\numberline {4.3.4}Calibra\c c\~ao}{116}
 \contentsline {subsection}{\numberline {4.3.5}Dificuldades encontradas}{116}
 \contentsline {chapter}{\numberline {5}\MakeUppercase {DISCUSS\~AO}}{118}
-\contentsline {chapter}{\numberline {6}\MakeUppercase {CONCLUS\~AO}}{119}
-\contentsline {chapter}{\hspace {\espacosumario }REFER\^ENCIAS}{120}
-\contentsline {chapter}{\hspace {\espacosumario }\MakeUppercase {Ap\^endice{}} A{} -$\mskip -\thinmuskip $-{} Figuras Extras}{125}
+\contentsline {chapter}{\hspace {\espacosumario }REFER\^ENCIAS}{119}
+\contentsline {chapter}{\hspace {\espacosumario }\MakeUppercase {Ap\^endice{}} A{} -$\mskip -\thinmuskip $-{} Gr\'aficos de Corrente por Camada}{124}
