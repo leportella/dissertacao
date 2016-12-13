@@ -27,7 +27,12 @@ I was expecting a `,' or a `}'---line 573 of file bibliografia.bib
  :  address={Florianópolis}}
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-Repeated entry---line 609 of file bibliografia.bib
+I was expecting a `,' or a `}'---line 580 of file bibliografia.bib
+ :  
+ :  address={Itajaí}}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Repeated entry---line 616 of file bibliografia.bib
  : @misc{santur
  :             ,
 I'm skipping whatever remains of this entry
@@ -43,45 +48,45 @@ Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://abntex.codigolivre.org.br                        |
 +---------------------------------------------------------+
-You've used 69 entries,
+You've used 70 entries,
             6480 wiz_defined-function locations,
-            1574 strings with 19524 characters,
-and the built_in function-call counts, 52250 in all, are:
-= -- 4037
-> -- 1762
+            1578 strings with 19734 characters,
+and the built_in function-call counts, 52817 in all, are:
+= -- 4074
+> -- 1777
 < -- 94
-+ -- 745
-- -- 532
-* -- 3722
-:= -- 7090
-add.period$ -- 230
-call.type$ -- 70
-change.case$ -- 671
-chr.to.int$ -- 146
-cite$ -- 67
-duplicate$ -- 2483
-empty$ -- 3999
-format.name$ -- 2583
-if$ -- 12502
++ -- 750
+- -- 537
+* -- 3756
+:= -- 7171
+add.period$ -- 234
+call.type$ -- 71
+change.case$ -- 678
+chr.to.int$ -- 147
+cite$ -- 68
+duplicate$ -- 2510
+empty$ -- 4056
+format.name$ -- 2606
+if$ -- 12636
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 1173
-newline$ -- 347
-num.names$ -- 315
-pop$ -- 1451
+missing$ -- 1189
+newline$ -- 352
+num.names$ -- 320
+pop$ -- 1472
 preamble$ -- 1
-purify$ -- 263
+purify$ -- 266
 quote$ -- 0
-skip$ -- 3045
+skip$ -- 3081
 stack$ -- 1
-substring$ -- 2120
-swap$ -- 1180
+substring$ -- 2139
+swap$ -- 1190
 text.length$ -- 68
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 56
 warning$ -- 0
-while$ -- 450
+while$ -- 456
 width$ -- 0
-write$ -- 1046
-(There were 4 error messages)
+write$ -- 1060
+(There were 5 error messages)

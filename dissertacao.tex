@@ -1584,6 +1584,37 @@ No presente momento, as condições \emph{a} e \emph{b} foram atingidas e espera-s
 Também verificou-se que modelos com viscosidade se apresentaram mais estáveis que modelos sem viscosidade. 
 
 
+\begin{landscape}
+
+	\begin{tabularx}{\linewidth}{ccccccccccc}
+		\caption{Rodadas de calibração testas até o momento com segunda grade testada}\label{tab:rodadas} \\
+		\toprule
+		\textbf{Rodada} & \textbf{Versão}  & \textbf{Fronteiras} & \textbf{Aninhamento} &
+		\textbf{Ts Reg} & \textbf{Ts Local} & \textbf{Maré} & \textbf{Vento} & \textbf{Viscosidade} &
+		\textbf{Conf. Visc.} & \textbf{Resultado} \\[6pt]
+		\midrule
+		\endhead
+		Run1 & v2 & Che+Fla+Rad & sim & 10 & 10 & sim & não      & não            & -           & ok \\[6pt]
+		Run1 & v2 & Che+Fla+Rad & sim & 10 & 2  & sim & não      & não            & -           & ok \\[6pt]
+		Run2 & v2 & Che+Fla+Rad & sim & 10 & 2  & sim & não      & VISC2=5        & MIX\_S\_UV  & ok \\[6pt]
+		Run3 & v2 & Che+Fla+Rad & sim & 10 & 2  & sim & não      & VISC2=5        & MIX\_S\_GEO & ok \\[6pt]
+		Run4 & v2 & Che+Fla+Rad & sim & 10 & 2  & sim & não      & VISC2=5        & VISC2       &  ok \\[6pt]
+		Run5 & v2 & Che+Fla+Rad & sim & 10 & 2  & sim & sim      & não            & -           & quebrou \\[6pt]
+		Run6 & v2 & Che+Fla+Rad & sim & 10 & 2  & sim & sim      & VISC2=5        & VISC2       & quebrou \\[6pt]
+		Run7 & v2 & Che+Fla+Rad & sim & 10 & 2  & sim & sim      & VISC2=5        & MIX\_S\_UV  & quebrou \\[6pt]
+		Run8 & v2 & Che+Fla+Rad & sim & 10 & 2  & sim & sim      & VISC2=5        & MIX\_S\_GEO & quebrou \\[6pt]
+		Run9 & v2 & Che+Fla+Rad & sim & 10 & 2  & sim & sim      & VISC2=10       & MIX\_S\_UV & quebrou \\[6pt]
+		Run10 & v2 & Che+Fla+Rad & sim & 10 & 2  & sim & sim      & VISC2=10       & MIX\_S\_GE & quebrou \\[6pt]
+		Run11 & v2 & Che+Fla+Rad & sim & 10 & 2  & sim & sim      & VISC2=25       & MIX\_S\_GEO & quebrou \\[6pt]
+		Run12 & v2 & Che+Fla+Rad & sim & 10 & 2  & sim & adaptado & VISC2=10  & MIX\_S\_UV  & rodando \\[6pt]
+		Run13 & v3 & Che+Fla+Rad & sim & 10 & 2  & sim & adaptado & VISC2=10  & MIX\_S\_UV  & rodando \\[6pt]
+		Run14 & v3 & Che+Fla+Rad & não & 10 & 2  & sim & adaptado & VISC2=10  & MIX\_S\_UV  & quebrou \\[6pt]
+		Run15 & v3 & Che+Fla+Rad & sim & 10 & 2  & sim & não      & VISC2=10  & MIX\_S\_UV  & rodando \\[6pt]
+		Run16 & v3 & Che+Fla+Rad & não & 10 & 2  & não & adaptado & VISC2=10  & MIX\_S\_UV  & rodando \\[6pt]
+		Run17 & v3 & Cha+Fla     & não & 10 & 2  & não & adaptado & VISC2=10  & MIX\_S\_UV  & rodando \\[6pt]
+		\bottomrule
+	\end{tabularx}
+\end{landscape}
 %\begin{landscape}
 %	\begin{figure}[!htb]
 %		\includegraphics[width=1.6\textwidth]{figuras/Calibracao_Regional01ST001.png}
@@ -1629,7 +1660,7 @@ Uma série de dificuldades foram encontradas nas etapas iniciais do modelo que to
 
 \chapter{DISCUSSÃO}
 
-O vento na região apresenta velocidades máximas de cerca de 10$cm.s^{-1}$ em todas as estações analisadas com predominância de ventos de L e S no inverno e de O-N nas demais estações.
+O vento na região apresenta velocidades máximas de cerca de 10$cm.s^{-1}$ em todas as estações e um comportamento homogêneo em termos de velocidade em todas as estações. Esses resultados concordam com os resultados encontrados por \citeonline{tccgustavo}, que também encontrou um padrão muito semelhante de velocidades do vento ao longo das estações do ano. Entretanto, o autor descreveu ventos predominantes de L tanto verão quanto na primavera, enquanto os resultados do presente estudo indicam predominância de ventos de O e N, nestas estações.  A predominância de ventos S no inverno foi encontrada em ambos os trabalhos.
 
 Verificou-se que a maré meteorológica analisada nos ADCPs não foi tão representativa quanto descrito por \citeonline{Parise}. Os autores verificaram que as marés meteorológicas alcançam em média 1m, podendo alcançar 1,9m em casos na Praia do Cassino, extremo sul do Brasil. Os dados de nível de Penha, porém, indicaram que marés meteorológicas de até 1,3m podem ocorrer na região, concordando com os dados dos autores do Cassino.
 

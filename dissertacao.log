@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2015.6.9)  12 DEC 2016 21:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2015.6.9)  13 DEC 2016 19:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1528,1052 +1528,1056 @@ Package pdftex.def Info: figuras/Batimetria_GrdRLocal.png used on input line 15
 
  <./figuras/Batimetria_GrdRLocal.png>] [116
 
-] [117]
+] [117
+
+] [118
+
+]
 Cap\'{\i }tulo 5.
 
-LaTeX Warning: Reference `fig:corrvento01' on page 118 undefined on input line 
-1640.
+LaTeX Warning: Reference `fig:corrvento01' on page 119 undefined on input line 
+1671.
 
 
-LaTeX Warning: Reference `fig:corrventodir03' on page 118 undefined on input li
-ne 1640.
+LaTeX Warning: Reference `fig:corrventodir03' on page 119 undefined on input li
+ne 1671.
 
-(./dissertacao.bbl [118
+(./dissertacao.bbl [119
 
-] [119
+] [120
 
-] [120] [121]) [122] [123
+] [121] [122]) [123] [124
 
 ]
 Apendice A.
-<figuras/camadas/Corrente_ST001_Camada1.png, id=569, 1084.05pt x 361.35pt>
+<figuras/camadas/Corrente_ST001_Camada1.png, id=572, 1084.05pt x 361.35pt>
 File: figuras/camadas/Corrente_ST001_Camada1.png Graphic file (type png)
 
 <use figuras/camadas/Corrente_ST001_Camada1.png>
 Package pdftex.def Info: figuras/camadas/Corrente_ST001_Camada1.png used on inp
-ut line 1660.
+ut line 1691.
 (pdftex.def)             Requested size: 822.28319pt x 274.10504pt.
 
-Overfull \hbox (76.82097pt too wide) in paragraph at lines 1660--1662
+Overfull \hbox (76.82097pt too wide) in paragraph at lines 1691--1693
  [][] 
  []
 
-[124
+[125
 
 
  <./figuras/camadas/Corrente_ST001_Camada1.png>]
-<figuras/camadas/Corrente_ST001_Camada1_HistVel.png, id=577, 1084.05pt x 361.35
+<figuras/camadas/Corrente_ST001_Camada1_HistVel.png, id=581, 1084.05pt x 361.35
 pt>
 File: figuras/camadas/Corrente_ST001_Camada1_HistVel.png Graphic file (type png
 )
  <use figuras/camadas/Corrente_ST001_Camada1_HistVel.png>
 Package pdftex.def Info: figuras/camadas/Corrente_ST001_Camada1_HistVel.png use
-d on input line 1667.
+d on input line 1698.
 (pdftex.def)             Requested size: 822.28319pt x 274.10504pt.
 
-Overfull \hbox (76.82097pt too wide) in paragraph at lines 1667--1669
+Overfull \hbox (76.82097pt too wide) in paragraph at lines 1698--1700
  [][] 
  []
 
-[125 <./figuras/camadas/Corrente_ST001_Camada1_HistVel.png>]
-<figuras/camadas/Corrente_ST001_Camada1_HistDir.png, id=583, 1084.05pt x 361.35
+[126 <./figuras/camadas/Corrente_ST001_Camada1_HistVel.png>]
+<figuras/camadas/Corrente_ST001_Camada1_HistDir.png, id=586, 1084.05pt x 361.35
 pt>
 File: figuras/camadas/Corrente_ST001_Camada1_HistDir.png Graphic file (type png
 )
  <use figuras/camadas/Corrente_ST001_Camada1_HistDir.png>
 Package pdftex.def Info: figuras/camadas/Corrente_ST001_Camada1_HistDir.png use
-d on input line 1674.
+d on input line 1705.
 (pdftex.def)             Requested size: 822.28319pt x 274.10504pt.
 
-Overfull \hbox (76.82097pt too wide) in paragraph at lines 1674--1676
+Overfull \hbox (76.82097pt too wide) in paragraph at lines 1705--1707
  [][] 
  []
 
-[126 <./figuras/camadas/Corrente_ST001_Camada1_HistDir.png>]
-<figuras/camadas/Corrente_ST001_Camada2.png, id=588, 1084.05pt x 361.35pt>
+[127 <./figuras/camadas/Corrente_ST001_Camada1_HistDir.png>]
+<figuras/camadas/Corrente_ST001_Camada2.png, id=591, 1084.05pt x 361.35pt>
 File: figuras/camadas/Corrente_ST001_Camada2.png Graphic file (type png)
 
 <use figuras/camadas/Corrente_ST001_Camada2.png>
 Package pdftex.def Info: figuras/camadas/Corrente_ST001_Camada2.png used on inp
-ut line 1682.
+ut line 1713.
 (pdftex.def)             Requested size: 822.28319pt x 274.10504pt.
 
-Overfull \hbox (76.82097pt too wide) in paragraph at lines 1682--1684
+Overfull \hbox (76.82097pt too wide) in paragraph at lines 1713--1715
  [][] 
  []
 
-[127 <./figuras/camadas/Corrente_ST001_Camada2.png>]
-<figuras/camadas/Corrente_ST001_Camada2_HistVel.png, id=593, 1084.05pt x 361.35
+[128 <./figuras/camadas/Corrente_ST001_Camada2.png>]
+<figuras/camadas/Corrente_ST001_Camada2_HistVel.png, id=596, 1084.05pt x 361.35
 pt>
 File: figuras/camadas/Corrente_ST001_Camada2_HistVel.png Graphic file (type png
 )
  <use figuras/camadas/Corrente_ST001_Camada2_HistVel.png>
 Package pdftex.def Info: figuras/camadas/Corrente_ST001_Camada2_HistVel.png use
-d on input line 1689.
+d on input line 1720.
 (pdftex.def)             Requested size: 822.28319pt x 274.10504pt.
 
-Overfull \hbox (76.82097pt too wide) in paragraph at lines 1689--1691
+Overfull \hbox (76.82097pt too wide) in paragraph at lines 1720--1722
  [][] 
  []
 
-[128 <./figuras/camadas/Corrente_ST001_Camada2_HistVel.png>]
-<figuras/camadas/Corrente_ST001_Camada2_HistDir.png, id=598, 1084.05pt x 361.35
+[129 <./figuras/camadas/Corrente_ST001_Camada2_HistVel.png>]
+<figuras/camadas/Corrente_ST001_Camada2_HistDir.png, id=601, 1084.05pt x 361.35
 pt>
 File: figuras/camadas/Corrente_ST001_Camada2_HistDir.png Graphic file (type png
 )
  <use figuras/camadas/Corrente_ST001_Camada2_HistDir.png>
 Package pdftex.def Info: figuras/camadas/Corrente_ST001_Camada2_HistDir.png use
-d on input line 1696.
+d on input line 1727.
 (pdftex.def)             Requested size: 822.28319pt x 274.10504pt.
 
-Overfull \hbox (76.82097pt too wide) in paragraph at lines 1696--1698
+Overfull \hbox (76.82097pt too wide) in paragraph at lines 1727--1729
  [][] 
  []
 
-[129 <./figuras/camadas/Corrente_ST001_Camada2_HistDir.png>]
-<figuras/camadas/Corrente_ST001_Camada3.png, id=603, 1084.05pt x 361.35pt>
+[130 <./figuras/camadas/Corrente_ST001_Camada2_HistDir.png>]
+<figuras/camadas/Corrente_ST001_Camada3.png, id=606, 1084.05pt x 361.35pt>
 File: figuras/camadas/Corrente_ST001_Camada3.png Graphic file (type png)
 
 <use figuras/camadas/Corrente_ST001_Camada3.png>
 Package pdftex.def Info: figuras/camadas/Corrente_ST001_Camada3.png used on inp
-ut line 1704.
+ut line 1735.
 (pdftex.def)             Requested size: 822.28319pt x 274.10504pt.
 
-Overfull \hbox (76.82097pt too wide) in paragraph at lines 1704--1706
+Overfull \hbox (76.82097pt too wide) in paragraph at lines 1735--1737
  [][] 
  []
 
-[130 <./figuras/camadas/Corrente_ST001_Camada3.png>]
-<figuras/camadas/Corrente_ST001_Camada3_HistVel.png, id=608, 1084.05pt x 361.35
+[131 <./figuras/camadas/Corrente_ST001_Camada3.png>]
+<figuras/camadas/Corrente_ST001_Camada3_HistVel.png, id=612, 1084.05pt x 361.35
 pt>
 File: figuras/camadas/Corrente_ST001_Camada3_HistVel.png Graphic file (type png
 )
  <use figuras/camadas/Corrente_ST001_Camada3_HistVel.png>
 Package pdftex.def Info: figuras/camadas/Corrente_ST001_Camada3_HistVel.png use
-d on input line 1711.
+d on input line 1742.
 (pdftex.def)             Requested size: 822.28319pt x 274.10504pt.
 
-Overfull \hbox (76.82097pt too wide) in paragraph at lines 1711--1713
+Overfull \hbox (76.82097pt too wide) in paragraph at lines 1742--1744
  [][] 
  []
 
-[131 <./figuras/camadas/Corrente_ST001_Camada3_HistVel.png>]
-<figuras/camadas/Corrente_ST001_Camada3_HistDir.png, id=614, 1084.05pt x 361.35
+[132 <./figuras/camadas/Corrente_ST001_Camada3_HistVel.png>]
+<figuras/camadas/Corrente_ST001_Camada3_HistDir.png, id=617, 1084.05pt x 361.35
 pt>
 File: figuras/camadas/Corrente_ST001_Camada3_HistDir.png Graphic file (type png
 )
  <use figuras/camadas/Corrente_ST001_Camada3_HistDir.png>
 Package pdftex.def Info: figuras/camadas/Corrente_ST001_Camada3_HistDir.png use
-d on input line 1718.
+d on input line 1749.
 (pdftex.def)             Requested size: 822.28319pt x 274.10504pt.
 
-Overfull \hbox (76.82097pt too wide) in paragraph at lines 1718--1720
+Overfull \hbox (76.82097pt too wide) in paragraph at lines 1749--1751
  [][] 
  []
 
-[132 <./figuras/camadas/Corrente_ST001_Camada3_HistDir.png>]
-<figuras/camadas/Corrente_ST002_Camada1.png, id=619, 1084.05pt x 361.35pt>
+[133 <./figuras/camadas/Corrente_ST001_Camada3_HistDir.png>]
+<figuras/camadas/Corrente_ST002_Camada1.png, id=622, 1084.05pt x 361.35pt>
 File: figuras/camadas/Corrente_ST002_Camada1.png Graphic file (type png)
 
 <use figuras/camadas/Corrente_ST002_Camada1.png>
 Package pdftex.def Info: figuras/camadas/Corrente_ST002_Camada1.png used on inp
-ut line 1726.
+ut line 1757.
 (pdftex.def)             Requested size: 822.28319pt x 274.10504pt.
 
-Overfull \hbox (76.82097pt too wide) in paragraph at lines 1726--1728
+Overfull \hbox (76.82097pt too wide) in paragraph at lines 1757--1759
  [][] 
  []
 
-[133 <./figuras/camadas/Corrente_ST002_Camada1.png>]
-<figuras/camadas/Corrente_ST002_Camada1_HistVel.png, id=624, 1084.05pt x 361.35
+[134 <./figuras/camadas/Corrente_ST002_Camada1.png>]
+<figuras/camadas/Corrente_ST002_Camada1_HistVel.png, id=627, 1084.05pt x 361.35
 pt>
 File: figuras/camadas/Corrente_ST002_Camada1_HistVel.png Graphic file (type png
 )
  <use figuras/camadas/Corrente_ST002_Camada1_HistVel.png>
 Package pdftex.def Info: figuras/camadas/Corrente_ST002_Camada1_HistVel.png use
-d on input line 1733.
+d on input line 1764.
 (pdftex.def)             Requested size: 822.28319pt x 274.10504pt.
 
-Overfull \hbox (76.82097pt too wide) in paragraph at lines 1733--1735
+Overfull \hbox (76.82097pt too wide) in paragraph at lines 1764--1766
  [][] 
  []
 
-[134 <./figuras/camadas/Corrente_ST002_Camada1_HistVel.png>]
-<figuras/camadas/Corrente_ST002_Camada1_HistDir.png, id=629, 1084.05pt x 361.35
+[135 <./figuras/camadas/Corrente_ST002_Camada1_HistVel.png>]
+<figuras/camadas/Corrente_ST002_Camada1_HistDir.png, id=632, 1084.05pt x 361.35
 pt>
 File: figuras/camadas/Corrente_ST002_Camada1_HistDir.png Graphic file (type png
 )
  <use figuras/camadas/Corrente_ST002_Camada1_HistDir.png>
 Package pdftex.def Info: figuras/camadas/Corrente_ST002_Camada1_HistDir.png use
-d on input line 1740.
+d on input line 1771.
 (pdftex.def)             Requested size: 822.28319pt x 274.10504pt.
 
-Overfull \hbox (76.82097pt too wide) in paragraph at lines 1740--1742
+Overfull \hbox (76.82097pt too wide) in paragraph at lines 1771--1773
  [][] 
  []
 
-[135 <./figuras/camadas/Corrente_ST002_Camada1_HistDir.png>]
-<figuras/camadas/Corrente_ST002_Camada2.png, id=634, 1084.05pt x 361.35pt>
+[136 <./figuras/camadas/Corrente_ST002_Camada1_HistDir.png>]
+<figuras/camadas/Corrente_ST002_Camada2.png, id=637, 1084.05pt x 361.35pt>
 File: figuras/camadas/Corrente_ST002_Camada2.png Graphic file (type png)
 
 <use figuras/camadas/Corrente_ST002_Camada2.png>
 Package pdftex.def Info: figuras/camadas/Corrente_ST002_Camada2.png used on inp
-ut line 1748.
+ut line 1779.
 (pdftex.def)             Requested size: 822.28319pt x 274.10504pt.
 
-Overfull \hbox (76.82097pt too wide) in paragraph at lines 1748--1750
+Overfull \hbox (76.82097pt too wide) in paragraph at lines 1779--1781
  [][] 
  []
 
-[136 <./figuras/camadas/Corrente_ST002_Camada2.png>]
-<figuras/camadas/Corrente_ST002_Camada2_HistVel.png, id=639, 1084.05pt x 361.35
+[137 <./figuras/camadas/Corrente_ST002_Camada2.png>]
+<figuras/camadas/Corrente_ST002_Camada2_HistVel.png, id=643, 1084.05pt x 361.35
 pt>
 File: figuras/camadas/Corrente_ST002_Camada2_HistVel.png Graphic file (type png
 )
  <use figuras/camadas/Corrente_ST002_Camada2_HistVel.png>
 Package pdftex.def Info: figuras/camadas/Corrente_ST002_Camada2_HistVel.png use
-d on input line 1755.
+d on input line 1786.
 (pdftex.def)             Requested size: 822.28319pt x 274.10504pt.
 
-Overfull \hbox (76.82097pt too wide) in paragraph at lines 1755--1757
+Overfull \hbox (76.82097pt too wide) in paragraph at lines 1786--1788
  [][] 
  []
 
-[137 <./figuras/camadas/Corrente_ST002_Camada2_HistVel.png>]
-<figuras/camadas/Corrente_ST002_Camada2_HistDir.png, id=645, 1084.05pt x 361.35
+[138 <./figuras/camadas/Corrente_ST002_Camada2_HistVel.png>]
+<figuras/camadas/Corrente_ST002_Camada2_HistDir.png, id=648, 1084.05pt x 361.35
 pt>
 File: figuras/camadas/Corrente_ST002_Camada2_HistDir.png Graphic file (type png
 )
  <use figuras/camadas/Corrente_ST002_Camada2_HistDir.png>
 Package pdftex.def Info: figuras/camadas/Corrente_ST002_Camada2_HistDir.png use
-d on input line 1762.
+d on input line 1793.
 (pdftex.def)             Requested size: 822.28319pt x 274.10504pt.
 
-Overfull \hbox (76.82097pt too wide) in paragraph at lines 1762--1764
+Overfull \hbox (76.82097pt too wide) in paragraph at lines 1793--1795
  [][] 
  []
 
-[138 <./figuras/camadas/Corrente_ST002_Camada2_HistDir.png>]
-<figuras/camadas/Corrente_ST002_Camada3.png, id=650, 1084.05pt x 361.35pt>
+[139 <./figuras/camadas/Corrente_ST002_Camada2_HistDir.png>]
+<figuras/camadas/Corrente_ST002_Camada3.png, id=653, 1084.05pt x 361.35pt>
 File: figuras/camadas/Corrente_ST002_Camada3.png Graphic file (type png)
 
 <use figuras/camadas/Corrente_ST002_Camada3.png>
 Package pdftex.def Info: figuras/camadas/Corrente_ST002_Camada3.png used on inp
-ut line 1770.
+ut line 1801.
 (pdftex.def)             Requested size: 822.28319pt x 274.10504pt.
 
-Overfull \hbox (76.82097pt too wide) in paragraph at lines 1770--1772
+Overfull \hbox (76.82097pt too wide) in paragraph at lines 1801--1803
  [][] 
  []
 
-[139 <./figuras/camadas/Corrente_ST002_Camada3.png>]
-<figuras/camadas/Corrente_ST002_Camada3_HistVel.png, id=655, 1084.05pt x 361.35
+[140 <./figuras/camadas/Corrente_ST002_Camada3.png>]
+<figuras/camadas/Corrente_ST002_Camada3_HistVel.png, id=658, 1084.05pt x 361.35
 pt>
 File: figuras/camadas/Corrente_ST002_Camada3_HistVel.png Graphic file (type png
 )
  <use figuras/camadas/Corrente_ST002_Camada3_HistVel.png>
 Package pdftex.def Info: figuras/camadas/Corrente_ST002_Camada3_HistVel.png use
-d on input line 1777.
+d on input line 1808.
 (pdftex.def)             Requested size: 822.28319pt x 274.10504pt.
 
-Overfull \hbox (76.82097pt too wide) in paragraph at lines 1777--1779
+Overfull \hbox (76.82097pt too wide) in paragraph at lines 1808--1810
  [][] 
  []
 
-[140 <./figuras/camadas/Corrente_ST002_Camada3_HistVel.png>]
-<figuras/camadas/Corrente_ST002_Camada3_HistDir.png, id=660, 1084.05pt x 361.35
+[141 <./figuras/camadas/Corrente_ST002_Camada3_HistVel.png>]
+<figuras/camadas/Corrente_ST002_Camada3_HistDir.png, id=663, 1084.05pt x 361.35
 pt>
 File: figuras/camadas/Corrente_ST002_Camada3_HistDir.png Graphic file (type png
 )
  <use figuras/camadas/Corrente_ST002_Camada3_HistDir.png>
 Package pdftex.def Info: figuras/camadas/Corrente_ST002_Camada3_HistDir.png use
-d on input line 1784.
+d on input line 1815.
 (pdftex.def)             Requested size: 822.28319pt x 274.10504pt.
 
-Overfull \hbox (76.82097pt too wide) in paragraph at lines 1784--1786
+Overfull \hbox (76.82097pt too wide) in paragraph at lines 1815--1817
  [][] 
  []
 
-[141 <./figuras/camadas/Corrente_ST002_Camada3_HistDir.png>]
-<figuras/camadas/Corrente_ST002_Camada4.png, id=665, 1084.05pt x 361.35pt>
+[142 <./figuras/camadas/Corrente_ST002_Camada3_HistDir.png>]
+<figuras/camadas/Corrente_ST002_Camada4.png, id=668, 1084.05pt x 361.35pt>
 File: figuras/camadas/Corrente_ST002_Camada4.png Graphic file (type png)
 
 <use figuras/camadas/Corrente_ST002_Camada4.png>
 Package pdftex.def Info: figuras/camadas/Corrente_ST002_Camada4.png used on inp
-ut line 1792.
+ut line 1823.
 (pdftex.def)             Requested size: 822.28319pt x 274.10504pt.
 
-Overfull \hbox (76.82097pt too wide) in paragraph at lines 1792--1794
+Overfull \hbox (76.82097pt too wide) in paragraph at lines 1823--1825
  [][] 
  []
 
-[142 <./figuras/camadas/Corrente_ST002_Camada4.png>]
-<figuras/camadas/Corrente_ST002_Camada4_HistVel.png, id=670, 1084.05pt x 361.35
+[143 <./figuras/camadas/Corrente_ST002_Camada4.png>]
+<figuras/camadas/Corrente_ST002_Camada4_HistVel.png, id=674, 1084.05pt x 361.35
 pt>
 File: figuras/camadas/Corrente_ST002_Camada4_HistVel.png Graphic file (type png
 )
  <use figuras/camadas/Corrente_ST002_Camada4_HistVel.png>
 Package pdftex.def Info: figuras/camadas/Corrente_ST002_Camada4_HistVel.png use
-d on input line 1799.
+d on input line 1830.
 (pdftex.def)             Requested size: 822.28319pt x 274.10504pt.
 
-Overfull \hbox (76.82097pt too wide) in paragraph at lines 1799--1801
+Overfull \hbox (76.82097pt too wide) in paragraph at lines 1830--1832
  [][] 
  []
 
-[143 <./figuras/camadas/Corrente_ST002_Camada4_HistVel.png>]
-<figuras/camadas/Corrente_ST002_Camada4_HistDir.png, id=676, 1084.05pt x 361.35
+[144 <./figuras/camadas/Corrente_ST002_Camada4_HistVel.png>]
+<figuras/camadas/Corrente_ST002_Camada4_HistDir.png, id=679, 1084.05pt x 361.35
 pt>
 File: figuras/camadas/Corrente_ST002_Camada4_HistDir.png Graphic file (type png
 )
  <use figuras/camadas/Corrente_ST002_Camada4_HistDir.png>
 Package pdftex.def Info: figuras/camadas/Corrente_ST002_Camada4_HistDir.png use
-d on input line 1806.
+d on input line 1837.
 (pdftex.def)             Requested size: 822.28319pt x 274.10504pt.
 
-Overfull \hbox (76.82097pt too wide) in paragraph at lines 1806--1808
+Overfull \hbox (76.82097pt too wide) in paragraph at lines 1837--1839
  [][] 
  []
 
-[144 <./figuras/camadas/Corrente_ST002_Camada4_HistDir.png>]
-<figuras/camadas/Corrente_ST002_Camada5.png, id=681, 1084.05pt x 361.35pt>
+[145 <./figuras/camadas/Corrente_ST002_Camada4_HistDir.png>]
+<figuras/camadas/Corrente_ST002_Camada5.png, id=684, 1084.05pt x 361.35pt>
 File: figuras/camadas/Corrente_ST002_Camada5.png Graphic file (type png)
 
 <use figuras/camadas/Corrente_ST002_Camada5.png>
 Package pdftex.def Info: figuras/camadas/Corrente_ST002_Camada5.png used on inp
-ut line 1814.
+ut line 1845.
 (pdftex.def)             Requested size: 822.28319pt x 274.10504pt.
 
-Overfull \hbox (76.82097pt too wide) in paragraph at lines 1814--1816
+Overfull \hbox (76.82097pt too wide) in paragraph at lines 1845--1847
  [][] 
  []
 
-[145 <./figuras/camadas/Corrente_ST002_Camada5.png>]
-<figuras/camadas/Corrente_ST002_Camada5_HistVel.png, id=686, 1084.05pt x 361.35
+[146 <./figuras/camadas/Corrente_ST002_Camada5.png>]
+<figuras/camadas/Corrente_ST002_Camada5_HistVel.png, id=689, 1084.05pt x 361.35
 pt>
 File: figuras/camadas/Corrente_ST002_Camada5_HistVel.png Graphic file (type png
 )
  <use figuras/camadas/Corrente_ST002_Camada5_HistVel.png>
 Package pdftex.def Info: figuras/camadas/Corrente_ST002_Camada5_HistVel.png use
-d on input line 1821.
+d on input line 1852.
 (pdftex.def)             Requested size: 822.28319pt x 274.10504pt.
 
-Overfull \hbox (76.82097pt too wide) in paragraph at lines 1821--1823
+Overfull \hbox (76.82097pt too wide) in paragraph at lines 1852--1854
  [][] 
  []
 
-[146 <./figuras/camadas/Corrente_ST002_Camada5_HistVel.png>]
-<figuras/camadas/Corrente_ST002_Camada5_HistDir.png, id=691, 1084.05pt x 361.35
+[147 <./figuras/camadas/Corrente_ST002_Camada5_HistVel.png>]
+<figuras/camadas/Corrente_ST002_Camada5_HistDir.png, id=694, 1084.05pt x 361.35
 pt>
 File: figuras/camadas/Corrente_ST002_Camada5_HistDir.png Graphic file (type png
 )
  <use figuras/camadas/Corrente_ST002_Camada5_HistDir.png>
 Package pdftex.def Info: figuras/camadas/Corrente_ST002_Camada5_HistDir.png use
-d on input line 1828.
+d on input line 1859.
 (pdftex.def)             Requested size: 822.28319pt x 274.10504pt.
 
-Overfull \hbox (76.82097pt too wide) in paragraph at lines 1828--1830
+Overfull \hbox (76.82097pt too wide) in paragraph at lines 1859--1861
  [][] 
  []
 
-[147 <./figuras/camadas/Corrente_ST002_Camada5_HistDir.png>]
-<figuras/camadas/Corrente_ST002_Camada6.png, id=696, 1084.05pt x 361.35pt>
+[148 <./figuras/camadas/Corrente_ST002_Camada5_HistDir.png>]
+<figuras/camadas/Corrente_ST002_Camada6.png, id=700, 1084.05pt x 361.35pt>
 File: figuras/camadas/Corrente_ST002_Camada6.png Graphic file (type png)
 
 <use figuras/camadas/Corrente_ST002_Camada6.png>
 Package pdftex.def Info: figuras/camadas/Corrente_ST002_Camada6.png used on inp
-ut line 1836.
+ut line 1867.
 (pdftex.def)             Requested size: 822.28319pt x 274.10504pt.
 
-Overfull \hbox (76.82097pt too wide) in paragraph at lines 1836--1838
+Overfull \hbox (76.82097pt too wide) in paragraph at lines 1867--1869
  [][] 
  []
 
-[148 <./figuras/camadas/Corrente_ST002_Camada6.png>]
-<figuras/camadas/Corrente_ST002_Camada6_HistVel.png, id=702, 1084.05pt x 361.35
+[149 <./figuras/camadas/Corrente_ST002_Camada6.png>]
+<figuras/camadas/Corrente_ST002_Camada6_HistVel.png, id=706, 1084.05pt x 361.35
 pt>
 File: figuras/camadas/Corrente_ST002_Camada6_HistVel.png Graphic file (type png
 )
  <use figuras/camadas/Corrente_ST002_Camada6_HistVel.png>
 Package pdftex.def Info: figuras/camadas/Corrente_ST002_Camada6_HistVel.png use
-d on input line 1843.
+d on input line 1874.
 (pdftex.def)             Requested size: 822.28319pt x 274.10504pt.
 
-Overfull \hbox (76.82097pt too wide) in paragraph at lines 1843--1845
+Overfull \hbox (76.82097pt too wide) in paragraph at lines 1874--1876
  [][] 
  []
 
-[149 <./figuras/camadas/Corrente_ST002_Camada6_HistVel.png>]
-<figuras/camadas/Corrente_ST002_Camada6_HistDir.png, id=708, 1084.05pt x 361.35
+[150 <./figuras/camadas/Corrente_ST002_Camada6_HistVel.png>]
+<figuras/camadas/Corrente_ST002_Camada6_HistDir.png, id=711, 1084.05pt x 361.35
 pt>
 File: figuras/camadas/Corrente_ST002_Camada6_HistDir.png Graphic file (type png
 )
  <use figuras/camadas/Corrente_ST002_Camada6_HistDir.png>
 Package pdftex.def Info: figuras/camadas/Corrente_ST002_Camada6_HistDir.png use
-d on input line 1850.
+d on input line 1881.
 (pdftex.def)             Requested size: 822.28319pt x 274.10504pt.
 
-Overfull \hbox (76.82097pt too wide) in paragraph at lines 1850--1852
+Overfull \hbox (76.82097pt too wide) in paragraph at lines 1881--1883
  [][] 
  []
 
-[150 <./figuras/camadas/Corrente_ST002_Camada6_HistDir.png>]
-<figuras/camadas/Corrente_ST002_Camada7.png, id=713, 1084.05pt x 361.35pt>
+[151 <./figuras/camadas/Corrente_ST002_Camada6_HistDir.png>]
+<figuras/camadas/Corrente_ST002_Camada7.png, id=716, 1084.05pt x 361.35pt>
 File: figuras/camadas/Corrente_ST002_Camada7.png Graphic file (type png)
 
 <use figuras/camadas/Corrente_ST002_Camada7.png>
 Package pdftex.def Info: figuras/camadas/Corrente_ST002_Camada7.png used on inp
-ut line 1858.
+ut line 1889.
 (pdftex.def)             Requested size: 822.28319pt x 274.10504pt.
 
-Overfull \hbox (76.82097pt too wide) in paragraph at lines 1858--1860
+Overfull \hbox (76.82097pt too wide) in paragraph at lines 1889--1891
  [][] 
  []
 
-[151 <./figuras/camadas/Corrente_ST002_Camada7.png>]
-<figuras/camadas/Corrente_ST002_Camada7_HistVel.png, id=718, 1084.05pt x 361.35
+[152 <./figuras/camadas/Corrente_ST002_Camada7.png>]
+<figuras/camadas/Corrente_ST002_Camada7_HistVel.png, id=721, 1084.05pt x 361.35
 pt>
 File: figuras/camadas/Corrente_ST002_Camada7_HistVel.png Graphic file (type png
 )
  <use figuras/camadas/Corrente_ST002_Camada7_HistVel.png>
 Package pdftex.def Info: figuras/camadas/Corrente_ST002_Camada7_HistVel.png use
-d on input line 1865.
+d on input line 1896.
 (pdftex.def)             Requested size: 822.28319pt x 274.10504pt.
 
-Overfull \hbox (76.82097pt too wide) in paragraph at lines 1865--1867
+Overfull \hbox (76.82097pt too wide) in paragraph at lines 1896--1898
  [][] 
  []
 
-[152 <./figuras/camadas/Corrente_ST002_Camada7_HistVel.png>]
-<figuras/camadas/Corrente_ST002_Camada7_HistDir.png, id=723, 1084.05pt x 361.35
+[153 <./figuras/camadas/Corrente_ST002_Camada7_HistVel.png>]
+<figuras/camadas/Corrente_ST002_Camada7_HistDir.png, id=726, 1084.05pt x 361.35
 pt>
 File: figuras/camadas/Corrente_ST002_Camada7_HistDir.png Graphic file (type png
 )
  <use figuras/camadas/Corrente_ST002_Camada7_HistDir.png>
 Package pdftex.def Info: figuras/camadas/Corrente_ST002_Camada7_HistDir.png use
-d on input line 1872.
+d on input line 1903.
 (pdftex.def)             Requested size: 822.28319pt x 274.10504pt.
 
-Overfull \hbox (76.82097pt too wide) in paragraph at lines 1872--1874
+Overfull \hbox (76.82097pt too wide) in paragraph at lines 1903--1905
  [][] 
  []
 
-[153 <./figuras/camadas/Corrente_ST002_Camada7_HistDir.png>]
-<figuras/camadas/Corrente_ST002_Camada8.png, id=728, 1084.05pt x 361.35pt>
+[154 <./figuras/camadas/Corrente_ST002_Camada7_HistDir.png>]
+<figuras/camadas/Corrente_ST002_Camada8.png, id=731, 1084.05pt x 361.35pt>
 File: figuras/camadas/Corrente_ST002_Camada8.png Graphic file (type png)
 
 <use figuras/camadas/Corrente_ST002_Camada8.png>
 Package pdftex.def Info: figuras/camadas/Corrente_ST002_Camada8.png used on inp
-ut line 1880.
+ut line 1911.
 (pdftex.def)             Requested size: 822.28319pt x 274.10504pt.
 
-Overfull \hbox (76.82097pt too wide) in paragraph at lines 1880--1882
+Overfull \hbox (76.82097pt too wide) in paragraph at lines 1911--1913
  [][] 
  []
 
-[154 <./figuras/camadas/Corrente_ST002_Camada8.png>]
-<figuras/camadas/Corrente_ST002_Camada8_HistVel.png, id=733, 1084.05pt x 361.35
+[155 <./figuras/camadas/Corrente_ST002_Camada8.png>]
+<figuras/camadas/Corrente_ST002_Camada8_HistVel.png, id=737, 1084.05pt x 361.35
 pt>
 File: figuras/camadas/Corrente_ST002_Camada8_HistVel.png Graphic file (type png
 )
  <use figuras/camadas/Corrente_ST002_Camada8_HistVel.png>
 Package pdftex.def Info: figuras/camadas/Corrente_ST002_Camada8_HistVel.png use
-d on input line 1887.
+d on input line 1918.
 (pdftex.def)             Requested size: 822.28319pt x 274.10504pt.
 
-Overfull \hbox (76.82097pt too wide) in paragraph at lines 1887--1889
+Overfull \hbox (76.82097pt too wide) in paragraph at lines 1918--1920
  [][] 
  []
 
-[155 <./figuras/camadas/Corrente_ST002_Camada8_HistVel.png>]
-<figuras/camadas/Corrente_ST002_Camada8_HistDir.png, id=739, 1084.05pt x 361.35
+[156 <./figuras/camadas/Corrente_ST002_Camada8_HistVel.png>]
+<figuras/camadas/Corrente_ST002_Camada8_HistDir.png, id=742, 1084.05pt x 361.35
 pt>
 File: figuras/camadas/Corrente_ST002_Camada8_HistDir.png Graphic file (type png
 )
  <use figuras/camadas/Corrente_ST002_Camada8_HistDir.png>
 Package pdftex.def Info: figuras/camadas/Corrente_ST002_Camada8_HistDir.png use
-d on input line 1894.
+d on input line 1925.
 (pdftex.def)             Requested size: 822.28319pt x 274.10504pt.
 
-Overfull \hbox (76.82097pt too wide) in paragraph at lines 1894--1896
+Overfull \hbox (76.82097pt too wide) in paragraph at lines 1925--1927
  [][] 
  []
 
-[156 <./figuras/camadas/Corrente_ST002_Camada8_HistDir.png>]
-<figuras/camadas/Corrente_ST002_Camada9.png, id=744, 1084.05pt x 361.35pt>
+[157 <./figuras/camadas/Corrente_ST002_Camada8_HistDir.png>]
+<figuras/camadas/Corrente_ST002_Camada9.png, id=747, 1084.05pt x 361.35pt>
 File: figuras/camadas/Corrente_ST002_Camada9.png Graphic file (type png)
 
 <use figuras/camadas/Corrente_ST002_Camada9.png>
 Package pdftex.def Info: figuras/camadas/Corrente_ST002_Camada9.png used on inp
-ut line 1902.
+ut line 1933.
 (pdftex.def)             Requested size: 822.28319pt x 274.10504pt.
 
-Overfull \hbox (76.82097pt too wide) in paragraph at lines 1902--1904
+Overfull \hbox (76.82097pt too wide) in paragraph at lines 1933--1935
  [][] 
  []
 
-[157 <./figuras/camadas/Corrente_ST002_Camada9.png>]
-<figuras/camadas/Corrente_ST002_Camada9_HistVel.png, id=749, 1084.05pt x 361.35
+[158 <./figuras/camadas/Corrente_ST002_Camada9.png>]
+<figuras/camadas/Corrente_ST002_Camada9_HistVel.png, id=752, 1084.05pt x 361.35
 pt>
 File: figuras/camadas/Corrente_ST002_Camada9_HistVel.png Graphic file (type png
 )
  <use figuras/camadas/Corrente_ST002_Camada9_HistVel.png>
 Package pdftex.def Info: figuras/camadas/Corrente_ST002_Camada9_HistVel.png use
-d on input line 1909.
+d on input line 1940.
 (pdftex.def)             Requested size: 822.28319pt x 274.10504pt.
 
-Overfull \hbox (76.82097pt too wide) in paragraph at lines 1909--1911
+Overfull \hbox (76.82097pt too wide) in paragraph at lines 1940--1942
  [][] 
  []
 
-[158 <./figuras/camadas/Corrente_ST002_Camada9_HistVel.png>]
-<figuras/camadas/Corrente_ST002_Camada9_HistDir.png, id=754, 1084.05pt x 361.35
+[159 <./figuras/camadas/Corrente_ST002_Camada9_HistVel.png>]
+<figuras/camadas/Corrente_ST002_Camada9_HistDir.png, id=757, 1084.05pt x 361.35
 pt>
 File: figuras/camadas/Corrente_ST002_Camada9_HistDir.png Graphic file (type png
 )
  <use figuras/camadas/Corrente_ST002_Camada9_HistDir.png>
 Package pdftex.def Info: figuras/camadas/Corrente_ST002_Camada9_HistDir.png use
-d on input line 1916.
+d on input line 1947.
 (pdftex.def)             Requested size: 822.28319pt x 274.10504pt.
 
-Overfull \hbox (76.82097pt too wide) in paragraph at lines 1916--1918
+Overfull \hbox (76.82097pt too wide) in paragraph at lines 1947--1949
  [][] 
  []
 
-[159 <./figuras/camadas/Corrente_ST002_Camada9_HistDir.png>]
-<figuras/camadas/Corrente_ST002_Camada10.png, id=759, 1084.05pt x 361.35pt>
+[160 <./figuras/camadas/Corrente_ST002_Camada9_HistDir.png>]
+<figuras/camadas/Corrente_ST002_Camada10.png, id=762, 1084.05pt x 361.35pt>
 File: figuras/camadas/Corrente_ST002_Camada10.png Graphic file (type png)
 
 <use figuras/camadas/Corrente_ST002_Camada10.png>
 Package pdftex.def Info: figuras/camadas/Corrente_ST002_Camada10.png used on in
-put line 1924.
+put line 1955.
 (pdftex.def)             Requested size: 822.28319pt x 274.10504pt.
 
-Overfull \hbox (76.82097pt too wide) in paragraph at lines 1924--1926
+Overfull \hbox (76.82097pt too wide) in paragraph at lines 1955--1957
  [][] 
  []
 
-[160 <./figuras/camadas/Corrente_ST002_Camada10.png>]
-<figuras/camadas/Corrente_ST002_Camada10_HistVel.png, id=764, 1084.05pt x 361.3
+[161 <./figuras/camadas/Corrente_ST002_Camada10.png>]
+<figuras/camadas/Corrente_ST002_Camada10_HistVel.png, id=768, 1084.05pt x 361.3
 5pt>
 File: figuras/camadas/Corrente_ST002_Camada10_HistVel.png Graphic file (type pn
 g)
  <use figuras/camadas/Corrente_ST002_Camada10_HistVel.png>
 Package pdftex.def Info: figuras/camadas/Corrente_ST002_Camada10_HistVel.png us
-ed on input line 1931.
+ed on input line 1962.
 (pdftex.def)             Requested size: 822.28319pt x 274.10504pt.
 
-Overfull \hbox (76.82097pt too wide) in paragraph at lines 1931--1933
+Overfull \hbox (76.82097pt too wide) in paragraph at lines 1962--1964
  [][] 
  []
 
-[161 <./figuras/camadas/Corrente_ST002_Camada10_HistVel.png>]
-<figuras/camadas/Corrente_ST002_Camada10_HistDir.png, id=770, 1084.05pt x 361.3
+[162 <./figuras/camadas/Corrente_ST002_Camada10_HistVel.png>]
+<figuras/camadas/Corrente_ST002_Camada10_HistDir.png, id=773, 1084.05pt x 361.3
 5pt>
 File: figuras/camadas/Corrente_ST002_Camada10_HistDir.png Graphic file (type pn
 g)
  <use figuras/camadas/Corrente_ST002_Camada10_HistDir.png>
 Package pdftex.def Info: figuras/camadas/Corrente_ST002_Camada10_HistDir.png us
-ed on input line 1938.
+ed on input line 1969.
 (pdftex.def)             Requested size: 822.28319pt x 274.10504pt.
 
-Overfull \hbox (76.82097pt too wide) in paragraph at lines 1938--1940
+Overfull \hbox (76.82097pt too wide) in paragraph at lines 1969--1971
  [][] 
  []
 
-[162 <./figuras/camadas/Corrente_ST002_Camada10_HistDir.png>]
-<figuras/camadas/Corrente_ST003_Camada1.png, id=775, 1084.05pt x 361.35pt>
+[163 <./figuras/camadas/Corrente_ST002_Camada10_HistDir.png>]
+<figuras/camadas/Corrente_ST003_Camada1.png, id=778, 1084.05pt x 361.35pt>
 File: figuras/camadas/Corrente_ST003_Camada1.png Graphic file (type png)
 
 <use figuras/camadas/Corrente_ST003_Camada1.png>
 Package pdftex.def Info: figuras/camadas/Corrente_ST003_Camada1.png used on inp
-ut line 1946.
+ut line 1977.
 (pdftex.def)             Requested size: 822.28319pt x 274.10504pt.
 
-Overfull \hbox (76.82097pt too wide) in paragraph at lines 1946--1948
+Overfull \hbox (76.82097pt too wide) in paragraph at lines 1977--1979
  [][] 
  []
 
-[163 <./figuras/camadas/Corrente_ST003_Camada1.png>]
-<figuras/camadas/Corrente_ST003_Camada1_HistVel.png, id=780, 1084.05pt x 361.35
+[164 <./figuras/camadas/Corrente_ST003_Camada1.png>]
+<figuras/camadas/Corrente_ST003_Camada1_HistVel.png, id=783, 1084.05pt x 361.35
 pt>
 File: figuras/camadas/Corrente_ST003_Camada1_HistVel.png Graphic file (type png
 )
  <use figuras/camadas/Corrente_ST003_Camada1_HistVel.png>
 Package pdftex.def Info: figuras/camadas/Corrente_ST003_Camada1_HistVel.png use
-d on input line 1953.
+d on input line 1984.
 (pdftex.def)             Requested size: 822.28319pt x 274.10504pt.
 
-Overfull \hbox (76.82097pt too wide) in paragraph at lines 1953--1955
+Overfull \hbox (76.82097pt too wide) in paragraph at lines 1984--1986
  [][] 
  []
 
-[164 <./figuras/camadas/Corrente_ST003_Camada1_HistVel.png>]
-<figuras/camadas/Corrente_ST003_Camada1_HistDir.png, id=785, 1084.05pt x 361.35
+[165 <./figuras/camadas/Corrente_ST003_Camada1_HistVel.png>]
+<figuras/camadas/Corrente_ST003_Camada1_HistDir.png, id=788, 1084.05pt x 361.35
 pt>
 File: figuras/camadas/Corrente_ST003_Camada1_HistDir.png Graphic file (type png
 )
  <use figuras/camadas/Corrente_ST003_Camada1_HistDir.png>
 Package pdftex.def Info: figuras/camadas/Corrente_ST003_Camada1_HistDir.png use
-d on input line 1960.
+d on input line 1991.
 (pdftex.def)             Requested size: 822.28319pt x 274.10504pt.
 
-Overfull \hbox (76.82097pt too wide) in paragraph at lines 1960--1962
+Overfull \hbox (76.82097pt too wide) in paragraph at lines 1991--1993
  [][] 
  []
 
-[165 <./figuras/camadas/Corrente_ST003_Camada1_HistDir.png>]
-<figuras/camadas/Corrente_ST003_Camada2.png, id=790, 1084.05pt x 361.35pt>
+[166 <./figuras/camadas/Corrente_ST003_Camada1_HistDir.png>]
+<figuras/camadas/Corrente_ST003_Camada2.png, id=793, 1084.05pt x 361.35pt>
 File: figuras/camadas/Corrente_ST003_Camada2.png Graphic file (type png)
 
 <use figuras/camadas/Corrente_ST003_Camada2.png>
 Package pdftex.def Info: figuras/camadas/Corrente_ST003_Camada2.png used on inp
-ut line 1968.
+ut line 1999.
 (pdftex.def)             Requested size: 822.28319pt x 274.10504pt.
 
-Overfull \hbox (76.82097pt too wide) in paragraph at lines 1968--1970
+Overfull \hbox (76.82097pt too wide) in paragraph at lines 1999--2001
  [][] 
  []
 
-[166 <./figuras/camadas/Corrente_ST003_Camada2.png>]
-<figuras/camadas/Corrente_ST003_Camada2_HistVel.png, id=795, 1084.05pt x 361.35
+[167 <./figuras/camadas/Corrente_ST003_Camada2.png>]
+<figuras/camadas/Corrente_ST003_Camada2_HistVel.png, id=799, 1084.05pt x 361.35
 pt>
 File: figuras/camadas/Corrente_ST003_Camada2_HistVel.png Graphic file (type png
 )
  <use figuras/camadas/Corrente_ST003_Camada2_HistVel.png>
 Package pdftex.def Info: figuras/camadas/Corrente_ST003_Camada2_HistVel.png use
-d on input line 1975.
+d on input line 2006.
 (pdftex.def)             Requested size: 822.28319pt x 274.10504pt.
 
-Overfull \hbox (76.82097pt too wide) in paragraph at lines 1975--1977
+Overfull \hbox (76.82097pt too wide) in paragraph at lines 2006--2008
  [][] 
  []
 
-[167 <./figuras/camadas/Corrente_ST003_Camada2_HistVel.png>]
-<figuras/camadas/Corrente_ST003_Camada2_HistDir.png, id=801, 1084.05pt x 361.35
+[168 <./figuras/camadas/Corrente_ST003_Camada2_HistVel.png>]
+<figuras/camadas/Corrente_ST003_Camada2_HistDir.png, id=804, 1084.05pt x 361.35
 pt>
 File: figuras/camadas/Corrente_ST003_Camada2_HistDir.png Graphic file (type png
 )
  <use figuras/camadas/Corrente_ST003_Camada2_HistDir.png>
 Package pdftex.def Info: figuras/camadas/Corrente_ST003_Camada2_HistDir.png use
-d on input line 1982.
+d on input line 2013.
 (pdftex.def)             Requested size: 822.28319pt x 274.10504pt.
 
-Overfull \hbox (76.82097pt too wide) in paragraph at lines 1982--1984
+Overfull \hbox (76.82097pt too wide) in paragraph at lines 2013--2015
  [][] 
  []
 
-[168 <./figuras/camadas/Corrente_ST003_Camada2_HistDir.png>]
-<figuras/camadas/Corrente_ST003_Camada3.png, id=806, 1084.05pt x 361.35pt>
+[169 <./figuras/camadas/Corrente_ST003_Camada2_HistDir.png>]
+<figuras/camadas/Corrente_ST003_Camada3.png, id=809, 1084.05pt x 361.35pt>
 File: figuras/camadas/Corrente_ST003_Camada3.png Graphic file (type png)
 
 <use figuras/camadas/Corrente_ST003_Camada3.png>
 Package pdftex.def Info: figuras/camadas/Corrente_ST003_Camada3.png used on inp
-ut line 1990.
+ut line 2021.
 (pdftex.def)             Requested size: 822.28319pt x 274.10504pt.
 
-Overfull \hbox (76.82097pt too wide) in paragraph at lines 1990--1992
+Overfull \hbox (76.82097pt too wide) in paragraph at lines 2021--2023
  [][] 
  []
 
-[169 <./figuras/camadas/Corrente_ST003_Camada3.png>]
-<figuras/camadas/Corrente_ST003_Camada3_HistVel.png, id=811, 1084.05pt x 361.35
+[170 <./figuras/camadas/Corrente_ST003_Camada3.png>]
+<figuras/camadas/Corrente_ST003_Camada3_HistVel.png, id=814, 1084.05pt x 361.35
 pt>
 File: figuras/camadas/Corrente_ST003_Camada3_HistVel.png Graphic file (type png
 )
  <use figuras/camadas/Corrente_ST003_Camada3_HistVel.png>
 Package pdftex.def Info: figuras/camadas/Corrente_ST003_Camada3_HistVel.png use
-d on input line 1997.
+d on input line 2028.
 (pdftex.def)             Requested size: 822.28319pt x 274.10504pt.
 
-Overfull \hbox (76.82097pt too wide) in paragraph at lines 1997--1999
+Overfull \hbox (76.82097pt too wide) in paragraph at lines 2028--2030
  [][] 
  []
 
-[170 <./figuras/camadas/Corrente_ST003_Camada3_HistVel.png>]
-<figuras/camadas/Corrente_ST003_Camada3_HistDir.png, id=816, 1084.05pt x 361.35
+[171 <./figuras/camadas/Corrente_ST003_Camada3_HistVel.png>]
+<figuras/camadas/Corrente_ST003_Camada3_HistDir.png, id=819, 1084.05pt x 361.35
 pt>
 File: figuras/camadas/Corrente_ST003_Camada3_HistDir.png Graphic file (type png
 )
  <use figuras/camadas/Corrente_ST003_Camada3_HistDir.png>
 Package pdftex.def Info: figuras/camadas/Corrente_ST003_Camada3_HistDir.png use
-d on input line 2004.
+d on input line 2035.
 (pdftex.def)             Requested size: 822.28319pt x 274.10504pt.
 
-Overfull \hbox (76.82097pt too wide) in paragraph at lines 2004--2006
+Overfull \hbox (76.82097pt too wide) in paragraph at lines 2035--2037
  [][] 
  []
 
-[171 <./figuras/camadas/Corrente_ST003_Camada3_HistDir.png>]
-<figuras/camadas/Corrente_ST003_Camada4.png, id=821, 1084.05pt x 361.35pt>
+[172 <./figuras/camadas/Corrente_ST003_Camada3_HistDir.png>]
+<figuras/camadas/Corrente_ST003_Camada4.png, id=824, 1084.05pt x 361.35pt>
 File: figuras/camadas/Corrente_ST003_Camada4.png Graphic file (type png)
 
 <use figuras/camadas/Corrente_ST003_Camada4.png>
 Package pdftex.def Info: figuras/camadas/Corrente_ST003_Camada4.png used on inp
-ut line 2012.
+ut line 2043.
 (pdftex.def)             Requested size: 822.28319pt x 274.10504pt.
 
-Overfull \hbox (76.82097pt too wide) in paragraph at lines 2012--2014
+Overfull \hbox (76.82097pt too wide) in paragraph at lines 2043--2045
  [][] 
  []
 
-[172 <./figuras/camadas/Corrente_ST003_Camada4.png>]
-<figuras/camadas/Corrente_ST003_Camada4_HistVel.png, id=826, 1084.05pt x 361.35
+[173 <./figuras/camadas/Corrente_ST003_Camada4.png>]
+<figuras/camadas/Corrente_ST003_Camada4_HistVel.png, id=830, 1084.05pt x 361.35
 pt>
 File: figuras/camadas/Corrente_ST003_Camada4_HistVel.png Graphic file (type png
 )
  <use figuras/camadas/Corrente_ST003_Camada4_HistVel.png>
 Package pdftex.def Info: figuras/camadas/Corrente_ST003_Camada4_HistVel.png use
-d on input line 2019.
+d on input line 2050.
 (pdftex.def)             Requested size: 822.28319pt x 274.10504pt.
 
-Overfull \hbox (76.82097pt too wide) in paragraph at lines 2019--2021
+Overfull \hbox (76.82097pt too wide) in paragraph at lines 2050--2052
  [][] 
  []
 
-[173 <./figuras/camadas/Corrente_ST003_Camada4_HistVel.png>]
-<figuras/camadas/Corrente_ST003_Camada4_HistDir.png, id=832, 1084.05pt x 361.35
+[174 <./figuras/camadas/Corrente_ST003_Camada4_HistVel.png>]
+<figuras/camadas/Corrente_ST003_Camada4_HistDir.png, id=835, 1084.05pt x 361.35
 pt>
 File: figuras/camadas/Corrente_ST003_Camada4_HistDir.png Graphic file (type png
 )
  <use figuras/camadas/Corrente_ST003_Camada4_HistDir.png>
 Package pdftex.def Info: figuras/camadas/Corrente_ST003_Camada4_HistDir.png use
-d on input line 2026.
+d on input line 2057.
 (pdftex.def)             Requested size: 822.28319pt x 274.10504pt.
 
-Overfull \hbox (76.82097pt too wide) in paragraph at lines 2026--2028
+Overfull \hbox (76.82097pt too wide) in paragraph at lines 2057--2059
  [][] 
  []
 
-[174 <./figuras/camadas/Corrente_ST003_Camada4_HistDir.png>]
-<figuras/camadas/Corrente_ST003_Camada5.png, id=837, 1084.05pt x 361.35pt>
+[175 <./figuras/camadas/Corrente_ST003_Camada4_HistDir.png>]
+<figuras/camadas/Corrente_ST003_Camada5.png, id=840, 1084.05pt x 361.35pt>
 File: figuras/camadas/Corrente_ST003_Camada5.png Graphic file (type png)
 
 <use figuras/camadas/Corrente_ST003_Camada5.png>
 Package pdftex.def Info: figuras/camadas/Corrente_ST003_Camada5.png used on inp
-ut line 2034.
+ut line 2065.
 (pdftex.def)             Requested size: 822.28319pt x 274.10504pt.
 
-Overfull \hbox (76.82097pt too wide) in paragraph at lines 2034--2036
+Overfull \hbox (76.82097pt too wide) in paragraph at lines 2065--2067
  [][] 
  []
 
-[175 <./figuras/camadas/Corrente_ST003_Camada5.png>]
-<figuras/camadas/Corrente_ST003_Camada5_HistVel.png, id=842, 1084.05pt x 361.35
+[176 <./figuras/camadas/Corrente_ST003_Camada5.png>]
+<figuras/camadas/Corrente_ST003_Camada5_HistVel.png, id=845, 1084.05pt x 361.35
 pt>
 File: figuras/camadas/Corrente_ST003_Camada5_HistVel.png Graphic file (type png
 )
  <use figuras/camadas/Corrente_ST003_Camada5_HistVel.png>
 Package pdftex.def Info: figuras/camadas/Corrente_ST003_Camada5_HistVel.png use
-d on input line 2041.
+d on input line 2072.
 (pdftex.def)             Requested size: 822.28319pt x 274.10504pt.
 
-Overfull \hbox (76.82097pt too wide) in paragraph at lines 2041--2043
+Overfull \hbox (76.82097pt too wide) in paragraph at lines 2072--2074
  [][] 
  []
 
-[176 <./figuras/camadas/Corrente_ST003_Camada5_HistVel.png>]
-<figuras/camadas/Corrente_ST003_Camada5_HistDir.png, id=847, 1084.05pt x 361.35
+[177 <./figuras/camadas/Corrente_ST003_Camada5_HistVel.png>]
+<figuras/camadas/Corrente_ST003_Camada5_HistDir.png, id=850, 1084.05pt x 361.35
 pt>
 File: figuras/camadas/Corrente_ST003_Camada5_HistDir.png Graphic file (type png
 )
  <use figuras/camadas/Corrente_ST003_Camada5_HistDir.png>
 Package pdftex.def Info: figuras/camadas/Corrente_ST003_Camada5_HistDir.png use
-d on input line 2048.
+d on input line 2079.
 (pdftex.def)             Requested size: 822.28319pt x 274.10504pt.
 
-Overfull \hbox (76.82097pt too wide) in paragraph at lines 2048--2050
+Overfull \hbox (76.82097pt too wide) in paragraph at lines 2079--2081
  [][] 
  []
 
-[177 <./figuras/camadas/Corrente_ST003_Camada5_HistDir.png>]
-<figuras/camadas/Corrente_ST003_Camada6.png, id=852, 1084.05pt x 361.35pt>
+[178 <./figuras/camadas/Corrente_ST003_Camada5_HistDir.png>]
+<figuras/camadas/Corrente_ST003_Camada6.png, id=855, 1084.05pt x 361.35pt>
 File: figuras/camadas/Corrente_ST003_Camada6.png Graphic file (type png)
 
 <use figuras/camadas/Corrente_ST003_Camada6.png>
 Package pdftex.def Info: figuras/camadas/Corrente_ST003_Camada6.png used on inp
-ut line 2056.
+ut line 2087.
 (pdftex.def)             Requested size: 822.28319pt x 274.10504pt.
 
-Overfull \hbox (76.82097pt too wide) in paragraph at lines 2056--2058
+Overfull \hbox (76.82097pt too wide) in paragraph at lines 2087--2089
  [][] 
  []
 
-[178 <./figuras/camadas/Corrente_ST003_Camada6.png>]
-<figuras/camadas/Corrente_ST003_Camada6_HistVel.png, id=857, 1084.05pt x 361.35
+[179 <./figuras/camadas/Corrente_ST003_Camada6.png>]
+<figuras/camadas/Corrente_ST003_Camada6_HistVel.png, id=861, 1084.05pt x 361.35
 pt>
 File: figuras/camadas/Corrente_ST003_Camada6_HistVel.png Graphic file (type png
 )
  <use figuras/camadas/Corrente_ST003_Camada6_HistVel.png>
 Package pdftex.def Info: figuras/camadas/Corrente_ST003_Camada6_HistVel.png use
-d on input line 2063.
+d on input line 2094.
 (pdftex.def)             Requested size: 822.28319pt x 274.10504pt.
 
-Overfull \hbox (76.82097pt too wide) in paragraph at lines 2063--2065
+Overfull \hbox (76.82097pt too wide) in paragraph at lines 2094--2096
  [][] 
  []
 
-[179 <./figuras/camadas/Corrente_ST003_Camada6_HistVel.png>]
-<figuras/camadas/Corrente_ST003_Camada6_HistDir.png, id=863, 1084.05pt x 361.35
+[180 <./figuras/camadas/Corrente_ST003_Camada6_HistVel.png>]
+<figuras/camadas/Corrente_ST003_Camada6_HistDir.png, id=866, 1084.05pt x 361.35
 pt>
 File: figuras/camadas/Corrente_ST003_Camada6_HistDir.png Graphic file (type png
 )
  <use figuras/camadas/Corrente_ST003_Camada6_HistDir.png>
 Package pdftex.def Info: figuras/camadas/Corrente_ST003_Camada6_HistDir.png use
-d on input line 2070.
+d on input line 2101.
 (pdftex.def)             Requested size: 822.28319pt x 274.10504pt.
 
-Overfull \hbox (76.82097pt too wide) in paragraph at lines 2070--2072
+Overfull \hbox (76.82097pt too wide) in paragraph at lines 2101--2103
  [][] 
  []
 
-[180 <./figuras/camadas/Corrente_ST003_Camada6_HistDir.png>]
-<figuras/camadas/Corrente_ST003_Camada7.png, id=868, 1084.05pt x 361.35pt>
+[181 <./figuras/camadas/Corrente_ST003_Camada6_HistDir.png>]
+<figuras/camadas/Corrente_ST003_Camada7.png, id=871, 1084.05pt x 361.35pt>
 File: figuras/camadas/Corrente_ST003_Camada7.png Graphic file (type png)
 
 <use figuras/camadas/Corrente_ST003_Camada7.png>
 Package pdftex.def Info: figuras/camadas/Corrente_ST003_Camada7.png used on inp
-ut line 2078.
+ut line 2109.
 (pdftex.def)             Requested size: 822.28319pt x 274.10504pt.
 
-Overfull \hbox (76.82097pt too wide) in paragraph at lines 2078--2080
+Overfull \hbox (76.82097pt too wide) in paragraph at lines 2109--2111
  [][] 
  []
 
-[181 <./figuras/camadas/Corrente_ST003_Camada7.png>]
-<figuras/camadas/Corrente_ST003_Camada7_HistVel.png, id=873, 1084.05pt x 361.35
+[182 <./figuras/camadas/Corrente_ST003_Camada7.png>]
+<figuras/camadas/Corrente_ST003_Camada7_HistVel.png, id=876, 1084.05pt x 361.35
 pt>
 File: figuras/camadas/Corrente_ST003_Camada7_HistVel.png Graphic file (type png
 )
  <use figuras/camadas/Corrente_ST003_Camada7_HistVel.png>
 Package pdftex.def Info: figuras/camadas/Corrente_ST003_Camada7_HistVel.png use
-d on input line 2085.
+d on input line 2116.
 (pdftex.def)             Requested size: 822.28319pt x 274.10504pt.
 
-Overfull \hbox (76.82097pt too wide) in paragraph at lines 2085--2087
+Overfull \hbox (76.82097pt too wide) in paragraph at lines 2116--2118
  [][] 
  []
 
-[182 <./figuras/camadas/Corrente_ST003_Camada7_HistVel.png>]
-<figuras/camadas/Corrente_ST003_Camada7_HistDir.png, id=878, 1084.05pt x 361.35
+[183 <./figuras/camadas/Corrente_ST003_Camada7_HistVel.png>]
+<figuras/camadas/Corrente_ST003_Camada7_HistDir.png, id=881, 1084.05pt x 361.35
 pt>
 File: figuras/camadas/Corrente_ST003_Camada7_HistDir.png Graphic file (type png
 )
  <use figuras/camadas/Corrente_ST003_Camada7_HistDir.png>
 Package pdftex.def Info: figuras/camadas/Corrente_ST003_Camada7_HistDir.png use
-d on input line 2092.
+d on input line 2123.
 (pdftex.def)             Requested size: 822.28319pt x 274.10504pt.
 
-Overfull \hbox (76.82097pt too wide) in paragraph at lines 2092--2094
+Overfull \hbox (76.82097pt too wide) in paragraph at lines 2123--2125
  [][] 
  []
 
-[183 <./figuras/camadas/Corrente_ST003_Camada7_HistDir.png>]
-<figuras/camadas/Corrente_ST003_Camada8.png, id=883, 1084.05pt x 361.35pt>
+[184 <./figuras/camadas/Corrente_ST003_Camada7_HistDir.png>]
+<figuras/camadas/Corrente_ST003_Camada8.png, id=886, 1084.05pt x 361.35pt>
 File: figuras/camadas/Corrente_ST003_Camada8.png Graphic file (type png)
 
 <use figuras/camadas/Corrente_ST003_Camada8.png>
 Package pdftex.def Info: figuras/camadas/Corrente_ST003_Camada8.png used on inp
-ut line 2100.
+ut line 2131.
 (pdftex.def)             Requested size: 822.28319pt x 274.10504pt.
 
-Overfull \hbox (76.82097pt too wide) in paragraph at lines 2100--2102
+Overfull \hbox (76.82097pt too wide) in paragraph at lines 2131--2133
  [][] 
  []
 
-[184 <./figuras/camadas/Corrente_ST003_Camada8.png>]
-<figuras/camadas/Corrente_ST003_Camada8_HistVel.png, id=888, 1084.05pt x 361.35
+[185 <./figuras/camadas/Corrente_ST003_Camada8.png>]
+<figuras/camadas/Corrente_ST003_Camada8_HistVel.png, id=892, 1084.05pt x 361.35
 pt>
 File: figuras/camadas/Corrente_ST003_Camada8_HistVel.png Graphic file (type png
 )
  <use figuras/camadas/Corrente_ST003_Camada8_HistVel.png>
 Package pdftex.def Info: figuras/camadas/Corrente_ST003_Camada8_HistVel.png use
-d on input line 2107.
+d on input line 2138.
 (pdftex.def)             Requested size: 822.28319pt x 274.10504pt.
 
-Overfull \hbox (76.82097pt too wide) in paragraph at lines 2107--2109
+Overfull \hbox (76.82097pt too wide) in paragraph at lines 2138--2140
  [][] 
  []
 
-[185 <./figuras/camadas/Corrente_ST003_Camada8_HistVel.png>]
-<figuras/camadas/Corrente_ST003_Camada8_HistDir.png, id=894, 1084.05pt x 361.35
+[186 <./figuras/camadas/Corrente_ST003_Camada8_HistVel.png>]
+<figuras/camadas/Corrente_ST003_Camada8_HistDir.png, id=897, 1084.05pt x 361.35
 pt>
 File: figuras/camadas/Corrente_ST003_Camada8_HistDir.png Graphic file (type png
 )
  <use figuras/camadas/Corrente_ST003_Camada8_HistDir.png>
 Package pdftex.def Info: figuras/camadas/Corrente_ST003_Camada8_HistDir.png use
-d on input line 2114.
+d on input line 2145.
 (pdftex.def)             Requested size: 822.28319pt x 274.10504pt.
 
-Overfull \hbox (76.82097pt too wide) in paragraph at lines 2114--2116
+Overfull \hbox (76.82097pt too wide) in paragraph at lines 2145--2147
  [][] 
  []
 
-[186 <./figuras/camadas/Corrente_ST003_Camada8_HistDir.png>]
-<figuras/camadas/Corrente_ST003_Camada9.png, id=899, 1084.05pt x 361.35pt>
+[187 <./figuras/camadas/Corrente_ST003_Camada8_HistDir.png>]
+<figuras/camadas/Corrente_ST003_Camada9.png, id=902, 1084.05pt x 361.35pt>
 File: figuras/camadas/Corrente_ST003_Camada9.png Graphic file (type png)
 
 <use figuras/camadas/Corrente_ST003_Camada9.png>
 Package pdftex.def Info: figuras/camadas/Corrente_ST003_Camada9.png used on inp
-ut line 2122.
+ut line 2153.
 (pdftex.def)             Requested size: 822.28319pt x 274.10504pt.
 
-Overfull \hbox (76.82097pt too wide) in paragraph at lines 2122--2124
+Overfull \hbox (76.82097pt too wide) in paragraph at lines 2153--2155
  [][] 
  []
 
-[187 <./figuras/camadas/Corrente_ST003_Camada9.png>]
-<figuras/camadas/Corrente_ST003_Camada9_HistVel.png, id=904, 1084.05pt x 361.35
+[188 <./figuras/camadas/Corrente_ST003_Camada9.png>]
+<figuras/camadas/Corrente_ST003_Camada9_HistVel.png, id=907, 1084.05pt x 361.35
 pt>
 File: figuras/camadas/Corrente_ST003_Camada9_HistVel.png Graphic file (type png
 )
  <use figuras/camadas/Corrente_ST003_Camada9_HistVel.png>
 Package pdftex.def Info: figuras/camadas/Corrente_ST003_Camada9_HistVel.png use
-d on input line 2129.
+d on input line 2160.
 (pdftex.def)             Requested size: 822.28319pt x 274.10504pt.
 
-Overfull \hbox (76.82097pt too wide) in paragraph at lines 2129--2131
+Overfull \hbox (76.82097pt too wide) in paragraph at lines 2160--2162
  [][] 
  []
 
-[188 <./figuras/camadas/Corrente_ST003_Camada9_HistVel.png>]
-<figuras/camadas/Corrente_ST003_Camada9_HistDir.png, id=909, 1084.05pt x 361.35
+[189 <./figuras/camadas/Corrente_ST003_Camada9_HistVel.png>]
+<figuras/camadas/Corrente_ST003_Camada9_HistDir.png, id=912, 1084.05pt x 361.35
 pt>
 File: figuras/camadas/Corrente_ST003_Camada9_HistDir.png Graphic file (type png
 )
  <use figuras/camadas/Corrente_ST003_Camada9_HistDir.png>
 Package pdftex.def Info: figuras/camadas/Corrente_ST003_Camada9_HistDir.png use
-d on input line 2136.
+d on input line 2167.
 (pdftex.def)             Requested size: 822.28319pt x 274.10504pt.
 
-Overfull \hbox (76.82097pt too wide) in paragraph at lines 2136--2138
+Overfull \hbox (76.82097pt too wide) in paragraph at lines 2167--2169
  [][] 
  []
 
-[189 <./figuras/camadas/Corrente_ST003_Camada9_HistDir.png>]
-<figuras/camadas/Corrente_ST003_Camada10.png, id=914, 1084.05pt x 361.35pt>
+[190 <./figuras/camadas/Corrente_ST003_Camada9_HistDir.png>]
+<figuras/camadas/Corrente_ST003_Camada10.png, id=917, 1084.05pt x 361.35pt>
 File: figuras/camadas/Corrente_ST003_Camada10.png Graphic file (type png)
 
 <use figuras/camadas/Corrente_ST003_Camada10.png>
 Package pdftex.def Info: figuras/camadas/Corrente_ST003_Camada10.png used on in
-put line 2144.
+put line 2175.
 (pdftex.def)             Requested size: 822.28319pt x 274.10504pt.
 
-Overfull \hbox (76.82097pt too wide) in paragraph at lines 2144--2146
+Overfull \hbox (76.82097pt too wide) in paragraph at lines 2175--2177
  [][] 
  []
 
-[190 <./figuras/camadas/Corrente_ST003_Camada10.png>]
-<figuras/camadas/Corrente_ST003_Camada10_HistVel.png, id=919, 1084.05pt x 361.3
+[191 <./figuras/camadas/Corrente_ST003_Camada10.png>]
+<figuras/camadas/Corrente_ST003_Camada10_HistVel.png, id=923, 1084.05pt x 361.3
 5pt>
 File: figuras/camadas/Corrente_ST003_Camada10_HistVel.png Graphic file (type pn
 g)
  <use figuras/camadas/Corrente_ST003_Camada10_HistVel.png>
 Package pdftex.def Info: figuras/camadas/Corrente_ST003_Camada10_HistVel.png us
-ed on input line 2151.
+ed on input line 2182.
 (pdftex.def)             Requested size: 822.28319pt x 274.10504pt.
 
-Overfull \hbox (76.82097pt too wide) in paragraph at lines 2151--2153
+Overfull \hbox (76.82097pt too wide) in paragraph at lines 2182--2184
  [][] 
  []
 
-[191 <./figuras/camadas/Corrente_ST003_Camada10_HistVel.png>]
-<figuras/camadas/Corrente_ST003_Camada10_HistDir.png, id=925, 1084.05pt x 361.3
+[192 <./figuras/camadas/Corrente_ST003_Camada10_HistVel.png>]
+<figuras/camadas/Corrente_ST003_Camada10_HistDir.png, id=928, 1084.05pt x 361.3
 5pt>
 File: figuras/camadas/Corrente_ST003_Camada10_HistDir.png Graphic file (type pn
 g)
  <use figuras/camadas/Corrente_ST003_Camada10_HistDir.png>
 Package pdftex.def Info: figuras/camadas/Corrente_ST003_Camada10_HistDir.png us
-ed on input line 2158.
+ed on input line 2189.
 (pdftex.def)             Requested size: 822.28319pt x 274.10504pt.
 
-Overfull \hbox (76.82097pt too wide) in paragraph at lines 2158--2160
+Overfull \hbox (76.82097pt too wide) in paragraph at lines 2189--2191
  [][] 
  []
 
-[192 <./figuras/camadas/Corrente_ST003_Camada10_HistDir.png>]
-<figuras/camadas/Corrente_ST003_Camada11.png, id=930, 1084.05pt x 361.35pt>
+[193 <./figuras/camadas/Corrente_ST003_Camada10_HistDir.png>]
+<figuras/camadas/Corrente_ST003_Camada11.png, id=933, 1084.05pt x 361.35pt>
 File: figuras/camadas/Corrente_ST003_Camada11.png Graphic file (type png)
 
 <use figuras/camadas/Corrente_ST003_Camada11.png>
 Package pdftex.def Info: figuras/camadas/Corrente_ST003_Camada11.png used on in
-put line 2166.
+put line 2197.
 (pdftex.def)             Requested size: 822.28319pt x 274.10504pt.
 
-Overfull \hbox (76.82097pt too wide) in paragraph at lines 2166--2168
+Overfull \hbox (76.82097pt too wide) in paragraph at lines 2197--2199
  [][] 
  []
 
-[193 <./figuras/camadas/Corrente_ST003_Camada11.png>]
-<figuras/camadas/Corrente_ST003_Camada11_HistVel.png, id=935, 1084.05pt x 361.3
+[194 <./figuras/camadas/Corrente_ST003_Camada11.png>]
+<figuras/camadas/Corrente_ST003_Camada11_HistVel.png, id=938, 1084.05pt x 361.3
 5pt>
 File: figuras/camadas/Corrente_ST003_Camada11_HistVel.png Graphic file (type pn
 g)
  <use figuras/camadas/Corrente_ST003_Camada11_HistVel.png>
 Package pdftex.def Info: figuras/camadas/Corrente_ST003_Camada11_HistVel.png us
-ed on input line 2173.
+ed on input line 2204.
 (pdftex.def)             Requested size: 822.28319pt x 274.10504pt.
 
-Overfull \hbox (76.82097pt too wide) in paragraph at lines 2173--2175
+Overfull \hbox (76.82097pt too wide) in paragraph at lines 2204--2206
  [][] 
  []
 
-[194 <./figuras/camadas/Corrente_ST003_Camada11_HistVel.png>]
-<figuras/camadas/Corrente_ST003_Camada11_HistDir.png, id=940, 1084.05pt x 361.3
+[195 <./figuras/camadas/Corrente_ST003_Camada11_HistVel.png>]
+<figuras/camadas/Corrente_ST003_Camada11_HistDir.png, id=943, 1084.05pt x 361.3
 5pt>
 File: figuras/camadas/Corrente_ST003_Camada11_HistDir.png Graphic file (type pn
 g)
  <use figuras/camadas/Corrente_ST003_Camada11_HistDir.png>
 Package pdftex.def Info: figuras/camadas/Corrente_ST003_Camada11_HistDir.png us
-ed on input line 2180.
+ed on input line 2211.
 (pdftex.def)             Requested size: 822.28319pt x 274.10504pt.
 
-Overfull \hbox (76.82097pt too wide) in paragraph at lines 2180--2182
+Overfull \hbox (76.82097pt too wide) in paragraph at lines 2211--2213
  [][] 
  []
 
-[195 <./figuras/camadas/Corrente_ST003_Camada11_HistDir.png>]
-<figuras/camadas/Corrente_ST003_Camada12.png, id=945, 1084.05pt x 361.35pt>
+[196 <./figuras/camadas/Corrente_ST003_Camada11_HistDir.png>]
+<figuras/camadas/Corrente_ST003_Camada12.png, id=948, 1084.05pt x 361.35pt>
 File: figuras/camadas/Corrente_ST003_Camada12.png Graphic file (type png)
 
 <use figuras/camadas/Corrente_ST003_Camada12.png>
 Package pdftex.def Info: figuras/camadas/Corrente_ST003_Camada12.png used on in
-put line 2188.
+put line 2219.
 (pdftex.def)             Requested size: 822.28319pt x 274.10504pt.
 
-Overfull \hbox (76.82097pt too wide) in paragraph at lines 2188--2190
+Overfull \hbox (76.82097pt too wide) in paragraph at lines 2219--2221
  [][] 
  []
 
-[196 <./figuras/camadas/Corrente_ST003_Camada12.png>]
-<figuras/camadas/Corrente_ST003_Camada12_HistVel.png, id=950, 1084.05pt x 361.3
+[197 <./figuras/camadas/Corrente_ST003_Camada12.png>]
+<figuras/camadas/Corrente_ST003_Camada12_HistVel.png, id=954, 1084.05pt x 361.3
 5pt>
 File: figuras/camadas/Corrente_ST003_Camada12_HistVel.png Graphic file (type pn
 g)
  <use figuras/camadas/Corrente_ST003_Camada12_HistVel.png>
 Package pdftex.def Info: figuras/camadas/Corrente_ST003_Camada12_HistVel.png us
-ed on input line 2195.
+ed on input line 2226.
 (pdftex.def)             Requested size: 822.28319pt x 274.10504pt.
 
-Overfull \hbox (76.82097pt too wide) in paragraph at lines 2195--2197
+Overfull \hbox (76.82097pt too wide) in paragraph at lines 2226--2228
  [][] 
  []
 
-[197 <./figuras/camadas/Corrente_ST003_Camada12_HistVel.png>]
-<figuras/camadas/Corrente_ST003_Camada12_HistDir.png, id=956, 1084.05pt x 361.3
+[198 <./figuras/camadas/Corrente_ST003_Camada12_HistVel.png>]
+<figuras/camadas/Corrente_ST003_Camada12_HistDir.png, id=960, 1084.05pt x 361.3
 5pt>
 File: figuras/camadas/Corrente_ST003_Camada12_HistDir.png Graphic file (type pn
 g)
  <use figuras/camadas/Corrente_ST003_Camada12_HistDir.png>
 Package pdftex.def Info: figuras/camadas/Corrente_ST003_Camada12_HistDir.png us
-ed on input line 2202.
+ed on input line 2233.
 (pdftex.def)             Requested size: 822.28319pt x 274.10504pt.
 
-Overfull \hbox (76.82097pt too wide) in paragraph at lines 2202--2204
+Overfull \hbox (76.82097pt too wide) in paragraph at lines 2233--2235
  [][] 
  []
 
-[198 <./figuras/camadas/Corrente_ST003_Camada12_HistDir.png>]
+[199 <./figuras/camadas/Corrente_ST003_Camada12_HistDir.png>]
 +-------------------------------------------------------------------+
 | Comentario, sugestao ou critica sobre o abnTeX? Entre em contato: |
 |                  http://abntex.codigolivre.org.br                 |
@@ -2587,13 +2591,13 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 6825 strings out of 494996
- 120233 string characters out of 6180490
- 187271 words of memory out of 5000000
- 9729 multiletter control sequences out of 15000+600000
+ 6832 strings out of 494996
+ 120340 string characters out of 6180490
+ 189495 words of memory out of 5000000
+ 9736 multiletter control sequences out of 15000+600000
  10067 words of font info for 36 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
- 41i,8n,36p,1226b,338s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,8n,36p,1226b,340s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy8.pfb
 ></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr
 /share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/
@@ -2608,10 +2612,10 @@ amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
 10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/
 share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on dissertacao.pdf (200 pages, 38680545 bytes).
+Output written on dissertacao.pdf (201 pages, 38682887 bytes).
 PDF statistics:
- 1016 PDF objects out of 1200 (max. 8388607)
- 488 compressed objects within 5 object streams
+ 1019 PDF objects out of 1200 (max. 8388607)
+ 490 compressed objects within 5 object streams
  0 named destinations out of 1000 (max. 500000)
  791 words of extra memory for PDF output out of 10000 (max. 10000000)
 
