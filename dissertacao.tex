@@ -497,14 +497,23 @@ Além dos dados desses 3 ADCPs, também foram cedidos gentilmente dados de maregra
 \end{landscape}
 
 
-\section{Modelos Numéricos}
+\section{Modelo Numérico}
 
 \subsection{Regional Ocean Modelling System}
 
-O \emph{Regional Ocean Modelling System} (ROMS) é um modelo hidrostático de circulação geral em um oceano de Boussinesq desenvolvido especialmente para aplicações na zona costeira \cite{myroms}. Apesar de ter sido desenvolvido com enfoque em regiões costeiras, o ROMS já foi aplicado
+O \emph{Regional Ocean Modelling System} (ROMS) é um modelo hidrostático de circulação geral em um oceano de Boussinesq desenvolvido especialmente para aplicações na zona costeira \cite{myroms, ROMS2005}. Apesar de ter sido desenvolvido com enfoque em regiões costeiras, o ROMS já foi aplicado
 em águas profundas, bacias oceânicas e mesmo em escala global \cite{Moore}. 
 
-O modelo utiliza coordenadas sigma ($\sigma$) na vertical (\emph{terrain-following}) que 
+O modelo utiliza-se, na horizontal, de um modelo tradicional e centralizado de aproximações de diferenças finitas de segunda ordem, num esquema do tipo Arakawa C \cite{ArakawaC}. Neste esquema, as velocidades são calculadas nas bordas da célula enquanto variáveis escalares são calculadas no centro da célula de cálculo. Dessa forma, cada uma das variáveis (u, v e zeta) tem uma matriz de coordenadas independente (Figura \ref{fig:arakawa}).
+
+\begin{figure}[!htb]
+	\includegraphics[width=0.6\textwidth]{figuras/arakawac.png}
+	\centering
+	\caption{Localização das variáveis calculadas em uma malha do tipo Arakawa C}\label{fig:arakawa}
+\end{figure}
+
+
+Na vertical, são utilizadas coordenadas sigma ($\sigma$)  (\emph{terrain-following}) que 
 permitem maior resolução em águas rasas ou em regiões de morfologia complexa (Figura \ref{fig:sigma}). Ao se comparar a coordenada $\sigma$ com outros tipos de coordenadas verticais, como a coordenada z e a coordenada isopicnal, é possível perceber que a primeira exibe muito mais sensibilidade à topografia de fundo. Nos demais modelos as superfícies das coordenadas podem intersectar as superfícies isopicnais em algum momento, mesmo no caso de estratificações horizontais uniformes, podendo gerar erros de gradiente de pressão \cite{ROMS2005}.
 
  \begin{figure}[!htb]
@@ -572,8 +581,31 @@ onde,
  \item[] $T(x,y,z,t)$ é a temperatura potencial;
 \end{description}
 
-O ROMS é escrito em fortran F90/F95, e utiliza pré-processamento em C para ativar diversas opções físicas e numéricas. Pode ser rodado de forma isolada ou com os módulos de ondas e interação oceano-atmosfera em conjunto. No presente trabalho será incorporado apenas 
- módulo de ondas que será descrito na sessão a seguir. O código do modelo, bem como maiores informações estão disponíveis através de cadastro no site: www.myroms.org.
+O ROMS permite ainda acoplar grades maiores e menores de forma que haja uma grade doadora e uma grade receptora. No caso particular do estudo, utilizou-se o aninhamento de grades para refinar uma das grades e aumentar a resolução da malha próximo da área de estudo. É recomendado que o refinamento seja de 1:3, 1:5 ou 1:7. Entretanto, sugere-se não ultrapassar a proporção 1:5, para evitar possíveis instabilidades numéricas.
+Na figura \ref{fig:refinementgrids} estão apresentados os tipos de grade de refinamento (simples ou múltiplo). Neste trabalho utilizaremos um refinamento único conforme a figura da esquerda.
+
+\begin{figure}[!htb]
+	\includegraphics[width=1.0\textwidth]{figuras/refinement_grids.png}
+	\centering
+	\caption{Tipos de grades de refinamento no ROMS: grade de refinamento único (esquerda)  e múltiplos refinamentos de sub-classes (direita)}\label{fig:refinementgrids}
+\end{figure}
+
+O contato entre a grade doadora e a grade receptora acontece em uma região de contato, definida em um arquivo separado (Figura \ref{fig:contactarea}). Tanto a grade refinada quanto o arquivo de contato são gerados automaticamente por rotinas em Matlab feitas especialmente para isso e obtidas no mesmo endereço do modelo.
+
+É altamente recomendado que o espaço de tempo da grade local seja proporcional ao seu refinamento. Por exemplo, se o passo de tempo da grade regional é de 60 segundos e a grade local tem um refinamento de 1:3, é recomendado que o passo de tempo da grade local seja de 20 segundos.
+
+\begin{itemize}
+	\item \emph{corse2fine}: rotina para gerar a grade refinada. Necessário o valor de refinamento e os pontos i e j máximos e mínimos em que a grade regional deve ser refinada.
+	\item \emph{contact}: rotina para gerar o arquivo de contato. Necessário informar os arquivos da grade regional e local.
+\end{itemize}
+
+\begin{figure}[!htb]
+	\includegraphics[width=1.0\textwidth]{figuras/contact_area.png}
+	\centering
+	\caption{A grade em azul é a doadora, a grade vermelha é a receptora e a região em roxo é a área de contato onde ocorre a troca de informação entre ambas.}\label{fig:contactarea}
+\end{figure}
+
+O ROMS é escrito em fortran F90/F95, e utiliza pré-processamento em C para ativar diversas opções físicas e numéricas. Pode ser rodado de forma isolada ou com os módulos de ondas e interação oceano-atmosfera em conjunto. No presente trabalho utilizou-se apenas o modelo puro com forçantes de maré e vento, sem nenhum outro módulo acoplado. O código do modelo, bem como maiores informações estão disponíveis através de cadastro no site: www.myroms.org.
 
 
 \section{Forçantes dos modelos}
@@ -994,7 +1026,7 @@ Dentre as constantes apresentadas pela FEMAR que foram verificadas nos dados med
 	\begin{tabularx}{\linewidth}{ccccccc}
 		\caption{Análise harmônica através do ttide nos dados de nível do ST002}\label{tab:st002} \\
 		\toprule
-		\textbf{Constante Harmônica} & \textbf{Freq.} & \textbf{Amplitude (cm)}   & \textbf{Erro de Ampl.}  &  textbf{Fase}  & \textbf{Erro de Fase}  & \textbf{SNR} \\[6pt]
+		\textbf{Constante Harmônica} & \textbf{Freq.} & \textbf{Amplitude (cm)}   & \textbf{Erro de Ampl.}  &  \textbf{Fase}  & \textbf{Erro de Fase}  & \textbf{SNR} \\[6pt]
 		\midrule
 		\endhead
 		ALP1 & 0.0343966 &    1.6004  &   0.466  &  305.34  &   18.93 &       12 \\[6pt]
@@ -1159,7 +1191,7 @@ e:
 Os números de forma encontrados para os dados medidos podem ser observados na tabela \ref{tab:numforma} e, portanto, a maré na Enseada de Itapocorói e arredores pode ser considerada do tipo mista com uma predominância semidiurna. Vale ressaltar no entanto que, pelo baixo valor de número de forma encontrado, pode-se notar a alta influência das componentes semidiurna sobre as componentes diurnas. Os dados de Penha apresentaram uma maior influência das componentes diurnas sobre as semidiurnas quando comparados com os dados de Piçarras. 
 
 	\begin{tabularx}{\linewidth}{cc}
-		\caption{Número de Forma para cada um dos dados analisados} \\
+		\caption{Número de Forma para cada um dos dados analisados}\label{tab:numforma}\\
 		\toprule
 		\textbf{Local} & \textbf{Número de Forma}  \\[6pt]
 		\midrule
@@ -1190,10 +1222,10 @@ Os dados de temperatura obtidos pelos ADCPs podem ser observados na figura \ref{
 
 Deve-se notar que as temperaturas mínimas foram bastante semelhantes (menos de 0,5 $^{\circ}$C de diferença) enquanto a temperatura máxima foi onde as diferenças foram maiores. Dado que a variação de temperatura do ponto ST003 foi mais de 3 vezes a variação encontrada no ponto ST001, assume-se que o segundo tem uma grande influência do aquecimento local, e possivelmente do vento, dada a sua pequena profundidade 4 m. Já o ponto ST003, localizado na profundidade de 17 m, tem um padrão homogêneo possivelmente só sendo afetado por massas de água externas.
 
-Buscou-se tentar encontrar correlações entre a direção do vento predominante e dos dados de temperatura porém apesar de haver alguns indícios de que a variação do vento de NO-N para S poderia ter influência no pico de temperatura no ST001, de forma geral os resultados não apresentaram um padrão evidente. As figuras serão apresentadas no apêndice uma vez que seus resultados não foram relevantes (figuras \ref{fig:tempvento01} a \ref{fig:tempvento02}).
+Buscou-se tentar encontrar correlações entre a direção do vento predominante e dos dados de temperatura porém apesar de haver alguns indícios de que a variação do vento de NO-N para S poderia ter influência no pico de temperatura no ST001, de forma geral os resultados não apresentaram um padrão evidente.
 
 \begin{tabularx}{\linewidth}{ccccc}
-	\caption{Características dos dados de temperatura.}\\
+	\caption{Características dos dados de temperatura.}\label{tab:dadostemp}\\
 	\toprule
 	\textbf{Equipamento} & \textbf{Mínimo} & \textbf{Máximo} & \textbf{Média} & 
 	\textbf{Variação Máxima} \\[6pt]
@@ -1273,19 +1305,19 @@ Vale ressaltar que os episódios de velocidade acima de 25$cm.s^{-1}$ nas camadas
 \end{figure}
 
 \begin{figure}[!htb]
-	\includegraphics[width=1.0\textwidth]{figuras/english/ST001_cumulative_velocity_hist.png}
+	\includegraphics[width=0.8\textwidth]{figuras/english/ST001_cumulative_velocity_hist.png}
 	\centering
 	\caption{Histograma cumulativo da velocidade da corrente em $m.s^{-1}$ no ST001. Linhas em preto indicam os quartis de 25, 50 e 90\%}\label{fig:cumulativo_01}
 \end{figure}
 
 \begin{figure}[!htb]
-	\includegraphics[width=1.0\textwidth]{figuras/english/ST002_cumulative_velocity_hist.png}
+	\includegraphics[width=0.8\textwidth]{figuras/english/ST002_cumulative_velocity_hist.png}
 	\centering
 	\caption{Histograma cumulativo da velocidade da corrente em $m.s^{-1}$ no ST002. Linhas em preto indicam os quartis de 25, 50 e 90\%}\label{fig:cumulativo_02}
 \end{figure}
 
 \begin{figure}[!htb]
-	\includegraphics[width=1.0\textwidth]{figuras/english/ST003_cumulative_velocity_hist.png}
+	\includegraphics[width=0.8\textwidth]{figuras/english/ST003_cumulative_velocity_hist.png}
 	\centering
 	\caption{Histograma cumulativo da velocidade da corrente em $m.s^{-1}$ no ST003. Linhas em preto indicam os quartis de 25, 50 e 90\%}\label{fig:cumulativo_03}
 \end{figure}
@@ -1490,14 +1522,7 @@ Vale ressaltar que os episódios de velocidade acima de 25$cm.s^{-1}$ nas camadas
 
 \subsection{Grade}
 
-A grade numérica do modelo ROMS é do tipo Aracawa-C, onde os cálculos das variáveis escalares são realizados no centro da célula de grade e as variáveis vetoriais (u e v principalmente) são dados nas bordas das grades (Figure \ref{fig:Romsgrid}). Dessa forma, o tamanho da grade é diferente para cada uma das variáveis estudadas. Na descrição realizada nesta seção, o tamanho das grades se referem aos \emph{Rho-points}, localizados no centro da célula. Entretanto, a grade do modelo contém todas as informações específicas para cada uma das variáveis necessárias.
-
-
-\begin{figure}[!htb]
-	\includegraphics[width=0.6\textwidth]{figuras/ROMSgrid.png}
-	\centering
-	\caption{Malha numérica típica do ROMS}\label{fig:Romsgrid}
-\end{figure}
+Na descrição realizada nesta seção, o tamanho das grades se referem aos \emph{Rho-points}, localizados no centro da célula. Entretanto, a grade do modelo contém todas as informações específicas para cada uma das variáveis necessárias.
 
 O modelo TPXO utilizado como forçante no ROMS resolve muito bem a maré em águas profundas, duas grades foram desenvolvidas para que a onda de maré fosse trazida de águas profundas, onde ela é bem resolvida, para águas rasas da região de interesse. 
 
@@ -1508,13 +1533,13 @@ A resolução de 500 m da grade regional foi escolhida de forma arbitrária. O ROMS
 A grade local foi construída então a partir da grade regional com uma resolução 5 vezes maior, focando na Enseada do Itapocorói mas de forma que as fronteiras ainda ficassem distantes o suficiente da região de interesse. Esta possui 270 elementos na direção $\chi$  (x)e 430 elementos na direção $\eta$ (y) e a extensão de seu domínio pode ser vista na figura \ref{fig:GradeLoc}.
 
 \begin{figure}[!htb]
-	\includegraphics[width=0.9\textwidth]{figuras/GradeRegional.png}
+	\includegraphics[width=1\textwidth]{figuras/GradeRegional.png}
 	\centering
 	\caption{Domínio da grade numérica regional.}\label{fig:GradeReg}
 \end{figure}
 
 \begin{figure}[!htb]
-	\includegraphics[width=0.9\textwidth]{figuras/GradeRegionaleLocalSobrepostas.png}
+	\includegraphics[width=1\textwidth]{figuras/GradeRegionaleLocalSobrepostas.png}
 	\centering
 	\caption{Domínio da grade numérica regional e local sobrepostos.}\label{fig:GradeRegeLocal}
 \end{figure}
@@ -1581,7 +1606,23 @@ Basicamente buscou-se implementar: a) uma grade estável regional que propagasse 
 
 No presente momento, as condições \emph{a} e \emph{b} foram atingidas e espera-se conseguir um modelo estável nas configurações \emph{c} em breve. O que foi possível verificar é que um modelo rodando apenas com maré, é possível calibrar nível e não as componentes u e v da velocidade. O que indica que as correntes na região são mais dependentes do vento do que da maré, corroborando com os resultados descritos pela literatura.
 
-Também verificou-se que modelos com viscosidade se apresentaram mais estáveis que modelos sem viscosidade. 
+Também verificou-se que modelos com viscosidade se apresentaram mais estáveis que modelos sem viscosidade. Para definir o valor da viscosidade, usou-se o parâmetro VISC2, coeficiente horizontal Laplaciano de viscosidade entre 5 e 25$m^{2}.s^{-1}$. Esses valores foram retirados de trabalhos de referência utilizando o mesmo modelo. Os autores \citeonline{costaetal2012} e \citeonline{Ilicak2012} utilizaram o valor de 5$m^{2}.s^{-1}$ enquanto \citeonline{Ezer2002} utilizaram 500$m^{2}.s^{-1}$, porém esse valor foi definido após testes com valores que chegaram a 25$m^{2}.s^{-1}$.
+
+A tabela \ref{tab:rodadas} apresenta algumas das rodadas realizadas ao longo desse período e para as grades versões 2 e 3. As rodadas das versões anteriores e testes de grade não foram incluídos pois, na maioria das vezes, não eram nem estáveis o suficiente para rodar. As colunas das tabelas representam os seguintes itens:
+
+\begin{itemize}
+	\item Rodada: Identificador da configuração 
+	\item Versão: Número de versão da grade e batimetria sendo utilizada na rodada
+	\item Fronteiras: Configuração das fronteiras do modelo 
+	\item Aninhamento: Se a grade local foi aninhada com a grade regional. Se estiver como \emph{não}, indica que a rodada era só com grade regional
+	\item Ts Reg: Espaço de tempo (timestep) da grade regional
+	\item Ts Local: Espaço de tempo (timestep) da grade local
+	\item Maré: Se o modelo teve maré como entrada
+	\item Vento: Se o modelo teve vento como entrada
+	\item Viscosidade: Se o modelo teve viscosidade configurada e se sim, qual valor
+	\item Conf. Visc.: Parâmetros de compilação da viscosidade
+	\item Resultado: estado atual do modelo. \emph{ok} indica que o modelo rodou por 50 dias de simulação sem nenhuma instabilidade, \emph{quebrou} indica que o modelo sofreu alguma instabilidade antes de rodar todo o tempo de simulação estipulado, \emph{rodando} indica que o modelo ainda estava simulando enquanto este documento estava sendo escrito.
+\end{itemize}
 
 
 \begin{landscape}
@@ -1668,7 +1709,7 @@ Os resultados de frequência de nível mostraram uma forte influência da component
 
 Todos os valores de temperatura foram bem menores que aqueles descritos em \citeonline{Schettinietal1999}, onde os valores permaneceram entre 25 e 27$^{\circ}$C. A grande diferença se dá pelo período medido. Enquanto os dados de \citeonline{Schettinietal1999} foram medidos em março (fim do verão), os dados aqui apresentados foram coletados entre agosto e setembro (fim do inverno) e, portanto, essa diferença é natural para a região, que se encontra em uma região temperada e está sujeita à massas de água com valores menores de temperatura.
 
-Os resultados de corrente indicaram correntes amenas, abaixo de 0,20$cm.s^{-1}$ dentro da enseada e abaixo de 40$cm.s^{-1}$ em regiões abertas e expostas à ondulação direta. Esses resultados corroboram com as observações descritas em \citeonline{Schettinietal1999}. Entretanto, os autores afirmaram que as correntes obedecem mais diretamente ao regime dos ventos do que as oscilações da maré. Da mesma forma como foi feito com a temperatura, foram desenvolvidos alguns gráficos tentando correlacionar a velocidade da corrente com a direção ou o vento (Figuras \ref{fig:corrvento01} a \ref{fig:corrventodir03}). Novamente nenhum padrão emergiu nas análises realizadas e não foi possível relacionar a velocidade da corrente com o vento.
+Os resultados de corrente indicaram correntes amenas, abaixo de 0,20$cm.s^{-1}$ dentro da enseada e abaixo de 40$cm.s^{-1}$ em regiões abertas e expostas à ondulação direta. Esses resultados corroboram com as observações descritas em \citeonline{Schettinietal1999}. Entretanto, os autores afirmaram que as correntes obedecem mais diretamente ao regime dos ventos do que as oscilações da maré. Da mesma forma como foi feito com a temperatura, foram desenvolvidos alguns gráficos tentando correlacionar a velocidade da corrente com a direção ou o vento. Novamente nenhum padrão emergiu nas análises realizadas e não foi possível relacionar a velocidade da corrente com o vento.
 
 %\chapter{CONCLUSÃO}
 %

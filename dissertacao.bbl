@@ -12,6 +12,11 @@
   Piçarras (Santa Catarina/ Brasil)}.
 Dissertação (Mestrado) --- Universidad de Cantabria, Santander, 2013. 263 p.}
 
+\bibitem[Arakawa e Lamb 1977]{ArakawaC}
+\abntrefinfo{Arakawa e Lamb}{ARAKAWA; LAMB}{1977}
+{ARAKAWA, A.~\& LAMB, V. Methods of computational physics.
+\textbf{Academic Press}, v.~17, p. 174--265, 1977.}
+
 \bibitem[Araujo et al. 2010]{Araujoetal2010}
 \abntrefinfo{Araujo et al.}{ARAUJO et al.}{2010}
 {ARAUJO, R.~S. et al. Variação da morfologia praial e identificação de zonas de
@@ -44,6 +49,13 @@ Dissertação (Mestrado) --- Universidad de Cantabria, Santander, 2013. 263 p.}
 In:  \underline{\ \ \ \ \ \ \ \ }. New York, U.S.A.: Springer-Verlag, 1990.
   cap. Introduction.}
 
+\bibitem[Costa et al. 2012]{costaetal2012}
+\abntrefinfo{Costa et al.}{COSTA et al.}{2012}
+{COSTA, P. et al. Using the regional ocean modelling system (roms) to improve
+  the sea surface temperature predictions of the mercator ocean system.
+\textbf{Advances in Spanish Physical Oceanography}, v.~76S1, p. 165--175,
+  2012.}
+
 \bibitem[Egbert et al. 1994]{tpxo1994}
 \abntrefinfo{Egbert et al.}{EGBERT et al.}{1994}
 {EGBERT, G.~D.~\& BENNET, A.~F.~\& FOREMAN, M. G.~G. Topex/poseidon tides
@@ -61,6 +73,12 @@ In:  \underline{\ \ \ \ \ \ \ \ }. New York, U.S.A.: Springer-Verlag, 1990.
 {EGBERT, G.~D.~\& EROFEEVA, S.~Y. \textbf{TPXO/Poseidon}. 2015.
 Acessado em 09 ago 2015.
 Dispon{\'\i}vel em: $<$http://volkov.oce.orst.edu/tides/global.html$>$.}
+
+\bibitem[Ezer et al. 2002]{Ezer2002}
+\abntrefinfo{Ezer et al.}{EZER et al.}{2002}
+{EZER, T.~\& ARANGO, H.~\& SHCHEPETKIN, A.~F. Developments in terrain-following
+  ocean models: intercomparisons of numerical aspects.
+\textbf{Ocean Modelling}, v.~4, p. 249--267, 2002.}
 
 \bibitem[FEMAR 2016]{femar}
 \abntrefinfo{FEMAR}{FEMAR}{2016}
@@ -119,6 +137,11 @@ Monografia (Trabalho de Conclusão de Curso) - Universidade do Vale do Itajaí.}
 Acessado em fev. 2015.
 Dispon{\'\i}vel em:
   $<$http://cidades.ibge.gov.br/xtras/perfil.php?lang=\&codmun=421280\&search=santa-catarina|balneario-picarras$>$.}
+
+\bibitem[Ilicak et al. 2012]{Ilicak2012}
+\abntrefinfo{Ilicak et al.}{ILICAK et al.}{2012}
+{ILICAK, M. et al. Spurious dianeutral mixing and the role of momentum closure.
+\textbf{Ocean Modelling}, v. 45-46, p. 37--58, 2012.}
 
 \bibitem[Imasato 1983]{imasato}
 \abntrefinfo{Imasato}{IMASATO}{1983}
