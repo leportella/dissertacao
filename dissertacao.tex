@@ -1610,6 +1610,7 @@ Também verificou-se que modelos com viscosidade se apresentaram mais estáveis qu
 
 A tabela \ref{tab:rodadas} apresenta algumas das rodadas realizadas ao longo desse período e para as grades versões 2 e 3. As rodadas das versões anteriores e testes de grade não foram incluídos pois, na maioria das vezes, não eram nem estáveis o suficiente para rodar. As colunas das tabelas representam os seguintes itens:
 
+
 \begin{itemize}
 	\item Rodada: Identificador da configuração 
 	\item Versão: Número de versão da grade e batimetria sendo utilizada na rodada
@@ -1624,6 +1625,7 @@ A tabela \ref{tab:rodadas} apresenta algumas das rodadas realizadas ao longo des
 	\item Resultado: estado atual do modelo. \emph{ok} indica que o modelo rodou por 50 dias de simulação sem nenhuma instabilidade, \emph{quebrou} indica que o modelo sofreu alguma instabilidade antes de rodar todo o tempo de simulação estipulado, \emph{rodando} indica que o modelo ainda estava simulando enquanto este documento estava sendo escrito.
 \end{itemize}
 
+A rodada 17 conseguiu agregar as forçantes de vento e maré, porém apenas na grade regional. A mesma configuração foi implementada na rodada 18 junto com o aninhamento, porém esta quebrou. Busca-se agora acoplar a rodada 17 com uma configuração que permita o aninhamento da grade local de forma estável. As figuras \ref{fig:27_3_nivel}, \ref{fig:27_3_u} e \ref{fig:27_3_v} apresentam os resultados da rodada 17 para a grade regional no ponto ST003 para nível, u e v, respectivamente.
 
 \begin{landscape}
 
@@ -1647,38 +1649,44 @@ A tabela \ref{tab:rodadas} apresenta algumas das rodadas realizadas ao longo des
 		Run9 & v2 & Che+Fla+Rad & sim & 10 & 2  & sim & sim      & VISC2=10       & MIX\_S\_UV & quebrou \\[6pt]
 		Run10 & v2 & Che+Fla+Rad & sim & 10 & 2  & sim & sim      & VISC2=10       & MIX\_S\_GE & quebrou \\[6pt]
 		Run11 & v2 & Che+Fla+Rad & sim & 10 & 2  & sim & sim      & VISC2=25       & MIX\_S\_GEO & quebrou \\[6pt]
-		Run12 & v2 & Che+Fla+Rad & sim & 10 & 2  & sim & adaptado & VISC2=10  & MIX\_S\_UV  & rodando \\[6pt]
-		Run13 & v3 & Che+Fla+Rad & sim & 10 & 2  & sim & adaptado & VISC2=10  & MIX\_S\_UV  & rodando \\[6pt]
+		Run12 & v2 & Che+Fla+Rad & sim & 10 & 2  & sim & adaptado & VISC2=10  & MIX\_S\_UV  & quebrou \\[6pt]
+		Run13 & v3 & Che+Fla+Rad & sim & 10 & 2  & sim & adaptado & VISC2=10  & MIX\_S\_UV  & quebrou \\[6pt]
 		Run14 & v3 & Che+Fla+Rad & não & 10 & 2  & sim & adaptado & VISC2=10  & MIX\_S\_UV  & quebrou \\[6pt]
-		Run15 & v3 & Che+Fla+Rad & sim & 10 & 2  & sim & não      & VISC2=10  & MIX\_S\_UV  & rodando \\[6pt]
-		Run16 & v3 & Che+Fla+Rad & não & 10 & 2  & não & adaptado & VISC2=10  & MIX\_S\_UV  & rodando \\[6pt]
-		Run17 & v3 & Cha+Fla     & não & 10 & 2  & não & adaptado & VISC2=10  & MIX\_S\_UV  & rodando \\[6pt]
+		Run15 & v3 & Che+Fla+Rad & sim & 10 & 2  & sim & não      & VISC2=10  & MIX\_S\_UV  & ok \\[6pt]
+		Run16 & v3 & Che+Fla+Rad & não & 10 & 2  & não & adaptado & VISC2=10  & MIX\_S\_UV  & quebrou \\[6pt]
+		Run17 & v3 & Cha+Fla     & não & 10 & 2  & não & adaptado & VISC2=10  & MIX\_S\_UV  & ok \\[6pt]
+		Run18 & v3 & Cha+Fla     & sim & 10 & 2  & não & adaptado & VISC2=10  & MIX\_S\_UV  & quebrou \\[6pt]
+		Run19 & v3 & Cha+Fla\footnote{Esta rodada possui configurações de compilação do modelo diferentes daquelas utilizadas na rodada 18} & sim & 10 & 2  & não & adaptado & VISC2=10  & MIX\_S\_UV  & rodando \\[6pt]
+		Run20 & v3 & Cha+Fla\footnote{Esta rodada possui configurações de compilação do modelo diferentes daquelas utilizadas. Mais detalhes serão inseridos na versão final} & sim & 10 & 2  & não & adaptado & VISC2=10  & MIX\_S\_UV  & rodando \\[6pt]
+		
 		\bottomrule
 	\end{tabularx}
 \end{landscape}
-%\begin{landscape}
-%	\begin{figure}[!htb]
-%		\includegraphics[width=1.6\textwidth]{figuras/Calibracao_Regional01ST001.png}
-%		\centering
-%		\caption{Comparação de dados medidos de nível com modelados na grade regional e ponto ST001}\label{fig:CalibracaoReg1}
-%	\end{figure}
-%\end{landscape}
-%
-%\begin{landscape}
-%	\begin{figure}[!htb]
-%		\includegraphics[width=1.6\textwidth]{figuras/Calibracao_Regional01ST002.png}
-%		\centering
-%		\caption{Comparação de dados medidos de nível com modelados na grade regional e ponto ST002}\label{fig:CalibracaoReg2}
-%	\end{figure}
-%\end{landscape}
-%
-%\begin{landscape}
-%	\begin{figure}[!htb]
-%		\includegraphics[width=1.6\textwidth]{figuras/Calibracao_Regional01ST003.png}
-%		\centering
-%		\caption{Comparação de dados medidos de nível com modelados na grade regional e ponto ST003}\label{fig:CalibracaoReg3}
-%	\end{figure}
-%\end{landscape}
+
+\begin{landscape}
+	\begin{figure}[!htb]
+		\includegraphics[width=1.6\textwidth]{figuras/Calibracao/run27/Calibracao_run27_run24_fla+chapman_ST003_Nivel.png}
+		\centering
+		\caption{Comparação de dados medidos de nível na grade regional e ponto ST003 na Rodada 17 do modelo.}\label{fig:27_3_nivel}
+	\end{figure}
+\end{landscape}
+
+\begin{landscape}
+	\begin{figure}[!htb]
+		\includegraphics[width=1.6\textwidth]{figuras/Calibracao/run27/Calibracao_run27_run24_fla+chapman_ST003_U.png}
+		\centering
+		\caption{Comparação de dados medidos da componente u da velocidade na grade regional e ponto ST003 na Rodada 17 do modelo.}\label{fig:27_3_u}
+	\end{figure}
+\end{landscape}
+
+
+\begin{landscape}
+	\begin{figure}[!htb]
+		\includegraphics[width=1.6\textwidth]{figuras/Calibracao/run27/Calibracao_run27_run24_fla+chapman_ST003_V.png}
+		\centering
+		\caption{Comparação de dados medidos da componente v da velocidade na grade regional e ponto ST003 na Rodada 17 do modelo.}\label{fig:27_3_v}
+	\end{figure}
+\end{landscape}
 
 \subsection{Dificuldades encontradas}
 

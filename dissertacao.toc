@@ -33,7 +33,7 @@
 \contentsline {subsection}{\numberline {4.3.2}Batimetria}{115}
 \contentsline {subsection}{\numberline {4.3.3}Defini\c c\~oes gerais do modelo}{117}
 \contentsline {subsection}{\numberline {4.3.4}Calibra\c c\~ao}{117}
-\contentsline {subsection}{\numberline {4.3.5}Dificuldades encontradas}{120}
-\contentsline {chapter}{\numberline {5}\MakeUppercase {DISCUSS\~AO}}{121}
-\contentsline {chapter}{\hspace {\espacosumario }REFER\^ENCIAS}{122}
-\contentsline {chapter}{\hspace {\espacosumario }\MakeUppercase {Ap\^endice{}} A{} -$\mskip -\thinmuskip $-{} Gr\'aficos de Corrente por Camada}{128}
+\contentsline {subsection}{\numberline {4.3.5}Dificuldades encontradas}{124}
+\contentsline {chapter}{\numberline {5}\MakeUppercase {DISCUSS\~AO}}{125}
+\contentsline {chapter}{\hspace {\espacosumario }REFER\^ENCIAS}{126}
+\contentsline {chapter}{\hspace {\espacosumario }\MakeUppercase {Ap\^endice{}} A{} -$\mskip -\thinmuskip $-{} Gr\'aficos de Corrente por Camada}{132}
