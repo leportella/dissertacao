@@ -49,12 +49,25 @@ Dissertação (Mestrado) --- Universidad de Cantabria, Santander, 2013. 263 p.}
 In:  \underline{\ \ \ \ \ \ \ \ }. New York, U.S.A.: Springer-Verlag, 1990.
   cap. Introduction.}
 
-\bibitem[Costa et al. 2012]{costaetal2012}
-\abntrefinfo{Costa et al.}{COSTA et al.}{2012}
-{COSTA, P. et al. Using the regional ocean modelling system (roms) to improve
-  the sea surface temperature predictions of the mercator ocean system.
-\textbf{Advances in Spanish Physical Oceanography}, v.~76S1, p. 165--175,
-  2012.}
+\bibitem[Cochran et al. 1967]{FFT}
+\abntrefinfo{Cochran et al.}{COCHRAN et al.}{1967}
+{COCHRAN, W.~T. et al. What is the fast fourier transform.
+\textbf{Proceeding of the IEEE}, v.~55, p. 1664--1674, 1967.}
+
+\bibitem[Deltares 2011]{QuickinManual}
+\abntrefinfo{Deltares}{DELTARES}{2011a}
+{DELTARES. \textbf{Delft3D-QUICKIN User Manual}.
+[S.l.], 2011.}
+
+\bibitem[Deltares 2011]{RGFGridManual}
+\abntrefinfo{Deltares}{DELTARES}{2011b}
+{DELTARES. \textbf{Delft3D-RGFGRID User Manual}.
+[S.l.], 2011.}
+
+\bibitem[Deltares 2014]{DelftManual}
+\abntrefinfo{Deltares}{DELTARES}{2014}
+{DELTARES. \textbf{Delft3D-FLOW User Manual}.
+[S.l.], 2014.}
 
 \bibitem[Egbert et al. 1994]{tpxo1994}
 \abntrefinfo{Egbert et al.}{EGBERT et al.}{1994}
@@ -73,12 +86,6 @@ In:  \underline{\ \ \ \ \ \ \ \ }. New York, U.S.A.: Springer-Verlag, 1990.
 {EGBERT, G.~D.~\& EROFEEVA, S.~Y. \textbf{TPXO/Poseidon}. 2015.
 Acessado em 09 ago 2015.
 Dispon{\'\i}vel em: $<$http://volkov.oce.orst.edu/tides/global.html$>$.}
-
-\bibitem[Ezer et al. 2002]{Ezer2002}
-\abntrefinfo{Ezer et al.}{EZER et al.}{2002}
-{EZER, T.~\& ARANGO, H.~\& SHCHEPETKIN, A.~F. Developments in terrain-following
-  ocean models: intercomparisons of numerical aspects.
-\textbf{Ocean Modelling}, v.~4, p. 249--267, 2002.}
 
 \bibitem[FEMAR 2016]{femar}
 \abntrefinfo{FEMAR}{FEMAR}{2016}
@@ -121,6 +128,24 @@ Monografia (Trabalho de Conclusão de Curso) - Universidade do Vale do Itajaí.}
   nourishment of a headland bay beach.
 [S.l.], 2008.}
 
+\bibitem[Horstman et al. 2013]{HorstmanEtAl2013}
+\abntrefinfo{Horstman et al.}{HORSTMAN et al.}{2013}
+{HORSTMAN, E.~\& DOHMEN-JANSSEN, M.~\& HULSCHER, S. Modeling tidal dynamimcs in
+  a mangrove creek catchment in delft3d.
+\textbf{Coastal Dynamics}, p. 833--844, 2013.}
+
+\bibitem[Hu e Ding 2009]{HuDing2009}
+\abntrefinfo{Hu e Ding}{HU; DING}{2009}
+{HU, K.~\& DING, P. The effect od deep waterway constructions on hydrodynamics
+  and salinities in yangtze estuary, china.
+\textbf{Journal of Coastal Research}, v.~56, p. 961--965, 2009.}
+
+\bibitem[Hu et al. 2009]{HuEtAl2009}
+\abntrefinfo{Hu et al.}{HU et al.}{2009}
+{HU, K. et al. A 2d/3d hydrodynamic and sediment transport model for the
+  yangtze estuary, china.
+\textbf{Journal of Marine Systems}, v.~77, p. 114--136, 2009.}
+
 \bibitem[Hunt e Johns 1963]{HuntJohns63}
 \abntrefinfo{Hunt e Johns}{HUNT; JOHNS}{1963}
 {HUNT, J.~N.~\& JOHNS, B. Currents induced by tides and gravity waves.
@@ -137,11 +162,6 @@ Monografia (Trabalho de Conclusão de Curso) - Universidade do Vale do Itajaí.}
 Acessado em fev. 2015.
 Dispon{\'\i}vel em:
   $<$http://cidades.ibge.gov.br/xtras/perfil.php?lang=\&codmun=421280\&search=santa-catarina|balneario-picarras$>$.}
-
-\bibitem[Ilicak et al. 2012]{Ilicak2012}
-\abntrefinfo{Ilicak et al.}{ILICAK et al.}{2012}
-{ILICAK, M. et al. Spurious dianeutral mixing and the role of momentum closure.
-\textbf{Ocean Modelling}, v. 45-46, p. 37--58, 2012.}
 
 \bibitem[Imasato 1983]{imasato}
 \abntrefinfo{Imasato}{IMASATO}{1983}
@@ -188,6 +208,17 @@ Dissertação (Mestrado) --- Universidade de Aveiro, Aveiro, 2009. 61 p.}
   itapocoroi bay, brazil.
 \textbf{Journal of Coastal Research}, v.~64, p. 1086--1090, 2011.}
 
+\bibitem[Leonardi et al. 2013]{LeonardiEtAl2013}
+\abntrefinfo{Leonardi et al.}{LEONARDI et al.}{2013}
+{LEONARDI, N. et al. Efect of tides on mouth bar morphology and hydrodynamics.
+\textbf{Journal of Geophysical Research}, v.~118, p. 4169--4183, 2013.}
+
+\bibitem[Lesser et al. 2004]{Lesser2004}
+\abntrefinfo{Lesser et al.}{LESSER et al.}{2004}
+{LESSER, G.~R. et al. Development and validation of a three-dimensional
+  morphological model.
+\textbf{Coastal Engineering}, v.~51, p. 883--915, 2004.}
+
 \bibitem[MacCready e Banas 2010]{maccready}
 \abntrefinfo{MacCready e Banas}{MACCREADY; BANAS}{2010}
 {MACCREADY, P.~\& BANAS, N.~S. \textbf{Estuary Treatise}: Residual circulation,
@@ -206,18 +237,6 @@ Dispon{\'\i}vel em:
 {MALISKA, C.~R. \textbf{Transferência de Calor e Mecânica dos Fluidos
   Computacional}. [S.l.]: Livros Técnicos e Científicos S. A., 1995.}
 
-\bibitem[Marta-Almeida e Ruiz-Villarreal 2011]{MartaAlmeida2011}
-\abntrefinfo{Marta-Almeida e Ruiz-Villarreal}{MARTA-ALMEIDA;
-  RUIZ-VILLARREAL}{2011}
-{MARTA-ALMEIDA, M.~\& RUIZ-VILLARREAL, M. Offe: A python engine for automating
-  regional and coastal ocean forecasts.
-\textbf{Environmental Modelling \& Software}, v.~26, p. 680--682, 2011.}
-
-\bibitem[Mason et al. 2010]{Masonetal2010}
-\abntrefinfo{Mason et al.}{MASON et al.}{2010}
-{MASON, E. et al. Procedures for offline grid nesting in regional ocean models.
-\textbf{Ocean Modelling}, v.~35, p. 1--15, 2010.}
-
 \bibitem[Massel 1989]{massel}
 \abntrefinfo{Massel}{MASSEL}{1989}
 {MASSEL, S.~R. \textbf{Hydrodynamics of Coastal Zones}. [S.l.]: Elsevier
@@ -235,13 +254,6 @@ Dispon{\'\i}vel em:
   abordagem dos principais sistemas atmosféricos que atuam durante o ano.
 \textbf{Geosul}, v.~21, n.~16, p. 69--78, 2001.
 Florianópolis.}
-
-\bibitem[Moore et al. 2011]{Moore}
-\abntrefinfo{Moore et al.}{MOORE et al.}{2011}
-{MOORE, A. et al. The regional ocean modelling system (roms) 4-dimensional
-  variational data assimilation systems: Part i - system overview and
-  formulation.
-\textbf{Progress in Oceanography}, v.~91, p. 34--49, 2011.}
 
 \bibitem[Möller e Abe 2011]{livroinstrumentacao}
 \abntrefinfo{Möller e Abe}{MöLLER; ABE}{2011}
@@ -279,6 +291,12 @@ Monografia (Trabalho de Conclusão de Curso) - Universidade Federal de Santa
 {PARKER, B.~B. \textbf{Tidal Analysis and Prediction}.
 [S.l.], 2007.}
 
+\bibitem[Pawlowics et al. 2002]{ttide}
+\abntrefinfo{Pawlowics et al.}{PAWLOWICS et al.}{2002}
+{PAWLOWICS, R.~\& BEARDSLEY, B.~\& LENTZ, S. Classical tidal harmonic analysis
+  including error estimates in matlab using ttide.
+\textbf{Computers \& Geosciences}, v.~28, p. 929--937, 2002.}
+
 \bibitem[Pawlowicz et al. 2002]{ttidematlab}
 \abntrefinfo{Pawlowicz et al.}{PAWLOWICZ et al.}{2002}
 {PAWLOWICZ, R.~\& BEARDSLEY, B.~\& LENTZ, S. Classic tidal harmonic analysis
@@ -296,12 +314,6 @@ Dissertação (Mestrado) --- Christian Albrechts University, Kiel, Alemanha,
 \abntrefinfo{Pugh}{PUGH}{1987}
 {PUGH, D.~T. \textbf{Tides, Surges and Mean Sea-Level}. [S.l.]: John Wiley \&
   Sons, 1987.}
-
-\bibitem[Python 2015]{python}
-\abntrefinfo{Python}{PYTHON}{2015}
-{PYTHON. 2015.
-Acessado em nov. 2015.
-Dispon{\'\i}vel em: $<$https://www.python.org/$>$.}
 
 \bibitem[Ramirez 2010]{Ramirez2010}
 \abntrefinfo{Ramirez}{RAMIREZ}{2010}
@@ -335,12 +347,6 @@ Dissertação (Mestrado) --- Universidade Federal de Florianópolis,
 {ROELVINK, D. \textbf{A guide to modeling coastal morphology}. [S.l.]: World
   Scientific, 2012. 274~p.}
 
-\bibitem[ROMS 2015]{myroms}
-\abntrefinfo{ROMS}{ROMS}{2015}
-{ROMS. 2015.
-Acessado em jul. 2015.
-Dispon{\'\i}vel em: $<$https://www.myroms.org/wiki/$>$.}
-
 \bibitem[Saha et al. 2010]{cfsr}
 \abntrefinfo{Saha et al.}{SAHA et al.}{2010}
 {SAHA, S. et al. The ncep climate forecast system reanalysis.
@@ -370,13 +376,6 @@ Acessado em 16 ago 2015.}
 {SCHUREMAN, P. \textbf{Manual of Harmonic Analysis and Prediction of Tides}.
 [S.l.], 1958.}
 
-\bibitem[Shchepetkin e McWilliams 2005]{ROMS2005}
-\abntrefinfo{Shchepetkin e McWilliams}{SHCHEPETKIN; MCWILLIAMS}{2005}
-{SHCHEPETKIN, A.~F.~\& MCWILLIAMS, J.~C. The regional ocean modelling system
-  (roms): a split-explicit, free-surface, topography-following-coordinate
-  oceanic model.
-\textbf{Ocean Modelling}, v.~9, p. 347--404, 2005.}
-
 \bibitem[Short e Masselink 1999]{shortheadlands}
 \abntrefinfo{Short e Masselink}{SHORT; MASSELINK}{1999}
 {SHORT, A.~D.~\& MASSELINK, G. Handbook of beach and shoreface morphodynamics.
@@ -401,6 +400,14 @@ Dissertação (Mestrado) --- Universidade Federal do Rio Grande do Sul, Porto
 \abntrefinfo{Tee}{TEE}{1976}
 {TEE, K.~T. Tide-induced residual current - verification of a numerical model.
 \textbf{Journal of Physical Oceanography}, v.~7, p. 396--402, 1976.}
+
+\bibitem[Truccolo 1998]{truccolo98}
+\abntrefinfo{Truccolo}{TRUCCOLO}{1998}
+{TRUCCOLO, E.~C.
+\textbf{Maré Meteorológica e Forçantes Atmosféricas Locais em São Francisco do
+  Sul - SC}.
+Dissertação (Mestrado) --- Universidade Federal de Santa Catarina,
+  Florianópolis, 1998. 116 p.}
 
 \bibitem[Truccolo 2009]{truccoloMSc}
 \abntrefinfo{Truccolo}{TRUCCOLO}{2009}

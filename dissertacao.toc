@@ -1,39 +1,39 @@
 \select@language {brazil}
-\contentsline {chapter}{\numberline {1}\MakeUppercase {INTRODU\c C\~AO}}{11}
-\contentsline {section}{\numberline {1.1}Perguntas de Pesquisa}{11}
-\contentsline {section}{\numberline {1.2}Hip\'otese}{12}
-\contentsline {section}{\numberline {1.3}OBJETIVOS}{12}
-\contentsline {subsection}{\numberline {1.3.1}Objetivo Geral}{12}
-\contentsline {subsection}{\numberline {1.3.2}Objetivos Espec\IeC {\'\i }ficos}{12}
-\contentsline {chapter}{\numberline {2}\MakeUppercase {REVIS\~AO BIBLIOGR\'AFICA}}{13}
-\contentsline {section}{\numberline {2.1}Mar\'e e Circula\c c\~ao Residual}{13}
-\contentsline {section}{\numberline {2.2}Modelagem Num\'erica de Zonas Costeiras}{16}
-\contentsline {section}{\numberline {2.3}\'Area de estudo}{20}
-\contentsline {chapter}{\numberline {3}\MakeUppercase {MATERIAIS E M\'ETODOS}}{27}
-\contentsline {section}{\numberline {3.1}Dados medidos}{28}
-\contentsline {section}{\numberline {3.2}Modelo Num\'erico}{34}
-\contentsline {subsection}{\numberline {3.2.1}Regional Ocean Modelling System}{34}
-\contentsline {section}{\numberline {3.3}For\c cantes dos modelos}{36}
-\contentsline {subsection}{\numberline {3.3.1}Mar\'e}{36}
-\contentsline {subsection}{\numberline {3.3.2}Vento}{38}
-\contentsline {section}{\numberline {3.4}Dados diversos}{39}
-\contentsline {subsection}{\numberline {3.4.1}Linha de Costa}{39}
-\contentsline {subsection}{\numberline {3.4.2}Batimetria}{39}
-\contentsline {section}{\numberline {3.5}Avalia\c c\~ao dos resultados do modelo}{40}
-\contentsline {section}{\numberline {3.6}Ferramentas Utilizadas}{40}
-\contentsline {chapter}{\numberline {4}\MakeUppercase {RESULTADOS}}{42}
-\contentsline {section}{\numberline {4.1}An\'alise dos Dados de Vento}{42}
-\contentsline {subsection}{\numberline {4.1.1}An\'alise por Esta\c c\~ao}{48}
-\contentsline {section}{\numberline {4.2}Descri\c c\~ao dos dados medidos}{53}
-\contentsline {subsection}{\numberline {4.2.1}N\IeC {\'\i }vel}{53}
-\contentsline {subsection}{\numberline {4.2.2}Temperatura}{75}
-\contentsline {subsection}{\numberline {4.2.3}Corrente}{77}
-\contentsline {section}{\numberline {4.3}Modelo Num\'erico}{111}
-\contentsline {subsection}{\numberline {4.3.1}Grade}{111}
-\contentsline {subsection}{\numberline {4.3.2}Batimetria}{115}
-\contentsline {subsection}{\numberline {4.3.3}Defini\c c\~oes gerais do modelo}{117}
-\contentsline {subsection}{\numberline {4.3.4}Calibra\c c\~ao}{117}
-\contentsline {subsection}{\numberline {4.3.5}Dificuldades encontradas}{124}
-\contentsline {chapter}{\numberline {5}\MakeUppercase {DISCUSS\~AO}}{125}
-\contentsline {chapter}{\hspace {\espacosumario }REFER\^ENCIAS}{126}
-\contentsline {chapter}{\hspace {\espacosumario }\MakeUppercase {Ap\^endice{}} A{} -$\mskip -\thinmuskip $-{} Gr\'aficos de Corrente por Camada}{132}
+\contentsline {chapter}{\numberline {1}\MakeUppercase {INTRODU\c C\~AO}}{9}
+\contentsline {section}{\numberline {1.1}Perguntas de Pesquisa}{9}
+\contentsline {section}{\numberline {1.2}Hip\'otese}{10}
+\contentsline {section}{\numberline {1.3}OBJETIVOS}{10}
+\contentsline {subsection}{\numberline {1.3.1}Objetivo Geral}{10}
+\contentsline {subsection}{\numberline {1.3.2}Objetivos Espec\IeC {\'\i }ficos}{10}
+\contentsline {chapter}{\numberline {2}\MakeUppercase {REVIS\~AO BIBLIOGR\'AFICA}}{11}
+\contentsline {section}{\numberline {2.1}Mar\'e e Circula\c c\~ao Residual}{11}
+\contentsline {section}{\numberline {2.2}Modelagem Num\'erica de Zonas Costeiras}{14}
+\contentsline {section}{\numberline {2.3}\'Area de estudo}{18}
+\contentsline {chapter}{\numberline {3}\MakeUppercase {MATERIAIS E M\'ETODOS}}{25}
+\contentsline {section}{\numberline {3.1}Dados medidos}{26}
+\contentsline {section}{\numberline {3.2}Modelo Num\'erico}{32}
+\contentsline {subsection}{\numberline {3.2.1}DELFT3D-FLOW}{32}
+\contentsline {section}{\numberline {3.3}For\c cantes dos modelos}{33}
+\contentsline {subsection}{\numberline {3.3.1}Mar\'e}{33}
+\contentsline {subsection}{\numberline {3.3.2}Vento}{34}
+\contentsline {section}{\numberline {3.4}Dados diversos}{35}
+\contentsline {subsection}{\numberline {3.4.1}Linha de Costa}{35}
+\contentsline {subsection}{\numberline {3.4.2}Batimetria}{35}
+\contentsline {section}{\numberline {3.5}Avalia\c c\~ao dos resultados do modelo}{36}
+\contentsline {section}{\numberline {3.6}An\'alises utilizadas}{36}
+\contentsline {subsection}{\numberline {3.6.1}TTide}{36}
+\contentsline {subsection}{\numberline {3.6.2}Transformada R\'apida de Fourier (FFT)}{36}
+\contentsline {chapter}{\numberline {4}\MakeUppercase {RESULTADOS}}{38}
+\contentsline {section}{\numberline {4.1}An\'alise dos Dados de Vento}{38}
+\contentsline {subsection}{\numberline {4.1.1}An\'alise por Esta\c c\~ao}{45}
+\contentsline {section}{\numberline {4.2}Descri\c c\~ao dos dados medidos}{50}
+\contentsline {subsection}{\numberline {4.2.1}N\IeC {\'\i }vel}{50}
+\contentsline {subsection}{\numberline {4.2.2}Temperatura}{69}
+\contentsline {subsection}{\numberline {4.2.3}Corrente}{71}
+\contentsline {section}{\numberline {4.3}Modelo Num\'erico}{104}
+\contentsline {subsection}{\numberline {4.3.1}Grade Num\'erica e Batimetria}{104}
+\contentsline {subsection}{\numberline {4.3.2}Calibra\c c\~ao}{107}
+\contentsline {subsection}{\numberline {4.3.3}Rodadas de an\'alise}{115}
+\contentsline {subsection}{\numberline {4.3.4}Mapas de Residuais}{116}
+\contentsline {chapter}{\numberline {5}\MakeUppercase {DISCUSS\~AO E CONCLUS\~AO}}{117}
+\contentsline {chapter}{\hspace {\espacosumario }REFER\^ENCIAS}{118}

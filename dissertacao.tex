@@ -19,6 +19,7 @@
 \usepackage{booktabs}
 \usepackage{tabularx}
 \usepackage{ltablex}
+\usepackage{pifont}
 %\usepackage{hyperref}
 %----------------------------------------------------------------------
 % Comandos criados pelo usuário
@@ -30,8 +31,8 @@
 % Usados para preencher os elementos pré-textuais
 \instituicao[a]{Universidade Federal de Santa Catarina} % Opcional
 \departamento[o]{Departamento de Geociências}
-\curso[o]{Programa de Pós-Graduação em Oceanografia da Universidade Federal de Santa Catarina como parte dos requisitos}
-\documento[o]{Dissertação} % [o] para dissertação [a] para tese
+\curso[o]{Programa de Pós-Graduação em Oceanografia}
+\documento[a]{Dissertação} % [o] para dissertação [a] para tese
 \titulo{Hidrodinâmica Residual de uma Praia de Enseada Subtropical Dominada por Ondas}
 \subtitulo{Estudo de Caso da Enseada do Itapocorói} % Opcional
 \autor{Letícia Vasques dos Reis Portella Nascimento}
@@ -55,7 +56,8 @@
 
 % \dedicatoria{Este trabalho é dedicado aos meus colegas de classe e aos meus queridos pais.}
 
-% Fetter, Eric e Godo, Jonas, Victor, Alex, Charline, Ivan, Marco, Sergio, Mario, Luana, Consuelo
+% Fetter, Eric e Godo, Jonas, Victor, Alex, Charline, Ivan, Marco, Sergio, Mario, Luana, Consuelo, Wandrey, Gabriela
+
 \agradecimento{
 
 Agredeço ao Prof. Dr. Antonio H. da F. Klein e ao Professor João Luiz Baptista de Carvalho por terem gentilmente cedidos os dados medidos imprescindíveis para o desenvolvimento do atual trabalho. Também devo agradecer à CB\&I por toda a compreensão que foi necessária para que eu pudesse participar mestrado bem como todo o apoio cedido durante o processo.
@@ -64,11 +66,11 @@ Agredeço ao Prof. Dr. Antonio H. da F. Klein e ao Professor João Luiz Baptista d
 % \epigrafe{Texto da Epígrafe. Citação relativa ao tema do trabalho. É opcional. A epígrafe pode também aparecer na abertura de cada seção ou capítulo.}
 % {(Autor da epígrafe, ano)}
 
-\textoResumo {O presente estudo tem o objetivo de avaliar a hidrodinâmica da Enseada do Itapocorói com foco na circulação residual e de longo período buscando compreender quais forçantes ambientais são mais relevantes na geração dessas correntes. Para alcançar este objetivo, fez-se a a análise dos resultados de 3 \emph{Acoustic Doppler Current Profilers} (ADCPs) dispostos ao longo da enseada em posições com diferentes graus de ondulação e um marégrafo localizado na enseada ao lado, em Penha. Também foi utilizado o modelo hidrodinâmico, \emph{Regional Ocean Modelling System} (ROMS) para analisar o comportamento espacial das correntes locais. O modelo foi desenvolvido em escala regional e local e calibrado com dados provenientes dos ADCPs. Verificou-se que as correntes na região tem um padrão bastante ameno, com velocidades abaixo de 40$cm.s^{-1}$ em todo domínio e abaixo de 20$cm.s^{-1}$ nas regiões mais internas. Pelo menos 1/4  da energia local provém de períodos acima de 50h, indicando forte presença de ondas de plataforma e correntes residuais.}
-\palavrasChave {Circulação Residual. Modelagem Numérica. ROMS. }
+\textoResumo {O presente estudo tem o objetivo de avaliar a hidrodinâmica da Enseada do Itapocorói com foco na circulação residual e de longo período buscando compreender quais forçantes ambientais são mais relevantes na geração dessas correntes. Para alcançar este objetivo, fez-se a a análise dos resultados de 3 \emph{Acoustic Doppler Current Profilers} (ADCPs) dispostos ao longo da enseada em posições com diferentes graus de ondulação e um marégrafo localizado na enseada ao lado, em Penha. Também foi utilizado o modelo hidrodinâmico, Delft3D para analisar o comportamento espacial das correntes locais. O modelo foi desenvolvido em escala regional e local e calibrado com dados provenientes dos ADCPs. Verificou-se que as correntes na região tem um padrão bastante ameno, com velocidades abaixo de 40$cm.s^{-1}$ em todo domínio e abaixo de 20$cm.s^{-1}$ nas regiões mais internas. Pelo menos 1/4  da energia local provém de períodos acima de 50h, indicando forte presença de ondas de plataforma e correntes residuais.}
+\palavrasChave {Circulação Residual. Modelagem Numérica. Delft3D. }
  
-\textAbstract {The current study has the goal to evaluate the hydrodynamic behavior of the Itapocorói Bay, focusing on the residual and long-term circulation, in order to better understand which envorinment forcings have the main part on its generation. To achieve this goal, data from 3 Acoustic Doppler Current Profilers (ADCPs) were analyzed as well as an tide gaugue located on a bay nearby, Penha Bay. Also, it was made use of a a numerical model called Regional Ocean Modelling System (ROMS) to better comprehend the spacial dynamic of local currents. The model was developed with a regional and a local grid and calibrated with data from the ADCPs. The current on the bay are very mild, usually below 40$cm.s^{-1}$ in all area and below 20$cm.s^{-1}$ in sheltered areas inside the bay. At least a quarter of local energy is contained in periods greater than 50h, indicating a strong presence of platform waves and residual currents.}
-\keywords {Residual Circulation. Numerical Modelling. ROMS.}
+\textAbstract {The current study has the goal to evaluate the hydrodynamic behavior of the Itapocorói Bay, focusing on the residual and long-term circulation, in order to better understand which envorinment forcings have the main part on its generation. To achieve this goal, data from 3 Acoustic Doppler Current Profilers (ADCPs) were analyzed as well as an tide gaugue located on a bay nearby, Penha Bay. Also, it was made use of a a numerical model called Delft3D to better comprehend the spacial dynamic of local currents. The model was developed with a regional and a local grid and calibrated with data from the ADCPs. The current on the bay are very mild, usually below 40$cm.s^{-1}$ in all area and below 20$cm.s^{-1}$ in sheltered areas inside the bay. At least a quarter of local energy is contained in periods greater than 50h, indicating a strong presence of platform waves and residual currents.}
+\keywords {Residual Circulation. Numerical Modelling. Delft3D.}
 
 
 
@@ -130,7 +132,7 @@ São objetivos específicos deste trabalho:
 
 \begin{itemize} 
 	\item Caracterizar a circulação local através da análise das séries dos fundeio;
-	\item Construção de um modelo hidrodinâmico (ROMS) para a área de estudo, 
+	\item Construção de um modelo hidrodinâmico (Delft3D-FLOW) para a área de estudo, 
 	com grade local e regional, visando diminuir inconsistências na região de interesse;
 	\item Calibração dos modelos hidrodinâmicos com dados provenientes de 3 ADCPs;
 	\item Definir o padrão típico da circulação residual; 
@@ -223,7 +225,6 @@ Apesar de serem consideravelmente precisas é preciso ter consciência que as solu
 	\caption{Métodos de solução para um problema físico. Fonte: \citeonline{Maliska}}\label{fig:metodos}
 \end{figure}
 
-
 Inicialmente, soluções numéricas eram muito custosas computacionalmente e modelos analíticos (bastante simplificados) e experimentais eram as únicas ferramentas que os cientistas podiam contar para o entendimento dos fênomenos físicos. Com o avanço computacional ocorrido nas últimas décadas, as barreiras computacionais que tornavam custosas as soluções para a resolução dos métodos numéricos se tornaram muito pequenas comparadas aos ganhos potenciais. A solução de escoamento turbulento supersônico em um aerofólio com os computadores da década de 60 consumiria um tempo de computação de aproximadamente
 30 anos com um custo de 10 milhões de dólares. O mesmo problema com os computadores atuais requer minutos e custo na ordem de centenas de dólares \cite{Maliska}. Dessa forma, a modelagem num\'erica permite não apenas resolver as equações que descrevem os fenômenos físicos mas também se constitui uma ferramenta para experimentos relativos aos processos que interagem e compõe as características observadas nos oceanos.
 
@@ -248,7 +249,7 @@ As grades numéricas podem ser construídas de maneiras estruturadas ou desestrutu
 Tradicionalmente, o método de diferenças finitas é mais popular nos modelos costeiros, principalmente pela facilidade dos seus conceitos e sua eficiência no cálculo célula-a-célula. Já os métodos de elementos finitos são bem mais complicados matematicamente e costumam ser mais lentos nos cálculos célula-a-célula mas conseguem facilmente cobrir áreas com grandes diferença em escala de tamanhos \cite{dano2012}.
 
 Os sistemas de equações formados por todas as sete equações básicas pode ser resolvido de dois modos, basicamente: de forma implícita ou de forma explícita.
-Em métodos implícitos, todo o sistema de equações é calculado simultaneamente já que todos os valores do passo de tempo atual são desconhecidos com exceção das fronteiras. Esse cálculo pode ser feito através de inversão de matriz (totalmente implícito) ou de métodos iterativos (parcialmente implícito). No caso dos métodos explícitos, as variáveis no tempo atual são baseadas em valores conhecidos do passo de tempo passado, o que é consideravelmente mais simples. Em geral métodos implícitos demoram mais por passo de tempo, mas conseguem trabalhar com passos de tempo maiores porque não há um limite fixo de estabilidade. Já no caso de métodos explícitos existe pouco esforço computacional por passo de tempo, mas um critério deve ser seguido para garantir estabilidade \cite{Maliska,dano2012}. É importante ressaltar que processos que demandam iteração podem acumular erros de arredondamento que também podem desestabilizar a solução.
+Em métodos implícitos, todo o sistema de equações é calculado simultaneamente já que todos os valores do passo de tempo atual são desconhecidos com exceção das fronteiras. Esse cálculo pode ser feito através de inversão de matriz (totalmente implícito) ou de métodos iterativos (parcialmente implícito). No caso dos métodos explícitos, as variáveis no tempo atual são baseadas em valores conhecidos do passo de tempo passado, o que é consideravelmente mais simples. Em geral métodos implícitos demoram mais por passo de tempo, mas conseguem trabalhar com passos de tempo maiores porque não há um limite fixo de estabilidade. Já no caso de métodos explícitos existe pouco esforço computacional por passo de tempo, mas o critério CFL deve ser seguido para garantir estabilidade \cite{Maliska,dano2012}. É importante ressaltar que processos que demandam iteração podem acumular erros de arredondamento que também podem desestabilizar a solução.
 
 No caso de modelos costeiros, os modelos Delft3D e Mike21 utilizam-se de esquemas implícitos enquanto modelos como ROMS e o XBeach usam esquemas explícito de soluções.
 
@@ -499,12 +500,16 @@ Além dos dados desses 3 ADCPs, também foram cedidos gentilmente dados de maregra
 
 \section{Modelo Numérico}
 
-\subsection{Regional Ocean Modelling System}
+\subsection{DELFT3D-FLOW}
 
-O \emph{Regional Ocean Modelling System} (ROMS) é um modelo hidrostático de circulação geral em um oceano de Boussinesq desenvolvido especialmente para aplicações na zona costeira \cite{myroms, ROMS2005}. Apesar de ter sido desenvolvido com enfoque em regiões costeiras, o ROMS já foi aplicado
-em águas profundas, bacias oceânicas e mesmo em escala global \cite{Moore}. 
+O Delft 3D é um modelo numérico desenvolvido pela WL Delft Hydraulics em cooperação com a Universidade de Delft de Tecnologia e constitui um avançado sistema integrado de modelos numéricos adequado para estudos
+multidisciplinares de sistemas complexos como processos costeiros, rios e áreas estuarinas. O modelo possui diversos módulos que podem ser acoplados para gerar simulações de fluxo, transporte de sedimento, geração e propagação de ondas curtas, qualidade de água, evolução morfológica e ecologia \cite{DelftManual}. No cerne do Delft3D está o módulo FLOW, que faz as computações hidrodinâmicas.
 
-O modelo utiliza-se, na horizontal, de um modelo tradicional e centralizado de aproximações de diferenças finitas de segunda ordem, num esquema do tipo Arakawa C \cite{ArakawaC}. Neste esquema, as velocidades são calculadas nas bordas da célula enquanto variáveis escalares são calculadas no centro da célula de cálculo. Dessa forma, cada uma das variáveis (u, v e zeta) tem uma matriz de coordenadas independente (Figura \ref{fig:arakawa}).
+O módulo Delft3D-FLOW é um módulo para simulações hidrodinâmicas e de transporte. Este calcula fluxos não estacionários e fenômenos de transporte que são resultados de forçantes mareais e meteorológicas em grades complexas, retilíneas e curvilineares. Este módulo inclui diversos prcessos como cisalhamento de vento (wind shear), forçantes de onda, forçantes de maré, fluxos gerados por densidade, estratificação por gradientes de salinidade e/ou temperatura, modificações de pressão atmosférica entre outros, o que o faz capaz de ser aplicado em uma grande gama de situações costeiras \cite{Lesser2004}. É um dos modelos mais utilizados na atualidade, tendo sido aplicado em uma gama de estudos hidrodinâmicos \cite{HuEtAl2009, HuDing2009, LeonardiEtAl2013, HorstmanEtAl2013}.
+
+O modelo utiliza-se de equações de águas rasas não-estáveis (unsteady) em duas (integradas na vertical) ou três dimensões. O sistema de equações constiste nas equações horizontais de momentum, a equação da continuidade, a equação de transporte e o modelo de fechamento turbulento. A equação de momentum vertical é reduzida ao relação de pressão hidrostática, uma vez que assume-se que as acelerações verticais são pequenas quando comparadas às acelerações gravitacionais e, portanto, não são levadas em consideração. Ele se torna, então, adequado para preferer fenômenos de transporte onde as escalas horizontal e temporal são significativamente maiores que as escalas verticais \cite{Lesser2004}.
+
+O modelo utiliza-se, na horizontal, de um modelo tradicional e centralizado de aproximações de diferenças finitas de segunda ordem, num esquema do tipo Arakawa C \cite{ArakawaC}. Neste esquema, as velocidades são calculadas nas bordas da célula enquanto variáveis escalares são calculadas no centro da célula de cálculo. Dessa forma, cada uma das variáveis (u, v e zeta) tem uma matriz de coordenadas independente. A figura \ref{fig:arakawa}) apresenta o padrão típico de uma grade no Delft. 
 
 \begin{figure}[!htb]
 	\includegraphics[width=0.6\textwidth]{figuras/arakawac.png}
@@ -512,100 +517,18 @@ O modelo utiliza-se, na horizontal, de um modelo tradicional e centralizado de a
 	\caption{Localização das variáveis calculadas em uma malha do tipo Arakawa C}\label{fig:arakawa}
 \end{figure}
 
+Cada representação inserida na figura pode ser identificada abaixo:
 
-Na vertical, são utilizadas coordenadas sigma ($\sigma$)  (\emph{terrain-following}) que 
-permitem maior resolução em águas rasas ou em regiões de morfologia complexa (Figura \ref{fig:sigma}). Ao se comparar a coordenada $\sigma$ com outros tipos de coordenadas verticais, como a coordenada z e a coordenada isopicnal, é possível perceber que a primeira exibe muito mais sensibilidade à topografia de fundo. Nos demais modelos as superfícies das coordenadas podem intersectar as superfícies isopicnais em algum momento, mesmo no caso de estratificações horizontais uniformes, podendo gerar erros de gradiente de pressão \cite{ROMS2005}.
-
- \begin{figure}[!htb]
-	\includegraphics[width=0.9\textwidth]{figuras/sigma_coordinates.png}
-   \centering
-   \caption{Exemplo do sistema de coordenadas verticais $\sigma$. Fonte: \citeonline{ROMS2005} }\label{fig:sigma}
- \end{figure}
-
-O modelo $\sigma$ aplica a seguinte transformação \cite{ROMS2005}:
-
-\begin{equation}
-  z = z(x,y,\sigma) \label{eq:sigma}
-\end{equation}
-
-onde z é a profundidade em coordenadas cartesianas e $\sigma$ é a fração da espessura da camada vertical ($-1  \leq \sigma \leq 0 $). Quando $\sigma$ for igual a 0, z corresponde à superfície livre ($z = \xi$), e quando $\sigma$ for iguala -1, z corresponde ao fundo oceânico ($z = -h(x,y)$)
-
-As equações de movimento resolvidas pelo ROMS são: o balanço do momento horizontal (Equações \ref{eq:momentoU} e \ref{eq:momentoV}),
-a evolução temporal de um traçador ($C=C(x,y,t)$) como a salinidade, temperatura ou nutrientes (Equação \ref{eq:tracador}) e a equação de estado (Equação \ref{eq:estado}). 
-
-\begin{equation}
-  \frac{\partial u}{\partial t} +
-  \vec{v} . \vec{\nabla}u - fv = 
-  - \frac{\partial\phi}{\partial x} - 
-  \frac{\partial}{\partial z} (K_{m} \frac{\partial u}{\partial z} - \nu \frac{\partial u}{\partial z})
-  + F_{u} + D_{u} \label{eq:momentoU}
-\end{equation}
-
-\begin{equation}
-  \frac{\partial v}{\partial t} +
-  \vec{v} . \vec{\nabla}v + fu = 
-  - \frac{\partial\phi}{\partial y} - 
-  \frac{\partial}{\partial z} (K_{m} \frac{\partial v}{\partial z} - \nu \frac{\partial v}{\partial z})
-  + F_{v} + D_{v} \label{eq:momentoV}
-\end{equation}
-
-\begin{equation}
- \frac{\partial C}{\partial t} + 
- \vec{v} . \vec{\nabla} C = 
- - \frac{\partial}{\partial z} (K_{C} - \nu_{\theta}\frac{\partial C}{\partial z})
- + F_{C} + D_{C} \label{eq:tracador}
-\end{equation}
-
-\begin{equation}
- \rho = \rho(T,S,P) \label{eq:estado}
-\end{equation}
-
-Dado que o modelo utiliza-se da aproximação de Boussinesq, que considera que 
-as variações de densidade podem ser negligenciadas nas equações de momento, e o fluido pode ser considerado incompressível, a equação da continuidade é dada por:
-
-\begin{equation}
- \frac{\partial u}{\partial x} + \frac{\partial v}{\partial y} + \frac{\partial w}{\partial z} = 0
-\end{equation}
-
-onde, 
-%\newpage
 \begin{description}
- \item[] $u$, $v$ e $w$ são as componentes $x,y,z$ do vetor $\vec{v}$; 
- \item[] $D_{u}$, $D_{v}$ e $D_{C}$ são os termos difusivos;
- \item[] $f(x,y)$ é o parâmetro de Coriolis;
- \item[] $\nu$ e $\nu_{\theta}$ são a viscosidade e a difusividade molecular, respectivamente;
- \item[] $K_{m}$ e $K_{C}$ são a viscosidade e a difusividade turbulenta vertical, respectivamente;
- \item[] $\phi$ é a pressão dinâmica ($\phi = \frac{P}{\rho_{0}}$);
- \item[] $P$ é a pressão total ($P \approx -\rho_{0} gz$); 
- \item[] $S(x,y,z,t)$ é a salinidade;
- \item[] $T(x,y,z,t)$ é a temperatura potencial;
+	\item linhas cheias: grade numérica
+	\item área cinza: itens com os mesmos índices de grade (m, n)
+	\item + : localização dos parâmetros de nível, concentração de constituintes, salinidade e temperatura
+	\item | : localização da componente horizontal da velocidade na direção x
+	\item \textbar : localização da componente horizontal da velocidade na direção y
+	\item \ding{108} : profundidade abaixo do nível médio do mar.
 \end{description}
 
-O ROMS permite ainda acoplar grades maiores e menores de forma que haja uma grade doadora e uma grade receptora. No caso particular do estudo, utilizou-se o aninhamento de grades para refinar uma das grades e aumentar a resolução da malha próximo da área de estudo. É recomendado que o refinamento seja de 1:3, 1:5 ou 1:7. Entretanto, sugere-se não ultrapassar a proporção 1:5, para evitar possíveis instabilidades numéricas.
-Na figura \ref{fig:refinementgrids} estão apresentados os tipos de grade de refinamento (simples ou múltiplo). Neste trabalho utilizaremos um refinamento único conforme a figura da esquerda.
-
-\begin{figure}[!htb]
-	\includegraphics[width=1.0\textwidth]{figuras/refinement_grids.png}
-	\centering
-	\caption{Tipos de grades de refinamento no ROMS: grade de refinamento único (esquerda)  e múltiplos refinamentos de sub-classes (direita)}\label{fig:refinementgrids}
-\end{figure}
-
-O contato entre a grade doadora e a grade receptora acontece em uma região de contato, definida em um arquivo separado (Figura \ref{fig:contactarea}). Tanto a grade refinada quanto o arquivo de contato são gerados automaticamente por rotinas em Matlab feitas especialmente para isso e obtidas no mesmo endereço do modelo.
-
-É altamente recomendado que o espaço de tempo da grade local seja proporcional ao seu refinamento. Por exemplo, se o passo de tempo da grade regional é de 60 segundos e a grade local tem um refinamento de 1:3, é recomendado que o passo de tempo da grade local seja de 20 segundos.
-
-\begin{itemize}
-	\item \emph{corse2fine}: rotina para gerar a grade refinada. Necessário o valor de refinamento e os pontos i e j máximos e mínimos em que a grade regional deve ser refinada.
-	\item \emph{contact}: rotina para gerar o arquivo de contato. Necessário informar os arquivos da grade regional e local.
-\end{itemize}
-
-\begin{figure}[!htb]
-	\includegraphics[width=1.0\textwidth]{figuras/contact_area.png}
-	\centering
-	\caption{A grade em azul é a doadora, a grade vermelha é a receptora e a região em roxo é a área de contato onde ocorre a troca de informação entre ambas.}\label{fig:contactarea}
-\end{figure}
-
-O ROMS é escrito em fortran F90/F95, e utiliza pré-processamento em C para ativar diversas opções físicas e numéricas. Pode ser rodado de forma isolada ou com os módulos de ondas e interação oceano-atmosfera em conjunto. No presente trabalho utilizou-se apenas o modelo puro com forçantes de maré e vento, sem nenhum outro módulo acoplado. O código do modelo, bem como maiores informações estão disponíveis através de cadastro no site: www.myroms.org.
+Dado que a área de estudo apresenta-se em uma região com pouca influência estuarina e constitui-se de uma área aberta, onde a coluna de água tende a ser homogênea, optou-se por utilizar a versão bidimensional (2D) do modelo.
 
 
 \section{Forçantes dos modelos}
@@ -704,18 +627,10 @@ A performance do modelo será avaliada conforme os cálculos propostos por \citeon
 
 \citeonline{Fox81} descreve  os esforços da Sociedade Meteorológica Americana (AMS) para desenvolver técnicas de avaliação de performance de modelos atmosféricos. Dois tipos principais de mensuração de performance foram encontrados: medidas das diferenças (ou residuais) e medidas de correlação. O primeiro diz respeito a uma quantificação do tamanho da diferença entre valores medidos e modelados. Medidas de correlação avaliam a associação ou concordância entre os valores medidos e modelados. O autor afirma que o primeiro é mais coerente com a teoria estatística.
 
-\citeonline{Wilmott82} avaliou as medidas propostas por \citeonline{Fox81} e verificou que o Erro Médio Absoluto (EMA, Equação \ref{eq:mae}) e a Raiz do Erro Médio Quadrático (REMQ, Equação \ref{eq:rmse})  são as medidas que melhor conseguem avaliar a performance de modelos. Entretanto, o autor propõe um nova medida denominada Índice de Concordância (IC, Equação \ref{eq:ic}), que se propõe a ser uma medida descritiva tanto relativa quanto interligada.
-
-\begin{equation}
-EMA = \sqrt{\frac{1}{N} \sum_{i=1}^{N} |M_i - O_i |}    \label{eq:mae}
-\end{equation}
+\citeonline{Wilmott82} avaliou as medidas propostas por \citeonline{Fox81} e verificou que a Raiz do Erro Médio Quadrático (em inglês, RMSE) é uma das medidas que melhor conseguem avaliar a performance de modelos. Seu cálculo é dado por: 
 
 \begin{equation}
 REMQ = \sqrt{\frac{1}{N} \sum_{i=1}^{N} (M_i - O_i)²}   \label{eq:rmse}
-\end{equation}
-
-\begin{equation}
-IC =  1 - [ \sum_{i=1}^{N} (M_I - O_i)² / \sum_{i=1}^{N}(|M'_i - O'_i|)² ] , 0 \leq IC \leq 1 \label{eq:ic}  
 \end{equation}
 
 Onde,
@@ -729,24 +644,16 @@ Onde,
 
 Buscou-se alcançar erros na casa de 10\% da amplitude máxima dos valores modelados. Por exemplo, para uma maré com amplitude de 2m, o ideal é que os valores de erro estejam na casa de, no máximo, 20cm.
 
-\section{Ferramentas Utilizadas}
+\section{Análises utilizadas}
 
-As séries temporais dos dados do ADCP, entradas e saídas dos modelos foram tratadas através da linguagem de programação Python. Python é uma linguagem de programação interpretada, orientada a objetos e de alto nível. Ela é bastante intuitiva, prática e gratuita, sendo facilmente encontrada na internet e com uma grande gama de livros e fóruns para apoio. Ela trabalha através de diversos módulos que são adicionados ao programa conforme necessidade \cite{python}. O Python conta com diversos pacotes focados na análise de séries temporais e tratamento/processamento de dados geoespaciais, entre eles o Scipy, Numpy, Pandas, Matplotlib, entre outros.
+\subsection{TTide}
 
-Como pode ser utilizada de modo interativo ela se torna bastante fácil para a geração de códigos para aplicações científicas que requerem o uso de uma grande gama de dados e programas com alta complexidade computacional. Ela já foi utilizado em conjunto com o ROMS para aplicações de previsão em ferramentas otimizadas, como descrito por \citeonline{MartaAlmeida2011}.
+Existe uma série de problemas associados com utilizar análises harmônicas clássicas para análise de sinais de maré. Visando corrigir e melhorar as análises harmônicas em sinais de maré, \citeonline{ttide} fizeram o pacote TTIDE, que é uma série de rotinas para análise harmônica clássica porém com algumas correções e opções para os usuários. Essa série de rotinas foi utilizada no presente trabalho para analisar os sinais de nível e fazer uma análise do sinal de maré nos dados coletados.
 
-Outras ferramentas, geradas a partir dos módulos básicos do Python, são disponibilizadas gratuitamente pelos desenvolvedores e foram usadas no presente trabalho, entre elas:
+\subsection{Transformada Rápida de Fourier (FFT)}
 
-\begin{description}
-		\item Pacote ttide desenvolvido pelo Rich Pawlowicz e adaptado ao Python pelo Mitchell O'Flaherty-Sproul e disponível em: \url{https://github.com/moflaher/ttide_py};
-		
-		\item Pacote WindRose disponível no repositório Python;
-\end{description}
-
-Todas as ferramentas desenvolvidas neste presente trabalho também foram disponibilizadas online e podem ser acessadas através do endereço \url{https://github.com/leportella/oceanpyscripts}.
-
-Os mapas apresentados foram gerados de Sistema de Informações Geográficas (SIG) através do ArcGIS.
-
+A Transformada Rápida de Fourier (do inglês, FFT) é um método de aplicação da Transformada Discreta de Fourier (do inglês, DFT) de modo a se alcançar eficiência computacional.
+A ideia da metodologia da DFT é decompor um sinal (ou uma série temporal) em termos de funções de base sinusoidal (seno e coseno) multiplicadas por amplitudes. Dessa forma, é possível avaliar o sinal no domínio da frequência, onde determinadas tendências podem ser vistas, que não podem ser identificados no domínio do tempo. Entretanto, a DFT espera que haja um número infinito de pontos para serem analisados na série temporal o que é impossível. A FFT vem para trabalhar a DFT em séries finitas \cite{FFT}. Essa análise foi utilizada no presente trabalho para avaliar o sinal medido de nível em no domínio da frequência.
 
 \chapter{RESULTADOS}
 
@@ -784,6 +691,8 @@ Pode-se perceber que os dados do METAR apresentando ausência de direções em um e
 
 O que foi verificado é que os dados do METAR apresentam uma grande inconsistência nos dados. Do ano de 2011, 16,3\% dos dados não estavam disponíveis (Figura \ref{fig:nansMETAR}). A utilização de metodologias de interpolação dos dados em grande quantidade pode afetar o comportamento geral dados ainda mais considerando diversos dados ausentes em sequência, como é o caso atual. Além disso, por se localizar em uma base terrestre distante do local de estudo, os dados direcionais podem ter sido influenciados pelo relevo terrestre, potencialmente prejudicando análises feitas em locais distantes do ponto de amostragem. Dessa forma, como existem dúvidas a respeito da qualidade e localização dos dados, as análises feitas no presente estudo poderiam ser comprometidas e, portanto, a base de dados do CFSR foi escolhida como a mais adequada fonte de dados de vento para o presente estudo.
 
+A figura \ref{fig:distconjunta} apresenta a distribuição conjunta dos dados de vento para todo o período de 2011 a 2016. Pode-se verificar quem 58,3\% dos dados encontram-se no quadrante N (NW-N-NE) e que 70\% do tempo, as velocidades do vento ficam abaixo de 6$m.s^{-1}$. Considerando o quadrante S, ventos de SW são os mais recorrentes, acontecendo em 9,8\% dos casos. Casos de vento acima de 8$m.s^{-1}$ são recorrentes em menos de 10\% dos casos.
+ 
 \begin{landscape}
 	
 \begin{figure}[!htb]
@@ -816,6 +725,13 @@ O que foi verificado é que os dados do METAR apresentam uma grande inconsistênci
 		\centering
 		\caption{Dados válidos e dados indisponíveis nos dados de velocidade do vento no Aeroporto de Navegantes para o ano de 2011 (METAR)}\label{fig:nansMETAR}
 	\end{figure}
+	
+\begin{figure}[!htb]
+	\includegraphics[width=1.6\textwidth]{figuras/dist_conjunta_vento.png}
+	\centering
+	\caption{Distribuição conjunta dos dados de ventos.}\label{fig:distconjunta}
+\end{figure}
+
 \end{landscape}
 
 % ------------------------
@@ -844,7 +760,7 @@ No Verão, os ventos são mais presentes no quadrante N (NO-NE). Ventos de ONO, N 
 
 No Outono, os ventos ficam quase totalmente concentrados entre O e NO com menor presença de ventos N. Ventos do quadrante L e S são praticamente ausentes. As maiores velocidades são associadas aos ventos de O que representaram cerca de 13\% dos dados. No entanto, a presença de ventos de NO abaixo de 8$m.s^{-1}$ apresenta uma presença em quase 20\% dos dados.
 
-No Inverno, os ventos de S passam a ser predominantes tanto em intensidade (>10$m.s^{-1}$) quanto em percentual (>10\%). Ventos do quadrante L e O aparecem em percentuais menores e velocidades abaixo de 6$m.s^{-1}$ na maior parte do tempo. Ventos do quadrante N se tornam quase ausentes neste período.
+No Inverno, os ventos de S passam a ser predominantes tanto em intensidade (\textgreater10$m.s^{-1}$) quanto em percentual (\textgreater10\%). Ventos do quadrante L e O aparecem em percentuais menores e velocidades abaixo de 6$m.s^{-1}$ na maior parte do tempo. Ventos do quadrante N se tornam quase ausentes neste período.
 
 A Primavera se mostra uma estação bastante semelhante ao verão, com predominância do quadrante N e com os ventos mais intensos oriundos de ONO. Ventos de NE e L aparecem com um percentual próximo de 15\% mas velocidades normalmente abaixo de 6$m.s^{-1}$. Ventos do quadrante sul são praticamente ausentes e com velocidades abaixo de 4$m.s^{-1}$.
 
@@ -878,7 +794,7 @@ A Primavera se mostra uma estação bastante semelhante ao verão, com predominânci
 
 \subsection{Nível}
 
-Inicialmente foram estudados os dados de nível (pressão) dos três ADCPs para melhor compreender o comportamento da maré ao longo da Enseada. Os dados analisados em cada um dos pontos dos ADCPs podem ser vistos nas figuras \ref{fig:nivelst001} a \ref{fig:nivelst003} na parte superior. Como a medição de nível depende do local onde o ADCP foi instalado, é possível perceber a diferença entre as profundidades nos três pontos medidos. Não obstante, os três aparelhos tiveram um comportamento de nível muito semelhante, o que indica que, em termos de nível, a dinâmica local não aparenta variar dentro da enseada. A tabela \ref{tab:dadosnivel} contém as principais características dos dados adquiridos. A variação entre o nível máximo e mínimo encontrado foi de aproximadamente 2 m, com uma tendência leve de aumento dessa variação nos pontos mais internos (ST001 e ST002).
+Inicialmente foram estudados os dados de nível (pressão) dos três ADCPs para melhor compreender o comportamento da maré ao longo da Enseada. Os dados analisados em cada um dos pontos dos ADCPs podem ser vistos nas figuras \ref{fig:nivelPrevistost001} a \ref{fig:nivelPrevistost003} na parte superior. Como a medição de nível depende do local onde o ADCP foi instalado, é possível perceber a diferença entre as profundidades nos três pontos medidos. Não obstante, os três aparelhos tiveram um comportamento de nível muito semelhante, o que indica que, em termos de nível, a dinâmica local não aparenta variar dentro da enseada. A tabela \ref{tab:dadosnivel} contém as principais características dos dados adquiridos. A variação entre o nível máximo e mínimo encontrado foi de aproximadamente 2 m, com uma tendência leve de aumento dessa variação nos pontos mais internos (ST001 e ST002).
 
 Os dados maregráficos de Penha serviram como base de comparação, uma vez que suas medições aconteceram por um período maior e em momento diferente da coleta dos dados dos ADCPs. A figura \ref{fig:previsaopenha} se apresenta simétrica ao eixo 0, de forma geral, e com variações raramente ultrapassando 1,0 m tanto positivas quanto negativas. Em geral, as variações se apresentam com até 70 cm aproximadamente. A maior variação encontrada em Penha foi cerca de 30 cm maior que as verificadas nas medições dos ADCPs. 
 
@@ -920,28 +836,6 @@ Dessa forma, é possível concluir que a maré meteorológica verificada pelos ADCPs
 	Penha & -1.37  & 0,70  & 2,08   \\[6pt]
 	\bottomrule
 \end{tabularx}
-
-\begin{landscape}
-	\centering	
-	\newpage
-	\begin{figure}[!htb]
-		\includegraphics[width=1.7\textwidth]{figuras/Nivel_ST001.png}
-		\centering
-		\caption{Variação de Nível no ponto ST001.}\label{fig:nivelst001}
-	\end{figure}
-	
-	\begin{figure}[!htb]
-		\includegraphics[width=1.7\textwidth]{figuras/Nivel_ST002.png}
-		\centering
-		\caption{Variação de Nível no ponto ST002.}\label{fig:nivelst002}
-	\end{figure}
-	
-	\begin{figure}[!htb]
-		\includegraphics[width=1.7\textwidth]{figuras/Nivel_ST003.png}
-		\centering
-		\caption{Variação de Nível no ponto ST003.}\label{fig:nivelst003}
-	\end{figure}
-\end{landscape}
 	
 
 \begin{landscape}
@@ -1203,13 +1097,13 @@ Os números de forma encontrados para os dados medidos podem ser observados na ta
 		\bottomrule
 	\end{tabularx}
 
-Também é possível observar a grande influência das componentes semidiurnas na figura \ref{fig:fft} onde estão apresentados os resultado de uma Transformada Rápida de Fourier (FFT). Primeiramente deve-se notar que apesar de os dados terem um tempo de medições diferentes (1 ano para Penha e 1 mês para Piçarras), os resultados de espectro se mostraram muito semelhantes. É possível perceber que existem quatro picos de energia distintos cujos períodos associados a esses picos são de 25,5, 12,5, 8,2 e 6,2 horas.  
+Também é possível observar a grande influência das componentes semidiurnas na figura \ref{fig:fft} onde estão apresentados os resultado de uma Transformada Rápida de Fourier (FFT). Primeiramente deve-se notar que apesar de os dados terem um tempo de medições diferentes (1 ano para Penha e 1 mês para Piçarras), os resultados de espectro se mostraram muito semelhantes. É possível perceber que existem quatro picos de energia distintos cujos períodos associados a esses picos são de 25,5, 24, 12,5, 8,2 e 6,2 horas.  
 
-O maior pico de energia em ambos os dados analisados estava localizado na frequência de 0,08, ou seja, um período aproximado de 12,5 horas indicando a predominância semidiurna, como já foi verificado anteriormente. As componentes diurnas, tercidiurnas e quaterdiurnas se apresentaram com picos de energia semelhantes entre si, sem predominância. Outro resultante interessante é que, em ambos os gráficos, existe uma energia considerável em períodos maiores que 25 horas, mas que não pode ser bem identificada no espectro. Energias com períodos maiores que 50h representaram 27,5 \% dos dados analisados. 
+O maior pico de energia em ambos os dados analisados estava localizado no período aproximado de 12,5 horas indicando a predominância semidiurna, como já foi verificado anteriormente. As componentes diurnas, tercidiurnas e quaterdiurnas se apresentaram com picos de energia semelhantes entre si, sem predominância. No dado de Penha, é possível identificar dois picos de energia distintos: um em 24h e um em 25,5h. Esses picos não podem ser distinguidos nos dados do ADCP, devido à sua pequena amostragem em comparação com a medição em Penha.  Outro resultante interessante é que, em ambos os gráficos, existe uma energia considerável em períodos maiores que 25 horas, mas que não pode ser bem identificada no espectro. Verificou-se que energias com períodos maiores que 50h representaram 27,5 \% dos dados analisados. 
 
 \begin{landscape}
 	\begin{figure}[!htb]
-		\includegraphics[width=1.6\textwidth]{figuras/Espectros.png}
+		\includegraphics[width=1.6\textwidth]{figuras/Espectro_FFT_Penha_Periodo.png}
 		\centering
 		\caption{Espectro de energia em Piçarras e Penha}\label{fig:fft}
 	\end{figure}
@@ -1256,8 +1150,6 @@ Nas figuras \ref{fig:curr_depthav_01}, \ref{fig:curr_depthav_02} e \ref{fig:curr
 Em termos de velocidades integradas na coluna, as correntes apresentam velocidades muito baixas, abaixo de 20 $cm.s^{-1}$ na maior parte do tempo. Entretanto, nota-se que a maior parte das correntes fica abaixo de 10$cm.s^{-1}$ (Figuras \ref{fig:hist_velcorrente_01} a \ref{fig:hist_velcorrente_03}). É possível notar nas figuras \ref{fig:cumulativo_01} a \ref{fig:cumulativo_03} que em 90\% do tempo, as velocidades ficam abaixo de 8$cm.s^{-1}$ nos pontos ST001 e ST002 e abaixo de 21$cm.s^{-1}$ em ST003. 
 
 As figuras \ref{fig:quiver01} a \ref{fig:quiver03} apresentam na parte superior os vetores indicando a direção e magnitude das correntes e na parte inferior a velocidade. Enquanto nos pontos ST001 e ST002 não foi possível associar os episódios de grande velocidade com direções predominantes, no ponto ST003 percebe-se que as correntes que atigiram velocidades acima de 15$cm.s^{-1}$ estão associadas a correntes de sudeste. 
-
-Na figura \ref{fig:residualmedido} pode ser observada a resultante medida num período de 50 horas. No ponto ST001 a residual é praticamente constante para NE com variações de intensidade. No ponto ST002 já existe uma variação de direções entre NO e NE. As intensidades no ponto ST002 parecem ter menor variação do que no ponto ST001. Já no ponto ST003, a residual é pequena e para N, eventualmente sendo sobrepostas por residuais para L.
 
 Em ST001 as correntes se apresentaram mais fortes na superfície (Figura \ref{fig:ST001Cel3}), com direção predominante para NE, enquanto perto do fundo (Figura \ref{fig:ST001Cel1}) as velocidades ficaram abaixo de 10$cm.s^{-1}$. Correntes para O são praticamente ausentes em todas as camadas. 
 
@@ -1341,11 +1233,6 @@ Vale ressaltar que os episódios de velocidade acima de 25$cm.s^{-1}$ nas camadas
 		\caption{Direção predominante e velocidade das correntes no ponto ST003}\label{fig:quiver03}
 	\end{figure}
 
-	\begin{figure}[!htb]
-		\includegraphics[width=1.6\textwidth]{figuras/Corrente_Residual_Medida_50h.png}
-		\centering
-		\caption{Correntes residuais dos pontos medidos a cada 50h}\label{fig:residualmedido}
-	\end{figure}
 %------------------------------------------------------------------------------------------------
 % AQUI ESTAO OS CURRENT ROSES POR CAMADA
 
@@ -1520,204 +1407,169 @@ Vale ressaltar que os episódios de velocidade acima de 25$cm.s^{-1}$ nas camadas
 \clearpage
 \section{Modelo Numérico}
 
-\subsection{Grade}
+\subsection{Grade Numérica e Batimetria}
 
-Na descrição realizada nesta seção, o tamanho das grades se referem aos \emph{Rho-points}, localizados no centro da célula. Entretanto, a grade do modelo contém todas as informações específicas para cada uma das variáveis necessárias.
+A grade numérica foi desenvolvido através da ferramenta Delft3D-RGFGRID disponível no pacote de módulos do Delft3D. O objetivo do RGFGRID é criar, modificar e visualizar grades curvilineares de forma fácil e visual. Para isso, o software conta com diversas ferramentas para a geração de grades tais como aumentar ou diminuir a resolução da grade globalmente ou localmente, apagar ou adicionar células individuais e ortogonalização \cite{RGFGridManual}. A qualidade de uma grade pode ser determinada pela ortogonalidade e pela taxa com que algumas certas propriedades (\emph{smoothness}) mudam ao longo da área a ser modelada \cite{DelftManual}. A medida de ortogonalidade é o ângulo (ou o coseno do ângulo) entre as linhas de grade em ambas as direções x e y. A medida de \emph{smoothness} é a relação entre os tamanhos das células de grade em ambas a direções.
 
-O modelo TPXO utilizado como forçante no ROMS resolve muito bem a maré em águas profundas, duas grades foram desenvolvidas para que a onda de maré fosse trazida de águas profundas, onde ela é bem resolvida, para águas rasas da região de interesse. 
-
-A grade regional foi construída de forma retangular, com uma resolução de 500 m e se estendendo desde o sul da Ilha de Santa Catarina até próximo da desembocadura da Baía de Paranaguá (Figura \ref{fig:GradeReg}). Isso resultou em 398 elementos de grade na direção $\chi$ (x) e 498 elementos de grade na direção $\eta$ (y). 
-
-A resolução de 500 m da grade regional foi escolhida de forma arbitrária. O ROMS só permite o aninhamento com uma grade gerada de forma automática e a documentação não recomanda utilizar uma resolução no aninhamento maior que 5 vezes. Dessa forma, para se alcançar uma resolução de 100 metros na área de estudo, a grade regional foi construída considerando a resolução desejada na grade local.
-
-A grade local foi construída então a partir da grade regional com uma resolução 5 vezes maior, focando na Enseada do Itapocorói mas de forma que as fronteiras ainda ficassem distantes o suficiente da região de interesse. Esta possui 270 elementos na direção $\chi$  (x)e 430 elementos na direção $\eta$ (y) e a extensão de seu domínio pode ser vista na figura \ref{fig:GradeLoc}.
-
-\begin{figure}[!htb]
-	\includegraphics[width=1\textwidth]{figuras/GradeRegional.png}
-	\centering
-	\caption{Domínio da grade numérica regional.}\label{fig:GradeReg}
-\end{figure}
-
-\begin{figure}[!htb]
-	\includegraphics[width=1\textwidth]{figuras/GradeRegionaleLocalSobrepostas.png}
-	\centering
-	\caption{Domínio da grade numérica regional e local sobrepostos.}\label{fig:GradeRegeLocal}
-\end{figure}
-
-\begin{landscape}
-\begin{figure}[!htb]
-	\includegraphics[width=1.2\textwidth]{figuras/GradeLocal.png}
-	\centering
-		\caption{Domínio da grade numérica local.}\label{fig:GradeLoc}
-\end{figure}
-\end{landscape}
-
-\subsection{Batimetria}
-
-Os dados batimétricos foram interpolados nas grades numéricas regional e local e podem ser observados nas figuras \ref{fig:BatReg} e \ref{fig:BatLoc}, respectivamente. Na grade regional, a maior profundidade foi de 1229 metros, enquanto na local foi de 49 metros.
-
-Como o modelo utiliza coordenadas sigma, a variação topográfica devem ser limitadas para evitar gradientes de pressão errôneos \cite{Masonetal2010}. Dessa forma, foi aplicado um filtro Shapiro de forma que o fator r fosse menor que 0,2 conforme descrito por \cite{Masonetal2010}.
-
-Inicialmente, foi verificado que o modelo era bastante sensível quanto à profundidade da coluna de água e que, em profundidades muito pequenas o modelo se tornava tão instável que quebrava. Dessa forma, alguns testes foram feitos para avaliar qual a menor profundidade necessária para que o modelo se mostrasse estável. Essa profundidade mínima estabelecida foi 3 metros e, portanto, qualquer valor menor que 3 metros foi alterado para que ficasse com o valor de 3 metros. Isso não influencia o presente trabalho, uma vez que este não pretende resolver processos dentro da zona de surfe.
-
-\begin{figure}[!htb]
-	\includegraphics[width=0.9\textwidth]{figuras/Batimetria_GrdRegional.png}
-	\centering
-	\caption{Batimetria interpolada na grade numérica regional.}\label{fig:BatReg}
-\end{figure}
-
-\begin{landscape}
-\begin{figure}[!htb]
-	\includegraphics[width=1.2\textwidth]{figuras/Batimetria_GrdRLocal.png}
-	\centering
-	\caption{Batimetria interpolada na grade numérica local.}\label{fig:BatLoc}
-\end{figure}
-\end{landscape}
-
-\subsection{Definições gerais do modelo}
-
-A grade regional teve como condição de fronteira o tipo Chapman Explícito para a superfície livre e Flather para as equações de momento 2D. Esta combinação é descrita nos fóruns como a melhor combinação para casos propagados com maré.
-
-Algumas outras informações estão apresentadas na tabela \ref{tab:setup}.
-
-%A condição Flather permite que as diferenças entre as previsões de nível do modelo e os dados externos (condições de fronteira impostas) sejam propagados para fora do domínio com velocidade das ondas de gravidade externas, conservando o volume dentro do domínio. 
-
+O manual do RGFGRID recomenda alguns valores de propriedades da grade para que os cálculos que a mesma possa ser considerada de qualidade e para que se evite a introdução de erros numéricos devido ao aumento de resolução na área de estudo e curvatura da grade. Buscou-se manter-se o máximo possível dentro dos parâmetros recomendados conforme pode ser observado na tabela \ref{tab:gridprops}. 
 
 \begin{tabularx}{\linewidth}{ccc}
-	\caption{Características gerais do modelo.}\label{tab:setup} \\
+	\caption{Propriedades da grade numérica}\label{tab:gridprops}\\
 	\toprule
-	\textbf{Configuração} & \textbf{G. Regional} & \textbf{G. Local} \\[6pt]
+	\textbf{Parâmetro} & \textbf{Valor Padrão/Recomendado}  & \textbf{Valor Máx.}\\[6pt]
 	\midrule
 	\endhead
- 		Passo de tempo (DT)          & 30 s            & 10 s \\[6pt]
- 		Número de camadas            & 1               & 1 \\[6pt]
- 		Mínimo Courant Barotrópico   & 0,046           & 0,230 \\[6pt]
- 		Máximo Courant Barotrópico   & 0,423           & 0,913 \\[6pt]
- 		Mínimo resolução vertical    & 0,27 m          & 0,27 m \\[6pt]
- 		Máximo resolução vertical    & 68,48 m         & 10,49 m \\[6pt]
+	Ortogonalidade   & \textless 0.02  & 0.01                \\[6pt]
+	M Smoothness     & \textless 1.2  & 1.050                    \\[6pt]
+	N Smoothness     & \textless 1.2  & 1.136                    \\[6pt]
+	Aspect Ratio     & 1-2  & \textless 1.7 na área de estudo    \\[6pt]
+	Resolução Mínima & -  & 200 m                                 \\[6pt]
+	Resolução Máxima & -  & 23.7 m    \\[6pt]
 	\bottomrule
 \end{tabularx}
 
+\begin{figure}[!htb]
+	\includegraphics[width=1\textwidth]{figuras/Grade.png}
+	\centering
+	\caption{Grade numérica}\label{fig:grade}
+\end{figure}
+
+
+Uma vez a grade foi definida, os pontos batimétricos descritos anteriormente foram interpolados na mesma. Para isso, utilizou-se  o programa Delft3D-QUICKIN \cite{QuickinManual}. O valor máximo de profundidade dentro do domínio numérico é de 39.2 m e o resultado pode ser verificado na figura \ref{eq:CFL}.
+
+\begin{figure}[!htb]
+	\includegraphics[width=1\textwidth]{figuras/Batimetria.png}
+	\centering
+	\caption{Batimetria interpolada na grade numérica}\label{fig:batimetria}
+\end{figure}
+
+\clearpage
 \subsection{Calibração}
 
-Até o presente momento, mais de 50 rodadas de modelo foram desenvolvidas, buscando alcançar uma configuração de modelo que pudesse ser considerada calibrada. As primeiras rodadas tiveram que ser descartadas tanto em termos de configuração quanto em termos de grade.
+Diversos parâmetros foram testados de modo que se conseguisse chegar a um modelo que representasse aproximadamente a realidade. Os parâmetros utilizados na calibração e seus valores padrão estão apresentados na tabela \ref{tab:calibracaoparams}.
 
-Basicamente buscou-se implementar: a) uma grade estável regional que propagasse a maré de forma coerente b) um aninhamento entre grade local e regional c) modelo aninhado rodando com maré e vento. 
+\begin{tabularx}{\linewidth}{ccc}
+	\caption{Configurações utilizadas na calibração.}\label{tab:calibracaoparams}\\
+	\toprule
+	\textbf{Parâmetro} & \textbf{Valor padrão} & \textbf{Valor utilizado} \\[6pt]
+	\midrule
+	\endhead
+	Densidade da água         & 1000 $kg.m^{-3}$ & 1025 $kg.m^{-3}$    \\[6pt]
+	Formulação de Rugosidade  & Chezy            & Chezy    \\[6pt]
+	Rugosidade do fundo (U)   & 65               & 90                \\[6pt]
+	Rugosidade do fundo (V)   & 65               & 90                \\[6pt]
+	Viscosidade               & 1 $m^{2}.s^{-1}$ & 0,1 $m^{2}.s^{-1}$  \\[6pt] 
+	\bottomrule
+\end{tabularx}
 
-No presente momento, as condições \emph{a} e \emph{b} foram atingidas e espera-se conseguir um modelo estável nas configurações \emph{c} em breve. O que foi possível verificar é que um modelo rodando apenas com maré, é possível calibrar nível e não as componentes u e v da velocidade. O que indica que as correntes na região são mais dependentes do vento do que da maré, corroborando com os resultados descritos pela literatura.
+Nas figuras XX a XX podem ser observados os resultados da calibração do modelo em comparação com os dados medidos nos 3 ADCPs posicionados em diferentes profundidades na Enseada do Itapocorói. Para avaliar a performance do modelo, foi calculada a amplitude máxima de variação dos dados medidos e, assumiu-se como aceitável valores de erros que correspondessem a aproximadamente 10\% ou menos que o valor máximo de variação do dado medido.
+A tabela \ref{tab:erroscalibracao} apresenta os valores de amplitude e o valor de erro do modelo para cada parâmetro avaliado em cada um dos equipamentos.
 
-Também verificou-se que modelos com viscosidade se apresentaram mais estáveis que modelos sem viscosidade. Para definir o valor da viscosidade, usou-se o parâmetro VISC2, coeficiente horizontal Laplaciano de viscosidade entre 5 e 25$m^{2}.s^{-1}$. Esses valores foram retirados de trabalhos de referência utilizando o mesmo modelo. Os autores \citeonline{costaetal2012} e \citeonline{Ilicak2012} utilizaram o valor de 5$m^{2}.s^{-1}$ enquanto \citeonline{Ezer2002} utilizaram 500$m^{2}.s^{-1}$, porém esse valor foi definido após testes com valores que chegaram a 25$m^{2}.s^{-1}$.
+Primeiramente, é notável que os valores de erro de nível são consideravelmente mais baixos que aqueles encontrados nas componentes de velocidade, ficando sempre abaixo de 3\% do valor máximo da maré na região, que se encontra em aproximadamente 1,4m. Essa diferença de erros entre a calibração das componentes da velocidade e os valores nível indica que os processos que regem a hidrodinâmica local não estão associados às variações de nível, mas à outros processos costeiros como sugerido por \citeonline{Schettinietal1999}.
 
-A tabela \ref{tab:rodadas} apresenta algumas das rodadas realizadas ao longo desse período e para as grades versões 2 e 3. As rodadas das versões anteriores e testes de grade não foram incluídos pois, na maioria das vezes, não eram nem estáveis o suficiente para rodar. As colunas das tabelas representam os seguintes itens:
+É possível verificar que, em relação à corrente, os valores de erro são menores no ponto ST002. O ponto ST001 apresenta-se muito próximo da costa, o que o faz sujeito a influências da batimetria e da linha de costa. A resolução da grade pode ter sido um limitante de calibração do modelo neste ponto costeiro, justificando os maiores valores de erro encontrados em ST001 do que ST002. Já o ponto ST003 apresenta-se em uma área muito externa. A inserção de vento no modelo teve menor influência neste ponto do que nos demais pontos costeiros, indicando que o mesmo está muito menos sujeito a variações locais do que os demais pontos analisados. O fato de não se ter conseguido uma calibração em ST003 em diversas tentativas com forçantes de maré e vento local, indica que o ponto está muito externo para serem desconsideradas forçantes de larga escala, ondas de plataforma e/ou a baroclinicidade do sistema.
 
-
-\begin{itemize}
-	\item Rodada: Identificador da configuração 
-	\item Versão: Número de versão da grade e batimetria sendo utilizada na rodada
-	\item Fronteiras: Configuração das fronteiras do modelo 
-	\item Aninhamento: Se a grade local foi aninhada com a grade regional. Se estiver como \emph{não}, indica que a rodada era só com grade regional
-	\item Ts Reg: Espaço de tempo (timestep) da grade regional
-	\item Ts Local: Espaço de tempo (timestep) da grade local
-	\item Maré: Se o modelo teve maré como entrada
-	\item Vento: Se o modelo teve vento como entrada
-	\item Viscosidade: Se o modelo teve viscosidade configurada e se sim, qual valor
-	\item Conf. Visc.: Parâmetros de compilação da viscosidade
-	\item Resultado: estado atual do modelo. \emph{ok} indica que o modelo rodou por 50 dias de simulação sem nenhuma instabilidade, \emph{quebrou} indica que o modelo sofreu alguma instabilidade antes de rodar todo o tempo de simulação estipulado, \emph{rodando} indica que o modelo ainda estava simulando enquanto este documento estava sendo escrito.
-\end{itemize}
-
-A rodada 17 conseguiu agregar as forçantes de vento e maré, porém apenas na grade regional. A mesma configuração foi implementada na rodada 18 junto com o aninhamento, porém esta quebrou. Busca-se agora acoplar a rodada 17 com uma configuração que permita o aninhamento da grade local de forma estável. As figuras \ref{fig:27_3_nivel}, \ref{fig:27_3_u} e \ref{fig:27_3_v} apresentam os resultados da rodada 17 para a grade regional no ponto ST003 para nível, u e v, respectivamente.
-
-\begin{landscape}
-
-	\begin{tabularx}{\linewidth}{ccccccccccc}
-		\caption{Rodadas de calibração testas até o momento com segunda grade testada}\label{tab:rodadas} \\
-		\toprule
-		\textbf{Rodada} & \textbf{Versão}  & \textbf{Fronteiras} & \textbf{Aninhamento} &
-		\textbf{Ts Reg} & \textbf{Ts Local} & \textbf{Maré} & \textbf{Vento} & \textbf{Viscosidade} &
-		\textbf{Conf. Visc.} & \textbf{Resultado} \\[6pt]
-		\midrule
-		\endhead
-		Run1 & v2 & Che+Fla+Rad & sim & 10 & 10 & sim & não      & não            & -           & ok \\[6pt]
-		Run1 & v2 & Che+Fla+Rad & sim & 10 & 2  & sim & não      & não            & -           & ok \\[6pt]
-		Run2 & v2 & Che+Fla+Rad & sim & 10 & 2  & sim & não      & VISC2=5        & MIX\_S\_UV  & ok \\[6pt]
-		Run3 & v2 & Che+Fla+Rad & sim & 10 & 2  & sim & não      & VISC2=5        & MIX\_S\_GEO & ok \\[6pt]
-		Run4 & v2 & Che+Fla+Rad & sim & 10 & 2  & sim & não      & VISC2=5        & VISC2       &  ok \\[6pt]
-		Run5 & v2 & Che+Fla+Rad & sim & 10 & 2  & sim & sim      & não            & -           & quebrou \\[6pt]
-		Run6 & v2 & Che+Fla+Rad & sim & 10 & 2  & sim & sim      & VISC2=5        & VISC2       & quebrou \\[6pt]
-		Run7 & v2 & Che+Fla+Rad & sim & 10 & 2  & sim & sim      & VISC2=5        & MIX\_S\_UV  & quebrou \\[6pt]
-		Run8 & v2 & Che+Fla+Rad & sim & 10 & 2  & sim & sim      & VISC2=5        & MIX\_S\_GEO & quebrou \\[6pt]
-		Run9 & v2 & Che+Fla+Rad & sim & 10 & 2  & sim & sim      & VISC2=10       & MIX\_S\_UV & quebrou \\[6pt]
-		Run10 & v2 & Che+Fla+Rad & sim & 10 & 2  & sim & sim      & VISC2=10       & MIX\_S\_GE & quebrou \\[6pt]
-		Run11 & v2 & Che+Fla+Rad & sim & 10 & 2  & sim & sim      & VISC2=25       & MIX\_S\_GEO & quebrou \\[6pt]
-		Run12 & v2 & Che+Fla+Rad & sim & 10 & 2  & sim & adaptado & VISC2=10  & MIX\_S\_UV  & quebrou \\[6pt]
-		Run13 & v3 & Che+Fla+Rad & sim & 10 & 2  & sim & adaptado & VISC2=10  & MIX\_S\_UV  & quebrou \\[6pt]
-		Run14 & v3 & Che+Fla+Rad & não & 10 & 2  & sim & adaptado & VISC2=10  & MIX\_S\_UV  & quebrou \\[6pt]
-		Run15 & v3 & Che+Fla+Rad & sim & 10 & 2  & sim & não      & VISC2=10  & MIX\_S\_UV  & ok \\[6pt]
-		Run16 & v3 & Che+Fla+Rad & não & 10 & 2  & não & adaptado & VISC2=10  & MIX\_S\_UV  & quebrou \\[6pt]
-		Run17 & v3 & Cha+Fla     & não & 10 & 2  & não & adaptado & VISC2=10  & MIX\_S\_UV  & ok \\[6pt]
-		Run18 & v3 & Cha+Fla     & sim & 10 & 2  & não & adaptado & VISC2=10  & MIX\_S\_UV  & quebrou \\[6pt]
-		Run19 & v3 & Cha+Fla\footnote{Esta rodada possui configurações de compilação do modelo diferentes daquelas utilizadas na rodada 18} & sim & 10 & 2  & não & adaptado & VISC2=10  & MIX\_S\_UV  & rodando \\[6pt]
-		Run20 & v3 & Cha+Fla\footnote{Esta rodada possui configurações de compilação do modelo diferentes daquelas utilizadas. Mais detalhes serão inseridos na versão final} & sim & 10 & 2  & não & adaptado & VISC2=10  & MIX\_S\_UV  & rodando \\[6pt]
-		
-		\bottomrule
-	\end{tabularx}
-\end{landscape}
-
-\begin{landscape}
-	\begin{figure}[!htb]
-		\includegraphics[width=1.6\textwidth]{figuras/Calibracao/run27/Calibracao_run27_run24_fla+chapman_ST003_Nivel.png}
-		\centering
-		\caption{Comparação de dados medidos de nível na grade regional e ponto ST003 na Rodada 17 do modelo.}\label{fig:27_3_nivel}
-	\end{figure}
-\end{landscape}
-
-\begin{landscape}
-	\begin{figure}[!htb]
-		\includegraphics[width=1.6\textwidth]{figuras/Calibracao/run27/Calibracao_run27_run24_fla+chapman_ST003_U.png}
-		\centering
-		\caption{Comparação de dados medidos da componente u da velocidade na grade regional e ponto ST003 na Rodada 17 do modelo.}\label{fig:27_3_u}
-	\end{figure}
-\end{landscape}
-
-
-\begin{landscape}
-	\begin{figure}[!htb]
-		\includegraphics[width=1.6\textwidth]{figuras/Calibracao/run27/Calibracao_run27_run24_fla+chapman_ST003_V.png}
-		\centering
-		\caption{Comparação de dados medidos da componente v da velocidade na grade regional e ponto ST003 na Rodada 17 do modelo.}\label{fig:27_3_v}
-	\end{figure}
-\end{landscape}
-
-\subsection{Dificuldades encontradas}
-
-Uma série de dificuldades foram encontradas nas etapas iniciais do modelo que tornaram sua execução inicial bastante complexa e demorada.
-
-\begin{itemize}
-	\item O modelo não possui interface gráfica e a compreensão dos arquivos necessários e formatos se torna mais complexa;
-	\item O modelo numérico é escrito em FORTRAN, que é uma linguagem compilada. Isso fez com que fosse necessário entender configurações de pré-processamento, compilador necessário, etc;
-	\item É necessário instalar diversos pacotes netCDF que, em um primeiro momento, se mostraram trabalhosos;
-	\item O exemplo básico padrão disponível (\emph{upwelling}) é fácil e bem descrito na documentação mas ele funciona com grades e forçantes padrão (sem arquivos de entrada) e não há explicação de como é possível construir um novo modelo com arquivos de entrada, quais variáveis devem ser alteradas e quais as variáveis de pré-compilação para cada tipo de opção ativada;
-	\item A documentação é estilo \emph{wiki} e a maior parte da informação está desatualizada, muito material não está disponibilizado e o manual disponível não está completo além de também estar desatualizado;
-	\item Muita informação está contida no fórum de discussões, o que demanda tempo e certo conhecimento prévio do assunto para compreender o que está escrito em cada discussão;
-	\item Uma primeira tentativa foi colocar uma elevação de nível na fronteira. Após uma série de testes, foi verificado que o modelo não inclui nível como variável nas equações. Dessa forma, verificou-se que além da variável zeta, também é necessário inserir nas fronteiras as componentes de velocidade u e v das correntes de maré;
-	\item Diferente de outros modelos, na construção da grade numérica devem ser inseridos os valores de posição para cada um dos elementos calculados (rho, psi, u e v), o que gera confusão na construção da grade;
-	\item O modelo mostrou-se bastante sensível quando atinge águas rasas. Modelos cujas camada de água tinha profundidas de 1 metro ou menos acabaram se mostrando instáveis. Foi estabelecido um mínimo de 3 metros para propagação da onda de maré de forma estável;
-	\item Outro fator que o modelo se mostrou sensível foi a máscara que indica onde o modelo deve interpretar como terra (mascára=0) e onde é agua (máscara=1), fazendo que houvesse acúmulo de água em determinadas quinas. Uma edição cuidadosa da máscara deve ser feita antes do modelo iniciar;
-	\item As fronteiras escolhidas tem grande influência no resultado final. Uma combinação inicial utilizada num modelo menos detalhado (não apresentado aqui) causou diversas instabilidades no modelo descrito anteriormente. Dessa forma, gastou-se muito tempo tentando entender quais seriam os problemas possíveis, pois assumiu-se que as fronteiras estavam corretas.
+\begin{tabularx}{\linewidth}{ccccccc}
+	\caption{Amplitude máxima do valor medido e percentual de erro do modelo para cada equipamento e parâmetro medido}\label{tab:erroscalibracao}\\
+	\toprule
 	
-\end{itemize}
+	Equip. &  \multicolumn{2}{c}{Componente U} & \multicolumn{2}{c}{Componente V} & \multicolumn{2}{c}{Nível} \\[6pt]
+	\midrule
+	\endhead
+	{}         & Ampl. Máx        & Erro  & Ampl. Máx   & Erro  & Ampl. Máx   & Erro  \\[6pt]
+		ST001  & 0,323 $m.s^{-1}$ &  11,63\%  & 0.303 $m.s^{-1}$ &  13,32\%   &   1,411 m   & 2,66\% \\[6pt]
+		ST002  & 0,286 $m.s^{-1}$ &   9,79\%   & 0.192 $m.s^{-1}$ &  11,22\%   &   1,405 m   & 1,99\% \\[6pt]
+		ST003  & 0,.346 $m.s^{-1}$&  10,93\% & 0.678 $m.s^{-1}$ &  14,35\%   &   1,401 m   & 2,70\% \\[6pt]
+	\bottomrule
+\end{tabularx}
 
-\chapter{DISCUSSÃO}
+\begin{landscape}
+	
+\begin{figure}[!htb]
+	\includegraphics[width=1.6\textwidth]{figuras/Calibracao/RMSE_U_st001_Refined23.png}
+	\centering
+	\caption{RMSE para a componente U da velocidade em ST001}\label{fig:RMSE_U_ST001}
+\end{figure}
 
-O vento na região apresenta velocidades máximas de cerca de 10$cm.s^{-1}$ em todas as estações e um comportamento homogêneo em termos de velocidade em todas as estações. Esses resultados concordam com os resultados encontrados por \citeonline{tccgustavo}, que também encontrou um padrão muito semelhante de velocidades do vento ao longo das estações do ano. Entretanto, o autor descreveu ventos predominantes de L tanto verão quanto na primavera, enquanto os resultados do presente estudo indicam predominância de ventos de O e N, nestas estações.  A predominância de ventos S no inverno foi encontrada em ambos os trabalhos.
+\begin{figure}[!htb]
+	\includegraphics[width=1.6\textwidth]{figuras/Calibracao/RMSE_U_st002_Refined23.png}
+	\centering
+	\caption{RMSE para a componente U da velocidade em ST002}\label{fig:RMSE_U_ST002}
+\end{figure}
+
+\begin{figure}[!htb]
+	\includegraphics[width=1.6\textwidth]{figuras/Calibracao/RMSE_U_st003_Refined23.png}
+	\centering
+	\caption{RMSE para a componente U da velocidade em ST003}\label{fig:RMSE_U_ST003}
+\end{figure}
+
+\begin{figure}[!htb]
+	\includegraphics[width=1.6\textwidth]{figuras/Calibracao/RMSE_V_st001_Refined23.png}
+	\centering
+	\caption{RMSE para a componente V da velocidade em ST001}\label{fig:RMSE_V_ST001}
+\end{figure}
+
+\begin{figure}[!htb]
+	\includegraphics[width=1.6\textwidth]{figuras/Calibracao/RMSE_V_st002_Refined23.png}
+	\centering
+	\caption{RMSE para a componente V da velocidade em ST002}\label{fig:RMSE_V_ST002}
+\end{figure}
+
+\begin{figure}[!htb]
+	\includegraphics[width=1.6\textwidth]{figuras/Calibracao/RMSE_V_st003_Refined23.png}
+	\centering
+	\caption{RMSE para a componente V da velocidade em ST003}\label{fig:RMSE_V_ST003}
+\end{figure}
+
+\end{landscape}
+
+\newpage
+\subsection{Rodadas de análise}
+
+Para análise das correntes residuais foram selecionados 14 casos de estudo descritos na tabela \ref{tab:analise}. Foram selecionados casos de vento de acordo com as direções mais recorrentes (NO, N, NE, L, S, SE) e a velocidade média e máxima de vento, conforme descrito anteriormente na \ref{tab:ventosazonal}.
+
+\begin{tabularx}{\linewidth}{cc}
+	\caption{Configuração das rodadas de análise}\label{tab:analise}\\
+	\toprule
+	\textbf{Rodada} & \textbf{Padrão de análise }  \\[6pt]
+	\midrule
+	\endhead
+	1                & Apenas maré (sem vento)                  \\[6pt]
+	2                & Maré e vento real (rodada de calibração) \\[6pt]
+	3                & Maré e vento Norte de 4 m/s              \\[6pt]
+	4                & Maré e vento Norte de 10 m/s             \\[6pt]
+	5                & Maré e vento Nordeste de 4 m/s           \\[6pt]
+	6                & Maré e vento Nordeste de 10 m/s          \\[6pt]
+	7                & Maré e vento Noroeste de 4 m/s           \\[6pt]
+	8                & Maré e vento Noroeste de 10 m/s          \\[6pt]
+	9                & Maré e vento Leste de 4 m/s              \\[6pt]
+	10               & Maré e vento Leste de 10 m/s             \\[6pt]
+	11               & Maré e vento Sul de 4 m/s                \\[6pt]
+	12               & Maré e vento Sul de 10 m/s               \\[6pt]
+	13               & Maré e vento Sudeste de 4 m/s            \\[6pt]
+	14               & Maré e vento Sudeste de 10 m/s           \\[6pt]
+
+	\bottomrule
+\end{tabularx}
+
+\newpage
+\subsection{Mapas de Residuais}
+
+Para avaliar os processos de longa escala foram feitos mapas do residual da velocidade em períodos maiores que 24 horas (2 ciclos completos de maré).
+
+\chapter{DISCUSSÃO E CONCLUSÃO}
+
+O vento na região apresenta velocidades máximas de cerca de 10$m.s^{-1}$ em todas as estações e um comportamento homogêneo em termos de velocidade em todas as estações, com uma média de velocidade de 4$m.s^{-1}$. Esses resultados concordam com os resultados encontrados por \citeonline{tccgustavo}, que também encontrou um padrão muito semelhante de velocidades do vento ao longo das estações do ano. Entretanto, o autor descreveu ventos predominantes de L tanto verão quanto na primavera, enquanto os resultados do presente estudo indicam predominância de ventos de O e N, nestas estações.  A predominância de ventos S no inverno foi encontrada em ambos os trabalhos. Também não foi possível determinar a expressividade de ventos da direção N-NE, associados à atuação do Anticiclone do Atlântico Sul, conforme descrito por \citeonline{truccolo98}. Entretanto, as velocidades amenas características do Anticiclone, entre 2 e 4$m.s^{-1}$ se apresentam na maior parte dos dados. Apesar dos dados de vento descritos em \citeonline{Leite2009} terem sido coletados no Inverno (11 de Julho a 23 de Agosto), a rosa de ventos encontrada pelo autor se assemelha muito mais à rosa de ventos deste trabalho para a estação do Outono, com ventos predominantementes de O-NO. Todos esses resultados indicam que existe uma forte sazonalidade de direção de ventos na região, com alta variabilidade entre estações e entre anos. 
 
 Verificou-se que a maré meteorológica analisada nos ADCPs não foi tão representativa quanto descrito por \citeonline{Parise}. Os autores verificaram que as marés meteorológicas alcançam em média 1m, podendo alcançar 1,9m em casos na Praia do Cassino, extremo sul do Brasil. Os dados de nível de Penha, porém, indicaram que marés meteorológicas de até 1,3m podem ocorrer na região, concordando com os dados dos autores do Cassino.
 
-Os resultados de frequência de nível mostraram uma forte influência da componente semi-diurna da maré, com presença de componentes diurnas, terci-diurnas e quadri-diurnas em níveis semelhantes de energia. Esse resultado concorda com o número de forma encontrado para cada ponto medido, que ficou abaixo de 0,30 em toda Enseada e 0,31 em Penha, indicando uma maré mista com predominância semidiurna. Também verificou-se que 27,5 \% da energia do sinal se encontrava em frequências superiores a 50h. Esse resultado vai ao encontro dos dados de \citeonline{truccoloetal2006}, que verificou que cerca de 24\% da variação de nível em São Francisco do Sul poderia ser explicada por frequências submareais em São Francisco do Sul. Ou seja, circulações residuais e correntes de plataforma tem um papel fundamental na dinâmica de região e, portanto, seu papel não pode ser subestimado ao se analisar a dinâmica local.
+Os resultados de frequência de nível mostraram uma forte influência da componente semi-diurna da maré, com presença de componentes diurnas, terci-diurnas e quadri-diurnas em níveis semelhantes de energia. Esse resultado concorda com o número de forma encontrado para cada ponto medido, que ficou abaixo de 0,30 em toda Enseada e 0,31 em Penha, indicando uma maré mista com predominância semidiurna. Esses valores foram menores que o número de forma encontrado por \citeonline{Leite2009}, de 0,38, ou seja, houve uma menor influência das constantes diurnas dentro do período analisado no presente trabalho.
 
-Todos os valores de temperatura foram bem menores que aqueles descritos em \citeonline{Schettinietal1999}, onde os valores permaneceram entre 25 e 27$^{\circ}$C. A grande diferença se dá pelo período medido. Enquanto os dados de \citeonline{Schettinietal1999} foram medidos em março (fim do verão), os dados aqui apresentados foram coletados entre agosto e setembro (fim do inverno) e, portanto, essa diferença é natural para a região, que se encontra em uma região temperada e está sujeita à massas de água com valores menores de temperatura.
+Também verificou-se que 27,5 \% da energia do sinal se encontrava em frequências superiores a 50h. Esse resultado vai ao encontro dos dados de \citeonline{truccoloetal2006}, que verificou que cerca de 24\% da variação de nível em São Francisco do Sul poderia ser explicada por frequências submareais em São Francisco do Sul. Ou seja, circulações residuais e correntes de plataforma tem um papel fundamental na dinâmica de região e, portanto, seu papel não pode ser subestimado ao se analisar a dinâmica local.
 
-Os resultados de corrente indicaram correntes amenas, abaixo de 0,20$cm.s^{-1}$ dentro da enseada e abaixo de 40$cm.s^{-1}$ em regiões abertas e expostas à ondulação direta. Esses resultados corroboram com as observações descritas em \citeonline{Schettinietal1999}. Entretanto, os autores afirmaram que as correntes obedecem mais diretamente ao regime dos ventos do que as oscilações da maré. Da mesma forma como foi feito com a temperatura, foram desenvolvidos alguns gráficos tentando correlacionar a velocidade da corrente com a direção ou o vento. Novamente nenhum padrão emergiu nas análises realizadas e não foi possível relacionar a velocidade da corrente com o vento.
+Todos os valores de temperatura foram bem menores que aqueles descritos em \citeonline{Schettinietal1999}, onde os valores permaneceram entre 25 e 27$^{\circ}$C. Essa diferença entre os dados descritos pelos autores e os encontrados nos dados deste trabalho se dá pelo período em que tais dados foram medido. Enquanto os dados de \citeonline{Schettinietal1999} foram medidos em março (fim do verão), os dados aqui apresentados foram coletados entre agosto e setembro (fim do inverno) e, portanto, essa diferença é natural para a região, que se encontra em uma região temperada e está sujeita à massas de água com valores menores de temperatura.
+
+Os resultados de corrente indicaram correntes amenas, abaixo de 20$cm.s^{-1}$ dentro da enseada e abaixo de 40$cm.s^{-1}$ em regiões abertas e expostas à ondulação direta. Esses resultados corroboram com as observações descritas em \citeonline{Schettinietal1999}. Entretanto, os autores afirmaram que as correntes obedecem mais diretamente ao regime dos ventos do que as oscilações da maré. Da mesma forma como foi feito com a temperatura, foram desenvolvidos alguns gráficos tentando correlacionar a velocidade da corrente com a direção ou o vento. Novamente nenhum padrão emergiu nas análises realizadas e não foi possível relacionar a velocidade da corrente com o vento.
 
 %\chapter{CONCLUSÃO}
 %
@@ -1726,621 +1578,621 @@ Os resultados de corrente indicaram correntes amenas, abaixo de 0,20$cm.s^{-1}$ 
 \bibliographystyle{ufscThesis/ufsc-alf}
 \bibliography{bibliografia}
 
-%--------------------------------------------------------
-% Elementos pós-textuais
-\apendice
-
-\chapter{Gráficos de Corrente por Camada}
-
-\begin{landscape}
-	
-	% FIGURAS DE VELOCIDADE (NO TEMPO E HISTOGRAMA) POR CAMA
-	\newpage
-	\begin{figure}[!htb]
-		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST001_Camada1.png}
-		\centering
-		\caption{Velocidade ao longo do tempo em ST001 na Camada 1 (em $cm.s^{-1}$)}\label{fig:VelST001Cam1}
-	\end{figure}
-	
-	\newpage
-	\begin{figure}[!htb]
-		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST001_Camada1_HistVel.png}
-		\centering
-		\caption{Histograma da velocidade da corrente no ponto ST001 na Camada 1 (em $cm.s^{-1}$)}\label{fig:HistVelST001Cam1}
-	\end{figure}
-		
-	\newpage
-	\begin{figure}[!htb]
-		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST001_Camada1_HistDir.png}
-		\centering
-		\caption{Histograma da direção da corrente no ponto ST001 na Camada 1 }\label{fig:HistDirST001Cam1}
-	\end{figure}
-
-	%---
-	\newpage
-	\begin{figure}[!htb]
-		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST001_Camada2.png}
-		\centering
-		\caption{Velocidade ao longo do tempo em ST001 na Camada 2 (em $cm.s^{-1}$)}\label{fig:VelST001Cam2}
-	\end{figure}
-		
-	\newpage
-	\begin{figure}[!htb]
-		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST001_Camada2_HistVel.png}
-		\centering
-		\caption{Histograma da velocidade da corrente no ponto ST001 na Camada 2 (em $cm.s^{-1}$)}\label{fig:HistVelST001Cam2}
-	\end{figure}
-		
-	\newpage
-	\begin{figure}[!htb]
-		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST001_Camada2_HistDir.png}
-		\centering
-		\caption{Histograma da direção da corrente no ponto ST001 na Camada 2 }\label{fig:HistDirST001Cam2}
-	\end{figure}
-		
-	%---
-	\newpage
-	\begin{figure}[!htb]
-		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST001_Camada3.png}
-		\centering
-		\caption{Velocidade ao longo do tempo em ST001 na Camada 3 (em $cm.s^{-1}$)}\label{fig:VelST001Cam3}
-	\end{figure}
-	
-	\newpage
-	\begin{figure}[!htb]
-		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST001_Camada3_HistVel.png}
-		\centering
-		\caption{Histograma da velocidade da corrente no ponto ST001 na Camada 3 (em $cm.s^{-1}$)}\label{fig:HistVelST001Cam3}
-	\end{figure}
-	
-	\newpage
-	\begin{figure}[!htb]
-		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST001_Camada3_HistDir.png}
-		\centering
-		\caption{Histograma da direção da corrente no ponto ST001 na Camada 3 }\label{fig:HistDirST001Cam3}
-	\end{figure}
-	
-	%---
-	\newpage
-	\begin{figure}[!htb]
-		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST002_Camada1.png}
-		\centering
-		\caption{Velocidade ao longo do tempo em ST002 na Camada 1 (em $cm.s^{-1}$)}\label{fig:VelST002Cam1}
-	\end{figure}
-	
-	\newpage
-	\begin{figure}[!htb]
-		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST002_Camada1_HistVel.png}
-		\centering
-		\caption{Histograma da velocidade da corrente no ponto ST002 na Camada 1 (em $cm.s^{-1}$)}\label{fig:HistVelST002Cam1}
-	\end{figure}
-	
-	\newpage
-	\begin{figure}[!htb]
-		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST002_Camada1_HistDir.png}
-		\centering
-		\caption{Histograma da direção da corrente no ponto ST002 na Camada 1}\label{fig:HistDirST002Cam1}
-	\end{figure}
-	
-	%---
-	\newpage
-	\begin{figure}[!htb]
-		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST002_Camada2.png}
-		\centering
-		\caption{Velocidade ao longo do tempo em ST002 na Camada 2 (em $cm.s^{-1}$)}\label{fig:VelST002Cam2}
-	\end{figure}
-	
-	\newpage
-	\begin{figure}[!htb]
-		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST002_Camada2_HistVel.png}
-		\centering
-		\caption{Histograma da velocidade da corrente no ponto ST002 na Camada 2 (em $cm.s^{-1}$)}\label{fig:HistVelST002Cam2}
-	\end{figure}
-	
-	\newpage
-	\begin{figure}[!htb]
-		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST002_Camada2_HistDir.png}
-		\centering
-		\caption{Histograma da direção da corrente no ponto ST002 na Camada 2 }\label{fig:HistDirST002Cam2}
-	\end{figure}
-			
-	%---
-	\newpage
-	\begin{figure}[!htb]
-		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST002_Camada3.png}
-		\centering
-		\caption{Velocidade ao longo do tempo em ST002 na Camada 3 (em $cm.s^{-1}$)}\label{fig:VelST002Cam3}
-	\end{figure}
-	
-	\newpage
-	\begin{figure}[!htb]
-		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST002_Camada3_HistVel.png}
-		\centering
-		\caption{Histograma da velocidade da corrente no ponto ST002 na Camada 3 (em $cm.s^{-1}$)}\label{fig:HistVelST002Cam3}
-	\end{figure}
-	
-	\newpage
-	\begin{figure}[!htb]
-		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST002_Camada3_HistDir.png}
-		\centering
-		\caption{Histograma da direção da corrente no ponto ST002 na Camada 3}\label{fig:HistDirST002Cam3}
-	\end{figure}
-	
-	%---
-	\newpage
-	\begin{figure}[!htb]
-		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST002_Camada4.png}
-		\centering
-		\caption{Velocidade ao longo do tempo em ST002 na Camada 4 (em $cm.s^{-1}$)}\label{fig:VelST002Cam4}
-	\end{figure}
-	
-	\newpage
-	\begin{figure}[!htb]
-		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST002_Camada4_HistVel.png}
-		\centering
-		\caption{Histograma da velocidade da corrente no ponto ST002 na Camada 4 (em $cm.s^{-1}$)}\label{fig:HistVelST002Cam4}
-	\end{figure}
-	
-	\newpage
-	\begin{figure}[!htb]
-		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST002_Camada4_HistDir.png}
-		\centering
-		\caption{Histograma da direção da corrente no ponto ST002 na Camada 4}\label{fig:HistDirST002Cam4}
-	\end{figure}
-	
-	%---
-	\newpage
-	\begin{figure}[!htb]
-		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST002_Camada5.png}
-		\centering
-		\caption{Velocidade ao longo do tempo em ST002 na Camada 5 (em $cm.s^{-1}$)}\label{fig:VelST002Cam5}
-	\end{figure}
-	
-	\newpage
-	\begin{figure}[!htb]
-		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST002_Camada5_HistVel.png}
-		\centering
-		\caption{Histograma da velocidade da corrente no ponto ST002 na Camada 5 (em $cm.s^{-1}$)}\label{fig:HistVelST002Cam5}
-	\end{figure}
-	
-	\newpage
-	\begin{figure}[!htb]
-		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST002_Camada5_HistDir.png}
-		\centering
-		\caption{Histograma da direção da corrente no ponto ST002 na Camada 5}\label{fig:HistDirST002Cam5}
-	\end{figure}
-	
-	%---
-	\newpage
-	\begin{figure}[!htb]
-		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST002_Camada6.png}
-		\centering
-		\caption{Velocidade ao longo do tempo em ST002 na Camada 6 (em $cm.s^{-1}$)}\label{fig:VelST002Cam6}
-	\end{figure}
-	
-	\newpage
-	\begin{figure}[!htb]
-		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST002_Camada6_HistVel.png}
-		\centering
-		\caption{Histograma da velocidade da corrente no ponto ST002 na Camada 6 (em $cm.s^{-1}$)}\label{fig:HistVelST002Cam6}
-	\end{figure}
-		
-	\newpage
-	\begin{figure}[!htb]
-		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST002_Camada6_HistDir.png}
-		\centering
-		\caption{Histograma da direção da corrente no ponto ST002 na Camada 6}\label{fig:HistDirST002Cam6}
-	\end{figure}
-	
-	%---
-	\newpage
-	\begin{figure}[!htb]
-		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST002_Camada7.png}
-		\centering
-		\caption{Velocidade ao longo do tempo em ST002 na Camada 7 (em $cm.s^{-1}$)}\label{fig:VelST002Cam7}
-	\end{figure}
-	
-	\newpage
-	\begin{figure}[!htb]
-		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST002_Camada7_HistVel.png}
-		\centering
-		\caption{Histograma da velocidade da corrente no ponto ST002 na Camada 7 (em $cm.s^{-1}$)}\label{fig:HistVelST002Cam7}
-	\end{figure}
-	
-	\newpage
-	\begin{figure}[!htb]
-		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST002_Camada7_HistDir.png}
-		\centering
-		\caption{Histograma da direção da corrente no ponto ST002 na Camada 7}\label{fig:HistDirST002Cam7}
-	\end{figure}
-
-	%---
-	\newpage
-	\begin{figure}[!htb]
-		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST002_Camada8.png}
-		\centering
-		\caption{Velocidade ao longo do tempo em ST002 na Camada 8 (em $cm.s^{-1}$)}\label{fig:VelST002Cam8}
-	\end{figure}
-	
-	\newpage
-	\begin{figure}[!htb]
-		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST002_Camada8_HistVel.png}
-		\centering
-		\caption{Histograma da velocidade da corrente no ponto ST002 na Camada 8 (em $cm.s^{-1}$)}\label{fig:HistVelST002Cam8}
-	\end{figure}
-	
-	\newpage
-	\begin{figure}[!htb]
-		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST002_Camada8_HistDir.png}
-		\centering
-		\caption{Histograma da direção da corrente no ponto ST002 na Camada 8}\label{fig:HistDirST002Cam8}
-	\end{figure}
-	
-	%---
-	\newpage
-	\begin{figure}[!htb]
-		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST002_Camada9.png}
-		\centering
-		\caption{Velocidade ao longo do tempo em ST002 na Camada 9 (em $cm.s^{-1}$)}\label{fig:VelST002Cam9}
-	\end{figure}
-	
-	\newpage
-	\begin{figure}[!htb]
-		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST002_Camada9_HistVel.png}
-		\centering
-		\caption{Histograma da velocidade da corrente no ponto ST002 na Camada 9 (em $cm.s^{-1}$)}\label{fig:HistVelST002Cam9}
-	\end{figure}
-	
-	\newpage
-	\begin{figure}[!htb]
-		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST002_Camada9_HistDir.png}
-		\centering
-		\caption{Histograma da direção da corrente no ponto ST002 na Camada 9}\label{fig:HistDirST002Cam9}
-	\end{figure}
-
-	%---
-	\newpage
-	\begin{figure}[!htb]
-		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST002_Camada10.png}
-		\centering
-		\caption{Velocidade ao longo do tempo em ST002 na Camada 10 (em $cm.s^{-1}$)}\label{fig:VelST002Cam10}
-	\end{figure}
-	
-	\newpage
-	\begin{figure}[!htb]
-		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST002_Camada10_HistVel.png}
-		\centering
-		\caption{Histograma da velocidade da corrente no ponto ST002 na Camada 10 (em $cm.s^{-1}$)}\label{fig:HistVelST002Cam10}
-	\end{figure}
-	
-	\newpage
-	\begin{figure}[!htb]
-		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST002_Camada10_HistDir.png}
-		\centering
-		\caption{Histograma da direção da corrente no ponto ST002 na Camada 10}\label{fig:HistDirST002Cam10}
-	\end{figure}
-	
-	%---
-	\newpage
-	\begin{figure}[!htb]
-		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada1.png}
-		\centering
-		\caption{Velocidade ao longo do tempo em ST003 na Camada 1 (em $cm.s^{-1}$)}\label{fig:VelST003Cam1}
-	\end{figure}
-	
-	\newpage
-	\begin{figure}[!htb]
-		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada1_HistVel.png}
-		\centering
-		\caption{Histograma da velocidade da corrente no ponto ST003 na Camada 1 (em $cm.s^{-1}$)}\label{fig:HistVelST003Cam1}
-	\end{figure}
-		
-	\newpage
-	\begin{figure}[!htb]
-		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada1_HistDir.png}
-		\centering
-		\caption{Histograma da direção da corrente no ponto ST003 na Camada 1}\label{fig:HistDirST003Cam1}
-	\end{figure}
-	
-	%---
-	\newpage
-	\begin{figure}[!htb]
-		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada2.png}
-		\centering
-		\caption{Velocidade ao longo do tempo em ST003 na Camada 2 (em $cm.s^{-1}$)}\label{fig:VelST003Cam2}
-	\end{figure}
-		
-	\newpage
-	\begin{figure}[!htb]
-		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada2_HistVel.png}
-		\centering
-		\caption{Histograma da velocidade da corrente no ponto ST003 na Camada 2 (em centí)}\label{fig:HistVelST003Cam2}
-	\end{figure}
-	
-	\newpage
-	\begin{figure}[!htb]
-		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada2_HistDir.png}
-		\centering
-		\caption{Histograma da direção da corrente no ponto ST003 na Camada 2}\label{fig:HistDirST003Cam2}
-	\end{figure}
-	
-	%---
-	\newpage
-	\begin{figure}[!htb]
-		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada3.png}
-		\centering
-		\caption{Velocidade ao longo do tempo em ST003 na Camada 3 (em $cm.s^{-1}$)}\label{fig:VelST003Cam3}
-	\end{figure}
-	
-	\newpage
-	\begin{figure}[!htb]
-		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada3_HistVel.png}
-		\centering
-		\caption{Histograma da velocidade da corrente no ponto ST003 na Camada 3 (em $cm.s^{-1}$)}\label{fig:HistVelST003Cam3}
-	\end{figure}
-	
-	\newpage
-	\begin{figure}[!htb]
-		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada3_HistDir.png}
-		\centering
-		\caption{Histograma da direção da corrente no ponto ST003 na Camada 3}\label{fig:HistDirST003Cam3}
-	\end{figure}
-		
-	%---
-	\newpage
-	\begin{figure}[!htb]
-		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada4.png}
-		\centering
-		\caption{Velocidade ao longo do tempo em ST003 na Camada 4 (em $cm.s^{-1}$)}\label{fig:VelST003Cam4}
-	\end{figure}
-	
-	\newpage
-	\begin{figure}[!htb]
-		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada4_HistVel.png}
-		\centering
-		\caption{Histograma da velocidade da corrente no ponto ST003 na Camada 4 (em $cm.s^{-1}$)}\label{fig:HistVelST003Cam4}
-	\end{figure}
-		
-	\newpage
-	\begin{figure}[!htb]
-		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada4_HistDir.png}
-		\centering
-		\caption{Histograma da direção da corrente no ponto ST003 na Camada 4}\label{fig:HistDirST003Cam4}
-	\end{figure}
-	
-	%---
-	\newpage
-	\begin{figure}[!htb]
-		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada5.png}
-		\centering
-		\caption{Velocidade ao longo do tempo em ST003 na Camada 5 (em $cm.s^{-1}$)}\label{fig:VelST003Cam5}
-	\end{figure}
-		
-	\newpage
-	\begin{figure}[!htb]
-		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada5_HistVel.png}
-		\centering
-		\caption{Histograma da velocidade da corrente no ponto ST003 na Camada 5 (em $cm.s^{-1}$)}\label{fig:HistVelST003Cam5}
-	\end{figure}
-	
-	\newpage
-	\begin{figure}[!htb]
-		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada5_HistDir.png}
-		\centering
-		\caption{Histograma da direção da corrente no ponto ST003 na Camada 5}\label{fig:HistDirST003Cam5}
-	\end{figure}
-	
-	%---
-	\newpage
-	\begin{figure}[!htb]
-		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada6.png}
-		\centering
-		\caption{Velocidade ao longo do tempo em ST003 na Camada 6 (em $cm.s^{-1}$)}\label{fig:VelST003Cam6}
-	\end{figure}
-	
-	\newpage
-	\begin{figure}[!htb]
-		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada6_HistVel.png}
-		\centering
-		\caption{Histograma da velocidade da corrente no ponto ST003 na Camada 6 (em $cm.s^{-1}$)}\label{fig:HistVelST003Cam6}
-	\end{figure}
-		
-	\newpage
-	\begin{figure}[!htb]
-		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada6_HistDir.png}
-		\centering
-		\caption{Histograma da direção da corrente no ponto ST003 na Camada 6}\label{fig:HistDirST003Cam6}
-	\end{figure}
-	
-	%---
-	\newpage
-	\begin{figure}[!htb]
-		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada7.png}
-		\centering
-		\caption{Velocidade ao longo do tempo em ST003 na Camada 7 (em $cm.s^{-1}$)}\label{fig:VelST003Cam7}
-	\end{figure}
-		
-	\newpage
-	\begin{figure}[!htb]
-		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada7_HistVel.png}
-		\centering
-		\caption{Histograma da velocidade da corrente no ponto ST003 na Camada 7 (em $cm.s^{-1}$)}\label{fig:HistVelST003Cam7}
-	\end{figure}
-	
-	\newpage
-	\begin{figure}[!htb]
-		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada7_HistDir.png}
-		\centering
-		\caption{Histograma da direção da corrente no ponto ST003 na Camada 7}\label{fig:HistDirST003Cam7}
-	\end{figure}
-		
-	%---
-	\newpage
-	\begin{figure}[!htb]
-		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada8.png}
-		\centering
-		\caption{Velocidade ao longo do tempo em ST003 na Camada 8 (em $cm.s^{-1}$)}\label{fig:VelST003Cam8}
-	\end{figure}
-	
-	\newpage
-	\begin{figure}[!htb]
-		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada8_HistVel.png}
-		\centering
-		\caption{Histograma da velocidade da corrente no ponto ST003 na Camada 8 (em $cm.s^{-1}$)}\label{fig:HistVelST003Cam8}
-	\end{figure}
-		
-	\newpage
-	\begin{figure}[!htb]
-		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada8_HistDir.png}
-		\centering
-		\caption{Histograma da direção da corrente no ponto ST003 na Camada 8}\label{fig:HistDirST003Cam8}
-	\end{figure}
-	
-	%---
-	\newpage
-	\begin{figure}[!htb]
-		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada9.png}
-		\centering
-		\caption{Velocidade ao longo do tempo em ST003 na Camada 9 (em $cm.s^{-1}$)}\label{fig:VelST003Cam9}
-	\end{figure}
-	
-	\newpage
-	\begin{figure}[!htb]
-		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada9_HistVel.png}
-		\centering
-		\caption{Histograma da velocidade da corrente no ponto ST003 na Camada 9 (em $cm.s^{-1}$)}\label{fig:HistVelST003Cam9}
-	\end{figure}
-	
-	\newpage
-	\begin{figure}[!htb]
-		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada9_HistDir.png}
-		\centering
-		\caption{Histograma da direção da corrente no ponto ST003 na Camada 9}\label{fig:HistDirST003Cam9}
-	\end{figure}
-	
-	%---
-	\newpage
-	\begin{figure}[!htb]
-		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada10.png}
-		\centering
-		\caption{Velocidade ao longo do tempo em ST003 na Camada 10 (em $cm.s^{-1}$)}\label{fig:VelST003Cam10}
-	\end{figure}
-		
-	\newpage
-	\begin{figure}[!htb]
-		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada10_HistVel.png}
-		\centering
-		\caption{Histograma da velocidade da corrente no ponto ST003 na Camada 10 (em $cm.s^{-1}$)}\label{fig:HistVelST003Cam10}
-	\end{figure}
-	
-	\newpage
-	\begin{figure}[!htb]
-		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada10_HistDir.png}
-		\centering
-		\caption{Histograma da direção da corrente no ponto ST003 na Camada 10}\label{fig:HistDirST003Cam10}
-	\end{figure}
-		
-	%---
-	\newpage
-	\begin{figure}[!htb]
-		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada11.png}
-		\centering
-		\caption{Velocidade ao longo do tempo em ST003 na Camada 11 (em $cm.s^{-1}$)}\label{fig:VelST003Cam11}
-	\end{figure}
-		
-	\newpage
-	\begin{figure}[!htb]
-		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada11_HistVel.png}
-		\centering
-		\caption{Histograma da velocidade da corrente no ponto ST003 na Camada 11 (em $cm.s^{-1}$)}\label{fig:HistVelST003Cam11}
-	\end{figure}
-	
-	\newpage
-	\begin{figure}[!htb]
-		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada11_HistDir.png}
-		\centering
-		\caption{Histograma da direção da corrente no ponto ST003 na Camada 11}\label{fig:HistDirST003Cam11}
-	\end{figure}
-	
-	%----
-	\newpage
-	\begin{figure}[!htb]
-		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada12.png}
-		\centering
-		\caption{Velocidade ao longo do tempo em ST003 na Camada 12 (em $cm.s^{-1}$)}\label{fig:VelST003Cam12}
-	\end{figure}
-	
-	\newpage
-	\begin{figure}[!htb]
-		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada12_HistVel.png}
-		\centering
-		\caption{Histograma da velocidade da corrente no ponto ST003 na Camada 12 (em $cm.s^{-1}$)}\label{fig:HistVelST003Cam12}
-	\end{figure}
-	
-	\newpage
-	\begin{figure}[!htb]
-		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada12_HistDir.png}
-		\centering
-		\caption{Histograma da direção da corrente no ponto ST003 na Camada 12}\label{fig:HistDirST003Cam12}
-	\end{figure}
-\end{landscape}
-% ----------------------------------------------------------------------------------------
-% FIGURAS DE TEMPERATURA VERSUS VENTO	
+%%--------------------------------------------------------
+%% Elementos pós-textuais
+%\apendice
+%
+%\chapter{Gráficos de Corrente por Camada}
+%
 %\begin{landscape}
+%	
+%	% FIGURAS DE VELOCIDADE (NO TEMPO E HISTOGRAMA) POR CAMA
+%	\newpage
 %	\begin{figure}[!htb]
-%		\includegraphics[width=1.6\textwidth]{figuras/Temperatura_Vento_ST001.png}
+%		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST001_Camada1.png}
 %		\centering
-%		\caption{Comparação dos dados de temperatura do ponto ST001 e da direção do vento}\label{fig:tempvento01}
+%		\caption{Velocidade ao longo do tempo em ST001 na Camada 1 (em $cm.s^{-1}$)}\label{fig:VelST001Cam1}
 %	\end{figure}
 %	
+%	\newpage
 %	\begin{figure}[!htb]
-%		\includegraphics[width=1.6\textwidth]{figuras/Temperatura_Vento_ST002.png}
+%		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST001_Camada1_HistVel.png}
 %		\centering
-%		\caption{Comparação dos dados de temperatura do ponto ST002 e da direção do vento}\label{fig:tempvento02}
+%		\caption{Histograma da velocidade da corrente no ponto ST001 na Camada 1 (em $cm.s^{-1}$)}\label{fig:HistVelST001Cam1}
 %	\end{figure}
-%	
+%		
+%	\newpage
 %	\begin{figure}[!htb]
-%		\includegraphics[width=1.6\textwidth]{figuras/Temperatura_Vento_ST003.png}
+%		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST001_Camada1_HistDir.png}
 %		\centering
-%		\caption{Comparação dos dados de temperatura do ponto ST003 e da direção do vento}\label{fig:tempvento03}
+%		\caption{Histograma da direção da corrente no ponto ST001 na Camada 1 }\label{fig:HistDirST001Cam1}
 %	\end{figure}
 %
+%	%---
+%	\newpage
 %	\begin{figure}[!htb]
-%		\includegraphics[width=1.6\textwidth]{figuras/Corrente_Vento_ST001.png}
+%		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST001_Camada2.png}
 %		\centering
-%		\caption{Comparação dos dados de corrente do ponto ST001 e da velocidade do vento}\label{fig:corrvento01}
+%		\caption{Velocidade ao longo do tempo em ST001 na Camada 2 (em $cm.s^{-1}$)}\label{fig:VelST001Cam2}
+%	\end{figure}
+%		
+%	\newpage
+%	\begin{figure}[!htb]
+%		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST001_Camada2_HistVel.png}
+%		\centering
+%		\caption{Histograma da velocidade da corrente no ponto ST001 na Camada 2 (em $cm.s^{-1}$)}\label{fig:HistVelST001Cam2}
+%	\end{figure}
+%		
+%	\newpage
+%	\begin{figure}[!htb]
+%		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST001_Camada2_HistDir.png}
+%		\centering
+%		\caption{Histograma da direção da corrente no ponto ST001 na Camada 2 }\label{fig:HistDirST001Cam2}
+%	\end{figure}
+%		
+%	%---
+%	\newpage
+%	\begin{figure}[!htb]
+%		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST001_Camada3.png}
+%		\centering
+%		\caption{Velocidade ao longo do tempo em ST001 na Camada 3 (em $cm.s^{-1}$)}\label{fig:VelST001Cam3}
+%	\end{figure}
+%	
+%	\newpage
+%	\begin{figure}[!htb]
+%		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST001_Camada3_HistVel.png}
+%		\centering
+%		\caption{Histograma da velocidade da corrente no ponto ST001 na Camada 3 (em $cm.s^{-1}$)}\label{fig:HistVelST001Cam3}
+%	\end{figure}
+%	
+%	\newpage
+%	\begin{figure}[!htb]
+%		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST001_Camada3_HistDir.png}
+%		\centering
+%		\caption{Histograma da direção da corrente no ponto ST001 na Camada 3 }\label{fig:HistDirST001Cam3}
+%	\end{figure}
+%	
+%	%---
+%	\newpage
+%	\begin{figure}[!htb]
+%		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST002_Camada1.png}
+%		\centering
+%		\caption{Velocidade ao longo do tempo em ST002 na Camada 1 (em $cm.s^{-1}$)}\label{fig:VelST002Cam1}
+%	\end{figure}
+%	
+%	\newpage
+%	\begin{figure}[!htb]
+%		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST002_Camada1_HistVel.png}
+%		\centering
+%		\caption{Histograma da velocidade da corrente no ponto ST002 na Camada 1 (em $cm.s^{-1}$)}\label{fig:HistVelST002Cam1}
+%	\end{figure}
+%	
+%	\newpage
+%	\begin{figure}[!htb]
+%		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST002_Camada1_HistDir.png}
+%		\centering
+%		\caption{Histograma da direção da corrente no ponto ST002 na Camada 1}\label{fig:HistDirST002Cam1}
+%	\end{figure}
+%	
+%	%---
+%	\newpage
+%	\begin{figure}[!htb]
+%		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST002_Camada2.png}
+%		\centering
+%		\caption{Velocidade ao longo do tempo em ST002 na Camada 2 (em $cm.s^{-1}$)}\label{fig:VelST002Cam2}
+%	\end{figure}
+%	
+%	\newpage
+%	\begin{figure}[!htb]
+%		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST002_Camada2_HistVel.png}
+%		\centering
+%		\caption{Histograma da velocidade da corrente no ponto ST002 na Camada 2 (em $cm.s^{-1}$)}\label{fig:HistVelST002Cam2}
+%	\end{figure}
+%	
+%	\newpage
+%	\begin{figure}[!htb]
+%		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST002_Camada2_HistDir.png}
+%		\centering
+%		\caption{Histograma da direção da corrente no ponto ST002 na Camada 2 }\label{fig:HistDirST002Cam2}
+%	\end{figure}
+%			
+%	%---
+%	\newpage
+%	\begin{figure}[!htb]
+%		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST002_Camada3.png}
+%		\centering
+%		\caption{Velocidade ao longo do tempo em ST002 na Camada 3 (em $cm.s^{-1}$)}\label{fig:VelST002Cam3}
+%	\end{figure}
+%	
+%	\newpage
+%	\begin{figure}[!htb]
+%		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST002_Camada3_HistVel.png}
+%		\centering
+%		\caption{Histograma da velocidade da corrente no ponto ST002 na Camada 3 (em $cm.s^{-1}$)}\label{fig:HistVelST002Cam3}
+%	\end{figure}
+%	
+%	\newpage
+%	\begin{figure}[!htb]
+%		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST002_Camada3_HistDir.png}
+%		\centering
+%		\caption{Histograma da direção da corrente no ponto ST002 na Camada 3}\label{fig:HistDirST002Cam3}
+%	\end{figure}
+%	
+%	%---
+%	\newpage
+%	\begin{figure}[!htb]
+%		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST002_Camada4.png}
+%		\centering
+%		\caption{Velocidade ao longo do tempo em ST002 na Camada 4 (em $cm.s^{-1}$)}\label{fig:VelST002Cam4}
+%	\end{figure}
+%	
+%	\newpage
+%	\begin{figure}[!htb]
+%		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST002_Camada4_HistVel.png}
+%		\centering
+%		\caption{Histograma da velocidade da corrente no ponto ST002 na Camada 4 (em $cm.s^{-1}$)}\label{fig:HistVelST002Cam4}
+%	\end{figure}
+%	
+%	\newpage
+%	\begin{figure}[!htb]
+%		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST002_Camada4_HistDir.png}
+%		\centering
+%		\caption{Histograma da direção da corrente no ponto ST002 na Camada 4}\label{fig:HistDirST002Cam4}
+%	\end{figure}
+%	
+%	%---
+%	\newpage
+%	\begin{figure}[!htb]
+%		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST002_Camada5.png}
+%		\centering
+%		\caption{Velocidade ao longo do tempo em ST002 na Camada 5 (em $cm.s^{-1}$)}\label{fig:VelST002Cam5}
+%	\end{figure}
+%	
+%	\newpage
+%	\begin{figure}[!htb]
+%		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST002_Camada5_HistVel.png}
+%		\centering
+%		\caption{Histograma da velocidade da corrente no ponto ST002 na Camada 5 (em $cm.s^{-1}$)}\label{fig:HistVelST002Cam5}
+%	\end{figure}
+%	
+%	\newpage
+%	\begin{figure}[!htb]
+%		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST002_Camada5_HistDir.png}
+%		\centering
+%		\caption{Histograma da direção da corrente no ponto ST002 na Camada 5}\label{fig:HistDirST002Cam5}
+%	\end{figure}
+%	
+%	%---
+%	\newpage
+%	\begin{figure}[!htb]
+%		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST002_Camada6.png}
+%		\centering
+%		\caption{Velocidade ao longo do tempo em ST002 na Camada 6 (em $cm.s^{-1}$)}\label{fig:VelST002Cam6}
+%	\end{figure}
+%	
+%	\newpage
+%	\begin{figure}[!htb]
+%		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST002_Camada6_HistVel.png}
+%		\centering
+%		\caption{Histograma da velocidade da corrente no ponto ST002 na Camada 6 (em $cm.s^{-1}$)}\label{fig:HistVelST002Cam6}
+%	\end{figure}
+%		
+%	\newpage
+%	\begin{figure}[!htb]
+%		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST002_Camada6_HistDir.png}
+%		\centering
+%		\caption{Histograma da direção da corrente no ponto ST002 na Camada 6}\label{fig:HistDirST002Cam6}
+%	\end{figure}
+%	
+%	%---
+%	\newpage
+%	\begin{figure}[!htb]
+%		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST002_Camada7.png}
+%		\centering
+%		\caption{Velocidade ao longo do tempo em ST002 na Camada 7 (em $cm.s^{-1}$)}\label{fig:VelST002Cam7}
+%	\end{figure}
+%	
+%	\newpage
+%	\begin{figure}[!htb]
+%		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST002_Camada7_HistVel.png}
+%		\centering
+%		\caption{Histograma da velocidade da corrente no ponto ST002 na Camada 7 (em $cm.s^{-1}$)}\label{fig:HistVelST002Cam7}
+%	\end{figure}
+%	
+%	\newpage
+%	\begin{figure}[!htb]
+%		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST002_Camada7_HistDir.png}
+%		\centering
+%		\caption{Histograma da direção da corrente no ponto ST002 na Camada 7}\label{fig:HistDirST002Cam7}
 %	\end{figure}
 %
+%	%---
+%	\newpage
 %	\begin{figure}[!htb]
-%		\includegraphics[width=1.6\textwidth]{figuras/Corrente_Vento_ST002.png}
+%		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST002_Camada8.png}
 %		\centering
-%		\caption{Comparação dos dados de corrente do ponto ST002 e da velocidade do vento}\label{fig:corrvento02}
+%		\caption{Velocidade ao longo do tempo em ST002 na Camada 8 (em $cm.s^{-1}$)}\label{fig:VelST002Cam8}
 %	\end{figure}
 %	
+%	\newpage
 %	\begin{figure}[!htb]
-%		\includegraphics[width=1.6\textwidth]{figuras/Corrente_Vento_ST003.png}
+%		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST002_Camada8_HistVel.png}
 %		\centering
-%		\caption{Comparação dos dados de corrente do ponto ST003 e da velocidade do vento}\label{fig:corrvento01}
+%		\caption{Histograma da velocidade da corrente no ponto ST002 na Camada 8 (em $cm.s^{-1}$)}\label{fig:HistVelST002Cam8}
+%	\end{figure}
+%	
+%	\newpage
+%	\begin{figure}[!htb]
+%		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST002_Camada8_HistDir.png}
+%		\centering
+%		\caption{Histograma da direção da corrente no ponto ST002 na Camada 8}\label{fig:HistDirST002Cam8}
+%	\end{figure}
+%	
+%	%---
+%	\newpage
+%	\begin{figure}[!htb]
+%		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST002_Camada9.png}
+%		\centering
+%		\caption{Velocidade ao longo do tempo em ST002 na Camada 9 (em $cm.s^{-1}$)}\label{fig:VelST002Cam9}
+%	\end{figure}
+%	
+%	\newpage
+%	\begin{figure}[!htb]
+%		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST002_Camada9_HistVel.png}
+%		\centering
+%		\caption{Histograma da velocidade da corrente no ponto ST002 na Camada 9 (em $cm.s^{-1}$)}\label{fig:HistVelST002Cam9}
+%	\end{figure}
+%	
+%	\newpage
+%	\begin{figure}[!htb]
+%		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST002_Camada9_HistDir.png}
+%		\centering
+%		\caption{Histograma da direção da corrente no ponto ST002 na Camada 9}\label{fig:HistDirST002Cam9}
 %	\end{figure}
 %
+%	%---
+%	\newpage
 %	\begin{figure}[!htb]
-%		\includegraphics[width=1.6\textwidth]{figuras/Corrente_VentoDir_ST001.png}
+%		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST002_Camada10.png}
 %		\centering
-%		\caption{Comparação dos dados de corrente do ponto ST001 e da direção do vento}\label{fig:corrventodir01}
+%		\caption{Velocidade ao longo do tempo em ST002 na Camada 10 (em $cm.s^{-1}$)}\label{fig:VelST002Cam10}
 %	\end{figure}
 %	
+%	\newpage
 %	\begin{figure}[!htb]
-%		\includegraphics[width=1.6\textwidth]{figuras/Corrente_VentoDir_ST002.png}
+%		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST002_Camada10_HistVel.png}
 %		\centering
-%		\caption{Comparação dos dados de corrente do ponto ST002 e da direção do vento}\label{fig:corrventodir02}
+%		\caption{Histograma da velocidade da corrente no ponto ST002 na Camada 10 (em $cm.s^{-1}$)}\label{fig:HistVelST002Cam10}
 %	\end{figure}
 %	
+%	\newpage
 %	\begin{figure}[!htb]
-%		\includegraphics[width=1.6\textwidth]{figuras/Corrente_VentoDir_ST003.png}
+%		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST002_Camada10_HistDir.png}
 %		\centering
-%		\caption{Comparação dos dados de corrente do ponto ST003 e da direção do vento}\label{fig:corrventodir03}
+%		\caption{Histograma da direção da corrente no ponto ST002 na Camada 10}\label{fig:HistDirST002Cam10}
+%	\end{figure}
+%	
+%	%---
+%	\newpage
+%	\begin{figure}[!htb]
+%		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada1.png}
+%		\centering
+%		\caption{Velocidade ao longo do tempo em ST003 na Camada 1 (em $cm.s^{-1}$)}\label{fig:VelST003Cam1}
+%	\end{figure}
+%	
+%	\newpage
+%	\begin{figure}[!htb]
+%		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada1_HistVel.png}
+%		\centering
+%		\caption{Histograma da velocidade da corrente no ponto ST003 na Camada 1 (em $cm.s^{-1}$)}\label{fig:HistVelST003Cam1}
+%	\end{figure}
+%		
+%	\newpage
+%	\begin{figure}[!htb]
+%		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada1_HistDir.png}
+%		\centering
+%		\caption{Histograma da direção da corrente no ponto ST003 na Camada 1}\label{fig:HistDirST003Cam1}
+%	\end{figure}
+%	
+%	%---
+%	\newpage
+%	\begin{figure}[!htb]
+%		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada2.png}
+%		\centering
+%		\caption{Velocidade ao longo do tempo em ST003 na Camada 2 (em $cm.s^{-1}$)}\label{fig:VelST003Cam2}
+%	\end{figure}
+%		
+%	\newpage
+%	\begin{figure}[!htb]
+%		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada2_HistVel.png}
+%		\centering
+%		\caption{Histograma da velocidade da corrente no ponto ST003 na Camada 2 (em centí)}\label{fig:HistVelST003Cam2}
+%	\end{figure}
+%	
+%	\newpage
+%	\begin{figure}[!htb]
+%		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada2_HistDir.png}
+%		\centering
+%		\caption{Histograma da direção da corrente no ponto ST003 na Camada 2}\label{fig:HistDirST003Cam2}
+%	\end{figure}
+%	
+%	%---
+%	\newpage
+%	\begin{figure}[!htb]
+%		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada3.png}
+%		\centering
+%		\caption{Velocidade ao longo do tempo em ST003 na Camada 3 (em $cm.s^{-1}$)}\label{fig:VelST003Cam3}
+%	\end{figure}
+%	
+%	\newpage
+%	\begin{figure}[!htb]
+%		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada3_HistVel.png}
+%		\centering
+%		\caption{Histograma da velocidade da corrente no ponto ST003 na Camada 3 (em $cm.s^{-1}$)}\label{fig:HistVelST003Cam3}
+%	\end{figure}
+%	
+%	\newpage
+%	\begin{figure}[!htb]
+%		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada3_HistDir.png}
+%		\centering
+%		\caption{Histograma da direção da corrente no ponto ST003 na Camada 3}\label{fig:HistDirST003Cam3}
+%	\end{figure}
+%		
+%	%---
+%	\newpage
+%	\begin{figure}[!htb]
+%		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada4.png}
+%		\centering
+%		\caption{Velocidade ao longo do tempo em ST003 na Camada 4 (em $cm.s^{-1}$)}\label{fig:VelST003Cam4}
+%	\end{figure}
+%	
+%	\newpage
+%	\begin{figure}[!htb]
+%		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada4_HistVel.png}
+%		\centering
+%		\caption{Histograma da velocidade da corrente no ponto ST003 na Camada 4 (em $cm.s^{-1}$)}\label{fig:HistVelST003Cam4}
+%	\end{figure}
+%		
+%	\newpage
+%	\begin{figure}[!htb]
+%		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada4_HistDir.png}
+%		\centering
+%		\caption{Histograma da direção da corrente no ponto ST003 na Camada 4}\label{fig:HistDirST003Cam4}
+%	\end{figure}
+%	
+%	%---
+%	\newpage
+%	\begin{figure}[!htb]
+%		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada5.png}
+%		\centering
+%		\caption{Velocidade ao longo do tempo em ST003 na Camada 5 (em $cm.s^{-1}$)}\label{fig:VelST003Cam5}
+%	\end{figure}
+%		
+%	\newpage
+%	\begin{figure}[!htb]
+%		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada5_HistVel.png}
+%		\centering
+%		\caption{Histograma da velocidade da corrente no ponto ST003 na Camada 5 (em $cm.s^{-1}$)}\label{fig:HistVelST003Cam5}
+%	\end{figure}
+%	
+%	\newpage
+%	\begin{figure}[!htb]
+%		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada5_HistDir.png}
+%		\centering
+%		\caption{Histograma da direção da corrente no ponto ST003 na Camada 5}\label{fig:HistDirST003Cam5}
+%	\end{figure}
+%	
+%	%---
+%	\newpage
+%	\begin{figure}[!htb]
+%		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada6.png}
+%		\centering
+%		\caption{Velocidade ao longo do tempo em ST003 na Camada 6 (em $cm.s^{-1}$)}\label{fig:VelST003Cam6}
+%	\end{figure}
+%	
+%	\newpage
+%	\begin{figure}[!htb]
+%		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada6_HistVel.png}
+%		\centering
+%		\caption{Histograma da velocidade da corrente no ponto ST003 na Camada 6 (em $cm.s^{-1}$)}\label{fig:HistVelST003Cam6}
+%	\end{figure}
+%		
+%	\newpage
+%	\begin{figure}[!htb]
+%		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada6_HistDir.png}
+%		\centering
+%		\caption{Histograma da direção da corrente no ponto ST003 na Camada 6}\label{fig:HistDirST003Cam6}
+%	\end{figure}
+%	
+%	%---
+%	\newpage
+%	\begin{figure}[!htb]
+%		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada7.png}
+%		\centering
+%		\caption{Velocidade ao longo do tempo em ST003 na Camada 7 (em $cm.s^{-1}$)}\label{fig:VelST003Cam7}
+%	\end{figure}
+%		
+%	\newpage
+%	\begin{figure}[!htb]
+%		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada7_HistVel.png}
+%		\centering
+%		\caption{Histograma da velocidade da corrente no ponto ST003 na Camada 7 (em $cm.s^{-1}$)}\label{fig:HistVelST003Cam7}
+%	\end{figure}
+%	
+%	\newpage
+%	\begin{figure}[!htb]
+%		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada7_HistDir.png}
+%		\centering
+%		\caption{Histograma da direção da corrente no ponto ST003 na Camada 7}\label{fig:HistDirST003Cam7}
+%	\end{figure}
+%		
+%	%---
+%	\newpage
+%	\begin{figure}[!htb]
+%		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada8.png}
+%		\centering
+%		\caption{Velocidade ao longo do tempo em ST003 na Camada 8 (em $cm.s^{-1}$)}\label{fig:VelST003Cam8}
+%	\end{figure}
+%	
+%	\newpage
+%	\begin{figure}[!htb]
+%		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada8_HistVel.png}
+%		\centering
+%		\caption{Histograma da velocidade da corrente no ponto ST003 na Camada 8 (em $cm.s^{-1}$)}\label{fig:HistVelST003Cam8}
+%	\end{figure}
+%		
+%	\newpage
+%	\begin{figure}[!htb]
+%		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada8_HistDir.png}
+%		\centering
+%		\caption{Histograma da direção da corrente no ponto ST003 na Camada 8}\label{fig:HistDirST003Cam8}
+%	\end{figure}
+%	
+%	%---
+%	\newpage
+%	\begin{figure}[!htb]
+%		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada9.png}
+%		\centering
+%		\caption{Velocidade ao longo do tempo em ST003 na Camada 9 (em $cm.s^{-1}$)}\label{fig:VelST003Cam9}
+%	\end{figure}
+%	
+%	\newpage
+%	\begin{figure}[!htb]
+%		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada9_HistVel.png}
+%		\centering
+%		\caption{Histograma da velocidade da corrente no ponto ST003 na Camada 9 (em $cm.s^{-1}$)}\label{fig:HistVelST003Cam9}
+%	\end{figure}
+%	
+%	\newpage
+%	\begin{figure}[!htb]
+%		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada9_HistDir.png}
+%		\centering
+%		\caption{Histograma da direção da corrente no ponto ST003 na Camada 9}\label{fig:HistDirST003Cam9}
+%	\end{figure}
+%	
+%	%---
+%	\newpage
+%	\begin{figure}[!htb]
+%		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada10.png}
+%		\centering
+%		\caption{Velocidade ao longo do tempo em ST003 na Camada 10 (em $cm.s^{-1}$)}\label{fig:VelST003Cam10}
+%	\end{figure}
+%		
+%	\newpage
+%	\begin{figure}[!htb]
+%		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada10_HistVel.png}
+%		\centering
+%		\caption{Histograma da velocidade da corrente no ponto ST003 na Camada 10 (em $cm.s^{-1}$)}\label{fig:HistVelST003Cam10}
+%	\end{figure}
+%	
+%	\newpage
+%	\begin{figure}[!htb]
+%		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada10_HistDir.png}
+%		\centering
+%		\caption{Histograma da direção da corrente no ponto ST003 na Camada 10}\label{fig:HistDirST003Cam10}
+%	\end{figure}
+%		
+%	%---
+%	\newpage
+%	\begin{figure}[!htb]
+%		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada11.png}
+%		\centering
+%		\caption{Velocidade ao longo do tempo em ST003 na Camada 11 (em $cm.s^{-1}$)}\label{fig:VelST003Cam11}
+%	\end{figure}
+%		
+%	\newpage
+%	\begin{figure}[!htb]
+%		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada11_HistVel.png}
+%		\centering
+%		\caption{Histograma da velocidade da corrente no ponto ST003 na Camada 11 (em $cm.s^{-1}$)}\label{fig:HistVelST003Cam11}
+%	\end{figure}
+%	
+%	\newpage
+%	\begin{figure}[!htb]
+%		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada11_HistDir.png}
+%		\centering
+%		\caption{Histograma da direção da corrente no ponto ST003 na Camada 11}\label{fig:HistDirST003Cam11}
+%	\end{figure}
+%	
+%	%----
+%	\newpage
+%	\begin{figure}[!htb]
+%		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada12.png}
+%		\centering
+%		\caption{Velocidade ao longo do tempo em ST003 na Camada 12 (em $cm.s^{-1}$)}\label{fig:VelST003Cam12}
+%	\end{figure}
+%	
+%	\newpage
+%	\begin{figure}[!htb]
+%		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada12_HistVel.png}
+%		\centering
+%		\caption{Histograma da velocidade da corrente no ponto ST003 na Camada 12 (em $cm.s^{-1}$)}\label{fig:HistVelST003Cam12}
+%	\end{figure}
+%	
+%	\newpage
+%	\begin{figure}[!htb]
+%		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada12_HistDir.png}
+%		\centering
+%		\caption{Histograma da direção da corrente no ponto ST003 na Camada 12}\label{fig:HistDirST003Cam12}
 %	\end{figure}
 %\end{landscape}
+%% ----------------------------------------------------------------------------------------
+%% FIGURAS DE TEMPERATURA VERSUS VENTO	
+%%\begin{landscape}
+%%	\begin{figure}[!htb]
+%%		\includegraphics[width=1.6\textwidth]{figuras/Temperatura_Vento_ST001.png}
+%%		\centering
+%%		\caption{Comparação dos dados de temperatura do ponto ST001 e da direção do vento}\label{fig:tempvento01}
+%%	\end{figure}
+%%	
+%%	\begin{figure}[!htb]
+%%		\includegraphics[width=1.6\textwidth]{figuras/Temperatura_Vento_ST002.png}
+%%		\centering
+%%		\caption{Comparação dos dados de temperatura do ponto ST002 e da direção do vento}\label{fig:tempvento02}
+%%	\end{figure}
+%%	
+%%	\begin{figure}[!htb]
+%%		\includegraphics[width=1.6\textwidth]{figuras/Temperatura_Vento_ST003.png}
+%%		\centering
+%%		\caption{Comparação dos dados de temperatura do ponto ST003 e da direção do vento}\label{fig:tempvento03}
+%%	\end{figure}
+%%
+%%	\begin{figure}[!htb]
+%%		\includegraphics[width=1.6\textwidth]{figuras/Corrente_Vento_ST001.png}
+%%		\centering
+%%		\caption{Comparação dos dados de corrente do ponto ST001 e da velocidade do vento}\label{fig:corrvento01}
+%%	\end{figure}
+%%
+%%	\begin{figure}[!htb]
+%%		\includegraphics[width=1.6\textwidth]{figuras/Corrente_Vento_ST002.png}
+%%		\centering
+%%		\caption{Comparação dos dados de corrente do ponto ST002 e da velocidade do vento}\label{fig:corrvento02}
+%%	\end{figure}
+%%	
+%%	\begin{figure}[!htb]
+%%		\includegraphics[width=1.6\textwidth]{figuras/Corrente_Vento_ST003.png}
+%%		\centering
+%%		\caption{Comparação dos dados de corrente do ponto ST003 e da velocidade do vento}\label{fig:corrvento01}
+%%	\end{figure}
+%%
+%%	\begin{figure}[!htb]
+%%		\includegraphics[width=1.6\textwidth]{figuras/Corrente_VentoDir_ST001.png}
+%%		\centering
+%%		\caption{Comparação dos dados de corrente do ponto ST001 e da direção do vento}\label{fig:corrventodir01}
+%%	\end{figure}
+%%	
+%%	\begin{figure}[!htb]
+%%		\includegraphics[width=1.6\textwidth]{figuras/Corrente_VentoDir_ST002.png}
+%%		\centering
+%%		\caption{Comparação dos dados de corrente do ponto ST002 e da direção do vento}\label{fig:corrventodir02}
+%%	\end{figure}
+%%	
+%%	\begin{figure}[!htb]
+%%		\includegraphics[width=1.6\textwidth]{figuras/Corrente_VentoDir_ST003.png}
+%%		\centering
+%%		\caption{Comparação dos dados de corrente do ponto ST003 e da direção do vento}\label{fig:corrventodir03}
+%%	\end{figure}
+%%\end{landscape}
 
 %\anexo
 %\chapter{Exemplificando um Anexo}
