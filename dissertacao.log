@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2015.6.9)  24 JAN 2017 14:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2015.6.9)  24 JAN 2017 17:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -533,7 +533,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 86--86
 
 
 ] (./dissertacao.lof
-Overfull \hbox (9.17169pt too wide) in paragraph at lines 10--10
+Overfull \hbox (9.17169pt too wide) in paragraph at lines 9--9
 [] \OT1/cmr/m/n/12 Fi-gura []M^^Saxima eleva^^Xc~ao do n^^S^^Pvel do mar cau-sa
 da por mar^^Ses me-te-o-rol^^Sogicas e as-tron^omicas. 
  []
@@ -576,7 +576,7 @@ Cap\'{\i }tulo 2.
 File: figuras/metodossolucao.png Graphic file (type png)
 
 <use figuras/metodossolucao.png>
-Package pdftex.def Info: figuras/metodossolucao.png used on input line 223.
+Package pdftex.def Info: figuras/metodossolucao.png used on input line 222.
 (pdftex.def)             Requested size: 435.32422pt x 272.07874pt.
  [14
 
@@ -585,21 +585,21 @@ Package pdftex.def Info: figuras/metodossolucao.png used on input line 223.
 File: figuras/structured.png Graphic file (type png)
 
 <use figuras/structured.png>
-Package pdftex.def Info: figuras/structured.png used on input line 238.
+Package pdftex.def Info: figuras/structured.png used on input line 237.
 (pdftex.def)             Requested size: 145.11053pt x 114.927pt.
 
 <figuras/unstructured.png, id=68, 398.48875pt x 333.245pt>
 File: figuras/unstructured.png Graphic file (type png)
 
 <use figuras/unstructured.png>
-Package pdftex.def Info: figuras/unstructured.png used on input line 244.
+Package pdftex.def Info: figuras/unstructured.png used on input line 243.
 (pdftex.def)             Requested size: 145.11053pt x 121.3512pt.
  [16 <./figuras/structured.png> <./figuras/unstructured.png>] <figuras/DifusaoN
 umerica_CFL.png, id=72, 433.62pt x 289.08pt>
 File: figuras/DifusaoNumerica_CFL.png Graphic file (type png)
 
 <use figuras/DifusaoNumerica_CFL.png>
-Package pdftex.def Info: figuras/DifusaoNumerica_CFL.png used on input line 269
+Package pdftex.def Info: figuras/DifusaoNumerica_CFL.png used on input line 292
 .
 (pdftex.def)             Requested size: 290.22107pt x 193.4885pt.
  [17 <./figuras/DifusaoNumerica_CFL.png>]
@@ -607,7 +607,7 @@ Package pdftex.def Info: figuras/DifusaoNumerica_CFL.png used on input line 269
 File: figuras/areaestudo.png Graphic file (type png)
 
 <use figuras/areaestudo.png>
-Package pdftex.def Info: figuras/areaestudo.png used on input line 282.
+Package pdftex.def Info: figuras/areaestudo.png used on input line 305.
 (pdftex.def)             Requested size: 386.95897pt x 483.77385pt.
  [18
 
@@ -616,196 +616,187 @@ Package pdftex.def Info: figuras/areaestudo.png used on input line 282.
 File: figuras/erosao.jpg Graphic file (type jpg)
 
 <use figuras/erosao.jpg>
-Package pdftex.def Info: figuras/erosao.jpg used on input line 350.
+Package pdftex.def Info: figuras/erosao.jpg used on input line 371.
 (pdftex.def)             Requested size: 338.58632pt x 216.8042pt.
 
 <figuras/picarrasSet15.png, id=90, 594.22pt x 564.1075pt>
 File: figuras/picarrasSet15.png Graphic file (type png)
 
 <use figuras/picarrasSet15.png>
-Package pdftex.def Info: figuras/picarrasSet15.png used on input line 362.
+Package pdftex.def Info: figuras/picarrasSet15.png used on input line 383.
 (pdftex.def)             Requested size: 386.95897pt x 367.36273pt.
-
-<figuras/anfidromico.png, id=91, 863.225pt x 625.33624pt>
-File: figuras/anfidromico.png Graphic file (type png)
-
-<use figuras/anfidromico.png>
-Package pdftex.def Info: figuras/anfidromico.png used on input line 370.
-(pdftex.def)             Requested size: 386.95897pt x 280.32048pt.
  [21 <./figuras/erosao.jpg>]
-<figuras/Pariseetal.png, id=95, 688.5725pt x 559.08875pt>
-File: figuras/Pariseetal.png Graphic file (type png)
+<figuras/Pariseetal_pt.png, id=94, 516.42938pt x 419.31656pt>
+File: figuras/Pariseetal_pt.png Graphic file (type png)
 
-<use figuras/Pariseetal.png>
-Package pdftex.def Info: figuras/Pariseetal.png used on input line 378.
-(pdftex.def)             Requested size: 386.95897pt x 314.18805pt.
- [22 <./figuras/picarrasSet15.png>] [23 <./figuras/anfidromico.png> <./figuras/
-Pariseetal.png>] [24]
+<use figuras/Pariseetal_pt.png>
+Package pdftex.def Info: figuras/Pariseetal_pt.png used on input line 393.
+(pdftex.def)             Requested size: 386.95897pt x 314.20511pt.
+ [22 <./figuras/picarrasSet15.png>] [23 <./figuras/Pariseetal_pt.png>] [24]
 Cap\'{\i }tulo 3.
-<figuras/Fluxograma_metodologia2.png, id=106, 722.7pt x 542.025pt>
-File: figuras/Fluxograma_metodologia2.png Graphic file (type png)
+<figuras/new_fluxo.png, id=106, 788.9475pt x 405.515pt>
+File: figuras/new_fluxo.png Graphic file (type png)
 
-<use figuras/Fluxograma_metodologia2.png>
-Package pdftex.def Info: figuras/Fluxograma_metodologia2.png used on input line
- 409.
-(pdftex.def)             Requested size: 435.32422pt x 326.49118pt.
+<use figuras/new_fluxo.png>
+Package pdftex.def Info: figuras/new_fluxo.png used on input line 424.
+(pdftex.def)             Requested size: 435.32422pt x 223.7517pt.
  [25
 
- <./figuras/Fluxograma_metodologia2.png>] [26] <figuras/ADCPs.png, id=114, 569.
-0058pt x 711.3777pt>
+ <./figuras/new_fluxo.png>] [26]
+<figuras/ADCPs.png, id=113, 569.0058pt x 711.3777pt>
 File: figuras/ADCPs.png Graphic file (type png)
-
-<use figuras/ADCPs.png>
-Package pdftex.def Info: figuras/ADCPs.png used on input line 471.
+ <use figuras/ADCPs.png>
+Package pdftex.def Info: figuras/ADCPs.png used on input line 482.
 (pdftex.def)             Requested size: 483.69687pt x 604.71732pt.
- [27] [28 <./figuras/ADCPs.png (PNG copy)>]
-<figuras/NoData_ST001.png, id=121, 1084.05pt x 361.35pt>
+
+[27] [28 <./figuras/ADCPs.png (PNG copy)>]
+<figuras/NoData_ST001.png, id=120, 1084.05pt x 361.35pt>
 File: figuras/NoData_ST001.png Graphic file (type png)
 
 <use figuras/NoData_ST001.png>
-Package pdftex.def Info: figuras/NoData_ST001.png used on input line 482.
+Package pdftex.def Info: figuras/NoData_ST001.png used on input line 493.
 (pdftex.def)             Requested size: 773.91794pt x 257.98285pt.
 
-Overfull \hbox (28.45572pt too wide) in paragraph at lines 482--484
+Overfull \hbox (28.45572pt too wide) in paragraph at lines 493--495
  [][] 
  []
 
-<figuras/NoData_ST002.png, id=122, 1084.05pt x 361.35pt>
+<figuras/NoData_ST002.png, id=121, 1084.05pt x 361.35pt>
 File: figuras/NoData_ST002.png Graphic file (type png)
 
 <use figuras/NoData_ST002.png>
-Package pdftex.def Info: figuras/NoData_ST002.png used on input line 488.
+Package pdftex.def Info: figuras/NoData_ST002.png used on input line 499.
 (pdftex.def)             Requested size: 773.91794pt x 257.98285pt.
 
-Overfull \hbox (28.45572pt too wide) in paragraph at lines 488--490
+Overfull \hbox (28.45572pt too wide) in paragraph at lines 499--501
  [][] 
  []
 
-<figuras/NoData_ST003.png, id=123, 1084.05pt x 361.35pt>
+<figuras/NoData_ST003.png, id=122, 1084.05pt x 361.35pt>
 File: figuras/NoData_ST003.png Graphic file (type png)
 
 <use figuras/NoData_ST003.png>
-Package pdftex.def Info: figuras/NoData_ST003.png used on input line 494.
+Package pdftex.def Info: figuras/NoData_ST003.png used on input line 505.
 (pdftex.def)             Requested size: 773.91794pt x 257.98285pt.
 
-Overfull \hbox (28.45572pt too wide) in paragraph at lines 494--496
+Overfull \hbox (28.45572pt too wide) in paragraph at lines 505--507
  [][] 
  []
 
 [29
 
  <./figuras/NoData_ST001.png>] [30 <./figuras/NoData_ST002.png>] [31 <./figuras
-/NoData_ST003.png>] <figuras/arakawac.png, id=137, 317.185pt x 299.1175pt>
+/NoData_ST003.png>] <figuras/arakawac.png, id=136, 317.185pt x 299.1175pt>
 File: figuras/arakawac.png Graphic file (type png)
 
 <use figuras/arakawac.png>
-Package pdftex.def Info: figuras/arakawac.png used on input line 515.
+Package pdftex.def Info: figuras/arakawac.png used on input line 526.
 (pdftex.def)             Requested size: 290.22107pt x 273.71265pt.
  [32
 
 ]
-<figuras/TMD_exemplo.png, id=142, 1444.64719pt x 775.39688pt>
+<figuras/TMD_exemplo.png, id=141, 1444.64719pt x 775.39688pt>
 File: figuras/TMD_exemplo.png Graphic file (type png)
 
 <use figuras/TMD_exemplo.png>
-Package pdftex.def Info: figuras/TMD_exemplo.png used on input line 551.
+Package pdftex.def Info: figuras/TMD_exemplo.png used on input line 562.
 (pdftex.def)             Requested size: 435.32422pt x 233.6502pt.
  [33 <./figuras/arakawac.png>] [34 <./figuras/TMD_exemplo.png>] [35] [36] [37]
 Cap\'{\i }tulo 4.
-<figuras/DadosVento_position.png, id=161, 578.16pt x 433.62pt>
+<figuras/DadosVento_position.png, id=160, 578.16pt x 433.62pt>
 File: figuras/DadosVento_position.png Graphic file (type png)
 
 <use figuras/DadosVento_position.png>
-Package pdftex.def Info: figuras/DadosVento_position.png used on input line 666
+Package pdftex.def Info: figuras/DadosVento_position.png used on input line 677
 .
 (pdftex.def)             Requested size: 532.0695pt x 399.07419pt.
 
-Overfull \hbox (48.37263pt too wide) in paragraph at lines 666--668
+Overfull \hbox (48.37263pt too wide) in paragraph at lines 677--679
  [][] 
  []
 
-<figuras/vento/Vento_Metar_2011_Windrose.png, id=162, 1084.05pt x 722.7pt>
+<figuras/vento/Vento_Metar_2011_Windrose.png, id=161, 1084.05pt x 722.7pt>
 File: figuras/vento/Vento_Metar_2011_Windrose.png Graphic file (type png)
 
 <use figuras/vento/Vento_Metar_2011_Windrose.png>
 Package pdftex.def Info: figuras/vento/Vento_Metar_2011_Windrose.png used on in
-put line 676.
+put line 687.
 (pdftex.def)             Requested size: 532.0695pt x 354.72157pt.
 
-Overfull \hbox (48.37263pt too wide) in paragraph at lines 676--678
+Overfull \hbox (48.37263pt too wide) in paragraph at lines 687--689
  [][] 
  []
 
 [38
 
  <./figuras/DadosVento_position.png>]
-<figuras/vento/Vento_CFSR_2011_Windrose.png, id=167, 1084.05pt x 722.7pt>
+<figuras/vento/Vento_CFSR_2011_Windrose.png, id=166, 1084.05pt x 722.7pt>
 File: figuras/vento/Vento_CFSR_2011_Windrose.png Graphic file (type png)
 
 <use figuras/vento/Vento_CFSR_2011_Windrose.png>
 Package pdftex.def Info: figuras/vento/Vento_CFSR_2011_Windrose.png used on inp
-ut line 682.
+ut line 693.
 (pdftex.def)             Requested size: 532.0695pt x 354.72157pt.
 
-Overfull \hbox (48.37263pt too wide) in paragraph at lines 682--684
+Overfull \hbox (48.37263pt too wide) in paragraph at lines 693--695
  [][] 
  []
 
 [39 <./figuras/vento/Vento_Metar_2011_Windrose.png>] [40 <./figuras/vento/Vento
 _CFSR_2011_Windrose.png>]
-<figuras/vento/Vento_Metar_2011_histvel.png, id=176, 1084.05pt x 361.35pt>
+<figuras/vento/Vento_Metar_2011_histvel.png, id=175, 1084.05pt x 361.35pt>
 File: figuras/vento/Vento_Metar_2011_histvel.png Graphic file (type png)
 
 <use figuras/vento/Vento_Metar_2011_histvel.png>
 Package pdftex.def Info: figuras/vento/Vento_Metar_2011_histvel.png used on inp
-ut line 699.
+ut line 710.
 (pdftex.def)             Requested size: 532.0695pt x 177.3608pt.
 
-<figuras/vento/Vento_CFSR_2011_histvel.png, id=177, 1084.05pt x 361.35pt>
+<figuras/vento/Vento_CFSR_2011_histvel.png, id=176, 1084.05pt x 361.35pt>
 File: figuras/vento/Vento_CFSR_2011_histvel.png Graphic file (type png)
 
 <use figuras/vento/Vento_CFSR_2011_histvel.png>
 Package pdftex.def Info: figuras/vento/Vento_CFSR_2011_histvel.png used on inpu
-t line 705.
+t line 716.
 (pdftex.def)             Requested size: 532.0695pt x 177.3608pt.
 
-<figuras/vento/Vento_Metar_2011_histdir.png, id=178, 1084.05pt x 361.35pt>
+<figuras/vento/Vento_Metar_2011_histdir.png, id=177, 1084.05pt x 361.35pt>
 File: figuras/vento/Vento_Metar_2011_histdir.png Graphic file (type png)
 
 <use figuras/vento/Vento_Metar_2011_histdir.png>
 Package pdftex.def Info: figuras/vento/Vento_Metar_2011_histdir.png used on inp
-ut line 712.
+ut line 723.
 (pdftex.def)             Requested size: 532.0695pt x 177.3608pt.
 
-<figuras/vento/Vento_CFSR_2011_histdir.png, id=179, 1084.05pt x 361.35pt>
+<figuras/vento/Vento_CFSR_2011_histdir.png, id=178, 1084.05pt x 361.35pt>
 File: figuras/vento/Vento_CFSR_2011_histdir.png Graphic file (type png)
 
 <use figuras/vento/Vento_CFSR_2011_histdir.png>
 Package pdftex.def Info: figuras/vento/Vento_CFSR_2011_histdir.png used on inpu
-t line 718.
+t line 729.
 (pdftex.def)             Requested size: 532.0695pt x 177.3608pt.
 
-<figuras/vento/Vento_Metar_Nans.png, id=180, 1084.05pt x 361.35pt>
+<figuras/vento/Vento_Metar_Nans.png, id=179, 1084.05pt x 361.35pt>
 File: figuras/vento/Vento_Metar_Nans.png Graphic file (type png)
 
 <use figuras/vento/Vento_Metar_Nans.png>
 Package pdftex.def Info: figuras/vento/Vento_Metar_Nans.png used on input line 
-724.
+735.
 (pdftex.def)             Requested size: 773.91794pt x 257.98285pt.
 
-Overfull \hbox (28.45572pt too wide) in paragraph at lines 724--726
+Overfull \hbox (28.45572pt too wide) in paragraph at lines 735--737
  [][] 
  []
 
-<figuras/dist_conjunta_vento.png, id=181, 1513.655pt x 616.3025pt>
+<figuras/dist_conjunta_vento.png, id=180, 1513.655pt x 616.3025pt>
 File: figuras/dist_conjunta_vento.png Graphic file (type png)
 
 <use figuras/dist_conjunta_vento.png>
-Package pdftex.def Info: figuras/dist_conjunta_vento.png used on input line 730
+Package pdftex.def Info: figuras/dist_conjunta_vento.png used on input line 741
 .
 (pdftex.def)             Requested size: 773.91794pt x 315.10945pt.
 
-Overfull \hbox (28.45572pt too wide) in paragraph at lines 730--732
+Overfull \hbox (28.45572pt too wide) in paragraph at lines 741--743
  [][] 
  []
 
@@ -815,51 +806,51 @@ Overfull \hbox (28.45572pt too wide) in paragraph at lines 730--732
 1_histvel.png>] [42 <./figuras/vento/Vento_Metar_2011_histdir.png> <./figuras/v
 ento/Vento_CFSR_2011_histdir.png>] [43 <./figuras/vento/Vento_Metar_Nans.png>] 
 [44 <./figuras/dist_conjunta_vento.png>]
-LaTeX Font Info:    Try loading font information for OML+cmr on input line 762.
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 774.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/omlcmr.fd
 File: omlcmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <12> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 762.
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 774.
  [45
 
 ]
-<figuras/vento/Vento_CFSR_2011-15_Windrose_Verao.png, id=203, 1084.05pt x 722.7
+<figuras/vento/Vento_CFSR_2011-15_Windrose_Verao.png, id=202, 1084.05pt x 722.7
 pt>
 File: figuras/vento/Vento_CFSR_2011-15_Windrose_Verao.png Graphic file (type pn
 g)
  <use figuras/vento/Vento_CFSR_2011-15_Windrose_Verao.png>
 Package pdftex.def Info: figuras/vento/Vento_CFSR_2011-15_Windrose_Verao.png us
-ed on input line 769.
+ed on input line 781.
 (pdftex.def)             Requested size: 532.0695pt x 354.72157pt.
 
-<figuras/vento/Vento_CFSR_2011-15_Windrose_Outono.png, id=204, 1084.05pt x 722.
+<figuras/vento/Vento_CFSR_2011-15_Windrose_Outono.png, id=203, 1084.05pt x 722.
 7pt>
 File: figuras/vento/Vento_CFSR_2011-15_Windrose_Outono.png Graphic file (type p
 ng)
  <use figuras/vento/Vento_CFSR_2011-15_Windrose_Outono.png>
 Package pdftex.def Info: figuras/vento/Vento_CFSR_2011-15_Windrose_Outono.png u
-sed on input line 775.
+sed on input line 787.
 (pdftex.def)             Requested size: 532.0695pt x 354.72157pt.
 
-<figuras/vento/Vento_CFSR_2011-15_Windrose_Inverno.png, id=205, 1084.05pt x 722
+<figuras/vento/Vento_CFSR_2011-15_Windrose_Inverno.png, id=204, 1084.05pt x 722
 .7pt>
 File: figuras/vento/Vento_CFSR_2011-15_Windrose_Inverno.png Graphic file (type 
 png)
  <use figuras/vento/Vento_CFSR_2011-15_Windrose_Inverno.png>
 Package pdftex.def Info: figuras/vento/Vento_CFSR_2011-15_Windrose_Inverno.png 
-used on input line 780.
+used on input line 792.
 (pdftex.def)             Requested size: 532.0695pt x 354.72157pt.
 
-<figuras/vento/Vento_CFSR_2011-15_Windrose_Primavera.png, id=206, 1084.05pt x 7
+<figuras/vento/Vento_CFSR_2011-15_Windrose_Primavera.png, id=205, 1084.05pt x 7
 22.7pt>
 File: figuras/vento/Vento_CFSR_2011-15_Windrose_Primavera.png Graphic file (typ
 e png)
  <use figuras/vento/Vento_CFSR_2011-15_Windrose_Primavera.png>
 Package pdftex.def Info: figuras/vento/Vento_CFSR_2011-15_Windrose_Primavera.pn
-g used on input line 785.
+g used on input line 797.
 (pdftex.def)             Requested size: 532.0695pt x 354.72157pt.
  [46
 
@@ -869,35 +860,11 @@ Vento_CFSR_2011-15_Windrose_Outono.png>] [48 <./figuras/vento/Vento_CFSR_2011-1
 vera.png>] [50
 
 ] [51]
-<figuras/Nivel_Previsao_Geral_ST001.png, id=231, 867.24pt x 361.35pt>
+<figuras/Nivel_Previsao_Geral_ST001.png, id=230, 867.24pt x 361.35pt>
 File: figuras/Nivel_Previsao_Geral_ST001.png Graphic file (type png)
 
 <use figuras/Nivel_Previsao_Geral_ST001.png>
 Package pdftex.def Info: figuras/Nivel_Previsao_Geral_ST001.png used on input l
-ine 844.
-(pdftex.def)             Requested size: 773.91794pt x 322.4827pt.
-
-Overfull \hbox (28.45572pt too wide) in paragraph at lines 844--846
- [][] 
- []
-
-<figuras/Nivel_Previsao_Geral_ST002.png, id=232, 867.24pt x 361.35pt>
-File: figuras/Nivel_Previsao_Geral_ST002.png Graphic file (type png)
-
-<use figuras/Nivel_Previsao_Geral_ST002.png>
-Package pdftex.def Info: figuras/Nivel_Previsao_Geral_ST002.png used on input l
-ine 850.
-(pdftex.def)             Requested size: 773.91794pt x 322.4827pt.
-
-Overfull \hbox (28.45572pt too wide) in paragraph at lines 850--852
- [][] 
- []
-
-<figuras/Nivel_Previsao_Geral_ST003.png, id=233, 867.24pt x 361.35pt>
-File: figuras/Nivel_Previsao_Geral_ST003.png Graphic file (type png)
-
-<use figuras/Nivel_Previsao_Geral_ST003.png>
-Package pdftex.def Info: figuras/Nivel_Previsao_Geral_ST003.png used on input l
 ine 856.
 (pdftex.def)             Requested size: 773.91794pt x 322.4827pt.
 
@@ -905,27 +872,51 @@ Overfull \hbox (28.45572pt too wide) in paragraph at lines 856--858
  [][] 
  []
 
-<figuras/Nivel_Previsto_Penha2.png, id=234, 794.97pt x 361.35pt>
-File: figuras/Nivel_Previsto_Penha2.png Graphic file (type png)
+<figuras/Nivel_Previsao_Geral_ST002.png, id=231, 867.24pt x 361.35pt>
+File: figuras/Nivel_Previsao_Geral_ST002.png Graphic file (type png)
 
-<use figuras/Nivel_Previsto_Penha2.png>
-Package pdftex.def Info: figuras/Nivel_Previsto_Penha2.png used on input line 8
-62.
-(pdftex.def)             Requested size: 773.91794pt x 351.79378pt.
+<use figuras/Nivel_Previsao_Geral_ST002.png>
+Package pdftex.def Info: figuras/Nivel_Previsao_Geral_ST002.png used on input l
+ine 862.
+(pdftex.def)             Requested size: 773.91794pt x 322.4827pt.
 
 Overfull \hbox (28.45572pt too wide) in paragraph at lines 862--864
  [][] 
  []
 
-<figuras/Nivel_Penha_MareMeteoNegativa.png, id=235, 1178.7237pt x 615.9813pt>
+<figuras/Nivel_Previsao_Geral_ST003.png, id=232, 867.24pt x 361.35pt>
+File: figuras/Nivel_Previsao_Geral_ST003.png Graphic file (type png)
+
+<use figuras/Nivel_Previsao_Geral_ST003.png>
+Package pdftex.def Info: figuras/Nivel_Previsao_Geral_ST003.png used on input l
+ine 868.
+(pdftex.def)             Requested size: 773.91794pt x 322.4827pt.
+
+Overfull \hbox (28.45572pt too wide) in paragraph at lines 868--870
+ [][] 
+ []
+
+<figuras/Nivel_Previsto_Penha2.png, id=233, 794.97pt x 361.35pt>
+File: figuras/Nivel_Previsto_Penha2.png Graphic file (type png)
+
+<use figuras/Nivel_Previsto_Penha2.png>
+Package pdftex.def Info: figuras/Nivel_Previsto_Penha2.png used on input line 8
+74.
+(pdftex.def)             Requested size: 773.91794pt x 351.79378pt.
+
+Overfull \hbox (28.45572pt too wide) in paragraph at lines 874--876
+ [][] 
+ []
+
+<figuras/Nivel_Penha_MareMeteoNegativa.png, id=234, 1178.7237pt x 615.9813pt>
 File: figuras/Nivel_Penha_MareMeteoNegativa.png Graphic file (type png)
 
 <use figuras/Nivel_Penha_MareMeteoNegativa.png>
 Package pdftex.def Info: figuras/Nivel_Penha_MareMeteoNegativa.png used on inpu
-t line 868.
+t line 880.
 (pdftex.def)             Requested size: 773.91794pt x 404.44351pt.
 
-Overfull \hbox (28.45572pt too wide) in paragraph at lines 868--870
+Overfull \hbox (28.45572pt too wide) in paragraph at lines 880--882
  [][] 
  []
 
@@ -934,7 +925,7 @@ Overfull \hbox (28.45572pt too wide) in paragraph at lines 868--870
  <./figuras/Nivel_Previsao_Geral_ST001.png>] [53 <./figuras/Nivel_Previsao_Gera
 l_ST002.png>] [54 <./figuras/Nivel_Previsao_Geral_ST003.png>] [55 <./figuras/Ni
 vel_Previsto_Penha2.png>] [56 <./figuras/Nivel_Penha_MareMeteoNegativa.png>]
-Overfull \hbox (7.00526pt too wide) in paragraph at lines 881--882
+Overfull \hbox (7.00526pt too wide) in paragraph at lines 893--894
 []\OT1/cmr/m/n/12 Quando com-pa-ra-mos as cons-tan-tes harm^onicas dos ADCPs de
  Pi^^Xcarras (30 dias de medi^^Xc~ao)
  []
@@ -944,11 +935,11 @@ Overfull \hbox (7.00526pt too wide) in paragraph at lines 881--882
 ] [58
 
 ] [59] [60] [61] [62]
-<figuras/femarPenha.png, id=276, 642.4pt x 929.4725pt>
+<figuras/femarPenha.png, id=275, 642.4pt x 929.4725pt>
 File: figuras/femarPenha.png Graphic file (type png)
 
 <use figuras/femarPenha.png>
-Package pdftex.def Info: figuras/femarPenha.png used on input line 1016.
+Package pdftex.def Info: figuras/femarPenha.png used on input line 1028.
 (pdftex.def)             Requested size: 435.32422pt x 629.8772pt.
  [63
 
@@ -957,15 +948,15 @@ Package pdftex.def Info: figuras/femarPenha.png used on input line 1016.
 ] [65] [66
 
 ]
-[67] <figuras/Espectro_FFT_Penha_Periodo.png, id=294, 794.97pt x 361.35pt>
+[67] <figuras/Espectro_FFT_Penha_Periodo.png, id=293, 794.97pt x 361.35pt>
 File: figuras/Espectro_FFT_Penha_Periodo.png Graphic file (type png)
 
 <use figuras/Espectro_FFT_Penha_Periodo.png>
 Package pdftex.def Info: figuras/Espectro_FFT_Penha_Periodo.png used on input l
-ine 1105.
+ine 1117.
 (pdftex.def)             Requested size: 773.91794pt x 351.79378pt.
 
-Overfull \hbox (28.45572pt too wide) in paragraph at lines 1105--1107
+Overfull \hbox (28.45572pt too wide) in paragraph at lines 1117--1119
  [][] 
  []
 
@@ -974,74 +965,50 @@ Overfull \hbox (28.45572pt too wide) in paragraph at lines 1105--1107
  <./figuras/Espectro_FFT_Penha_Periodo.png>] [69
 
 ]
-<figuras/Temperatura_Geral.png, id=302, 1084.05pt x 361.35pt>
+<figuras/Temperatura_Geral.png, id=301, 1084.05pt x 361.35pt>
 File: figuras/Temperatura_Geral.png Graphic file (type png)
 
 <use figuras/Temperatura_Geral.png>
-Package pdftex.def Info: figuras/Temperatura_Geral.png used on input line 1135.
+Package pdftex.def Info: figuras/Temperatura_Geral.png used on input line 1147.
 
 (pdftex.def)             Requested size: 773.91794pt x 257.98285pt.
 
-Overfull \hbox (28.45572pt too wide) in paragraph at lines 1135--1137
+Overfull \hbox (28.45572pt too wide) in paragraph at lines 1147--1149
  [][] 
  []
 
 [70
 
  <./figuras/Temperatura_Geral.png>]
-<figuras/CurrentRose_ST001_DepthAv.png, id=307, 1084.05pt x 722.7pt>
+<figuras/CurrentRose_ST001_DepthAv.png, id=306, 1084.05pt x 722.7pt>
 File: figuras/CurrentRose_ST001_DepthAv.png Graphic file (type png)
 
 <use figuras/CurrentRose_ST001_DepthAv.png>
 Package pdftex.def Info: figuras/CurrentRose_ST001_DepthAv.png used on input li
-ne 1163.
+ne 1175.
 (pdftex.def)             Requested size: 483.69687pt x 322.46614pt.
 
-<figuras/CurrentRose_ST002_DepthAv.png, id=308, 987.2082pt x 537.6888pt>
+<figuras/CurrentRose_ST002_DepthAv.png, id=307, 987.2082pt x 537.6888pt>
 File: figuras/CurrentRose_ST002_DepthAv.png Graphic file (type png)
 
 <use figuras/CurrentRose_ST002_DepthAv.png>
 Package pdftex.def Info: figuras/CurrentRose_ST002_DepthAv.png used on input li
-ne 1169.
+ne 1181.
 (pdftex.def)             Requested size: 483.69687pt x 263.4452pt.
 
-<figuras/CurrentRose_ST003_DepthAv.png, id=309, 987.2082pt x 537.6888pt>
+<figuras/CurrentRose_ST003_DepthAv.png, id=308, 987.2082pt x 537.6888pt>
 File: figuras/CurrentRose_ST003_DepthAv.png Graphic file (type png)
 
 <use figuras/CurrentRose_ST003_DepthAv.png>
 Package pdftex.def Info: figuras/CurrentRose_ST003_DepthAv.png used on input li
-ne 1175.
+ne 1187.
 (pdftex.def)             Requested size: 483.69687pt x 263.4452pt.
 
-<figuras/Corrente_ST001_HistVel.png, id=310, 1084.05pt x 361.35pt>
+<figuras/Corrente_ST001_HistVel.png, id=309, 1084.05pt x 361.35pt>
 File: figuras/Corrente_ST001_HistVel.png Graphic file (type png)
 
 <use figuras/Corrente_ST001_HistVel.png>
 Package pdftex.def Info: figuras/Corrente_ST001_HistVel.png used on input line 
-1181.
-(pdftex.def)             Requested size: 532.0695pt x 177.3608pt.
-
-Overfull \hbox (48.37263pt too wide) in paragraph at lines 1181--1183
- [][] 
- []
-
-<figuras/Corrente_ST002_HistVel.png, id=311, 1084.05pt x 361.35pt>
-File: figuras/Corrente_ST002_HistVel.png Graphic file (type png)
-
-<use figuras/Corrente_ST002_HistVel.png>
-Package pdftex.def Info: figuras/Corrente_ST002_HistVel.png used on input line 
-1187.
-(pdftex.def)             Requested size: 532.0695pt x 177.3608pt.
-
-Overfull \hbox (48.37263pt too wide) in paragraph at lines 1187--1189
- [][] 
- []
-
-<figuras/Corrente_ST003_HistVel.png, id=312, 1084.05pt x 361.35pt>
-File: figuras/Corrente_ST003_HistVel.png Graphic file (type png)
-
-<use figuras/Corrente_ST003_HistVel.png>
-Package pdftex.def Info: figuras/Corrente_ST003_HistVel.png used on input line 
 1193.
 (pdftex.def)             Requested size: 532.0695pt x 177.3608pt.
 
@@ -1049,32 +1016,56 @@ Overfull \hbox (48.37263pt too wide) in paragraph at lines 1193--1195
  [][] 
  []
 
+<figuras/Corrente_ST002_HistVel.png, id=310, 1084.05pt x 361.35pt>
+File: figuras/Corrente_ST002_HistVel.png Graphic file (type png)
 
-<figuras/english/ST001_cumulative_velocity_hist.png, id=313, 578.16pt x 433.62p
+<use figuras/Corrente_ST002_HistVel.png>
+Package pdftex.def Info: figuras/Corrente_ST002_HistVel.png used on input line 
+1199.
+(pdftex.def)             Requested size: 532.0695pt x 177.3608pt.
+
+Overfull \hbox (48.37263pt too wide) in paragraph at lines 1199--1201
+ [][] 
+ []
+
+<figuras/Corrente_ST003_HistVel.png, id=311, 1084.05pt x 361.35pt>
+File: figuras/Corrente_ST003_HistVel.png Graphic file (type png)
+
+<use figuras/Corrente_ST003_HistVel.png>
+Package pdftex.def Info: figuras/Corrente_ST003_HistVel.png used on input line 
+1205.
+(pdftex.def)             Requested size: 532.0695pt x 177.3608pt.
+
+Overfull \hbox (48.37263pt too wide) in paragraph at lines 1205--1207
+ [][] 
+ []
+
+
+<figuras/english/ST001_cumulative_velocity_hist.png, id=312, 578.16pt x 433.62p
 t>
 File: figuras/english/ST001_cumulative_velocity_hist.png Graphic file (type png
 )
  <use figuras/english/ST001_cumulative_velocity_hist.png>
 Package pdftex.def Info: figuras/english/ST001_cumulative_velocity_hist.png use
-d on input line 1199.
+d on input line 1211.
 (pdftex.def)             Requested size: 386.95897pt x 290.21953pt.
 
-<figuras/english/ST002_cumulative_velocity_hist.png, id=314, 578.16pt x 433.62p
+<figuras/english/ST002_cumulative_velocity_hist.png, id=313, 578.16pt x 433.62p
 t>
 File: figuras/english/ST002_cumulative_velocity_hist.png Graphic file (type png
 )
  <use figuras/english/ST002_cumulative_velocity_hist.png>
 Package pdftex.def Info: figuras/english/ST002_cumulative_velocity_hist.png use
-d on input line 1205.
+d on input line 1217.
 (pdftex.def)             Requested size: 386.95897pt x 290.21953pt.
 
-<figuras/english/ST003_cumulative_velocity_hist.png, id=315, 578.16pt x 433.62p
+<figuras/english/ST003_cumulative_velocity_hist.png, id=314, 578.16pt x 433.62p
 t>
 File: figuras/english/ST003_cumulative_velocity_hist.png Graphic file (type png
 )
  <use figuras/english/ST003_cumulative_velocity_hist.png>
 Package pdftex.def Info: figuras/english/ST003_cumulative_velocity_hist.png use
-d on input line 1211.
+d on input line 1223.
 (pdftex.def)             Requested size: 386.95897pt x 290.21953pt.
  [71
 
@@ -1085,35 +1076,11 @@ pthAv.png>]
 tVel.png> <./figuras/english/ST001_cumulative_velocity_hist.png>] [75 <./figura
 s/english/ST002_cumulative_velocity_hist.png> <./figuras/english/ST003_cumulati
 ve_velocity_hist.png>]
-<figuras/Corrente_Quiver_ST001.png, id=341, 794.97pt x 361.35pt>
+<figuras/Corrente_Quiver_ST001.png, id=340, 794.97pt x 361.35pt>
 File: figuras/Corrente_Quiver_ST001.png Graphic file (type png)
 
 <use figuras/Corrente_Quiver_ST001.png>
 Package pdftex.def Info: figuras/Corrente_Quiver_ST001.png used on input line 1
-218.
-(pdftex.def)             Requested size: 773.91794pt x 351.79378pt.
-
-Overfull \hbox (28.45572pt too wide) in paragraph at lines 1218--1220
- [][] 
- []
-
-<figuras/Corrente_Quiver_ST002.png, id=342, 794.97pt x 361.35pt>
-File: figuras/Corrente_Quiver_ST002.png Graphic file (type png)
-
-<use figuras/Corrente_Quiver_ST002.png>
-Package pdftex.def Info: figuras/Corrente_Quiver_ST002.png used on input line 1
-224.
-(pdftex.def)             Requested size: 773.91794pt x 351.79378pt.
-
-Overfull \hbox (28.45572pt too wide) in paragraph at lines 1224--1226
- [][] 
- []
-
-<figuras/Corrente_Quiver_ST003.png, id=343, 794.97pt x 361.35pt>
-File: figuras/Corrente_Quiver_ST003.png Graphic file (type png)
-
-<use figuras/Corrente_Quiver_ST003.png>
-Package pdftex.def Info: figuras/Corrente_Quiver_ST003.png used on input line 1
 230.
 (pdftex.def)             Requested size: 773.91794pt x 351.79378pt.
 
@@ -1121,155 +1088,179 @@ Overfull \hbox (28.45572pt too wide) in paragraph at lines 1230--1232
  [][] 
  []
 
-<figuras/camadas/CurrentRose_ST001_Cel1.png, id=344, 1084.05pt x 722.7pt>
+<figuras/Corrente_Quiver_ST002.png, id=341, 794.97pt x 361.35pt>
+File: figuras/Corrente_Quiver_ST002.png Graphic file (type png)
+
+<use figuras/Corrente_Quiver_ST002.png>
+Package pdftex.def Info: figuras/Corrente_Quiver_ST002.png used on input line 1
+236.
+(pdftex.def)             Requested size: 773.91794pt x 351.79378pt.
+
+Overfull \hbox (28.45572pt too wide) in paragraph at lines 1236--1238
+ [][] 
+ []
+
+<figuras/Corrente_Quiver_ST003.png, id=342, 794.97pt x 361.35pt>
+File: figuras/Corrente_Quiver_ST003.png Graphic file (type png)
+
+<use figuras/Corrente_Quiver_ST003.png>
+Package pdftex.def Info: figuras/Corrente_Quiver_ST003.png used on input line 1
+242.
+(pdftex.def)             Requested size: 773.91794pt x 351.79378pt.
+
+Overfull \hbox (28.45572pt too wide) in paragraph at lines 1242--1244
+ [][] 
+ []
+
+<figuras/camadas/CurrentRose_ST001_Cel1.png, id=343, 1084.05pt x 722.7pt>
 File: figuras/camadas/CurrentRose_ST001_Cel1.png Graphic file (type png)
 
 <use figuras/camadas/CurrentRose_ST001_Cel1.png>
 Package pdftex.def Info: figuras/camadas/CurrentRose_ST001_Cel1.png used on inp
-ut line 1239.
+ut line 1251.
 (pdftex.def)             Requested size: 725.5453pt x 483.71025pt.
 
 
-LaTeX Warning: Float too large for page by 27.51338pt on input line 1242.
+LaTeX Warning: Float too large for page by 27.51338pt on input line 1254.
 
 [76
 
  <./figuras/Corrente_Quiver_ST001.png>]
-<figuras/camadas/CurrentRose_ST001_Cel2.png, id=349, 1084.05pt x 722.7pt>
+<figuras/camadas/CurrentRose_ST001_Cel2.png, id=348, 1084.05pt x 722.7pt>
 File: figuras/camadas/CurrentRose_ST001_Cel2.png Graphic file (type png)
 
 <use figuras/camadas/CurrentRose_ST001_Cel2.png>
 Package pdftex.def Info: figuras/camadas/CurrentRose_ST001_Cel2.png used on inp
-ut line 1246.
+ut line 1258.
 (pdftex.def)             Requested size: 725.5453pt x 483.71025pt.
 
 
-LaTeX Warning: Float too large for page by 27.51338pt on input line 1249.
+LaTeX Warning: Float too large for page by 27.51338pt on input line 1261.
 
-<figuras/camadas/CurrentRose_ST001_Cel3.png, id=350, 1084.05pt x 722.7pt>
+<figuras/camadas/CurrentRose_ST001_Cel3.png, id=349, 1084.05pt x 722.7pt>
 File: figuras/camadas/CurrentRose_ST001_Cel3.png Graphic file (type png)
 
 <use figuras/camadas/CurrentRose_ST001_Cel3.png>
 Package pdftex.def Info: figuras/camadas/CurrentRose_ST001_Cel3.png used on inp
-ut line 1252.
+ut line 1264.
 (pdftex.def)             Requested size: 725.5453pt x 483.71025pt.
 
 
-LaTeX Warning: Float too large for page by 27.51338pt on input line 1255.
+LaTeX Warning: Float too large for page by 27.51338pt on input line 1267.
 
 [77 <./figuras/Corrente_Quiver_ST002.png>] [78 <./figuras/Corrente_Quiver_ST003
 .png>] [79 <./figuras/camadas/CurrentRose_ST001_Cel1.png>] [80 <./figuras/camad
 as/CurrentRose_ST001_Cel2.png>] [81 <./figuras/camadas/CurrentRose_ST001_Cel3.p
-ng>] <figuras/camadas/CurrentRose_ST002_Cel1.png, id=372, 1084.05pt x 722.7pt>
+ng>] <figuras/camadas/CurrentRose_ST002_Cel1.png, id=371, 1084.05pt x 722.7pt>
 File: figuras/camadas/CurrentRose_ST002_Cel1.png Graphic file (type png)
 
 <use figuras/camadas/CurrentRose_ST002_Cel1.png>
 Package pdftex.def Info: figuras/camadas/CurrentRose_ST002_Cel1.png used on inp
-ut line 1260.
-(pdftex.def)             Requested size: 725.5453pt x 483.71025pt.
-
-
-LaTeX Warning: Float too large for page by 27.51338pt on input line 1263.
-
-<figuras/camadas/CurrentRose_ST002_Cel2.png, id=373, 1084.05pt x 722.7pt>
-File: figuras/camadas/CurrentRose_ST002_Cel2.png Graphic file (type png)
-
-<use figuras/camadas/CurrentRose_ST002_Cel2.png>
-Package pdftex.def Info: figuras/camadas/CurrentRose_ST002_Cel2.png used on inp
-ut line 1266.
-(pdftex.def)             Requested size: 725.5453pt x 483.71025pt.
-
-
-LaTeX Warning: Float too large for page by 27.51338pt on input line 1269.
-
-<figuras/camadas/CurrentRose_ST002_Cel3.png, id=374, 1084.05pt x 722.7pt>
-File: figuras/camadas/CurrentRose_ST002_Cel3.png Graphic file (type png)
-
-<use figuras/camadas/CurrentRose_ST002_Cel3.png>
-Package pdftex.def Info: figuras/camadas/CurrentRose_ST002_Cel3.png used on inp
 ut line 1272.
 (pdftex.def)             Requested size: 725.5453pt x 483.71025pt.
 
 
 LaTeX Warning: Float too large for page by 27.51338pt on input line 1275.
 
-<figuras/camadas/CurrentRose_ST002_Cel4.png, id=375, 987.2082pt x 537.6888pt>
-File: figuras/camadas/CurrentRose_ST002_Cel4.png Graphic file (type png)
+<figuras/camadas/CurrentRose_ST002_Cel2.png, id=372, 1084.05pt x 722.7pt>
+File: figuras/camadas/CurrentRose_ST002_Cel2.png Graphic file (type png)
 
-<use figuras/camadas/CurrentRose_ST002_Cel4.png>
-Package pdftex.def Info: figuras/camadas/CurrentRose_ST002_Cel4.png used on inp
+<use figuras/camadas/CurrentRose_ST002_Cel2.png>
+Package pdftex.def Info: figuras/camadas/CurrentRose_ST002_Cel2.png used on inp
 ut line 1278.
-(pdftex.def)             Requested size: 773.91794pt x 421.52052pt.
+(pdftex.def)             Requested size: 725.5453pt x 483.71025pt.
 
-Overfull \hbox (28.45572pt too wide) in paragraph at lines 1278--1280
- [][] 
- []
 
-<figuras/camadas/CurrentRose_ST002_Cel5.png, id=376, 1084.05pt x 722.7pt>
-File: figuras/camadas/CurrentRose_ST002_Cel5.png Graphic file (type png)
+LaTeX Warning: Float too large for page by 27.51338pt on input line 1281.
 
-<use figuras/camadas/CurrentRose_ST002_Cel5.png>
-Package pdftex.def Info: figuras/camadas/CurrentRose_ST002_Cel5.png used on inp
+<figuras/camadas/CurrentRose_ST002_Cel3.png, id=373, 1084.05pt x 722.7pt>
+File: figuras/camadas/CurrentRose_ST002_Cel3.png Graphic file (type png)
+
+<use figuras/camadas/CurrentRose_ST002_Cel3.png>
+Package pdftex.def Info: figuras/camadas/CurrentRose_ST002_Cel3.png used on inp
 ut line 1284.
 (pdftex.def)             Requested size: 725.5453pt x 483.71025pt.
 
 
 LaTeX Warning: Float too large for page by 27.51338pt on input line 1287.
 
-<figuras/camadas/CurrentRose_ST002_Cel6.png, id=377, 1084.05pt x 722.7pt>
-File: figuras/camadas/CurrentRose_ST002_Cel6.png Graphic file (type png)
+<figuras/camadas/CurrentRose_ST002_Cel4.png, id=374, 987.2082pt x 537.6888pt>
+File: figuras/camadas/CurrentRose_ST002_Cel4.png Graphic file (type png)
 
-<use figuras/camadas/CurrentRose_ST002_Cel6.png>
-Package pdftex.def Info: figuras/camadas/CurrentRose_ST002_Cel6.png used on inp
+<use figuras/camadas/CurrentRose_ST002_Cel4.png>
+Package pdftex.def Info: figuras/camadas/CurrentRose_ST002_Cel4.png used on inp
 ut line 1290.
-(pdftex.def)             Requested size: 725.5453pt x 483.71025pt.
+(pdftex.def)             Requested size: 773.91794pt x 421.52052pt.
 
+Overfull \hbox (28.45572pt too wide) in paragraph at lines 1290--1292
+ [][] 
+ []
 
-LaTeX Warning: Float too large for page by 27.51338pt on input line 1293.
+<figuras/camadas/CurrentRose_ST002_Cel5.png, id=375, 1084.05pt x 722.7pt>
+File: figuras/camadas/CurrentRose_ST002_Cel5.png Graphic file (type png)
 
-<figuras/camadas/CurrentRose_ST002_Cel7.png, id=378, 1084.05pt x 722.7pt>
-File: figuras/camadas/CurrentRose_ST002_Cel7.png Graphic file (type png)
-
-<use figuras/camadas/CurrentRose_ST002_Cel7.png>
-Package pdftex.def Info: figuras/camadas/CurrentRose_ST002_Cel7.png used on inp
+<use figuras/camadas/CurrentRose_ST002_Cel5.png>
+Package pdftex.def Info: figuras/camadas/CurrentRose_ST002_Cel5.png used on inp
 ut line 1296.
 (pdftex.def)             Requested size: 725.5453pt x 483.71025pt.
 
 
 LaTeX Warning: Float too large for page by 27.51338pt on input line 1299.
 
-<figuras/camadas/CurrentRose_ST002_Cel8.png, id=379, 1084.05pt x 722.7pt>
-File: figuras/camadas/CurrentRose_ST002_Cel8.png Graphic file (type png)
+<figuras/camadas/CurrentRose_ST002_Cel6.png, id=376, 1084.05pt x 722.7pt>
+File: figuras/camadas/CurrentRose_ST002_Cel6.png Graphic file (type png)
 
-<use figuras/camadas/CurrentRose_ST002_Cel8.png>
-Package pdftex.def Info: figuras/camadas/CurrentRose_ST002_Cel8.png used on inp
+<use figuras/camadas/CurrentRose_ST002_Cel6.png>
+Package pdftex.def Info: figuras/camadas/CurrentRose_ST002_Cel6.png used on inp
 ut line 1302.
 (pdftex.def)             Requested size: 725.5453pt x 483.71025pt.
 
 
 LaTeX Warning: Float too large for page by 27.51338pt on input line 1305.
 
-<figuras/camadas/CurrentRose_ST002_Cel9.png, id=380, 1084.05pt x 722.7pt>
-File: figuras/camadas/CurrentRose_ST002_Cel9.png Graphic file (type png)
+<figuras/camadas/CurrentRose_ST002_Cel7.png, id=377, 1084.05pt x 722.7pt>
+File: figuras/camadas/CurrentRose_ST002_Cel7.png Graphic file (type png)
 
-<use figuras/camadas/CurrentRose_ST002_Cel9.png>
-Package pdftex.def Info: figuras/camadas/CurrentRose_ST002_Cel9.png used on inp
+<use figuras/camadas/CurrentRose_ST002_Cel7.png>
+Package pdftex.def Info: figuras/camadas/CurrentRose_ST002_Cel7.png used on inp
 ut line 1308.
 (pdftex.def)             Requested size: 725.5453pt x 483.71025pt.
 
 
 LaTeX Warning: Float too large for page by 27.51338pt on input line 1311.
 
+<figuras/camadas/CurrentRose_ST002_Cel8.png, id=378, 1084.05pt x 722.7pt>
+File: figuras/camadas/CurrentRose_ST002_Cel8.png Graphic file (type png)
 
-<figuras/camadas/CurrentRose_ST002_Cel10.png, id=381, 987.2082pt x 537.6888pt>
+<use figuras/camadas/CurrentRose_ST002_Cel8.png>
+Package pdftex.def Info: figuras/camadas/CurrentRose_ST002_Cel8.png used on inp
+ut line 1314.
+(pdftex.def)             Requested size: 725.5453pt x 483.71025pt.
+
+
+LaTeX Warning: Float too large for page by 27.51338pt on input line 1317.
+
+<figuras/camadas/CurrentRose_ST002_Cel9.png, id=379, 1084.05pt x 722.7pt>
+File: figuras/camadas/CurrentRose_ST002_Cel9.png Graphic file (type png)
+
+<use figuras/camadas/CurrentRose_ST002_Cel9.png>
+Package pdftex.def Info: figuras/camadas/CurrentRose_ST002_Cel9.png used on inp
+ut line 1320.
+(pdftex.def)             Requested size: 725.5453pt x 483.71025pt.
+
+
+LaTeX Warning: Float too large for page by 27.51338pt on input line 1323.
+
+
+<figuras/camadas/CurrentRose_ST002_Cel10.png, id=380, 987.2082pt x 537.6888pt>
 File: figuras/camadas/CurrentRose_ST002_Cel10.png Graphic file (type png)
 
 <use figuras/camadas/CurrentRose_ST002_Cel10.png>
 Package pdftex.def Info: figuras/camadas/CurrentRose_ST002_Cel10.png used on in
-put line 1314.
+put line 1326.
 (pdftex.def)             Requested size: 773.91794pt x 421.52052pt.
 
-Overfull \hbox (28.45572pt too wide) in paragraph at lines 1314--1316
+Overfull \hbox (28.45572pt too wide) in paragraph at lines 1326--1328
  [][] 
  []
 
@@ -1280,15 +1271,15 @@ entRose_ST002_Cel5.png>] [87 <./figuras/camadas/CurrentRose_ST002_Cel6.png>]
 [88 <./figuras/camadas/CurrentRose_ST002_Cel7.png>] [89 <./figuras/camadas/Curr
 entRose_ST002_Cel8.png>] [90 <./figuras/camadas/CurrentRose_ST002_Cel9.png>]
 [91 <./figuras/camadas/CurrentRose_ST002_Cel10.png>]
-<figuras/camadas/CurrentRose_ST003_Cel1.png, id=424, 987.2082pt x 537.6888pt>
+<figuras/camadas/CurrentRose_ST003_Cel1.png, id=423, 987.2082pt x 537.6888pt>
 File: figuras/camadas/CurrentRose_ST003_Cel1.png Graphic file (type png)
 
 <use figuras/camadas/CurrentRose_ST003_Cel1.png>
 Package pdftex.def Info: figuras/camadas/CurrentRose_ST003_Cel1.png used on inp
-ut line 1322.
+ut line 1334.
 (pdftex.def)             Requested size: 773.91794pt x 421.52052pt.
 
-Overfull \hbox (28.45572pt too wide) in paragraph at lines 1322--1324
+Overfull \hbox (28.45572pt too wide) in paragraph at lines 1334--1336
  [][] 
  []
 
@@ -1298,196 +1289,172 @@ Overfull \hbox (28.45572pt too wide) in paragraph at lines 1322--1324
 
 
  <./figuras/camadas/CurrentRose_ST003_Cel1.png>]
-<figuras/camadas/CurrentRose_ST003_Cel2.png, id=429, 987.2082pt x 537.6888pt>
+<figuras/camadas/CurrentRose_ST003_Cel2.png, id=428, 987.2082pt x 537.6888pt>
 File: figuras/camadas/CurrentRose_ST003_Cel2.png Graphic file (type png)
 
 <use figuras/camadas/CurrentRose_ST003_Cel2.png>
 Package pdftex.def Info: figuras/camadas/CurrentRose_ST003_Cel2.png used on inp
-ut line 1329.
+ut line 1341.
 (pdftex.def)             Requested size: 773.91794pt x 421.52052pt.
 
-Overfull \hbox (28.45572pt too wide) in paragraph at lines 1329--1331
+Overfull \hbox (28.45572pt too wide) in paragraph at lines 1341--1343
  [][] 
  []
 
 [93 <./figuras/camadas/CurrentRose_ST003_Cel2.png>]
-<figuras/camadas/CurrentRose_ST003_Cel3.png, id=434, 987.2082pt x 537.6888pt>
+<figuras/camadas/CurrentRose_ST003_Cel3.png, id=433, 987.2082pt x 537.6888pt>
 File: figuras/camadas/CurrentRose_ST003_Cel3.png Graphic file (type png)
 
 <use figuras/camadas/CurrentRose_ST003_Cel3.png>
 Package pdftex.def Info: figuras/camadas/CurrentRose_ST003_Cel3.png used on inp
-ut line 1336.
+ut line 1348.
 (pdftex.def)             Requested size: 773.91794pt x 421.52052pt.
 
-Overfull \hbox (28.45572pt too wide) in paragraph at lines 1336--1338
+Overfull \hbox (28.45572pt too wide) in paragraph at lines 1348--1350
  [][] 
  []
 
 [94 <./figuras/camadas/CurrentRose_ST003_Cel3.png>]
-<figuras/camadas/CurrentRose_ST003_Cel4.png, id=439, 987.2082pt x 537.6888pt>
+<figuras/camadas/CurrentRose_ST003_Cel4.png, id=438, 987.2082pt x 537.6888pt>
 File: figuras/camadas/CurrentRose_ST003_Cel4.png Graphic file (type png)
 
 <use figuras/camadas/CurrentRose_ST003_Cel4.png>
 Package pdftex.def Info: figuras/camadas/CurrentRose_ST003_Cel4.png used on inp
-ut line 1343.
+ut line 1355.
 (pdftex.def)             Requested size: 773.91794pt x 421.52052pt.
 
-Overfull \hbox (28.45572pt too wide) in paragraph at lines 1343--1345
+Overfull \hbox (28.45572pt too wide) in paragraph at lines 1355--1357
  [][] 
  []
 
 [95 <./figuras/camadas/CurrentRose_ST003_Cel4.png>]
-<figuras/camadas/CurrentRose_ST003_Cel5.png, id=445, 987.2082pt x 537.6888pt>
+<figuras/camadas/CurrentRose_ST003_Cel5.png, id=444, 987.2082pt x 537.6888pt>
 File: figuras/camadas/CurrentRose_ST003_Cel5.png Graphic file (type png)
 
 <use figuras/camadas/CurrentRose_ST003_Cel5.png>
 Package pdftex.def Info: figuras/camadas/CurrentRose_ST003_Cel5.png used on inp
-ut line 1350.
+ut line 1362.
 (pdftex.def)             Requested size: 773.91794pt x 421.52052pt.
 
-Overfull \hbox (28.45572pt too wide) in paragraph at lines 1350--1352
+Overfull \hbox (28.45572pt too wide) in paragraph at lines 1362--1364
  [][] 
  []
 
 [96 <./figuras/camadas/CurrentRose_ST003_Cel5.png>]
-<figuras/camadas/CurrentRose_ST003_Cel6.png, id=450, 987.2082pt x 537.6888pt>
+<figuras/camadas/CurrentRose_ST003_Cel6.png, id=449, 987.2082pt x 537.6888pt>
 File: figuras/camadas/CurrentRose_ST003_Cel6.png Graphic file (type png)
 
 <use figuras/camadas/CurrentRose_ST003_Cel6.png>
 Package pdftex.def Info: figuras/camadas/CurrentRose_ST003_Cel6.png used on inp
-ut line 1357.
+ut line 1369.
 (pdftex.def)             Requested size: 773.91794pt x 421.52052pt.
 
-Overfull \hbox (28.45572pt too wide) in paragraph at lines 1357--1359
+Overfull \hbox (28.45572pt too wide) in paragraph at lines 1369--1371
  [][] 
  []
 
 [97 <./figuras/camadas/CurrentRose_ST003_Cel6.png>]
-<figuras/camadas/CurrentRose_ST003_Cel7.png, id=455, 987.2082pt x 537.6888pt>
+<figuras/camadas/CurrentRose_ST003_Cel7.png, id=454, 987.2082pt x 537.6888pt>
 File: figuras/camadas/CurrentRose_ST003_Cel7.png Graphic file (type png)
 
 <use figuras/camadas/CurrentRose_ST003_Cel7.png>
 Package pdftex.def Info: figuras/camadas/CurrentRose_ST003_Cel7.png used on inp
-ut line 1364.
+ut line 1376.
 (pdftex.def)             Requested size: 773.91794pt x 421.52052pt.
 
-Overfull \hbox (28.45572pt too wide) in paragraph at lines 1364--1366
+Overfull \hbox (28.45572pt too wide) in paragraph at lines 1376--1378
  [][] 
  []
 
 [98 <./figuras/camadas/CurrentRose_ST003_Cel7.png>]
-<figuras/camadas/CurrentRose_ST003_Cel8.png, id=461, 987.2082pt x 537.6888pt>
+<figuras/camadas/CurrentRose_ST003_Cel8.png, id=460, 987.2082pt x 537.6888pt>
 File: figuras/camadas/CurrentRose_ST003_Cel8.png Graphic file (type png)
 
 <use figuras/camadas/CurrentRose_ST003_Cel8.png>
 Package pdftex.def Info: figuras/camadas/CurrentRose_ST003_Cel8.png used on inp
-ut line 1371.
+ut line 1383.
 (pdftex.def)             Requested size: 773.91794pt x 421.52052pt.
 
-Overfull \hbox (28.45572pt too wide) in paragraph at lines 1371--1373
+Overfull \hbox (28.45572pt too wide) in paragraph at lines 1383--1385
  [][] 
  []
 
 [99 <./figuras/camadas/CurrentRose_ST003_Cel8.png>]
-<figuras/camadas/CurrentRose_ST003_Cel9.png, id=466, 987.2082pt x 537.6888pt>
+<figuras/camadas/CurrentRose_ST003_Cel9.png, id=465, 987.2082pt x 537.6888pt>
 File: figuras/camadas/CurrentRose_ST003_Cel9.png Graphic file (type png)
 
 <use figuras/camadas/CurrentRose_ST003_Cel9.png>
 Package pdftex.def Info: figuras/camadas/CurrentRose_ST003_Cel9.png used on inp
-ut line 1378.
+ut line 1390.
 (pdftex.def)             Requested size: 773.91794pt x 421.52052pt.
 
-Overfull \hbox (28.45572pt too wide) in paragraph at lines 1378--1380
+Overfull \hbox (28.45572pt too wide) in paragraph at lines 1390--1392
  [][] 
  []
 
 [100 <./figuras/camadas/CurrentRose_ST003_Cel9.png>]
-<figuras/camadas/CurrentRose_ST003_Cel10.png, id=471, 987.2082pt x 537.6888pt>
+<figuras/camadas/CurrentRose_ST003_Cel10.png, id=470, 987.2082pt x 537.6888pt>
 File: figuras/camadas/CurrentRose_ST003_Cel10.png Graphic file (type png)
 
 <use figuras/camadas/CurrentRose_ST003_Cel10.png>
 Package pdftex.def Info: figuras/camadas/CurrentRose_ST003_Cel10.png used on in
-put line 1385.
+put line 1397.
 (pdftex.def)             Requested size: 773.91794pt x 421.52052pt.
 
-Overfull \hbox (28.45572pt too wide) in paragraph at lines 1385--1387
+Overfull \hbox (28.45572pt too wide) in paragraph at lines 1397--1399
  [][] 
  []
 
 [101 <./figuras/camadas/CurrentRose_ST003_Cel10.png>]
-<figuras/camadas/CurrentRose_ST003_Cel11.png, id=477, 987.2082pt x 537.6888pt>
+<figuras/camadas/CurrentRose_ST003_Cel11.png, id=476, 987.2082pt x 537.6888pt>
 File: figuras/camadas/CurrentRose_ST003_Cel11.png Graphic file (type png)
 
 <use figuras/camadas/CurrentRose_ST003_Cel11.png>
 Package pdftex.def Info: figuras/camadas/CurrentRose_ST003_Cel11.png used on in
-put line 1392.
+put line 1404.
 (pdftex.def)             Requested size: 773.91794pt x 421.52052pt.
 
-Overfull \hbox (28.45572pt too wide) in paragraph at lines 1392--1394
+Overfull \hbox (28.45572pt too wide) in paragraph at lines 1404--1406
  [][] 
  []
 
 [102 <./figuras/camadas/CurrentRose_ST003_Cel11.png>]
-<figuras/camadas/CurrentRose_ST003_Cel12.png, id=482, 987.2082pt x 537.6888pt>
+<figuras/camadas/CurrentRose_ST003_Cel12.png, id=481, 987.2082pt x 537.6888pt>
 File: figuras/camadas/CurrentRose_ST003_Cel12.png Graphic file (type png)
 
 <use figuras/camadas/CurrentRose_ST003_Cel12.png>
 Package pdftex.def Info: figuras/camadas/CurrentRose_ST003_Cel12.png used on in
-put line 1399.
+put line 1411.
 (pdftex.def)             Requested size: 773.91794pt x 421.52052pt.
 
-Overfull \hbox (28.45572pt too wide) in paragraph at lines 1399--1401
+Overfull \hbox (28.45572pt too wide) in paragraph at lines 1411--1413
  [][] 
  []
 
 [103 <./figuras/camadas/CurrentRose_ST003_Cel12.png>]
-<figuras/Grade.png, id=487, 431.6125pt x 579.16376pt>
+<figuras/Grade.png, id=486, 431.6125pt x 579.16376pt>
 File: figuras/Grade.png Graphic file (type png)
  <use figuras/Grade.png>
-Package pdftex.def Info: figuras/Grade.png used on input line 1431.
+Package pdftex.def Info: figuras/Grade.png used on input line 1443.
 (pdftex.def)             Requested size: 483.69687pt x 649.07434pt.
 
-<figuras/Batimetria.png, id=488, 522.95375pt x 585.18625pt>
+<figuras/Batimetria.png, id=487, 578.16pt x 433.62pt>
 File: figuras/Batimetria.png Graphic file (type png)
 
 <use figuras/Batimetria.png>
-Package pdftex.def Info: figuras/Batimetria.png used on input line 1440.
-(pdftex.def)             Requested size: 483.69687pt x 541.27095pt.
+Package pdftex.def Info: figuras/Batimetria.png used on input line 1452.
+(pdftex.def)             Requested size: 483.69687pt x 362.76945pt.
  [104
 
 
-] [105 <./figuras/Grade.png>] [106 <./figuras/Batimetria.png>] [107
+] [105 <./figuras/Grade.png>] [106 <./figuras/Batimetria.png (PNG copy)>] [107
 
 ] [108]
-<figuras/Calibracao/RMSE_U_st001_Refined23.png, id=505, 867.24pt x 433.62pt>
+<figuras/Calibracao/RMSE_U_st001_Refined23.png, id=504, 867.24pt x 433.62pt>
 File: figuras/Calibracao/RMSE_U_st001_Refined23.png Graphic file (type png)
 
 <use figuras/Calibracao/RMSE_U_st001_Refined23.png>
 Package pdftex.def Info: figuras/Calibracao/RMSE_U_st001_Refined23.png used on 
-input line 1488.
-(pdftex.def)             Requested size: 773.91794pt x 386.97923pt.
-
-Overfull \hbox (28.45572pt too wide) in paragraph at lines 1488--1490
- [][] 
- []
-
-<figuras/Calibracao/RMSE_U_st002_Refined23.png, id=506, 867.24pt x 433.62pt>
-File: figuras/Calibracao/RMSE_U_st002_Refined23.png Graphic file (type png)
-
-<use figuras/Calibracao/RMSE_U_st002_Refined23.png>
-Package pdftex.def Info: figuras/Calibracao/RMSE_U_st002_Refined23.png used on 
-input line 1494.
-(pdftex.def)             Requested size: 773.91794pt x 386.97923pt.
-
-Overfull \hbox (28.45572pt too wide) in paragraph at lines 1494--1496
- [][] 
- []
-
-<figuras/Calibracao/RMSE_U_st003_Refined23.png, id=507, 867.24pt x 433.62pt>
-File: figuras/Calibracao/RMSE_U_st003_Refined23.png Graphic file (type png)
-
-<use figuras/Calibracao/RMSE_U_st003_Refined23.png>
-Package pdftex.def Info: figuras/Calibracao/RMSE_U_st003_Refined23.png used on 
 input line 1500.
 (pdftex.def)             Requested size: 773.91794pt x 386.97923pt.
 
@@ -1495,11 +1462,11 @@ Overfull \hbox (28.45572pt too wide) in paragraph at lines 1500--1502
  [][] 
  []
 
-<figuras/Calibracao/RMSE_V_st001_Refined23.png, id=508, 867.24pt x 433.62pt>
-File: figuras/Calibracao/RMSE_V_st001_Refined23.png Graphic file (type png)
+<figuras/Calibracao/RMSE_U_st002_Refined23.png, id=505, 867.24pt x 433.62pt>
+File: figuras/Calibracao/RMSE_U_st002_Refined23.png Graphic file (type png)
 
-<use figuras/Calibracao/RMSE_V_st001_Refined23.png>
-Package pdftex.def Info: figuras/Calibracao/RMSE_V_st001_Refined23.png used on 
+<use figuras/Calibracao/RMSE_U_st002_Refined23.png>
+Package pdftex.def Info: figuras/Calibracao/RMSE_U_st002_Refined23.png used on 
 input line 1506.
 (pdftex.def)             Requested size: 773.91794pt x 386.97923pt.
 
@@ -1507,11 +1474,11 @@ Overfull \hbox (28.45572pt too wide) in paragraph at lines 1506--1508
  [][] 
  []
 
-<figuras/Calibracao/RMSE_V_st002_Refined23.png, id=509, 867.24pt x 433.62pt>
-File: figuras/Calibracao/RMSE_V_st002_Refined23.png Graphic file (type png)
+<figuras/Calibracao/RMSE_U_st003_Refined23.png, id=506, 867.24pt x 433.62pt>
+File: figuras/Calibracao/RMSE_U_st003_Refined23.png Graphic file (type png)
 
-<use figuras/Calibracao/RMSE_V_st002_Refined23.png>
-Package pdftex.def Info: figuras/Calibracao/RMSE_V_st002_Refined23.png used on 
+<use figuras/Calibracao/RMSE_U_st003_Refined23.png>
+Package pdftex.def Info: figuras/Calibracao/RMSE_U_st003_Refined23.png used on 
 input line 1512.
 (pdftex.def)             Requested size: 773.91794pt x 386.97923pt.
 
@@ -1519,15 +1486,39 @@ Overfull \hbox (28.45572pt too wide) in paragraph at lines 1512--1514
  [][] 
  []
 
-<figuras/Calibracao/RMSE_V_st003_Refined23.png, id=510, 867.24pt x 433.62pt>
-File: figuras/Calibracao/RMSE_V_st003_Refined23.png Graphic file (type png)
+<figuras/Calibracao/RMSE_V_st001_Refined23.png, id=507, 867.24pt x 433.62pt>
+File: figuras/Calibracao/RMSE_V_st001_Refined23.png Graphic file (type png)
 
-<use figuras/Calibracao/RMSE_V_st003_Refined23.png>
-Package pdftex.def Info: figuras/Calibracao/RMSE_V_st003_Refined23.png used on 
+<use figuras/Calibracao/RMSE_V_st001_Refined23.png>
+Package pdftex.def Info: figuras/Calibracao/RMSE_V_st001_Refined23.png used on 
 input line 1518.
 (pdftex.def)             Requested size: 773.91794pt x 386.97923pt.
 
 Overfull \hbox (28.45572pt too wide) in paragraph at lines 1518--1520
+ [][] 
+ []
+
+<figuras/Calibracao/RMSE_V_st002_Refined23.png, id=508, 867.24pt x 433.62pt>
+File: figuras/Calibracao/RMSE_V_st002_Refined23.png Graphic file (type png)
+
+<use figuras/Calibracao/RMSE_V_st002_Refined23.png>
+Package pdftex.def Info: figuras/Calibracao/RMSE_V_st002_Refined23.png used on 
+input line 1524.
+(pdftex.def)             Requested size: 773.91794pt x 386.97923pt.
+
+Overfull \hbox (28.45572pt too wide) in paragraph at lines 1524--1526
+ [][] 
+ []
+
+<figuras/Calibracao/RMSE_V_st003_Refined23.png, id=509, 867.24pt x 433.62pt>
+File: figuras/Calibracao/RMSE_V_st003_Refined23.png Graphic file (type png)
+
+<use figuras/Calibracao/RMSE_V_st003_Refined23.png>
+Package pdftex.def Info: figuras/Calibracao/RMSE_V_st003_Refined23.png used on 
+input line 1530.
+(pdftex.def)             Requested size: 773.91794pt x 386.97923pt.
+
+Overfull \hbox (28.45572pt too wide) in paragraph at lines 1530--1532
  [][] 
  []
 
@@ -1557,10 +1548,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 6442 strings out of 494996
- 102296 string characters out of 6180490
- 187312 words of memory out of 5000000
- 9414 multiletter control sequences out of 15000+600000
+ 6437 strings out of 494996
+ 102115 string characters out of 6180490
+ 187342 words of memory out of 5000000
+ 9410 multiletter control sequences out of 15000+600000
  8295 words of font info for 30 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
  41i,8n,36p,1446b,357s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1575,10 +1566,10 @@ blic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
 msfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
 tt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on dissertacao.pdf (124 pages, 21813837 bytes).
+Output written on dissertacao.pdf (124 pages, 21624194 bytes).
 PDF statistics:
- 599 PDF objects out of 1000 (max. 8388607)
+ 598 PDF objects out of 1000 (max. 8388607)
  312 compressed objects within 4 object streams
  0 named destinations out of 1000 (max. 500000)
- 411 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 406 words of extra memory for PDF output out of 10000 (max. 10000000)
 
