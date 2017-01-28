@@ -43,6 +43,12 @@ Dissertação (Mestrado) --- Universidad de Cantabria, Santander, 2013. 263 p.}
   section.
 \textbf{Journal of Physical Oceanography}, v.~41, p. 548--570, 2011.}
 
+\bibitem[Carvalho et al. 1998]{Carvalho1998}
+\abntrefinfo{Carvalho et al.}{CARVALHO et al.}{1998}
+{CARVALHO, J. L.~B.~\& SCHETTINI, C. A.~F.~\& RIBAS, T.~M. Estrutura
+  termohalina do litoral centro-norte catarinense.
+\textbf{Notas Técnicas Facimar}, v.~2, p. 181--197, 1998.}
+
 \bibitem[Cheng 1990]{cheng}
 \abntrefinfo{Cheng}{CHENG}{1990}
 {CHENG, R.~T. Residual currents and long-term transport.
@@ -296,19 +302,6 @@ Monografia (Trabalho de Conclusão de Curso) - Universidade Federal de Santa
 {PAWLOWICS, R.~\& BEARDSLEY, B.~\& LENTZ, S. Classical tidal harmonic analysis
   including error estimates in matlab using ttide.
 \textbf{Computers \& Geosciences}, v.~28, p. 929--937, 2002.}
-
-\bibitem[Pawlowicz et al. 2002]{ttidematlab}
-\abntrefinfo{Pawlowicz et al.}{PAWLOWICZ et al.}{2002}
-{PAWLOWICZ, R.~\& BEARDSLEY, B.~\& LENTZ, S. Classic tidal harmonic analysis
-  including error estimates in matlab using t\_tide.
-\textbf{Computers \& Geosciences}, v.~28, p. 929--937, 2002.}
-
-\bibitem[Petersen 2003]{Petersen2003}
-\abntrefinfo{Petersen}{PETERSEN}{2003}
-{PETERSEN, G.
-\textbf{Wave Simulations at the Coast of Paraná in southern Brazil}.
-Dissertação (Mestrado) --- Christian Albrechts University, Kiel, Alemanha,
-  2003. 128 p.}
 
 \bibitem[Pugh 1987]{Pugh87}
 \abntrefinfo{Pugh}{PUGH}{1987}
