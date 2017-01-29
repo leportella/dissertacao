@@ -33,7 +33,7 @@
 \departamento[o]{Departamento de Geociências}
 \curso[o]{Programa de Pós-Graduação em Oceanografia}
 \documento[a]{Dissertação} % [o] para dissertação [a] para tese
-\titulo{Hidrodinâmica Residual de uma Praia de Enseada Subtropicals}
+\titulo{Hidrodinâmica Temporal e Residual de uma Praia de Enseada Subtropical}
 \subtitulo{Estudo de Caso da Enseada do Itapocorói} % Opcional
 \autor{Letícia Vasques dos Reis Portella Nascimento}
 \grau{Mestre em Oceanografia}
@@ -96,10 +96,10 @@ E ao meu pai, pois o seu amor é sentido até hoje apesar de tanto tempo ter se pa
 \epigrafe{Now is better than never}
 {(The Zen of Python, 2004)}
 
-\textoResumo {O presente estudo tem o objetivo de avaliar a hidrodinâmica da Enseada do Itapocorói com foco na circulação residual e de longo período buscando compreender quais forçantes ambientais são mais relevantes na geração dessas correntes e qual é o padrão de circulação de longo prazo. Para alcançar este objetivo, fez-se a a análise dos resultados de 3 \emph{Acoustic Doppler Current Profilers} (ADCPs) dispostos ao longo da enseada em posições com diferentes graus de ondulação e um marégrafo localizado na enseada ao lado, em Penha. Também foi utilizado o modelo hidrodinâmico, Delft3D para analisar o comportamento espacial das correntes locais. O modelo foi desenvolvido em escala regional e local e calibrado com dados provenientes dos ADCPs. Verificou-se que as correntes na região tem um padrão bastante ameno, com velocidades abaixo de 40$cm.s^{-1}$ em todo domínio e abaixo de 20$cm.s^{-1}$ nas regiões mais internas. Pelo menos 1/4  da energia local provém de períodos acima de 50h, indicando forte presença de ondas de plataforma e correntes residuais.}
+\textoResumo {O presente estudo tem o objetivo de avaliar a hidrodinâmica da Enseada do Itapocorói com foco na circulação residual e de longo período buscando compreender quais forçantes ambientais são mais relevantes na geração dessas correntes e qual é o padrão de circulação de longo prazo. Para alcançar este objetivo, fez-se a análise dos resultados de 3 \emph{Acoustic Doppler Current Profilers} (ADCPs) dispostos ao longo da enseada em posições com diferentes graus de ondulação e um marégrafo localizado na enseada ao lado, em Penha. Também foi utilizado o modelo hidrodinâmico, Delft3D para analisar o comportamento espacial das correntes locais. O modelo foi desenvolvido em escala regional e local e calibrado com dados provenientes dos ADCPs. Verificou-se que as correntes na região tem um padrão bastante ameno, com velocidades abaixo de 40$cm.s^{-1}$ em todo domínio e abaixo de 20$cm.s^{-1}$ nas regiões mais internas. Pelo menos 1/4  da energia local provém de períodos acima de 50h, indicando forte presença de ondas de plataforma e correntes residuais. Verificou-se também que o vento tem um papel mais relevante na circulação residual da Enseada e que, ventos da ordem de 10$m.s^{-1}$ geraram correntes de até 2$cm.s^{-1}$, o que representa um percentual de quase 20\% das correntes típicas da região. Também verificou-se a presença de vórtices em sentido horário para ventos de NE e antihorário para ventos de S e SE. Ventos de E não geram vórtices na região da Enseada. A corrente residual tem padrão tipicamente de sul para norte em ventos de S, SE e E e de norte para sul em ventos de NE.}
 \palavrasChave {Circulação Residual. Modelagem Numérica. Delft3D. }
 
-\textAbstract {The current study has the goal to evaluate the hydrodynamic behavior of the Itapocorói Bay, focusing on the residual and long-term circulation, in order to better understand which envorinment forcings have the main part on its generation. To achieve this goal, data from 3 Acoustic Doppler Current Profilers (ADCPs) were analyzed as well as an tide gaugue located on a bay nearby, Penha Bay. Also, it was made use of a a numerical model called Delft3D to better comprehend the spacial dynamic of local currents. The model was developed with a regional and a local grid and calibrated with data from the ADCPs. The current on the bay are very mild, usually below 40$cm.s^{-1}$ in all area and below 20$cm.s^{-1}$ in sheltered areas inside the bay. At least a quarter of local energy is contained in periods greater than 50h, indicating a strong presence of platform waves and residual currents.}
+\textAbstract {The current study has the goal to evaluate the hydrodynamic behavior of the Itapocorói Bay, focusing on the residual and long-term circulation, in order to better understand which environment forcings have the main part on its generation. To achieve this goal, data from 3 Acoustic Doppler Current Profilers (ADCPs) were analyzed as well as a tide gaugue located on a bay nearby, Penha Bay. Also, it was made use of a numerical model called Delft3D to better comprehend the spacial dynamic of local currents. The model was developed with a regional and a local grid and calibrated with data from the ADCPs. The current on the bay are very mild, usually below 40$cm.s^{-1}$ in all area and below 20$cm.s^{-1}$ in sheltered areas inside the bay. At least a quarter of local energy is contained in periods greater than 50h, indicating a strong presence of platform waves and residual currents. Winds revelead to be the most influent parameter in residual current generaation, and winds with velocity of 10$m.s^{-1}$ generated currents up to 2$cm.s^{-1}$, which represents 20\% of the typical current velocity of the study area. Two vortex were indentified on the study area: a clockwise vortex with NE winds, and a counterclockwise vortex when winds are from S and SE. E winds doesn't generate any kind of vortex. The current pattern are tipically from north to south in NE winds, and from south to norte in winds from E, S and SE.}
 \keywords {Residual Circulation. Numerical Modelling. Delft3D.}
 
 
@@ -125,8 +125,11 @@ E ao meu pai, pois o seu amor é sentido até hoje apesar de tanto tempo ter se pa
 \sumario
 %--------------------------------------------------------
 % Elementos textuais
-% 
+
+% ====================================================================================
 \chapter{INTRODUÇÃO}
+% ====================================================================================
+
 Sentado numa cadeira de praia, um turista pode perceber facilmente que existe uma dinâmica na praia que o cerca. As ondas quebram incessantemente, às vezes maiores, às vezes menores, o vento  varia de intensidade e direção e a faixa de areia pode se apresentar maior ou menor conforme o horário em que ela é observada. Apesar de facilmente observados, os processos costeiros que regem as dinâmicas de zonas costeiras são bastante complexos e interligados. 
 
 A zona costeira é uma região de alto dinamismo, e está sujeita a  oscilações periódicas de altas e baixas frequências como ondas e marés, respectivamente. Dado que a água pode ser considerada 
@@ -154,24 +157,25 @@ Existe uma circulação residual típica na Enseada do Itapocorói que é gerada prin
 
 \subsection{Objetivo Geral}
 
-O objetivo geral do estudo é compreender o padrão de circulação local e a circulação residual na Enseada do Itapocorói (Balneário Piçarras), bem como as variáveis ambientais que os influenciam, através do uso de modelagem numérica de forma a agregar conhecimento sobre a hidrodinâmica na região de estudo.
+O objetivo geral do estudo é compreender o padrão de circulação local e a circulação residual na Enseada do Itapocorói (Balneário Piçarras), bem como as variáveis ambientais que os influenciam, através do uso de modelagem numérica de forma a compreender os padrões de longo prazo e as possíveis influências destes na área de estudo.
 
 \subsection{Objetivos Específicos}
 
 São objetivos específicos deste trabalho:
 
 \begin{itemize} 
-	\item Caracterizar a circulação local através da análise das séries dos fundeio;
+	\item Caracterizar a circulação local através da análise das séries de fundeio;
 	\item Descrever características meteo-oceanográficas da região;
 	\item Construção de um modelo hidrodinâmico (Delft3D-FLOW) para a área de estudo;
-	\item Calibração dos modelos hidrodinâmicos com dados provenientes de 3 ADCPs;
+	\item Calibração dos modelos hidrodinâmicos com dados provenientes de 3 equipamentos;
 	\item Definir o padrão típico da circulação residual; 
 	\item Compreender o papel dos parâmetros ambientais na modificação da circulação e qual o parâmetro dominante;
-	\item Definir a circulação residual na Enseada do Itapocorói;
+	\item Definir a circulação residual na Enseada do Itapocorói para cada cenário analisado;
 \end{itemize}
 
-
+% ====================================================================================
 \chapter{REVISÃO BIBLIOGRÁFICA}
+% ====================================================================================
 
 \section{Maré e Circulação Residual}
 
@@ -187,7 +191,7 @@ Ao se considerar a água como incompressível, independente das oscilações ocorrid
 
 A circulação residual, especialmente a da maré, está normalmente relacionada a processos de longo período, com frequências baixas e velocidades uma ou duas ordens menores que as próprias correntes de maré e, assim, pode acabar sendo negligenciada por conta dessas características \cite{cheng}. Apesar de serem consideradas irrelevantes quando comparadas com as correntes de maré, elas podem ser bastante relevantes em longo prazo dado que podem dominar o transporte e a distribuição geral de propriedades da água como temperatura e salinidade quando considerada a sua persistência. Dessa forma, sua determinação pode contribuir para o manejo costeiro (como tempo de permanência de poluentes) ou mesmo para a proteção costeira, dado que ela também pode ter papel significante para transporte de partículas sedimentares \cite{truccoloMSc}. 
 
-\citeonline{Parker91} cita os trabalhos de \citeonline{HuntJohns63}, \citeonline{Huthnance} e \citeonline{Nihoul1974} como os primeiros trabalhos a proporem mecanismos de geração de correntes residuais geradas por maré. \citeonline{HuntJohns63} estudaram a geração de correntes de fundo induzidas por maré em águas rasas, já citando a importância de fluxos residuais tanto na circulação geral quanto em mudanças morfológicas significativas. \citeonline{Huthnance} verificou que as forças geradoras de correntes residuais em bancos de maré no Norfolk Sandbanks foram a força de Coriolis e fricção de fundo. \citeonline{Nihoul1974} mostraram que em regiões com marés expressivas os termos não lineares das equações passam a agir como uma "tensão de cisalhamento de maré" que, aliada ao vento, produz movimentos residuais. 
+\citeonline{Parker91} cita os trabalhos de \citeonline{HuntJohns63}, \citeonline{Huthnance} e \citeonline{Nihoul1974} como os primeiros trabalhos a proporem mecanismos de geração de correntes residuais geradas por maré. \citeonline{HuntJohns63} estudaram a geração de correntes de fundo induzidas por maré em águas rasas, já citando a importância de fluxos residuais tanto na circulação geral quanto em mudanças morfológicas significativas. \citeonline{Huthnance} verificou que as forças geradoras de correntes residuais em bancos de maré no Norfolk Sandbanks foram a força de Coriolis e fricção de fundo. \citeonline{Nihoul1974} mostraram que em regiões com marés expressivas os termos não lineares das equações passam a agir como uma ``tensão de cisalhamento de maré" que, aliada ao vento, produz movimentos residuais. 
 
 De forma geral e simplificada, o termo circulação residual é utilizado para remeter às circulações de longo período, ou seja, o resultante da circulação uma vez que os processos atuantes são findados.
 No entanto é possível perceber na literatura uma certa variação em relação à sua definição.
@@ -221,27 +225,27 @@ Verifica-se na literatura que muitos estudos são focados em circulação residual 
 promontórios, com uma baixa descarga fluvial, regime de micro-maré semidiurna e importante centro urbano. Os autores verificaram que a circulação básica poderia ser dividida em duas: uma camada superior dominada por uma componente diurna (atmosférica e mareal) e uma camada inferior 
 com influência diurna e semi-diurna gerada principalmente pela maré. 
 
-Já o trabalho de \citeonline{Brownetal2013} tinha como objetivo compreender a contribuição de parâmetros físicos na variação temporal das correntes residuais em um ambiente estuarino fortemente influenciado pela maré e comparar a contribuição desses parâmetros,em condições normais e de tempestade, quando comparados com a maré. Os processos físicos avaliados foram: forcantes meteorológicas, baroclinicidade, descarga de rios, residual externo, marés e ondas.  
+Já o trabalho de \citeonline{Brownetal2013} tinha como objetivo compreender a contribuição de parâmetros físicos na variação temporal das correntes residuais em um ambiente estuarino fortemente influenciado pela maré e comparar a contribuição desses parâmetros, em condições normais e de tempestade, quando comparados com a maré. Os processos físicos avaliados foram: forçantes meteorológicas, baroclinicidade, descarga de rios, residual externo, marés e ondas.  
 
-O trabalho de \citeonline{truccoloetal2006} verificou que em São Francisco do Sul, na região exposta às ondulações, apenas 74\% da variação de nível poderia ser explicada por marés astronômicas e que 24\% da variação poderia ser explicada pelas oscilações em frequência submareal. Além disso, oscilações do nível do mar em frequência submareal não podem ser completamente desconsideradas em um regime de micromaré como o encontrado no sul do Brasil, uma vez que sobre-elevações de até 1 m já foram registradas na região de Itajaí \cite{truccoloMSc}.
+O trabalho de \citeonline{truccoloetal2006} verificou que em São Francisco do Sul, na região exposta às ondulações, apenas 74\% da variação de nível poderia ser explicada por marés astronômicas e que 24\% da variação poderia ser explicada pelas oscilações em frequência submareal. Além disso, oscilações do nível do mar em frequência submareal não podem ser completamente desconsideradas em um regime de micromaré como o encontrado no sul do Brasil, uma vez que sobre-elevações de até 1m já foram registradas na região de Itajaí \cite{truccoloMSc}.
 
 Dessa forma, o presente trabalho levará em consideração as variações em frequência submareal, desconsiderando frequências supramareais (e.g. ondas de gravidade) e terá como foco principal o estudo de correntes residuais barotrópicas cujos principais parâmetros ambientais serão a maré e o vento.
 
 \clearpage
 \section{Modelagem Numérica de Zonas Costeiras}
 
-O conhecimento da hidrodinâmica de uma região costeira pode ter diversos benefícios tantos em termos ambientais (variações sazonais, previsão das condições oceanográficas, padrões de transporte de sedimentos, etc.) quanto em ganhos sociais (prevenção de desastres naturais, proteção costeira, etc.). No entanto, para um entendimento amplo das características oceanográficas
+O conhecimento da hidrodinâmica de uma região costeira pode ter diversos benefícios tanto em termos ambientais (variações sazonais, previsão das condições oceanográficas, padrões de transporte de sedimentos, etc.) quanto em ganhos sociais (prevenção de desastres naturais, proteção costeira, etc.). No entanto, para um entendimento amplo das características oceanográficas
 de determinada região é necessário um conhecimento extenso da mesma tanto em termos espaciais quanto temporais. Isso se torna extremamente difícil principalmente devido à complexidade dos processos envolvidos e à dificuldade de obtenção de dados medidos, que são muito custosos e esparsos.
 
-As leis de conservação que governam os fluidos são modelos matemáticos validados há bastante tempo e que podem ser amplamente utilizados para compreendê-los \cite{Maliska}.  Quando se faz necessário resolver determinado problema nesta área pode-se optar por três métodos: os analíticos, os numéricos (experimentação teórica) e a experimentação em laboratório (Figura \ref{fig:metodos} baseada em \citeonline{Maliska}).
+As leis de conservação que governam os fluidos são modelos matemáticos validados há bastante tempo e que podem ser amplamente utilizados para compreendê-las \cite{Maliska}.  Quando se faz necessário resolver determinado problema nesta área pode-se optar por três métodos: os analíticos, os numéricos (experimentação teórica) e a experimentação em laboratório (Figura \ref{fig:metodos} baseada em \citeonline{Maliska}).
 
-Os métodos analíticos e numéricos são métodos teóricos, pois ambos tem como objetivo resolver equações diferenciais que explicam os fenômenos. A diferença está apenas na complexidade da equação que cada método consegue resolver. O método de experimentação em laboratório é o mais próximo da realidade, pois de fato se trata da configuração real, porém está associado a grandes custos e uma super estrutura que, nem sempre, consegue atacar todos os problemas (e.g. escalas oceânicas).
+Os métodos analíticos e numéricos são métodos teóricos, pois ambos tem como objetivo resolver equações diferenciais que explicam os fenômenos estudados. A diferença está apenas na complexidade da equação que cada método consegue resolver. O método de experimentação em laboratório é o mais próximo da realidade, pois de fato se trata da configuração real, porém está associado a grandes custos e uma super estrutura que, nem sempre, consegue atacar todos os problemas (e.g. escalas oceânicas).
 
-No caso de soluções numéricas existem dois tipos de erros que podem estar presentes: aqueles referentes à má solução das equações diferenciais e aqueles referentes à não adequação das equações diferenciais para resolver o problema proposto. Ou seja, esses métodos só serão adequados e confiáveis quando se está em posse de um método numérico que resolva corretamente as equações diferenciais e de um modelo matemático que, sabidamente, represente com fidelidade o fenômeno físico. Independente dos possíveis erros associados, os ganhos advindos das técnicas de soluções numéricas e analíticas é muito alto quando comparado aos custos de técnicas experimentais. Além disso é ampla a aceitação destes métodos para a solução desses tipos de equações devido à grande versatilidade e relativa simplicidade de aplicação dessas técnicas \cite{Maliska}.
+No caso de métodos numéricos existem dois tipos de erros que podem estar presentes: aqueles referentes à má solução das equações diferenciais e aqueles referentes à não adequação das equações diferenciais para resolver o problema proposto. Ou seja, esses métodos só serão adequados e confiáveis quando se está em posse de um método numérico que resolva corretamente as equações diferenciais e de um modelo matemático que, sabidamente, represente com fidelidade o fenômeno físico. Independente dos possíveis erros associados, os ganhos advindos das técnicas de soluções numéricas e analíticas é muito alto quando comparado aos custos de técnicas experimentais. Além disso é ampla a aceitação destes métodos para a solução desses tipos de equações devido à grande versatilidade e relativa simplicidade de aplicação dessas técnicas \cite{Maliska}.
 
-No caso da mecânica dos fluidos já existe um consenso a respeito da validade das leis que as descrevem e, portanto, assume-se que os modelos matemáticos estão livres de erros ou que estes podem ser menosprezados na solução geral. Entretanto, estes modelos matemáticos validados são compostos de equações diferenciais parciais não lineares que, em geral, não possuem soluções analíticas ou fechadas, a não ser em casos extremamente simplificados. Portanto, para o caso da mecânica de fluidos complexos as solução numéricas são as mais adequadas. Quando os modelos matemáticos passam a ser discretizados e resolvidos através de métodos numéricos eles recebem a denominação específica de dinâmica de fluidos computacionais \cite{Kundu}.
+No caso da mecânica dos fluidos, já existe um consenso a respeito da validade das leis que as descrevem e, portanto, assume-se que os modelos matemáticos estão livres de erros ou que estes podem ser menosprezados na solução geral. Entretanto, estes modelos matemáticos validados são compostos de equações diferenciais parciais não lineares que, em geral, não possuem soluções analíticas ou fechadas, a não ser em casos extremamente simplificados. Portanto, para o caso da mecânica de fluidos complexos, as solução numéricas são as mais adequadas. Quando os modelos matemáticos passam a ser discretizados e resolvidos através de métodos numéricos eles recebem a denominação específica de dinâmica de fluidos computacionais \cite{Kundu}.
 
-Apesar de serem consideravelmente precisas é necessário ter consciência que as soluções numéricas são, inexoravelmente, inexatas. Existem dois erros introduzidos ao se utilizar os métodos numéricos na solução de um problema. Um deles ocorre devido à limitação de armanezamento de informação que os computadores digitais possuem, denominados erros de arredondamento. O segundo tipo de erro é introduzido pelo próprio método numérico que, ao se utilizar aproximações para encontrar a solução numérica, acaba gerando os erros de truncamento. Juntos, os dois erros constituem o erro total da solução numérica, que é, basicamente, a diferença entre a solução verdadeira (exata, e que é desconhecida) e a solução numérica aproximada \cite{metnumericos}. 
+Apesar de serem consideravelmente precisas é necessário ter consciência que as soluções numéricas são, inexoravelmente, inexatas. Existem ainda dois erros introduzidos ao se utilizar os métodos numéricos na solução de um problema. Um deles ocorre devido à limitação de armanezamento de informação que os computadores digitais possuem, denominados erros de arredondamento. O segundo tipo de erro é introduzido pelo próprio método numérico que, ao se utilizar aproximações para encontrar a solução numérica, acaba gerando os erros de truncamento. Juntos, os dois erros constituem o erro total da solução numérica, que é, basicamente, a diferença entre a solução verdadeira (exata, e que é desconhecida) e a solução numérica aproximada \cite{metnumericos}. 
 
 
 \begin{figure}[!ht]
@@ -250,10 +254,10 @@ Apesar de serem consideravelmente precisas é necessário ter consciência que as s
 	\caption{Métodos de solução para um problema físico. Fonte: \citeonline{Maliska}}\label{fig:metodos}
 \end{figure}
 
-Inicialmente, soluções numéricas eram muito custosas computacionalmente e modelos analíticos (bastante simplificados) e experimentais eram as únicas ferramentas que os cientistas podiam contar para o entendimento dos fênomenos físicos. Com o avanço computacional ocorrido nas últimas décadas, as barreiras computacionais que tornavam custosas as soluções para a resolução dos métodos numéricos se tornaram muito pequenas comparadas aos ganhos potenciais. A solução de escoamento turbulento supersônico em um aerofólio com os computadores da década de 60 consumiria um tempo de computação de aproximadamente
-30 anos com um custo de 10 milhões de dólares. O mesmo problema com os computadores atuais requer minutos e custo na ordem de centenas de dólares \cite{Maliska}. Dessa forma, a modelagem num\'erica permite não apenas resolver as equações que descrevem os fenômenos físicos mas também se constitui uma ferramenta para experimentos relativos aos processos que interagem e compõe as características observadas nos oceanos.
+Inicialmente, soluções numéricas eram muito custosas computacionalmente e modelos analíticos (bastante simplificados) e experimentais eram as únicas ferramentas que os cientistas podiam contar para o entendimento dos fênomenos físicos. Com o avanço computacional ocorrido nas últimas décadas, as barreiras computacionais que tornavam custosas as soluções para a resolução dos métodos numéricos se tornaram muito pequenas quando comparadas aos ganhos potenciais. A solução de escoamento turbulento supersônico em um aerofólio com os computadores da década de 60 consumiria um tempo de computação de aproximadamente
+30 anos com um custo de 10 milhões de dólares. O mesmo problema com os computadores atuais requer minutos e custo na ordem de centenas de dólares \cite{Maliska}. Dessa forma, a modelagem numérica permite não apenas resolver as equações que descrevem os fenômenos físicos mas também constitui uma ferramenta para experimentos relativos aos processos que interagem e compõem as características observadas nos oceanos.
 
-Modelos numéricos de áreas costeiras foram desenvolvidos desde o começo da década de 80, mas apenas na década de 90 que grandes institutos europeus conseguiram aprimorar os primeiros modelos e desenvolveram os modelos robustos e de código flexível que ainda são utilizados hoje em dia como o Delft3D (Deltares), Mike21 (\emph{Danish Hydraulic Institute}) e Telemac (\emph{Laboratoire Nationale d'Hydraulique}). Hoje em dia, diversos modelos estão disponíveis para utilização e muitos são gratuitos e de código aberto, o que facilita seu uso e dispersão. Inúmeros são os trabalhos na área da oceanografia que fazem uso dessa ferramenta que se tornou fundamental os estudos na área \cite{dano2012}.
+Modelos numéricos de áreas costeiras foram desenvolvidos desde o começo da década de 80, mas apenas na década de 90 que grandes institutos europeus conseguiram aprimorar os primeiros modelos e desenvolveram os modelos robustos e de código flexível que ainda são utilizados hoje em dia como o Delft3D (Deltares), Mike21 (\emph{Danish Hydraulic Institute}) e Telemac (\emph{Laboratoire Nationale d'Hydraulique}). Hoje em dia, diversos modelos estão disponíveis para utilização e muitos são gratuitos e de código aberto, o que facilita seu uso e dispersão. Inúmeros são os trabalhos na área da oceanografia que fazem uso dessa ferramenta que se tornou fundamental para os estudos na área \cite{dano2012}.
 
 A tarefa do método numérico, portanto, é resolver uma ou mais equações diferenciais, substituindo as derivadas existentes na equação por expressões algébricas que envolvem a(s) função(ões) incógnita(s).  Quando escolhe-se fazer uma aproximação numérica da equação diferencial, aceitamos ter a solução para um número discreto de pontos de forma que, quanto maior for este número de pontos, mais próxima da solução exata será a solução aproximada \cite{Maliska}. O conjunto de pontos onde a solução será calculada é denominado grade numérica ou malha numérica.
 
@@ -442,9 +446,9 @@ vindas do quadrante E, principalmente devido à orientação da praia.
 
 Muitos estudos realizados na Enseada do Itapocorói focaram no estudo da morfodinâmica local \cite{KleinMenezes2001,Araujoetal2010, Ramirez2010, tccjonas}, no padrão de ondas \cite{Ribeiro2014} e no estudo de perigos costeiros e evolução da linha de costa \cite{freitasetal2010,GuiVieira}. Estes estudos foram estimulados pelo grande problema erosivo que a enseada apresenta bem como pela característica de predominância dos efeitos de onda na região. Entretanto, em praias de enseada a dinâmica é dominada por ondas em períodos curtos, como alguns estados de mar ou tempestades \cite{silvaetal2010} porém a circulação residual gerada pela maré e/ou vento pode ter um efeito cumulativo no longo prazo \cite{Brownetal2013}. Dessa forma, visando complementar os estudos anteriores, o presente trabalho pretende atuar no estudo de padrões residuais na enseada, tomando o trabalho de \citeonline{Leite2009} e \citeonline{Leite2011} como referência principal da dinâmica da região. Almeja-se que este estudo contribua para a compreensão do tempo de recirculação, que pode contribuir para a maricultura local, bem como contribua para o conhecimento das dinâmicas de longo período da região.
 
-
-
+% ====================================================================================
 \chapter{MATERIAIS E MÉTODOS}
+% ====================================================================================
 
 Dado os objetivos propostos pelo presente estudo, a figura \ref{fig:fluxo} apresenta o fluxograma da metodologia a ser aplicada para que estes sejam alcançados. 
 
@@ -1209,7 +1213,7 @@ Buscou-se tentar encontrar correlações entre a direção do vento predominante e d
 %-------------------------------------------------------------------------------------------------------
 \subsection{Corrente}
 
-Nas figuras \ref{fig:curr_depthav_01}, \ref{fig:curr_depthav_02} e \ref{fig:curr_depthav_03} podem ser observadas as rosas de corrente integradas na vertical para os pontos ST001, ST002 e ST003, respectivamente. Das figura \ref{fig:ST001Cel1} à \ref{fig:ST003Cel12}, estão apresentadas as rosas de vento de cada ADCP por camada. Demais análises por camadas podem ser encontradas nos Apêndices.
+Nas figuras \ref{fig:curr_depthav_01}, \ref{fig:curr_depthav_02} e \ref{fig:curr_depthav_03} podem ser observadas as rosas de corrente integradas na vertical para os pontos ST001, ST002 e ST003, respectivamente. Demais análises por camadas podem ser encontradas nos Apêndices.
 
 Em termos de velocidades integradas na coluna, as correntes apresentam velocidades muito baixas, abaixo de 20$cm.s^{-1}$ na maior parte do tempo. Entretanto, nota-se que a maior parte das correntes fica abaixo de 10$cm.s^{-1}$ (Figuras \ref{fig:hist_velcorrente_01} a \ref{fig:hist_velcorrente_03}). É possível notar nas figuras \ref{fig:cumulativo_01} a \ref{fig:cumulativo_03} que em 90\% do tempo, as velocidades ficam abaixo de 8$cm.s^{-1}$ nos pontos ST001 e ST002 e abaixo de 21$cm.s^{-1}$ em ST003. 
 
@@ -1429,7 +1433,7 @@ De forma geral, os erros ficaram próximos a 10\% da amplitude do dado avaliado. 
 
 Para análise das correntes residuais foram selecionados 10 casos de estudo descritos na tabela \ref{tab:analise}.
 
-Os cenários selecionados tiveram como base o padrão de vento típico da região. Foram escolhidos quatro direções de vento, NE, S, E e SE e duas intensidades de vento (4 e 10 $m.s^{-1}$), representando os valores médios e máximos de vento encontrados na região, conforme descrito na tabela \ref{tab:ventosazonal}. Além desses cenários hipotéticos de vento constante, um cenário apenas com maré e um cenário com vento real (variando no tempo), foram selecionados. O primeiro visa entender qual o papel da maré na região, sem a influência do vento enquanto o segundo visa entender o comportamento da enseada em uma situação mais realista. 
+Os cenários selecionados tiveram como base o padrão de vento típico da região. Foram escolhidos quatro direções de vento, NE, S, E e SE e duas intensidades de vento (4 e 10$m.s^{-1}$), representando os valores médios e máximos de vento encontrados na região, conforme descrito na tabela \ref{tab:ventosazonal}. Além desses cenários hipotéticos de vento constante, um cenário apenas com maré e um cenário com vento real (variando no tempo), foram selecionados. O primeiro visa entender qual o papel da maré na região, sem a influência do vento enquanto o segundo visa entender o comportamento da enseada em uma situação mais realista. 
 
 Uma vez que os resultados foram obtidos, foram desenvolvidos mapas de circulação residual para diferentes períodos de tempo. Buscou-se entender como a circulação de longo prazo se comporta na região da enseada e se diferentes períodos de tempo considerados para compreendê-la poderia influenciar nos resultados finais. Foram feitos mapas de residual a cada 50, 100 e 200 horas além de um mapa com o residual considerando 2 meses de simulação. 
 
@@ -1457,9 +1461,8 @@ Uma vez que os resultados foram obtidos, foram desenvolvidos mapas de circulação
 \newpage
 \subsection{Mapas de Residuais}
 
+% ------------------------- CENARIO 01 ---------------------------
 A figura \ref{fig:residualtotal01} apresenta o mapa de residual total para o período de 2 meses simulado para o Cenário 01, simulado apenas com maré. As correntes apresentam-se bem amenas, não alcançando 0,4$cm.s^{-1}$. As maiores velocidades estão associadas ao costão rochoso da Ponta da Penha e à ilha Feia. Em geral, as velocidades ficam abaixo de 0,1$cm.s^{-1}$ na maior parte do domínio, com uma tendência de correntes de norte para sul. Um vórtice no sentido horário pode ser observado na parte sul da ilha Feia, mas velocidades elevadas podem ser observadas ao redor de toda a ilha.
-
-A tendência verificada no mapa foi vista em todos os mapas de análise de residuais a cada 50, 100 e 200 horas. O que pode ser observado é que, em momentos de maré de quadratura, as correntes se desintensificam ainda mais, muitas vezes não alcançando 0,2$cm.s^{-1}$ em todo o domínio avaliado (Figura \ref{fig:01quadratura}). Ainda na quadratura é possível verificar um vórtice sendo formado exatamente na frente da Ponta da Penha e o vórtice sul da ilha Feia se estende até quase a Ponta da Penha. Em momentos de sizígia, o padrão de distribuição das correntes é semelhante ao padrão residual total, porém, com correntes mais intensas, que chegam a 0,6$cm.s^{-1}$.
 
 \begin{figure}[!htb]
 	\includegraphics[width=1\textwidth]{figuras/results/Cenario01/Cenario01_residual_total.png}
@@ -1467,19 +1470,23 @@ A tendência verificada no mapa foi vista em todos os mapas de análise de residua
 	\caption{Mapa de correntes residuais para um período de 2 meses no Cenário 01}\label{fig:residualtotal01}
 \end{figure}
 
+\clearpage
+A tendência verificada no mapa foi vista em todos os mapas de análise de residuais a cada 50, 100 e 200 horas. O que pode ser observado é que, em momentos de maré de quadratura, as correntes se desintensificam ainda mais, muitas vezes não alcançando 0,2$cm.s^{-1}$ em todo o domínio avaliado (Figura \ref{fig:01quadratura}). Ainda na quadratura é possível verificar um vórtice sendo formado exatamente na frente da Ponta da Penha e o vórtice sul da ilha Feia se estende até quase a Ponta da Penha. Em momentos de sizígia, o padrão de distribuição das correntes é semelhante ao padrão residual total, porém, com correntes mais intensas, que chegam a 0,6$cm.s^{-1}$.
+
 \begin{figure}[!htb]
 	\includegraphics[width=1\textwidth]{figuras/results/Cenario01/50h/Cenario01_residual_50h_ts_508.png}
 	\centering
 	\caption{Mapa de correntes residuais para um período de 50h e maré de quadratura no Cenário 01}\label{fig:01quadratura}
 \end{figure}
 
+% ------------------------- CENARIO 02 ---------------------------
+\clearpage
 A figura \ref{fig:residualtotal02} apresenta o mapa de residual total para o período de 2 meses simulado para o Cenário 02, simulado com maré e vento variando no tempo. Buscou-se entender como é o residual na região considerando um vento real, ou seja, esse é o cenário que mais se aproxima da realidade na Enseada. 
 
 Pode-se verificar que o padrão é tipicamente de norte para sul em todos os momentos, sem formação de vórtice. As correntes são intensificadas no estreitamento da plataforma entre a Ilha Feia e a Ponta da Penha, onde chega a valores próximos de 0,6$cm.s^{-1}$. As correntes mais intensas, no entanto, ficam logo ao sul da Ilha Feia. Ao longo da praia, os valores são homogêneos e em torno de 0,3$cm.s^{-1}$. 
 
 É interessante notar que existe uma desintensificação da corrente conforme estas se aproximam do setor sul da enseada, e as correntes exatamente próximas do costa ficam mais amenas, em torno de 0,1$cm.s^{-1}$.
 
-As figuras geradas a cada 50h, 100h e 200h mostraram cenários muito distintos ao longo do tempo. Formação de vórtices na região da enseada, intensificação da corrente ao longo do costão, uma região de zona de sombra na parte leste da Ponta da Penha, etc. O que verificou-se é o vento é um fator atuante e representativo para as correntes na região. Muitos dos cenários encontrados nessas análises compartimentadas foram vistos posteriormente nos demais cenários avaliados e, portanto, as figuras foram suprimidas e estão disponíveis no Anexo B.  
 
 \begin{figure}[!htb]
 	\includegraphics[width=1\textwidth]{figuras/results/Cenario02/Cenario02_residual_total.png}
@@ -1487,6 +1494,10 @@ As figuras geradas a cada 50h, 100h e 200h mostraram cenários muito distintos ao
 	\caption{Mapa de correntes residuais para um período de 2 meses no Cenário 02}\label{fig:residualtotal02}
 \end{figure}
 
+As figuras geradas a cada 50h, 100h e 200h mostraram cenários muito distintos ao longo do tempo. Formação de vórtices na região da enseada, intensificação da corrente ao longo do costão, uma região de zona de sombra na parte leste da Ponta da Penha, etc. O que verificou-se é o vento é um fator atuante e representativo para as correntes na região.
+
+% ------------------------- CENARIO 03 ---------------------------
+\clearpage
 A figura \ref{fig:residualtotal03} apresenta o mapa de residual total para o período de 2 meses simulado para o Cenário 03, simulado com maré e vento constante de NE com 4$m.s^{-1}$. É possível perceber que um grande vórtice de sentido horário passa a aparecer na zona de sombra da praia. As correntes ao longo do costão invertem de direção e passam a ser de Norte para Sul. Correntes nas proximidades da praia são mais intensas e chagam a 0,4$cm.s^{-1}$. Aproximadamente na região onde se encontra a Zona de Erosão Acentuada existe uma desintensificação da corrente, quando as correntes de norte, vindas da parte mais exporta da praia se encontram com as correntes associadas ao vórtice.
 
 Correntes intensas de até 0,7$cm.s^{-1}$ são observadas no setor sul da Ilha Feia. Um vórtice no sentido antihorário pode ser observado na parte sudeste da ilha, com velocidades na ordem de 0,1$cm.s^{-1}$. 
@@ -1499,11 +1510,25 @@ Correntes intensas de até 0,7$cm.s^{-1}$ são observadas no setor sul da Ilha Fei
 	\caption{Mapa de correntes residuais para um período de 2 meses no Cenário 03}\label{fig:residualtotal03}
 \end{figure}
 
+% ------------------------- CENARIO 04 ---------------------------
+\clearpage
+A figura \ref{fig:residualtotal04} apresenta o mapa de residual total para o período de 2 meses simulado para o Cenário 04, com maré e vento constante de NE com 10$m.s^{-1}$. O padrão de correntes é muito semelhante àquele encontrado no cenário anterior, porém, com velocidades consideravelmente superiores, chegando a 2$cm.s^{-1}$ na área NE da Ilha Feia. O vórtice da área de sombra da praia chega a alcançar 1,6$cm.s^{-1}$. Esses valores representam mais de 10\% da velocidade encontrada na região. Ou seja, o residual de corrente para ventos intensos pode ser bastante decisivo para variações na hidrodinâmica e, por consequência, na morfodinâmica da região.
+
+A zona de sombra a SE da Ilha Feia e na Ponta da Penha passam a ser ainda mais contrastantes com as intensas correntes presentes no estreitamento da plataforma.
+
+O padrão apresentado na figura \ref{fig:residualtotal04} se apresentou praticamente constante nas demais análises feitas, o que mais uma vez corrobora a teoria de que o vento é muito mais relevante para a geração de correntes na região de estudo do que a maré. 
+
 \begin{figure}[!htb]
 	\includegraphics[width=1\textwidth]{figuras/results/Cenario04/Cenario04_residual_total.png}
 	\centering
 	\caption{Mapa de correntes residuais para um período de 2 meses no Cenário 04}\label{fig:residualtotal04}
 \end{figure}
+
+% ------------------------- CENARIO 05 ---------------------------
+\clearpage
+A figura \ref{fig:residualtotal05} apresenta o mapa de residual total para o período de 2 meses simulado para o Cenário 05, com maré e vento constante de S com 4$m.s^{-1}$. Neste cenário, correntes de sul com velocidades de até 0,8$cm.s^{-1}$ aparecem na parte leste da Ponta da Penha. Esse fluxo segue em direção ao norte, mas parte dele entra na zona de sombra gerada pelo costão e gera um vórtice de sentido antihorário, com velocidades abaixo de 0,2$cm.s^{-1}$. O vórtice tem início, na praia, na altura da desembocadura do rio Piçarras, seguindo em correntes amenas para sul. A corrente na parte exposta da enseada onde, nos cenários anteriores, sempre esteve de norte para sul, passa a ser de sul para norte a parte da desembocadura do rio, com velocidades de até 0,8$cm.s^{-1}$. 
+
+A ilha Feia continua causando uma zomba de sombra, desta vez localizada a NO desta. O fluxo que passa pela ilha apresenta-se uniforme e sem geração de vórtices naquela área. 
 
 \begin{figure}[!htb]
 	\includegraphics[width=1\textwidth]{figuras/results/Cenario05/Cenario05_residual_total.png}
@@ -1511,43 +1536,96 @@ Correntes intensas de até 0,7$cm.s^{-1}$ são observadas no setor sul da Ilha Fei
 	\caption{Mapa de correntes residuais para um período de 2 meses no Cenário 05}\label{fig:residualtotal05}
 \end{figure}
 
-%\begin{figure}[!htb]
-%	\includegraphics[width=1\textwidth]{figuras/results/Cenario06/Cenario06_residual_total.png}
-%	\centering
-%	\caption{Mapa de correntes residuais para um período de 2 meses no Cenário 06}\label{fig:residualtotal06}
-%\end{figure}
-%
-%\begin{figure}[!htb]
-%	\includegraphics[width=1\textwidth]{figuras/results/Cenario07/Cenario07_residual_total.png}
-%	\centering
-%	\caption{Mapa de correntes residuais para um período de 2 meses no Cenário 07}\label{fig:residualtotal07}
-%\end{figure}
-%
-%\begin{figure}[!htb]
-%	\includegraphics[width=1\textwidth]{figuras/results/Cenario08/Cenario08_residual_total.png}
-%	\centering
-%	\caption{Mapa de correntes residuais para um período de 2 meses no Cenário 08}\label{fig:residualtotal08}
-%\end{figure}
-%
-%\begin{figure}[!htb]
-%	\includegraphics[width=1\textwidth]{figuras/results/Cenario09/Cenario09_residual_total.png}
-%	\centering
-%	\caption{Mapa de correntes residuais para um período de 2 meses no Cenário 09}\label{fig:residualtotal09}
-%\end{figure}
-%
-%\begin{figure}[!htb]
-%	\includegraphics[width=1\textwidth]{figuras/results/Cenario10/Cenario10_residual_total.png}
-%	\centering
-%	\caption{Mapa de correntes residuais para um período de 2 meses no Cenário 10}\label{fig:residualtotal10}
-%\end{figure}
+Este padrão de velocidade e direção de correntes se manteve muito semelhante em todas as análises de residual por horas, com pequenas alterações causadas pelo momento do ciclo de maré que se está sendo analisado. Marés de quadratura acabam permitindo a intensificação da corrente mais do que os momentos de maré de sizígia mas, em geral o padrão é o mesmo (Figura \ref{fig:05quadratura}).  
 
-\chapter{DISCUSSÃO E CONCLUSÃO}
+\begin{figure}[!htb]
+	\includegraphics[width=1\textwidth]{figuras/results/Cenario05/50h/Cenario05_residual_50h_ts_508.png}
+	\centering
+	\caption{Mapa de correntes residuais para um período de 50h e maré de quadratura no Cenário 05}\label{fig:05quadratura}
+\end{figure}
+
+% ------------------------- CENARIO 06 ---------------------------
+\clearpage
+A figura \ref{fig:residualtotal06} apresenta o mapa de residual total para o período de 2 meses simulado para o Cenário 06, com maré e vento constante de S com 10$m.s^{-1}$. Verifica-se um padrão semelhante em termos de direção, com o vórtice sendo gerado na região de sombra da enseada. Entretanto, os valores de velocidade de corrente podem alcançar 2$cm.s^{-1}$ na região leste da Ponta da Penha e na parte exposta da enseada, com intensificação gradual da corrente a partir da desembocadura do rio Piçarras.
+
+O próprio vórtice gerado neste cenário teve correntes mais intensas, com correntes que chegam a 2$cm.s^{-1}$ na parte superior da Ponta da Penha. Nas proximidades da Ilha Feia houve um aumento de velocidade, porém não tão nítido quanto aquele sentido nas áreas mais próximas da costa.
+
+\begin{figure}[!htb]
+	\includegraphics[width=1\textwidth]{figuras/results/Cenario06/Cenario06_residual_total.png}
+	\centering
+	\caption{Mapa de correntes residuais para um período de 2 meses no Cenário 06}\label{fig:residualtotal06}
+\end{figure}
+
+
+% ------------------------- CENARIO 07 ---------------------------
+\clearpage
+A figura \ref{fig:residualtotal07} apresenta o mapa de residual total para o período de 2 meses simulado para o Cenário 07, com maré e vento constante de E com 4$m.s^{-1}$. O mesmo padrão de um ``corredor de correntes" na paste leste da Ponta da Penha, visto no cenário anterior, é visto no presente cenário. Entretanto, não há a geração de um vórtice e as correntes passam pela Ponta da Penha, seguem sul pelo costão, e então seguem pela praia seguindo para norte. As velocidades em geral não ultrapassam 0,7$cm.s^{-1}$ com uma zona de baixas velocidades localizadas no centro da Enseada, com velocidades na ordem de 0,1$cm.s^{-1}$.
+
+Neste cenário, ficou mais nítido que apesar de ter pouca influência na geração de correntes, a maré consegue ter uma influência modesta na velocidade da corrente residual, como pode ser visto na figura \ref{fig:07quadratura} e \ref{fig:07sizigia}.
+
+\begin{figure}[!htb]
+	\includegraphics[width=1\textwidth]{figuras/results/Cenario07/Cenario07_residual_total.png}
+	\centering
+	\caption{Mapa de correntes residuais para um período de 2 meses no Cenário 07}\label{fig:residualtotal07}
+\end{figure}
+
+\begin{figure}[!htb]
+	\includegraphics[width=1\textwidth]{figuras/results/Cenario07/50h/Cenario07_residual_50h_ts_508.png}
+	\centering
+	\caption{Mapa de correntes residuais para um período de 50h e maré de quadratura no Cenário 07}\label{fig:07quadratura}
+\end{figure}
+
+\begin{figure}[!htb]
+	\includegraphics[width=1\textwidth]{figuras/results/Cenario07/50h/Cenario07_residual_50h_ts_658.png}
+	\centering
+	\caption{Mapa de correntes residuais para um período de 50h e maré de sizígia no Cenário 07}\label{fig:07sizigia}
+\end{figure}
+
+% ------------------------- CENARIO 08 ---------------------------
+\clearpage
+A figura \ref{fig:residualtotal08} apresenta o mapa de residual total para o período de 2 meses simulado para o Cenário 08, com maré e vento constante de E com 10$m.s^{-1}$. Apesar do mesmo padrão sem vórtice e com direção preferencial de sul para norte aparece neste cenário, as correntes são consideravelmente mais intensas, alcançando velocidades acima de 1,2$cm.s^{-1}$ em praticamente toda a praia. Velocidades próxima a 2$cm.s^{-1}$ aparecem logo ao norte da Ponta da Penha, diminuindo de intensidade conforme segue norte. 
+
+\begin{figure}[!htb]
+	\includegraphics[width=1\textwidth]{figuras/results/Cenario08/Cenario08_residual_total.png}
+	\centering
+	\caption{Mapa de correntes residuais para um período de 2 meses no Cenário 08}\label{fig:residualtotal08}
+\end{figure}
+
+% ------------------------- CENARIO 09 ---------------------------
+
+\clearpage
+A figura \ref{fig:residualtotal09} apresenta o mapa de residual total para o período de 2 meses simulado para o Cenário 09, com maré e vento constante de SE com 4$m.s^{-1}$. O perfil de correntes deste cenário é semelhante àquele encontrado no Cenário 05 de vento S (Figura \ref{fig:residualtotal05}). Entretanto, o atual cenário apresenta, no geral, velocidades superiores em todo o domínio quando comparado com o cenário de vento S, com velocidades perto de 0,8$cm.s^{-1}$ ocorrendo ao longo de toda praia. 
+
+O vórtice de sentido antihorário também pode ser visto, também com velocidades mais intensas que aquele encontrado no Cenário 05. 
+
+\begin{figure}[!htb]
+	\includegraphics[width=1\textwidth]{figuras/results/Cenario09/Cenario09_residual_total.png}
+	\centering
+	\caption{Mapa de correntes residuais para um período de 2 meses no Cenário 09}\label{fig:residualtotal09}
+\end{figure}
+
+% ------------------------- CENARIO 10 ---------------------------
+
+\clearpage
+A figura \ref{fig:residualtotal10} apresenta o mapa de residual total para o período de 2 meses simulado para o Cenário 10, com maré e vento constante de SE com 10$m.s^{-1}$. Além da intensificação das correntes por conta do aumento da velocidade do vento, este cenário apresenta a formação de dois vórtices de sentido contrário dentro da Enseada. Mais ao norte, próximo do final da Ponta da Penha, está o vórtice de sentido antihorário também presente nos cenários 05, 06 e 09. Entretanto, vê-se a formação de um segundo vórtice, mais ao sul e de sentido horário. 
+
+Semelhante ao cenário 06, as correntes próximas a costa, na parte exposta da praia, podem ultrapassar 1,2$cm.s^{-1}$ e tem direção de sul para norte.
+
+\begin{figure}[!htb]
+	\includegraphics[width=1\textwidth]{figuras/results/Cenario10/Cenario10_residual_total.png}
+	\centering
+	\caption{Mapa de correntes residuais para um período de 2 meses no Cenário 10}\label{fig:residualtotal10}
+\end{figure}
+
+% ====================================================================================
+\chapter{DISCUSSÃO}
+% ====================================================================================
 
 O vento na região apresenta um comportamento homogêneo em termos de velocidade em todas as estações, com velocidades máximas de aproximadamente de 10$m.s^{-1}$ e uma média de velocidade de 4$m.s^{-1}$. Esses resultados concordam com os resultados encontrados por \citeonline{tccgustavo}, que também encontrou um padrão muito semelhante de velocidades do vento ao longo das estações do ano. 
 
 A predominância de ventos de N mais intensos no verão é causada pela posição mais ao sul do Anticiclone do Atlântico Sul (AAS) \cite{Carvalho1998}. Nos resultados apresentados, verificou-se, de fato, essa presença dos ventos do quadrante N no período de verão. Este resultado não concorda com aqueles encontrados por \citeonline{tccgustavo}, que verificou uma maior predominância de ventos de L tanto no verão quanto na primavera.
 
-A predominância de ventos S no inverno foi encontrada em ambos os trabalhos, quando o Anticiclone Móvel Polar desloca o AAS para norte, e os ventos de norte são desintensificados, aumentando a relevância dos ventos de sul \cite{Carvalho1998}. 
+A predominância de ventos S no inverno foi encontrada em ambos os trabalhos. Essa modificação na direção preferencial acontece quando o Anticiclone Móvel Polar desloca o AAS para norte, e os ventos de norte são desintensificados, aumentando a relevância dos ventos de sul \cite{Carvalho1998}. 
 
 Verificou-se que, considerando todos os dados analisados, 58,3\% dos casos de vento encontravam-se no quadrante N. Esse resultado ressalta a relevância de ventos da direção N-NE, associados à atuação do AAS, conforme descrito por \citeonline{truccolo98} e \citeonline{Carvalho1998}. As velocidades amenas características do AAS, entre 2 e 4$m.s^{-1}$ se apresentam em 26,8\% dos dados.
 
@@ -1563,11 +1641,56 @@ Todos os valores de temperatura foram bem menores que aqueles descritos em \cite
 
 Os resultados de corrente indicaram correntes amenas, abaixo de 20$cm.s^{-1}$ dentro da enseada e abaixo de 40$cm.s^{-1}$ em regiões abertas e expostas à ondulação direta. Esses resultados corroboram com as observações descritas em \citeonline{Schettinietal1999} e \citeonline{Almeida2013}. Entretanto, os primeiros autores afirmaram que as correntes obedecem mais diretamente ao regime dos ventos do que as oscilações da maré enquanto o segundo autor verificou que as condições amenas de corrente acontecem em todos os estados de mar. Da mesma forma como foi feito com a temperatura, foram desenvolvidos alguns gráficos tentando correlacionar a velocidade da corrente com a direção ou o vento. Novamente nenhum padrão emergiu nas análises realizadas e não foi possível relacionar a velocidade da corrente com o vento.
 
-Apesar de todos os resultados de correntes residuais integradas em 2 meses, 50, 100 ou 200 horas terem apresentado resultados semelhantes, verificou-se que os mapas a cada 50 horas são mais adequados para avaliar o comportamento dos residuais em momentos específicos de maré.
+Através das análises de correntes residuais, verificou-se que o vento tem uma maior influência na dinâmica local do que a maré. Os residuais gerados apenas pela maré não alcançam 0,2$cm.s^{-1}$, enquanto residuais de vento chegaram a alcançar 2$cm.s^{-1}$ em alguns cenários. Esse resultado corrobora o que foi encontrado por \citeonline{Schettinietal1999} e \citeonline{Leite2011}.
 
-A variabilidade das correntes residuais ao longo do tempo é bastante nítida, mostrando uma região dinâmica e complexa. Ventos persistentes e atípicos podem causar mudança no residual da corrente, gerando resultados hidro e morfodinâmicos inesperados.
+As correntes residuais são normalmente muito menores que as correntes típicas da região, usualmente inferiores a 1$cm.s^{-1}$. Ventos de intensidade de 10$m.s^{-1}$, independente da direção, podem gerar correntes residuais da ordem de 2$cm.s^{-1}$, o que representa cerca de 20\% da velocidade de corrente da região. Dessa forma, ventos intensos e de direção constante podem ter uma influência significativa na hidro e morfodinâmica da região e não devem ser ignorados seus efeitos de longo prazo.
 
+Ventos de S e SE geraram um vórtice de sentido antihorário na zona de sombra da Enseada, enquanto ventos de NE geram um vórtice em sentido horário, semelhante ao que foi descrito  por \citeonline{Leite2011}. Ventos de E não geraram nenhum vórtice em ambas as velocidades de vento enquanto o cenário com vento SE de 10$m.s^{-1}$ foi o único que gerou a presença de dois vórtices em sentidos contrários, ambos dentro da zona de sombra da enseada. 
+
+É interessante notar que, apesar de a corrente ser descrita normalmente com sentido norte-sul na praia, ventos de E, S e SE geram residuais de corrente para sul na maior parte da região costeira da Enseada. Apenas ventos de NE geraram correntes de norte pra sul. O residual total encontrado no cenário com vento variável (Cenário 02), verificou-se um leve residual para sul, o que indica a predominância, na época de ventos do quadrante E e S. Esse resultado é coerente uma vez que se modelou o mesmo período dos dados medidos, coletados no período de inverno, onde ventos de S são mais recorrentes. 
+
+O estreitamento da plataforma entre a Ponta da Penha e a Ilha Feia está associado a aumento de velocidades de corrente, especialmente correntes de norte. Quando o residual tem correntes de Sul, as maiores velocidades ficam associadas à parte leste da Ponta da Penha, mais próximo da costa e não tanto no encurtamento da plataforma.
+
+Apesar de todos os resultados de correntes residuais integradas em 2 meses, 50, 100 ou 200 horas terem apresentado resultados semelhantes na grande maioria dos cenários, verificou-se que os mapas a cada 50 horas são mais adequados para avaliar o comportamento dos residuais em momentos específicos de maré.
+
+% ====================================================================================
+\chapter{CONCLUSÕES}
+% ====================================================================================
+
+Este trabalho tinha como objetivo caracterizar a circulação local e residual da Enseada do Itapocorói. Considera-se que o trabalho alcançou os objetivos propostos e encontrou os seguintes resultados:
+
+\begin{itemize}
+	\item Ventos na região da Enseada são do quadrante N em 58,3\% do tempo. Ventos do quadrante sul estão presentes em 14,8\% do tempo.
+	\item O padrão de direção de vento muda ao longo das estações, sendo mais O-N no verão e S no inverno. Essa forte sazonalidade na direção de ventos na região está associada às mudanças de posição do Anticiclone do Atlântico Sul e do Anticiclone Móvel Polar.
+	\item A velocidade do vento nas diferentes estações são semelhantes, com média aproximada de 4$m.s^{-1}$ e valores máximos de 10$m.s^{-1}$. Velocidades abaixo de 6$m.s^{-1}$ estão presentes em 70\% do tempo.
+	\item Verificou-se que as marés meteorológicas na região podem chegar a 1,3m, mas que um mês de coletas de dados podem não ser suficientes para medir elevações dessa magnitude.
+	\item Devido ao regime de micro-marés da região, a componente meteorológica teve uma influência muito grande no perfil de nível dos dados medidos. Os eventos típicos de maré meteorológica medidos na região alcançam, em média, 0,5m. 
+	\item O número de forma para os dados medidos indicou que a região está submetida a um regime de marés mista com predominância semidiurna.
+	\item Verificou-se uma discrepância entre as constantes harmônicas apresentadas na FEMAR de Penha e as constantes harmônicas de dados medidos, com diversas constantes apresentando um SNR muito pequeno e, portanto ficando fora das análises
+	\item A comparação entre as constantes harmônicas M2 e S2 entre os dados da FEMAR e os deste presente trabalho tiveram 2 e 4cm de diferenças na amplitude, respectivamente, indicando que os dados da FEMAR talvez não representem de forma adequada a dinâmica mareal da região.
+	\item Da energia de nível medida, 27,5\% esteve associada com frequências submareais (acima de 50h).
+	\item A energia da maré semidiurna é a mais relevante dentre aquelas identificadas pela FFT, porém componentes diurnas, tercidiurnas e quadridiurnas tem relevância menor e equivalente entre si.
+	\item As temperaturas medidas ficaram todas abaixo de 20$^{\circ}$C, condizentes com o período de inverno, onde as medições foram feitas.
+	\item Existe uma maior variação de temperatura no ponto mais raso de medição, que chegou a 3,59$^{\circ}$C. Não foi encontrada nenhuma relação da variação de temperatura com a direção e velocidade do vento, nem nenhuma frequência de oscilação distinguível.
+	\item A temperatura do ponto mais profundo medido (17m), apresentou variação de temperatura de 1$^{\circ}$C em todo o período medido, indicando uma homogeneidade da região onde se encontrava o equipamento.
+	\item Dentro da Enseada, as velocidades ficam 90\% abaixo de 8$cm.s^{-1}$, mas podem chegar a valores na ordem de 20$cm.s^{-1}$.
+	\item Os pontos internos de medição da Enseada revelaram que a direção preferencial é distinta nos pontos analisados. O ponto mais interno tem direção preferencial NE e o ponto mais exposto tem direção preferencial E.
+	\item No ponto mais externo avaliado, as velocidades ficam 90\% do tempo abaixo de 21$cm.s^{-1}$, podendo alcançar 30$cm.s^{-1}$. Os correntes neste ponto são prioritariamente de sul.
+	\item Conseguiu-se gerar uma grade numérica e uma batimetria interpolada que pudesse representar de forma adequada a hidrodinâmica da região.
+	\item A parte interna da Enseada foi devidamente representada apenas com os parâmetros vento e maré, mas a parte externa, não. Isso mostra que parâmetros baroclínicos e outros parâmetros de larga escala não podem ser descartados do processo de análise da hidrodinâmica da área externa da Enseada.
+	\item Os cenários de análise da corrente residual foram suficientes para encontrar diversos padrões de corrente residual na área de estudo.
+	\item O vento é o parâmetro mais relevante na geração de correntes residuais.
+	\item Ventos de velocidades altas (10$m.s^{-1}$) geram correntes residuais muito intensas, que podem chegar a 2$cm.s^{-1}$. Essas correntes representam um percentual muito grande da velocidade típica na região, o que pode ter séries consequências na morfologia local. Sugere-se não se desconsiderar correntes residuais no padrão de hidrodinâmica e morfodinâmica de longo prazo da enseada.
+	\item O padrão de corrente residual da Enseada é modificado com o tempo, de acordo com o vento predominante no momento da análise.
+	\item Ventos de S e SE geram vórtices de sentido antihorário na zona de sombra da enseada, enquanto ventos de NE geram vórtices no sentido horário. Ventos de E não geram vórtices.  
+	\item Ventos constantes geram residuais semelhantes em qualquer tipo de análise feita, enquanto o cenário com vento variável apresentou diferentes residuais dependendo do momento em que foi utilizado para a análise.
+	\item Ventos NE geram correntes residuais de sentido norte-sul ao longo da praia, enquanto vendos de E, S e SE geram correntes residuais de sentido sul-norte.
+	\item Vento de SE de 10$m.s^{-1}$ foi o único cenário que gerou 2 vórtices de sentidos contrários na zona de sombra da Enseada.
+\end{itemize}
+
+% ====================================================================================
 \chapter{CONSIDERAÇÕES FINAIS}
+% ====================================================================================
 
 O presente trabalho buscou descrever a hidrodinâmica da Enseada do Itapocorói tanto em termos de descrição de dados medidos, quanto avaliação de resultados de modelos numéricos.
 
@@ -1575,31 +1698,33 @@ Este trabalho deu continuidade ao estudo feito por \citeonline{Leite2009}, e bus
 
 Sugere-se, para trabalhos futuros, que componentes meteorológicas sejam incluídas, bem como a inserção de temperatura e salinidade, para avaliar a influência das componentes baroclínicas da região. 
 
+Verificou-se que correntes residuais podem ser muito intensas na área de estudo e, portanto, também sugere-se avaliar o tempo de resposta da morfodinâmica local às intensidades de corrente residual aqui apresentadas.
+
 
 \bibliographystyle{ufscThesis/ufsc-alf}
 \bibliography{bibliografia}
 
 %%--------------------------------------------------------
 %% Elementos pós-textuais
-%%\apendice
-%%
-%%\chapter{Gráficos de Corrente por Camada}
-%%
-%%\begin{landscape}
-%%	% ----------------- ST001 CELULA 1 --------------------------
-%%	\newpage
-%%	\begin{figure}[!htb]
-%%		\includegraphics[width=1.5\textwidth]{figuras/camadas/CurrentRose_ST001_Cel1.png}
-%%		\centering
-%%		\caption{Rosa de correntes no ponto ST001 célula 1 (em $cm.s^{-1}$)}\label{fig:ST001Cel1}
-%%	\end{figure}	
-%%
-%%	\begin{figure}[!htb]
-%%		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST001_Camada1.png}
-%%		\centering
-%%		\caption{Velocidade ao longo do tempo em ST001 na Camada 1 (em $cm.s^{-1}$)}\label{fig:VelST001Cam1}
-%%	\end{figure}
-%%	
+\apendice
+
+\chapter{Gráficos de Corrente por Camada}
+
+\begin{landscape}
+	% ----------------- ST001 CELULA 1 --------------------------
+	\newpage
+	\begin{figure}[!htb]
+		\includegraphics[width=1.5\textwidth]{figuras/camadas/CurrentRose_ST001_Cel1.png}
+		\centering
+		\caption{Rosa de correntes no ponto ST001 célula 1 (em $cm.s^{-1}$)}\label{fig:ST001Cel1}
+	\end{figure}	
+
+	\begin{figure}[!htb]
+		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST001_Camada1.png}
+		\centering
+		\caption{Velocidade ao longo do tempo em ST001 na Camada 1 (em $cm.s^{-1}$)}\label{fig:VelST001Cam1}
+	\end{figure}
+	
 %%	\newpage
 %%	\begin{figure}[!htb]
 %%		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST001_Camada1_HistVel.png}
@@ -1614,21 +1739,21 @@ Sugere-se, para trabalhos futuros, que componentes meteorológicas sejam incluída
 %%		\caption{Histograma da direção da corrente no ponto ST001 na Camada 1 }\label{fig:HistDirST001Cam1}
 %%	\end{figure}
 %%
-%%  %  ----------------- ST001 CELULA 2 --------------------------
-%%	\newpage
-%%	\begin{figure}[!htb]
-%%		\includegraphics[width=1.5\textwidth]{figuras/camadas/CurrentRose_ST001_Cel2.png}
-%%		\centering
-%%		\caption{Rosa de correntes no ponto ST001 célula 2 (em $cm.s^{-1}$)}\label{fig:ST001Cel2}
-%%	\end{figure}
-%%	
-%%	\newpage
-%%	\begin{figure}[!htb]
-%%		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST001_Camada2.png}
-%%		\centering
-%%		\caption{Velocidade ao longo do tempo em ST001 na Camada 2 (em $cm.s^{-1}$)}\label{fig:VelST001Cam2}
-%%	\end{figure}
-%%		
+  %  ----------------- ST001 CELULA 2 --------------------------
+	\newpage
+	\begin{figure}[!htb]
+		\includegraphics[width=1.5\textwidth]{figuras/camadas/CurrentRose_ST001_Cel2.png}
+		\centering
+		\caption{Rosa de correntes no ponto ST001 célula 2 (em $cm.s^{-1}$)}\label{fig:ST001Cel2}
+	\end{figure}
+	
+	\newpage
+	\begin{figure}[!htb]
+		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST001_Camada2.png}
+		\centering
+		\caption{Velocidade ao longo do tempo em ST001 na Camada 2 (em $cm.s^{-1}$)}\label{fig:VelST001Cam2}
+	\end{figure}
+		
 %%	\newpage
 %%	\begin{figure}[!htb]
 %%		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST001_Camada2_HistVel.png}
@@ -1642,22 +1767,22 @@ Sugere-se, para trabalhos futuros, que componentes meteorológicas sejam incluída
 %%		\centering
 %%		\caption{Histograma da direção da corrente no ponto ST001 na Camada 2 }\label{fig:HistDirST001Cam2}
 %%	\end{figure}
-%%		
-%%	% ----------------- ST001 CELULA 3 --------------------------
-%%	\newpage
-%%	\begin{figure}[!htb]
-%%		\includegraphics[width=1.5\textwidth]{figuras/camadas/CurrentRose_ST001_Cel3.png}
-%%		\centering
-%%		\caption{Rosa de correntes no ponto ST001 célula 3 (em $cm.s^{-1}$)}\label{fig:ST001Cel3}
-%%	\end{figure}
-%%
-%%	\newpage
-%%	\begin{figure}[!htb]
-%%		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST001_Camada3.png}
-%%		\centering
-%%		\caption{Velocidade ao longo do tempo em ST001 na Camada 3 (em $cm.s^{-1}$)}\label{fig:VelST001Cam3}
-%%	\end{figure}
-%%	
+		
+	% ----------------- ST001 CELULA 3 --------------------------
+	\newpage
+	\begin{figure}[!htb]
+		\includegraphics[width=1.5\textwidth]{figuras/camadas/CurrentRose_ST001_Cel3.png}
+		\centering
+		\caption{Rosa de correntes no ponto ST001 célula 3 (em $cm.s^{-1}$)}\label{fig:ST001Cel3}
+	\end{figure}
+
+	\newpage
+	\begin{figure}[!htb]
+		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST001_Camada3.png}
+		\centering
+		\caption{Velocidade ao longo do tempo em ST001 na Camada 3 (em $cm.s^{-1}$)}\label{fig:VelST001Cam3}
+	\end{figure}
+	
 %%	\newpage
 %%	\begin{figure}[!htb]
 %%		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST001_Camada3_HistVel.png}
@@ -1671,26 +1796,26 @@ Sugere-se, para trabalhos futuros, que componentes meteorológicas sejam incluída
 %%		\centering
 %%		\caption{Histograma da direção da corrente no ponto ST001 na Camada 3 }\label{fig:HistDirST001Cam3}
 %%	\end{figure}
-%%
-%%\end{landscape}
-%%
-%%	 
-%%\begin{landscape}
-%%	% ----------------- ST002 CELULA 1 --------------------------
-%%	\newpage
-%%	\begin{figure}[!htb]
-%%		\includegraphics[width=1.5\textwidth]{figuras/camadas/CurrentRose_ST002_Cel1.png}
-%%		\centering
-%%		\caption{Rosa de correntes no ponto ST002 célula 1 (em $cm.s^{-1}$)}\label{fig:ST002Cel1}
-%%	\end{figure}
-%%
-%%	\newpage
-%%	\begin{figure}[!htb]
-%%		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST002_Camada1.png}
-%%		\centering
-%%		\caption{Velocidade ao longo do tempo em ST002 na Camada 1 (em $cm.s^{-1}$)}\label{fig:VelST002Cam1}
-%%	\end{figure}
-%%	
+
+\end{landscape}
+
+	 
+\begin{landscape}
+	% ----------------- ST002 CELULA 1 --------------------------
+	\newpage
+	\begin{figure}[!htb]
+		\includegraphics[width=1.5\textwidth]{figuras/camadas/CurrentRose_ST002_Cel1.png}
+		\centering
+		\caption{Rosa de correntes no ponto ST002 célula 1 (em $cm.s^{-1}$)}\label{fig:ST002Cel1}
+	\end{figure}
+
+	\newpage
+	\begin{figure}[!htb]
+		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST002_Camada1.png}
+		\centering
+		\caption{Velocidade ao longo do tempo em ST002 na Camada 1 (em $cm.s^{-1}$)}\label{fig:VelST002Cam1}
+	\end{figure}
+	
 %%	\newpage
 %%	\begin{figure}[!htb]
 %%		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST002_Camada1_HistVel.png}
@@ -1705,22 +1830,22 @@ Sugere-se, para trabalhos futuros, que componentes meteorológicas sejam incluída
 %%		\caption{Histograma da direção da corrente no ponto ST002 na Camada 1}\label{fig:HistDirST002Cam1}
 %%	\end{figure}
 %%	
-%%	% ----------------- ST002 CELULA 2 --------------------------
-%%	
-%%	\newpage
-%%	\begin{figure}[!htb]
-%%		\includegraphics[width=1.5\textwidth]{figuras/camadas/CurrentRose_ST002_Cel2.png}
-%%		\centering
-%%		\caption{Rosa de correntes no ponto ST002 célula 2 (em $cm.s^{-1}$)}\label{fig:ST002Cel2}
-%%	\end{figure}
-%%	
-%%	\newpage
-%%	\begin{figure}[!htb]
-%%		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST002_Camada2.png}
-%%		\centering
-%%		\caption{Velocidade ao longo do tempo em ST002 na Camada 2 (em $cm.s^{-1}$)}\label{fig:VelST002Cam2}
-%%	\end{figure}
-%%	
+	% ----------------- ST002 CELULA 2 --------------------------
+	
+	\newpage
+	\begin{figure}[!htb]
+		\includegraphics[width=1.5\textwidth]{figuras/camadas/CurrentRose_ST002_Cel2.png}
+		\centering
+		\caption{Rosa de correntes no ponto ST002 célula 2 (em $cm.s^{-1}$)}\label{fig:ST002Cel2}
+	\end{figure}
+	
+	\newpage
+	\begin{figure}[!htb]
+		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST002_Camada2.png}
+		\centering
+		\caption{Velocidade ao longo do tempo em ST002 na Camada 2 (em $cm.s^{-1}$)}\label{fig:VelST002Cam2}
+	\end{figure}
+	
 %%	\newpage
 %%	\begin{figure}[!htb]
 %%		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST002_Camada2_HistVel.png}
@@ -1734,23 +1859,23 @@ Sugere-se, para trabalhos futuros, que componentes meteorológicas sejam incluída
 %%		\centering
 %%		\caption{Histograma da direção da corrente no ponto ST002 na Camada 2 }\label{fig:HistDirST002Cam2}
 %%	\end{figure}
-%%			
-%%	% ----------------- ST002 CELULA 3 --------------------------
-%%	
-%%	\newpage
-%%	\begin{figure}[!htb]
-%%		\includegraphics[width=1.5\textwidth]{figuras/camadas/CurrentRose_ST002_Cel3.png}
-%%		\centering
-%%		\caption{Rosa de correntes no ponto ST002 célula 3 (em $cm.s^{-1}$)}\label{fig:ST002Cel3}
-%%	\end{figure}
-%%	
-%%	\newpage
-%%	\begin{figure}[!htb]
-%%		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST002_Camada3.png}
-%%		\centering
-%%		\caption{Velocidade ao longo do tempo em ST002 na Camada 3 (em $cm.s^{-1}$)}\label{fig:VelST002Cam3}
-%%	\end{figure}
-%%	
+			
+	% ----------------- ST002 CELULA 3 --------------------------
+	
+	\newpage
+	\begin{figure}[!htb]
+		\includegraphics[width=1.5\textwidth]{figuras/camadas/CurrentRose_ST002_Cel3.png}
+		\centering
+		\caption{Rosa de correntes no ponto ST002 célula 3 (em $cm.s^{-1}$)}\label{fig:ST002Cel3}
+	\end{figure}
+	
+	\newpage
+	\begin{figure}[!htb]
+		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST002_Camada3.png}
+		\centering
+		\caption{Velocidade ao longo do tempo em ST002 na Camada 3 (em $cm.s^{-1}$)}\label{fig:VelST002Cam3}
+	\end{figure}
+	
 %%	\newpage
 %%	\begin{figure}[!htb]
 %%		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST002_Camada3_HistVel.png}
@@ -1765,22 +1890,22 @@ Sugere-se, para trabalhos futuros, que componentes meteorológicas sejam incluída
 %%		\caption{Histograma da direção da corrente no ponto ST002 na Camada 3}\label{fig:HistDirST002Cam3}
 %%	\end{figure}
 %%	
-%%	 %----------------- ST002 CELULA 4 --------------------------
-%%	
-%%	\newpage
-%%	\begin{figure}[!htb]
-%%		\includegraphics[width=1.6\textwidth]{figuras/camadas/CurrentRose_ST002_Cel4.png}
-%%		\centering
-%%		\caption{Rosa de correntes no ponto ST002 célula 4 (em $cm.s^{-1}$)}\label{fig:ST002Cel4}
-%%	\end{figure}
-%%	
-%%	\newpage
-%%	\begin{figure}[!htb]
-%%		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST002_Camada4.png}
-%%		\centering
-%%		\caption{Velocidade ao longo do tempo em ST002 na Camada 4 (em $cm.s^{-1}$)}\label{fig:VelST002Cam4}
-%%	\end{figure}
-%%	
+	 %----------------- ST002 CELULA 4 --------------------------
+	
+	\newpage
+	\begin{figure}[!htb]
+		\includegraphics[width=1.6\textwidth]{figuras/camadas/CurrentRose_ST002_Cel4.png}
+		\centering
+		\caption{Rosa de correntes no ponto ST002 célula 4 (em $cm.s^{-1}$)}\label{fig:ST002Cel4}
+	\end{figure}
+	
+	\newpage
+	\begin{figure}[!htb]
+		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST002_Camada4.png}
+		\centering
+		\caption{Velocidade ao longo do tempo em ST002 na Camada 4 (em $cm.s^{-1}$)}\label{fig:VelST002Cam4}
+	\end{figure}
+	
 %%	\newpage
 %%	\begin{figure}[!htb]
 %%		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST002_Camada4_HistVel.png}
@@ -1795,22 +1920,22 @@ Sugere-se, para trabalhos futuros, que componentes meteorológicas sejam incluída
 %%		\caption{Histograma da direção da corrente no ponto ST002 na Camada 4}\label{fig:HistDirST002Cam4}
 %%	\end{figure}
 %%	
-%%	 %----------------- ST002 CELULA 5 --------------------------
-%%	\newpage
-%%	\begin{figure}[!htb]
-%%		\includegraphics[width=1.5\textwidth]{figuras/camadas/CurrentRose_ST002_Cel5.png}
-%%		\centering
-%%		\caption{Rosa de correntes no ponto ST002 célula 5 (em $cm.s^{-1}$)}\label{fig:ST002Cel5}
-%%	\end{figure}
-%%	
-%%	\newpage
-%%	\begin{figure}[!htb]
-%%		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST002_Camada5.png}
-%%		\centering
-%%		\caption{Velocidade ao longo do tempo em ST002 na Camada 5 (em $cm.s^{-1}$)}\label{fig:VelST002Cam5}
-%%	\end{figure}
-%%\end{landscape}
-%%
+	 %----------------- ST002 CELULA 5 --------------------------
+	\newpage
+	\begin{figure}[!htb]
+		\includegraphics[width=1.5\textwidth]{figuras/camadas/CurrentRose_ST002_Cel5.png}
+		\centering
+		\caption{Rosa de correntes no ponto ST002 célula 5 (em $cm.s^{-1}$)}\label{fig:ST002Cel5}
+	\end{figure}
+	
+	\newpage
+	\begin{figure}[!htb]
+		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST002_Camada5.png}
+		\centering
+		\caption{Velocidade ao longo do tempo em ST002 na Camada 5 (em $cm.s^{-1}$)}\label{fig:VelST002Cam5}
+	\end{figure}
+\end{landscape}
+
 %%\begin{landscape}
 %%	\newpage
 %%	\begin{figure}[!htb]
@@ -1828,23 +1953,23 @@ Sugere-se, para trabalhos futuros, que componentes meteorológicas sejam incluída
 %%\end{landscape}
 %%
 %%
-%%\begin{landscape}
-%%	 %----------------- ST002 CELULA 6 --------------------------
-%%	\newpage
-%%	\begin{figure}[!htb]
-%%		\includegraphics[width=1.5\textwidth]{figuras/camadas/CurrentRose_ST002_Cel6.png}
-%%		\centering
-%%		\caption{Rosa de correntes no ponto ST002 célula 6 (em $cm.s^{-1}$)}\label{fig:ST002Cel6}
-%%	\end{figure}
-%%	
-%%	
-%%	\newpage
-%%	\begin{figure}[!htb]
-%%		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST002_Camada6.png}
-%%		\centering
-%%		\caption{Velocidade ao longo do tempo em ST002 na Camada 6 (em $cm.s^{-1}$)}\label{fig:VelST002Cam6}
-%%	\end{figure}
-%%	
+\begin{landscape}
+	 %----------------- ST002 CELULA 6 --------------------------
+	\newpage
+	\begin{figure}[!htb]
+		\includegraphics[width=1.5\textwidth]{figuras/camadas/CurrentRose_ST002_Cel6.png}
+		\centering
+		\caption{Rosa de correntes no ponto ST002 célula 6 (em $cm.s^{-1}$)}\label{fig:ST002Cel6}
+	\end{figure}
+	
+	
+	\newpage
+	\begin{figure}[!htb]
+		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST002_Camada6.png}
+		\centering
+		\caption{Velocidade ao longo do tempo em ST002 na Camada 6 (em $cm.s^{-1}$)}\label{fig:VelST002Cam6}
+	\end{figure}
+	
 %%	\newpage
 %%	\begin{figure}[!htb]
 %%		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST002_Camada6_HistVel.png}
@@ -1859,25 +1984,25 @@ Sugere-se, para trabalhos futuros, que componentes meteorológicas sejam incluída
 %%		\caption{Histograma da direção da corrente no ponto ST002 na Camada 6}\label{fig:HistDirST002Cam6}
 %%	\end{figure}
 %%
-%%\end{landscape}	
-%%
-%%\begin{landscape}
-%%
-%%	% ----------------- ST002 CELULA 7 --------------------------
-%%	\newpage
-%%	\begin{figure}[!htb]
-%%		\includegraphics[width=1.5\textwidth]{figuras/camadas/CurrentRose_ST002_Cel7.png}
-%%		\centering
-%%		\caption{Rosa de correntes no ponto ST002 célula 7 (em $cm.s^{-1}$)}\label{fig:ST002Cel7}
-%%	\end{figure}
-%%	
-%%	\newpage
-%%	\begin{figure}[!htb]
-%%		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST002_Camada7.png}
-%%		\centering
-%%		\caption{Velocidade ao longo do tempo em ST002 na Camada 7 (em $cm.s^{-1}$)}\label{fig:VelST002Cam7}
-%%	\end{figure}
-%%	
+\end{landscape}	
+
+\begin{landscape}
+
+	% ----------------- ST002 CELULA 7 --------------------------
+	\newpage
+	\begin{figure}[!htb]
+		\includegraphics[width=1.5\textwidth]{figuras/camadas/CurrentRose_ST002_Cel7.png}
+		\centering
+		\caption{Rosa de correntes no ponto ST002 célula 7 (em $cm.s^{-1}$)}\label{fig:ST002Cel7}
+	\end{figure}
+	
+	\newpage
+	\begin{figure}[!htb]
+		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST002_Camada7.png}
+		\centering
+		\caption{Velocidade ao longo do tempo em ST002 na Camada 7 (em $cm.s^{-1}$)}\label{fig:VelST002Cam7}
+	\end{figure}
+	
 %%	\newpage
 %%	\begin{figure}[!htb]
 %%		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST002_Camada7_HistVel.png}
@@ -1891,24 +2016,24 @@ Sugere-se, para trabalhos futuros, que componentes meteorológicas sejam incluída
 %%		\centering
 %%		\caption{Histograma da direção da corrente no ponto ST002 na Camada 7}\label{fig:HistDirST002Cam7}
 %%	\end{figure}
-%%\end{landscape}	
-%%
-%%\begin{landscape}
-%%	% ----------------- ST002 CELULA 8 --------------------------
-%%	\newpage
-%%	\begin{figure}[!htb]
-%%		\includegraphics[width=1.5\textwidth]{figuras/camadas/CurrentRose_ST002_Cel8.png}
-%%		\centering
-%%		\caption{Rosa de correntes no ponto ST002 célula 8 (em $cm.s^{-1}$)}\label{fig:ST002Cel8}
-%%	\end{figure}
-%%	
-%%	\newpage
-%%	\begin{figure}[!htb]
-%%		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST002_Camada8.png}
-%%		\centering
-%%		\caption{Velocidade ao longo do tempo em ST002 na Camada 8 (em $cm.s^{-1}$)}\label{fig:VelST002Cam8}
-%%	\end{figure}
-%%	
+\end{landscape}	
+
+\begin{landscape}
+	% ----------------- ST002 CELULA 8 --------------------------
+	\newpage
+	\begin{figure}[!htb]
+		\includegraphics[width=1.5\textwidth]{figuras/camadas/CurrentRose_ST002_Cel8.png}
+		\centering
+		\caption{Rosa de correntes no ponto ST002 célula 8 (em $cm.s^{-1}$)}\label{fig:ST002Cel8}
+	\end{figure}
+	
+	\newpage
+	\begin{figure}[!htb]
+		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST002_Camada8.png}
+		\centering
+		\caption{Velocidade ao longo do tempo em ST002 na Camada 8 (em $cm.s^{-1}$)}\label{fig:VelST002Cam8}
+	\end{figure}
+	
 %%	\newpage
 %%	\begin{figure}[!htb]
 %%		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST002_Camada8_HistVel.png}
@@ -1922,22 +2047,22 @@ Sugere-se, para trabalhos futuros, que componentes meteorológicas sejam incluída
 %%		\centering
 %%		\caption{Histograma da direção da corrente no ponto ST002 na Camada 8}\label{fig:HistDirST002Cam8}
 %%	\end{figure}
-%%	
-%%	% ----------------- ST002 CELULA 9 --------------------------
-%%	\newpage
-%%	\begin{figure}[!htb]
-%%		\includegraphics[width=1.5\textwidth]{figuras/camadas/CurrentRose_ST002_Cel9.png}
-%%		\centering
-%%		\caption{Rosa de correntes no ponto ST002 célula 9 (em $cm.s^{-1}$)}\label{fig:ST002Cel9}
-%%	\end{figure}
-%%		
-%%	\newpage
-%%	\begin{figure}[!htb]
-%%		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST002_Camada9.png}
-%%		\centering
-%%		\caption{Velocidade ao longo do tempo em ST002 na Camada 9 (em $cm.s^{-1}$)}\label{fig:VelST002Cam9}
-%%	\end{figure}
-%%	
+	
+	% ----------------- ST002 CELULA 9 --------------------------
+	\newpage
+	\begin{figure}[!htb]
+		\includegraphics[width=1.5\textwidth]{figuras/camadas/CurrentRose_ST002_Cel9.png}
+		\centering
+		\caption{Rosa de correntes no ponto ST002 célula 9 (em $cm.s^{-1}$)}\label{fig:ST002Cel9}
+	\end{figure}
+		
+	\newpage
+	\begin{figure}[!htb]
+		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST002_Camada9.png}
+		\centering
+		\caption{Velocidade ao longo do tempo em ST002 na Camada 9 (em $cm.s^{-1}$)}\label{fig:VelST002Cam9}
+	\end{figure}
+	
 %%	\newpage
 %%	\begin{figure}[!htb]
 %%		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST002_Camada9_HistVel.png}
@@ -1951,25 +2076,25 @@ Sugere-se, para trabalhos futuros, que componentes meteorológicas sejam incluída
 %%		\centering
 %%		\caption{Histograma da direção da corrente no ponto ST002 na Camada 9}\label{fig:HistDirST002Cam9}
 %%	\end{figure}
-%%\end{landscape}
-%%
-%%\begin{landscape}
-%%	% ----------------- ST002 CELULA 10 --------------------------
-%%	
-%%	\newpage
-%%	\begin{figure}[!htb]
-%%		\includegraphics[width=1.6\textwidth]{figuras/camadas/CurrentRose_ST002_Cel10.png}
-%%		\centering
-%%		\caption{Rosa de correntes no ponto ST002 célula 10 (em $cm.s^{-1}$)}\label{fig:ST002Cel10}
-%%	\end{figure}
-%%
-%%	\newpage
-%%	\begin{figure}[!htb]
-%%		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST002_Camada10.png}
-%%		\centering
-%%		\caption{Velocidade ao longo do tempo em ST002 na Camada 10 (em $cm.s^{-1}$)}\label{fig:VelST002Cam10}
-%%	\end{figure}
-%%	
+\end{landscape}
+
+\begin{landscape}
+	% ----------------- ST002 CELULA 10 --------------------------
+	
+	\newpage
+	\begin{figure}[!htb]
+		\includegraphics[width=1.6\textwidth]{figuras/camadas/CurrentRose_ST002_Cel10.png}
+		\centering
+		\caption{Rosa de correntes no ponto ST002 célula 10 (em $cm.s^{-1}$)}\label{fig:ST002Cel10}
+	\end{figure}
+
+	\newpage
+	\begin{figure}[!htb]
+		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST002_Camada10.png}
+		\centering
+		\caption{Velocidade ao longo do tempo em ST002 na Camada 10 (em $cm.s^{-1}$)}\label{fig:VelST002Cam10}
+	\end{figure}
+	
 %%	\newpage
 %%	\begin{figure}[!htb]
 %%		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST002_Camada10_HistVel.png}
@@ -1983,24 +2108,24 @@ Sugere-se, para trabalhos futuros, que componentes meteorológicas sejam incluída
 %%		\centering
 %%		\caption{Histograma da direção da corrente no ponto ST002 na Camada 10}\label{fig:HistDirST002Cam10}
 %%	\end{figure}
-%%\end{landscape}
-%%
-%%\begin{landscape}
-%%	% ----------------- ST003 CELULA 1 --------------------------
-%%	\newpage
-%%	\begin{figure}[!htb]
-%%		\includegraphics[width=1.6\textwidth]{figuras/camadas/CurrentRose_ST003_Cel1.png}
-%%		\centering
-%%		\caption{Rosa de correntes no ponto ST003 célula 1 (em $cm.s^{-1}$)}\label{fig:ST003Cel1}
-%%	\end{figure}
-%%
-%%	\newpage
-%%	\begin{figure}[!htb]
-%%		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada1.png}
-%%		\centering
-%%		\caption{Velocidade ao longo do tempo em ST003 na Camada 1 (em $cm.s^{-1}$)}\label{fig:VelST003Cam1}
-%%	\end{figure}
-%%	
+\end{landscape}
+
+\begin{landscape}
+	% ----------------- ST003 CELULA 1 --------------------------
+	\newpage
+	\begin{figure}[!htb]
+		\includegraphics[width=1.6\textwidth]{figuras/camadas/CurrentRose_ST003_Cel1.png}
+		\centering
+		\caption{Rosa de correntes no ponto ST003 célula 1 (em $cm.s^{-1}$)}\label{fig:ST003Cel1}
+	\end{figure}
+
+	\newpage
+	\begin{figure}[!htb]
+		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada1.png}
+		\centering
+		\caption{Velocidade ao longo do tempo em ST003 na Camada 1 (em $cm.s^{-1}$)}\label{fig:VelST003Cam1}
+	\end{figure}
+	
 %%	\newpage
 %%	\begin{figure}[!htb]
 %%		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada1_HistVel.png}
@@ -2014,24 +2139,24 @@ Sugere-se, para trabalhos futuros, que componentes meteorológicas sejam incluída
 %%		\centering
 %%		\caption{Histograma da direção da corrente no ponto ST003 na Camada 1}\label{fig:HistDirST003Cam1}
 %%	\end{figure}
-%%\end{landscape}
-%%
-%%\begin{landscape}
-%%	% ----------------- ST003 CELULA 2 --------------------------
-%%	\newpage
-%%	\begin{figure}[!htb]
-%%		\includegraphics[width=1.6\textwidth]{figuras/camadas/CurrentRose_ST003_Cel2.png}
-%%		\centering
-%%		\caption{Rosa de correntes no ponto ST003 célula 2 (em $cm.s^{-1}$)}\label{fig:ST003Cel2}
-%%	\end{figure}
-%%	
-%%	\newpage
-%%	\begin{figure}[!htb]
-%%		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada2.png}
-%%		\centering
-%%		\caption{Velocidade ao longo do tempo em ST003 na Camada 2 (em $cm.s^{-1}$)}\label{fig:VelST003Cam2}
-%%	\end{figure}
-%%		
+\end{landscape}
+
+\begin{landscape}
+	% ----------------- ST003 CELULA 2 --------------------------
+	\newpage
+	\begin{figure}[!htb]
+		\includegraphics[width=1.6\textwidth]{figuras/camadas/CurrentRose_ST003_Cel2.png}
+		\centering
+		\caption{Rosa de correntes no ponto ST003 célula 2 (em $cm.s^{-1}$)}\label{fig:ST003Cel2}
+	\end{figure}
+	
+	\newpage
+	\begin{figure}[!htb]
+		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada2.png}
+		\centering
+		\caption{Velocidade ao longo do tempo em ST003 na Camada 2 (em $cm.s^{-1}$)}\label{fig:VelST003Cam2}
+	\end{figure}
+		
 %%	\newpage
 %%	\begin{figure}[!htb]
 %%		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada2_HistVel.png}
@@ -2045,24 +2170,24 @@ Sugere-se, para trabalhos futuros, que componentes meteorológicas sejam incluída
 %%		\centering
 %%		\caption{Histograma da direção da corrente no ponto ST003 na Camada 2}\label{fig:HistDirST003Cam2}
 %%	\end{figure}
-%%\end{landscape}
-%%
-%%\begin{landscape}
-%%	% ----------------- ST003 CELULA 3 --------------------------
-%%	\newpage
-%%	\begin{figure}[!htb]
-%%		\includegraphics[width=1.6\textwidth]{figuras/camadas/CurrentRose_ST003_Cel3.png}
-%%		\centering
-%%		\caption{Rosa de correntes no ponto ST003 célula 3 (em $cm.s^{-1}$)}\label{fig:ST003Cel3}
-%%	\end{figure}
-%%	
-%%	\newpage
-%%	\begin{figure}[!htb]
-%%		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada3.png}
-%%		\centering
-%%		\caption{Velocidade ao longo do tempo em ST003 na Camada 3 (em $cm.s^{-1}$)}\label{fig:VelST003Cam3}
-%%	\end{figure}
-%%	
+\end{landscape}
+
+\begin{landscape}
+	% ----------------- ST003 CELULA 3 --------------------------
+	\newpage
+	\begin{figure}[!htb]
+		\includegraphics[width=1.6\textwidth]{figuras/camadas/CurrentRose_ST003_Cel3.png}
+		\centering
+		\caption{Rosa de correntes no ponto ST003 célula 3 (em $cm.s^{-1}$)}\label{fig:ST003Cel3}
+	\end{figure}
+	
+	\newpage
+	\begin{figure}[!htb]
+		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada3.png}
+		\centering
+		\caption{Velocidade ao longo do tempo em ST003 na Camada 3 (em $cm.s^{-1}$)}\label{fig:VelST003Cam3}
+	\end{figure}
+	
 %%	\newpage
 %%	\begin{figure}[!htb]
 %%		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada3_HistVel.png}
@@ -2076,24 +2201,24 @@ Sugere-se, para trabalhos futuros, que componentes meteorológicas sejam incluída
 %%		\centering
 %%		\caption{Histograma da direção da corrente no ponto ST003 na Camada 3}\label{fig:HistDirST003Cam3}
 %%	\end{figure}
-%%\end{landscape}	
-%%
-%%\begin{landscape}
-%%	% ----------------- ST003 CELULA 4 --------------------------
-%%	\newpage
-%%	\begin{figure}[!htb]
-%%		\includegraphics[width=1.6\textwidth]{figuras/camadas/CurrentRose_ST003_Cel4.png}
-%%		\centering
-%%		\caption{Rosa de correntes no ponto ST003 célula 4 (em $cm.s^{-1}$)}\label{fig:ST003Cel4}
-%%	\end{figure}
-%%	
-%%	\newpage
-%%	\begin{figure}[!htb]
-%%		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada4.png}
-%%		\centering
-%%		\caption{Velocidade ao longo do tempo em ST003 na Camada 4 (em $cm.s^{-1}$)}\label{fig:VelST003Cam4}
-%%	\end{figure}
-%%	
+\end{landscape}	
+
+\begin{landscape}
+	% ----------------- ST003 CELULA 4 --------------------------
+	\newpage
+	\begin{figure}[!htb]
+		\includegraphics[width=1.6\textwidth]{figuras/camadas/CurrentRose_ST003_Cel4.png}
+		\centering
+		\caption{Rosa de correntes no ponto ST003 célula 4 (em $cm.s^{-1}$)}\label{fig:ST003Cel4}
+	\end{figure}
+	
+	\newpage
+	\begin{figure}[!htb]
+		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada4.png}
+		\centering
+		\caption{Velocidade ao longo do tempo em ST003 na Camada 4 (em $cm.s^{-1}$)}\label{fig:VelST003Cam4}
+	\end{figure}
+	
 %%	\newpage
 %%	\begin{figure}[!htb]
 %%		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada4_HistVel.png}
@@ -2108,21 +2233,21 @@ Sugere-se, para trabalhos futuros, que componentes meteorológicas sejam incluída
 %%		\caption{Histograma da direção da corrente no ponto ST003 na Camada 4}\label{fig:HistDirST003Cam4}
 %%	\end{figure}
 %%	
-%%	% ----------------- ST003 CELULA 5 --------------------------
-%%	\newpage
-%%	\begin{figure}[!htb]
-%%		\includegraphics[width=1.6\textwidth]{figuras/camadas/CurrentRose_ST003_Cel5.png}
-%%		\centering
-%%		\caption{Rosa de correntes no ponto ST003 célula 5 (em $cm.s^{-1}$)}\label{fig:ST003Cel5}
-%%	\end{figure}
-%%	
-%%	\newpage
-%%	\begin{figure}[!htb]
-%%		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada5.png}
-%%		\centering
-%%		\caption{Velocidade ao longo do tempo em ST003 na Camada 5 (em $cm.s^{-1}$)}\label{fig:VelST003Cam5}
-%%	\end{figure}
-%%		
+	% ----------------- ST003 CELULA 5 --------------------------
+	\newpage
+	\begin{figure}[!htb]
+		\includegraphics[width=1.6\textwidth]{figuras/camadas/CurrentRose_ST003_Cel5.png}
+		\centering
+		\caption{Rosa de correntes no ponto ST003 célula 5 (em $cm.s^{-1}$)}\label{fig:ST003Cel5}
+	\end{figure}
+	
+	\newpage
+	\begin{figure}[!htb]
+		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada5.png}
+		\centering
+		\caption{Velocidade ao longo do tempo em ST003 na Camada 5 (em $cm.s^{-1}$)}\label{fig:VelST003Cam5}
+	\end{figure}
+		
 %%	\newpage
 %%	\begin{figure}[!htb]
 %%		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada5_HistVel.png}
@@ -2136,24 +2261,24 @@ Sugere-se, para trabalhos futuros, que componentes meteorológicas sejam incluída
 %%		\centering
 %%		\caption{Histograma da direção da corrente no ponto ST003 na Camada 5}\label{fig:HistDirST003Cam5}
 %%	\end{figure}
-%%\end{landscape}
-%%
-%%\begin{landscape}
-%%	% ----------------- ST003 CELULA 6 --------------------------
-%%	\newpage
-%%	\begin{figure}[!htb]
-%%		\includegraphics[width=1.6\textwidth]{figuras/camadas/CurrentRose_ST003_Cel6.png}
-%%		\centering
-%%		\caption{Rosa de correntes no ponto ST003 célula 6 (em $cm.s^{-1}$)}\label{fig:ST003Cel6}
-%%	\end{figure}
-%%		
-%%	\newpage
-%%	\begin{figure}[!htb]
-%%		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada6.png}
-%%		\centering
-%%		\caption{Velocidade ao longo do tempo em ST003 na Camada 6 (em $cm.s^{-1}$)}\label{fig:VelST003Cam6}
-%%	\end{figure}
-%%	
+\end{landscape}
+
+\begin{landscape}
+	% ----------------- ST003 CELULA 6 --------------------------
+	\newpage
+	\begin{figure}[!htb]
+		\includegraphics[width=1.6\textwidth]{figuras/camadas/CurrentRose_ST003_Cel6.png}
+		\centering
+		\caption{Rosa de correntes no ponto ST003 célula 6 (em $cm.s^{-1}$)}\label{fig:ST003Cel6}
+	\end{figure}
+		
+	\newpage
+	\begin{figure}[!htb]
+		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada6.png}
+		\centering
+		\caption{Velocidade ao longo do tempo em ST003 na Camada 6 (em $cm.s^{-1}$)}\label{fig:VelST003Cam6}
+	\end{figure}
+	
 %%	\newpage
 %%	\begin{figure}[!htb]
 %%		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada6_HistVel.png}
@@ -2168,21 +2293,21 @@ Sugere-se, para trabalhos futuros, que componentes meteorológicas sejam incluída
 %%		\caption{Histograma da direção da corrente no ponto ST003 na Camada 6}\label{fig:HistDirST003Cam6}
 %%	\end{figure}
 %%	
-%%	 % ----------------- ST003 CELULA 7 --------------------------
-%%	\newpage
-%%	\begin{figure}[!htb]
-%%		\includegraphics[width=1.6\textwidth]{figuras/camadas/CurrentRose_ST003_Cel7.png}
-%%		\centering
-%%		\caption{Rosa de correntes no ponto ST003 célula 7 (em $cm.s^{-1}$)}\label{fig:ST003Cel7}
-%%	\end{figure}
-%%	
-%%	\newpage
-%%	\begin{figure}[!htb]
-%%		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada7.png}
-%%		\centering
-%%		\caption{Velocidade ao longo do tempo em ST003 na Camada 7 (em $cm.s^{-1}$)}\label{fig:VelST003Cam7}
-%%	\end{figure}
-%%		
+	 % ----------------- ST003 CELULA 7 --------------------------
+	\newpage
+	\begin{figure}[!htb]
+		\includegraphics[width=1.6\textwidth]{figuras/camadas/CurrentRose_ST003_Cel7.png}
+		\centering
+		\caption{Rosa de correntes no ponto ST003 célula 7 (em $cm.s^{-1}$)}\label{fig:ST003Cel7}
+	\end{figure}
+	
+	\newpage
+	\begin{figure}[!htb]
+		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada7.png}
+		\centering
+		\caption{Velocidade ao longo do tempo em ST003 na Camada 7 (em $cm.s^{-1}$)}\label{fig:VelST003Cam7}
+	\end{figure}
+		
 %%	\newpage
 %%	\begin{figure}[!htb]
 %%		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada7_HistVel.png}
@@ -2196,24 +2321,24 @@ Sugere-se, para trabalhos futuros, que componentes meteorológicas sejam incluída
 %%		\centering
 %%		\caption{Histograma da direção da corrente no ponto ST003 na Camada 7}\label{fig:HistDirST003Cam7}
 %%	\end{figure}
-%%\end{landscape}
-%%
-%%\begin{landscape}
-%%	 %----------------- ST003 CELULA 8 --------------------------
-%%	\newpage
-%%	\begin{figure}[!htb]
-%%		\includegraphics[width=1.6\textwidth]{figuras/camadas/CurrentRose_ST003_Cel8.png}
-%%		\centering
-%%		\caption{Rosa de correntes no ponto ST003 célula 8 (em $cm.s^{-1}$)}\label{fig:ST003Cel8}
-%%	\end{figure}
-%%	
-%%	\newpage
-%%	\begin{figure}[!htb]
-%%		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada8.png}
-%%		\centering
-%%		\caption{Velocidade ao longo do tempo em ST003 na Camada 8 (em $cm.s^{-1}$)}\label{fig:VelST003Cam8}
-%%	\end{figure}
-%%	
+\end{landscape}
+
+\begin{landscape}
+	 %----------------- ST003 CELULA 8 --------------------------
+	\newpage
+	\begin{figure}[!htb]
+		\includegraphics[width=1.6\textwidth]{figuras/camadas/CurrentRose_ST003_Cel8.png}
+		\centering
+		\caption{Rosa de correntes no ponto ST003 célula 8 (em $cm.s^{-1}$)}\label{fig:ST003Cel8}
+	\end{figure}
+	
+	\newpage
+	\begin{figure}[!htb]
+		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada8.png}
+		\centering
+		\caption{Velocidade ao longo do tempo em ST003 na Camada 8 (em $cm.s^{-1}$)}\label{fig:VelST003Cam8}
+	\end{figure}
+	
 %%	\newpage
 %%	\begin{figure}[!htb]
 %%		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada8_HistVel.png}
@@ -2228,21 +2353,21 @@ Sugere-se, para trabalhos futuros, que componentes meteorológicas sejam incluída
 %%		\caption{Histograma da direção da corrente no ponto ST003 na Camada 8}\label{fig:HistDirST003Cam8}
 %%	\end{figure}
 %%	
-%%	% ----------------- ST003 CELULA 9 --------------------------
-%%	\newpage
-%%	\begin{figure}[!htb]
-%%		\includegraphics[width=1.6\textwidth]{figuras/camadas/CurrentRose_ST003_Cel9.png}
-%%		\centering
-%%		\caption{Rosa de correntes no ponto ST003 célula 9 (em $cm.s^{-1}$)}\label{fig:ST003Cel9}
-%%	\end{figure}
-%%	
-%%	\newpage
-%%	\begin{figure}[!htb]
-%%		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada9.png}
-%%		\centering
-%%		\caption{Velocidade ao longo do tempo em ST003 na Camada 9 (em $cm.s^{-1}$)}\label{fig:VelST003Cam9}
-%%	\end{figure}
-%%	
+	% ----------------- ST003 CELULA 9 --------------------------
+	\newpage
+	\begin{figure}[!htb]
+		\includegraphics[width=1.6\textwidth]{figuras/camadas/CurrentRose_ST003_Cel9.png}
+		\centering
+		\caption{Rosa de correntes no ponto ST003 célula 9 (em $cm.s^{-1}$)}\label{fig:ST003Cel9}
+	\end{figure}
+	
+	\newpage
+	\begin{figure}[!htb]
+		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada9.png}
+		\centering
+		\caption{Velocidade ao longo do tempo em ST003 na Camada 9 (em $cm.s^{-1}$)}\label{fig:VelST003Cam9}
+	\end{figure}
+	
 %%	\newpage
 %%	\begin{figure}[!htb]
 %%		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada9_HistVel.png}
@@ -2256,24 +2381,24 @@ Sugere-se, para trabalhos futuros, que componentes meteorológicas sejam incluída
 %%		\centering
 %%		\caption{Histograma da direção da corrente no ponto ST003 na Camada 9}\label{fig:HistDirST003Cam9}
 %%	\end{figure}
-%%\end{landscape}
-%%
-%%\begin{landscape}
-%%	 %----------------- ST003 CELULA 10 --------------------------
-%%	\newpage
-%%	\begin{figure}[!htb]
-%%		\includegraphics[width=1.6\textwidth]{figuras/camadas/CurrentRose_ST003_Cel10.png}
-%%		\centering
-%%		\caption{Rosa de correntes no ponto ST003 célula 10 (em $cm.s^{-1}$)}\label{fig:ST003Cel10}
-%%	\end{figure}
-%%	
-%%	\newpage
-%%	\begin{figure}[!htb]
-%%		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada10.png}
-%%		\centering
-%%		\caption{Velocidade ao longo do tempo em ST003 na Camada 10 (em $cm.s^{-1}$)}\label{fig:VelST003Cam10}
-%%	\end{figure}
-%%		
+\end{landscape}
+
+\begin{landscape}
+	 %----------------- ST003 CELULA 10 --------------------------
+	\newpage
+	\begin{figure}[!htb]
+		\includegraphics[width=1.6\textwidth]{figuras/camadas/CurrentRose_ST003_Cel10.png}
+		\centering
+		\caption{Rosa de correntes no ponto ST003 célula 10 (em $cm.s^{-1}$)}\label{fig:ST003Cel10}
+	\end{figure}
+	
+	\newpage
+	\begin{figure}[!htb]
+		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada10.png}
+		\centering
+		\caption{Velocidade ao longo do tempo em ST003 na Camada 10 (em $cm.s^{-1}$)}\label{fig:VelST003Cam10}
+	\end{figure}
+		
 %%	\newpage
 %%	\begin{figure}[!htb]
 %%		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada10_HistVel.png}
@@ -2287,22 +2412,22 @@ Sugere-se, para trabalhos futuros, que componentes meteorológicas sejam incluída
 %%		\centering
 %%		\caption{Histograma da direção da corrente no ponto ST003 na Camada 10}\label{fig:HistDirST003Cam10}
 %%	\end{figure}
-%%		
-%%	 %----------------- ST003 CELULA 11 --------------------------
-%%	\newpage
-%%	\begin{figure}[!htb]
-%%		\includegraphics[width=1.6\textwidth]{figuras/camadas/CurrentRose_ST003_Cel11.png}
-%%		\centering
-%%		\caption{Rosa de correntes no ponto ST003 célula 11 (em $cm.s^{-1}$)}\label{fig:ST003Cel11}
-%%	\end{figure}
-%%	
-%%	\newpage
-%%	\begin{figure}[!htb]
-%%		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada11.png}
-%%		\centering
-%%		\caption{Velocidade ao longo do tempo em ST003 na Camada 11 (em $cm.s^{-1}$)}\label{fig:VelST003Cam11}
-%%	\end{figure}
-%%		
+		
+	 %----------------- ST003 CELULA 11 --------------------------
+	\newpage
+	\begin{figure}[!htb]
+		\includegraphics[width=1.6\textwidth]{figuras/camadas/CurrentRose_ST003_Cel11.png}
+		\centering
+		\caption{Rosa de correntes no ponto ST003 célula 11 (em $cm.s^{-1}$)}\label{fig:ST003Cel11}
+	\end{figure}
+	
+	\newpage
+	\begin{figure}[!htb]
+		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada11.png}
+		\centering
+		\caption{Velocidade ao longo do tempo em ST003 na Camada 11 (em $cm.s^{-1}$)}\label{fig:VelST003Cam11}
+	\end{figure}
+		
 %%	\newpage
 %%	\begin{figure}[!htb]
 %%		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada11_HistVel.png}
@@ -2316,22 +2441,22 @@ Sugere-se, para trabalhos futuros, que componentes meteorológicas sejam incluída
 %%		\centering
 %%		\caption{Histograma da direção da corrente no ponto ST003 na Camada 11}\label{fig:HistDirST003Cam11}
 %%	\end{figure}
-%%	
-%%	 %----------------- ST003 CELULA 12 --------------------------
-%%	\newpage
-%%	\begin{figure}[!htb]
-%%		\includegraphics[width=1.6\textwidth]{figuras/camadas/CurrentRose_ST003_Cel12.png}
-%%		\centering
-%%		\caption{Rosa de correntes no ponto ST003 célula 12 (em $cm.s^{-1}$)}\label{fig:ST003Cel12}
-%%	\end{figure}
-%%	
-%%	\newpage
-%%	\begin{figure}[!htb]
-%%		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada12.png}
-%%		\centering
-%%		\caption{Velocidade ao longo do tempo em ST003 na Camada 12 (em $cm.s^{-1}$)}\label{fig:VelST003Cam12}
-%%	\end{figure}
-%%	
+	
+	 %----------------- ST003 CELULA 12 --------------------------
+	\newpage
+	\begin{figure}[!htb]
+		\includegraphics[width=1.6\textwidth]{figuras/camadas/CurrentRose_ST003_Cel12.png}
+		\centering
+		\caption{Rosa de correntes no ponto ST003 célula 12 (em $cm.s^{-1}$)}\label{fig:ST003Cel12}
+	\end{figure}
+	
+	\newpage
+	\begin{figure}[!htb]
+		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada12.png}
+		\centering
+		\caption{Velocidade ao longo do tempo em ST003 na Camada 12 (em $cm.s^{-1}$)}\label{fig:VelST003Cam12}
+	\end{figure}
+	
 %%	\newpage
 %%	\begin{figure}[!htb]
 %%		\includegraphics[width=1.7\textwidth]{figuras/camadas/Corrente_ST003_Camada12_HistVel.png}
@@ -2345,7 +2470,22 @@ Sugere-se, para trabalhos futuros, que componentes meteorológicas sejam incluída
 %%		\centering
 %%		\caption{Histograma da direção da corrente no ponto ST003 na Camada 12}\label{fig:HistDirST003Cam12}
 %%	\end{figure}
-%%\end{landscape}
+\end{landscape}
+
+%\chapter{Correntes residuais - Análises a cada 50h}
+%
+%\newpage
+%\begin{figure}[!htb]
+%	\includegraphics[width=1.7\textwidth]{figuras/results/Cenario01/50h/Cenario01_residual_50h_ts_1108.png}
+%	\centering
+%	\caption{Mapa de Corrente Residual a cada 50h para o Cenário 01}\label{fig:HistDirST003Cam12}
+%\end{figure}
+%\end{landscape}
+%
+
+
+
+
 %% ----------------------------------------------------------------------------------------
 %% FIGURAS DE TEMPERATURA VERSUS VENTO	
 %%\begin{landscape}
