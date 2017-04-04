@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2015.6.9)  29 JAN 2017 15:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2015.6.9)  3 APR 2017 22:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -385,6 +385,9 @@ LaTeX Warning: Unused global option(s):
 LaTeX Warning: Label `tab:atrativos' multiply defined.
 
 
+LaTeX Warning: Label `tab:adcps' multiply defined.
+
+
 LaTeX Warning: Label `tab:ttidepenha' multiply defined.
 
 
@@ -629,25 +632,22 @@ Package pdftex.def Info: figuras/Pariseetal_pt.png used on input line 425.
 (pdftex.def)             Requested size: 386.95897pt x 314.20511pt.
  [25 <./figuras/picarrasSet15.png>] [26 <./figuras/Pariseetal_pt.png>] [27]
 Cap\'{\i }tulo 3.
-<figuras/new_fluxo.png, id=115, 830.10126pt x 572.1375pt>
+<figuras/new_fluxo.png, id=115, 625.33624pt x 470.75874pt>
 File: figuras/new_fluxo.png Graphic file (type png)
 
 <use figuras/new_fluxo.png>
 Package pdftex.def Info: figuras/new_fluxo.png used on input line 456.
-(pdftex.def)             Requested size: 435.32422pt x 300.03621pt.
+(pdftex.def)             Requested size: 338.58632pt x 254.89552pt.
  [28
 
- <./figuras/new_fluxo.png>]
-Overfull \vbox (5.88786pt too high) has occurred while \output is active []
-
-
-[29] <figuras/ADCPs.png, id=123, 569.0058pt x 711.3777pt>
+ <./figuras/new_fluxo.png>] [29]
+<figuras/ADCPs.png, id=123, 569.0058pt x 711.3777pt>
 File: figuras/ADCPs.png Graphic file (type png)
-
-<use figuras/ADCPs.png>
+ <use figuras/ADCPs.png>
 Package pdftex.def Info: figuras/ADCPs.png used on input line 514.
 (pdftex.def)             Requested size: 483.69687pt x 604.71732pt.
- [30] [31 <./figuras/ADCPs.png (PNG copy)>]
+
+[30] [31 <./figuras/ADCPs.png (PNG copy)>]
 <figuras/NoData_ST001.png, id=130, 1084.05pt x 361.35pt>
 File: figuras/NoData_ST001.png Graphic file (type png)
 
@@ -901,13 +901,13 @@ Overfull \hbox (28.45572pt too wide) in paragraph at lines 929--931
  [][] 
  []
 
-<figuras/Nivel_Penha_MareMeteoNegativa.png, id=239, 1178.7237pt x 615.9813pt>
+<figuras/Nivel_Penha_MareMeteoNegativa.png, id=239, 1734.48pt x 897.8343pt>
 File: figuras/Nivel_Penha_MareMeteoNegativa.png Graphic file (type png)
 
 <use figuras/Nivel_Penha_MareMeteoNegativa.png>
 Package pdftex.def Info: figuras/Nivel_Penha_MareMeteoNegativa.png used on inpu
 t line 935.
-(pdftex.def)             Requested size: 773.91794pt x 404.44351pt.
+(pdftex.def)             Requested size: 773.91794pt x 400.61044pt.
 
 Overfull \hbox (28.45572pt too wide) in paragraph at lines 935--937
  [][] 
@@ -1034,30 +1034,30 @@ Overfull \hbox (48.37263pt too wide) in paragraph at lines 1264--1266
  []
 
 
-<figuras/english/ST001_cumulative_velocity_hist.png, id=317, 578.16pt x 433.62p
+<figuras/english/ST001_His_CurrentVel_Acumulado.png, id=317, 578.16pt x 433.62p
 t>
-File: figuras/english/ST001_cumulative_velocity_hist.png Graphic file (type png
+File: figuras/english/ST001_His_CurrentVel_Acumulado.png Graphic file (type png
 )
- <use figuras/english/ST001_cumulative_velocity_hist.png>
-Package pdftex.def Info: figuras/english/ST001_cumulative_velocity_hist.png use
+ <use figuras/english/ST001_His_CurrentVel_Acumulado.png>
+Package pdftex.def Info: figuras/english/ST001_His_CurrentVel_Acumulado.png use
 d on input line 1270.
 (pdftex.def)             Requested size: 386.95897pt x 290.21953pt.
 
-<figuras/english/ST002_cumulative_velocity_hist.png, id=318, 578.16pt x 433.62p
+<figuras/english/ST002_His_CurrentVel_Acumulado.png, id=318, 578.16pt x 433.62p
 t>
-File: figuras/english/ST002_cumulative_velocity_hist.png Graphic file (type png
+File: figuras/english/ST002_His_CurrentVel_Acumulado.png Graphic file (type png
 )
- <use figuras/english/ST002_cumulative_velocity_hist.png>
-Package pdftex.def Info: figuras/english/ST002_cumulative_velocity_hist.png use
+ <use figuras/english/ST002_His_CurrentVel_Acumulado.png>
+Package pdftex.def Info: figuras/english/ST002_His_CurrentVel_Acumulado.png use
 d on input line 1276.
 (pdftex.def)             Requested size: 386.95897pt x 290.21953pt.
 
-<figuras/english/ST003_cumulative_velocity_hist.png, id=319, 578.16pt x 433.62p
+<figuras/english/ST003_His_CurrentVel_Acumulado.png, id=319, 578.16pt x 433.62p
 t>
-File: figuras/english/ST003_cumulative_velocity_hist.png Graphic file (type png
+File: figuras/english/ST003_His_CurrentVel_Acumulado.png Graphic file (type png
 )
- <use figuras/english/ST003_cumulative_velocity_hist.png>
-Package pdftex.def Info: figuras/english/ST003_cumulative_velocity_hist.png use
+ <use figuras/english/ST003_His_CurrentVel_Acumulado.png>
+Package pdftex.def Info: figuras/english/ST003_His_CurrentVel_Acumulado.png use
 d on input line 1282.
 (pdftex.def)             Requested size: 386.95897pt x 290.21953pt.
  [73
@@ -1066,9 +1066,9 @@ d on input line 1282.
 pthAv.png>]
 [75 <./figuras/CurrentRose_ST003_DepthAv.png> <./figuras/Corrente_ST001_HistVel
 .png> <./figuras/Corrente_ST002_HistVel.png>] [76 <./figuras/Corrente_ST003_His
-tVel.png> <./figuras/english/ST001_cumulative_velocity_hist.png>] [77 <./figura
-s/english/ST002_cumulative_velocity_hist.png> <./figuras/english/ST003_cumulati
-ve_velocity_hist.png>]
+tVel.png> <./figuras/english/ST001_His_CurrentVel_Acumulado.png>] [77 <./figura
+s/english/ST002_His_CurrentVel_Acumulado.png> <./figuras/english/ST003_His_Curr
+entVel_Acumulado.png>]
 <figuras/Corrente_Quiver_ST001.png, id=345, 794.97pt x 361.35pt>
 File: figuras/Corrente_Quiver_ST001.png Graphic file (type png)
 
@@ -1081,24 +1081,24 @@ Overfull \hbox (28.45572pt too wide) in paragraph at lines 1289--1291
  [][] 
  []
 
-<figuras/Corrente_Quiver_ST002.png, id=346, 794.97pt x 361.35pt>
-File: figuras/Corrente_Quiver_ST002.png Graphic file (type png)
+<figuras/Corrente_Quiver_ST0023em3.png, id=346, 794.97pt x 361.35pt>
+File: figuras/Corrente_Quiver_ST0023em3.png Graphic file (type png)
 
-<use figuras/Corrente_Quiver_ST002.png>
-Package pdftex.def Info: figuras/Corrente_Quiver_ST002.png used on input line 1
-295.
+<use figuras/Corrente_Quiver_ST0023em3.png>
+Package pdftex.def Info: figuras/Corrente_Quiver_ST0023em3.png used on input li
+ne 1295.
 (pdftex.def)             Requested size: 773.91794pt x 351.79378pt.
 
 Overfull \hbox (28.45572pt too wide) in paragraph at lines 1295--1297
  [][] 
  []
 
-<figuras/Corrente_Quiver_ST003.png, id=347, 794.97pt x 361.35pt>
-File: figuras/Corrente_Quiver_ST003.png Graphic file (type png)
+<figuras/Corrente_Quiver_ST0033em3.png, id=347, 794.97pt x 361.35pt>
+File: figuras/Corrente_Quiver_ST0033em3.png Graphic file (type png)
 
-<use figuras/Corrente_Quiver_ST003.png>
-Package pdftex.def Info: figuras/Corrente_Quiver_ST003.png used on input line 1
-301.
+<use figuras/Corrente_Quiver_ST0033em3.png>
+Package pdftex.def Info: figuras/Corrente_Quiver_ST0033em3.png used on input li
+ne 1301.
 (pdftex.def)             Requested size: 773.91794pt x 351.79378pt.
 
 Overfull \hbox (28.45572pt too wide) in paragraph at lines 1301--1303
@@ -1107,8 +1107,8 @@ Overfull \hbox (28.45572pt too wide) in paragraph at lines 1301--1303
 
 [78
 
- <./figuras/Corrente_Quiver_ST001.png>] [79 <./figuras/Corrente_Quiver_ST002.pn
-g>] [80 <./figuras/Corrente_Quiver_ST003.png>]
+ <./figuras/Corrente_Quiver_ST001.png>] [79 <./figuras/Corrente_Quiver_ST0023em
+3.png>] [80 <./figuras/Corrente_Quiver_ST0033em3.png>]
 <figuras/Grade.png, id=360, 431.6125pt x 579.16376pt>
 File: figuras/Grade.png Graphic file (type png)
  <use figuras/Grade.png>
@@ -1365,12 +1365,6 @@ Package pdftex.def Info: figuras/results/Cenario10/Cenario10_residual_total.png
 
  <./figuras/results/Cenario10/Cenario10_residual_total.png (PNG copy)>]
 Cap\'{\i }tulo 5.
-
-Overfull \hbox (28.97723pt too wide) in paragraph at lines 1630--1631
-[]\OT1/cmr/m/n/12 Verificou-se que, con-si-de-rando to-dos os da-dos ana-li-sa-
-dos, 58,3% dos ca-sos de vento encontravam-
- []
-
 [107
 
 ] [108]
@@ -2065,12 +2059,12 @@ LaTeX Warning: There were multiply-defined labels.
  ) 
 Here is how much of TeX's memory you used:
  6693 strings out of 494996
- 112500 string characters out of 6180490
- 191715 words of memory out of 5000000
+ 112540 string characters out of 6180490
+ 191772 words of memory out of 5000000
  9607 multiletter control sequences out of 15000+600000
  10757 words of font info for 38 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
- 41i,8n,36p,1646b,359s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,8n,36p,1716b,359s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy8.pfb
 ></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr
 /share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/
@@ -2085,7 +2079,7 @@ amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
 sy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pf
 b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on dissertacao.pdf (169 pages, 42145487 bytes).
+Output written on dissertacao.pdf (169 pages, 42264007 bytes).
 PDF statistics:
  817 PDF objects out of 1000 (max. 8388607)
  420 compressed objects within 5 object streams
