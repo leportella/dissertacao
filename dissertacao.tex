@@ -885,13 +885,11 @@ Outro resultante interessante é que, em todos os gráficos, existe uma energia co
 \clearpage
 \subsection{Temperatura}
 
-Os dados de temperatura obtidos pelos ADCPs podem ser observados na figura \ref{fig:temperatura}. É notável que, nos dados do ponto ST002 e ST003 existe uma frequência muito alta que prejudica sua visualização mais detalhada. Esta variação de alta frequência pode estar relacionada a variações diárias, mas, ao que tudo indica, parece ser um problema de medição duplicada, uma vez que esta não aparece em ST001. 
+Os dados de temperatura obtidos pelos ADCPs podem ser observados na figura \ref{fig:temperatura}. É notável que, nos dados do ponto ST002 e ST003 existe uma frequência muito alta que prejudica sua visualização mais detalhada. Esta variação de alta frequência poderia estar relacionada a variações diárias, mas, ao se observar os dados de forma mais atenta na figura \ref{fig:tempdetalhe} verifica-se que os dados apresentam um padrão em formato serrilhado, não condizente com esse tipo de dado. Dessa forma, assumiu-se que os dados de temperatura nos pontos ST002 e ST003 apresentam erros de medição e buscou-se aplicar uma média móvel para que os mesmos apresentassem um padrão mais natural. O resultado detalhado do filtro aplicado pode ser observado na figura \ref{fig:tempmedia02} e \ref{fig:tempmedia03}. Na figura \ref{fig:tempsmooth} estão dispostas as séries filtradas em conjunto com o dado medido em ST001. 
 
-Existe uma mudança brusca no comportamento da variável ao longo dos três pontos. O ponto ST001, mais próximo da praia e na menor profundidade, possui uma grande variação de temperatura ao longo do mês. A temperatura chegou próximo a 17$^{\circ}$C no dia 24 de Agosto (18h) e ultrapassou os 20$^{\circ}$C em 19 de Setembro (23h). No ponto ST003 a variação foi de apenas 1,05$^{\circ}$C em todo o período analisado enquanto o ponto ST002 permaneceu com características intermediárias (Tabela \ref{tab:dadostemp}).
+É possível perceber uma mudança brusca no comportamento da variável ao longo dos três pontos. O ponto ST001, mais próximo da praia e na menor profundidade, possui uma grande variação de temperatura ao longo do mês. A temperatura chegou próximo a 17$^{\circ}$C no dia 24 de Agosto (18h) e ultrapassou os 20$^{\circ}$C em 19 de Setembro (23h). Essa variação de mais de 3,5$^{\circ}$C contrasta bastante com o ponto ST003 cuja variação foi de apenas 0,98$^{\circ}$C em todo o período analisado. Já o ponto ST002 apresentou características intermediárias em relação aos pontos St001 e ST003 (Tabela \ref{tab:dadostemp}).
 
-Deve-se notar que as temperaturas mínimas foram bastante semelhantes (menos de 0,5$^{\circ}$C de diferença) enquanto a temperatura máxima foi onde as diferenças foram maiores. Dado que a variação de temperatura do ponto ST003 foi mais de três vezes a variação encontrada no ponto ST001, assume-se que o segundo tem uma grande influência do aquecimento local, e possivelmente do vento, dada a sua pequena profundidade 4 m. Já o ponto ST003, localizado na profundidade de 17 m, tem um padrão homogêneo possivelmente só sendo afetado por massas de água externas. 
-
-Buscou-se encontrar correlações entre a direção do vento predominante e dos dados de temperatura porém apesar de haver alguns indícios de que a variação do vento de NO-N para S poderia ter influência no pico de temperatura no ST001, de forma geral os resultados não apresentaram um padrão evidente e, portanto, não serão apresentados aqui.
+Deve-se notar que as temperaturas mínimas foram bastante semelhantes (menos de 0,5$^{\circ}$C de diferença) enquanto a temperatura máxima se apresentou com os dados mais contrastantes. Dado que a variação de temperatura do ponto ST003 foi mais de três vezes a variação encontrada no ponto ST001, assume-se que o segundo tem uma grande influência do aquecimento local, e possivelmente do vento, dada a sua pequena profundidade 4m. Já o ponto ST003, localizado na profundidade de 17m, tem um padrão homogêneo possivelmente só sendo afetado por massas de água externas. 
 
 \begin{tabularx}{\linewidth}{ccccc}
 	\caption{Características dos dados de temperatura.}\label{tab:dadostemp}\\
@@ -901,29 +899,57 @@ Buscou-se encontrar correlações entre a direção do vento predominante e dos dado
 	\midrule
 	\endhead
 	ST001 & 17,02$^{\circ}$C   & 20,61$^{\circ}$C   & 18,02$^{\circ}$C & 3,59$^{\circ}$C \\[6pt]
-	ST002 & 17,23$^{\circ}$C   & 19,67$^{\circ}$C   & 18,19$^{\circ}$C & 2,44$^{\circ}$C \\[6pt]
-	ST003 & 17,40$^{\circ}$C  & 18,45$^{\circ}$C    & 17,89$^{\circ}$C & 1,05$^{\circ}$C \\[6pt]
+	ST002 & 17,52$^{\circ}$C   & 19,13$^{\circ}$C   & 18,18$^{\circ}$C & 1,61$^{\circ}$C \\[6pt]
+	ST003 & 17,16$^{\circ}$C  & 18,14$^{\circ}$C    & 17,88$^{\circ}$C & 0,98$^{\circ}$C \\[6pt]
 	\bottomrule
 \end{tabularx}
 	
 \begin{landscape}
 	\begin{figure}[!htb]
-		\includegraphics[width=1.6\textwidth]{figuras/Temperatura_Geral.png}
+		\includegraphics[width=1.6\textwidth]{figuras/temp_v2_bruto.png}
 		\centering
-		\caption{Dados de temperatura na Enseada de Piçarras. A linha azul apresenta as variações no ponto ST001 (equipamento mais abrigado) enquanto a linha verde indica as variações no ponto ST003 (equipamento mais externo). Verifica-se que as variações de temperatura diminuem conforme a medição ocorre em águas mais profundas.}\label{fig:temperatura}
+		\caption{Dados de temperatura na Enseada de Piçarras. A linha azul apresenta as variações no ponto ST001 (equipamento mais abrigado) enquanto a linha verde indica as variações no ponto ST003 (equipamento mais externo). Verifica-se que as variações de temperatura diminuem conforme a medição ocorre em águas mais profundas.}\label{fig:temp}
 	\end{figure}
 	
-		\begin{figure}[!htb]
-			\includegraphics[width=1.6\textwidth]{figuras/Temperatura_Geral_smooth.png}
-			\centering
-			\caption{Dados de temperatura na Enseada de Piçarras onde os dados do ponto ST002 e ST003 apresentam dados horários apenas.}\label{fig:temperatura}
-		\end{figure}
+	\begin{figure}[!htb]
+		\includegraphics[width=1.6\textwidth]{figuras/temp_v2_bruto_detalhe.png}
+		\centering
+		\caption{}\label{fig:tempdetalhe}
+	\end{figure}
 	
+	\begin{figure}[!htb]
+		\includegraphics[width=1.6\textwidth]{figuras/temp_completa_smooth.png}
+		\centering
+		\caption{Dados de temperatura na Enseada de Piçarras onde os dados do ponto ST002 e ST003 apresentam dados horários apenas.}\label{fig:tempsmooth}
+	\end{figure}
 \end{landscape}
 
 
+Nas figuras \ref{fig:tempfourier1} a \ref{fig:tempfourier3} estão apresentados os resultados da análise de no domínio da frequência da temperatura em todos os pontos medidos. É possível observar que existe uma tendência de aumento de energia conforme o período aumenta. Nos ponto ST001 e ST002 verifica-se que esse pico aumenta até o período de 1 dia. Períodos maiores que 1 dia tem uma energia maior associada, mas, devido ao curto período de aquisição, os picos tornam-se mais indistintos. No ponto ST003 o pico no período de 1 dia fica pouco evidente e com menos energia que os picos próximos a ele. Isso pode ser causado pelo distanciamento do ponto ST003 da costa e sua maior profundidade, mostrando que o mesmo está menos sujeito a variações diurnas de temperatura, como verificado nos pontos mais internos. 
+
+É interessante notar que a alta frequência vista nos dados medidos se reflete em um pico de energia no menor período apresentado no espectro. A quantidade de energia é muito maior do que nos demais períodos, o que corrobora a teoria de que esta frequência foi introduzida devido a um erro de medição.
+
+
+\begin{figure}[!htb]
+	\includegraphics[width=1.1\textwidth]{figuras/temperatura_st001_fourier_pt.png}
+	\centering
+	\caption{O primeiro gráfico (superior) apresenta os dados de temperatura do ponto ST001 (em preto) e a tendência linear verificada nos dados (em vermelho). O segundo gráfico (meio) apresenta o valor de temperatura uma vez retirada a tendência linear apresentada na figura superior. O terceiro gráfico (inferior) apresenta o espectro de energia no domínio da frequência.}\label{fig:tempfourier1}
+\end{figure}
+
+\begin{figure}[!htb]
+	\includegraphics[width=1.1\textwidth]{figuras/temperatura_st002_fourier_pt.png}
+	\centering
+	\caption{O primeiro gráfico (superior) apresenta os dados de temperatura do ponto ST002 (em preto) e a tendência linear verificada nos dados (em vermelho). O segundo gráfico (meio) apresenta o valor de temperatura uma vez retirada a tendência linear apresentada na figura superior. O terceiro gráfico (inferior) apresenta o espectro de energia no domínio da frequência.}\label{fig:tempfourier2}
+\end{figure}
+
+\begin{figure}[!htb]
+	\includegraphics[width=1.1\textwidth]{figuras/temperatura_st003_fourier_pt.png}
+	\centering
+	\caption{O primeiro gráfico (superior) apresenta os dados de temperatura do ponto ST003 (em preto) e a tendência linear verificada nos dados (em vermelho). O segundo gráfico (meio) apresenta o valor de temperatura uma vez retirada a tendência linear apresentada na figura superior. O terceiro gráfico (inferior) apresenta o espectro de energia no domínio da frequência.}\label{fig:tempfourier3}
+\end{figure}
 
 %-------------------------------------------------------------------------------------------------------
+\clearpage
 \subsection{Corrente}
 
 Nas figuras \ref{fig:curr_depthav_01}, \ref{fig:curr_depthav_02} e \ref{fig:curr_depthav_03} podem ser observadas as rosas de corrente integradas na vertical para os pontos ST001, ST002 e ST003, respectivamente. Demais análises por camadas podem ser encontradas nos Apêndices.
@@ -1782,6 +1808,62 @@ Dentre as constantes apresentadas pela FEMAR que foram verificadas nos dados med
 	\caption{Constantes harmônicas definidas na estação maregráfica brasileira da FEMAR \cite{femar}.}\label{fig:femar}
 \end{figure}
 
+\begin{figure}[!htb]
+	\includegraphics[width=0.9\textwidth]{figuras/femarPenha.png}
+	\centering
+	\caption{Constantes harmônicas definidas na estação maregráfica brasileira da FEMAR \cite{femar}.}\label{fig:femar}
+\end{figure}
+
+% ====================================================================================
+\chapter{Análise de comparação de nível e temperatura com vento}
+% ====================================================================================
+
+Nas figuras \ref{fig:niveltempvento1} a \ref{fig:niveltempvento3} estão apresentadas análises comparativas entre a maré meteorológica, a temperatura e o vento nos pontos ST001, ST002 e ST003.
+
+A primeira ressalva que deve ser feita é que os dados de vento são resultados do modelo de reanálise e são disponíveis apenas a cada 6 horas, o que não os torna ideal para este tipo de análise. Dessa forma, nesta análise buscaremos possíveis interações que devem ser melhor estudadas no futuro.
+
+É possível verificar em ST001 que o pico de elevação de nível no começo da série (dia 22) sucedeu um episódio esporádico porém intenso de vento SE. Entretanto, não houve nada na temperatura que demonstrasse qualquer influência desse vento. O episódio de pico de elevação de temperatura também se deu após um episódio de vento SE, dessa vez sem com um aumento ligeiro de nível sendo detectado. O período de baixas temperaturas entre 22 e 30 de Agosto coincidem com períodos com ventos predominantemente do quadrante norte. 
+
+No ponto ST002 verificou-se que ambos os períodos de baixa de nível (entre 22 e 25 de Agosto e entre 03 e 04 de Setembro) ocorreram após períodos de ventos persistentes do quadrante norte. A primeira queda de nível entre 22 e 25 de Agosto parece estar associada ao evento de queda de temperatura registrado pelo equipamento. Já o segundo caso de queda de nível não teve uma correspondência nos dados de temperatura.
+
+Apesar de a relação entre nível e vento ser muito semelhante no ponto ST003 aos resultados encontrados nos demais pontos, não foi possível identificar nenhuma concordância entre vento e temperatura. 
+
+Verifica-se que as correlações entre vento, nível e temperatura se apresentam muito sutis. Entretanto, nesta avaliação preliminar é possível verificar que, apesar de sutis, essas interações podem ocorrer na região estudada. Análises com vento medido durante a coleta são recomendadas para estudos mais detalhados.
+
+\begin{figure}[!htb]
+	\includegraphics[width=1\textwidth]{figuras/nivel_temp_vento_st001.png}
+	\centering
+	\caption{Comparação entre a elevação meteorológica de nível (figura superior), a variação de temperatura (figura central) e a intensidade e direção do vento (figura inferior) no ponto ST001.}\label{fig:niveltempvento1}
+\end{figure}
+
+\begin{figure}[!htb]
+	\includegraphics[width=1\textwidth]{figuras/nivel_temp_vento_st002.png}
+	\centering
+	\caption{Comparação entre a elevação meteorológica de nível (figura superior), a variação de temperatura (figura central) e a intensidade e direção do vento (figura inferior) no ponto ST002.}\label{fig:niveltempvento2}
+\end{figure}
+
+\begin{figure}[!htb]
+	\includegraphics[width=1\textwidth]{figuras/nivel_temp_vento_st003.png}
+	\centering
+	\caption{Comparação entre a elevação meteorológica de nível (figura superior), a variação de temperatura (figura central) e a intensidade e direção do vento (figura inferior) no ponto ST003.}\label{fig:niveltempvento3}
+\end{figure}
+
+% ====================================================================================
+\chapter{Figuras Extras}
+% ====================================================================================
+
+\begin{figure}[!htb]
+	\includegraphics[width=0.9\textwidth]{figuras/temp_st002_smooth.png}
+	\centering
+	\caption{Resultado da média móvel aplicada nos dados brutos de temperatura em ST002}\label{fig:tempmedia02}
+\end{figure}
+
+\begin{figure}[!htb]
+	\includegraphics[width=0.9\textwidth]{figuras/temp_st003_smooth.png}
+	\centering
+	\caption{Resultado da média móvel aplicada nos dados brutos de temperatura em ST003}\label{fig:tempmedia03}
+\end{figure}
+
 %\chapter{Gráficos de Corrente por Camada}
 %
 %\begin{landscape}
@@ -2556,68 +2638,7 @@ Dentre as constantes apresentadas pela FEMAR que foram verificadas nos dados med
 %%\end{figure}
 %%\end{landscape}
 %%
-%
-%
-%
-%
-%%% ----------------------------------------------------------------------------------------
-%%% FIGURAS DE TEMPERATURA VERSUS VENTO	
-%%%\begin{landscape}
-%%%	\begin{figure}[!htb]
-%%%		\includegraphics[width=1.6\textwidth]{figuras/Temperatura_Vento_ST001.png}
-%%%		\centering
-%%%		\caption{Comparação dos dados de temperatura do ponto ST001 e da direção do vento}\label{fig:tempvento01}
-%%%	\end{figure}
-%%%	
-%%%	\begin{figure}[!htb]
-%%%		\includegraphics[width=1.6\textwidth]{figuras/Temperatura_Vento_ST002.png}
-%%%		\centering
-%%%		\caption{Comparação dos dados de temperatura do ponto ST002 e da direção do vento}\label{fig:tempvento02}
-%%%	\end{figure}
-%%%	
-%%%	\begin{figure}[!htb]
-%%%		\includegraphics[width=1.6\textwidth]{figuras/Temperatura_Vento_ST003.png}
-%%%		\centering
-%%%		\caption{Comparação dos dados de temperatura do ponto ST003 e da direção do vento}\label{fig:tempvento03}
-%%%	\end{figure}
-%%%
-%%%	\begin{figure}[!htb]
-%%%		\includegraphics[width=1.6\textwidth]{figuras/Corrente_Vento_ST001.png}
-%%%		\centering
-%%%		\caption{Comparação dos dados de corrente do ponto ST001 e da velocidade do vento}\label{fig:corrvento01}
-%%%	\end{figure}
-%%%
-%%%	\begin{figure}[!htb]
-%%%		\includegraphics[width=1.6\textwidth]{figuras/Corrente_Vento_ST002.png}
-%%%		\centering
-%%%		\caption{Comparação dos dados de corrente do ponto ST002 e da velocidade do vento}\label{fig:corrvento02}
-%%%	\end{figure}
-%%%	
-%%%	\begin{figure}[!htb]
-%%%		\includegraphics[width=1.6\textwidth]{figuras/Corrente_Vento_ST003.png}
-%%%		\centering
-%%%		\caption{Comparação dos dados de corrente do ponto ST003 e da velocidade do vento}\label{fig:corrvento01}
-%%%	\end{figure}
-%%%
-%%%	\begin{figure}[!htb]
-%%%		\includegraphics[width=1.6\textwidth]{figuras/Corrente_VentoDir_ST001.png}
-%%%		\centering
-%%%		\caption{Comparação dos dados de corrente do ponto ST001 e da direção do vento}\label{fig:corrventodir01}
-%%%	\end{figure}
-%%%	
-%%%	\begin{figure}[!htb]
-%%%		\includegraphics[width=1.6\textwidth]{figuras/Corrente_VentoDir_ST002.png}
-%%%		\centering
-%%%		\caption{Comparação dos dados de corrente do ponto ST002 e da direção do vento}\label{fig:corrventodir02}
-%%%	\end{figure}
-%%%	
-%%%	\begin{figure}[!htb]
-%%%		\includegraphics[width=1.6\textwidth]{figuras/Corrente_VentoDir_ST003.png}
-%%%		\centering
-%%%		\caption{Comparação dos dados de corrente do ponto ST003 e da direção do vento}\label{fig:corrventodir03}
-%%%	\end{figure}
-%%%\end{landscape}
-%
+
 %%\anexo
 %%\chapter{Exemplificando um Anexo}
 %%Texto do anexo aqui.

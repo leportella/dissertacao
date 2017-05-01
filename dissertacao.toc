@@ -28,16 +28,18 @@
 \contentsline {section}{\numberline {4.2}Descri\c c\~ao dos dados medidos}{40}
 \contentsline {subsection}{\numberline {4.2.1}N\IeC {\'\i }vel}{40}
 \contentsline {subsection}{\numberline {4.2.2}Temperatura}{53}
-\contentsline {subsection}{\numberline {4.2.3}Corrente}{56}
-\contentsline {section}{\numberline {4.3}Modelo Num\'erico}{64}
-\contentsline {subsection}{\numberline {4.3.1}Grade Num\'erica e Batimetria}{64}
-\contentsline {subsection}{\numberline {4.3.2}Calibra\c c\~ao}{67}
-\contentsline {subsection}{\numberline {4.3.3}Cen\'arios de an\'alise}{75}
-\contentsline {subsection}{\numberline {4.3.4}Mapas de Residuais}{76}
-\contentsline {chapter}{\numberline {5}\MakeUppercase {DISCUSS\~AO}}{90}
-\contentsline {chapter}{\numberline {6}\MakeUppercase {CONCLUS\~OES}}{92}
-\contentsline {chapter}{\numberline {7}\MakeUppercase {CONSIDERA\c C\~OES FINAIS}}{94}
-\contentsline {chapter}{\hspace {\espacosumario }REFER\^ENCIAS}{95}
-\contentsline {chapter}{\hspace {\espacosumario }\MakeUppercase {Ap\^endice{}} A{} -$\mskip -\thinmuskip $-{} Modelagem Num\'erica de Zonas Costeiras: uma revis\~ao}{101}
-\contentsline {chapter}{\hspace {\espacosumario }\MakeUppercase {Ap\^endice{}} B{} -$\mskip -\thinmuskip $-{} An\'alises Comparativa entre CFSR e METAR}{106}
-\contentsline {chapter}{\hspace {\espacosumario }\MakeUppercase {Ap\^endice{}} C{} -$\mskip -\thinmuskip $-{} An\'alises de Constantes Harm\^onicas}{113}
+\contentsline {subsection}{\numberline {4.2.3}Corrente}{60}
+\contentsline {section}{\numberline {4.3}Modelo Num\'erico}{68}
+\contentsline {subsection}{\numberline {4.3.1}Grade Num\'erica e Batimetria}{68}
+\contentsline {subsection}{\numberline {4.3.2}Calibra\c c\~ao}{71}
+\contentsline {subsection}{\numberline {4.3.3}Cen\'arios de an\'alise}{79}
+\contentsline {subsection}{\numberline {4.3.4}Mapas de Residuais}{80}
+\contentsline {chapter}{\numberline {5}\MakeUppercase {DISCUSS\~AO}}{94}
+\contentsline {chapter}{\numberline {6}\MakeUppercase {CONCLUS\~OES}}{96}
+\contentsline {chapter}{\numberline {7}\MakeUppercase {CONSIDERA\c C\~OES FINAIS}}{98}
+\contentsline {chapter}{\hspace {\espacosumario }REFER\^ENCIAS}{99}
+\contentsline {chapter}{\hspace {\espacosumario }\MakeUppercase {Ap\^endice{}} A{} -$\mskip -\thinmuskip $-{} Modelagem Num\'erica de Zonas Costeiras: uma revis\~ao}{105}
+\contentsline {chapter}{\hspace {\espacosumario }\MakeUppercase {Ap\^endice{}} B{} -$\mskip -\thinmuskip $-{} An\'alises Comparativa entre CFSR e METAR}{110}
+\contentsline {chapter}{\hspace {\espacosumario }\MakeUppercase {Ap\^endice{}} C{} -$\mskip -\thinmuskip $-{} An\'alises de Constantes Harm\^onicas}{117}
+\contentsline {chapter}{\hspace {\espacosumario }\MakeUppercase {Ap\^endice{}} D{} -$\mskip -\thinmuskip $-{} An\'alise de compara\c c\~ao de n\IeC {\'\i }vel e temperatura com vento}{128}
+\contentsline {chapter}{\hspace {\espacosumario }\MakeUppercase {Ap\^endice{}} E{} -$\mskip -\thinmuskip $-{} Figuras Extras}{133}
