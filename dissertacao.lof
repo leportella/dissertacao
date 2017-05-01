@@ -1,120 +1,62 @@
 \select@language {brazil}
-\contentsline {figure}{\numberline {1}{\ignorespaces M\'etodos de solu\c c\~ao para um problema f\IeC {\'\i }sico. Fonte: \citeonline {Maliska}.}}{18}
-\contentsline {figure}{\numberline {2}{\ignorespaces Exemplo de grade num\'erica estruturada.}}{19}
-\contentsline {figure}{\numberline {3}{\ignorespaces Exemplo de grade num\'erica desestruturada.}}{19}
-\contentsline {figure}{\numberline {4}{\ignorespaces Difus\~ao num\'erica em diferentes condi\c c\~oes de CFL em um problema da equa\c c\~ao da onda 1D com condi\c c\~ao de fronteira invariavelmente igual a 1 metro.}}{20}
-\contentsline {figure}{\numberline {5}{\ignorespaces Localiza\c c\~ao da Enseada do Itapocor\'oi.}}{21}
-\contentsline {figure}{\numberline {6}{\ignorespaces Efeitos da eros\~ao em Pi\c carras. Fonte: \citeonline {fotoerosao}.}}{24}
-\contentsline {figure}{\numberline {7}{\ignorespaces Imagem do Google Earth da Praia de Pi\c carras de 18 de Setembro de 2015. Fonte: Google Earth.}}{25}
-\contentsline {figure}{\numberline {8}{\ignorespaces M\'axima eleva\c c\~ao do n\IeC {\'\i }vel do mar causada por mar\'es meteorol\'ogicas e astron\^omicas. Fonte: \citeonline {Parise}.}}{26}
-\contentsline {figure}{\numberline {9}{\ignorespaces Fluxograma da metodologia aplicada.}}{28}
-\contentsline {figure}{\numberline {10}{\ignorespaces Localiza\c c\~ao das coletas de dados atrav\'es de ADCPs.}}{31}
-\contentsline {figure}{\numberline {11}{\ignorespaces Dados medidos no ADCP ST001. Pontos em vermelho indicam que os dados foram obtidos atrav\'es de interpola\c c\~ao linear e os dados em azul s\~ao dados medidos pelo ADCP.}}{32}
-\contentsline {figure}{\numberline {12}{\ignorespaces Localiza\c c\~ao das vari\'aveis calculadas em uma malha do tipo Arakawa C.}}{34}
-\contentsline {figure}{\numberline {13}{\ignorespaces Interface gr\'afica do TMD para obten\c c\~ao das constituintes harm\^onicas calculadas pelo modelo TPXO.}}{35}
-\contentsline {figure}{\numberline {14}{\ignorespaces Localiza\c c\~ao dos dados de vento do modelo de rean\'alise CFSR e do aeroporto de Navegantes (METAR).}}{39}
-\contentsline {figure}{\numberline {15}{\ignorespaces Rosa dos ventos do Aeroporto de Navegantes para o ano de 2011 (METAR). Os c\IeC {\'\i }rculos indicam percentuais de ocorr\^encia por quadrante analisado.}}{40}
-\contentsline {figure}{\numberline {16}{\ignorespaces Rosa dos ventos referente aos dados do CFSR para o ano de 2011. Os c\IeC {\'\i }rculos indicam percentuais de ocorr\^encia por quadrante analisado.}}{41}
-\contentsline {figure}{\numberline {17}{\ignorespaces Histograma de velocidade do vento no Aeroporto de Navegantes para o ano de 2011 (METAR).}}{42}
-\contentsline {figure}{\numberline {18}{\ignorespaces Histograma de velocidade do vento referentes aos dados do CFSR para o ano de 2011.}}{42}
-\contentsline {figure}{\numberline {19}{\ignorespaces Histograma de dire\c c\~ao do vento no Aeroporto de Navegantes para o ano de 2011 (METAR).}}{43}
-\contentsline {figure}{\numberline {20}{\ignorespaces Histograma de dire\c c\~ao do vento referentes aos dados do CFSR para o ano de 2011.}}{43}
-\contentsline {figure}{\numberline {21}{\ignorespaces Dados v\'alidos e dados indispon\IeC {\'\i }veis nos dados de velocidade do vento no Aeroporto de Navegantes para o ano de 2011 (METAR).}}{44}
-\contentsline {figure}{\numberline {22}{\ignorespaces Rosa de ventos para os dados do CFSR de 2011 a 2015. Os c\IeC {\'\i }rculos indicam percentuais de ocorr\^encia por quadrante analisado.}}{45}
-\contentsline {figure}{\numberline {23}{\ignorespaces Distribui\c c\~ao conjunta dos dados de ventos do CFSR de 2011 a 2015. Os tons de verde na figura indicam resultados mais relevantes dentre as ocorr\^encias.}}{46}
-\contentsline {figure}{\numberline {24}{\ignorespaces Rosa dos ventos referente aos dados do CFSR para a esta\c c\~ao Ver\~ao (Dezembro a Fevereiro) nos anos 2011 a 2015. Os c\IeC {\'\i }rculos indicam percentuais de ocorr\^encia por quadrante analisado. Ventos de ONO a NE s\~ao presentes em quantidades semelhantes, mas ventos de oeste s\~ao nitidamente mais fortes, podendo alcan\c car 12$m.s^{-1}$}}{48}
-\contentsline {figure}{\numberline {25}{\ignorespaces Rosa dos ventos referente aos dados do CFSR para a esta\c c\~ao Outono (Mar\c co a Maio) nos anos 2011 a 2015. Os c\IeC {\'\i }rculos indicam percentuais de ocorr\^encia por quadrante analisado. Ventos de O s\~ao mais intensos por\'em com menor ocorr\^encia do que os ventos de NO, sendo estes os mais presentes durante o outono.}}{49}
-\contentsline {figure}{\numberline {26}{\ignorespaces Rosa dos ventos referente aos dados do CFSR para a esta\c c\~ao Inverno (Junho a Agosto) nos anos 2011 a 2015. Os c\IeC {\'\i }rculos indicam percentuais de ocorr\^encia por quadrante analisado. Ventos de S se apresentam os mais frequentes e os mais intensos.}}{50}
-\contentsline {figure}{\numberline {27}{\ignorespaces Rosa dos ventos referente aos dados do CFSR para a esta\c c\~ao Primavera (Setembro a Novembro) nos anos 2011 a 2015. Os c\IeC {\'\i }rculos indicam percentuais de ocorr\^encia por quadrante analisado. Ventos de NE e L s\~ao mais intensos, por\'em ventos de O-ONO s\~ao mais intensos.}}{51}
-\contentsline {figure}{\numberline {28}{\ignorespaces Varia\c c\~ao de N\IeC {\'\i }vel no ponto ST001 separado entre: dado medido (em azul na parte superior) e dados de mar\'e previsto (em azul na parte inferior) e o residual meteorol\'ogico (em vermelho na parte inferior).}}{54}
-\contentsline {figure}{\numberline {29}{\ignorespaces Varia\c c\~ao de N\IeC {\'\i }vel no ponto ST002 separado entre: dado medido (em azul na parte superior) e dados de mar\'e previsto (em azul na parte inferior) e o residual meteorol\'ogico (em vermelho na parte inferior).}}{55}
-\contentsline {figure}{\numberline {30}{\ignorespaces Varia\c c\~ao de N\IeC {\'\i }vel no ponto ST003 separado entre: dado medido (em azul na parte superior) e dados de mar\'e previsto (em azul na parte inferior) e o residual meteorol\'ogico (em vermelho na parte inferior).}}{56}
-\contentsline {figure}{\numberline {31}{\ignorespaces Varia\c c\~ao de n\IeC {\'\i }vel medido em Penha separado entre: dado medido (em azul na parte superior) e dados de mar\'e previsto (em azul na parte inferior) e o residual meteorol\'ogico (em vermelho na parte inferior).}}{57}
-\contentsline {figure}{\numberline {32}{\ignorespaces Evento de mar\'e meteorol\'ogica negativa registrado}}{58}
-\contentsline {figure}{\numberline {33}{\ignorespaces Constantes harm\^onicas definidas na esta\c c\~ao maregr\'afica brasileira da FEMAR \cite {femar}.}}{65}
-\contentsline {figure}{\numberline {34}{\ignorespaces Espectro de energia em Pi\c carras e Penha.}}{70}
-\contentsline {figure}{\numberline {35}{\ignorespaces Dados de temperatura na Enseada de Pi\c carras. A linha azul apresenta as varia\c c\~oes no ponto ST001 (equipamento mais abrigado) enquanto a linha verde indica as varia\c c\~oes no ponto ST003 (equipamento mais externo). Verifica-se que as varia\c c\~oes de temperatura diminuem conforme a medi\c c\~ao ocorre em \'aguas mais profundas.}}{72}
-\contentsline {figure}{\numberline {36}{\ignorespaces Rosa de correntes no ponto ST001 integrada na vertical (em cm).}}{74}
-\contentsline {figure}{\numberline {37}{\ignorespaces Rosa de correntes no ponto ST002 integrada na vertical (em cm).}}{74}
-\contentsline {figure}{\numberline {38}{\ignorespaces Rosa de correntes no ponto ST003 integrada na vertical (em cm).}}{75}
-\contentsline {figure}{\numberline {39}{\ignorespaces Histograma da velocidade de corrente no ponto ST001 integrada na vertical.}}{75}
-\contentsline {figure}{\numberline {40}{\ignorespaces Histograma da velocidade de corrente no ponto ST002 integrada na vertical.}}{75}
-\contentsline {figure}{\numberline {41}{\ignorespaces Histograma da velocidade de corrente no ponto ST003 integrada na vertical.}}{76}
-\contentsline {figure}{\numberline {42}{\ignorespaces Histograma cumulativo da velocidade da corrente em $m.s^{-1}$ no ST001. Linhas em preto indicam os quartis de 25, 50 e 90\%.}}{76}
-\contentsline {figure}{\numberline {43}{\ignorespaces Histograma cumulativo da velocidade da corrente em $m.s^{-1}$ no ST002. Linhas em preto indicam os quartis de 25, 50 e 90\%.}}{77}
-\contentsline {figure}{\numberline {44}{\ignorespaces Histograma cumulativo da velocidade da corrente em $m.s^{-1}$ no ST003. Linhas em preto indicam os quartis de 25, 50 e 90\%.}}{77}
-\contentsline {figure}{\numberline {45}{\ignorespaces Dire\c c\~ao predominante e velocidade das correntes no ponto ST001.}}{78}
-\contentsline {figure}{\numberline {46}{\ignorespaces Dire\c c\~ao predominante e velocidade das correntes no ponto ST002.}}{79}
-\contentsline {figure}{\numberline {47}{\ignorespaces Dire\c c\~ao predominante e velocidade das correntes no ponto ST003.}}{80}
-\contentsline {figure}{\numberline {48}{\ignorespaces Grade num\'erica}}{82}
-\contentsline {figure}{\numberline {49}{\ignorespaces Batimetria interpolada na grade num\'erica.}}{83}
-\contentsline {figure}{\numberline {50}{\ignorespaces RMSE para a componente U da velocidade em ST001.}}{86}
-\contentsline {figure}{\numberline {51}{\ignorespaces RMSE para a componente U da velocidade em ST002.}}{87}
-\contentsline {figure}{\numberline {52}{\ignorespaces RMSE para a componente U da velocidade em ST003.}}{88}
-\contentsline {figure}{\numberline {53}{\ignorespaces RMSE para a componente V da velocidade em ST001.}}{89}
-\contentsline {figure}{\numberline {54}{\ignorespaces RMSE para a componente V da velocidade em ST002.}}{90}
-\contentsline {figure}{\numberline {55}{\ignorespaces RMSE para a componente V da velocidade em ST003.}}{91}
-\contentsline {figure}{\numberline {56}{\ignorespaces Mapa de correntes residuais para um per\IeC {\'\i }odo de 2 meses no Cen\'ario 01.}}{93}
-\contentsline {figure}{\numberline {57}{\ignorespaces Mapa de correntes residuais para um per\IeC {\'\i }odo de 50h e mar\'e de quadratura no Cen\'ario 01}}{94}
-\contentsline {figure}{\numberline {58}{\ignorespaces Mapa de correntes residuais para um per\IeC {\'\i }odo de 2 meses no Cen\'ario 02.}}{95}
-\contentsline {figure}{\numberline {59}{\ignorespaces Mapa de correntes residuais para um per\IeC {\'\i }odo de 2 meses no Cen\'ario 03.}}{96}
-\contentsline {figure}{\numberline {60}{\ignorespaces Mapa de correntes residuais para um per\IeC {\'\i }odo de 2 meses no Cen\'ario 04.}}{97}
-\contentsline {figure}{\numberline {61}{\ignorespaces Mapa de correntes residuais para um per\IeC {\'\i }odo de 2 meses no Cen\'ario 05.}}{98}
-\contentsline {figure}{\numberline {62}{\ignorespaces Mapa de correntes residuais para um per\IeC {\'\i }odo de 50h e mar\'e de quadratura no Cen\'ario 05}}{99}
-\contentsline {figure}{\numberline {63}{\ignorespaces Mapa de correntes residuais para um per\IeC {\'\i }odo de 2 meses no Cen\'ario 06.}}{100}
-\contentsline {figure}{\numberline {64}{\ignorespaces Mapa de correntes residuais para um per\IeC {\'\i }odo de 2 meses no Cen\'ario 07.}}{101}
-\contentsline {figure}{\numberline {65}{\ignorespaces Mapa de correntes residuais para um per\IeC {\'\i }odo de 50h e mar\'e de quadratura no Cen\'ario 07}}{102}
-\contentsline {figure}{\numberline {66}{\ignorespaces Mapa de correntes residuais para um per\IeC {\'\i }odo de 50h e mar\'e de siz\IeC {\'\i }gia no Cen\'ario 07}}{103}
-\contentsline {figure}{\numberline {67}{\ignorespaces Mapa de correntes residuais para um per\IeC {\'\i }odo de 2 meses no Cen\'ario 08.}}{104}
-\contentsline {figure}{\numberline {68}{\ignorespaces Mapa de correntes residuais para um per\IeC {\'\i }odo de 2 meses no Cen\'ario 09.}}{105}
-\contentsline {figure}{\numberline {69}{\ignorespaces Mapa de correntes residuais para um per\IeC {\'\i }odo de 2 meses no Cen\'ario 10.}}{106}
-\contentsline {figure}{\numberline {70}{\ignorespaces Rosa de correntes no ponto ST001 c\'elula 1 (em $cm.s^{-1}$)}}{118}
-\contentsline {figure}{\numberline {71}{\ignorespaces Velocidade ao longo do tempo em ST001 na Camada 1 (em $cm.s^{-1}$)}}{119}
-\contentsline {figure}{\numberline {72}{\ignorespaces Rosa de correntes no ponto ST001 c\'elula 2 (em $cm.s^{-1}$)}}{120}
-\contentsline {figure}{\numberline {73}{\ignorespaces Velocidade ao longo do tempo em ST001 na Camada 2 (em $cm.s^{-1}$)}}{121}
-\contentsline {figure}{\numberline {74}{\ignorespaces Rosa de correntes no ponto ST001 c\'elula 3 (em $cm.s^{-1}$)}}{122}
-\contentsline {figure}{\numberline {75}{\ignorespaces Velocidade ao longo do tempo em ST001 na Camada 3 (em $cm.s^{-1}$)}}{123}
-\contentsline {figure}{\numberline {76}{\ignorespaces Rosa de correntes no ponto ST002 c\'elula 1 (em $cm.s^{-1}$)}}{124}
-\contentsline {figure}{\numberline {77}{\ignorespaces Velocidade ao longo do tempo em ST002 na Camada 1 (em $cm.s^{-1}$)}}{125}
-\contentsline {figure}{\numberline {78}{\ignorespaces Rosa de correntes no ponto ST002 c\'elula 2 (em $cm.s^{-1}$)}}{126}
-\contentsline {figure}{\numberline {79}{\ignorespaces Velocidade ao longo do tempo em ST002 na Camada 2 (em $cm.s^{-1}$)}}{127}
-\contentsline {figure}{\numberline {80}{\ignorespaces Rosa de correntes no ponto ST002 c\'elula 3 (em $cm.s^{-1}$)}}{128}
-\contentsline {figure}{\numberline {81}{\ignorespaces Velocidade ao longo do tempo em ST002 na Camada 3 (em $cm.s^{-1}$)}}{129}
-\contentsline {figure}{\numberline {82}{\ignorespaces Rosa de correntes no ponto ST002 c\'elula 4 (em $cm.s^{-1}$)}}{130}
-\contentsline {figure}{\numberline {83}{\ignorespaces Velocidade ao longo do tempo em ST002 na Camada 4 (em $cm.s^{-1}$)}}{131}
-\contentsline {figure}{\numberline {84}{\ignorespaces Rosa de correntes no ponto ST002 c\'elula 5 (em $cm.s^{-1}$)}}{132}
-\contentsline {figure}{\numberline {85}{\ignorespaces Velocidade ao longo do tempo em ST002 na Camada 5 (em $cm.s^{-1}$)}}{133}
-\contentsline {figure}{\numberline {86}{\ignorespaces Rosa de correntes no ponto ST002 c\'elula 6 (em $cm.s^{-1}$)}}{134}
-\contentsline {figure}{\numberline {87}{\ignorespaces Velocidade ao longo do tempo em ST002 na Camada 6 (em $cm.s^{-1}$)}}{135}
-\contentsline {figure}{\numberline {88}{\ignorespaces Rosa de correntes no ponto ST002 c\'elula 7 (em $cm.s^{-1}$)}}{136}
-\contentsline {figure}{\numberline {89}{\ignorespaces Velocidade ao longo do tempo em ST002 na Camada 7 (em $cm.s^{-1}$)}}{137}
-\contentsline {figure}{\numberline {90}{\ignorespaces Rosa de correntes no ponto ST002 c\'elula 8 (em $cm.s^{-1}$)}}{138}
-\contentsline {figure}{\numberline {91}{\ignorespaces Velocidade ao longo do tempo em ST002 na Camada 8 (em $cm.s^{-1}$)}}{139}
-\contentsline {figure}{\numberline {92}{\ignorespaces Rosa de correntes no ponto ST002 c\'elula 9 (em $cm.s^{-1}$)}}{140}
-\contentsline {figure}{\numberline {93}{\ignorespaces Velocidade ao longo do tempo em ST002 na Camada 9 (em $cm.s^{-1}$)}}{141}
-\contentsline {figure}{\numberline {94}{\ignorespaces Rosa de correntes no ponto ST002 c\'elula 10 (em $cm.s^{-1}$)}}{142}
-\contentsline {figure}{\numberline {95}{\ignorespaces Velocidade ao longo do tempo em ST002 na Camada 10 (em $cm.s^{-1}$)}}{143}
-\contentsline {figure}{\numberline {96}{\ignorespaces Rosa de correntes no ponto ST003 c\'elula 1 (em $cm.s^{-1}$)}}{144}
-\contentsline {figure}{\numberline {97}{\ignorespaces Velocidade ao longo do tempo em ST003 na Camada 1 (em $cm.s^{-1}$)}}{145}
-\contentsline {figure}{\numberline {98}{\ignorespaces Rosa de correntes no ponto ST003 c\'elula 2 (em $cm.s^{-1}$)}}{146}
-\contentsline {figure}{\numberline {99}{\ignorespaces Velocidade ao longo do tempo em ST003 na Camada 2 (em $cm.s^{-1}$)}}{147}
-\contentsline {figure}{\numberline {100}{\ignorespaces Rosa de correntes no ponto ST003 c\'elula 3 (em $cm.s^{-1}$)}}{148}
-\contentsline {figure}{\numberline {101}{\ignorespaces Velocidade ao longo do tempo em ST003 na Camada 3 (em $cm.s^{-1}$)}}{149}
-\contentsline {figure}{\numberline {102}{\ignorespaces Rosa de correntes no ponto ST003 c\'elula 4 (em $cm.s^{-1}$)}}{150}
-\contentsline {figure}{\numberline {103}{\ignorespaces Velocidade ao longo do tempo em ST003 na Camada 4 (em $cm.s^{-1}$)}}{151}
-\contentsline {figure}{\numberline {104}{\ignorespaces Rosa de correntes no ponto ST003 c\'elula 5 (em $cm.s^{-1}$)}}{152}
-\contentsline {figure}{\numberline {105}{\ignorespaces Velocidade ao longo do tempo em ST003 na Camada 5 (em $cm.s^{-1}$)}}{153}
-\contentsline {figure}{\numberline {106}{\ignorespaces Rosa de correntes no ponto ST003 c\'elula 6 (em $cm.s^{-1}$)}}{154}
-\contentsline {figure}{\numberline {107}{\ignorespaces Velocidade ao longo do tempo em ST003 na Camada 6 (em $cm.s^{-1}$)}}{155}
-\contentsline {figure}{\numberline {108}{\ignorespaces Rosa de correntes no ponto ST003 c\'elula 7 (em $cm.s^{-1}$)}}{156}
-\contentsline {figure}{\numberline {109}{\ignorespaces Velocidade ao longo do tempo em ST003 na Camada 7 (em $cm.s^{-1}$)}}{157}
-\contentsline {figure}{\numberline {110}{\ignorespaces Rosa de correntes no ponto ST003 c\'elula 8 (em $cm.s^{-1}$)}}{158}
-\contentsline {figure}{\numberline {111}{\ignorespaces Velocidade ao longo do tempo em ST003 na Camada 8 (em $cm.s^{-1}$)}}{159}
-\contentsline {figure}{\numberline {112}{\ignorespaces Rosa de correntes no ponto ST003 c\'elula 9 (em $cm.s^{-1}$)}}{160}
-\contentsline {figure}{\numberline {113}{\ignorespaces Velocidade ao longo do tempo em ST003 na Camada 9 (em $cm.s^{-1}$)}}{161}
-\contentsline {figure}{\numberline {114}{\ignorespaces Rosa de correntes no ponto ST003 c\'elula 10 (em $cm.s^{-1}$)}}{162}
-\contentsline {figure}{\numberline {115}{\ignorespaces Velocidade ao longo do tempo em ST003 na Camada 10 (em $cm.s^{-1}$)}}{163}
-\contentsline {figure}{\numberline {116}{\ignorespaces Rosa de correntes no ponto ST003 c\'elula 11 (em $cm.s^{-1}$)}}{164}
-\contentsline {figure}{\numberline {117}{\ignorespaces Velocidade ao longo do tempo em ST003 na Camada 11 (em $cm.s^{-1}$)}}{165}
-\contentsline {figure}{\numberline {118}{\ignorespaces Rosa de correntes no ponto ST003 c\'elula 12 (em $cm.s^{-1}$)}}{166}
-\contentsline {figure}{\numberline {119}{\ignorespaces Velocidade ao longo do tempo em ST003 na Camada 12 (em $cm.s^{-1}$)}}{167}
+\contentsline {figure}{\numberline {1}{\ignorespaces Localiza\c c\~ao da Enseada do Itapocor\'oi.}}{16}
+\contentsline {figure}{\numberline {2}{\ignorespaces Efeitos da eros\~ao em Pi\c carras. Fonte: \citeonline {fotoerosao}.}}{19}
+\contentsline {figure}{\numberline {3}{\ignorespaces Imagem do Google Earth da Praia de Pi\c carras de 18 de Setembro de 2015. Fonte: Google Earth.}}{20}
+\contentsline {figure}{\numberline {4}{\ignorespaces M\'axima eleva\c c\~ao do n\IeC {\'\i }vel do mar causada por mar\'es meteorol\'ogicas e astron\^omicas. Fonte: \citeonline {Parise}.}}{21}
+\contentsline {figure}{\numberline {5}{\ignorespaces Fluxograma da metodologia aplicada.}}{23}
+\contentsline {figure}{\numberline {6}{\ignorespaces Localiza\c c\~ao das coletas de dados atrav\'es de ADCPs.}}{26}
+\contentsline {figure}{\numberline {7}{\ignorespaces Dados medidos no ADCP ST001. Pontos em vermelho indicam que os dados foram obtidos atrav\'es de interpola\c c\~ao linear e os dados em azul s\~ao dados medidos pelo ADCP.}}{27}
+\contentsline {figure}{\numberline {8}{\ignorespaces Localiza\c c\~ao das vari\'aveis calculadas em uma malha do tipo Arakawa C.}}{29}
+\contentsline {figure}{\numberline {9}{\ignorespaces Interface gr\'afica do TMD para obten\c c\~ao das constituintes harm\^onicas calculadas pelo modelo TPXO.}}{30}
+\contentsline {figure}{\numberline {10}{\ignorespaces Rosa dos ventos para os dados do CFSR de 2011 a 2015. Os c\IeC {\'\i }rculos indicam percentuais de ocorr\^encia por quadrante analisado.}}{33}
+\contentsline {figure}{\numberline {11}{\ignorespaces Distribui\c c\~ao conjunta dos dados de ventos do CFSR de 2011 a 2015. Os tons de verde na figura indicam resultados mais relevantes dentre as ocorr\^encias.}}{34}
+\contentsline {figure}{\numberline {12}{\ignorespaces Rosa dos ventos referente aos dados do CFSR para a esta\c c\~ao Ver\~ao (Dezembro a Fevereiro) nos anos 2011 a 2015. Os c\IeC {\'\i }rculos indicam percentuais de ocorr\^encia por quadrante analisado. Ventos de ONO a NE s\~ao presentes em quantidades semelhantes, mas ventos de oeste s\~ao nitidamente mais fortes, podendo alcan\c car 12$m.s^{-1}$}}{36}
+\contentsline {figure}{\numberline {13}{\ignorespaces Rosa dos ventos referente aos dados do CFSR para a esta\c c\~ao Outono (Mar\c co a Maio) nos anos 2011 a 2015. Os c\IeC {\'\i }rculos indicam percentuais de ocorr\^encia por quadrante analisado. Ventos de O s\~ao mais intensos por\'em com menor ocorr\^encia do que os ventos de NO, sendo estes os mais presentes durante o outono.}}{37}
+\contentsline {figure}{\numberline {14}{\ignorespaces Rosa dos ventos referente aos dados do CFSR para a esta\c c\~ao Inverno (Junho a Agosto) nos anos 2011 a 2015. Os c\IeC {\'\i }rculos indicam percentuais de ocorr\^encia por quadrante analisado. Ventos de S se apresentam os mais frequentes e os mais intensos.}}{38}
+\contentsline {figure}{\numberline {15}{\ignorespaces Rosa dos ventos referente aos dados do CFSR para a esta\c c\~ao Primavera (Setembro a Novembro) nos anos 2011 a 2015. Os c\IeC {\'\i }rculos indicam percentuais de ocorr\^encia por quadrante analisado. Ventos de NE e L s\~ao mais intensos, por\'em ventos de O-ONO s\~ao mais intensos.}}{39}
+\contentsline {figure}{\numberline {16}{\ignorespaces Varia\c c\~ao de N\IeC {\'\i }vel no ponto ST001 separado entre: dado medido (em azul na parte superior) e dados de mar\'e previsto (em azul na parte inferior) e o residual meteorol\'ogico (em vermelho na parte inferior).}}{42}
+\contentsline {figure}{\numberline {17}{\ignorespaces Varia\c c\~ao de N\IeC {\'\i }vel no ponto ST002 separado entre: dado medido (em azul na parte superior) e dados de mar\'e previsto (em azul na parte inferior) e o residual meteorol\'ogico (em vermelho na parte inferior).}}{43}
+\contentsline {figure}{\numberline {18}{\ignorespaces Varia\c c\~ao de N\IeC {\'\i }vel no ponto ST003 separado entre: dado medido (em azul na parte superior) e dados de mar\'e previsto (em azul na parte inferior) e o residual meteorol\'ogico (em vermelho na parte inferior).}}{44}
+\contentsline {figure}{\numberline {19}{\ignorespaces Varia\c c\~ao de n\IeC {\'\i }vel medido em Penha separado entre: dado medido (em azul na parte superior) e dados de mar\'e previsto (em azul na parte inferior) e o residual meteorol\'ogico (em vermelho na parte inferior).}}{45}
+\contentsline {figure}{\numberline {20}{\ignorespaces Evento de mar\'e meteorol\'ogica negativa registrado}}{46}
+\contentsline {figure}{\numberline {21}{\ignorespaces Espectro de energia em Pi\c carras - ST001}}{49}
+\contentsline {figure}{\numberline {22}{\ignorespaces Espectro de energia em Pi\c carras - ST002}}{50}
+\contentsline {figure}{\numberline {23}{\ignorespaces Espectro de energia em Pi\c carras - ST003}}{51}
+\contentsline {figure}{\numberline {24}{\ignorespaces Espectro de energia em Penha}}{52}
+\contentsline {figure}{\numberline {25}{\ignorespaces Detalhe do espectro de energia em Penha onde pode-se observar os picos referentes \`as constantes harm\^onicas semidiurnas (M2 e S2) e diurnas (K1 e O1), respectivamente.}}{52}
+\contentsline {figure}{\numberline {26}{\ignorespaces Dados de temperatura na Enseada de Pi\c carras. A linha azul apresenta as varia\c c\~oes no ponto ST001 (equipamento mais abrigado) enquanto a linha verde indica as varia\c c\~oes no ponto ST003 (equipamento mais externo). Verifica-se que as varia\c c\~oes de temperatura diminuem conforme a medi\c c\~ao ocorre em \'aguas mais profundas.}}{54}
+\contentsline {figure}{\numberline {27}{\ignorespaces Dados de temperatura na Enseada de Pi\c carras onde os dados do ponto ST002 e ST003 apresentam dados hor\'arios apenas.}}{55}
+\contentsline {figure}{\numberline {28}{\ignorespaces Rosa de correntes no ponto ST001 integrada na vertical (em cm).}}{57}
+\contentsline {figure}{\numberline {29}{\ignorespaces Rosa de correntes no ponto ST002 integrada na vertical (em cm).}}{57}
+\contentsline {figure}{\numberline {30}{\ignorespaces Rosa de correntes no ponto ST003 integrada na vertical (em cm).}}{58}
+\contentsline {figure}{\numberline {31}{\ignorespaces Histograma da velocidade de corrente no ponto ST001 integrada na vertical.}}{58}
+\contentsline {figure}{\numberline {32}{\ignorespaces Histograma da velocidade de corrente no ponto ST002 integrada na vertical.}}{58}
+\contentsline {figure}{\numberline {33}{\ignorespaces Histograma da velocidade de corrente no ponto ST003 integrada na vertical.}}{59}
+\contentsline {figure}{\numberline {34}{\ignorespaces Histograma cumulativo da velocidade da corrente em $m.s^{-1}$ no ST001. Linhas em preto indicam os quartis de 25, 50 e 90\%.}}{59}
+\contentsline {figure}{\numberline {35}{\ignorespaces Histograma cumulativo da velocidade da corrente em $m.s^{-1}$ no ST002. Linhas em preto indicam os quartis de 25, 50 e 90\%.}}{60}
+\contentsline {figure}{\numberline {36}{\ignorespaces Histograma cumulativo da velocidade da corrente em $m.s^{-1}$ no ST003. Linhas em preto indicam os quartis de 25, 50 e 90\%.}}{60}
+\contentsline {figure}{\numberline {37}{\ignorespaces Dire\c c\~ao predominante e velocidade das correntes no ponto ST001.}}{61}
+\contentsline {figure}{\numberline {38}{\ignorespaces Dire\c c\~ao predominante e velocidade das correntes no ponto ST002.}}{62}
+\contentsline {figure}{\numberline {39}{\ignorespaces Dire\c c\~ao predominante e velocidade das correntes no ponto ST003.}}{63}
+\contentsline {figure}{\numberline {40}{\ignorespaces Grade num\'erica}}{65}
+\contentsline {figure}{\numberline {41}{\ignorespaces Batimetria interpolada na grade num\'erica.}}{66}
+\contentsline {figure}{\numberline {42}{\ignorespaces RMSE para a componente U da velocidade em ST001.}}{69}
+\contentsline {figure}{\numberline {43}{\ignorespaces RMSE para a componente U da velocidade em ST002.}}{70}
+\contentsline {figure}{\numberline {44}{\ignorespaces RMSE para a componente U da velocidade em ST003.}}{71}
+\contentsline {figure}{\numberline {45}{\ignorespaces RMSE para a componente V da velocidade em ST001.}}{72}
+\contentsline {figure}{\numberline {46}{\ignorespaces RMSE para a componente V da velocidade em ST002.}}{73}
+\contentsline {figure}{\numberline {47}{\ignorespaces RMSE para a componente V da velocidade em ST003.}}{74}
+\contentsline {figure}{\numberline {48}{\ignorespaces Mapa de correntes residuais para um per\IeC {\'\i }odo de 2 meses no Cen\'ario 01.}}{76}
+\contentsline {figure}{\numberline {49}{\ignorespaces Mapa de correntes residuais para um per\IeC {\'\i }odo de 50h e mar\'e de quadratura no Cen\'ario 01}}{77}
+\contentsline {figure}{\numberline {50}{\ignorespaces Mapa de correntes residuais para um per\IeC {\'\i }odo de dois meses no Cen\'ario 02.}}{78}
+\contentsline {figure}{\numberline {51}{\ignorespaces Mapa de correntes residuais para um per\IeC {\'\i }odo de dois meses no Cen\'ario 03.}}{79}
+\contentsline {figure}{\numberline {52}{\ignorespaces Mapa de correntes residuais para um per\IeC {\'\i }odo de dois meses no Cen\'ario 04.}}{80}
+\contentsline {figure}{\numberline {53}{\ignorespaces Mapa de correntes residuais para um per\IeC {\'\i }odo de 2 meses no Cen\'ario 05.}}{81}
+\contentsline {figure}{\numberline {54}{\ignorespaces Mapa de correntes residuais para um per\IeC {\'\i }odo de 50h e mar\'e de quadratura no Cen\'ario 05}}{82}
+\contentsline {figure}{\numberline {55}{\ignorespaces Mapa de correntes residuais para um per\IeC {\'\i }odo de dois meses no Cen\'ario 06.}}{83}
+\contentsline {figure}{\numberline {56}{\ignorespaces Mapa de correntes residuais para um per\IeC {\'\i }odo de dois meses no Cen\'ario 07.}}{84}
+\contentsline {figure}{\numberline {57}{\ignorespaces Mapa de correntes residuais para um per\IeC {\'\i }odo de 50h e mar\'e de quadratura no Cen\'ario 07}}{85}
+\contentsline {figure}{\numberline {58}{\ignorespaces Mapa de correntes residuais para um per\IeC {\'\i }odo de 50h e mar\'e de siz\IeC {\'\i }gia no Cen\'ario 07}}{86}
+\contentsline {figure}{\numberline {59}{\ignorespaces Mapa de correntes residuais para um per\IeC {\'\i }odo de dois meses no Cen\'ario 08.}}{87}
+\contentsline {figure}{\numberline {60}{\ignorespaces Mapa de correntes residuais para um per\IeC {\'\i }odo de dois meses no Cen\'ario 09.}}{88}
+\contentsline {figure}{\numberline {61}{\ignorespaces Mapa de correntes residuais para um per\IeC {\'\i }odo de dois meses no Cen\'ario 10.}}{89}

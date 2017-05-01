@@ -1,44 +1,43 @@
 \select@language {brazil}
-\contentsline {chapter}{\numberline {1}\MakeUppercase {INTRODU\c C\~AO}}{12}
-\contentsline {section}{\numberline {1.1}Perguntas de Pesquisa}{12}
-\contentsline {section}{\numberline {1.2}Hip\'otese}{13}
-\contentsline {section}{\numberline {1.3}OBJETIVOS}{13}
-\contentsline {subsection}{\numberline {1.3.1}Objetivo Geral}{13}
-\contentsline {subsection}{\numberline {1.3.2}Objetivos Espec\IeC {\'\i }ficos}{13}
-\contentsline {chapter}{\numberline {2}\MakeUppercase {REVIS\~AO BIBLIOGR\'AFICA}}{14}
-\contentsline {section}{\numberline {2.1}Mar\'e e Circula\c c\~ao Residual}{14}
-\contentsline {section}{\numberline {2.2}Modelagem Num\'erica de Zonas Costeiras}{17}
-\contentsline {section}{\numberline {2.3}\'Area de estudo}{21}
-\contentsline {chapter}{\numberline {3}\MakeUppercase {MATERIAIS E M\'ETODOS}}{28}
-\contentsline {section}{\numberline {3.1}Dados medidos}{29}
-\contentsline {section}{\numberline {3.2}Modelo Num\'erico}{33}
-\contentsline {subsection}{\numberline {3.2.1}DELFT3D-FLOW}{33}
-\contentsline {section}{\numberline {3.3}For\c cantes dos modelos}{34}
-\contentsline {subsection}{\numberline {3.3.1}Mar\'e}{34}
-\contentsline {subsection}{\numberline {3.3.2}Vento}{35}
-\contentsline {section}{\numberline {3.4}Dados diversos}{36}
-\contentsline {subsection}{\numberline {3.4.1}Linha de Costa}{36}
-\contentsline {subsection}{\numberline {3.4.2}Batimetria}{36}
-\contentsline {section}{\numberline {3.5}Avalia\c c\~ao dos resultados do modelo}{37}
-\contentsline {section}{\numberline {3.6}An\'alises utilizadas}{37}
-\contentsline {subsection}{\numberline {3.6.1}TTide}{37}
-\contentsline {subsection}{\numberline {3.6.2}Transformada R\'apida de Fourier (FFT)}{37}
-\contentsline {chapter}{\numberline {4}\MakeUppercase {RESULTADOS}}{39}
-\contentsline {section}{\numberline {4.1}An\'alise dos Dados de Vento}{39}
-\contentsline {subsection}{\numberline {4.1.1}Compara\c c\~ao entre CFSR e METAR}{39}
-\contentsline {subsection}{\numberline {4.1.2}CFSR - 2011 a 2015}{45}
-\contentsline {subsection}{\numberline {4.1.3}An\'alise por Esta\c c\~ao}{47}
-\contentsline {section}{\numberline {4.2}Descri\c c\~ao dos dados medidos}{52}
-\contentsline {subsection}{\numberline {4.2.1}N\IeC {\'\i }vel}{52}
-\contentsline {subsection}{\numberline {4.2.2}Temperatura}{71}
-\contentsline {subsection}{\numberline {4.2.3}Corrente}{73}
-\contentsline {section}{\numberline {4.3}Modelo Num\'erico}{81}
-\contentsline {subsection}{\numberline {4.3.1}Grade Num\'erica e Batimetria}{81}
-\contentsline {subsection}{\numberline {4.3.2}Calibra\c c\~ao}{84}
-\contentsline {subsection}{\numberline {4.3.3}Cen\'arios de an\'alise}{92}
-\contentsline {subsection}{\numberline {4.3.4}Mapas de Residuais}{93}
-\contentsline {chapter}{\numberline {5}\MakeUppercase {DISCUSS\~AO}}{107}
-\contentsline {chapter}{\numberline {6}\MakeUppercase {CONCLUS\~OES}}{109}
-\contentsline {chapter}{\numberline {7}\MakeUppercase {CONSIDERA\c C\~OES FINAIS}}{111}
-\contentsline {chapter}{\hspace {\espacosumario }REFER\^ENCIAS}{112}
-\contentsline {chapter}{\hspace {\espacosumario }\MakeUppercase {Ap\^endice{}} A{} -$\mskip -\thinmuskip $-{} Gr\'aficos de Corrente por Camada}{142}
+\contentsline {chapter}{\numberline {1}\MakeUppercase {INTRODU\c C\~AO}}{11}
+\contentsline {section}{\numberline {1.1}Perguntas de Pesquisa}{11}
+\contentsline {section}{\numberline {1.2}Hip\'otese}{12}
+\contentsline {section}{\numberline {1.3}OBJETIVOS}{12}
+\contentsline {subsection}{\numberline {1.3.1}Objetivo Geral}{12}
+\contentsline {subsection}{\numberline {1.3.2}Objetivos Espec\IeC {\'\i }ficos}{12}
+\contentsline {chapter}{\numberline {2}\MakeUppercase {REVIS\~AO BIBLIOGR\'AFICA}}{13}
+\contentsline {section}{\numberline {2.1}Mar\'e e Circula\c c\~ao Residual}{13}
+\contentsline {section}{\numberline {2.2}\'Area de estudo}{16}
+\contentsline {chapter}{\numberline {3}\MakeUppercase {MATERIAIS E M\'ETODOS}}{23}
+\contentsline {section}{\numberline {3.1}Dados medidos}{24}
+\contentsline {section}{\numberline {3.2}Modelo Num\'erico}{28}
+\contentsline {subsection}{\numberline {3.2.1}DELFT3D-FLOW}{28}
+\contentsline {section}{\numberline {3.3}For\c cantes dos modelos}{29}
+\contentsline {subsection}{\numberline {3.3.1}Mar\'e}{29}
+\contentsline {subsection}{\numberline {3.3.2}Vento}{30}
+\contentsline {section}{\numberline {3.4}Dados diversos}{31}
+\contentsline {subsection}{\numberline {3.4.1}Linha de Costa}{31}
+\contentsline {subsection}{\numberline {3.4.2}Batimetria}{31}
+\contentsline {section}{\numberline {3.5}Avalia\c c\~ao dos resultados do modelo}{32}
+\contentsline {section}{\numberline {3.6}An\'alises utilizadas}{32}
+\contentsline {subsection}{\numberline {3.6.1}TTide}{32}
+\contentsline {chapter}{\numberline {4}\MakeUppercase {RESULTADOS}}{33}
+\contentsline {section}{\numberline {4.1}An\'alise dos Dados de Vento}{33}
+\contentsline {subsection}{\numberline {4.1.1}CFSR - 2011 a 2015}{33}
+\contentsline {subsection}{\numberline {4.1.2}An\'alise por Esta\c c\~ao}{35}
+\contentsline {section}{\numberline {4.2}Descri\c c\~ao dos dados medidos}{40}
+\contentsline {subsection}{\numberline {4.2.1}N\IeC {\'\i }vel}{40}
+\contentsline {subsection}{\numberline {4.2.2}Temperatura}{53}
+\contentsline {subsection}{\numberline {4.2.3}Corrente}{56}
+\contentsline {section}{\numberline {4.3}Modelo Num\'erico}{64}
+\contentsline {subsection}{\numberline {4.3.1}Grade Num\'erica e Batimetria}{64}
+\contentsline {subsection}{\numberline {4.3.2}Calibra\c c\~ao}{67}
+\contentsline {subsection}{\numberline {4.3.3}Cen\'arios de an\'alise}{75}
+\contentsline {subsection}{\numberline {4.3.4}Mapas de Residuais}{76}
+\contentsline {chapter}{\numberline {5}\MakeUppercase {DISCUSS\~AO}}{90}
+\contentsline {chapter}{\numberline {6}\MakeUppercase {CONCLUS\~OES}}{92}
+\contentsline {chapter}{\numberline {7}\MakeUppercase {CONSIDERA\c C\~OES FINAIS}}{94}
+\contentsline {chapter}{\hspace {\espacosumario }REFER\^ENCIAS}{95}
+\contentsline {chapter}{\hspace {\espacosumario }\MakeUppercase {Ap\^endice{}} A{} -$\mskip -\thinmuskip $-{} Modelagem Num\'erica de Zonas Costeiras: uma revis\~ao}{101}
+\contentsline {chapter}{\hspace {\espacosumario }\MakeUppercase {Ap\^endice{}} B{} -$\mskip -\thinmuskip $-{} An\'alises Comparativa entre CFSR e METAR}{106}
+\contentsline {chapter}{\hspace {\espacosumario }\MakeUppercase {Ap\^endice{}} C{} -$\mskip -\thinmuskip $-{} An\'alises de Constantes Harm\^onicas}{113}
