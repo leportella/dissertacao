@@ -39,17 +39,17 @@
 \autor{Letícia Vasques dos Reis Portella Nascimento}
 \grau{Mestre em Oceanografia}
 \local{Florianópolis} 
-\data{14}{Junho}{2017}
+\data{22}{Junho}{2017}
 \orientador[Orientador]{Prof. Dr. Antonio Fernando H\"arter Fetter Filho}
 % \coorientador[Coorientador\\Universidade ...]{Prof. Dr.}
 % \coordenador[Coordenador\\Universidade ...]{Prof. Dr. }
 % 
 \numerodemembrosnabanca{3} % Isso decide se haverá uma folha adicional
-\orientadornabanca{sim} % Se faz parte da banca definir como sim
+%\orientadornabanca{sim} % Se faz parte da banca definir como sim
 % \coorientadornabanca{sim} % Se faz parte da banca definir como sim
-\bancaMembroA{Prof. Dr. Antonio Henrique da Fontoura Klein\\Universidade Federal de Santa Catarina} %Nome do presidente da banca
-\bancaMembroB{Dr. Rodrigo do Carmo Barletta\\CB&I}      % Nome do membro da Banca
-% \bancaMembroC{Terceiro membro\\Universidade ...}     % Nome do membro da Banca
+\bancaMembroA{Prof. Dr. Antonio Henrique da Fontoura Klein\\Universidade Federal de Santa Catarina} 
+\bancaMembroB{Prof. Dr. Felipe Mendonça Pimenta\\Universidade Federal de Santa Catarina}    
+\bancaMembroC{Dr. Rodrigo do Carmo Barletta\\CB&I} 
 % \bancaMembroD{Quarto membro\\Universidade ...}       % Nome do membro da Banca
 % %\bancaMembroE{Quinto membro\\Universidade ...}       % Nome do membro da Banca
 % %\bancaMembroF{Sexto membro\\Universidade ...}        % Nome do membro da Banca
@@ -517,7 +517,7 @@ são facilmente acessíveis através de uma interface gráfica desenvolvida em ambie
 
 \subsection{Vento}
 
-Para a forçante do modelo numérico os dados de ventos utilizados foram obtidos do modelo de reanálise do \emph{National Centers for Environmental Prediction} (NCEP) \emph{Climate Forecast System Reanalysis} (CFSR).
+Para a forçante do modelo numérico os dados de ventos utilizados foram obtidos do modelo de reanálise do \emph{National Center for Environmental Prediction} (NCEP) \emph{Climate Forecast System Reanalysis} (CFSR).
 
 O propósito geral de modelos de reanálise é produzir representações globais plurianuais acuradas de condições atmosféricas, geradas por um modelo e uma aquisição constante de dados que passam a ser incorporados ao sistema. Pode-se dizer que em um dado momento $t$ é o resultado de uma curta previsão iniciada por uma análise passada ($t-\Delta t$), modificada por assimilação de dados em uma pequena janela centrada em $t$. 
 Por convenção a janela $\Delta t$ é de seis horas. Dessa forma, toda nova reanálise é beneficiada por todas as reanálises anteriores e os erros têm mais chances de serem descobertos e corrigidos nos resultados posteriores \cite{cfsr}.
@@ -527,28 +527,17 @@ O \emph{Coupled Forecast System Reanalysis} (CFSR) é um modelo de reanálise mais
 Os resultados estão disponíveis e podem ser gratuitamente adquiridos no
 seguinte endereço: \url{http://rda.ucar.edu/datasets/ds094.1/}.
 
-Também foram analisados os dados provenientes da Rede Meteorológica do Comando da Aeronáutica (REDEMET) registrados em diversos aeroportos pelo país, denominados METAR. Os dados estão disponíveis no endereço \url{http://www.redemet.aer.mil.br/}. Para o presente trabalho, foram coletados dados referentes ao ano de 2011 na estação presente no Aeroporto de Navegantes (SBNF).  
-
-Para a análise pontual dos dados de vento (comparação com os dados medidos e descrição da área de estudo) foi feita uma comparação entre os dados provenientes do METAR e daqueles oriundos do modelo CFSR. Como os primeiros não foram considerados com relevância suficiente para o trabalho, eles foram descartados para a análise. Os resultados da comparação se encontram no Apêndice B.
-
-% O projeto tem duas vantagens sobre outras bases de dados de vento: possui uma s\'erie hist\'orica bastante longa, desde 1957, e utiliza-se de uma
-% ampla gama de dados medidos que são inseridos no modelo e ajudam a melhorar previs\~oes futuras.
-% 
-% Os resultados da rean\'alise são divididos em quatro categorias, dependendo da influ\^encia que dados observacionais e o modelo tem sobre
-% esses resultados:
-% 
-% \begin{description}
-%  \item[A] as vari\'aveis analisadas tem alta influ\^encia de dados medidos e, por isso, \'e a classe mais confi\'avel;
-%  \item[B] apesar das vari\'aveis contarem com dados observacionais que as influenciam diretamente, o modelo tem uma 
-%  grande influencia nos dados;
-%  \item[C] não h\'a dados medidos afetando as vari\'aveis e, portanto, ela \'e derivada apenas dos resultados do modelo sendo for\c{c}ado 
-%  pela assimilaçao de dados;
-%  \item[D] são resultados que representam vari\'aveis obtidas unicamente por dados climatol\'ogicos e não dependem do modelo.
-% \end{description}
-% 
-% Os dados de vento zonal e meridional são considerados de categoria A e, portanto, bastante confi\'aveis. Os dados estão dispon\'iveis 
-
 \section{Dados diversos}
+
+\subsection{Vento}
+
+Além dos dados do CFSR, utilizados nas análises de regime de ventos da região e como forçante do modelo, dois outros dados foram analisados no presente trabalho.
+
+O primeiro conjunto foi proveniente da Rede Meteorológica do Comando da Aeronáutica (REDEMET) registrados em diversos aeroportos pelo país, denominados METAR. Os dados estão disponíveis no endereço \url{http://www.redemet.aer.mil.br/}. Para o presente trabalho, foram coletados dados referentes ao ano de 2011 na estação presente no Aeroporto de Navegantes (SBNF).  
+
+O segundo conjunto foi os dados de vento do Instituto Nacional de Meteorologia (INMET) obtidos para o ano de 2011 para a estação de Itajaí. Esses são dados muito bons quando comparados aos do CFSR, uma vez que estes são de modelos e não dados medidos, e melhores em relação aos dados do METAR uma vez que foram coletados em área mais ampla e a uma altura de 18m.
+
+Os dados do METAR foram desconsiderados uma vez que mais de 16\% dos dados eram inexistentes e, portanto, sua análise seria sujeita a uma grande quantidade de dados inexistentes. Os dados do INMET se mostraram muito coerentes para as análises entre nível meteorológico, temperatura e vento. Isso se deu porque o dado era medido e coletado de hora em hora com poucos dados ausentes. No entanto, o mesmo não se mostrou adequado como forçante do modelo.
 
 \subsection{Linha de Costa}
 A linha de costa utilizada no presente trabalho foi obtida no banco de dados GSHHG (Global Self-consistent, Hierarchical, High-resolution Geography Database) da NOAA. Este tem como base dois bancos de dados de domínio público: o World Vector Shorelines (WVS) e a CIA World Data Bank II (WDBII) e podem ser gratuitamente obtidos em formato ESRI de Shapefile ou em formato binário. 
@@ -946,6 +935,38 @@ Nas figuras \ref{fig:tempfourier1} a \ref{fig:tempfourier3} estão apresentados o
 	\caption{O primeiro gráfico (superior) apresenta os dados de temperatura do ponto ST003 (em preto) e a tendência linear verificada nos dados (em vermelho). O segundo gráfico (meio) apresenta o valor de temperatura uma vez retirada a tendência linear apresentada na figura superior. O terceiro gráfico (inferior) apresenta o espectro de energia no domínio da frequência.}\label{fig:tempfourier3}
 \end{figure}
 
+\clearpage
+\subsection{Nível, Temperatura e Vento}
+
+Nas figuras \ref{fig:niveltempvento1} a \ref{fig:niveltempvento3} estão apresentadas análises comparativas entre a maré meteorológica, a temperatura e o vento nos pontos ST001, ST002 e ST003.
+
+É possível verificar em ST001 que o pico de elevação de nível no começo da série (dia 22) sucedeu um episódio esporádico porém intenso de vento SE. Entretanto, não houve nada na temperatura que demonstrasse qualquer influência desse vento e esse episódio de vento Sul parece ser pouco para a grande elevação verificada nesse primeiro período. Esse pico, portanto, pode estar associado a tempestades geradas longe da costa e não a ventos locais. 
+
+Toda a elevação de temperatura que ocorre após o dia 15 de Setembro bem como o episódio de pico de temperatura no dia 20 de Setembro se dá depois de uma sucessão de ventos S-SE intensos (mais de 5$m.s^{-1}$), eventualmente sobrepostos por ventos do quadrante N com menor intensidade. Por outro lado, se vê uma diminuição do nível, o que não é comum com ventos desse quadrante.  
+
+As baixas temperaturas entre 22 e 30 de Agosto aparecem associadas por um período de vento constante do quadrante NE, além de ser um período onde verifica-se uma abaixamento constante do nível. Esse pode ser o efeito do Efeito de Coriolis sobre a costa, uma vez que ventos de NE tendem a abaixar o nível e diminuir a temperatura. O efeito contrário pode ser visto no dia 3 de Setembro, onde intensos ventos de Sul mudam a tendência de queda do nível e causam um aumento da temperatura, que vinha oscilando em um período onde o vento não mantinha direção constante.
+
+Os pontos ST002 e ST003 apresentam os mesmos resultados entre vento e nível, mas com efeitos muito sutis na temperatura, praticamente imperceptíveis no ponto S003. Verifica-se, portanto, que as correlações entre vento, nível e temperatura se apresentam mais intensas em pontos rasos, como o ST001, e mais sutis em regiões profundas como ST002 e ST003. 
+
+\begin{figure}[!htb]
+	\includegraphics[width=1\textwidth]{figuras/nivel_temp_vento_st001.png}
+	\centering
+	\caption{Comparação entre a elevação meteorológica de nível (figura superior), a variação de temperatura (figura central) e a intensidade e direção do vento (figura inferior) no ponto ST001.}\label{fig:niveltempvento1}
+\end{figure}
+
+\begin{figure}[!htb]
+	\includegraphics[width=1\textwidth]{figuras/nivel_temp_vento_st002.png}
+	\centering
+	\caption{Comparação entre a elevação meteorológica de nível (figura superior), a variação de temperatura (figura central) e a intensidade e direção do vento (figura inferior) no ponto ST002.}\label{fig:niveltempvento2}
+\end{figure}
+
+\begin{figure}[!htb]
+	\includegraphics[width=1\textwidth]{figuras/nivel_temp_vento_st003.png}
+	\centering
+	\caption{Comparação entre a elevação meteorológica de nível (figura superior), a variação de temperatura (figura central) e a intensidade e direção do vento (figura inferior) no ponto ST003.}\label{fig:niveltempvento3}
+\end{figure}
+
+
 %-------------------------------------------------------------------------------------------------------
 \clearpage
 \subsection{Corrente}
@@ -1105,9 +1126,9 @@ Diversos parâmetros foram testados de modo que se conseguisse chegar a um modelo
 Nas figuras \ref{fig:RMSE_U_ST001} a \ref{fig:RMSE_V_ST003} podem ser observados os resultados da calibração do modelo em comparação com os dados medidos nos três ADCPs posicionados em diferentes profundidades na Enseada do Itapocorói. Para avaliar a performance do modelo, foi calculada a amplitude máxima de variação dos dados medidos e, assumiu-se como ideal valores de erros que correspondessem a aproximadamente 10\% ou menos que o valor máximo de variação do dado medido.
 A tabela \ref{tab:erroscalibracao} apresenta os valores de amplitude e o valor de erro do modelo para cada parâmetro avaliado em cada um dos equipamentos.
 
-Primeiramente, é notável que os valores de erro de nível sejam consideravelmente mais baixos que aqueles encontrados nas componentes de velocidade, ficando sempre abaixo de 6\% do valor da amplitude da maré na região, que se encontra em aproximadamente 1,4m. Essa diferença de erros entre a calibração das componentes da velocidade e os valores nível indica que os processos que regem a hidrodinâmica local não estão associados às variações de nível, mas a outros processos costeiros como sugerido por \citeonline{Schettinietal1999}.
+Primeiramente, é notável que os valores de erro de nível sejam consideravelmente mais baixos que aqueles encontrados nas componentes de velocidade, ficando sempre abaixo de 6\% do valor da amplitude da maré na região, que se encontra em aproximadamente 1,4m. Essa diferença de erros entre a calibração das componentes da velocidade e os valores nível indica que os processos que regem a hidrodinâmica local não estão associados às variações de nível, mas a outros processos costeiros como sugerido por \citeonline{Schettinietal1999}. 
 
-É possível verificar que, em relação à corrente, os valores de erro são menores no ponto ST002. O ponto ST001 apresenta-se muito próximo da costa, o que o faz sujeito a influências da batimetria e da linha de costa. A resolução da grade pode ter sido um limitante de calibração do modelo neste ponto costeiro, justificando os maiores valores de erro encontrados em ST001 do que ST002. Já o ponto ST003 apresenta-se em uma área muito externa. A inserção de vento no modelo teve menor influência neste ponto do que nos demais pontos costeiros, indicando que o mesmo está muito menos sujeito a variações locais do que os demais pontos analisados. O fato de não se ter conseguido uma calibração em ST003 em diversas tentativas com diferentes forçantes de maré e vento local, indica que o ponto está muito externo para serem desconsideradas forçantes de larga escala, ondas de plataforma e/ou a baroclinicidade do sistema.
+É possível verificar que, em relação à corrente, os valores de erro são menores no ponto ST002. O ponto ST001 apresenta-se muito próximo da costa, o que o faz sujeito a influências da batimetria e da linha de costa. A resolução da grade pode ter sido um limitante de calibração do modelo neste ponto costeiro, justificando os maiores valores de erro encontrados em ST001 do que ST002. Já o ponto ST003 apresenta-se em uma área muito externa. A inserção de vento no modelo teve menor influência neste ponto do que nos demais pontos costeiros, indicando que o mesmo está muito menos sujeito a variações locais do que os demais pontos analisados. O fato de não se ter conseguido uma calibração em ST003 em diversas tentativas com diferentes forçantes de maré e vento local, indica que o ponto está muito externo para serem desconsideradas forçantes de larga escala, ondas de plataforma e/ou a baroclinicidade do sistema. Isso também pode ser verificado no domínio da frequência, onde o ponto ST003 apresentou a maior porcentagem de energia em frequência submareais (31\%)
 
 De forma geral, os erros ficaram próximos a 10\% da amplitude do dado avaliado. O ponto ST002 foi o que apresentou os menores valores de erro (\textless 10,5\%), mesmo apresentando amplitudes de variação menores que os outros dois locais avaliados. O ponto ST003 teve o maior erro associado na calibração em relação à componente V( $\sim$ 14\%). Apesar de os valores não estarem necessariamente abaixo de 10\%, considerou-se que eles estão próximos o suficiente para representarem os processos da região e, portanto, deu-se prosseguimento aos cenários de análise.
 
@@ -1222,7 +1243,7 @@ A figura \ref{fig:residualtotal02} apresenta o mapa de residual total para o per
 
 Pode-se verificar que o padrão é tipicamente de norte para sul em todos os momentos, sem formação de vórtice. As correntes são intensificadas no estreitamento da plataforma entre a Ilha Feia e a Ponta da Penha, onde chega a valores próximos de 0,6$cm.s^{-1}$. As correntes mais intensas, no entanto, ficam logo ao sul da Ilha Feia. Ao longo da praia, os valores são homogêneos e em torno de 0,3$cm.s^{-1}$. 
 
-É interessante notar que existe uma diminuição na intensidade da corrente conforme esta se aproxima do setor sul da enseada, e as correntes exatamente próximas do costa ficam mais amenas, em torno de 0,1$cm.s^{-1}$.
+É interessante notar que existe uma diminuição na intensidade da corrente conforme esta se aproxima da zona de sombra da enseada, e as correntes exatamente próximas do costa ficam mais amenas, em torno de 0,1$cm.s^{-1}$.
 
 
 \begin{figure}[!htb]
@@ -1401,7 +1422,7 @@ Este trabalho tinha como objetivo caracterizar a circulação local e residual da 
 	\item O padrão de direção de vento muda ao longo das estações, sendo mais O-N no verão e S no inverno. Essa forte sazonalidade na direção de ventos na região está associada às mudanças de posição do Anticiclone do Atlântico Sul e do Anticiclone Móvel Polar.
 	\item A velocidade do vento nas diferentes estações é semelhantes, com média aproximada de 4$m.s^{-1}$ e valores máximos de 10$m.s^{-1}$. Velocidades abaixo de 6$m.s^{-1}$ estão presentes em 70\% do tempo.
 	\item Verificou-se que as marés meteorológicas na região podem chegar a 1,3m, mas que um mês de coletas de dados pode não ser suficientes para medir elevações dessa magnitude.
-	\item Devido ao regime de micro-marés da região, a componente meteorológica teve uma influência muito grande no perfil de nível dos dados medidos. Os eventos típicos de maré meteorológica medidos na região alcançam, em média, 83cm. 
+	\item Devido ao regime de micro-marés da região, a componente meteorológica teve uma influência muito grande no perfil de nível dos dados medidos. Os eventos típicos de maré meteorológica medidos na região alcançam, em média, 73cm. 
 	\item O número de forma para os dados medidos indicou que a região está submetida a um regime de marés misto com predominância semidiurna.
 	\item Verificou-se uma discrepância entre as constantes harmônicas apresentadas na FEMAR de Penha e as constantes harmônicas de dados medidos, com diversas constantes apresentando um SNR muito pequeno e, portanto ficando fora das análises
 	\item A comparação entre as constantes harmônicas M2 e S2 entre os dados da FEMAR e os deste presente trabalho tiveram 2 e 4cm de diferenças na amplitude, respectivamente, indicando que os dados da FEMAR talvez não representem de forma adequada a dinâmica mareal da região.
@@ -1547,76 +1568,76 @@ CFL = \frac{C \Delta t}{\Delta x}, C \approx \sqrt{gh} + u \label{eq:CFL}
 	\caption{Difusão numérica em diferentes condições de CFL em um problema da equação da onda 1D com condição de fronteira invariavelmente igual a 1 metro.}\label{fig:difusao}
 \end{figure}
 
-% ====================================================================================
-\chapter{Análises Comparativa entre CFSR e METAR}
-% ====================================================================================
-
-Primeiramente os dados provenientes da base METAR da Aeronáutica do Brasil foram comparados com os dados provenientes do modelo de reanálises CFSR da NOAA. Na figura \ref{fig:localizacaovento} é possível observar a localização dos dados a serem apresentados. 
-
-\begin{figure}[!htb]
-	\includegraphics[width=1.1\textwidth]{figuras/DadosVento_position.png}
-	\centering
-	\caption{Localização dos dados de vento do modelo de reanálise CFSR e do aeroporto de Navegantes (METAR).}\label{fig:localizacaovento}
-\end{figure}
-
-As figuras \ref{fig:windroseMETAR} e \ref{fig:windroseCFSR} apresentam as rosas dos ventos dos dados do METAR e CFSR, respectivamente, para o ano de 2011 exclusivamente. É possível perceber que os gráficos têm um comportamento semelhante em termos de direção, mas uma variação considerável em relação ao percentual em cada uma das direções. Nos dados do CFSR, verifica-se uma predominância de ventos de O-ONO que podem alcançar mais de 8$m.s^{-1}$. Enquanto nos dados do METAR os ventos de O representam quase 20\% dos dados, com ventos em outras direções presentes, mas em menos de 10\% do tempo e velocidades normalmente acima de 4$m.s^{-1}$ e abaixo de 8$m.s^{-1}$, nunca superando 8$m.s^{-1}$.
-
-Os dados do CFSR têm uma maior distribuição na direção dos ventos, com uma baixa presença de ventos do quadrante SSE e uma presença marcante de ventos de NNE. A velocidade permaneceu normalmente entre 2 e 6$m.s^{-1}$ na maior parte do tempo. Velocidades acima de 8$m.s^{-1}$ são estão presentes apenas em ventos de ONO.
-
-\begin{figure}[!htb]
-	\includegraphics[width=1.1\textwidth]{figuras/vento/Vento_Metar_2011_Windrose.png}
-	\centering
-	\caption{Rosa dos ventos do Aeroporto de Navegantes para o ano de 2011 (METAR). Os círculos indicam percentuais de ocorrência por quadrante analisado.}\label{fig:windroseMETAR}
-\end{figure}
-
-\begin{figure}[!htb]
-	\includegraphics[width=1.1\textwidth]{figuras/vento/Vento_CFSR_2011_Windrose.png}
-	\centering
-	\caption{Rosa dos ventos referente aos dados do CFSR para o ano de 2011. Os círculos indicam percentuais de ocorrência por quadrante analisado.}\label{fig:windroseCFSR}
-\end{figure}
-
-Para melhor compreensão do comportamento dos dados, as velocidades e direções dos dados foram descritas na forma de histogramas para os dados do METAR e CFSR nas figuras \ref{fig:histvelMETAR} a \ref{fig:histdirCFSR}. 
-Enquanto os dados de velocidade do METAR apresentam uma curva normal, os dados aparecem descontinuados no histograma. As velocidades nos dados do CFSR se apresentam mais distribuídas ao longo do histograma, apesar de não possuir o típico formato normal. Os valores de velocidade ficaram entre 0,68 e 8,05$m.s^{-1}$ no CFSR e entre 0,0 e 12,86$m.s^{-1}$ nos dados do METAR, ou seja, a velocidade máxima dos dados do METAR é 40\% maior do que a do CFSR.
-
-Pode-se perceber que os dados do METAR apresentam ausência de direções em um espaço relativamente equidistante, da mesma forma que observado nos dados de velocidade. Já os dados do CFSR apresentam uma distribuição mais contínua, porém com baixa presença de ventos entre 75 e 200$^{\circ}$ e distribuição bastante homogênea nas demais direções.
-
-O que foi verificado é que os dados do METAR apresentam uma grande inconsistência nos dados. No ano de 2011, 16,3\% dos dados não estavam disponíveis (Figura \ref{fig:nansMETAR}). A utilização de metodologias de interpolação dos dados em grande quantidade pode afetar o comportamento geral dos dados ainda mais considerando diversos dados ausentes em sequência, como é o caso atual. Além disso, por se localizar em uma base terrestre distante do local de estudo, os dados direcionais podem ter sido influenciados pelo relevo terrestre, potencialmente prejudicando análises feitas em locais distantes do ponto de amostragem. Dessa forma, como existem dúvidas a respeito da qualidade e localização dos dados, as análises feitas no presente estudo poderiam ser comprometidas e, portanto, a base de dados do CFSR foi escolhida como a mais adequada fonte de dados de vento para o presente estudo.
-
-
-\begin{landscape}
-	
-	\begin{figure}[!htb]
-		\includegraphics[width=1.1\textwidth]{figuras/vento/Vento_Metar_2011_histvel.png}
-		\centering
-		\caption{Histograma de velocidade do vento no Aeroporto de Navegantes para o ano de 2011 (METAR).}\label{fig:histvelMETAR}
-	\end{figure}
-	
-	\begin{figure}[!htb]
-		\includegraphics[width=1.1\textwidth]{figuras/vento/Vento_CFSR_2011_histvel.png}
-		\centering
-		\caption{Histograma de velocidade do vento referentes aos dados do CFSR para o ano de 2011.}\label{fig:histvelCFSR}
-	\end{figure}
-	
-	
-	\begin{figure}[!htb]
-		\includegraphics[width=1.1\textwidth]{figuras/vento/Vento_Metar_2011_histdir.png}
-		\centering
-		\caption{Histograma de direção do vento no Aeroporto de Navegantes para o ano de 2011 (METAR).}\label{fig:histdirMETAR}
-	\end{figure}
-	
-	\begin{figure}[!htb]
-		\includegraphics[width=1.1\textwidth]{figuras/vento/Vento_CFSR_2011_histdir.png}
-		\centering
-		\caption{Histograma de direção do vento referentes aos dados do CFSR para o ano de 2011.}\label{fig:histdirCFSR}
-	\end{figure}
-	
-	\begin{figure}[!htb]
-		\includegraphics[width=1.6\textwidth]{figuras/vento/Vento_Metar_Nans.png}
-		\centering
-		\caption{Dados válidos e dados indisponíveis nos dados de velocidade do vento no Aeroporto de Navegantes para o ano de 2011 (METAR).}\label{fig:nansMETAR}
-	\end{figure}
-	
-\end{landscape}	
+%% ====================================================================================
+%\chapter{Análises Comparativa entre CFSR e METAR}
+%% ====================================================================================
+%
+%Primeiramente os dados provenientes da base METAR da Aeronáutica do Brasil foram comparados com os dados provenientes do modelo de reanálises CFSR da NOAA. Na figura \ref{fig:localizacaovento} é possível observar a localização dos dados a serem apresentados. 
+%
+%\begin{figure}[!htb]
+%	\includegraphics[width=1.1\textwidth]{figuras/DadosVento_position.png}
+%	\centering
+%	\caption{Localização dos dados de vento do modelo de reanálise CFSR e do aeroporto de Navegantes (METAR).}\label{fig:localizacaovento}
+%\end{figure}
+%
+%As figuras \ref{fig:windroseMETAR} e \ref{fig:windroseCFSR} apresentam as rosas dos ventos dos dados do METAR e CFSR, respectivamente, para o ano de 2011 exclusivamente. É possível perceber que os gráficos têm um comportamento semelhante em termos de direção, mas uma variação considerável em relação ao percentual em cada uma das direções. Nos dados do CFSR, verifica-se uma predominância de ventos de O-ONO que podem alcançar mais de 8$m.s^{-1}$. Enquanto nos dados do METAR os ventos de O representam quase 20\% dos dados, com ventos em outras direções presentes, mas em menos de 10\% do tempo e velocidades normalmente acima de 4$m.s^{-1}$ e abaixo de 8$m.s^{-1}$, nunca superando 8$m.s^{-1}$.
+%
+%Os dados do CFSR têm uma maior distribuição na direção dos ventos, com uma baixa presença de ventos do quadrante SSE e uma presença marcante de ventos de NNE. A velocidade permaneceu normalmente entre 2 e 6$m.s^{-1}$ na maior parte do tempo. Velocidades acima de 8$m.s^{-1}$ são estão presentes apenas em ventos de ONO.
+%
+%\begin{figure}[!htb]
+%	\includegraphics[width=1.1\textwidth]{figuras/vento/Vento_Metar_2011_Windrose.png}
+%	\centering
+%	\caption{Rosa dos ventos do Aeroporto de Navegantes para o ano de 2011 (METAR). Os círculos indicam percentuais de ocorrência por quadrante analisado.}\label{fig:windroseMETAR}
+%\end{figure}
+%
+%\begin{figure}[!htb]
+%	\includegraphics[width=1.1\textwidth]{figuras/vento/Vento_CFSR_2011_Windrose.png}
+%	\centering
+%	\caption{Rosa dos ventos referente aos dados do CFSR para o ano de 2011. Os círculos indicam percentuais de ocorrência por quadrante analisado.}\label{fig:windroseCFSR}
+%\end{figure}
+%
+%Para melhor compreensão do comportamento dos dados, as velocidades e direções dos dados foram descritas na forma de histogramas para os dados do METAR e CFSR nas figuras \ref{fig:histvelMETAR} a \ref{fig:histdirCFSR}. 
+%Enquanto os dados de velocidade do METAR apresentam uma curva normal, os dados aparecem descontinuados no histograma. As velocidades nos dados do CFSR se apresentam mais distribuídas ao longo do histograma, apesar de não possuir o típico formato normal. Os valores de velocidade ficaram entre 0,68 e 8,05$m.s^{-1}$ no CFSR e entre 0,0 e 12,86$m.s^{-1}$ nos dados do METAR, ou seja, a velocidade máxima dos dados do METAR é 40\% maior do que a do CFSR.
+%
+%Pode-se perceber que os dados do METAR apresentam ausência de direções em um espaço relativamente equidistante, da mesma forma que observado nos dados de velocidade. Já os dados do CFSR apresentam uma distribuição mais contínua, porém com baixa presença de ventos entre 75 e 200$^{\circ}$ e distribuição bastante homogênea nas demais direções.
+%
+%O que foi verificado é que os dados do METAR apresentam uma grande inconsistência nos dados. No ano de 2011, 16,3\% dos dados não estavam disponíveis (Figura \ref{fig:nansMETAR}). A utilização de metodologias de interpolação dos dados em grande quantidade pode afetar o comportamento geral dos dados ainda mais considerando diversos dados ausentes em sequência, como é o caso atual. Além disso, por se localizar em uma base terrestre distante do local de estudo, os dados direcionais podem ter sido influenciados pelo relevo terrestre, potencialmente prejudicando análises feitas em locais distantes do ponto de amostragem. Dessa forma, como existem dúvidas a respeito da qualidade e localização dos dados, as análises feitas no presente estudo poderiam ser comprometidas e, portanto, a base de dados do CFSR foi escolhida como a mais adequada fonte de dados de vento para o presente estudo.
+%
+%
+%\begin{landscape}
+%	
+%	\begin{figure}[!htb]
+%		\includegraphics[width=1.1\textwidth]{figuras/vento/Vento_Metar_2011_histvel.png}
+%		\centering
+%		\caption{Histograma de velocidade do vento no Aeroporto de Navegantes para o ano de 2011 (METAR).}\label{fig:histvelMETAR}
+%	\end{figure}
+%	
+%	\begin{figure}[!htb]
+%		\includegraphics[width=1.1\textwidth]{figuras/vento/Vento_CFSR_2011_histvel.png}
+%		\centering
+%		\caption{Histograma de velocidade do vento referentes aos dados do CFSR para o ano de 2011.}\label{fig:histvelCFSR}
+%	\end{figure}
+%	
+%	
+%	\begin{figure}[!htb]
+%		\includegraphics[width=1.1\textwidth]{figuras/vento/Vento_Metar_2011_histdir.png}
+%		\centering
+%		\caption{Histograma de direção do vento no Aeroporto de Navegantes para o ano de 2011 (METAR).}\label{fig:histdirMETAR}
+%	\end{figure}
+%	
+%	\begin{figure}[!htb]
+%		\includegraphics[width=1.1\textwidth]{figuras/vento/Vento_CFSR_2011_histdir.png}
+%		\centering
+%		\caption{Histograma de direção do vento referentes aos dados do CFSR para o ano de 2011.}\label{fig:histdirCFSR}
+%	\end{figure}
+%	
+%	\begin{figure}[!htb]
+%		\includegraphics[width=1.6\textwidth]{figuras/vento/Vento_Metar_Nans.png}
+%		\centering
+%		\caption{Dados válidos e dados indisponíveis nos dados de velocidade do vento no Aeroporto de Navegantes para o ano de 2011 (METAR).}\label{fig:nansMETAR}
+%	\end{figure}
+%	
+%\end{landscape}	
 
 % ====================================================================================
 \chapter{Análises de Constantes Harmônicas}
@@ -1812,40 +1833,6 @@ Dentre as constantes apresentadas pela FEMAR que foram verificadas nos dados med
 	\includegraphics[width=0.9\textwidth]{figuras/femarPenha.png}
 	\centering
 	\caption{Constantes harmônicas definidas na estação maregráfica brasileira da FEMAR \cite{femar}.}\label{fig:femar}
-\end{figure}
-
-% ====================================================================================
-\chapter{Análise de comparação de nível e temperatura com vento}
-% ====================================================================================
-
-Nas figuras \ref{fig:niveltempvento1} a \ref{fig:niveltempvento3} estão apresentadas análises comparativas entre a maré meteorológica, a temperatura e o vento nos pontos ST001, ST002 e ST003.
-
-A primeira ressalva que deve ser feita é que os dados de vento são resultados do modelo de reanálise e são disponíveis apenas a cada 6 horas, o que não os torna ideal para este tipo de análise. Dessa forma, nesta análise buscaremos possíveis interações que devem ser melhor estudadas no futuro.
-
-É possível verificar em ST001 que o pico de elevação de nível no começo da série (dia 22) sucedeu um episódio esporádico porém intenso de vento SE. Entretanto, não houve nada na temperatura que demonstrasse qualquer influência desse vento. O episódio de pico de elevação de temperatura também se deu após um episódio de vento SE, dessa vez sem com um aumento ligeiro de nível sendo detectado. O período de baixas temperaturas entre 22 e 30 de Agosto coincidem com períodos com ventos predominantemente do quadrante norte. 
-
-No ponto ST002 verificou-se que ambos os períodos de baixa de nível (entre 22 e 25 de Agosto e entre 03 e 04 de Setembro) ocorreram após períodos de ventos persistentes do quadrante norte. A primeira queda de nível entre 22 e 25 de Agosto parece estar associada ao evento de queda de temperatura registrado pelo equipamento. Já o segundo caso de queda de nível não teve uma correspondência nos dados de temperatura.
-
-Apesar de a relação entre nível e vento ser muito semelhante no ponto ST003 aos resultados encontrados nos demais pontos, não foi possível identificar nenhuma concordância entre vento e temperatura. 
-
-Verifica-se que as correlações entre vento, nível e temperatura se apresentam muito sutis. Entretanto, nesta avaliação preliminar é possível verificar que, apesar de sutis, essas interações podem ocorrer na região estudada. Análises com vento medido durante a coleta são recomendadas para estudos mais detalhados.
-
-\begin{figure}[!htb]
-	\includegraphics[width=1\textwidth]{figuras/nivel_temp_vento_st001.png}
-	\centering
-	\caption{Comparação entre a elevação meteorológica de nível (figura superior), a variação de temperatura (figura central) e a intensidade e direção do vento (figura inferior) no ponto ST001.}\label{fig:niveltempvento1}
-\end{figure}
-
-\begin{figure}[!htb]
-	\includegraphics[width=1\textwidth]{figuras/nivel_temp_vento_st002.png}
-	\centering
-	\caption{Comparação entre a elevação meteorológica de nível (figura superior), a variação de temperatura (figura central) e a intensidade e direção do vento (figura inferior) no ponto ST002.}\label{fig:niveltempvento2}
-\end{figure}
-
-\begin{figure}[!htb]
-	\includegraphics[width=1\textwidth]{figuras/nivel_temp_vento_st003.png}
-	\centering
-	\caption{Comparação entre a elevação meteorológica de nível (figura superior), a variação de temperatura (figura central) e a intensidade e direção do vento (figura inferior) no ponto ST003.}\label{fig:niveltempvento3}
 \end{figure}
 
 % ====================================================================================
