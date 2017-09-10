@@ -39,5 +39,5 @@
 \contentsline {chapter}{\hspace {\espacosumario }REFER\^ENCIAS}{93}
 \contentsline {chapter}{\hspace {\espacosumario }\MakeUppercase {Ap\^endice{}} A{} -$\mskip -\thinmuskip $-{} Modelagem Num\'erica de Zonas Costeiras: uma revis\~ao}{99}
 \contentsline {chapter}{\hspace {\espacosumario }\MakeUppercase {Ap\^endice{}} B{} -$\mskip -\thinmuskip $-{} An\'alises de Constantes Harm\^onicas}{104}
-\contentsline {chapter}{\hspace {\espacosumario }\MakeUppercase {Ap\^endice{}} C{} -$\mskip -\thinmuskip $-{} An\'alise dos Dados de Vento}{115}
-\contentsline {chapter}{\hspace {\espacosumario }\MakeUppercase {Ap\^endice{}} D{} -$\mskip -\thinmuskip $-{} Figuras Extras}{123}
+\contentsline {chapter}{\hspace {\espacosumario }\MakeUppercase {Ap\^endice{}} C{} -$\mskip -\thinmuskip $-{} An\'alise dos Dados de Vento}{114}
+\contentsline {chapter}{\hspace {\espacosumario }\MakeUppercase {Ap\^endice{}} D{} -$\mskip -\thinmuskip $-{} Figuras Extras}{122}
