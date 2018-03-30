@@ -434,16 +434,7 @@ Os dados passaram por diversos processos de análise de consistência descritos em
 	\caption{Localização das coletas de dados através de ADCPs.}\label{fig:adcps}
 \end{figure}
 
-Entretanto, durante as medições alguns dados não puderam ser coletados e, portanto, as séries temporais continham interrupções (dados em branco). Interrupções em séries temporais as tornam muito complexas para análises sem um tratamento prévio. Dado que a quantidade de dados faltantes era esparsa, representando menos de 5\% da série temporal, e não havia sucessão de dados ausentes, escolheu-se utilizar uma interpolação linear simples para suprir os dados que não foram medidos. A figura \ref{fig:nans} apresenta um exemplo dos dados medidos e da quantidade de dados faltantes no ponto de coleta ST001.
 
-Além dos dados desses 3 ADCPs, também foram utilizados dados de maregrafia coletados em Penha durante mais de 1 ano, entre Outubro de 1995 e Dezembro de 1996. Estes dados não serão usados para a calibração do modelo, mas serão analisados e comparados com os dados do ADCP para melhor compreensão da hidrodinâmica local.
-
-\begin{landscape}
-\begin{figure}[!htb]
-	\includegraphics[width=1.6\textwidth]{figuras/nivel/NoData_ST001.png}
-	\centering
-	\caption{Dados medidos no ADCP ST001. Pontos em vermelho indicam que os dados foram obtidos através de interpolação linear e os dados em azul são dados medidos pelo ADCP.}\label{fig:nans}
-\end{figure}
 
 %\begin{figure}[!htb]
 %	\includegraphics[width=1.6\textwidth]{figuras/NoData_ST002.png}
@@ -456,7 +447,7 @@ Além dos dados desses 3 ADCPs, também foram utilizados dados de maregrafia colet
 %	\centering
 %	\caption{Dados medidos no ADCP ST003. Pontos em vermelho indicam que os dados foram obtidos através de interpolação linear e os dados em azul são dados medidos pelo ADCP}\label{fig:nans}
 %\end{figure}
-\end{landscape}
+%\end{landscape}
 
 
 \section{Modelo Numérico}
@@ -595,10 +586,25 @@ Buscou-se alcançar erros na casa de 10\% da amplitude máxima dos valores modelad
 
 \section{Análises utilizadas}
 
+\subsection{Interpolação}
+
+Durante as medições dos perfiladores acústicos, alguns dados não puderam ser coletados e, portanto, as séries temporais continham interrupções (dados ausentes). 
+Em geociências, a ausência de dados em uma série temporal traz uma série de problemas, tornando algumas análises muito complexas para serem aplicadas, principalmente análises espectrais \cite{kondrashov}.
+
+\citeonline{junninen} verificou que métodos univariados como interpolação linear atingem bons resultados em séries com poucos dados ausentes, e que, portanto, pode ser considerado um excelente método para este tipo de variável. Dessa forma, dado que a quantidade de dados faltantes era esparsa, representando menos de 5\% da série temporal, e não havia sucessão de dados ausentes, escolheu-se utilizar a interpolação linear simples para suprir os dados que não foram medidos. A figura \ref{fig:nans} apresenta um exemplo dos dados medidos e da quantidade de dados faltantes no ponto de coleta ST001.
+
+\begin{landscape}
+	\begin{figure}[!htb]
+		\includegraphics[width=1.6\textwidth]{figuras/nivel/NoData_ST001.png}
+		\centering
+		\caption{Dados medidos no ADCP ST001. Pontos em vermelho indicam que os dados foram obtidos através de interpolação linear e os dados em azul são dados medidos pelo ADCP.}\label{fig:nans}
+	\end{figure}
+\end{landscape}
+
 \subsection{TTide}
 
-Existe uma série de problemas associados com utilizar análises harmônicas clássicas para análise de sinais de maré. Visando corrigir e melhorar as análises harmônicas em sinais de maré, \citeonline{ttide} fizeram o pacote T\_TIDE, que é uma série de rotinas para análise harmônica clássica porém com algumas correções e opções para os usuários. Essa série de rotinas foi utilizada no presente trabalho para analisar os sinais de nível e fazer uma análise do sinal de maré nos dados coletados.
-
+Existe uma série de problemas associados com utilizar análises harmônicas clássicas para análise de sinais de maré. Visando corrigir e melhorar as análises harmônicas em sinais de maré, \citeonline{ttide} fizeram o pacote T\_TIDE, que é uma série de rotinas para análise harmônica clássica porém com algumas correções e opções para os usuários. 
+A partir desse pacote, foi possível definir as constantes harmônicas presentes nos dados, bem como sua amplitude e fase. O modelo também consegue reconstituir o sinal harmônico do período medido. Uma vez que é possível obter o sinal astronômico do sinal, subtraiu-se o sinal medido pelo sinal astronômico calculado e obteve-se o residual, aqui considerado como a componente meteorológica do sinal.
 %\subsection{Transformada Rápida de Fourier (FFT)}
 %
 %A Transformada Rápida de Fourier (do inglês, FFT) é um método de aplicação da Transformada Discreta de Fourier (do inglês, DFT) de modo a se alcançar eficiência computacional.
@@ -610,10 +616,7 @@ Existe uma série de problemas associados com utilizar análises harmônicas clássi
 % ====================================================================================
 
 
-
-\section{Descrição dos dados medidos}
-
-\subsection{Nível}
+\section{Nível}
 
 Inicialmente foram estudados os dados de nível dos três ADCPs para melhor compreender o comportamento da maré ao longo da Enseada. Os dados analisados em cada um dos pontos dos ADCPs podem ser vistos nas figuras \ref{fig:nivelPrevistost001} a \ref{fig:nivelPrevistost003} na parte superior. Como a medição de nível depende do local onde o ADCP foi instalado, existe uma diferença entre as profundidades nos três pontos medidos. A média de nível de cada aparelho foi obtida e subtraída, de forma que as curvas estivessem em relação ao nível zero.  Não obstante, os três aparelhos mediram um comportamento de nível muito semelhante, o que indica que, em termos de nível, a dinâmica local não aparenta variar dentro da enseada. Na parte inferior dos gráficos, se encontram os dados previstos, ou componente astronômica do sinal, sobrepostos pelo residual, ou componente meteorológica. O sinal meteorológico tem diversos picos e cavas, normalmente ficando entre 0,5m e -0,5m, mas chega a ultrapassar 0,5m no início de setembro. Logo no início das medições, uma elevação do nível de quase 0,5m é vista em todos os aparelhos. No total, três períodos de alta e três períodos de baixa.
 
@@ -788,7 +791,7 @@ Outro resultante interessante é que, em todos os gráficos, existe uma energia co
 	\end{figure}
 
 \clearpage
-\subsection{Temperatura}
+\section{Temperatura}
 
 Os dados de temperatura obtidos pelos ADCPs podem ser observados na figura \ref{fig:temperatura}. É notável que, nos dados do ponto ST002 e ST003 existe uma frequência muito alta que prejudica sua visualização mais detalhada. Esta variação de alta frequência poderia estar relacionada a variações diárias, mas, ao se observar os dados de forma mais atenta na figura \ref{fig:tempdetalhe} verifica-se que os dados apresentam um padrão em formato serrilhado, não condizente com esse tipo de dado. Dessa forma, assumiu-se que os dados de temperatura nos pontos ST002 e ST003 apresentam erros de medição e buscou-se aplicar uma média móvel para que os mesmos apresentassem um padrão mais natural. O resultado detalhado do filtro aplicado pode ser observado na figura \ref{fig:tempmedia02} e \ref{fig:tempmedia03}. Na figura \ref{fig:tempsmooth} estão dispostas as séries filtradas em conjunto com o dado medido em ST001. 
 
@@ -854,7 +857,7 @@ Nas figuras \ref{fig:tempfourier1} a \ref{fig:tempfourier3} estão apresentados o
 \end{figure}
 
 \clearpage
-\subsection{Nível, Temperatura e Vento}
+\section{Interação entre Nível, Temperatura e Vento}
 
 Nas figuras \ref{fig:niveltempvento1} a \ref{fig:niveltempvento3} estão apresentadas análises comparativas entre a maré meteorológica, a temperatura e o vento nos pontos ST001, ST002 e ST003.
 
@@ -887,7 +890,10 @@ Os pontos ST002 e ST003 apresentam os mesmos resultados entre vento e nível, mas
 
 %-------------------------------------------------------------------------------------------------------
 \clearpage
-\subsection{Corrente}
+
+\section{Corrente}
+
+\subsection{Comportamento padrão}
 
 Nas figuras \ref{fig:curr_depthav_01}, \ref{fig:curr_depthav_02} e \ref{fig:curr_depthav_03} podem ser observadas as rosas de corrente integradas na vertical para os pontos ST001, ST002 e ST003, respectivamente. Demais análises por camadas podem ser encontradas nos Apêndices.
 
@@ -960,7 +966,9 @@ Vale ressaltar que os episódios de velocidade acima de 25$cm.s^{-1}$ nas camadas
 	\caption{Histograma cumulativo da velocidade da corrente em $m.s^{-1}$ no ST003. Linhas em preto indicam os quartis de 25, 50 e 90\%.}\label{fig:cumulativo_03}
 \end{figure}
 
+\subsection{Análise EOF}
 
+\subsection{Interação com o vento}
 
 %-------------------------------------------------------------------------------------------------------
 \clearpage

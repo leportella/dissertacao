@@ -10,29 +10,32 @@
 \contentsline {section}{\numberline {2.2}\'Area de estudo}{16}
 \contentsline {chapter}{\numberline {3}\MakeUppercase {MATERIAIS E M\'ETODOS}}{22}
 \contentsline {section}{\numberline {3.1}Dados medidos}{23}
-\contentsline {section}{\numberline {3.2}Modelo Num\'erico}{27}
-\contentsline {subsection}{\numberline {3.2.1}DELFT3D-FLOW}{27}
-\contentsline {section}{\numberline {3.3}For\c cantes dos modelos}{28}
-\contentsline {subsection}{\numberline {3.3.1}Mar\'e}{28}
-\contentsline {subsection}{\numberline {3.3.2}Vento}{29}
-\contentsline {section}{\numberline {3.4}Dados diversos}{29}
-\contentsline {subsection}{\numberline {3.4.1}Vento}{29}
-\contentsline {subsection}{\numberline {3.4.2}Linha de Costa}{30}
-\contentsline {subsection}{\numberline {3.4.3}Batimetria}{30}
-\contentsline {section}{\numberline {3.5}Avalia\c c\~ao dos resultados do modelo}{31}
-\contentsline {section}{\numberline {3.6}An\'alises utilizadas}{32}
-\contentsline {subsection}{\numberline {3.6.1}TTide}{32}
+\contentsline {section}{\numberline {3.2}Modelo Num\'erico}{24}
+\contentsline {subsection}{\numberline {3.2.1}DELFT3D-FLOW}{24}
+\contentsline {section}{\numberline {3.3}For\c cantes dos modelos}{26}
+\contentsline {subsection}{\numberline {3.3.1}Mar\'e}{26}
+\contentsline {subsection}{\numberline {3.3.2}Vento}{28}
+\contentsline {section}{\numberline {3.4}Dados diversos}{28}
+\contentsline {subsection}{\numberline {3.4.1}Vento}{28}
+\contentsline {subsection}{\numberline {3.4.2}Linha de Costa}{29}
+\contentsline {subsection}{\numberline {3.4.3}Batimetria}{29}
+\contentsline {section}{\numberline {3.5}Avalia\c c\~ao dos resultados do modelo}{29}
+\contentsline {section}{\numberline {3.6}An\'alises utilizadas}{30}
+\contentsline {subsection}{\numberline {3.6.1}Interpola\c c\~ao}{30}
+\contentsline {subsection}{\numberline {3.6.2}TTide}{32}
 \contentsline {chapter}{\numberline {4}\MakeUppercase {RESULTADOS}}{33}
-\contentsline {section}{\numberline {4.1}Descri\c c\~ao dos dados medidos}{33}
-\contentsline {subsection}{\numberline {4.1.1}N\IeC {\'\i }vel}{33}
-\contentsline {subsection}{\numberline {4.1.2}Temperatura}{46}
-\contentsline {subsection}{\numberline {4.1.3}N\IeC {\'\i }vel, Temperatura e Vento}{53}
-\contentsline {subsection}{\numberline {4.1.4}Corrente}{57}
-\contentsline {section}{\numberline {4.2}Modelo Num\'erico}{62}
-\contentsline {subsection}{\numberline {4.2.1}Grade Num\'erica e Batimetria}{62}
-\contentsline {subsection}{\numberline {4.2.2}Calibra\c c\~ao}{65}
-\contentsline {subsection}{\numberline {4.2.3}Cen\'arios de an\'alise}{73}
-\contentsline {subsection}{\numberline {4.2.4}Mapas de Residuais}{74}
+\contentsline {section}{\numberline {4.1}N\IeC {\'\i }vel}{33}
+\contentsline {section}{\numberline {4.2}Temperatura}{46}
+\contentsline {section}{\numberline {4.3}Intera\c c\~ao entre N\IeC {\'\i }vel, Temperatura e Vento}{53}
+\contentsline {section}{\numberline {4.4}Corrente}{57}
+\contentsline {subsection}{\numberline {4.4.1}Comportamento padr\~ao}{57}
+\contentsline {subsection}{\numberline {4.4.2}An\'alise EOF}{57}
+\contentsline {subsection}{\numberline {4.4.3}Intera\c c\~ao com o vento}{57}
+\contentsline {section}{\numberline {4.5}Modelo Num\'erico}{62}
+\contentsline {subsection}{\numberline {4.5.1}Grade Num\'erica e Batimetria}{62}
+\contentsline {subsection}{\numberline {4.5.2}Calibra\c c\~ao}{65}
+\contentsline {subsection}{\numberline {4.5.3}Cen\'arios de an\'alise}{73}
+\contentsline {subsection}{\numberline {4.5.4}Mapas de Residuais}{74}
 \contentsline {chapter}{\numberline {5}\MakeUppercase {DISCUSS\~AO}}{88}
 \contentsline {chapter}{\numberline {6}\MakeUppercase {CONCLUS\~OES}}{90}
 \contentsline {chapter}{\numberline {7}\MakeUppercase {CONSIDERA\c C\~OES FINAIS}}{92}

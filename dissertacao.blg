@@ -10,30 +10,30 @@ Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated field_info (elt_size=4) to 10313 items from 5000.
+Reallocated field_info (elt_size=4) to 10382 items from 5000.
 Database file #1: abnt-options.bib
 Database file #2: bibliografia.bib
-I was expecting a `,' or a `}'---line 604 of file bibliografia.bib
+I was expecting a `,' or a `}'---line 620 of file bibliografia.bib
  :  
  :  url={http://rda.ucar.edu/datasets/ds094.1}}
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 619 of file bibliografia.bib
+I was expecting a `,' or a `}'---line 635 of file bibliografia.bib
  :  
  :  url={http://polar.ncep.noaa.gov/waves/wavewatch/}}
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 641 of file bibliografia.bib
+I was expecting a `,' or a `}'---line 657 of file bibliografia.bib
  :  
  :  address={Florianópolis}}
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 648 of file bibliografia.bib
+I was expecting a `,' or a `}'---line 664 of file bibliografia.bib
  :  
  :  address={Itajaí}}
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-Repeated entry---line 684 of file bibliografia.bib
+Repeated entry---line 700 of file bibliografia.bib
  : @misc{santur
  :             ,
 I'm skipping whatever remains of this entry
@@ -49,45 +49,45 @@ Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://abntex.codigolivre.org.br                        |
 +---------------------------------------------------------+
-You've used 75 entries,
+You've used 76 entries,
             6480 wiz_defined-function locations,
-            1600 strings with 20162 characters,
-and the built_in function-call counts, 56831 in all, are:
-= -- 4244
-> -- 1991
-< -- 104
-+ -- 806
-- -- 600
-* -- 4095
-:= -- 7754
-add.period$ -- 247
-call.type$ -- 76
-change.case$ -- 738
-chr.to.int$ -- 160
-cite$ -- 73
-duplicate$ -- 2727
-empty$ -- 4326
-format.name$ -- 2919
-if$ -- 13508
+            1603 strings with 20333 characters,
+and the built_in function-call counts, 57718 in all, are:
+= -- 4310
+> -- 2024
+< -- 107
++ -- 818
+- -- 610
+* -- 4161
+:= -- 7866
+add.period$ -- 250
+call.type$ -- 77
+change.case$ -- 749
+chr.to.int$ -- 164
+cite$ -- 74
+duplicate$ -- 2773
+empty$ -- 4387
+format.name$ -- 2966
+if$ -- 13718
 int.to.chr$ -- 2
 int.to.str$ -- 0
-missing$ -- 1272
-newline$ -- 375
-num.names$ -- 355
-pop$ -- 1567
+missing$ -- 1290
+newline$ -- 380
+num.names$ -- 360
+pop$ -- 1591
 preamble$ -- 1
-purify$ -- 289
+purify$ -- 293
 quote$ -- 0
-skip$ -- 3203
+skip$ -- 3251
 stack$ -- 1
-substring$ -- 2336
-swap$ -- 1306
-text.length$ -- 75
+substring$ -- 2382
+swap$ -- 1331
+text.length$ -- 77
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 44
 warning$ -- 0
-while$ -- 500
+while$ -- 508
 width$ -- 0
-write$ -- 1137
+write$ -- 1153
 (There were 5 error messages)

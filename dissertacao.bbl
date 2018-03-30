@@ -55,11 +55,6 @@ Dissertação (Mestrado) --- Universidad de Cantabria, Santander, 2013. 263 p.}
 In:  \underline{\ \ \ \ \ \ \ \ }. New York, U.S.A.: Springer-Verlag, 1990.
   cap. Introduction.}
 
-\bibitem[Cochran et al. 1967]{FFT}
-\abntrefinfo{Cochran et al.}{COCHRAN et al.}{1967}
-{COCHRAN, W.~T. et al. What is the fast fourier transform.
-\textbf{Proceeding of the IEEE}, v.~55, p. 1664--1674, 1967.}
-
 \bibitem[Deltares 2011]{QuickinManual}
 \abntrefinfo{Deltares}{DELTARES}{2011a}
 {DELTARES. \textbf{Delft3D-QUICKIN User Manual}.
@@ -174,6 +169,12 @@ Dispon{\'\i}vel em:
 {IMASATO, N. What is tide-induced residual current.
 \textbf{American Meteorological Society}, p. 1307--1317, 1983.}
 
+\bibitem[Junninen et al. 2004]{junninen}
+\abntrefinfo{Junninen et al.}{JUNNINEN et al.}{2004}
+{JUNNINEN, H. et al. Methods for imputation of missing values in air quality
+  data sets.
+\textbf{Atmospheric Environment}, v.~38, p. 2895--2907, 2004.}
+
 \bibitem[Klein et al. 2009]{kleinetal2009}
 \abntrefinfo{Klein et al.}{KLEIN et al.}{2009}
 {KLEIN, A. H.~F. et al. Beach management: Principles and practice.
@@ -191,6 +192,12 @@ In:  \underline{\ \ \ \ \ \ \ \ }. 100 Cambridge Grove: Earthscan, 2009. cap.
 {KLEIN, A. H.~F. et al. Erosão e progradação do litoral brasileiro.
 In:  \underline{\ \ \ \ \ \ \ \ }. Brasília, DF: Ministério do Meio Ambiente,
   2006. cap. Santa Catarina.}
+
+\bibitem[Kondrashov e Ghil 2006]{kondrashov}
+\abntrefinfo{Kondrashov e Ghil}{KONDRASHOV; GHIL}{2006}
+{KONDRASHOV, V.~\& GHIL, M. Spatio-temporal filling of missing points in
+  geophysical data sets.
+\textbf{Nonlinear Processes in Geophysics}, v.~13, p. 151--159, 2006.}
 
 \bibitem[Kundu et al. 2012]{Kundu}
 \abntrefinfo{Kundu et al.}{KUNDU et al.}{2012}
